@@ -57,7 +57,6 @@ QQ() {
 g() {
     eval $(ssh-agent)
     OneOut HomeDo startx > ~/.x.log
-    QQ kill $(pgrep wmiirc)
 }
 
 # Surpress annoying FIXME messages from wine to speed up gameplay
@@ -72,7 +71,6 @@ alias ls='ls --color=auto'
 alias l='ls -hl'
 alias la='l -a'
 alias ..='cd ..'
-alias ...='cd ../..'
 alias vim='vim -p'
 alias du='du -csh'
 
@@ -89,18 +87,10 @@ alias kk='kill -9 %%'
 alias irb='irb --readline -r irb/completion'
 
 # Make package management easier
-alias sc='sudo clyde'
-alias c='clyde'
-alias cn='clyde -S --noconfirm'
-alias css='clyde -Ss'
 alias y="yaourt"
-csl() {
-    clyde -Ss "$@" | less
-}
 aur() {
     cd ~/aur
-    clyde -G "$1"
-    rm "$1".tar.*
+    yaourt -G "$1"
     cd "$1"
 }
 alias abs='sudo abs'

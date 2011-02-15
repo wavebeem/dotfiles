@@ -14,13 +14,3 @@ status.removed  = red bold
 status.deleted  = red bold
 status.unknown  = black bold
 status.ignored  = black bold
-
-#[auth]
-#home.prefix = saikobee.isa-geek.com
-#home.username = saikobee
-#home.password = pancakes
-#home.schemes = https
-
-#[web]
-#allow_push=*
-#push_ssl=False

@@ -13,7 +13,7 @@ zshrc
 bashrc
 bash_profile
 fonts.conf
-ncmpcpp
+ncmpcpp/config
 tmux.conf
 gitconfig
 gitignore_global
@@ -23,7 +23,10 @@ hgrc
 SetupLink() {
     file="$1"
 
-    ln -s "$file" "$HOME/.$file"
+    if [ -L "$HOME/.$file" ]; then
+        rm "$HOME/.$file"
+    fi
+    ln -s "$HOME/dotfiles/$file" "$HOME/.$file"
 }
 
 for file in "${files[@]}"; do
