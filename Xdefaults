@@ -2,7 +2,7 @@
 !Xcursor.theme: Vanilla-DMZ
 !Xcursor.theme: Jimmac
 !Xcursor.theme: basic-white
-#Xcursor.theme: Neutral
+!Xcursor.theme: Neutral
 Xcursor.theme: OpenZone Black
 
 Xft.hintstyle: hintslight
