@@ -1,0 +1,26 @@
+[ui]
+username = Brian Mock <mock.brian@gmail.com>
+verbose = True
+
+[extensions]
+hgk =
+color =
+
+[color]
+mode = auto
+status.modified = magenta bold
+status.added    = green bold
+status.removed  = red bold
+status.deleted  = red bold
+status.unknown  = black bold
+status.ignored  = black bold
+
+#[auth]
+#home.prefix = saikobee.isa-geek.com
+#home.username = saikobee
+#home.password = pancakes
+#home.schemes = https
+
+#[web]
+#allow_push=*
+#push_ssl=False

@@ -1,0 +1,23 @@
+[user]
+	name = Brian Mock
+	email = mock.brian@gmail.com
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+[alias]
+	ci = commit
+    cia = commit -a
+    addi = add --interactive
+    diffc = diff --cached
+	co = checkout
+    cob = checkout -b
+    stat = status
+    lg = log --stat --graph --decorate --summary --all
+    lg1 = log --pretty=oneline
+[core]
+	excludesfile = /home/brian/.gitignore_global
+[web]
+	browser = chromium
+[browser "chromium"]
+	cmd = chromium

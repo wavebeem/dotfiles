@@ -1,0 +1,5 @@
+Emacs.fontBackend: xft
+Emacs.font: DejaVu Sans Mono-13
+
+*.background: black
+*.foreground: white

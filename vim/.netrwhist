@@ -1,0 +1,10 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_1='scp://localhost/.fltk/'
+let g:netrw_dirhist_2='/etc/rc.d'
+let g:netrw_dirhist_3='/home/brian/.config/transmission/blocklists'
+let g:netrw_dirhist_4='/home/brian/.config/transmission/resume'
+let g:netrw_dirhist_5='/home/brian/.config/transmission/torrents'
+let g:netrw_dirhist_6='/home/brian/proj/git/mprw'
+let g:netrw_dirhist_7='/etc'
+let g:netrw_dirhist_8='/home/brian/.ncmpcpp'

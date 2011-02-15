@@ -1,0 +1,13 @@
+!Xcursor.theme: Vanilla-DMZ-AA
+!Xcursor.theme: Vanilla-DMZ
+!Xcursor.theme: Jimmac
+!Xcursor.theme: basic-white
+#Xcursor.theme: Neutral
+Xcursor.theme: OpenZone Black
+
+Xft.hintstyle: hintslight
+Xft.lcdfilter: lcddefault
+Xft.hinting:   true
+Xft.antialias: true
+Xft.dpi:       96
+Xft.rgba:      rgb

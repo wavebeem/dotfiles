@@ -1,0 +1,11 @@
+update_interval 1
+#out_to_x no
+out_to_console yes
+temperature_unit fahrenheit
+#temperature_unit celsius
+
+TEXT
+${uptime_short}\
+      :::      ${mem}\
+      :::      ${mixer}%${if_mixer_mute} (M)${endif}\
+      :::      ${time %A  ~  %Y.%m.%d  ~  %H:%M}
