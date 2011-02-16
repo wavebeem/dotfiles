@@ -187,6 +187,8 @@
         border_focus         = "#3f3e3c"
         resize_corner_focus  = "#3f3e3c"
 
+        set_new_win_master = false
+
         ## Red
         #border_focus         = "#591a32"
         #resize_corner_focus  = "#591a32"
