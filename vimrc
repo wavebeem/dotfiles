@@ -84,3 +84,6 @@ set showmatch
 
 " Disable matchparen plugin
 let loaded_matchparen = 1
+
+" Stick stupid .netrwhist elsewhere
+let g:netrw_home = "/tmp"

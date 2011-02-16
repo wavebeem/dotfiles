@@ -1,9 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =7
-let g:netrw_dirhist_1='/home/brian/dotfiles/config'
-let g:netrw_dirhist_2='/home/brian/dotfiles/config/roxterm.sourceforge.net'
-let g:netrw_dirhist_3='/home/brian/dotfiles/config/roxterm.sourceforge.net/Colours'
-let g:netrw_dirhist_4='/home/brian/dotfiles/config'
-let g:netrw_dirhist_5='/home/brian/dotfiles/ncmpcpp'
-let g:netrw_dirhist_6='/home/brian/dotfiles/ncmpcpp/artists'
-let g:netrw_dirhist_7='/home/brian/dotfiles/ncmpcpp'
