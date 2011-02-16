@@ -18,15 +18,36 @@ tmux.conf
 gitconfig
 gitignore_global
 hgrc
+inputrc
 )
 
 SetupLink() {
     file="$1"
 
-    if [ -L "$HOME/.$file" ]; then
-        rm "$HOME/.$file"
+    yes_dot="$HOME/.$file"
+    not_dot="$HOME/dotfiles/$file"
+
+    # Delete possibly old, stale links
+    if [ -L "$yes_dot" ]; then
+        rm "$yes_dot"
     fi
-    ln -s "$HOME/dotfiles/$file" "$HOME/.$file"
+
+    # Possibly delete currently installed config files
+    if [ -f "$yes_dot" ] || [ -d "$yes_dot" ]; then
+        [ -f "$yes_dot" ] && the_type=file
+        [ -d "$yes_dot" ] && the_type=dir
+
+        echo -n "Do you wish to delete the $the_type $yes_dot? [y/N] "
+        read -r reply
+
+        case "$reply" in
+        y|Y) rm "$yes_dot"  ;;
+        n|N) return         ;;
+        esac
+    fi
+
+    echo "Linking $yes_dot -> $not_dot"
+    ln -s "$not_dot" "$yes_dot"
 }
 
 for file in "${files[@]}"; do
