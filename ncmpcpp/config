@@ -188,7 +188,7 @@ song_window_title_format = "{%t}|{%f}"
 # song_columns_list_format =  "(6f)[red]{lr} (40)[]{t} (35)[cyan]{br} (25)[magenta]{a}"
 # song_columns_list_format =  "(6f)[red]{lr} (40)[cyan]{t} (35)[green]{br} (25)[magenta]{a}"
 # song_columns_list_format =  "(6f)[cyan]{lr} (40)[]{t} (35)[]{br} (25)[cyan]{a}"
-song_columns_list_format =  "(6f)[cyan]{lr} (40)[]{t} (35)[]{br} (25)[cyan]{a}"
+song_columns_list_format =  "(6f)[]{lr} (40)[yellow]{t} (35)[cyan]{br} (25)[]{a}"
 # song_columns_list_format =  "(6f)[red]{lr} (40)[]{t} (35)[cyan]{b} (25)[magenta]{a}"
 
 ##### various settings #####
@@ -324,7 +324,7 @@ color2 = "black"
 
 main_window_highlight_color = "default"
 
-progressbar_color = "black"
+progressbar_color = "green"
 
 statusbar_color = "default"
 
