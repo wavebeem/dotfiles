@@ -2,7 +2,7 @@
 
 files=(
 config/roxterm.sourceforge.net
-config/wmfs
+config/wmfs/wmfsrc
 conkyrc
 vim
 vimrc
