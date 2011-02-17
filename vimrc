@@ -2,8 +2,8 @@ set nocompatible
 
 syntax on
 
-color robokai
 set bg=dark
+color robokai
 
 " Allow backspacing over everything in insert mode
 set backspace=indent,eol,start
