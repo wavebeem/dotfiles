@@ -19,6 +19,7 @@ gitconfig
 gitignore_global
 hgrc
 inputrc
+xbindkeysrc
 )
 
 SetupLink() {

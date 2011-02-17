@@ -1,0 +1,81 @@
+#keystate_numlock = enable
+#keystate_capslock = enable
+#keystate_scrolllock= enable
+
+"roxterm"
+Mod4 + Return
+
+"roxterm --profile Huge"
+Control + Mod4 + Return
+
+"dmenu.sh"
+Mod4 + F1
+
+"dmenu.sh"
+Mod4 + p
+
+"dmenu.sh"
+Mod4 + Escape
+
+"xterm"
+Mod4 + F2
+
+"mpc seek -00:00:10"
+Mod4 + comma
+
+"mpc seek +00:00:10"
+Mod4 + period
+
+"mpc prev"
+Mod4 + z
+
+"mpc next"
+Mod4 + x
+
+"mpc toggle"
+Mod4 + space
+
+"mpc stop"
+Mod4 + Alt + space
+
+"amixer set Master toggle"
+Mod4 + F10
+
+"amixer set Master 5%-"
+Mod4 + F11
+
+"amixer set Master 5%+"
+Mod4 + F12
+
+#"volume.sh"
+#Mod4 + F9
+
+#"temp.sh"
+#Mod4 + F8
+
+#"who.sh"
+#Mod4 + F7
+
+"MAMENU"
+Mod4 + g
+
+#"zenity --calendar"
+Control + Mod4 + c
+
+"wmii-next-tag.sh"
+Control + Mod4 + j
+
+"wmii-prev-tag.sh"
+Control + Mod4 + k
+
+"ReIbus"
+Control + Mod4 + F9
+
+"setxkbmap ru -variant phonetic"
+Control + Mod4 + F10
+
+"setxkbmap gr"
+Control + Mod4 + F11
+
+"setxkbmap us -variant altgr-intl -option nodeadkeys -option compose:ralt -option compose:caps"
+Control + Mod4 + F12
