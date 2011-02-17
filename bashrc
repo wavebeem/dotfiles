@@ -34,7 +34,7 @@ alias dim='echo ${COLUMNS}x${LINES}'
 alias sl='sl -alF'
 alias rb='exec /proc/self/exe'
 
-alias t="tmux"
+alias t="ssh-agent tmux"
 alias T="tmux attach"
 
 HomeDo() {
