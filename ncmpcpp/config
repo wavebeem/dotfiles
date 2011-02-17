@@ -109,7 +109,7 @@ playlist_disable_highlight_delay = "2"
 #song_list_format = "{$6 %a $9}{$7 %b $9}{$3 %l $9}{ %t }|{$2 %f $9}"
 #song_list_format = "{$3 %l $9}{ %t }|{$2 %f $9}$R{$6 %b $9}{$7 %a $9}"
 #song_list_format = "{ %t }|{$2 %f $9}$R{$3 %l $9}{$6 %b $9}{$7 %a $9}"
-song_list_format = "{$0 %t $9}|{$2 %f $9}$R{$7 %b $9}"
+song_list_format = "{$4 %t $9}|{$2 %f $9}$R{$7 %b $9}"
 #song_list_format = "{%t}|{$8%f$9}$R{$3(%l)$9}"
 #song_list_format = "{%t}|{$8%f$9}$R{$3(%l)$9}"
 
@@ -204,7 +204,8 @@ song_columns_list_format =  "(6f)[]{lr} (40)[yellow]{t} (35)[cyan]{br} (25)[]{a}
 
 playlist_show_remaining_time = "no"
 
-playlist_display_mode = "columns" # (classic/columns)
+#playlist_display_mode = "columns" # (classic/columns)
+playlist_display_mode = "classic" # (classic/columns)
 
 browser_display_mode = "columns" # (classic/columns)
 
