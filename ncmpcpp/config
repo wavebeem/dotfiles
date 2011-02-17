@@ -325,7 +325,7 @@ color1 = "green"
 
 color2 = "black"
 
-main_window_highlight_color = "default"
+main_window_highlight_color = "cyan"
 
 progressbar_color = "green"
 
