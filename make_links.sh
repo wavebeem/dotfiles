@@ -48,7 +48,17 @@ SetupLink() {
     fi
 
     echo "Linking $yes_dot -> $not_dot"
-    ln -s "$not_dot" "$yes_dot"
+    MakeDirThenLink "$not_dot" "$yes_dot"
+}
+
+MakeDirThenLink() {
+    file="$1"
+
+    the_dir="$(dirname "$file")"
+
+    if [ ! -d "$the_dir" ]; then
+        mkdir -p "$the_dir"
+    fi
 }
 
 for file in "${files[@]}"; do
