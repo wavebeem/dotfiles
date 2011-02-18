@@ -14,7 +14,7 @@
         #font               = "terminus-ja-11:bold"
         #font               = "Fixed-14:bold"
         #font               = "unifont-10:bold"
-        raisefocus         = true
+        raisefocus         = false
         focus_follow_mouse = true
 
         # Opacity of inactive windows out of 255
@@ -255,20 +255,20 @@
                #instance = "xv"       # First part of WM_CLASS
                class    = "MPlayer"  # Seconf part of WM_CLASS, not needed if first part is correct
                # role = ""           # WM_WINDOW_ROLE
-               #screen   = 0          # Screen to use
+               screen   = 0          # Screen to use
                #tag      = 2          # Tag number of apps
                free     = true       # Set automatic free client
-               max      = false      # Set automatic maximized client
+               #max      = false      # Set automatic maximized client
        [/rule]
 
        [rule]
                instance = "feh"       # First part of WM_CLASS
-               class    = "feh"  # Seconf part of WM_CLASS, not needed if first part is correct
+               #class    = "feh"  # Seconf part of WM_CLASS, not needed if first part is correct
                # role = ""           # WM_WINDOW_ROLE
-               #screen   = 0          # Screen to use
+               screen   = 0          # Screen to use
                #tag      = 2          # Tag number of apps
                free     = true       # Set automatic free client
-               max      = false      # Set automatic maximized client
+               #max      = false      # Set automatic maximized client
        [/rule]
 [/rules]
 
