@@ -23,10 +23,10 @@ xbindkeysrc
 )
 
 SetupLink() {
-    file="$1"
+    local file="$1"
 
-    yes_dot="$HOME/.$file"
-    not_dot="$HOME/dotfiles/$file"
+    local yes_dot="$HOME/.$file"
+    local not_dot="$HOME/dotfiles/$file"
 
     # Delete possibly old, stale links
     if [ -L "$yes_dot" ]; then
@@ -42,8 +42,8 @@ SetupLink() {
         read -r reply
 
         case "$reply" in
-        y|Y) rm "$yes_dot"  ;;
-        n|N) return         ;;
+        y|Y) rm -r "$yes_dot"  ;;
+        n|N) return            ;;
         esac
     fi
 
@@ -52,13 +52,16 @@ SetupLink() {
 }
 
 MakeDirThenLink() {
-    file="$1"
+    local dot="$1"
+    local file="$2"
 
     the_dir="$(dirname "$file")"
 
     if [ ! -d "$the_dir" ]; then
         mkdir -p "$the_dir"
     fi
+
+    ln -s  "$dot" "$file"
 }
 
 for file in "${files[@]}"; do
