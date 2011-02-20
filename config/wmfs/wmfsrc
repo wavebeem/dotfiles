@@ -28,7 +28,8 @@
 [/misc]
 
 [bar]
-        bg     = "#0f0e0c"
+        #bg     = "#6f0e0c"
+        bg     = "#000000"
         fg     = "#d3caaa"
         border = false
         # selbar = false   #not worked now, see section [selbar]
@@ -47,7 +48,8 @@
 
         # Remove this section to disable the selbar.
         [selbar]
-                bg = "#0c0c0c"
+                #bg = "#0c0c0c"
+                bg = "#000000"
                 fg = "#d3caaa"
 
                 # Cut title length
@@ -152,6 +154,7 @@
 
         # clients option is *DEPRECATED* but works, see [rules] section
         #[tag] name = "two"  clients = {"Browser"} [/tag]
+
         [tag] name = "1" [/tag]
         [tag] name = "2" [/tag]
         [tag] name = "3" [/tag]
@@ -178,14 +181,12 @@
         client_auto_center   = false
         border_height        = 6
         border_shadow        = false
-        #border_normal        = "#1c1c1c"
-        #resize_corner_normal = "#1c1c1c"
-        border_normal        = "#1f1e1c"
-        resize_corner_normal = "#1f1e1c"
+        border_normal        = "#1c1c1c"
+        resize_corner_normal = "#1c1c1c"
         #border_focus         = "#4b324c"
         #resize_corner_focus  = "#4b324c"
-        border_focus         = "#3f3e3c"
-        resize_corner_focus  = "#3f3e3c"
+        border_focus         = "#4f4e4c"
+        resize_corner_focus  = "#4f4e4c"
 
         set_new_win_master = false
 
@@ -261,15 +262,15 @@
                #max      = false      # Set automatic maximized client
        [/rule]
 
-       [rule]
-               instance = "feh"       # First part of WM_CLASS
+       #[rule]
+               #instance = "feh"       # First part of WM_CLASS
                #class    = "feh"  # Seconf part of WM_CLASS, not needed if first part is correct
                # role = ""           # WM_WINDOW_ROLE
-               screen   = 0          # Screen to use
+               #screen   = 0          # Screen to use
                #tag      = 2          # Tag number of apps
-               free     = true       # Set automatic free client
+               #free     = true       # Set automatic free client
                #max      = false      # Set automatic maximized client
-       [/rule]
+       #[/rule]
 [/rules]
 
 [menu]
@@ -284,7 +285,7 @@
                 align = "left"
 
                 fg_focus  = "#d3caaa" bg_focus  = "#4f4e4c"
-                fg_normal = "#d3caaa" bg_normal = "#0f0e0c"
+                fg_normal = "#d3caaa" bg_normal = "#383734"
 
                 [item] name = "Terminal"         func = "spawn" cmd = "roxterm || xterm" [/item]
                 [item] name = "Change Wallpaper" func = "spawn" cmd = "nitrogen" [/item]
@@ -301,22 +302,11 @@
         [/set_menu]
 
         [set_menu]
-                name = "appmenu"
-                align = "left"
-
-                fg_focus  = "#0c0c0c" bg_focus  = "#7E89A2"
-                fg_normal = "#9F9AB3" bg_normal = "#0c0c0c"
-
-                [item] name = "Browser"         func = "spawn" cmd = "firefox"     [/item]
-                [item] name = "Calculator"      func = "spawn" cmd = "xcalc"       [/item]
-        [/set_menu]
-
-        [set_menu]
                 name = "clientmenu"
                 align = "left"
 
-                fg_focus  = "#D4D4D4" bg_focus  = "#003366"
-                fg_normal = "#D4D4D4" bg_normal = "#0c0c0c"
+                fg_focus  = "#d3caaa" bg_focus  = "#4f4e4c"
+                fg_normal = "#d3caaa" bg_normal = "#383734"
 
                 # Check items: possible 'check_max' or 'check_free'.
                 [item] name = "Close"    func = "client_kill"                      [/item]
