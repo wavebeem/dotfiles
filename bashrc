@@ -88,6 +88,7 @@ alias irb='irb --readline -r irb/completion'
 
 # Make package management easier
 alias y="yaourt"
+alias yn='yaourt -S --noconfirm'
 aur() {
     cd ~/aur
     yaourt -G "$1"
