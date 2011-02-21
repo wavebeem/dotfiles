@@ -181,14 +181,18 @@
         client_auto_center   = false
         border_height        = 6
         border_shadow        = false
-        border_normal        = "#1c1c1c"
-        resize_corner_normal = "#1c1c1c"
+        #border_normal        = "#1f1e1c"
+        #resize_corner_normal = "#1f1e1c"
+        border_normal        = "#1f1e1c"
+        resize_corner_normal = "#1f1e1c"
         #border_focus         = "#4b324c"
         #resize_corner_focus  = "#4b324c"
         border_focus         = "#4f4e4c"
         resize_corner_focus  = "#4f4e4c"
 
         set_new_win_master = false
+
+        new_client_get_mouse = true
 
         ## Red
         #border_focus         = "#591a32"
