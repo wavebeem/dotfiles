@@ -44,6 +44,7 @@ xset -b &
 xset -dpms &
 
 # Set cursor type on root window (avoid X-shape)
+xsetroot -solid black &
 xsetroot -cursor_name left_ptr &
 
 # Enable Ctrl-Alt-Backspace for zapping X
@@ -78,10 +79,11 @@ Start() {
 # Start i3
 # Start dwm
 # Start wmii
-  Start wmfs
+# Start wmfs
 # Start xfwm4
 # Start xmonad
 # Start startkde
 # Start startxfce4
+  Start ~/wmfs/wmfs
 # Start gnome-session
 # Start openbox-session
