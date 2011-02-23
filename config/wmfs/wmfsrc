@@ -29,10 +29,13 @@
 
 [bar]
         #bg     = "#6f0e0c"
-        bg     = "#000000"
+        bg     = "#2f2e2c"
         fg     = "#d3caaa"
-        border = false
+        border = true
         # selbar = false   #not worked now, see section [selbar]
+
+        light_shade =  0.05
+        dark_shade  = -0.05
 
         [systray]
                 # Enable/disable systray
@@ -48,8 +51,7 @@
 
         # Remove this section to disable the selbar.
         [selbar]
-                #bg = "#0c0c0c"
-                bg = "#000000"
+                bg = "#2f2e2c"
                 fg = "#d3caaa"
 
                 # Cut title length
@@ -64,13 +66,13 @@
 
 [layouts]
         fg = "#d3caaa"
-        bg = "#3f3e3c"
+        bg = "#2f2e2c"
 
         # Border around the layout button.
-        border = false
+        border = true
 
         # Value menu or switch.
-        system = "menu"
+        system = "switch"
 
         # Value left or right.
         placement = "right"
@@ -115,9 +117,9 @@
         tag_auto_prev  = false
 
         occupied_bg    = "#3f3e3c"
-        occupied_fg    = "#d3caaa"
+        occupied_fg    = "#6e6958"
         sel_fg         = "#d3caaa"
-        sel_bg         = "#6f6e6c"
+        sel_bg         = "#5f5e5c"
         urgent_bg      = "#fcaf3e"
         urgent_fg      = "#000000"
 
@@ -128,7 +130,7 @@
         #default_layout = "tile_right" # deprecated, use [default_tag] instead
 
         # Border around the tag buttons.
-        border      = false
+        border      = true
 
         # Hide empty tags in tag list
         autohide    = false
@@ -155,15 +157,15 @@
         # clients option is *DEPRECATED* but works, see [rules] section
         #[tag] name = "two"  clients = {"Browser"} [/tag]
 
-        [tag] name = "1" [/tag]
-        [tag] name = "2" [/tag]
-        [tag] name = "3" [/tag]
-        [tag] name = "4" [/tag]
-        [tag] name = "5" [/tag]
-        [tag] name = "6" [/tag]
-        [tag] name = "7" [/tag]
-        [tag] name = "8" [/tag]
-        [tag] name = "9" [/tag]
+        [tag] name = "  1   " [/tag]
+        [tag] name = "  2   " [/tag]
+        [tag] name = "  3   " [/tag]
+        [tag] name = "  4   " [/tag]
+        [tag] name = "  5   " [/tag]
+        [tag] name = "  6   " [/tag]
+        [tag] name = "  7   " [/tag]
+        [tag] name = "  8   " [/tag]
+        [tag] name = "  9   " [/tag]
 [/tags]
 
 [root]
@@ -180,15 +182,15 @@
         client_round         = true
         client_auto_center   = false
         border_height        = 6
-        border_shadow        = false
+        border_shadow        = true
         #border_normal        = "#1f1e1c"
         #resize_corner_normal = "#1f1e1c"
-        border_normal        = "#1f1e1c"
-        resize_corner_normal = "#1f1e1c"
+        border_normal        = "#3f3e3c"
+        resize_corner_normal = "#3f3e3c"
         #border_focus         = "#4b324c"
         #resize_corner_focus  = "#4b324c"
-        border_focus         = "#4f4e4c"
-        resize_corner_focus  = "#4f4e4c"
+        border_focus         = "#5f5e5c"
+        resize_corner_focus  = "#5f5e5c"
 
         set_new_win_master = false
 
@@ -206,6 +208,9 @@
 
         # Modifier for mouse use
         modifier = "Super"
+
+        light_shade =  0.05
+        dark_shade  = -0.05
 
         # *DEPRECATED* but works, see [rules] section
         # Set automatic free or max client
@@ -288,7 +293,7 @@
                 # Available "center", "left", "right" menu align. Default: "center".
                 align = "left"
 
-                fg_focus  = "#d3caaa" bg_focus  = "#4f4e4c"
+                fg_focus  = "#d3caaa" bg_focus  = "#5f5e5c"
                 fg_normal = "#d3caaa" bg_normal = "#383734"
 
                 [item] name = "Terminal"         func = "spawn" cmd = "roxterm || xterm" [/item]
@@ -309,7 +314,7 @@
                 name = "clientmenu"
                 align = "left"
 
-                fg_focus  = "#d3caaa" bg_focus  = "#4f4e4c"
+                fg_focus  = "#d3caaa" bg_focus  = "#5f5e5c"
                 fg_normal = "#d3caaa" bg_normal = "#383734"
 
                 # Check items: possible 'check_max' or 'check_free'.
