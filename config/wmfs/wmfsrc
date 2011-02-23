@@ -34,8 +34,8 @@
         border = true
         # selbar = false   #not worked now, see section [selbar]
 
-        light_shade =  0.05
-        dark_shade  = -0.05
+        light_shade =  0.08
+        dark_shade  = -0.08
 
         [systray]
                 # Enable/disable systray
@@ -209,8 +209,8 @@
         # Modifier for mouse use
         modifier = "Super"
 
-        light_shade =  0.05
-        dark_shade  = -0.05
+        light_shade =  0.08
+        dark_shade  = -0.08
 
         # *DEPRECATED* but works, see [rules] section
         # Set automatic free or max client
@@ -224,29 +224,29 @@
         [mouse] button = "3" func = "mouse_resize" [/mouse]
 
         # Remove this section to delete the titlebar.
-#       [titlebar]
-#               stipple   = false
-#               height    = 22
-#               fg_normal = "#d6d69c"
-#               fg_focus  = "#fcaf3e"
+       #[titlebar]
+       #        stipple   = false
+       #        height    = 22
+       #        fg_normal = "#6e6958"
+       #        fg_focus  = "#d3caaa"
 
-#               [mouse] button = "1" func = "client_raise" [/mouse]
-#               [mouse] button = "1" func = "mouse_move"   [/mouse]
-#               [mouse] button = "2" func = "client_kill"  [/mouse]
-#               [mouse] button = "3" func = "client_raise" [/mouse]
-#               [mouse] button = "3" func = "mouse_resize" [/mouse]
+       #        [mouse] button = "1" func = "client_raise" [/mouse]
+       #        [mouse] button = "1" func = "mouse_move"   [/mouse]
+       #        [mouse] button = "2" func = "client_kill"  [/mouse]
+       #        [mouse] button = "3" func = "client_raise" [/mouse]
+       #        [mouse] button = "3" func = "mouse_resize" [/mouse]
 
-#              #[button]
-#              #        # Available "free", "max", "tile" flags of button.
-#              #        flags = "free,max,tile"
-#              #        [mouse] button = "1" func = "client_kill"             [/mouse]
-#              #        [mouse] button = "3" func = "menu" cmd = "clientmenu" [/mouse]
-#              #
-#              #        #[line] coord = {1, 1, 4, 1} [/line]
-#              #        #[line] coord = {1, 1, 1, 4} [/line]
-#              #        #[line] coord = {1, 4, 4, 4} [/line]
-#              #[/button]
-#       [/titlebar]
+       #       #[button]
+       #       #        # Available "free", "max", "tile" flags of button.
+       #       #        flags = "free,max,tile"
+       #       #        [mouse] button = "1" func = "client_kill"             [/mouse]
+       #       #        [mouse] button = "3" func = "menu" cmd = "clientmenu" [/mouse]
+       #       #
+       #       #        #[line] coord = {1, 1, 4, 1} [/line]
+       #       #        #[line] coord = {1, 1, 1, 4} [/line]
+       #       #        #[line] coord = {1, 4, 4, 4} [/line]
+       #       #[/button]
+       #[/titlebar]
 [/client]
 
 [rules]
