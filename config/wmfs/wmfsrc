@@ -34,8 +34,8 @@
         border = true
         # selbar = false   #not worked now, see section [selbar]
 
-        light_shade =  0.08
-        dark_shade  = -0.08
+        light_shade =  0.10
+        dark_shade  = -0.15
 
         [systray]
                 # Enable/disable systray
@@ -209,8 +209,8 @@
         # Modifier for mouse use
         modifier = "Super"
 
-        light_shade =  0.08
-        dark_shade  = -0.08
+        light_shade =  0.10
+        dark_shade  = -0.15
 
         # *DEPRECATED* but works, see [rules] section
         # Set automatic free or max client
