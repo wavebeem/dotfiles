@@ -9,6 +9,7 @@
 [misc]
         #font = "luxi sans-9:bold"
         font = "dejavu sans-9:bold"
+        #font = "dejavu sans-8:bold"
         #font = "droid sans-9:bold"
         #font = "terminus-10:bold"
         #font = "terminus-ja-11:bold"
@@ -34,8 +35,10 @@
         border = true
         # selbar = false   #not worked now, see section [selbar]
 
-        light_shade =  0.10
-        dark_shade  = -0.15
+        #height = 18
+
+        light_shade =  0.05
+        dark_shade  = -0.50
 
         [systray]
                 # Enable/disable systray
@@ -209,8 +212,8 @@
         # Modifier for mouse use
         modifier = "Super"
 
-        light_shade =  0.10
-        dark_shade  = -0.15
+        light_shade =  0.05
+        dark_shade  = -0.50
 
         # *DEPRECATED* but works, see [rules] section
         # Set automatic free or max client
@@ -355,11 +358,6 @@
         # Quit wmfs.
         [key] mod = {"Shift", "Super"} key = "q" func = "quit" [/key]
 
-        # Swap current client with the next.
-        [key] mod = {"Super", "Shift"} key = "j" func = "client_swap_next" [/key]
-
-        # Swap current client with the previous.
-        [key] mod = {"Super", "Shift"} key = "k" func = "client_swap_prev" [/key]
 
         # Toggle maximum the selected client
         [key] mod = {"Super"} key = "m" func = "toggle_max" [/key]
@@ -378,39 +376,38 @@
         [key] mod = {"Shift", "Super"} key = "t" func = "toggle_tagautohide" [/key]
 
         # Select the next client.
-        [key] mod = {"Super"} key = "j" func = "client_next" [/key]
-
         # Select the previous client.
+        [key] mod = {"Super"} key = "j" func = "client_next" [/key]
         [key] mod = {"Super"} key = "k" func = "client_prev" [/key]
 
-        # Select the next tag.
-        #[key] mod = {"Super", "Control"} key = "l" func = "tag_next" [/key]
+        # Swap current client with the next.
+        # Swap current client with the previous.
+        [key] mod = {"Super", "Shift"} key = "j" func = "client_swap_next" [/key]
+        [key] mod = {"Super", "Shift"} key = "k" func = "client_swap_prev" [/key]
 
+        # Select the next tag.
         # Select the previous tag.
+        #[key] mod = {"Super", "Control"} key = "l" func = "tag_next" [/key]
         #[key] mod = {"Super", "Control"} key = "h" func = "tag_prev" [/key]
 
         # Select the next visible tag.
-        [key] mod = {"Super", "Alt"} key = "l" func = "tag_next_visible" [/key]
-
         # Select the previous visible tag.
+        [key] mod = {"Super", "Alt"} key = "l" func = "tag_next_visible" [/key]
         [key] mod = {"Super", "Alt"} key = "h" func = "tag_prev_visible" [/key]
 
         # Set the next layout.
-        [key] mod = {"Super"} key = "u" func = "layout_next" [/key]
-
         # Set the previous layout.
+        [key] mod = {"Super"         } key = "u" func = "layout_next" [/key]
         [key] mod = {"Super", "Shift"} key = "u" func = "layout_prev" [/key]
 
         # Increase mwfact.
-        [key] mod = {"Super"} key = "l" func = "set_mwfact" cmd = "+0.025" [/key]
-
         # Decrease mwfact.
+        [key] mod = {"Super"} key = "l" func = "set_mwfact" cmd = "+0.025" [/key]
         [key] mod = {"Super"} key = "h" func = "set_mwfact" cmd = "-0.025" [/key]
 
         # Increase nmaster.
-        [key] mod = {"Super"} key = "d" func = "set_nmaster" cmd = "+1" [/key]
-
         # Decease nmaster.
+        [key] mod = {"Super"         } key = "d" func = "set_nmaster" cmd = "+1" [/key]
         [key] mod = {"Super", "Shift"} key = "d" func = "set_nmaster" cmd = "-1" [/key]
 
         #Launcher.
