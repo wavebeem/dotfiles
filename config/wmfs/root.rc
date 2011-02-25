@@ -7,3 +7,4 @@
         [mouse] button = "4" func = "tag_prev"              [/mouse]
         [mouse] button = "3" func = "menu" cmd = "rootmenu" [/mouse]
 [/root]
+# vim: ft=conf:

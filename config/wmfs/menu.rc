@@ -39,3 +39,4 @@
                 [item] name = "Free"     func = "toggle_free" check = "check_free" [/item]
         [/set_menu]
 [/menu]
+# vim: ft=conf:

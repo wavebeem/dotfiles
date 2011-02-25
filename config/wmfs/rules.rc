@@ -30,3 +30,4 @@
                #max      = false      # Set automatic maximized client
        [/rule]
 [/rules]
+# vim: ft=conf:

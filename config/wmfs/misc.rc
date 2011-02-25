@@ -19,3 +19,4 @@
         focus_pointer_click = true
         status_timing       = 1     #seconds
 [/misc]
+# vim: ft=conf:

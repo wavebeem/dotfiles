@@ -16,3 +16,4 @@
 @include "~/.config/wmfs/menu.rc"
 @include "~/.config/wmfs/launcher.rc"
 @include "~/.config/wmfs/keys.rc"
+# vim: ft=conf:

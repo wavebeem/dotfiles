@@ -33,3 +33,4 @@
         [layout] type = "free"               symbol = "FREE"    [/layout]
 
 [/layouts]
+# vim: ft=conf:

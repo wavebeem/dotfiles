@@ -129,3 +129,4 @@
         # set_layout # set layout. need to be called with cmd = "<layout_name>"
         # ignore_next_client_rules # ignore the rule the next time a rule is called
 [/keys]
+# vim: ft=conf:
