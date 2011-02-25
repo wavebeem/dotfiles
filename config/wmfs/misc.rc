@@ -1,0 +1,21 @@
+[misc]
+        #font = "luxi sans-9:bold"
+        font = "dejavu sans-9:bold"
+        #font = "dejavu sans-8:bold"
+        #font = "droid sans-9:bold"
+        #font = "terminus-10:bold"
+        #font = "terminus-ja-11:bold"
+        #font = "Fixed-14:bold"
+        #font = "unifont-10:bold"
+        raisefocus         = false
+        focus_follow_mouse = true
+
+        # Opacity of inactive windows out of 255
+        opacity = 240
+
+        # focus_pointer_click: click on unfocused client area:
+        # true  -- default, set focus
+        # false -- click go to client; including dockapps
+        focus_pointer_click = true
+        status_timing       = 1     #seconds
+[/misc]

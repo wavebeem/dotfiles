@@ -1,0 +1,70 @@
+[client]
+        client_round         = true
+        client_auto_center   = false
+        border_height        = 6
+        border_shadow        = true
+        #border_normal        = "#1f1e1c"
+        #resize_corner_normal = "#1f1e1c"
+        border_normal        = "#3f3e3c"
+        resize_corner_normal = "#3f3e3c"
+        #border_focus         = "#4b324c"
+        #resize_corner_focus  = "#4b324c"
+        border_focus         = "#5f5e5c"
+        resize_corner_focus  = "#5f5e5c"
+
+        set_new_win_master = false
+
+        new_client_get_mouse = true
+
+        ## Red
+        #border_focus         = "#591a32"
+        #resize_corner_focus  = "#591a32"
+
+        #default_open_tag     = 4 # send all client that have no tag rule in this default tag
+        #default_open_screen  = 1 # same as above but for the screen
+
+        # Space between tiled clients
+        padding = 0
+
+        # Modifier for mouse use
+        modifier = "Super"
+
+        light_shade =  0.05
+        dark_shade  = -0.50
+
+        # *DEPRECATED* but works, see [rules] section
+        # Set automatic free or max client
+        # autofree = "xterm|MPlayer"
+        # automax  = "Navigator"
+
+        [mouse] button = "1" func = "client_raise" [/mouse]
+        [mouse] button = "1" func = "mouse_move"   [/mouse]
+        [mouse] button = "2" func = "client_kill"  [/mouse]
+        [mouse] button = "3" func = "client_raise" [/mouse]
+        [mouse] button = "3" func = "mouse_resize" [/mouse]
+
+        # Remove this section to delete the titlebar.
+       #[titlebar]
+       #        stipple   = false
+       #        height    = 22
+       #        fg_normal = "#6e6958"
+       #        fg_focus  = "#d3caaa"
+
+       #        [mouse] button = "1" func = "client_raise" [/mouse]
+       #        [mouse] button = "1" func = "mouse_move"   [/mouse]
+       #        [mouse] button = "2" func = "client_kill"  [/mouse]
+       #        [mouse] button = "3" func = "client_raise" [/mouse]
+       #        [mouse] button = "3" func = "mouse_resize" [/mouse]
+
+       #       #[button]
+       #       #        # Available "free", "max", "tile" flags of button.
+       #       #        flags = "free,max,tile"
+       #       #        [mouse] button = "1" func = "client_kill"             [/mouse]
+       #       #        [mouse] button = "3" func = "menu" cmd = "clientmenu" [/mouse]
+       #       #
+       #       #        #[line] coord = {1, 1, 4, 1} [/line]
+       #       #        #[line] coord = {1, 1, 1, 4} [/line]
+       #       #        #[line] coord = {1, 4, 4, 4} [/line]
+       #       #[/button]
+       #[/titlebar]
+[/client]
