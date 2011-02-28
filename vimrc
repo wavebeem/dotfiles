@@ -68,6 +68,9 @@ au filetype java    abbr sop System.out.println
 " LaTeX
 au filetype plaintex  set textwidth=78 spelllang=en_us
 
+" Objective-C
+au BufNewFile,BufRead *.m  set ft=objc
+
 au BufNewFile,BufRead *.txt  set ft=text
 au BufNewFile,BufRead todo   set ft=text
 au filetype text set textwidth=78 spelllang=en_us
