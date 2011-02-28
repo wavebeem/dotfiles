@@ -28,7 +28,7 @@ export LESS_TERMCAP_us=$'\E[01;36m'
 export RI="-f ansi"
 
 alias wu='ssh bmock@shell.willamette.edu'
-alias chitown='ssh -p 23 saikobee@dadis.dyndns.org'
+alias dadis='ssh -p 23 saikobee@dadis.dyndns.org'
 
 alias dim='echo ${COLUMNS}x${LINES}'
 alias sl='sl -alF'
@@ -75,9 +75,9 @@ alias vim='vim -p'
 alias du='du -csh'
 
 serv() {
-	prog="$1"
+    prog="$1"
     shift
-	sudo "/etc/rc.d/$prog" "$@"
+    sudo "/etc/rc.d/$prog" "$@"
 }
 
 # Quicker job control
@@ -125,6 +125,6 @@ export LESS="-R"
 # Greet me with ASCII art,
 # if the file exists and we're not doing SSH
 if [ -f "$HOME/totoro.ascii" ] && [ "$SSH_CLIENT" = "" ]; then
-	cat "$HOME/totoro.ascii"
+    cat "$HOME/totoro.ascii"
     echo
 fi
