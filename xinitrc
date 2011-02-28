@@ -50,12 +50,9 @@ xsetroot -cursor_name left_ptr &
 # Enable Ctrl-Alt-Backspace for zapping X
 setxkbmap -option terminate:ctrl_alt_bksp &
 
-# Load additional xinitrc files like GDM
-source /etc/X11/xinit/xinitrc.d/* &
-
 # Load keybindings
 #xbindkeys &
-SleepDo 2 xbindkeys &
+SleepDo 1 xbindkeys &
 
 # Load graphics settings
 SleepDo 1 nvidia-settings -l &
@@ -67,7 +64,7 @@ thunar --daemon &
 #dcompmgr --gl &
 
 # Put proper text into the wmfs bars
-wmfs-bars.sh &
+SleepDo 1 wmfs-bars.sh &
 
 Autostart &
 
