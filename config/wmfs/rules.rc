@@ -27,7 +27,7 @@
                #screen   = 0          # Screen to use
                #tag      = 2          # Tag number of apps
                #free     = true       # Set automatic free client
-               #max      = false      # Set automatic maximized client
+               #max      = true       # Set automatic maximized client
        [/rule]
 [/rules]
 # vim: ft=conf:
