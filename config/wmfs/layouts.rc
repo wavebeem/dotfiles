@@ -1,12 +1,12 @@
 [layouts]
         fg = "#d3caaa"
-        bg = "#2f2e2c"
+        bg = "#4f4e4c"
 
         # Border around the layout button.
         border = true
 
         # Value menu or switch.
-        system = "switch"
+        system = "menu"
 
         # Value left or right.
         placement = "right"
@@ -15,7 +15,7 @@
         keep_layout_geo = true
 
         # Symbol displayed for the selected layout in the list
-        selected_layout_symbol = ">"
+        selected_layout_symbol = ">>>"
 
         # Width of layout button
         # layout_button_width = x
