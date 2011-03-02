@@ -1,4 +1,6 @@
 " Vim color file
+" Name:     robokai
+" Author:   Brian Mock
 
 " Init
 set background=dark
