@@ -61,7 +61,7 @@ SleepDo 1 nvidia-settings -l &
 thunar --daemon &
 
 # Pretty window fading
-#dcompmgr --gl &
+#dcompmgr &
 
 # Put proper text into the wmfs bars
 SleepDo 1 wmfs-bars.sh &
