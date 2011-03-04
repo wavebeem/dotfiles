@@ -30,7 +30,7 @@
         modifier = "Super"
 
         light_shade =  0.05
-        dark_shade  = -0.50
+        dark_shade  = -0.20
 
         # *DEPRECATED* but works, see [rules] section
         # Set automatic free or max client
