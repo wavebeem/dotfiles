@@ -57,7 +57,7 @@
 
         [tag]
             name = "  1   "
-            layout = "tile_botom"
+            layout = "tile_bottom"
             nmaster = 2
         [/tag]
         [tag] name = "  2   " [/tag]
