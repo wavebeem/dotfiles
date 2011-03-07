@@ -76,11 +76,11 @@ Start() {
 # Start i3
 # Start dwm
 # Start wmii
-  Start wmfs
+# Start wmfs
 # Start xfwm4
 # Start xmonad
 # Start startkde
 # Start startxfce4
-# Start ~/wmfs/wmfs
+  Start ~/wmfs/wmfs
 # Start gnome-session
 # Start openbox-session
