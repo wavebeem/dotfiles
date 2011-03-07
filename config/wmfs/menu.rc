@@ -12,15 +12,31 @@
                 fg_focus  = "#d3caaa" bg_focus  = "#5f5e5c"
                 fg_normal = "#d3caaa" bg_normal = "#383734"
 
-                [item] name = "Terminal"         func = "spawn" cmd = "roxterm || xterm" [/item]
-                [item] name = "Change Wallpaper" func = "spawn" cmd = "nitrogen" [/item]
-                [item] name = "NVIDIA Settings" func = "spawn" cmd = "nvidia-settings" [/item]
-                [item] name = "NVIDIA Settings (root)" func = "spawn" cmd = "gksudo nvidia-settings" [/item]
+                [item]
+                    name = "Terminal"        
+                    func = "spawn"
+                    cmd = "roxterm || xterm"
+                [/item]
+                [item]
+                    name = "Change Wallpaper"
+                    func = "spawn"
+                    cmd = "nitrogen"
+                [/item]
+                [item]
+                    name = "NVIDIA Settings"
+                    func = "spawn"
+                    cmd = "nvidia-settings"
+                [/item]
+                [item]
+                    name = "NVIDIA Settings (root)"
+                    func = "spawn"
+                    cmd = "gksudo nvidia-settings"
+                [/item]
                 #[item] name = "Next Tag"        func = "tag_next"                  [/item]
                 #[item] name = "Previous Tag"    func = "tag_prev"                  [/item]
                 #[item] name = "Next Layout"     func = "layout_next"               [/item]
                 #[item] name = "Previous Layout" func = "layout_prev"               [/item]
-                [item] name = "Toggle Infobar"  func = "toggle_infobar_position"   [/item]
+                #[item] name = "Toggle Infobar"  func = "toggle_infobar_position"   [/item]
                 [item] name = "Quit WMFS"       func = "quit"                      [/item]
 
                 #[item] name = "Applications" submenu = "appmenu"                   [/item]
