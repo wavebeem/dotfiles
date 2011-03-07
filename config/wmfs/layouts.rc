@@ -21,16 +21,16 @@
         # layout_button_width = x
 
         # Tiling layouts
-        [layout] type = "free"               symbol = "FREE  "    [/layout]
-        [layout] type = "max"                symbol = "MAX  "     [/layout]
-        [layout] type = "mirror_horizontal"  symbol = "VMIRROR  " [/layout]
-        [layout] type = "mirror_vertical"    symbol = "MIRROR  "  [/layout]
-        [layout] type = "tile_grid_vertical" symbol = "VGRID  "   [/layout]
-        [layout] type = "tile_grid"          symbol = "GRID  "    [/layout]
-        [layout] type = "tile_bottom"        symbol = "BOTTOM  "  [/layout]
-        [layout] type = "tile_top"           symbol = "TOP  "     [/layout]
-        [layout] type = "tile_left"          symbol = "LEFT  "    [/layout]
         [layout] type = "tile_right"         symbol = "RIGHT  "   [/layout]
+        [layout] type = "tile_bottom"        symbol = "BOT  "  [/layout]
+        [layout] type = "tile_grid_vertical" symbol = "VGRID  "   [/layout]
+        [layout] type = "max"                symbol = "MAX  "     [/layout]
+        # [layout] type = "tile_left"          symbol = "LEFT  "    [/layout]
+        # [layout] type = "tile_top"           symbol = "TOP  "     [/layout]
+        # [layout] type = "tile_grid"          symbol = "GRID  "    [/layout]
+        # [layout] type = "mirror_vertical"    symbol = "MIRROR  "  [/layout]
+        # [layout] type = "mirror_horizontal"  symbol = "VMIRROR  " [/layout]
+        # [layout] type = "free"               symbol = "FREE  "    [/layout]
 
 [/layouts]
 # vim: ft=conf:
