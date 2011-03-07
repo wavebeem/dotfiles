@@ -7,8 +7,8 @@
 
         #height = 18
 
-        light_shade =  0.05
-        dark_shade  = -0.20
+        light_shade =  0.00
+        dark_shade  = -0.05
 
         [systray]
                 # Enable/disable systray

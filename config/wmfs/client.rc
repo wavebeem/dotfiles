@@ -29,8 +29,8 @@
         # Modifier for mouse use
         modifier = "Super"
 
-        light_shade =  0.05
-        dark_shade  = -0.20
+        light_shade =  0.00
+        dark_shade  = -0.05
 
         # *DEPRECATED* but works, see [rules] section
         # Set automatic free or max client

@@ -1,12 +1,12 @@
 [layouts]
         fg = "#d3caaa"
-        bg = "#4f4e4c"
+        bg = "#2f2e2c"
 
         # Border around the layout button.
         border = true
 
         # Value menu or switch.
-        system = "menu"
+        system = "switch"
 
         # Value left or right.
         placement = "right"
@@ -21,16 +21,16 @@
         # layout_button_width = x
 
         # Tiling layouts
-        [layout] type = "tile_right"         symbol = "RIGHT"   [/layout]
-        [layout] type = "tile_left"          symbol = "LEFT"    [/layout]
-        [layout] type = "tile_top"           symbol = "TOP"     [/layout]
-        [layout] type = "tile_bottom"        symbol = "BOTTOM"  [/layout]
-        [layout] type = "tile_grid"          symbol = "GRID"    [/layout]
-        [layout] type = "tile_grid_vertical" symbol = "VGRID"   [/layout]
-        [layout] type = "mirror_vertical"    symbol = "MIRROR"  [/layout]
-        [layout] type = "mirror_horizontal"  symbol = "VMIRROR" [/layout]
-        [layout] type = "max"                symbol = "MAX"     [/layout]
-        [layout] type = "free"               symbol = "FREE"    [/layout]
+        [layout] type = "free"               symbol = "FREE  "    [/layout]
+        [layout] type = "max"                symbol = "MAX  "     [/layout]
+        [layout] type = "mirror_horizontal"  symbol = "VMIRROR  " [/layout]
+        [layout] type = "mirror_vertical"    symbol = "MIRROR  "  [/layout]
+        [layout] type = "tile_grid_vertical" symbol = "VGRID  "   [/layout]
+        [layout] type = "tile_grid"          symbol = "GRID  "    [/layout]
+        [layout] type = "tile_bottom"        symbol = "BOTTOM  "  [/layout]
+        [layout] type = "tile_top"           symbol = "TOP  "     [/layout]
+        [layout] type = "tile_left"          symbol = "LEFT  "    [/layout]
+        [layout] type = "tile_right"         symbol = "RIGHT  "   [/layout]
 
 [/layouts]
 # vim: ft=conf:

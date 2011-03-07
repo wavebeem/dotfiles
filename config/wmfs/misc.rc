@@ -10,6 +10,8 @@
         raisefocus         = false
         focus_follow_mouse = true
 
+        one_shadow = true
+
         # Opacity of inactive windows out of 255
         opacity = 240
 
