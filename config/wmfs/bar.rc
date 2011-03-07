@@ -1,5 +1,4 @@
 [bar]
-        #bg     = "#6f0e0c"
         bg     = "#2f2e2c"
         fg     = "#d3caaa"
         border = true

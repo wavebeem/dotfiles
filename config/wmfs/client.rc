@@ -3,12 +3,8 @@
         client_auto_center   = false
         border_height        = 6
         border_shadow        = true
-        #border_normal        = "#1f1e1c"
-        #resize_corner_normal = "#1f1e1c"
         border_normal        = "#3f3e3c"
         resize_corner_normal = "#3f3e3c"
-        #border_focus         = "#4b324c"
-        #resize_corner_focus  = "#4b324c"
         border_focus         = "#5f5e5c"
         resize_corner_focus  = "#5f5e5c"
 
