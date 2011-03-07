@@ -55,7 +55,11 @@
         # clients option is *DEPRECATED* but works, see [rules] section
         #[tag] name = "two"  clients = {"Browser"} [/tag]
 
-        [tag] name = "  1   " [/tag]
+        [tag]
+            name = "  1   "
+            layout = "tile_botom"
+            nmaster = 2
+        [/tag]
         [tag] name = "  2   " [/tag]
         [tag] name = "  3   " [/tag]
         [tag] name = "  4   " [/tag]
