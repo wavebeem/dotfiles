@@ -1,4 +1,4 @@
-= Using dotfiles
+# Using dotfiles
 
 The `make_links.sh` script facilitates copying over configuration files
 from the git repository to the home directory. Simply edit the files
