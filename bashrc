@@ -67,6 +67,8 @@ export VISUAL='vim'
 export BROWSER='w3m'
 export PAGER='less'
 
+alias img="viewnior"
+
 alias ls='ls --color=auto'
 alias l='ls -hl'
 alias la='l -a'
