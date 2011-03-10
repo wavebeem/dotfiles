@@ -9,6 +9,7 @@
         #font = "unifont-10:bold"
         raisefocus         = false
         focus_follow_mouse = true
+        focus_follow_movement = false
 
         one_shadow = true
 
