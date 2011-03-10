@@ -66,7 +66,7 @@ thunar --daemon &
 # Put proper text into the wmfs bars
 SleepDo 1 wmfs-bars.sh &
 
-Autostart &
+SleepDo 1 Autostart &
 
 # Launch a window manager with proper permissions
 Start() {
