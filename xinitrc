@@ -35,7 +35,7 @@ SleepDo 2 setxkbmap us \
     -option  compose:caps  &
 
 # Load font and cursor settings
-xrdb ~/.Xdefaults &
+SleepDo 1 xrdb ~/.Xdefaults &
 
 # Remove bell
 xset -b &
