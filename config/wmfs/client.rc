@@ -3,10 +3,10 @@
         client_auto_center   = false
         border_height        = 6
         border_shadow        = true
-        border_normal        = "#3f3e3c"
-        resize_corner_normal = "#3f3e3c"
-        border_focus         = "#5f5e5c"
-        resize_corner_focus  = "#5f5e5c"
+        border_normal        = "#4f4e4c"
+        resize_corner_normal = "#4f4e4c"
+        border_focus         = "#7f7e7c"
+        resize_corner_focus  = "#7f7e7c"
 
         set_new_win_master = false
 

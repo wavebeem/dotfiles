@@ -1,5 +1,5 @@
 [bar]
-        bg     = "#2f2e2c"
+        bg     = "#3f3e3c"
         fg     = "#d3caaa"
         border = true
         # selbar = false   #not worked now, see section [selbar]
@@ -23,7 +23,7 @@
 
         # Remove this section to disable the selbar.
         [selbar]
-                bg = "#2f2e2c"
+                bg = "#3f3e3c"
                 fg = "#d3caaa"
 
                 # Cut title length

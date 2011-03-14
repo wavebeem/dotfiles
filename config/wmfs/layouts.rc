@@ -1,6 +1,6 @@
 [layouts]
         fg = "#d3caaa"
-        bg = "#2f2e2c"
+        bg = "#3f3e3c"
 
         # Border around the layout button.
         border = true
