@@ -59,7 +59,7 @@ Mod4 + F12
 "MAMENU"
 Mod4 + g
 
-#"zenity --calendar"
+"zenity --calendar"
 Control + Mod4 + c
 
 "wmii-next-tag.sh"
