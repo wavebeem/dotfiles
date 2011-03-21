@@ -62,7 +62,10 @@
             nmaster = 2
             screen  = 1
         [/tag]
-        [tag] name = "  1   " [/tag]
+        [tag]
+            name    = "  1   "
+            screen  = 0
+        [/tag]
         [tag] name = "  2   " [/tag]
         [tag] name = "  3   " [/tag]
         [tag] name = "  4   " [/tag]
