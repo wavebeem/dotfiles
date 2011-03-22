@@ -25,7 +25,7 @@ export XMODIFIERS="@im=ibus"
 export GTK_IM_MODULE="ibus"
 export QT_IM_MODULE="ibus"
 
-ibus-daemon &
+SleepDo 1 ibus-daemon &
 
 # Enable compose key
 SleepDo 2 setxkbmap us \
@@ -38,17 +38,17 @@ SleepDo 2 setxkbmap us \
 SleepDo 1 xrdb ~/.Xdefaults &
 
 # Remove bell
-xset -b &
+SleepDo 1 xset -b &
 
 # Remove screen blanking
-xset -dpms &
+SleepDo 1 xset -dpms &
 
 # Set cursor type on root window (avoid X-shape)
-xsetroot -solid black &
-xsetroot -cursor_name left_ptr &
+SleepDo 1 xsetroot -solid black &
+SleepDo 1 xsetroot -cursor_name left_ptr &
 
 # Enable Ctrl-Alt-Backspace for zapping X
-setxkbmap -option terminate:ctrl_alt_bksp &
+SleepDo 1 setxkbmap -option terminate:ctrl_alt_bksp &
 
 # Load keybindings
 #xbindkeys &
@@ -58,7 +58,7 @@ SleepDo 1 xbindkeys &
 SleepDo 1 nvidia-settings -l &
 
 # Preload thunar for very slight speed increases
-thunar --daemon &
+SleepDo 1 thunar --daemon &
 
 # Pretty window fading
 #dcompmgr &
