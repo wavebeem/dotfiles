@@ -1,5 +1,9 @@
 # vim: syn=sh:
 
+# Enable Japanese input
+export XMODIFIERS="@im=ibus"
+export GTK_IM_MODULE="ibus"
+export QT_IM_MODULE="ibus"
 
 # Sleep before doing a command
 SleepDo() {
@@ -20,53 +24,50 @@ Autostart() {
     unclutter -noevents &
 }
 
-# Enable Japanese input
-export XMODIFIERS="@im=ibus"
-export GTK_IM_MODULE="ibus"
-export QT_IM_MODULE="ibus"
+Basics() {
+    ibus-daemon &
 
-SleepDo 1 ibus-daemon &
+    # Enable compose key
+    setxkbmap us \
+        -variant altgr-intl \
+        -option  nodeadkeys  \
+        -option  compose:ralt \
+        -option  compose:caps  &
 
-# Enable compose key
-SleepDo 2 setxkbmap us \
-    -variant altgr-intl \
-    -option  nodeadkeys  \
-    -option  compose:ralt \
-    -option  compose:caps  &
+    # Load font and cursor settings
+    xrdb ~/.Xdefaults &
 
-# Load font and cursor settings
-SleepDo 1 xrdb ~/.Xdefaults &
+    # Remove bell
+    xset -b &
 
-# Remove bell
-SleepDo 1 xset -b &
+    # Remove screen blanking
+    xset -dpms &
 
-# Remove screen blanking
-SleepDo 1 xset -dpms &
+    # Set cursor type on root window (avoid X-shape)
+    xsetroot -solid black &
+    xsetroot -cursor_name left_ptr &
 
-# Set cursor type on root window (avoid X-shape)
-SleepDo 1 xsetroot -solid black &
-SleepDo 1 xsetroot -cursor_name left_ptr &
+    # Enable Ctrl-Alt-Backspace for zapping X
+    setxkbmap -option terminate:ctrl_alt_bksp &
 
-# Enable Ctrl-Alt-Backspace for zapping X
-SleepDo 1 setxkbmap -option terminate:ctrl_alt_bksp &
+    # Load keybindings
+    xbindkeys &
 
-# Load keybindings
-#xbindkeys &
-SleepDo 1 xbindkeys &
+    # Load graphics settings
+    nvidia-settings -l &
 
-# Load graphics settings
-SleepDo 1 nvidia-settings -l &
+    # Preload thunar for very slight speed increases
+    thunar --daemon &
 
-# Preload thunar for very slight speed increases
-SleepDo 1 thunar --daemon &
+    # Pretty window fading
+    #dcompmgr &
 
-# Pretty window fading
-#dcompmgr &
-
-# Put proper text into the wmfs bars
-SleepDo 1 wmfs-bars.sh &
+    # Put proper text into the wmfs bars
+    wmfs-bars.sh &
+}
 
 SleepDo 1 Autostart &
+SleepDo 1 Basics &
 
 # Launch a window manager with proper permissions
 Start() {
@@ -82,5 +83,6 @@ Start() {
 # Start startkde
 # Start startxfce4
   Start ~/wmfs/wmfs
+# Start ~/xorg62/wmfs
 # Start gnome-session
 # Start openbox-session
