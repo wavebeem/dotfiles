@@ -55,8 +55,11 @@ QQ() {
 }
 
 g() {
+    (
+    cd
     eval $(ssh-agent)
     OneOut HomeDo startx > ~/.x.log
+    )
 }
 
 # Surpress annoying FIXME messages from wine to speed up gameplay
