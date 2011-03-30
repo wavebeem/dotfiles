@@ -1,5 +1,5 @@
 [bar]
-        bg     = "#3f3e3c"
+        bg     = "#0f0e0c"
         fg     = "#d3caaa"
         border = true
         # selbar = false   #not worked now, see section [selbar]

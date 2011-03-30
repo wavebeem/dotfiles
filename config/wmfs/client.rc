@@ -5,8 +5,8 @@
         border_shadow        = true
         border_normal        = "#4f4e4c"
         resize_corner_normal = "#4f4e4c"
-        border_focus         = "#7f7e7c"
-        resize_corner_focus  = "#7f7e7c"
+        border_focus         = "#6f6e6c"
+        resize_corner_focus  = "#6f6e6c"
 
         set_new_win_master = false
 

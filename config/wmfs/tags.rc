@@ -14,11 +14,11 @@
         # Press tag number again to toggle between previous tag
         tag_auto_prev  = false
 
-        occupied_bg    = "#5f5e5c"
+        occupied_bg    = "#3f3e3c"
         #occupied_fg    = "#6e6958"
         occupied_fg    = "#d3caaa"
         sel_fg         = "#0f0e0c"
-        sel_bg         = "#8f8e8c"
+        sel_bg         = "#6f6e6c"
         urgent_bg      = "#fcaf3e"
         urgent_fg      = "#000000"
 
