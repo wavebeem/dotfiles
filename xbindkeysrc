@@ -17,8 +17,14 @@ Mod4 + p
 "dmenu.sh"
 Mod4 + Escape
 
+"power-menu.sh"
+Mod4 + o
+
 "xterm"
 Mod4 + F2
+
+"restart xbindkeys"
+Mod4 + F3
 
 "mpc seek -00:00:10"
 Mod4 + comma
