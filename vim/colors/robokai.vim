@@ -11,10 +11,10 @@ let g:colors_name = "robokai"
 
 hi Title        ctermbg=lightred
 
-hi Visual       ctermbg=red    ctermfg=yellow cterm=bold
-hi WarningMsg   ctermbg=red         ctermfg=white
+hi Visual       ctermbg=red    ctermfg=yellow   cterm=bold
+hi WarningMsg   ctermbg=red    ctermfg=white
 
-hi Folded       ctermbg=darkcyan    ctermfg=lightcyan       cterm=bold
+hi Folded       ctermbg=none        ctermfg=black           cterm=bold
 hi FoldColumn   ctermbg=none        ctermfg=white           cterm=none
 
 hi DiffAdd      ctermbg=darkgreen   ctermfg=lightgreen      cterm=bold
