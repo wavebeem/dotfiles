@@ -23,6 +23,11 @@ set number
 " Enable terminal titles (default?)
 set title
 
+" Nice setup for code folding
+set foldmethod=syntax
+set foldlevel=999
+set foldcolumn=1
+
 " Set the height of the command window
 " and enable the wildmenu
 set cmdheight=1
