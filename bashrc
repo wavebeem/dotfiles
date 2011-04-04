@@ -5,7 +5,7 @@ eval $(dircolors)
 set -o vi
 
 # Add my programs to the path
-export PATH="$HOME/bin:$PATH"
+export PATH="$HOME/Abundant/src:$HOME/bin:$PATH"
 
 # No more \a
 setterm -blength 0
