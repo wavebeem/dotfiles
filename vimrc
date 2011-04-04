@@ -5,6 +5,9 @@ syntax on
 set bg=dark
 color robokai
 
+" US English spelling
+set spelllang=en_us
+
 " Allow backspacing over everything in insert mode
 set backspace=indent,eol,start
 
