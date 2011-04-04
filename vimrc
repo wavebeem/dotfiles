@@ -44,11 +44,6 @@ set t_vb=
 " Set 256 colors mode
 "set t_Co=256
 
-" Akways put the status line in
-"set laststatus=2
-
-"set foldmethod=syntax
-
 " Enable all mouse settings
 set mouse=a
 
