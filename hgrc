@@ -5,6 +5,7 @@ verbose = True
 [extensions]
 hgk =
 color =
+fetch =
 
 [color]
 mode = auto
