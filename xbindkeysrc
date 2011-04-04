@@ -56,6 +56,9 @@ Mod4 + F12
 #"who.sh"
 #Mod4 + F7
 
+"xscreensaver-command -lock"
+Control + Alt + l
+
 "MAMENU"
 Mod4 + g
 
