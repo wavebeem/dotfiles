@@ -68,22 +68,36 @@ filetype plugin on
 "au filetype cpp     set tags+=/home/brian/cstdlib.tags
 au filetype java    abbr sop System.out.println
 
+au filetype c       abbr MAIN    int main(int argc, char **argv) {
+au filetype cpp     abbr MAIN    int main(int argc, char **argv) {
+
 " LaTeX
-au filetype plaintex  set textwidth=78 spelllang=en_us
+au filetype plaintex  set textwidth=78
 
 " Objective-C
 au BufNewFile,BufRead *.m  set ft=objc
 
 au BufNewFile,BufRead *.txt  set ft=text
 au BufNewFile,BufRead todo   set ft=text
-au filetype text set textwidth=78 spelllang=en_us
+au filetype text set textwidth=78
 au filetype text set tabstop=2 softtabstop=2 shiftwidth=2
 
-au BufNewFile,BufRead README set spelllang=en_us
-au BufNewFile,BufRead scene  set textwidth=80 spelllang=en_us
+au filetype python      set foldmethod=indent
+au filetype haskell     set foldmethod=indent
+au filetype bash        set foldmethod=indent
+au filetype st          set foldmethod=indent
+au filetype vim         set foldmethod=indent
+au filetype javascript  set foldmethod=indent
+au filetype perl        set foldmethod=indent
+au filetype conf        set foldmethod=indent
 
 " Enable syntax highlighting for GLSL files
-au BufNewFile,BufRead *.frag,*.vert,*.fp,*.vp,*.glsl setf glsl 
+au BufNewFile,BufRead *.frag,*.vert,*.fp,*.vp,*.glsl setf glsl
+
+" Highlight space at the end of the line as an error,
+" but don't highlight while in insert mode
+au InsertEnter * match Error //
+au InsertLeave * match Error /\v\s+$/
 
 " Bounce between matching ()[]{} while typing
 set showmatch
