@@ -68,8 +68,8 @@ filetype plugin on
 "au filetype cpp     set tags+=/home/brian/cstdlib.tags
 au filetype java    abbr sop System.out.println
 
-au filetype c       abbr MAIN    int main(int argc, char **argv) {
-au filetype cpp     abbr MAIN    int main(int argc, char **argv) {
+au filetype c       abbr MAIN    int<Return>main(int argc, char **argv) {
+au filetype cpp     abbr MAIN    int<Return>main(int argc, char **argv) {
 
 " LaTeX
 au filetype plaintex  set textwidth=78
