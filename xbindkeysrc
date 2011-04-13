@@ -8,7 +8,7 @@ Mod4 + Return
 "roxterm --profile Huge"
 Control + Mod4 + Return
 
-"dmenu.sh"
+"dmenu_run"
 Mod4 + F1
 
 "dmenu.sh"
