@@ -44,6 +44,12 @@ Mod4 + space
 "mpc stop"
 Mod4 + Alt + space
 
+"mpc del 0"
+Mod4 + Alt + d
+
+"mpc clear"
+Mod4 + Alt + c
+
 "amixer set Master toggle"
 Mod4 + F10
 
