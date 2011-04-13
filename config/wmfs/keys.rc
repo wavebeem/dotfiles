@@ -115,16 +115,18 @@
         [key] mod = {"Control", "Super"} key = "8" func = "tag_toggle_additional" cmd = "8" [/key]
         [key] mod = {"Control", "Super"} key = "9" func = "tag_toggle_additional" cmd = "9" [/key]
 
+        [key] mod = {"Super"} key = "e" func = "toggle_tag_expose" [/key]
+
         # unlisted fonctions that can be used in [key] func = ""
         # client_focus_{right, left, top, bottom}
         # client_ignore_tag # Toggle the client in ignore_tag (display the client on all tags)
         # tag_prev_sel # go back to the previous selected tag
-        # tag_transfert_{next, prev} 
+        # tag_transfert_{next, prev}
         # tag_urgent # go to the urgent tag
         # tag_swap_{next, prev} # swap tag with the previous/next one
         # tag_last # go to the last tag
         # tag_stay_last # toggle the current tag as the last one
-        # toggle_abovefc 
+        # toggle_abovefc
         # screen_prev_sel # go to the previous screen selected
         # set_layout # set layout. need to be called with cmd = "<layout_name>"
         # ignore_next_client_rules # ignore the rule the next time a rule is called

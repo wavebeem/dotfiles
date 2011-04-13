@@ -20,6 +20,9 @@
         # Width of layout button
         layout_button_width = 50
 
+        expose_name    = "EXPOSE"
+        expose_layout  = "grid"
+
         # Tiling layouts
         [layout] type = "tile_right"         symbol = "RGT"  [/layout]
         [layout] type = "tile_bottom"        symbol = "BOT"  [/layout]
