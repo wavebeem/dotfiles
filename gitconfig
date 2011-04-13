@@ -1,24 +1,25 @@
 [user]
-	name = Brian Mock
-	email = mock.brian@gmail.com
+    name = Brian Mock
+    email = mock.brian@gmail.com
 [color]
-	diff = auto
-	status = auto
-	branch = auto
+    diff = auto
+    status = auto
+    branch = auto
 [alias]
-	ci = commit
+    ci = commit
     cia = commit -a
     addi = add --interactive
     addp = add --patch
     diffc = diff --cached
-	co = checkout
+    co = checkout
     cob = checkout -b
     stat = status
     lg = log --stat --graph --decorate --summary --all
     lg1 = log --pretty=oneline
+    d = daemon --export-all --base-path=..
 [core]
-	excludesfile = /home/brian/.gitignore_global
+    excludesfile = /home/brian/.gitignore_global
 [web]
-	browser = chromium
+    browser = chromium
 [browser "chromium"]
-	cmd = chromium
+    cmd = chromium
