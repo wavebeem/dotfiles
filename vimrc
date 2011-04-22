@@ -72,24 +72,24 @@ au filetype c       abbr MAIN    int<Return>main(int argc, char **argv) {
 au filetype cpp     abbr MAIN    int<Return>main(int argc, char **argv) {
 
 " LaTeX
-au filetype plaintex  set textwidth=78
+au filetype plaintex  setl textwidth=78
 
 " Objective-C
-au BufNewFile,BufRead *.m  set ft=objc
+au BufNewFile,BufRead *.m  setl ft=objc
 
-au BufNewFile,BufRead *.txt  set ft=text
-au BufNewFile,BufRead todo   set ft=text
-au filetype text set textwidth=78
-au filetype text set tabstop=2 softtabstop=2 shiftwidth=2
+au BufNewFile,BufRead *.txt  setl ft=text
+au BufNewFile,BufRead todo   setl ft=text
+au filetype text setl textwidth=78
+au filetype text setl tabstop=2 softtabstop=2 shiftwidth=2
 
-au filetype python      set foldmethod=indent
-au filetype haskell     set foldmethod=indent
-au filetype bash        set foldmethod=indent
-au filetype st          set foldmethod=indent
-au filetype vim         set foldmethod=indent
-au filetype javascript  set foldmethod=indent
-au filetype perl        set foldmethod=indent
-au filetype conf        set foldmethod=indent
+au filetype python      setl foldmethod=indent
+au filetype haskell     setl foldmethod=indent
+au filetype bash        setl foldmethod=indent
+au filetype st          setl foldmethod=indent
+au filetype vim         setl foldmethod=indent
+au filetype javascript  setl foldmethod=indent
+au filetype perl        setl foldmethod=indent
+au filetype conf        setl foldmethod=indent
 
 " Enable syntax highlighting for GLSL files
 au BufNewFile,BufRead *.frag,*.vert,*.fp,*.vp,*.glsl setf glsl
