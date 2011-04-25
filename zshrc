@@ -35,17 +35,20 @@ alias ..='cd ..'
 alias vim='vim -p'
 
 # {{{ Color vars
-local dark="%B%F{black}"
-local darki="%f%b"
+local b1="%B"
+local e1="%b"
 
-local light="%B"
-local lighti="%b"
+local b2=""
+local e2=""
+
+local b3="%B%F{black}"
+local e3="%f%b"
 # }}}
 
 export PS1="
-${light}>${lighti} "
+${b1}>${e1}${b2}>${e2}${b3}>${e3} "
 export PS2="
-${light}?${lighti} "
+${b1}?${e1}${b2}?${e2}${b3}?${e3} "
 
 export RPROMPT=""
 
