@@ -35,23 +35,18 @@ alias ..='cd ..'
 alias vim='vim -p'
 
 # {{{ Color vars
-local bmain="%B%F{red}"
-local emain="%f%b"
+local dark="%B%F{black}"
+local darki="%f%b"
 
-local bsec="%B%F{white}"
-local esec="%f%b"
-
-local betc="%B%F{green}"
-local eetc="%f%b"
-
-local brp="%B%F{black}"
-local erp="%f%b"
+local light="%B"
+local lighti="%b"
 # }}}
 
-# Ruby
-export PS1="${betc}{ ${eetc}${bmain}:%n${emain} ${betc}=>${eetc} ${bsec}@%m${esec}${betc} }${eetc} "
-export PS2="${betc}{ ${eetc}${bmain}:%n${emain} ${betc}=>${eetc} ${bsec}@%m${esec}${betc} |${eetc} "
+export PS1="
+${light}>${lighti} "
+export PS2="
+${light}?${lighti} "
 
-export RPROMPT="${brp}%D{%H:%M:%S}${erp}"
+export RPROMPT=""
 
 source ~/.bashrc
