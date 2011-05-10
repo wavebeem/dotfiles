@@ -34,22 +34,67 @@ alias l='ls -halF'
 alias ..='cd ..'
 alias vim='vim -p'
 
-# {{{ Color vars
-local b1="%B"
-local e1="%b"
+Prompt_BW_Gradient() {
+    local b1="%B"
+    local e1="%b"
 
-local b2=""
-local e2=""
+    local b2=""
+    local e2=""
 
-local b3="%B%F{black}"
-local e3="%f%b"
-# }}}
+    local b3="%B%F{black}"
+    local e3="%f%b"
 
-export PS1="
+    export PS1="
 ${b1}>${e1}${b2}>${e2}${b3}>${e3} "
-export PS2="
-${b1}?${e1}${b2}?${e2}${b3}?${e3} "
+    export PS2="${b1}?${e1}${b2}?${e2}${b3}?${e3} "
 
-export RPROMPT=""
+    export RPROMPT=""
+}
+
+Prompt_Rainbow() {
+    local ender="%b%f"
+
+    local     red="%B%F{red}"
+    local  orange="%b%F{yellow}"
+    local  yellow="%B%F{yellow}"
+    local   green="%B%F{green}"
+    local    cyan="%B%F{cyan}"
+    local    blue="%B%F{blue}"
+    local magenta="%B%F{magenta}"
+    local   black="%B%F{black}"
+    local   white="%f%B"
+    local default="%f%b"
+    local    grey="%b%F{gray}"
+    local    gray="%b%F{gray}"
+
+    local char1=">"
+    local char2="?"
+    local space=" "
+
+    export PS1="
+${red}\
+${char1}${orange}\
+${char1}${yellow}\
+${char1}${green}\
+${char1}${cyan}\
+${char1}${blue}\
+${char1}${magenta}\
+${char1}${ender} "
+
+    export PS2="\
+${default}\
+${space}\
+${space}\
+${space}\
+${space}${black}\
+${char2}${grey}\
+${char2}${white}\
+${char2}${ender} "
+
+    export RPROMPT=""
+}
+
+#Prompt_BW_Gradient
+Prompt_Rainbow
 
 source ~/.bashrc
