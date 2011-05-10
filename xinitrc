@@ -67,7 +67,7 @@ Basics() {
 }
 
 SleepDo 2 Autostart &
-SleepDo 2 Basics &
+SleepDo 3 Basics &
 
 # Launch a window manager with proper permissions
 Start() {
