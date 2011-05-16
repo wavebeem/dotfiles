@@ -82,12 +82,12 @@ ${char1}${magenta}\
 ${char1}${ender} "
 
     export PS2="\
-${default}\
-${space}\
-${space}\
-${space}\
-${space}${black}\
+${black}\
+${char2}${black}\
+${char2}${black}\
 ${char2}${grey}\
+${char2}${grey}\
+${char2}${white}\
 ${char2}${white}\
 ${char2}${ender} "
 
