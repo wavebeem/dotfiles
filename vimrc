@@ -29,7 +29,7 @@ set title
 " Nice setup for code folding
 set foldmethod=syntax
 set foldlevel=999
-set foldcolumn=1
+set foldcolumn=2
 
 " Set the height of the command window
 " and enable the wildmenu
