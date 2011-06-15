@@ -16,6 +16,7 @@ SleepDo() {
 
 # Programs to help flesh out a window manager
 Autostart() {
+    xsetroot -solid black &
     nitrogen --restore &
     xscreensaver -no-splash &
     wmname LG3D &
@@ -44,7 +45,6 @@ Basics() {
     xset -dpms &
 
     # Set cursor type on root window (avoid X-shape)
-    xsetroot -solid black &
     xsetroot -cursor_name left_ptr &
 
     # Enable Ctrl-Alt-Backspace for zapping X
