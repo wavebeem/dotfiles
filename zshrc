@@ -71,7 +71,14 @@ Prompt_Rainbow() {
     local char2="?"
     local space=" "
 
-    export PS1="
+    precmd() {
+        echo
+    }
+
+    preexec() {
+    }
+
+    export PS1="\
 ${red}\
 ${char1}${orange}\
 ${char1}${yellow}\
