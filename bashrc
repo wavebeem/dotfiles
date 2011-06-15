@@ -129,7 +129,6 @@ export LESS="-R"
 
 # Greet me with ASCII art,
 # if the file exists and we're not doing SSH
-if [ -f "$HOME/totoro.ascii" ] && [ "$SSH_CLIENT" = "" ]; then
-    cat "$HOME/totoro.ascii"
-    echo
+if [ -f "$HOME/.ascii" ] && [ "$SSH_CLIENT" = "" ]; then
+    cat "$HOME/.ascii"
 fi
