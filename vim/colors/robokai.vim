@@ -43,8 +43,8 @@ hi Identifier       ctermfg=lightgreen
   hi Conditional    ctermfg=lightred
   hi Repeat         ctermfg=lightred
   hi Label          ctermfg=yellow
-  hi Operator       ctermfg=lightgreen
-  hi hsOperator     ctermfg=lightgreen
+  hi Operator       ctermfg=grey
+  hi hsOperator     ctermfg=grey
   hi Keyword        ctermfg=lightred
   hi Exception      ctermfg=lightgreen
 hi PreProc          ctermfg=lightgreen
@@ -107,7 +107,7 @@ hi javaDocTag           ctermfg=grey
 hi javaDocTags          ctermfg=grey
 
 " Perl
-hi perlOperator             ctermfg=lightcyan
+hi perlOperator             ctermfg=grey
 hi perlStatementList        ctermfg=lightcyan
 hi perlStatementScalar      ctermfg=lightcyan
 hi perlStatementVector      ctermfg=lightcyan

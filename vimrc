@@ -64,6 +64,10 @@ map <F2> :set spell!<Enter>
 
 filetype plugin on
 
+" Nice Ruby stuff
+let ruby_operators = 1
+let ruby_fold = 1
+
 "au filetype c       set tags+=/home/brian/stl.tags
 "au filetype cpp     set tags+=/home/brian/cstdlib.tags
 au filetype java    abbr sop System.out.println
