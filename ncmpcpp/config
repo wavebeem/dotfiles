@@ -7,7 +7,7 @@
 #
 ## set it in order to make tag editor and renaming files work properly
 #
-mpd_host = "localhost"
+mpd_host = "truffle"
 
 mpd_port = "6600"
 
@@ -110,6 +110,8 @@ playlist_disable_highlight_delay = "2"
 #song_list_format = "{$3 %l $9}{ %t }|{$2 %f $9}$R{$6 %b $9}{$7 %a $9}"
 #song_list_format = "{ %t }|{$2 %f $9}$R{$3 %l $9}{$6 %b $9}{$7 %a $9}"
 song_list_format = "{$4 %t $9}|{$2 %f $9}$R{$7 %b $9}"
+#song_list_format = "$5%n$9$1▕ $1$2%a$9$1 - $1$3%t$1  $R$4[%b]$9"
+#song_list_format = "$3 %n |$0 %a $4| %t $9$R$7 %b $9"
 #song_list_format = "{%t}|{$8%f$9}$R{$3(%l)$9}"
 #song_list_format = "{%t}|{$8%f$9}$R{$3(%l)$9}"
 
@@ -188,7 +190,7 @@ song_window_title_format = "{%t}|{%f}"
 # song_columns_list_format =  "(6f)[red]{lr} (40)[]{t} (35)[cyan]{br} (25)[magenta]{a}"
 # song_columns_list_format =  "(6f)[red]{lr} (40)[cyan]{t} (35)[green]{br} (25)[magenta]{a}"
 # song_columns_list_format =  "(6f)[cyan]{lr} (40)[]{t} (35)[]{br} (25)[cyan]{a}"
-song_columns_list_format =  "(6f)[]{lr} (40)[yellow]{t} (35)[cyan]{br} (25)[]{a}"
+song_columns_list_format =  "(6f)[]{lr}| (40)[yellow]{t} (35)[cyan]{br} (25)[]{a}"
 # song_columns_list_format =  "(6f)[red]{lr} (40)[]{t} (35)[cyan]{b} (25)[magenta]{a}"
 
 ##### various settings #####
@@ -204,8 +206,8 @@ song_columns_list_format =  "(6f)[]{lr} (40)[yellow]{t} (35)[cyan]{br} (25)[]{a}
 
 playlist_show_remaining_time = "no"
 
-#playlist_display_mode = "columns" # (classic/columns)
-playlist_display_mode = "classic" # (classic/columns)
+playlist_display_mode = "columns" # (classic/columns)
+#playlist_display_mode = "classic" # (classic/columns)
 
 browser_display_mode = "columns" # (classic/columns)
 
