@@ -1,4 +1,7 @@
-# vim: syn=sh:
+# vim: set syn=sh:
+
+bg_color="#2f2e2c"
+default_wm=wmfs
 
 # Enable Japanese input
 export XMODIFIERS="@im=ibus"
@@ -16,13 +19,13 @@ SleepDo() {
 
 # Programs to help flesh out a window manager
 Autostart() {
-    xsetroot -solid black &
+    xsetroot -solid "$bg_color" &
     nitrogen --restore &
     xscreensaver -no-splash &
     wmname LG3D &
 
     # Seems to not mess up when using -noevents
-    unclutter -noevents &
+    #unclutter -noevents &
 }
 
 Basics() {
@@ -71,12 +74,16 @@ SleepDo 3 Basics &
 
 # Launch a window manager with proper permissions
 Start() {
+    ~/.screenlayout/dual.sh
     exec ck-launch-session "$@"
 }
 
+WM=${WM:-$default_wm}
+Start "$WM"
+
 # Start i3
 # Start dwm
-  Start wmii
+# Start wmii
 # Start wmfs
 # Start xfwm4
 # Start xmonad
