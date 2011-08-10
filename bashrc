@@ -77,7 +77,8 @@ alias l='ls -hl'
 alias la='l -a'
 alias ..='cd ..'
 alias vim='vim -p'
-alias du='du -csh'
+alias du='ncdu'
+alias df='pydf'
 
 serv() {
     prog="$1"
@@ -104,9 +105,6 @@ alias abs='sudo abs'
 alias p='pacman'
 alias sp='sudo pacman'
 alias update='sp -Syu --noconfirm'
-
-# Make commands a bit shorter
-alias df='df -h'
 
 Size() {
     du -h "$@" \
