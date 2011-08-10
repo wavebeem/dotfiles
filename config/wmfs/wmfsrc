@@ -1,19 +1,10 @@
-#
-# This is the default wmfs config file, copy it to
-# ~/.config/wmfs/wmfsrc and edit it.
-#
-
-# Include file to split configuration
-# @include "~/.config/wmfs/menu-wmfsrc"
-
-@include "~/.config/wmfs/misc.rc"
-@include "~/.config/wmfs/bar.rc"
-@include "~/.config/wmfs/layouts.rc"
-@include "~/.config/wmfs/tags.rc"
-@include "~/.config/wmfs/root.rc"
-@include "~/.config/wmfs/client.rc"
-@include "~/.config/wmfs/rules.rc"
-@include "~/.config/wmfs/menu.rc"
-@include "~/.config/wmfs/launcher.rc"
-@include "~/.config/wmfs/keys.rc"
-# vim: ft=conf:
+@include "bar.rc"
+@include "client.rc"
+@include "keys.rc"
+@include "launcher.rc"
+@include "layouts.rc"
+@include "menu.rc"
+@include "misc.rc"
+@include "root.rc"
+@include "rules.rc"
+@include "tags.rc"

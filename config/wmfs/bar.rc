@@ -1,13 +1,14 @@
 [bar]
-        bg     = "#0f0e0c"
-        fg     = "#d3caaa"
-        border = true
+        bg     = "#000000"
+        fg     = "#e4e2e0"
+        #border = true
+        border = false
         # selbar = false   #not worked now, see section [selbar]
 
-        #height = 18
+        height = 18
 
-        light_shade =  0.00
-        dark_shade  = -0.08
+        light_shade =  0.15
+        dark_shade  = -0.50
 
         [systray]
                 # Enable/disable systray

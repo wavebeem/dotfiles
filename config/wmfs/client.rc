@@ -3,10 +3,10 @@
         client_auto_center   = false
         border_height        = 6
         border_shadow        = true
-        border_normal        = "#4f4e4c"
-        resize_corner_normal = "#4f4e4c"
-        border_focus         = "#6f6e6c"
-        resize_corner_focus  = "#6f6e6c"
+        border_normal        = "#000000"
+        resize_corner_normal = "#000000"
+        border_focus         = "#566D82"
+        resize_corner_focus  = "#566D82"
 
         set_new_win_master = false
 
@@ -25,8 +25,8 @@
         # Modifier for mouse use
         modifier = "Super"
 
-        light_shade =  0.00
-        dark_shade  = -0.08
+        light_shade =  0.15
+        dark_shade  = -0.50
 
         # *DEPRECATED* but works, see [rules] section
         # Set automatic free or max client
@@ -42,7 +42,7 @@
         # Remove this section to delete the titlebar.
        #[titlebar]
        #        stipple   = false
-       #        height    = 22
+       #        height    = 18
        #        fg_normal = "#6e6958"
        #        fg_focus  = "#d3caaa"
 
