@@ -3,41 +3,25 @@
         [set_menu]
                 name = "rootmenu"
 
-                # place_at_mouse = false
+                #place_at_mouse = false
                 # x = 40 y = 50
 
                 # Available "center", "left", "right" menu align. Default: "center".
                 align = "left"
 
-                fg_focus  = "#0f0e0c" bg_focus  = "#8f8e8c"
-                fg_normal = "#d3caaa" bg_normal = "#383734"
+                fg_focus  = "#f4f2f0" bg_focus  = "#6080a0"
+                fg_normal = "#e4e2e0" bg_normal = "#000000"
 
-                [item]
-                    name = "Terminal"        
-                    func = "spawn"
-                    cmd = "roxterm || xterm"
-                [/item]
-                [item]
-                    name = "Change Wallpaper"
-                    func = "spawn"
-                    cmd = "nitrogen"
-                [/item]
-                [item]
-                    name = "NVIDIA Settings"
-                    func = "spawn"
-                    cmd = "nvidia-settings"
-                [/item]
-                [item]
-                    name = "NVIDIA Settings (root)"
-                    func = "spawn"
-                    cmd = "gksudo nvidia-settings"
-                [/item]
+                [item] name = "Terminal"            func = "spawn" cmd = "roxterm || xterm" [/item]
+                [item] name = "Wallpaper"           func = "spawn" cmd = "nitrogen"         [/item]
+                [item] name = "Theme"               func = "spawn" cmd = "lxappearance"     [/item]
+                [item] name = "Monitors"            func = "spawn" cmd = "arandr"           [/item]
+                [item] name = "Quit"                func = "quit"                           [/item]
                 #[item] name = "Next Tag"        func = "tag_next"                  [/item]
                 #[item] name = "Previous Tag"    func = "tag_prev"                  [/item]
                 #[item] name = "Next Layout"     func = "layout_next"               [/item]
                 #[item] name = "Previous Layout" func = "layout_prev"               [/item]
                 #[item] name = "Toggle Infobar"  func = "toggle_infobar_position"   [/item]
-                [item] name = "Quit WMFS"       func = "quit"                      [/item]
 
                 #[item] name = "Applications" submenu = "appmenu"                   [/item]
         [/set_menu]
@@ -46,8 +30,8 @@
                 name = "clientmenu"
                 align = "left"
 
-                fg_focus  = "#0f0e0c" bg_focus  = "#8f8e8c"
-                fg_normal = "#d3caaa" bg_normal = "#383734"
+                fg_focus  = "#f4f2f0" bg_focus  = "#6080a0"
+                fg_normal = "#e4e2e0" bg_normal = "#000000"
 
                 # Check items: possible 'check_max' or 'check_free'.
                 [item] name = "Close"    func = "client_kill"                      [/item]

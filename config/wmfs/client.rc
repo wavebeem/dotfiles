@@ -3,21 +3,17 @@
         client_auto_center   = false
         border_height        = 6
         border_shadow        = true
-        border_normal        = "#000000"
-        resize_corner_normal = "#000000"
-        border_focus         = "#566D82"
-        resize_corner_focus  = "#566D82"
+        border_normal        = "#242220"
+        resize_corner_normal = "#242220"
+        border_focus         = "#455869"
+        resize_corner_focus  = "#455869"
 
         set_new_win_master = false
 
         new_client_get_mouse = true
 
-        ## Red
-        #border_focus         = "#591a32"
-        #resize_corner_focus  = "#591a32"
-
-        #default_open_tag     = 4 # send all client that have no tag rule in this default tag
-        #default_open_screen  = 1 # same as above but for the screen
+        #default_open_tag     = 4
+        #default_open_screen  = 1
 
         # Space between tiled clients
         padding = 0
@@ -25,7 +21,7 @@
         # Modifier for mouse use
         modifier = "Super"
 
-        light_shade =  0.15
+        light_shade =  0.00
         dark_shade  = -0.50
 
         # *DEPRECATED* but works, see [rules] section

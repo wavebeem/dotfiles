@@ -115,7 +115,7 @@
         [key] mod = {"Control", "Super"} key = "8" func = "tag_toggle_additional" cmd = "8" [/key]
         [key] mod = {"Control", "Super"} key = "9" func = "tag_toggle_additional" cmd = "9" [/key]
 
-        [key] mod = {"Super"} key = "e" func = "toggle_tag_expose" [/key]
+        # [key] mod = {"Super"} key = "e" func = "toggle_tag_expose" [/key]
 
         # unlisted fonctions that can be used in [key] func = ""
         # client_focus_{right, left, top, bottom}
