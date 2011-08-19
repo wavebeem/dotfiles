@@ -5,7 +5,7 @@ eval $(dircolors)
 set -o vi
 
 # Add my programs to the path
-export PATH="$HOME/Games/bin:$HOME/Abundant/src:$HOME/bin:$PATH"
+export PATH="$HOME/Abundant/src:$HOME/bin:$PATH"
 
 # No more \a
 setterm -blength 0
@@ -28,7 +28,6 @@ export LESS_TERMCAP_us=$'\E[01;36m'
 export RI="-f ansi"
 
 alias wu='ssh bmock@shell.willamette.edu'
-alias dadis='ssh -p 23 saikobee@dadis.dyndns.org'
 
 alias dim='echo ${COLUMNS}x${LINES}'
 alias sl='sl -alF'
@@ -80,12 +79,6 @@ alias vim='vim -p'
 alias du='ncdu'
 alias df='pydf'
 
-serv() {
-    prog="$1"
-    shift
-    sudo "/etc/rc.d/$prog" "$@"
-}
-
 # Quicker job control
 alias k='kill %%'
 alias kk='kill -9 %%'
@@ -93,13 +86,16 @@ alias kk='kill -9 %%'
 alias irb='irb --readline -r irb/completion'
 
 # Make package management easier
-alias y="yaourt"
-alias yn='yaourt -S --noconfirm'
-alias yss='yaourt -Ss'
+alias y="packer"
+alias yn='packer -S --noconfirm'
+alias yss='packer -Ss'
 aur() {
+    pkg=$1; shift
+
     cd ~/aur
-    yaourt -G "$1"
-    cd "$1"
+    packer -G "$pkg"
+    rm "$pkg."*
+    cd "$pkg"
 }
 alias abs='sudo abs'
 alias p='pacman'
