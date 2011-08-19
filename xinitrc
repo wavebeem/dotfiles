@@ -1,6 +1,6 @@
 # vim: set syn=sh:
 
-bg_color="#2f2e2c"
+bg_color="#000000"
 default_wm=wmfs
 
 # Enable Japanese input
@@ -57,16 +57,17 @@ Basics() {
     xbindkeys &
 
     # Load graphics settings
-    nvidia-settings -l &
+    #nvidia-settings -l &
 
     # Preload thunar for very slight speed increases
-    thunar --daemon &
+    #thunar --daemon &
 
     # Pretty window fading
     #dcompmgr &
 
     # Put proper text into the wmfs bars
-    wmfs-bars.sh &
+    #wmfs-bars.sh &
+    #wmfs-bar.sh &
 }
 
 SleepDo 2 Autostart &

@@ -2,10 +2,9 @@
 update_interval 3
 #out_to_x no
 out_to_console yes
-temperature_unit fahrenheit
-pad_percents 3
-#temperature_unit celsius
 
 TEXT
 ${mem}\
-   ::   ${time %A  ~  %Y.%m.%d  ~  %H:%M}
+      ...      ${time %A}\
+      ...      ${time %Y.%m.%d}\
+      ...      ${time %H:%M}
