@@ -20,6 +20,7 @@ gitignore_global
 hgrc
 inputrc
 xbindkeysrc
+mplayer
 )
 
 SetupLink() {
