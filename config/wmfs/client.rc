@@ -21,7 +21,7 @@
         # Modifier for mouse use
         modifier = "Super"
 
-        light_shade =  0.00
+        light_shade =  0.10
         dark_shade  = -0.50
 
         # *DEPRECATED* but works, see [rules] section

@@ -86,7 +86,7 @@ alias kk='kill -9 %%'
 alias irb='irb --readline -r irb/completion'
 
 # Make package management easier
-alias y="packer"
+alias y="packer --noconfirm"
 alias yn='packer -S --noconfirm'
 alias yss='packer -Ss'
 aur() {
