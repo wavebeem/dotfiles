@@ -21,6 +21,7 @@ hgrc
 inputrc
 xbindkeysrc
 mplayer
+themes
 )
 
 SetupLink() {

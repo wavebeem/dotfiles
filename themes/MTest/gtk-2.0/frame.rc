@@ -1,0 +1,15 @@
+# vim: set syn=gtkrc:
+
+style "frame-title" {
+    fg[NORMAL] = lighter(@fg_color)
+
+    font_name = "Bold"
+}
+
+style "frame" = "wide" {
+    bg[NORMAL] = shade(1.04, @bg_color)
+
+    engine "murrine" {
+        roundness = 3
+    }
+}

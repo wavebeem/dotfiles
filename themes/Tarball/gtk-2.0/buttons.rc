@@ -1,0 +1,35 @@
+# vim: set syn=gtkrc:
+
+style "button" = "wider" {
+    bg[NORMAL]      = shade(1.35, @bg_color)
+    bg[PRELIGHT]    = shade(1.55, @bg_color)
+    bg[ACTIVE]      = shade(0.70, @selected_bg_color)
+    bg[INSENSITIVE] = shade(1.20, @bg_color)
+
+    engine "murrine" {
+        roundness = 6
+        contrast = 1.40
+        lightborder_shade = 1.00
+
+        focus_color = shade(1.90, @bg_color)
+    }
+}
+
+style "notebook-button" = "button" {
+}
+
+style "toolbar-button" = "button" {
+    xthickness = 6
+    ythickness = 3
+
+    bg[NORMAL]   = shade(1.20, @bg_color)
+    bg[PRELIGHT] = shade(1.40, @bg_color)
+    bg[ACTIVE]   = shade(0.80, @selected_bg_color)
+
+    engine "murrine" {
+        roundness = 9
+        contrast = 1.40
+        lightborder_shade = 1.00
+        gradient_shades = {1.05, 1.00, 1.00, 0.95}
+    }
+}

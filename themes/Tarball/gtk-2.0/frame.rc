@@ -1,0 +1,12 @@
+# vim: set syn=gtkrc:
+
+style "frame-title" {
+}
+
+style "frame" = "wide" {
+    #bg[NORMAL] = shade(1.10, @bg_color)
+
+    engine "murrine" {
+        roundness = 3
+    }
+}
