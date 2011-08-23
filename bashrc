@@ -121,8 +121,8 @@ mkgo() {
 # Allow ANSI color sequences
 export LESS="-R"
 
-# Greet me with ASCII art,
+# Greet me with ASCII/ANSI art,
 # if the file exists and we're not doing SSH
-if [ -f "$HOME/.ascii" ] && [ "$SSH_CLIENT" = "" ]; then
-    cat "$HOME/.ascii"
+if [ -f "$HOME/.welcome" ] && [ "$SSH_CLIENT" = "" ]; then
+    cat "$HOME/.welcome"
 fi

@@ -51,6 +51,23 @@ ${b1}>${e1}${b2}>${e2}${b3}>${e3} "
     export RPROMPT=""
 }
 
+Prompt_Host() {
+    local b="%B%F{black}"
+    local e="%f%b"
+
+    precmd() {
+        echo
+    }
+
+    preexec() {
+    }
+
+    export PS1="${b}%m:${e} "
+    export PS2="${b}%m?${e} "
+
+    export RPROMPT=""
+}
+
 Prompt_Rainbow() {
     local ender="%b%f"
 
@@ -102,6 +119,7 @@ ${char2}${ender} "
 }
 
 #Prompt_BW_Gradient
-Prompt_Rainbow
+#Prompt_Rainbow
+Prompt_Host
 
 source ~/.bashrc
