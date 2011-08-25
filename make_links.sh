@@ -22,6 +22,7 @@ inputrc
 xbindkeysrc
 mplayer
 themes
+welcome
 )
 
 SetupLink() {
