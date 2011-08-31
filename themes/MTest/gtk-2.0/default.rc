@@ -28,7 +28,7 @@ style "default" {
     GtkScale::trough-side-details  = 1
 
     GtkScrollbar::min-slider-length = 30
-    GtkScrollbar::slider-width      = 12
+    GtkScrollbar::slider-width      = 10
     GtkScrollbar::arrow-scaling     = 1.00
 
     # Options listed in order they appear on the scrollbar from top to bottom
