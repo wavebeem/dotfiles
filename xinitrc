@@ -69,7 +69,7 @@ Basics() {
     #wmfs-bars.sh &
     #wmfs-bar.sh &
 
-    tint2 &
+    #tint2 &
 }
 
 SleepDo 2 Autostart &
