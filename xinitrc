@@ -1,7 +1,7 @@
 # vim: set syn=sh:
 
 bg_color="#000000"
-default_wm=wmfs
+default_wm=openbox
 
 # Enable Japanese input
 export XMODIFIERS="@im=ibus"
@@ -68,6 +68,8 @@ Basics() {
     # Put proper text into the wmfs bars
     #wmfs-bars.sh &
     #wmfs-bar.sh &
+
+    tint2 &
 }
 
 SleepDo 2 Autostart &

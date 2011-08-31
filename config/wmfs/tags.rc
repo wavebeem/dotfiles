@@ -14,10 +14,10 @@
         # Press tag number again to toggle between previous tag
         tag_auto_prev  = false
 
-        occupied_bg    = "#343230"
+        occupied_bg    = "#646260"
         occupied_fg    = "#a4a2a0"
-        sel_fg         = "#f4f2f0"
-        sel_bg         = "#455869"
+        sel_fg         = "#000000"
+        sel_bg         = "#a4a2a0"
         urgent_bg      = "#fcaf3e"
         urgent_fg      = "#000000"
 
@@ -55,14 +55,14 @@
         # clients option is *DEPRECATED* but works, see [rules] section
         #[tag] name = "two"  clients = {"Browser"} [/tag]
 
-        [tag] name = "  1   " [/tag]
-        [tag] name = "  2   " [/tag]
-        [tag] name = "  3   " [/tag]
-        [tag] name = "  4   " [/tag]
-        [tag] name = "  5   " [/tag]
-        [tag] name = "  6   " [/tag]
-        [tag] name = "  7   " [/tag]
-        [tag] name = "  8   " [/tag]
-        [tag] name = "  9   " [/tag]
+        [tag] name = "1" [/tag]
+        [tag] name = "2" [/tag]
+        [tag] name = "3" [/tag]
+        [tag] name = "4" [/tag]
+        [tag] name = "5" [/tag]
+        [tag] name = "6" [/tag]
+        [tag] name = "7" [/tag]
+        [tag] name = "8" [/tag]
+        [tag] name = "9" [/tag]
 [/tags]
 # vim: ft=conf:

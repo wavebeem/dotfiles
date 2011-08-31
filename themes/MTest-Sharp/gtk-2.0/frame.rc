@@ -7,7 +7,7 @@ style "frame-title" {
 }
 
 style "frame" = "wide" {
-    bg[NORMAL] = shade(1.04, @bg_color)
+    bg[NORMAL] = shade(1.00, @bg_color)
 
     engine "murrine" {
         roundness = 3

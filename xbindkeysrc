@@ -11,10 +11,10 @@ Control + Mod4 + Return
 "dmenu_run"
 Mod4 + F1
 
-"dmenu.sh"
+"DMENU"
 Mod4 + p
 
-"dmenu.sh"
+"DMENU"
 Mod4 + Escape
 
 "power-menu.sh"
@@ -22,6 +22,9 @@ Mod4 + o
 
 "xterm"
 Mod4 + F2
+
+"openbox --reconfigure; RE tint2 xbindkeys;"
+Control + Alt + r
 
 "restart xbindkeys"
 Mod4 + F3
