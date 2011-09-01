@@ -3,6 +3,7 @@
 files=(
 config/roxterm.sourceforge.net
 config/wmfs
+config/openbox
 conkyrc
 vim
 vimrc
