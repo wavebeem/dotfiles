@@ -14,6 +14,12 @@ Mod4 + F1
 "DMENU"
 Mod4 + p
 
+"roxterm -e NET"
+Mod4 + w
+
+"roxterm -e alsamixer"
+Mod4 + e
+
 "xkill"
 Mod4 + Escape
 
@@ -23,11 +29,8 @@ Mod4 + o
 "xterm"
 Mod4 + F2
 
-"openbox --reconfigure; RE xbindkeys;"
+"RECONF"
 Control + Alt + r
-
-"restart xbindkeys"
-Mod4 + F3
 
 "mpc seek -00:00:10"
 Mod4 + comma
@@ -62,31 +65,13 @@ Mod4 + F11
 "amixer set Master 5%+"
 Mod4 + F12
 
-#"volume.sh"
-#Mod4 + F9
-
-#"temp.sh"
-#Mod4 + F8
-
-#"who.sh"
-#Mod4 + F7
-
 "xscreensaver-command -lock"
 Control + Alt + l
 
 "MAMENU"
 Mod4 + g
 
-"zenity --calendar"
-Control + Mod4 + c
-
-"wmii-next-tag.sh"
-Control + Mod4 + j
-
-"wmii-prev-tag.sh"
-Control + Mod4 + k
-
-"ReIbus"
+"RE ibus-daemon"
 Control + Mod4 + F9
 
 "setxkbmap ru -variant phonetic"

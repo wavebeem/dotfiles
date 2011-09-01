@@ -22,10 +22,6 @@ Autostart() {
     xsetroot -solid "$bg_color" &
     nitrogen --restore &
     xscreensaver -no-splash &
-    wmname LG3D &
-
-    # Seems to not mess up when using -noevents
-    #unclutter -noevents &
 }
 
 Basics() {
@@ -56,20 +52,7 @@ Basics() {
     # Load keybindings
     xbindkeys &
 
-    # Load graphics settings
-    #nvidia-settings -l &
-
-    # Preload thunar for very slight speed increases
-    #thunar --daemon &
-
-    # Pretty window fading
-    #dcompmgr &
-
-    # Put proper text into the wmfs bars
-    #wmfs-bars.sh &
-    #wmfs-bar.sh &
-
-    #tint2 &
+    [ "$HOST" = "profiterole" ] && tint2 &
 }
 
 SleepDo 2 Autostart &
@@ -77,22 +60,9 @@ SleepDo 3 Basics &
 
 # Launch a window manager with proper permissions
 Start() {
-    ~/.screenlayout/dual.sh
+    [ "$HOST" = "truffle" ] && ~/.screenlayout/dual.sh
     exec ck-launch-session "$@"
 }
 
 WM=${WM:-$default_wm}
 Start "$WM"
-
-# Start i3
-# Start dwm
-# Start wmii
-# Start wmfs
-# Start xfwm4
-# Start xmonad
-# Start startkde
-# Start startxfce4
-# Start ~/wmfs/wmfs
-# Start ~/xorg62/wmfs
-# Start gnome-session
-# Start openbox-session
