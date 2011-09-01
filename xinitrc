@@ -1,3 +1,4 @@
+#!/bin/bash
 # vim: set syn=sh:
 
 bg_color="#000000"
@@ -52,7 +53,7 @@ Basics() {
     # Load keybindings
     xbindkeys &
 
-    [ "$HOST" = "profiterole" ] && tint2 &
+    [ "$(hostname)" = "profiterole" ] && tint2 &
 }
 
 SleepDo 2 Autostart &
@@ -60,7 +61,7 @@ SleepDo 3 Basics &
 
 # Launch a window manager with proper permissions
 Start() {
-    [ "$HOST" = "truffle" ] && ~/.screenlayout/dual.sh
+    [ "$(hostname)" = "truffle" ] && ~/.screenlayout/dual.sh
     exec ck-launch-session "$@"
 }
 
