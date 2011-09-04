@@ -1,9 +1,9 @@
 
 [roxterm colour scheme]
 foreground=#b3b3a9a99f9f
-background=#0ccd0c870bfc
+background=#000000000000
 palette_size=16
-0=#0ccd0c870bfc
+0=#000000000000
 1=#4ccd170a170a
 2=#395751eb20c4
 3=#75c249021c43
