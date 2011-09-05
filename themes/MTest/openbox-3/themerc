@@ -82,7 +82,7 @@ window.active.client.color:   #141210
 window.inactive.client.color: #141210
 window.client.padding.width:  0
 window.handle.width: 6
-menu.overlap: 1
+menu.overlap: 0
 
 !! On-screen displays
 osd.hilight.bg: flat solid border
