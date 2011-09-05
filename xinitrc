@@ -1,6 +1,8 @@
 #!/bin/bash
 # vim: set syn=sh:
 
+source "$HOME/bin/lib/multi-host.sh"
+
 bg_color="#000000"
 default_wm=openbox
 
@@ -53,7 +55,8 @@ Basics() {
     # Load keybindings
     xbindkeys &
 
-    [ "$(hostname)" = "profiterole" ] && tint2 &
+    HostDo profiterole tint2 &
+    HostDo truffle     dcompmgr --no-fade &
 }
 
 SleepDo 2 Autostart &
@@ -61,7 +64,7 @@ SleepDo 3 Basics &
 
 # Launch a window manager with proper permissions
 Start() {
-    [ "$(hostname)" = "truffle" ] && ~/.screenlayout/dual.sh
+    HostDo truffle ~/.screenlayout/dual.sh
     exec ck-launch-session "$@"
 }
 
