@@ -354,22 +354,22 @@
     </keybind>
     <keybind key="C-W-S-l">
       <action name="ResizeRelative">
-        <left>-10</left>
+        <left>-3</left>
       </action>
     </keybind>
     <keybind key="C-W-S-h">
       <action name="ResizeRelative">
-        <right>-10</right>
+        <right>-3</right>
       </action>
     </keybind>
     <keybind key="C-W-S-k">
       <action name="ResizeRelative">
-        <bottom>-10</bottom>
+        <bottom>-3</bottom>
       </action>
     </keybind>
     <keybind key="C-W-S-j">
       <action name="ResizeRelative">
-        <top>-10</top>
+        <top>-3</top>
       </action>
     </keybind>
     <keybind key="W-m">
