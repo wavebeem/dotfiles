@@ -71,6 +71,12 @@ Control + Alt + l
 "MAMENU"
 Mod4 + g
 
+"killall dcompmgr"
+Mod4 + Alt + F11
+
+"dcompmgr --no-fade"
+Mod4 + Alt + F12
+
 "RE ibus-daemon"
 Control + Mod4 + F9
 
