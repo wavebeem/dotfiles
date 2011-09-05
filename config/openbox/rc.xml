@@ -304,8 +304,10 @@
       </action>
     </keybind>
     <keybind key="W-d">
-      <!--action name="ToggleShowDesktop"/-->
       <action name="ToggleDecorations"/>
+    </keybind>
+    <keybind key="C-W-d">
+      <action name="ToggleShowDesktop"/>
     </keybind>
     <keybind key="W-f">
       <action name="ToggleFullscreen"/>
@@ -326,28 +328,48 @@
     </keybind>
     <keybind key="W-Tab">
       <action name="NextWindow">
-        <dialog>none</dialog>
+        <dialog>list</dialog>
         <raise>yes</raise>
       </action>
     </keybind>
     <keybind key="W-S-Tab">
       <action name="PreviousWindow">
-        <dialog>none</dialog>
+        <dialog>list</dialog>
         <raise>yes</raise>
       </action>
     </keybind>
     <keybind key="W-j">
       <action name="NextWindow">
         <linear>yes</linear>
-        <dialog>none</dialog>
+        <dialog>list</dialog>
         <raise>yes</raise>
       </action>
     </keybind>
     <keybind key="W-k">
       <action name="PreviousWindow">
         <linear>yes</linear>
-        <dialog>none</dialog>
+        <dialog>list</dialog>
         <raise>yes</raise>
+      </action>
+    </keybind>
+    <keybind key="C-W-S-l">
+      <action name="ResizeRelative">
+        <left>-3</left>
+      </action>
+    </keybind>
+    <keybind key="C-W-S-h">
+      <action name="ResizeRelative">
+        <right>-3</right>
+      </action>
+    </keybind>
+    <keybind key="C-W-S-k">
+      <action name="ResizeRelative">
+        <bottom>-3</bottom>
+      </action>
+    </keybind>
+    <keybind key="C-W-S-j">
+      <action name="ResizeRelative">
+        <top>-3</top>
       </action>
     </keybind>
     <keybind key="W-m">
@@ -396,19 +418,15 @@
     </keybind>
     <keybind key="A-W-k">
       <action name="DirectionalFocusNorth"/>
-      <dialog>none</dialog>
     </keybind>
     <keybind key="A-W-l">
       <action name="DirectionalFocusEast"/>
-      <dialog>none</dialog>
     </keybind>
     <keybind key="A-W-j">
       <action name="DirectionalFocusSouth"/>
-      <dialog>none</dialog>
     </keybind>
     <keybind key="A-W-h">
       <action name="DirectionalFocusWest"/>
-      <dialog>none</dialog>
     </keybind>
   </keyboard>
   <mouse>
@@ -474,14 +492,10 @@
         <action name="Unfocus"/>
       </mousebind>
       <mousebind action="Click" button="Up">
-        <action name="Shade"/>
-        <action name="FocusToBottom"/>
-        <action name="Unfocus"/>
-        <action name="Lower"/>
+        <action name="DesktopPrevious"/>
       </mousebind>
       <mousebind action="Click" button="Down">
-        <action name="Unshade"/>
-        <action name="Raise"/>
+        <action name="DesktopNext"/>
       </mousebind>
       <mousebind action="Press" button="Right">
         <action name="Focus"/>
@@ -708,7 +722,6 @@
       <mousebind action="Click" button="W-S-Down">
         <action name="SendToDesktopNext"/>
       </mousebind>
-      <!--
       <mousebind action="Click" button="Up">
         <action name="DesktopPrevious"/>
       </mousebind>
@@ -721,12 +734,6 @@
       <mousebind action="Click" button="W-Down">
         <action name="DesktopNext"/>
       </mousebind>
-      <mousebind action="Click" button="C-W-Up">
-        <action name="DesktopPrevious"/>
-      </mousebind>
-      <mousebind action="Click" button="C-W-Down">
-        <action name="DesktopNext"/>
-      </mousebind>
       <mousebind action="Press" button="Left">
         <action name="Focus"/>
         <action name="Raise"/>
@@ -735,7 +742,6 @@
         <action name="Focus"/>
         <action name="Raise"/>
       </mousebind>
-      -->
     </context>
     <context name="Root">
       <!-- Menus -->
@@ -773,14 +779,11 @@
     <submenuHideDelay>400</submenuHideDelay>
     <applicationIcons>yes</applicationIcons>
     <!-- controls if icons appear in the client-list-(combined-)menu -->
-    <manageDesktops>yes</manageDesktops>
+    <manageDesktops>no</manageDesktops>
     <!-- show the manage desktops section in the client-list-(combined-)menu -->
   </menu>
   <applications>
     <application name="*" class="*" type="*" role="*">
-      <!--
-      <maximized>yes</maximized>
-      -->
       <decor>no</decor>
     </application>
     <!--
