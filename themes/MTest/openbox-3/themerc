@@ -11,7 +11,6 @@ menu.separator.padding.height: 4
 
 !! Menu text
 menu.items.text.color: #f4f2f0
-menu.items.justify: left
 menu.items.disabled.text.color: #848280
 
 !! Menu headers
@@ -19,7 +18,7 @@ menu.title.bg: flat solid border
 menu.title.bg.color: #141210
 menu.title.bg.border.color: #141210
 menu.title.text.color: #f4f2f0
-menu.title.text.justify: center
+menu.title.text.justify: right
 
 !! Selected menu item
 menu.items.active.bg: flat solid border
@@ -34,7 +33,7 @@ window.inactive.title.bg: flat solid
 window.inactive.title.bg.color: #000000
 
 !! Titlebar text
-window.label.text.justify: center
+window.label.text.justify: right
 window.active.label.bg: parentrelative
 window.active.label.text.color: #f4f2f0
 window.inactive.label.bg: parentrelative

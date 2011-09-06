@@ -5,13 +5,7 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://openbox.org/ file:///usr/share/openbox/menu.xsd">
   <menu id="root-menu" label="Openbox">
-    <item label="Wallpaper">
-      <action name="Execute">
-        <execute>
-          nitrogen
-        </execute>
-      </action>
-    </item>
+    <separator label="Configure..."/>
     <item label="Theme">
       <action name="Execute">
         <execute>
@@ -26,5 +20,14 @@
         </execute>
       </action>
     </item>
+    <item label="Wallpaper">
+      <action name="Execute">
+        <execute>
+          nitrogen
+        </execute>
+      </action>
+    </item>
   </menu>
+
+  <menu id="stats-menu" label="Stats" execute="OB-STATS-MENU"/>
 </openbox_menu>
