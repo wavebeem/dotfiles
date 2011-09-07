@@ -4,10 +4,10 @@ menu.items.bg.color: #343230
 menu.items.bg.border.color: #141210
 
 !! Menu separators
-menu.separator.color: #343230
+menu.separator.color: #f4f2f0
 menu.separator.width: 1
 menu.separator.padding.width: 1
-menu.separator.padding.height: 4
+menu.separator.padding.height: 0
 
 !! Menu text
 menu.items.text.color: #f4f2f0
@@ -67,8 +67,8 @@ window.inactive.border.color: #000000
 window.active.title.separator.color: #c4c2c0
 window.inactive.title.separator.color: #000000
 border.width:  1
-padding.width: 3
-padding.height: 3
+padding.width: 1
+padding.height: 1
 window.active.handle.bg: flat solid
 window.active.handle.bg.color: #000000
 window.active.grip.bg: flat solid
