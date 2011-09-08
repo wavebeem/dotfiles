@@ -352,24 +352,44 @@
         <raise>yes</raise>
       </action>
     </keybind>
-    <keybind key="C-W-S-l">
+    <keybind key="C-A-W-o">
       <action name="ResizeRelative">
-        <left>-3</left>
+        <left>-10</left>
       </action>
     </keybind>
-    <keybind key="C-W-S-h">
+    <keybind key="C-A-W-y">
       <action name="ResizeRelative">
-        <right>-3</right>
+        <right>-10</right>
       </action>
     </keybind>
-    <keybind key="C-W-S-k">
+    <keybind key="C-A-W-i">
       <action name="ResizeRelative">
-        <bottom>-3</bottom>
+        <bottom>-10</bottom>
       </action>
     </keybind>
-    <keybind key="C-W-S-j">
+    <keybind key="C-A-W-u">
       <action name="ResizeRelative">
-        <top>-3</top>
+        <top>-10</top>
+      </action>
+    </keybind>
+    <keybind key="A-W-o">
+      <action name="ResizeRelative">
+        <left>-1</left>
+      </action>
+    </keybind>
+    <keybind key="A-W-y">
+      <action name="ResizeRelative">
+        <right>-1</right>
+      </action>
+    </keybind>
+    <keybind key="A-W-i">
+      <action name="ResizeRelative">
+        <bottom>-1</bottom>
+      </action>
+    </keybind>
+    <keybind key="A-W-u">
+      <action name="ResizeRelative">
+        <top>-1</top>
       </action>
     </keybind>
     <keybind key="W-m">
