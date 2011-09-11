@@ -25,7 +25,8 @@ update_title() {
     #dir="${dir/$HOME/~}"
 
     #set_title "$user@$host:$dir"
-    set_title "$user@$host  **  $dir"
+    #set_title "$user@$host  **  $dir"
+    set_title "$host ($dir)"
 }
 
 # aliases and such
