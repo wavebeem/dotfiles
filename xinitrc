@@ -55,8 +55,8 @@ Basics() {
     # Enable Ctrl-Alt-Backspace for zapping X
     setxkbmap -option terminate:ctrl_alt_bksp &
 
-    HostDo profiterole tint2 &
-    HostDo truffle     dcompmgr --no-fade &
+    HostDo profiterole conky &
+    HostDo truffle     cairo-compmgr &
 }
 
 SleepDo 2 Autostart &
