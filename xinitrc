@@ -25,18 +25,21 @@ Autostart() {
     xsetroot -solid "$bg_color" &
     nitrogen --restore &
     xscreensaver -no-splash &
-}
-
-Basics() {
-    ibus-daemon &
 
     # Enable compose key
-    setxkbmap us \
+    SleepDo 3 setxkbmap us \
         -variant altgr-intl \
         -option  nodeadkeys  \
         -option  compose:ralt \
         -option  compose:caps  &
 
+    ibus-daemon &
+
+    # Load keybindings
+    xbindkeys &
+}
+
+Basics() {
     # Load font and cursor settings
     xrdb ~/.Xdefaults &
 
@@ -51,9 +54,6 @@ Basics() {
 
     # Enable Ctrl-Alt-Backspace for zapping X
     setxkbmap -option terminate:ctrl_alt_bksp &
-
-    # Load keybindings
-    xbindkeys &
 
     HostDo profiterole tint2 &
     HostDo truffle     dcompmgr --no-fade &
