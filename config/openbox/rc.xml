@@ -804,7 +804,6 @@
   </menu>
   <applications>
     <application name="*" class="*" type="*" role="*">
-      <decor>no</decor>
     </application>
     <!--
   <application name="the window's _OB_APP_NAME property (see obxprop)"
