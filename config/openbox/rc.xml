@@ -174,43 +174,23 @@
   <keyboard>
     <chainQuitKey>C-g</chainQuitKey>
     <keybind key="W-h">
-      <action name="DesktopLeft">
+      <action name="DesktopPrevious">
         <wrap>yes</wrap>
       </action>
     </keybind>
     <keybind key="W-l">
-      <action name="DesktopRight">
-        <wrap>yes</wrap>
-      </action>
-    </keybind>
-    <keybind key="S-A-k">
-      <action name="DesktopUp">
-        <wrap>yes</wrap>
-      </action>
-    </keybind>
-    <keybind key="S-A-j">
-      <action name="DesktopDown">
+      <action name="DesktopNext">
         <wrap>yes</wrap>
       </action>
     </keybind>
     <keybind key="W-S-h">
-      <action name="SendToDesktopLeft">
+      <action name="SendToDesktopPrevious">
         <wrap>yes</wrap>
       </action>
     </keybind>
     <keybind key="W-S-l">
-      <action name="SendToDesktopRight">
+      <action name="SendToDesktopNext">
         <wrap>yes</wrap>
-      </action>
-    </keybind>
-    <keybind key="S-C-k">
-      <action name="SendToDesktopUp">
-        <wrap>no</wrap>
-      </action>
-    </keybind>
-    <keybind key="S-C-j">
-      <action name="SendToDesktopDown">
-        <wrap>no</wrap>
       </action>
     </keybind>
     <keybind key="W-1">
