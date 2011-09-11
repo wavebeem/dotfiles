@@ -71,10 +71,10 @@ Control + Alt + l
 "MAMENU"
 Mod4 + g
 
-"killall dcompmgr"
+"killall cairo-compmgr"
 Mod4 + Alt + F11
 
-"dcompmgr --no-fade"
+"cairo-compmgr"
 Mod4 + Alt + F12
 
 "RE ibus-daemon"
