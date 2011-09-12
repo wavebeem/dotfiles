@@ -35,4 +35,4 @@ TEXT
 ${font DejaVu Sans Mono:size=64:bold}${alignr}${time %H:%M}${font}
 ${font DejaVu Sans Mono:size=24:bold}${alignr}${time %Y.%m.%d}${font}
 ${font DejaVu Sans Mono:size=24:bold}${alignr}${time %A}${font}
-${font DejaVu Sans Mono:size=16:bold}${alignr}${battery_short}${font}
+${font DejaVu Sans Mono:size=16:bold}${alignr}${battery_percent}%${font}
