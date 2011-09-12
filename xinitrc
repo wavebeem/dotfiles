@@ -44,7 +44,7 @@ Basics() {
     xrdb ~/.Xdefaults &
 
     # Remove bell
-    xset -b &
+    xset b off &
 
     # Remove screen blanking
     xset -dpms &
