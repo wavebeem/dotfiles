@@ -102,24 +102,12 @@ playlist_disable_highlight_delay = "2"
 ## Note: colors can be nested.
 ##
 
-#song_list_format = "{$2%l $9}{$0%t $9}|{$2%f $9}$R{$7%b$9}{$6 %a$9}"
-#song_list_format = "{$2%l $9}{$8%t $9}|{$2%f $9}$R{$7%b$9}{$6 %a$9}"
-# Backwards
-#song_list_format = "{$6%a $9}{$7 %b$9}$R{%t }|{$2%f $9}{$2%l$9}"
-#song_list_format = "{$6 %a $9}{$7 %b $9}{$3 %l $9}{ %t }|{$2 %f $9}"
-#song_list_format = "{$3 %l $9}{ %t }|{$2 %f $9}$R{$6 %b $9}{$7 %a $9}"
-#song_list_format = "{ %t }|{$2 %f $9}$R{$3 %l $9}{$6 %b $9}{$7 %a $9}"
-song_list_format = "{$4 %t $9}|{$2 %f $9}$R{$7 %b $9}"
-#song_list_format = "$5%n$9$1▕ $1$2%a$9$1 - $1$3%t$1  $R$4[%b]$9"
-#song_list_format = "$3 %n |$0 %a $4| %t $9$R$7 %b $9"
-#song_list_format = "{%t}|{$8%f$9}$R{$3(%l)$9}"
-#song_list_format = "{%t}|{$8%f$9}$R{$3(%l)$9}"
+#song_list_format = "{$4 %t $9}|{$2 %f $9}$R{$7 %b $9}"
+song_list_format = "{$4 %t $9}|{$2 %f $9}$R{$0 (%l) $9}"
 
-#song_status_format = "{%t{ :: %b{ :: %a}}}|{%f}"
-#song_status_format = "{%t{ :: %b}}|{%f}"
-song_status_format = "{%t{  **  %b}}|{%f}"
-#song_status_format = "{%t{ > %b{ > %a}}}|{%f}"
-#song_status_format = "{%t}|{%f}"
+#song_status_format = "{$4%t$9{ ::: $7%b$9}}|{%f}"
+#song_status_format = "{$7album:$9 %b{ $7by$9 %a}}|{%f}"
+song_status_format = "{$7Album:$9 %b}|{%f}"
 
 song_library_format = "{%n - }{%t}|{%f}"
 
@@ -206,12 +194,12 @@ song_columns_list_format =  "(6f)[]{lr}| (40)[yellow]{t} (35)[cyan]{br} (25)[]{a
 
 playlist_show_remaining_time = "no"
 
-playlist_display_mode = "columns" # (classic/columns)
-#playlist_display_mode = "classic" # (classic/columns)
+#playlist_display_mode = "columns"
+playlist_display_mode = "classic"
 
-browser_display_mode = "columns" # (classic/columns)
+browser_display_mode = "columns"
 
-search_engine_display_mode = "columns" # (classic/columns)
+search_engine_display_mode = "columns"
 
 incremental_seeking = "yes"
 
@@ -327,7 +315,7 @@ color1 = "green"
 
 color2 = "black"
 
-main_window_highlight_color = "cyan"
+main_window_highlight_color = "yellow"
 
 progressbar_color = "green"
 
