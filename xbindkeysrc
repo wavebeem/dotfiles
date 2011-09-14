@@ -71,10 +71,10 @@ Control + Alt + l
 "MAMENU"
 Mod4 + g
 
-"killall cairo-compmgr"
+"COMPOSITE off"
 Mod4 + Alt + F11
 
-"cairo-compmgr"
+"COMPOSITE on"
 Mod4 + Alt + F12
 
 "RE ibus-daemon"
