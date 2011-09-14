@@ -123,6 +123,8 @@ export LESS="-R"
 
 # Greet me with ASCII/ANSI art,
 # if the file exists and we're not doing SSH
-if [ -f "$HOME/.welcome" ] && [ "$SSH_CLIENT" = "" ] && [ "$(tty)" != "/dev/tty1" ]; then
-    cat "$HOME/.welcome"
-fi
+[ -f "$HOME/.welcome"     ] &&
+[ "$SSH_CLIENT" = ""      ] &&
+[ "$(tty)" != "/dev/tty1" ] &&
+[ -z "$TMUX"              ] &&
+cat "$HOME/.welcome"
