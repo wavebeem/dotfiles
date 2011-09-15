@@ -37,6 +37,8 @@ Autostart() {
 
     # Load keybindings
     xbindkeys &
+
+    HostDo truffle mpdscribble &
 }
 
 Basics() {
@@ -55,8 +57,7 @@ Basics() {
     # Enable Ctrl-Alt-Backspace for zapping X
     setxkbmap -option terminate:ctrl_alt_bksp &
 
-    HostDo profiterole conky &
-    HostDo truffle     cairo-compmgr &
+    COMPOSITE on &
 }
 
 SleepDo 2 Autostart &
