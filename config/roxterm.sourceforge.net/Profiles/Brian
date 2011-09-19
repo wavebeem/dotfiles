@@ -34,3 +34,5 @@ bell_highlights_tab=1
 exit_action=0
 tab_pos=1
 show_tab_status=1
+win_title=%s - Terminal
+maximise=0
