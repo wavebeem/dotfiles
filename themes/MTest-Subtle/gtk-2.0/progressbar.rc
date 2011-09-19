@@ -1,0 +1,17 @@
+# vim: set syn=gtkrc:
+
+style "progressbar" {
+    xthickness = 2
+    ythickness = 2
+
+    fg[PRELIGHT] = @selected_fg_color
+
+    bg[SELECTED] = shade(0.90, @selected_bg_color)
+
+     engine "murrine" {
+        roundness = 4
+        contrast = 1.30
+        trough_shades = {1.00, 1.10}
+        border_shades = {0.66, 0.50}
+     }
+}

@@ -1,0 +1,19 @@
+# vim: set syn=gtkrc:
+
+style "radiocheck" = "button" {
+    base[NORMAL]   = shade(1.75, @base_color)
+    base[PRELIGHT] = shade(1.85, @base_color)
+
+    base[SELECTED] = shade(1.00, @selected_bg_color)
+
+    bg[SELECTED]   = shade(4.00, @bg_color)
+    bg[PRELIGHT]   = shade(1.04, @bg_color)
+    
+    text[SELECTED] = @fg_color
+
+    # Fallback engine
+    engine "aurora"  {}
+
+    # Real engine
+    engine "equinox" {}
+}

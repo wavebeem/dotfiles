@@ -1,0 +1,151 @@
+# vim: set syn=gtkrc:
+
+# murrine default style is applied to every widget
+class "GtkWidget"    style "default"
+
+# Increase the x/ythickness in some widgets
+class "GtkRange"     style "default"
+class "GtkFrame"     style "frame"
+class "GtkSeparator" style "wide"
+class "GtkEntry"     style "entry"
+class "GtkStatusbar" style "default"
+class "GtkToolbar"   style "toolbar" 
+
+class          "GtkMenuBar"                                  style: highest "menubar"
+widget_class "*<GtkMenuBar>.<GtkMenuItem>.<GtkAccelLabel>"   style: highest "menubar"
+widget_class "*<GtkMenuBar>.<GtkMenuItem>"                   style: highest "menubar-item"
+
+class        "*HandleBox" style "toolbar"
+widget_class "*HandleBox" style "toolbar"
+
+class "GtkCalendar"     style "calendar"
+class "GtkSpinButton"   style "spinbutton"
+class "GtkScale"        style "scale"
+class "GtkVScale"       style "vscale"
+class "GtkHScale"       style "hscale"
+class "GtkScrollbar"    style "scrollbar"
+class "GtkVScrollbar"   style "vscrollbar"
+class "GtkHScrollbar"   style "hscrollbar"
+class "GtkButton"       style "button"
+widget_class    "*<GtkComboBox>*<GtkSeparator>*" style "zero-contrast"
+widget_class    "*<GtkCombo>*<GtkSeparator>*"    style "zero-contrast"
+widget_class    "*<GtkOptionMenu>*<GtkSeparator>*"    style "zero-contrast"
+class "GtkRadioButton*" style "radiocheck"
+class "GtkCheckButton"  style "radiocheck"
+
+# General matching following, the order is choosen so that the right styles override each other
+# eg. progressbar needs to be more important then the menu match.
+
+widget_class "*<GtkNotebook>*<GtkEventBox>"     style "notebook"
+#widget_class "*<GtkStatusbar>.*"                style "zero-contrast"
+#widget       "*<GtkStatusbar>.*"                style "zero-contrast"
+widget_class "*<GtkStatusbar>.*"                style "statusbar-shadow-none"
+widget       "*<GtkStatusbar>.*"                style "statusbar-shadow-none"
+
+widget_class "*<GtkNotebook>*<GtkDrawingArea>"  style "notebook"
+widget_class "*<GtkNotebook>*<GtkViewPort>"     style "notebook"
+widget_class "*<GtkNotebook>*<GtkLayout>"       style "notebook"
+widget_class "*<GtkNotebook>"                   style "notebook"
+widget_class "*<GtkNotebook>.*Button"           style "notebook-button"
+widget_class "*<GtkNotebook>*<GtkSpinButton>"   style "spinbutton-notebook"
+widget_class "*<GtkNotebook>*<GtkRadioButton>"  style "radiocheck-notebook"
+widget_class "*<GtkNotebook>*<GtkCheckButton>"  style "radiocheck-notebook"
+
+widget_class "*<GtkComboBoxEntry>*" style "comboboxentry"
+widget_class "*<GtkCombo>*"         style "comboboxentry"
+
+widget_class "*<GtkMenu>*"              style "menu"
+widget_class "*Menu*ProgressBar"        style: highest "menu-progressbar"
+#widget       "*Menu*ProgressBar"        style "menu-progressbar"
+widget_class "*<GtkMenuItem>*"          style "menu-item"
+widget_class "*<GtkSeparatorMenuItem>*" style "separator-menu-item"
+
+widget_class "*<GtkFrame>"             style "frame"
+widget_class "*.<GtkFrame>.<GtkLabel>" style "frame-title"
+widget_class "*.<GtkTreeView>*"        style "treeview"
+
+#widget_class "*<GtkStatusbar>*"  style "wider"
+widget_class "*<GtkProgressBar>" style "progressbar"
+
+# Treeview header
+widget_class "*.<GtkTreeView>.<GtkButton>" style "treeview-header"
+widget_class "*.<GtkCTree>.<GtkButton>"    style "treeview-header"
+widget_class "*.<GtkList>.<GtkButton>"     style "treeview-header"
+widget_class "*.<GtkCList>.<GtkButton>"    style "treeview-header"
+
+widget_class "*<GtkToolbar>.*"   style "toolbar"
+
+#widget_class "*Statusbar*"          style          "smaller-text"
+class         "GtkStatusbar"        style: highest "statusbar"
+widget_class "*GtkStatusbar*"       style: highest "statusbar"
+widget       "*GtkStatusbar*"       style: highest "statusbar"
+#widget       "*Statusbar*"          style: highest "statusbar"
+#widget       "*Statusbar*.*"        style: highest "statusbar"
+#widget       "*StatusBar*"          style: highest "statusbar"
+#widget       "*statusbar*"          style: highest "statusbar"
+widget       "*Statusbar*Frame*"    style: highest "statusbar"
+
+#Panel
+#widget "*panel*"            style "panel"
+#widget "*Panel*"            style "panel"
+#widget "*PanelWidget*"      style "panel"
+#widget "*PanelApplet*"      style "panel"
+#widget "*fast-user-switch*" style "panel" # Workaround for Fast User Switch applet
+#class "PanelApp*"           style "panel"
+#class "PanelToplevel*"      style "panel"
+##The panel menubar
+#widget_class "*Panel*<GtkMenuBar>*" style:highest "panel"
+
+
+###################################################
+# Special cases and work arounds
+###################################################
+
+widget_class "*ToolButton*" style "smaller-text"
+#widget_class "*Mail*"       style "panel"
+
+widget_class "*<GtkToolbar>*<GtkButton>" style: highest "toolbar-button"
+widget_class "*<GtkToolbar>*Combo*"      style: highest "toolbar-button"
+widget_class "*<GtkToolbar>*Separator*"  style: highest "toolbar-separator"
+widget_class "*<GtkToolbar>*<GtkEntry>"  style: highest "toolbar-entry"
+
+widget "*fullscreen-toolbar*"      style: highest "default"
+
+
+#class "MetaFrames" style: highest "dark"
+
+style "pidgin-status-box" {
+    bg[NORMAL]   = @bg_color
+    bg[PRELIGHT] = shade(1.05, @bg_color)
+    bg[ACTIVE]   = shade(0.95, @bg_color)
+
+    engine "murrine" {
+        contrast = 1.00
+    }
+}
+widget "*pidgin_blist_statusbox*" style: highest "pidgin-status-box"
+
+style "square-thin" {
+    xthickness = 0
+    ythickness = 0
+
+    engine "murrine" {
+        roundness = 0
+        animation = FALSE
+    }
+}
+widget_class "*Menu*ProgressBar" style "square-thin"
+#widget "*Menu*ProgressBar" style "square-thin"
+#widget "*Menu*ProgressBar" style "square-thin"
+
+class         "PidginMenuTray"  style: highest "menubar"
+widget_class "*PidginMenuTray*" style: highest "menubar"
+
+# The window of the tooltip is called "gtk-tooltip"
+widget "gtk-tooltip*" style: highest "tooltips"
+
+#widget "EvWindow*Toolbar" style: highest "zero-contrast"
+#widget "EogWindow*Toolbar" style: highest "zero-contrast"
+#widget_class "*.<RBStatusbar>.*" style: highest "zero-contrast"
+
+widget_class "*.<ThunarStatusbar>.<GtkFrame>" style: highest "statusbar"
