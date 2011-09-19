@@ -5,7 +5,7 @@
 "roxterm"
 Mod4 + Return
 
-"roxterm --maximize --profile Huge --color-scheme Crawl -e crawl"
+"CRAWL"
 Control + Mod4 + Return
 
 "dmenu_run"
