@@ -1,7 +1,7 @@
 #!/bin/bash
 # vim: set syn=sh:
 
-source "$HOME/bin/lib/multi-host.sh"
+source "$HOME/bin/lib/host.sh"
 source "$HOME/bin/lib/driver.sh"
 
 bg_color="#000000"
@@ -39,7 +39,7 @@ Autostart() {
     # Load keybindings
     xbindkeys &
 
-    HostDo truffle mpdscribble &
+    OnHost truffle && mpdscribble &
 }
 
 Basics() {
@@ -66,8 +66,8 @@ SleepDo 3 Basics &
 
 # Launch a window manager with proper permissions
 Start() {
-    UsingDriver nouveau && HostDo truffle ~/.screenlayout/dual.sh
-    UsingDriver nvidia  && HostDo truffle nvidia-settings -l
+    UsingDriver nouveau && OnHost truffle && ~/.screenlayout/dual.sh
+    UsingDriver nvidia  && OnHost truffle && nvidia-settings -l
     exec ck-launch-session "$@"
 }
 
