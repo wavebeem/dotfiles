@@ -41,8 +41,8 @@
                   'Active' - where the active window is -->
   </placement>
   <theme>
-    <name>MTest-Top-Dark-Edge</name>
-    <titleLayout/>
+    <name>MTest-Thicker</name>
+    <titleLayout>CL</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
       N: window icon
@@ -57,7 +57,7 @@
     <animateIconify>no</animateIconify>
     <font place="ActiveWindow">
       <name>Luxi Sans</name>
-      <size>1</size>
+      <size>8</size>
       <!-- font size in points -->
       <weight>Bold</weight>
       <!-- 'bold' or 'normal' -->
@@ -784,6 +784,7 @@
   </menu>
   <applications>
     <application name="*" class="*" type="*" role="*">
+      <decor>no</decor>
     </application>
     <!--
   <application name="the window's _OB_APP_NAME property (see obxprop)"

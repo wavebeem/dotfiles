@@ -35,36 +35,36 @@ window.inactive.title.bg.color: #000000
 !! Titlebar text
 window.label.text.justify: right
 window.active.label.bg: parentrelative
-window.active.label.text.color: #f4f2f0
+window.active.label.text.color: #ffffff
 window.inactive.label.bg: parentrelative
-window.inactive.label.text.color: #444240
+window.inactive.label.text.color: #ffffff
 
 !! Window buttons
-window.active.button.*.pressed.image.color: #f4f2f0
-window.inactive.button.*.pressed.image.color: #444240
+window.active.button.*.pressed.image.color: #ffffff
+window.inactive.button.*.pressed.image.color: #ffffff
 
-window.active.button.*.hover.image.color: #f4f2f0
-window.inactive.button.*.hover.image.color: #444240
+window.active.button.*.hover.image.color: #ffffff
+window.inactive.button.*.hover.image.color: #ffffff
 
-window.active.button.*.image.color: #f4f2f0
-window.inactive.button.*.image.color: #444240
+window.active.button.*.image.color: #ffffff
+window.inactive.button.*.image.color: #ffffff
 
-window.inactive.button.*.*.bg: flat solid border
+window.inactive.button.*.*.bg: flat solid
 window.inactive.button.*.*.bg.color: #000000
 window.inactive.button.*.*.bg.border.color: #000000
 
-window.active.button.*.*.bg: flat solid border
+window.active.button.*.*.bg: flat solid
 window.active.button.*.*.bg.color: #000000
 window.active.button.*.*.bg.border.color: #000000
 
-window.*.button.*.hover.bg: flat solid border
+window.*.button.*.hover.bg: flat solid
 window.*.button.*.hover.bg.color: #000000
 window.*.button.*.hover.bg.border.color: #000000
 
 !! Borders
 window.active.border.color: #d4d2d0
 window.inactive.border.color: #000000
-window.active.title.separator.color: #c4c2c0
+window.active.title.separator.color: #646260
 window.inactive.title.separator.color: #000000
 border.width:  3
 padding.width: 1
@@ -77,10 +77,10 @@ window.inactive.handle.bg: flat solid
 window.inactive.handle.bg.color: #000000
 window.inactive.grip.bg: flat solid
 window.inactive.grip.bg.color: #000000
-window.active.client.color:   #141210
-window.inactive.client.color: #141210
+window.active.client.color:   #000000
+window.inactive.client.color: #000000
 window.client.padding.width:  0
-window.handle.width: 6
+window.handle.width: 0
 menu.overlap: 0
 
 !! On-screen displays
