@@ -282,6 +282,12 @@
       <action name="SendToDesktop">
         <desktop>9</desktop>
       </action>
+  </keybind>
+    <keybind key="W-n">
+      <action name="ToggleAlwaysOnTop"/>
+    </keybind>
+    <keybind key="W-b">
+      <action name="ToggleAlwaysOnBottom"/>
     </keybind>
     <keybind key="W-d">
       <action name="ToggleDecorations"/>
@@ -294,6 +300,11 @@
     </keybind>
     <keybind key="W-q">
       <action name="Close"/>
+    </keybind>
+    <keybind key="W-c">
+      <action name="Execute">
+        true
+      </action>
     </keybind>
     <keybind key="W-S-q">
       <action name="Exit"/>
@@ -412,9 +423,6 @@
     </keybind>
     <keybind key="C-A-W-h">
       <action name="GrowToEdgeWest"/>
-    </keybind>
-    <keybind key="C-W-n">
-      <action name="MoveToCenter"/>
     </keybind>
     <keybind key="A-W-k">
       <action name="DirectionalFocusNorth"/>
