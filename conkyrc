@@ -2,28 +2,33 @@ alignment top_right
 background no
 border_width 1
 cpu_avg_samples 2
-default_color white
-default_outline_color black
-default_shade_color black
+default_color         000000
+default_outline_color 444240
+default_shade_color   444240
 draw_borders no
 draw_graph_borders yes
 draw_outline yes
-draw_shades no
+draw_shades  no
 use_xft yes
-xftfont DejaVu Sans Mono:size=20:bold
+#xftfont DejaVu Sans Mono:size=10:bold
+xftfont Luxi Sans:size=12:bold
 xftalpha 0.5
-gap_x 10
-gap_y 10
-minimum_size 5 5
+gap_x 5
+gap_y 5
+minimum_size 1670 16
+maximum_size 1670 16
 net_avg_samples 2
 no_buffers yes
 out_to_console no
 out_to_stderr no
 extra_newline no
 double_buffer yes
-own_window no
+own_window yes
 own_window_class Conky
 own_window_type desktop
+own_window_transparent yes
+own_window_argb_value 255
+own_window_colour black
 stippled_borders 0
 update_interval 1.0
 uppercase no
@@ -32,7 +37,9 @@ show_graph_scale no
 show_graph_range no
 
 TEXT
-${font DejaVu Sans Mono:size=64:bold}${alignr}${time %H:%M}${font}
-${font DejaVu Sans Mono:size=24:bold}${alignr}${time %Y.%m.%d}${font}
-${font DejaVu Sans Mono:size=24:bold}${alignr}${time %A}${font}
-${font DejaVu Sans Mono:size=16:bold}${alignr}${battery_percent}%${font}
+${alignr}\
+${if_mpd_playing}${mpd_artist}\
+  —  \
+${mpd_album}\
+  —  \
+${mpd_title}${endif}
