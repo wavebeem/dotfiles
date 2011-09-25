@@ -41,8 +41,8 @@
                   'Active' - where the active window is -->
   </placement>
   <theme>
-    <name>MTest-Thicker</name>
-    <titleLayout>L</titleLayout>
+    <name>MTest-Subtle-Edge</name>
+    <titleLayout></titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
       N: window icon
@@ -57,7 +57,7 @@
     <animateIconify>no</animateIconify>
     <font place="ActiveWindow">
       <name>Luxi Sans</name>
-      <size>8</size>
+      <size>1</size>
       <!-- font size in points -->
       <weight>Bold</weight>
       <!-- 'bold' or 'normal' -->
@@ -282,6 +282,12 @@
       <action name="SendToDesktop">
         <desktop>9</desktop>
       </action>
+  </keybind>
+    <keybind key="W-n">
+      <action name="ToggleAlwaysOnTop"/>
+    </keybind>
+    <keybind key="W-b">
+      <action name="ToggleAlwaysOnBottom"/>
     </keybind>
     <keybind key="W-d">
       <action name="ToggleDecorations"/>
@@ -292,8 +298,13 @@
     <keybind key="W-f">
       <action name="ToggleFullscreen"/>
     </keybind>
-    <keybind key="W-c">
+    <keybind key="W-q">
       <action name="Close"/>
+    </keybind>
+    <keybind key="W-c">
+      <action name="Execute">
+        true
+      </action>
     </keybind>
     <keybind key="W-S-q">
       <action name="Exit"/>
@@ -412,9 +423,6 @@
     </keybind>
     <keybind key="C-A-W-h">
       <action name="GrowToEdgeWest"/>
-    </keybind>
-    <keybind key="C-W-n">
-      <action name="MoveToCenter"/>
     </keybind>
     <keybind key="A-W-k">
       <action name="DirectionalFocusNorth"/>
@@ -784,7 +792,7 @@
   </menu>
   <applications>
     <application name="*" class="*" type="*" role="*">
-      <decor>no</decor>
+      <decor>yes</decor>
     </application>
     <!--
   <application name="the window's _OB_APP_NAME property (see obxprop)"

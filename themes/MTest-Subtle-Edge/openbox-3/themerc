@@ -15,8 +15,8 @@ menu.items.disabled.text.color: #848280
 
 !! Menu headers
 menu.title.bg: flat solid border
-menu.title.bg.color:        #141210
-menu.title.bg.border.color: #242220
+menu.title.bg.color:        #242220
+menu.title.bg.border.color: #343230
 menu.title.text.color: #f4f2f0
 menu.title.text.justify: right
 

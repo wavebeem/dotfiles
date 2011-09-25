@@ -57,6 +57,7 @@ Prompt_Host() {
     local e="%f%b"
 
     precmd() {
+        hash -r
         echo
     }
 
@@ -90,6 +91,7 @@ Prompt_Rainbow() {
     local space=" "
 
     precmd() {
+        hash -r
         echo
     }
 
