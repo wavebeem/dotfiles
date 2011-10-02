@@ -2,7 +2,7 @@
 #keystate_capslock = enable
 #keystate_scrolllock= enable
 
-"roxterm"
+"terminal"
 Mod4 + Return
 
 "CRAWL"
@@ -14,10 +14,10 @@ Mod4 + F1
 "DMENU"
 Mod4 + p
 
-"roxterm -e NET"
+"terminal -e NET"
 Mod4 + w
 
-"roxterm -e alsamixer"
+"terminal -e alsamixer"
 Mod4 + e
 
 "xkill"
