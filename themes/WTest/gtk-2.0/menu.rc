@@ -17,8 +17,14 @@ style "menu-item" = "menu" {
     xthickness = 4
     ythickness = 3
 
-    fg[PRELIGHT] = @selected_fg_color
-    fg[SELECTED] = @selected_fg_color
+    fg[  PRELIGHT   ] = @selected_fg_color
+    fg[  SELECTED   ] = @selected_fg_color
+    fg[  ACTIVE     ] = @selected_fg_color
+    fg[  INSENSITIVE] = @selected_fg_color
+    text[PRELIGHT   ] = @selected_fg_color
+    text[SELECTED   ] = @selected_fg_color
+    text[ACTIVE     ] = @selected_fg_color
+    text[INSENSITIVE] = @selected_fg_color
 
     base[NORMAL]  = @selected_bg_color
 
