@@ -39,10 +39,9 @@ Autostart() {
     # Load keybindings
     xbindkeys &
 
+    # Scrobble songs on desktop
     OnHost truffle && mpdscribble &
-}
 
-Basics() {
     # Load font and cursor settings
     xrdb ~/.Xdefaults &
 
@@ -58,11 +57,11 @@ Basics() {
     # Enable Ctrl-Alt-Backspace for zapping X
     setxkbmap -option terminate:ctrl_alt_bksp &
 
+    # Enable compositing (maybe)
     COMPOSITE on &
 }
 
 SleepDo 2 Autostart &
-SleepDo 3 Basics &
 
 # Launch a window manager with proper permissions
 Start() {
