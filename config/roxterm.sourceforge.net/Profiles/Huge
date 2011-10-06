@@ -33,3 +33,4 @@ delete_binding=0
 bell_highlights_tab=1
 exit_action=0
 tab_pos=1
+maximise=1

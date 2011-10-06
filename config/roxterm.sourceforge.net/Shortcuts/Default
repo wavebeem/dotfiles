@@ -1,11 +1,11 @@
 
 [roxterm shortcuts scheme]
-File/New Window=<Shift><Control>n
-File/New Tab=<Shift><Control>t
-File/Close Window=<Shift><Control>q
-File/Close Tab=<Shift><Control>w
-Tabs/Previous Tab=<Control>Page_Up
-Tabs/Next Tab=<Control>Page_Down
+File/New Window=<Alt>n
+File/New Tab=<Alt>u
+File/Close Window=<Shift><Alt>q
+File/Close Tab=<Alt>w
+Tabs/Previous Tab=<Alt>k
+Tabs/Next Tab=<Alt>j
 Edit/Copy=<Shift><Control>c
 Edit/Paste=<Shift><Control>v
 View/Zoom In=<Control>plus
@@ -27,3 +27,10 @@ File/New Tab With Profile/Huge=
 File/New Tab With Profile/Music=
 File/New Window With Profile/Medium=
 File/New Tab With Profile/Medium=
+Preferences/Edit Current Profile=<Alt>comma
+Preferences/Edit Current Colour Scheme=<Alt>period
+Preferences/Configuration Manager=<Alt>slash
+Search/Find...=<Alt>f
+Tabs/Name Tab...=<Alt>s
+Tabs/Move Tab Right=<Shift><Alt>j
+Tabs/Move Tab Left=<Shift><Alt>k
