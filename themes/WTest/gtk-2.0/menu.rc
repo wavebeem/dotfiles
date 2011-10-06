@@ -4,9 +4,9 @@ style "menu" {
     xthickness = 4
     ythickness = 4
 
-    bg[NORMAL]      = mix(0.50, shade(1.20, @selected_bg_color), shade(1.30, @bg_color))
-    base[NORMAL]    = mix(0.50, shade(1.20, @selected_bg_color), shade(1.30, @bg_color))
-    fg[INSENSITIVE] = mix(0.50, shade(1.20, @selected_bg_color), shade(4.50, @bg_color))
+    bg[NORMAL]      = mix(0.50, shade(2.80, @selected_bg_color), shade(1.30, @bg_color))
+    base[NORMAL]    = mix(0.50, shade(2.80, @selected_bg_color), shade(1.30, @bg_color))
+    fg[INSENSITIVE] = mix(0.50, shade(2.80, @selected_bg_color), shade(4.50, @bg_color))
 
     engine "murrine" {
         contrast = 1.50
@@ -24,7 +24,7 @@ style "menu-item" = "menu" {
 
     bg[INSENSITIVE] = mix(0.50, shade(0.80, @selected_bg_color), shade(1.30, @bg_color))
 
-    bg[SELECTED] = mix(0.90, shade(0.80, @selected_bg_color), "#FFF")
+    bg[SELECTED] = mix(0.90, shade(1.80, @selected_bg_color), "#FFF")
 
     engine "murrine" {
         contrast  = 0.50

@@ -21,7 +21,8 @@ style "entry" = "wider" {
         roundness = 0
         #border_shades = {1.75, 0.25}
         border_shades = {1.50, 0.50}
-        focus_color = shade(2.50, @bg_color)
+        focus_color = shade(1.00, @selected_bg_color)
+        #focus_color = shade(2.50, @bg_color)
         #contrast = 0.80
     }
 }
