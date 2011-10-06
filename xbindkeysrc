@@ -2,7 +2,7 @@
 #keystate_capslock = enable
 #keystate_scrolllock= enable
 
-"roxterm"
+"TERM"
 Mod4 + Return
 
 "CRAWL"
