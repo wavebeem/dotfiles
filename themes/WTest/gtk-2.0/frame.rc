@@ -10,6 +10,6 @@ style "frame" = "wide" {
     bg[NORMAL] = shade(1.00, @bg_color)
 
     engine "murrine" {
-        roundness = 3
+        roundness = 1
     }
 }

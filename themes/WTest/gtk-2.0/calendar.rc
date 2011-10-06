@@ -9,6 +9,6 @@ style "calendar" {
     ythickness = 2
 
     engine "murrine" {
-        roundness = 0
+        roundness = 1
     }
 }

@@ -11,7 +11,7 @@ style "notebook" {
 
     # Fallback engine
     engine "murrine" {
-        roundness = 4
+        roundness = 1
         contrast = 1.10
     }
 
@@ -25,6 +25,6 @@ style "spinbutton-notebook" = "button" {
     bg[NORMAL] = shade(1.10, @bg_color)
 
     engine "murrine" {
-        roundness = 0
+        roundness = 1
     }
 }

@@ -4,6 +4,6 @@ style "spinbutton" = "button" {
     bg[NORMAL] = @bg_color
 
     engine "murrine" {
-        roundness = 0
+        roundness = 1
     }
 }
