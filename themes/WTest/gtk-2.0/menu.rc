@@ -20,11 +20,11 @@ style "menu-item" = "menu" {
     fg[  PRELIGHT   ] = @selected_fg_color
     fg[  SELECTED   ] = @selected_fg_color
     fg[  ACTIVE     ] = @selected_fg_color
-    fg[  INSENSITIVE] = @selected_fg_color
+    fg[  INSENSITIVE] = shade(0.50, @bg_color)
     text[PRELIGHT   ] = @selected_fg_color
     text[SELECTED   ] = @selected_fg_color
     text[ACTIVE     ] = @selected_fg_color
-    text[INSENSITIVE] = @selected_fg_color
+    #text[INSENSITIVE] = @selected_fg_color
 
     base[NORMAL]  = @selected_bg_color
 
