@@ -130,7 +130,7 @@ style "square-thin" {
     ythickness = 0
 
     engine "murrine" {
-        roundness = 0
+        roundness = 1
         animation = FALSE
     }
 }

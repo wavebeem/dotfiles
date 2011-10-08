@@ -10,7 +10,7 @@ style "toolbar" {
     fg[ACTIVE] = @fg_color
 
     engine "murrine" {
-        roundness = 3
+        roundness = 1
         contrast = 1.30
         glow_shade = 1.00
         lightborder_shade = 1.00

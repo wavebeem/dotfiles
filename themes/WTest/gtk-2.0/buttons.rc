@@ -7,7 +7,7 @@ style "button" = "wider" {
     bg[INSENSITIVE] = shade(1.20, @bg_color)
 
     engine "murrine" {
-        roundness = 4
+        roundness = 1
         contrast = 1.70
     }
 }
@@ -31,8 +31,8 @@ style "toolbar-button" = "button" {
     bg[ACTIVE]   = shade(3.00, @selected_bg_color)
 
     engine "murrine" {
-        #roundness = 32
-        roundness = 12
+        #roundness = 1
+        roundness = 1
         contrast = 1.80
     }
 }
