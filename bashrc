@@ -66,7 +66,7 @@ export WINEDEBUG="fixme-all"
 
 export EDITOR='vim'
 export VISUAL='vim'
-export BROWSER='w3m'
+export BROWSER='chromium'
 export PAGER='less'
 
 alias img="viewnior"
