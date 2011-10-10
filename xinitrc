@@ -61,14 +61,18 @@ Autostart() {
     COMPOSITE on &
 }
 
-SleepDo 2 Autostart &
-
 # Launch a window manager with proper permissions
 Start() {
-    UsingDriver nouveau && OnHost truffle && ~/.screenlayout/dual.sh
-    UsingDriver nvidia  && OnHost truffle && nvidia-settings -l
+    UsingDriver nvidia &&
+        OnHost truffle &&
+        nvidia-settings -l
     exec ck-launch-session "$@"
 }
 
 WM=${WM:-$default_wm}
-Start "$WM"
+if [ -z "$DE" ]; then
+    SleepDo 2 Autostart &
+    Start "$WM"
+else
+    Start "$DE"
+fi
