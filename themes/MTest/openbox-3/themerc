@@ -10,26 +10,26 @@ menu.separator.padding.width: 0
 menu.separator.padding.height: 1
 
 !! Menu text
-menu.items.text.color: #f4f2f0
+menu.items.text.color: #e4e2e0
 menu.items.disabled.text.color: #848280
 
 !! Menu headers
 menu.title.bg: flat solid border
-menu.title.bg.color:        #242220
-menu.title.bg.border.color: #343230
-menu.title.text.color: #f4f2f0
+menu.title.bg.color:        #545250
+menu.title.bg.border.color: #646260
+menu.title.text.color: #e4e2e0
 menu.title.text.justify: right
 
 !! Selected menu item
 menu.items.active.bg: flat solid border
 menu.items.active.bg.color:        #646260
 menu.items.active.bg.border.color: #747270
-menu.items.active.text.color: #f4f2f0
+menu.items.active.text.color: #ffffff
 
 !! Titlebar
 window.active.title.bg: flat solid border
-window.active.title.bg.color:        #d4d2d0
-window.active.title.bg.border.color: #e4e2e0
+window.active.title.bg.color:        #a4a2a0
+window.active.title.bg.border.color: #b4b2b0
 window.inactive.title.bg: flat solid border
 window.inactive.title.bg.color:        #242220
 window.inactive.title.bg.border.color: #343230
@@ -39,7 +39,7 @@ window.label.text.justify: right
 window.active.label.bg: parentrelative
 window.active.label.text.color: #000000
 window.inactive.label.bg: parentrelative
-window.inactive.label.text.color: #ffffff
+window.inactive.label.text.color: #e4e2e0
 
 !! Window buttons
 window.active.button.*.pressed.image.color:   parentrelative
@@ -91,14 +91,14 @@ window.handle.width: 0
 menu.overlap: 0
 
 !! On-screen displays
-osd.label.text.color: #ffffff
+osd.label.text.color: #e4e2e0
 osd.hilight.bg: flat solid border
 osd.hilight.bg.color:        #a4a2a0
 osd.hilight.bg.border.color: #b4b2b0
 osd.unhilight.bg: flat solid border
-osd.unhilight.bg.color:        #343230
-osd.unhilight.bg.border.color: #444240
+osd.unhilight.bg.color:        #444240
+osd.unhilight.bg.border.color: #545250
 osd.bg: flat solid border
-osd.bg.color:        #141210
-osd.bg.border.color: #242220
+osd.bg.color:        #242220
+osd.bg.border.color: #343230
 # vim: set ft=xdefaults:
