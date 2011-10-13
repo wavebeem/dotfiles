@@ -75,7 +75,7 @@
     </font>
     <font place="MenuHeader">
       <name>Luxi Sans</name>
-      <size>7</size>
+      <size>12</size>
       <!-- font size in points -->
       <weight>Bold</weight>
       <!-- 'bold' or 'normal' -->
@@ -84,7 +84,7 @@
     </font>
     <font place="MenuItem">
       <name>Luxi Sans</name>
-      <size>16</size>
+      <size>12</size>
       <!-- font size in points -->
       <weight>Bold</weight>
       <!-- 'bold' or 'normal' -->
@@ -750,12 +750,10 @@
         <action name="Focus"/>
         <action name="Raise"/>
       </mousebind>
-    </context>
-    <context name="Root">
       <!-- Menus -->
       <mousebind action="Press" button="Middle">
         <action name="ShowMenu">
-          <menu>stats-menu</menu>
+          <menu>client-list-combined-menu</menu>
         </action>
       </mousebind>
       <mousebind action="Press" button="Right">
@@ -763,6 +761,9 @@
           <menu>root-menu</menu>
         </action>
       </mousebind>
+    </context>
+    <context name="Root">
+      <!-- This just does all the same stuff as desktop windows -->
     </context>
     <context name="MoveResize">
       <mousebind action="Click" button="Up">
