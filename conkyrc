@@ -47,6 +47,7 @@ Local ${alignr}${time %a - %H:%M}
 Vienna ${alignr}${tztime Europe/Vienna %a - %H:%M}
 Helsinki ${alignr}${tztime Europe/Helsinki %a - %H:%M}
 Tokyo ${alignr}${tztime Japan %a - %H:%M}
+Melbourne ${alignr}${tztime Australia/Melbourne %a - %H:%M}
 
 CPU ${hr 1}
 
