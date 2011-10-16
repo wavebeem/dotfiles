@@ -792,11 +792,15 @@
     <!-- show the manage desktops section in the client-list-(combined-)menu -->
   </menu>
   <applications>
-    <!--
-    <application name="*" class="*" type="*" role="*">
-      <decor>yes</decor>
+    <application name="*" class="Chromium" type="*" role="*">
+      <decor>no</decor>
     </application>
-    -->
+    <application name="*" class="MPlayer" type="*" role="*">
+      <decor>no</decor>
+    </application>
+    <application name="*" class="XTerm" type="*" role="*">
+      <decor>no</decor>
+    </application>
     <!--
   <application name="the window's _OB_APP_NAME property (see obxprop)"
               class="the window's _OB_APP_CLASS property (see obxprop)"
