@@ -31,8 +31,8 @@ window.active.title.bg: flat solid border
 window.active.title.bg.color:        #a4a2a0
 window.active.title.bg.border.color: #b4b2b0
 window.inactive.title.bg: flat solid border
-window.inactive.title.bg.color:        #242220
-window.inactive.title.bg.border.color: #343230
+window.inactive.title.bg.color:        #444240
+window.inactive.title.bg.border.color: #545250
 
 !! Titlebar text
 window.label.text.justify: right
@@ -71,7 +71,7 @@ window.inactive.button.*.hover.bg.border.color: #000000
 window.active.border.color:   #000000
 window.inactive.border.color: #000000
 window.active.title.separator.color:   #000000
-window.inactive.title.separator.color: #000000
+window.inactive.title.separator.color: #343230
 border.width:  1
 padding.width: 1
 padding.height: 1
