@@ -193,6 +193,11 @@
         <wrap>yes</wrap>
       </action>
     </keybind>
+    <keybind key="W-grave">
+      <action name="GoToDesktop">
+        <to>last</to>
+      </action>
+    </keybind>
     <keybind key="W-1">
       <action name="Desktop">
         <desktop>1</desktop>
