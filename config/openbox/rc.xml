@@ -42,7 +42,7 @@
   </placement>
   <theme>
     <name>MTest</name>
-    <titleLayout>L</titleLayout>
+    <titleLayout></titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
       N: window icon
@@ -57,7 +57,7 @@
     <animateIconify>no</animateIconify>
     <font place="ActiveWindow">
       <name>Luxi Sans</name>
-      <size>7</size>
+      <size>1</size>
       <!-- font size in points -->
       <weight>Bold</weight>
       <!-- 'bold' or 'normal' -->
@@ -66,7 +66,7 @@
     </font>
     <font place="InactiveWindow">
       <name>Luxi Sans</name>
-      <size>7</size>
+      <size>8</size>
       <!-- font size in points -->
       <weight>Bold</weight>
       <!-- 'bold' or 'normal' -->
@@ -75,7 +75,7 @@
     </font>
     <font place="MenuHeader">
       <name>Luxi Sans</name>
-      <size>7</size>
+      <size>12</size>
       <!-- font size in points -->
       <weight>Bold</weight>
       <!-- 'bold' or 'normal' -->
@@ -84,7 +84,7 @@
     </font>
     <font place="MenuItem">
       <name>Luxi Sans</name>
-      <size>16</size>
+      <size>12</size>
       <!-- font size in points -->
       <weight>Bold</weight>
       <!-- 'bold' or 'normal' -->
@@ -191,6 +191,11 @@
     <keybind key="W-S-l">
       <action name="SendToDesktopNext">
         <wrap>yes</wrap>
+      </action>
+    </keybind>
+    <keybind key="W-grave">
+      <action name="GoToDesktop">
+        <to>last</to>
       </action>
     </keybind>
     <keybind key="W-1">
@@ -750,12 +755,10 @@
         <action name="Focus"/>
         <action name="Raise"/>
       </mousebind>
-    </context>
-    <context name="Root">
       <!-- Menus -->
       <mousebind action="Press" button="Middle">
         <action name="ShowMenu">
-          <menu>stats-menu</menu>
+          <menu>client-list-combined-menu</menu>
         </action>
       </mousebind>
       <mousebind action="Press" button="Right">
@@ -763,6 +766,9 @@
           <menu>root-menu</menu>
         </action>
       </mousebind>
+    </context>
+    <context name="Root">
+      <!-- This just does all the same stuff as desktop windows -->
     </context>
     <context name="MoveResize">
       <mousebind action="Click" button="Up">
@@ -791,11 +797,15 @@
     <!-- show the manage desktops section in the client-list-(combined-)menu -->
   </menu>
   <applications>
-    <!--
-    <application name="*" class="*" type="*" role="*">
-      <decor>yes</decor>
+    <application name="*" class="Chromium" type="*" role="*">
+      <decor>no</decor>
     </application>
-    -->
+    <application name="*" class="MPlayer" type="*" role="*">
+      <decor>no</decor>
+    </application>
+    <application name="*" class="XTerm" type="*" role="*">
+      <decor>no</decor>
+    </application>
     <!--
   <application name="the window's _OB_APP_NAME property (see obxprop)"
               class="the window's _OB_APP_CLASS property (see obxprop)"

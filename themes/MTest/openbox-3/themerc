@@ -1,7 +1,7 @@
 !! Menu background
 menu.items.bg: flat solid border
-menu.items.bg.color:        #343230
-menu.items.bg.border.color: #444240
+menu.items.bg.color:        #444240
+menu.items.bg.border.color: #545250
 
 !! Menu separators
 menu.separator.color: #545250
@@ -15,15 +15,15 @@ menu.items.disabled.text.color: #848280
 
 !! Menu headers
 menu.title.bg: flat solid border
-menu.title.bg.color:        #545250
-menu.title.bg.border.color: #646260
+menu.title.bg.color:        #343230
+menu.title.bg.border.color: #444240
 menu.title.text.color: #e4e2e0
 menu.title.text.justify: right
 
 !! Selected menu item
 menu.items.active.bg: flat solid border
-menu.items.active.bg.color:        #646260
-menu.items.active.bg.border.color: #747270
+menu.items.active.bg.color:        #747270
+menu.items.active.bg.border.color: #848280
 menu.items.active.text.color: #ffffff
 
 !! Titlebar
@@ -31,8 +31,8 @@ window.active.title.bg: flat solid border
 window.active.title.bg.color:        #a4a2a0
 window.active.title.bg.border.color: #b4b2b0
 window.inactive.title.bg: flat solid border
-window.inactive.title.bg.color:        #242220
-window.inactive.title.bg.border.color: #343230
+window.inactive.title.bg.color:        #444240
+window.inactive.title.bg.border.color: #545250
 
 !! Titlebar text
 window.label.text.justify: right
@@ -52,26 +52,26 @@ window.active.button.*.image.color:   parentrelative
 window.inactive.button.*.image.color: parentrelative
 
 window.inactive.button.*.*.bg: flat solid
-window.inactive.button.*.*.bg.color: #242220
+window.inactive.button.*.*.bg.color: #444240
 window.inactive.button.*.*.bg.border.color: #000000
 
 window.active.button.*.*.bg: flat solid
-window.active.button.*.*.bg.color: #d4d2d0
+window.active.button.*.*.bg.color: #a4a2a0
 window.active.button.*.*.bg.border.color: #000000
 
 window.active.button.*.hover.bg: flat solid border
-window.active.button.*.hover.bg.color: #a4a2a0
+window.active.button.*.hover.bg.color: #d4d2d0
 window.active.button.*.hover.bg.border.color: #444240
 
 window.inactive.button.*.hover.bg: flat solid border
-window.inactive.button.*.hover.bg.color: #848280
-window.inactive.button.*.hover.bg.border.color: #000000
+window.inactive.button.*.hover.bg.color: #242220
+window.inactive.button.*.hover.bg.border.color: #a4a2a0
 
 !! Borders
 window.active.border.color:   #000000
 window.inactive.border.color: #000000
 window.active.title.separator.color:   #000000
-window.inactive.title.separator.color: #000000
+window.inactive.title.separator.color: #343230
 border.width:  1
 padding.width: 1
 padding.height: 1

@@ -66,6 +66,7 @@ Start() {
     UsingDriver nvidia &&
         OnHost truffle &&
         nvidia-settings -l
+    OnHost truffle && conky &
     exec ck-launch-session "$@"
 }
 
