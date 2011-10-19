@@ -11,7 +11,7 @@ draw_outline yes
 draw_shades  no
 use_xft yes
 #xftfont DejaVu Sans Mono:size=14:bold
-xftfont Luxi Sans:size=12:bold
+xftfont Luxi Sans:size=10:bold
 xftalpha 0.5
 gap_x 10
 gap_y 10
@@ -84,3 +84,11 @@ Write ${alignr}${diskio_write}
 
 ${diskiograph_read}
 ${diskiograph_write}
+
+NETWORK ${hr 1}
+
+Up ${alignr}${upspeed}
+Down ${alignr}${downspeed}
+
+${upspeedgraph}
+${downspeedgraph}
