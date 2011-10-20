@@ -67,7 +67,7 @@ Start() {
         OnHost truffle &&
         nvidia-settings -l
     OnHost truffle && conky &
-    exec ck-launch-session "$@"
+    exec dbus-launch ck-launch-session "$@"
 }
 
 WM=${WM:-$default_wm}
