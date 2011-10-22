@@ -42,7 +42,7 @@
   </placement>
   <theme>
     <name>MTest</name>
-    <titleLayout></titleLayout>
+    <titleLayout/>
     <!--
       available characters are NDSLIMC, each can occur at most once.
       N: window icon
@@ -116,12 +116,12 @@
     <number>6</number>
     <firstdesk>1</firstdesk>
     <names>
-      <name>&#x2605;</name>
-      <name>&#xB7; &#x2605;</name>
-      <name>&#xB7; &#xB7; &#x2605;</name>
-      <name>&#xB7; &#xB7; &#xB7; &#x2605;</name>
-      <name>&#xB7; &#xB7; &#xB7; &#xB7; &#x2605;</name>
-      <name>&#xB7; &#xB7; &#xB7; &#xB7; &#xB7; &#x2605;</name>
+      <name>.</name>
+      <name>:</name>
+      <name>:.</name>
+      <name>::</name>
+      <name>::.</name>
+      <name>:::</name>
     </names>
     <popupTime>750</popupTime>
     <!-- The number of milliseconds to show the popup for when switching
