@@ -69,6 +69,9 @@ export VISUAL='vim'
 export BROWSER='chromium'
 export PAGER='less'
 
+# Force Java to anti-alias text
+export _JAVA_OPTIONS="-Dawt.useSystemAAFontSettings=on"
+
 alias img="viewnior"
 
 alias ls='ls --color=auto'
