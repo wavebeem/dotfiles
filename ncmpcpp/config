@@ -1,3 +1,5 @@
+# vim: set syn=conf:
+
 mpd_host = "truffle"
 mpd_port = "6600"
 
@@ -32,8 +34,9 @@ playlist_separate_albums = "no"
 # song_columns_list_format =  "(6f)[red]{lr} (40)[]{t} (35)[cyan]{br} (25)[magenta]{a}"
 # song_columns_list_format =  "(6f)[red]{lr} (40)[cyan]{t} (35)[green]{br} (25)[magenta]{a}"
 # song_columns_list_format =  "(6f)[cyan]{lr} (40)[]{t} (35)[]{br} (25)[cyan]{a}"
-song_columns_list_format =  "(6f)[]{lr}| (40)[yellow]{t} (35)[cyan]{b} (25)[]{a}"
+#song_columns_list_format =  "(6f)[]{lr}| (40)[yellow]{t} (35)[cyan]{b} (25)[]{a}"
 # song_columns_list_format =  "(6f)[red]{lr} (40)[]{t} (35)[cyan]{b} (25)[magenta]{a}"
+song_columns_list_format =  "(6f)[]{lr}| (40)[yellow]{t}"
 
 #execute_on_song_change = ""
 
