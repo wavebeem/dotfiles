@@ -66,7 +66,7 @@ Start() {
     UsingDriver nvidia &&
         OnHost truffle &&
         nvidia-settings -l
-    OnHost truffle && conky &
+    OnHost truffle && tint2 &
     exec dbus-launch ck-launch-session "$@"
 }
 
