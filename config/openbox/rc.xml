@@ -800,6 +800,12 @@
     <application name="*" class="Chromium" type="*" role="*">
       <decor>no</decor>
     </application>
+    <application name="*" class="Gvbam" type="*" role="*">
+      <decor>no</decor>
+    </application>
+    <application name="*" class="Snes9x-gtk" type="*" role="*">
+      <decor>no</decor>
+    </application>
     <application name="*" class="Viewnior" type="*" role="*">
       <decor>no</decor>
     </application>
