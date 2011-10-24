@@ -21,7 +21,7 @@ border_color     = #000000 50
 # ID 3
 rounded          = 0
 border_width     = 1
-background_color = #f57900 100
+background_color = #c26000 100
 border_color     = #000000 100
 
 # ID 4
@@ -61,7 +61,7 @@ panel_layer    = top
 #---------------------------------------------
 taskbar_mode          = multi_desktop
 #taskbar_mode          = single_desktop
-taskbar_padding       = 0 0 0
+taskbar_padding       = 0 0 -1
 taskbar_background_id = 1
 
 #---------------------------------------------
@@ -79,7 +79,7 @@ task_font         = luxi sans bold 9
 urgent_nb_of_blink     = 999999
 task_font_color        = #ffffff 50
 task_active_font_color = #ffffff 100
-task_urgent_font_color = #000000 100
+task_urgent_font_color = #ffffff 100
 task_icon_asb          = 100 0 0
 task_active_icon_asb   = 100 0 0
 task_urgent_icon_asb   = 100 0 0
