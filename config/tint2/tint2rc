@@ -20,7 +20,7 @@ border_color     = #000000 50
 
 # ID 3
 rounded          = 0
-border_width     = 0
+border_width     = 1
 background_color = #f57900 100
 border_color     = #000000 100
 
