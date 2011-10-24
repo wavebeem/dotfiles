@@ -800,6 +800,9 @@
     <application name="*" class="Chromium" type="*" role="*">
       <decor>no</decor>
     </application>
+    <application name="*" class="Viewnior" type="*" role="*">
+      <decor>no</decor>
+    </application>
     <application name="*" class="MPlayer" type="*" role="*">
       <decor>no</decor>
     </application>
