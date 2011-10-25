@@ -15,7 +15,7 @@
     <item label="Openbox">
       <action name="Execute">
         <execute>
-          obconf
+          obconf --config-file /home/brian/.config/openbox/profiterole.xml
         </execute>
       </action>
     </item>

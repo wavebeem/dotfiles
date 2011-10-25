@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- vim: set sts=2 sw=2 et: -->
+<openbox_menu
+    xmlns="http://openbox.org/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://openbox.org/ file:///usr/share/openbox/menu.xsd">
+  <menu id="root-menu" label="Openbox">
+    <item label="Theme">
+      <action name="Execute">
+        <execute>
+          lxappearance
+        </execute>
+      </action>
+    </item>
+    <item label="Openbox">
+      <action name="Execute">
+        <execute>
+          obconf --config-file /home/brian/.config/openbox/truffle.xml
+        </execute>
+      </action>
+    </item>
+    <item label="Wallpaper">
+      <action name="Execute">
+        <execute>
+          nitrogen
+        </execute>
+      </action>
+    </item>
+  </menu>
+
+  <menu id="stats-menu" label="Stats" execute="OB-STATS-MENU"/>
+</openbox_menu>

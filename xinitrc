@@ -66,14 +66,14 @@ Start() {
     UsingDriver nvidia &&
         OnHost truffle &&
         nvidia-settings -l
-    OnHost truffle && tint2 &
+    PANEL on &
     exec dbus-launch ck-launch-session "$@"
 }
 
-WM=${WM:-$default_wm}
 if [ -z "$DE" ]; then
-    SleepDo 2 Autostart &
-    Start "$WM"
+    #SleepDo 0.5 Autostart &
+    Autostart &
+    Start WM on
 else
     Start "$DE"
 fi

@@ -27,15 +27,12 @@ menu.items.active.bg.border.color: #ffffff
 menu.items.active.text.color: #f4f2f0
 
 !! Titlebar
-window.active.title.bg: flat solid splitvertical gradient
-window.active.title.bg.color:           #000000
-window.active.title.bg.color.splitTo:   #000000
-window.active.title.bg.colorTo:         #00cc00
-window.active.title.bg.colorTo.splitTo: #00cc00
-window.active.title.bg.border.color: #ffffff
+window.active.title.bg: flat solid border
+window.active.title.bg.color:        #00cc00
+window.active.title.bg.border.color: #00cc00
 window.inactive.title.bg: flat solid border
-window.inactive.title.bg.color:        #000000
-window.inactive.title.bg.border.color: #000000
+window.inactive.title.bg.color:        #ffffff
+window.inactive.title.bg.border.color: #ffffff
 
 !! Titlebar text
 window.label.text.justify: right
@@ -75,7 +72,7 @@ window.inactive.button.*.hover.bg.border.color: #000000
 window.active.border.color:   #000000
 window.inactive.border.color: #000000
 window.active.title.separator.color:   #000000
-window.inactive.title.separator.color: #000000
+window.inactive.title.separator.color: #cccccc
 border.width:  1
 padding.width: 1
 padding.height: 1
