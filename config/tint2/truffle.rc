@@ -139,7 +139,7 @@ tooltip_font          = luxi sans bold 9
 # MOUSE ACTION ON TASK
 #---------------------------------------------
 #mouse_middle      = none
-#mouse_right       = close
+mouse_right       = close
 mouse_scroll_up   = prev_task
 mouse_scroll_down = next_task
 
