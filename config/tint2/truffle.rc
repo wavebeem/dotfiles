@@ -1,11 +1,6 @@
-#---------------------------------------------
-# TINT2 CONFIG FILE
-#---------------------------------------------
+# vim: set syn=cfg:
 
-#---------------------------------------------
-# BACKGROUND AND BORDER
-#---------------------------------------------
-
+### BACKGROUND AND BORDER ###
 # ID 1
 rounded          = 0
 border_width     = 1
@@ -42,9 +37,7 @@ border_width     = 1
 background_color = #000000 0
 border_color     = #000000 0
 
-#---------------------------------------------
-# PANEL
-#---------------------------------------------
+### PANEL ###
 panel_background_id = 5
 panel_monitor  = all
 panel_position = top center horizontal
@@ -56,17 +49,13 @@ wm_menu        = 0
 panel_dock     = 0
 panel_layer    = top
 
-#---------------------------------------------
-# TASKBAR
-#---------------------------------------------
+### TASKBAR ###
 taskbar_mode          = multi_desktop
 #taskbar_mode          = single_desktop
-taskbar_padding       = 0 0 -1
+taskbar_padding       = 0 0 1
 taskbar_background_id = 1
 
-#---------------------------------------------
-# TASKS
-#---------------------------------------------
+### TASKS ###
 task_background_id        = 6
 task_active_background_id = 2
 task_urgent_background_id = 3
@@ -84,9 +73,7 @@ task_icon_asb          = 100 0 0
 task_active_icon_asb   = 100 0 0
 task_urgent_icon_asb   = 100 0 0
 
-#---------------------------------------------
-# SYSTRAYBAR
-#---------------------------------------------
+### SYSTRAYBAR ###
 systray_background_id = 1
 systray           = 0
 systray_padding   = 2 2 0
@@ -94,9 +81,7 @@ systray_sort      = left2right
 systray_icon_size = 24
 systray_icon_asb  = 100 0 0
 
-#---------------------------------------------
-# CLOCK
-#---------------------------------------------
+### CLOCK ###
 clock_background_id = 1
 #time1_format = %Y-%m-%d  -  %H:%M
 time1_font = luxi sans bold 9
@@ -111,9 +96,7 @@ clock_tooltip = %Y-%m-%d
 #time2_timezone = :Europe/Berlin
 #clock_tooltip_timezone = :/usr/share/zoneinfo/Europe/Paris
 
-#---------------------------------------------
-# BATTERY
-#---------------------------------------------
+### BATTERY ###
 battery_background_id = 1
 battery            = 1
 battery_hide       = 101
@@ -124,9 +107,7 @@ bat2_font          = luxi sans bold 0
 battery_font_color = #ffffff 100
 battery_padding    = 4 4
 
-#---------------------------------------------
-# TOOLTIP
-#---------------------------------------------
+### TOOLTIP ###
 tooltip               = 1
 tooltip_padding       = 2 4
 tooltip_show_timeout  = 0.0
@@ -135,17 +116,13 @@ tooltip_background_id = 4
 tooltip_font_color    = #ffffff 100
 tooltip_font          = luxi sans bold 9
 
-#---------------------------------------------
-# MOUSE ACTION ON TASK
-#---------------------------------------------
+### MOUSE ACTION ON TASK ###
 #mouse_middle      = none
 mouse_right       = close
 mouse_scroll_up   = prev_task
 mouse_scroll_down = next_task
 
-#---------------------------------------------
-# AUTOHIDE OPTIONS
-#---------------------------------------------
+### AUTOHIDE OPTIONS ###
 #autohide              = 0
 #autohide_show_timeout = 0.3
 #autohide_hide_timeout = 2
