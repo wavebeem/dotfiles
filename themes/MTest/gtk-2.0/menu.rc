@@ -9,7 +9,7 @@ style "menu" {
     fg[INSENSITIVE] = mix(0.50, shade(0.80, @selected_bg_color), shade(4.50, @bg_color))
 
     engine "murrine" {
-        contrast = 1.50
+        contrast = 3.00
     }
 }
 
