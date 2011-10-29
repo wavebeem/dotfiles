@@ -57,8 +57,8 @@ Autostart() {
     # Enable Ctrl-Alt-Backspace for zapping X
     setxkbmap -option terminate:ctrl_alt_bksp &
 
-    # Enable compositing (maybe)
-    COMPOSITE on &
+    SleepDo 0.5 COMPOSITE on &
+    SleepDo 1.0 PANEL     on &
 }
 
 # Launch a window manager with proper permissions
@@ -66,7 +66,6 @@ Start() {
     UsingDriver nvidia &&
         OnHost truffle &&
         nvidia-settings -l
-    PANEL on &
     exec dbus-launch ck-launch-session "$@"
 }
 
