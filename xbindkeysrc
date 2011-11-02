@@ -77,6 +77,15 @@ Mod4 + Alt + F11
 "COMPOSITE on"
 Mod4 + Alt + F12
 
+"SCROT"
+Print
+
+"CLICKSHOT"
+Alt + Print
+
+"4CHAN"
+Control + Print
+
 "RE ibus-daemon"
 Control + Mod4 + F9
 
