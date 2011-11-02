@@ -35,3 +35,7 @@ Tabs/Name Tab...=<Alt>s
 Tabs/Move Tab Right=<Shift><Alt>j
 Tabs/Move Tab Left=<Shift><Alt>k
 Edit/Restart command=<Alt>r
+File/New Window With Profile/profiterole=
+File/New Window With Profile/truffle=
+File/New Tab With Profile/profiterole=
+File/New Tab With Profile/truffle=
