@@ -97,16 +97,12 @@
 }
 
 .entry {
-    border-image: none;
-    border-width: 1px;
-    border-style: solid;
-    border-color: @entry_border;
 }
 
 .entry:focused {
-    border-color: @entry_border_focused;
 }
 
+/*
 .primary-toolbar GtkComboBox.combobox-entry .button,
 GtkComboBox.combobox-entry .button,
 .primary-toolbar GtkComboBox.combobox-entry .button:nth-child(last),
@@ -125,7 +121,6 @@ GtkComboBox.combobox-entry .button:hover:active:nth-child(last) {
     border-image: url("assets/combobox-entry-border-active.svg") 2 / 2 2 2 0 stretch;
 }
 
-/* for RTL languages */
 .primary-toolbar GtkComboBox.combobox-entry .button:nth-child(first),
 GtkComboBox.combobox-entry .button:nth-child(first) {
     border-image: url("assets/entry-border-normal.svg") 2 / 2 0 2 2 stretch;
@@ -254,7 +249,6 @@ GtkScale.scale-has-marks-below.slider.vertical:insensitive {
     border-image: url("assets/primary-toolbar-raised-button-border.svg") 4 / 4 stretch;
 }
 
-/* nth-child for linked areas */
 .toolbar .raised.linked.button,
 .toolbar .raised.linked.button:active,
 .toolbar .raised.linked.button:active:hover,
@@ -281,3 +275,4 @@ GtkScale.scale-has-marks-below.slider.vertical:insensitive {
 .toolbar .raised.linked:nth-child(last) .button:active:hover {
     border-image: url("assets/primary-toolbar-raised-button-border.svg") 4 / 4 4 4 0 stretch;
 }
+*/

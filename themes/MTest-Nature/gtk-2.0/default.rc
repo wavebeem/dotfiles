@@ -52,7 +52,7 @@ style "default" {
     GtkMenu::vertical-padding   = 0
 
     GtkMenuBar::shadow_type = GTK_SHADOW_NONE
-#    GtkToolbar::shadow_type = GTK_SHADOW_NONE
+    GtkToolbar::shadow_type = GTK_SHADOW_NONE
 
     EogStatusBar::shadow_type = GTK_SHADOW_NONE
     EogStatusbar::shadow_type = GTK_SHADOW_NONE

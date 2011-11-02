@@ -139,9 +139,11 @@ GtkStatusbar {
 .entry {
     background-color: @theme_base_color;
 
-    border-style: none;
-    border-width: 1;
-    border-radius: 3;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 0;
+    border-image: none;
+    border-color: @entry_border;
 
     /* we use inner-border instead of padding because padding
      * also applies to the progressbar.
@@ -153,6 +155,10 @@ GtkStatusbar {
     /* border-image defined in the -assets variants */
 
     color: @entry_text_color;
+}
+
+.entry:focused {
+    border-color: @entry_border_focused;
 }
 
 .entry,
@@ -711,7 +717,7 @@ GtkTreeMenu .menuitem * {
 .menu {
     background-color: @menu_bg_color;
     color: @menu_fg_color;
-    padding: 2;
+    padding: 4;
     border-style: solid;
     border-color: @menu_border_color;
 }
@@ -759,18 +765,19 @@ GtkTreeMenu .menuitem * {
 .menubar .menuitem {
     border-width: 0;
     border-style: solid;
-    padding: 6 8;
+    padding: 6 6;
 }
 
 /* remove the image from the prelight areas */
 .menubar .menuitem:prelight {
     background-image: none;
     border-style: solid;
-    border-width: 1px;
-    background-color: @theme_selected_bg_color;
-    border-color: @menu_bg_color;
+    border-width: 1;
+    border-bottom-width: 0;
+    background-color: @menu_bg_color;
+    border-color: @menu_border_color;
 
-    border-radius: 5 5 0 0;
+    border-radius: 2 2 0 0;
 }
 
 .menubar .menuitem *:prelight {
@@ -783,17 +790,18 @@ GtkTreeMenu .menuitem * {
     -adwaita-menuitem-arrow-color: @menu_controls_color;
     padding: 4;
     border-style: solid;
+    border-radius: 4;
 }
 
 .menuitem:active,
 .menuitem *:active,
 .menuitem:prelight,
 .menuitem *:prelight {
-    background-color: @theme_selected_bg_color;
-    color: @theme_selected_fg_color;
+    background-color: @menu_item_bg_color;
+    color: @menu_item_fg_color;
     border-style: solid;
     border-width: 1px;
-    border-color: shade(@theme_selected_bg_color, 0.25);
+    border-color: @menu_item_border;
 }
 
 .menuitem:insensitive,
@@ -939,7 +947,9 @@ GtkTreeMenu .menuitem * {
  * hint on the containing vbox, so we need to handle both these cases here.
  */
 .primary-toolbar .toolbar,
-.primary-toolbar.toolbar {
+.primary-toolbar.toolbar,
+.primary-toolbar .toolbar:insensitive,
+.primary-toolbar.toolbar:insensitive {
     background-image: -gtk-gradient(linear,
 				     left top,
 				     left bottom,
@@ -958,6 +968,9 @@ GtkTreeMenu .menuitem * {
     -GtkToolbar-button-relief: normal;
 }
 
+/**
+ * Insensitive toolbars
+ *
 .primary-toolbar .toolbar:insensitive,
 .primary-toolbar.toolbar:insensitive {
     background-image: none;
@@ -967,6 +980,9 @@ GtkTreeMenu .menuitem * {
     border-style: solid;
     border-color: shade(@theme_bg_color, 0.91);
 }
+ *
+ *
+ */
 
 /* primary toolbar buttons */
 .primary-toolbar .toolbar .button,
@@ -1051,7 +1067,7 @@ GtkTreeMenu .menuitem * {
 
 .primary-toolbar .toolbar GtkSeparatorToolItem,
 .primary-toolbar.toolbar GtkSeparatorToolItem {
-    color: shade(@theme_bg_color, 0.56);
+    color: shade(@theme_bg_color, 0.90);
 }
 
 /* primary toolbar raised buttons */
