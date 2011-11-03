@@ -2,7 +2,6 @@
  * Check and Radio items *
  *************************/
 
-/* draw regular check and radio items using our SVG assets */
 .check,
 .check row:selected,
 .check row:selected:focused {

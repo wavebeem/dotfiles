@@ -14,7 +14,8 @@ style "toolbar" {
         contrast = 1.30
         glow_shade = 1.00
         lightborder_shade = 1.00
-        gradient_shades = {1.00, 1.00, 1.02, 1.04}
+        gradients = FALSE
+        #gradient_shades = {1.00, 1.00, 1.00, 1.00}
     }
 }
 
