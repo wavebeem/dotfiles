@@ -52,7 +52,7 @@ style "default" {
     GtkMenu::vertical-padding   = 0
 
     GtkMenuBar::shadow_type = GTK_SHADOW_NONE
-#    GtkToolbar::shadow_type = GTK_SHADOW_NONE
+    GtkToolbar::shadow_type = GTK_SHADOW_NONE
 
     EogStatusBar::shadow_type = GTK_SHADOW_NONE
     EogStatusbar::shadow_type = GTK_SHADOW_NONE
@@ -93,7 +93,7 @@ style "default" {
     text[INSENSITIVE] = shade(1.65, @bg_color)
     text[ACTIVE]      = @selected_fg_color
 
-    GtkWidget::link-color         = "#3465A4" # blue
+    GtkWidget::link-color         = "#4a90d9" # blue
     GtkWidget::visited-link-color = "#75507B" # purple
 
     engine "murrine" {
@@ -111,7 +111,7 @@ style "default" {
         # 0 = joined
         # 1 = separated
         spinbuttonstyle = 0
-        
+
         # 0 = normal
         # 1 = arrow looks detached
         comboboxstyle = 0
@@ -123,7 +123,8 @@ style "default" {
         # shading on the trough of widgets
         #trough_shades = {0.9, 1.0}
 
-        border_shades = {1.33, 0.33}
+        #border_shades = {1.33, 0.33}
+        border_shades = {1.00, 1.00}
         # border_colors = {"#101010", "#202020"}
 
         # change the color of gradients, FALSE to disable
@@ -141,9 +142,10 @@ style "default" {
         # 2 = cells
         progressbarstyle = 1
 
-        gradient_shades   = {1.05, 1.00, 1.00, 0.95}
+        #gradient_shades   = {1.05, 1.00, 1.00, 0.95}
+        gradient_shades   = {1.00, 1.00, 1.00, 1.00}
         highlight_shade   = 1.00
-        lightborder_shade = 1.15
+        lightborder_shade = 1.00
 
         # 0 = lightborder on top side
         # 1 = lightborder on all sides
@@ -194,7 +196,7 @@ style "default" {
         # 4 = diagonal stripes and handles
         # 5 = horizontal stripes
         # 6 = horizontal stripes and handles
-        scrollbarstyle = 3
+        scrollbarstyle = 0
 
         # 0 = nothing added
         # 1 = handles
@@ -216,7 +218,7 @@ style "default" {
         expanderstyle = 0
 
         #focus_color = shade(1.00, @selected_bg_color)
-        focus_color = shade(4.00, @bg_color)
+        focus_color = shade(1.50, @bg_color)
 
         # 0 = none
         # 1 = dotted lines

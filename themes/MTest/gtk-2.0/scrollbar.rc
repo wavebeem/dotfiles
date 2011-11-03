@@ -3,10 +3,10 @@
 style "scrollbar" {
     GtkScrollbar::trough-side-details = 0
 
-    GtkRange::trough-border         = 2
+    GtkRange::trough-border         = 0
     GtkRange::trough-under-steppers = 1
 
-    bg[SELECTED]    = shade(0.90, @selected_bg_color)
+    bg[SELECTED]    = shade(1.75, @bg_color)
 
     bg[NORMAL]      = shade(0.75, @bg_color)
     bg[PRELIGHT]    = shade(1.20, @bg_color)
@@ -18,7 +18,7 @@ style "scrollbar" {
     fg[ACTIVE]      = shade(0.65, @bg_color)
 
     engine "murrine" {
-        roundness = 2
+        roundness = 0
         contrast = 1.20
         trough_shades = {0.95, 0.98}
         #border_shades = {0.25, 0.50}
