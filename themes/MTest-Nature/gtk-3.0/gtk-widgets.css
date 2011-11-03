@@ -28,6 +28,10 @@
     -GtkMenu-vertical-padding: 0;
     -GtkMenu-horizontal-offset: -1;
 
+    -GtkWindow-resize-grip-default: false;
+    -GtkWindow-resize-grip-height: 0;
+    -GtkWindow-resize-grip-width:  0;
+
     -GtkWidget-link-color: @link_color;
     -GtkWidget-visited-link-color: @link_color;
     -GtkIMHtml-hyperlink-color: @link_color;
@@ -38,7 +42,7 @@
     -GtkWidget-focus-padding: 2;
     -GtkWidget-focus-line-width: 1;
     -adwaita-focus-border-color: alpha(@theme_text_color, 0.4);
-    -adwaita-focus-border-radius: 2;
+    -adwaita-focus-border-radius: 1;
     -adwaita-focus-fill-color: alpha(@theme_base_color, 0.0);
     -adwaita-focus-border-gradient: none;
     -adwaita-focus-border-dashes: 1;
@@ -468,7 +472,8 @@ GtkScrolledWindow.frame {
 
     border-color: @notebook_border;
     border-style: solid;
-    border-width: 1;
+    border-width: 0;
+    border-top-width: 1;
 
     background-color: @theme_base_color;
 
@@ -488,6 +493,7 @@ GtkScrolledWindow.frame {
 
 .notebook tab:active {
     border-width: 1;
+    border-width: 9;
 
     -adwaita-border-gradient: -gtk-gradient(linear,
                                              left top, left bottom,
@@ -621,10 +627,10 @@ GtkComboBox.combobox-entry .button:hover:active:nth-child(first) {
 .scrollbar {
     background-image: none;
     border-style: solid;
-    -GtkRange-trough-border: 2;
+    -GtkRange-trough-border: 0;
     -GtkRange-arrow-scaling: 0.444;
-    -GtkRange-slider-width: 12;
-    -GtkRange-stepper-size: 12;
+    -GtkRange-slider-width: 10;
+    -GtkRange-stepper-size: 10;
     -GtkScrollbar-has-forward-stepper:  0;
     -GtkScrollbar-has-backward-stepper: 0;
     -GtkScrollbar-min-slider-length: 30; /* minimum size for the slider. sadly can't be in '.slider' where it belongs */
@@ -644,9 +650,9 @@ GtkComboBox.combobox-entry .button:hover:active:nth-child(first) {
 .scrollbar.slider,
 .scrollbar.button {
     background-image: none;
-    background-color: @button_gradient_color_a;
+    background-color: @scrollbar_color;
     border-color: @button_border;
-    border-radius: 3;
+    border-radius: 0;
     border-width: 1;
 
     border-image: none;
@@ -654,14 +660,14 @@ GtkComboBox.combobox-entry .button:hover:active:nth-child(first) {
 
 .scrollbar.slider:prelight {
     background-image: none;
-    background-color: @button_hover_gradient_color_b;
+    background-color: @scrollbar_hover_color;
     border-color: @highlighted_border;
 }
 
 .scrollbar.slider:prelight:active {
     background-image: none;
-    background-color: @button_hover_gradient_color_b;
-    border-color: @theme_selected_bg_color;
+    background-color: @scrollbar_active_color;
+    border-color: @highlighted_border;
 }
 
 .scrollbar.button {
@@ -699,7 +705,7 @@ GtkComboBox.combobox-entry .button:hover:active:nth-child(first) {
  *********/
 /* combobox menus */
 GtkTreeMenu.menu {
-    background-color: @theme_base_color;
+    background-color: @menu_bg_color;
 }
 
 GtkTreeMenu .menuitem {
@@ -707,7 +713,7 @@ GtkTreeMenu .menuitem {
 
     border-style: solid;
     border-width: 1 0;
-    border-color: @menu_combobox_border;
+    border-color: @menu_item_border;
 }
 
 GtkTreeMenu .menuitem * {
@@ -768,16 +774,20 @@ GtkTreeMenu .menuitem * {
     padding: 6 6;
 }
 
-/* remove the image from the prelight areas */
 .menubar .menuitem:prelight {
     background-image: none;
     border-style: solid;
-    border-width: 1;
-    border-bottom-width: 0;
+    border-width: 4;
+    border-bottom-width: 4;
     background-color: @menu_bg_color;
     border-color: @menu_border_color;
 
-    border-radius: 2 2 0 0;
+    border-radius: 8 8 8 8;
+}
+
+.menubar .menuitem:hover {
+    background-color: alpha(@button_gradient_color_a, 1.00);
+    border-color: transparent;
 }
 
 .menubar .menuitem *:prelight {
@@ -822,6 +832,7 @@ GtkTreeMenu .menuitem * {
     color: alpha(@menu_fg_color, 0.3);
 }
 
+.menuitem.separator:insensitive,
 .menuitem.separator {
     color: @menu_separator;
 
@@ -989,7 +1000,9 @@ GtkTreeMenu .menuitem * {
 .primary-toolbar.toolbar .button {
     border-style: none;
     border-image: none;
-    border-radius: 4;
+    border-color: transparent;
+    border-width: 1;
+    border-radius: 8;
 
     background-image: none;
     background-color: alpha(@theme_base_color, 0.0);
@@ -1023,6 +1036,11 @@ GtkTreeMenu .menuitem * {
 				     from(alpha(@theme_base_color, 0.0)),
 				     color-stop(0.54, alpha(shade(@theme_base_color, 0.92), 0.49)),
 			             to(alpha(@theme_base_color, 0.0)));
+
+    background-image: -gtk-gradient(linear,
+				     left top, left bottom,
+                                     from(@button_gradient_color_a),
+                                     to(@button_gradient_color_b));
 }
 
 .primary-toolbar .toolbar .button:active,

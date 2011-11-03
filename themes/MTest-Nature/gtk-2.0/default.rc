@@ -194,7 +194,7 @@ style "default" {
         # 4 = diagonal stripes and handles
         # 5 = horizontal stripes
         # 6 = horizontal stripes and handles
-        scrollbarstyle = 3
+        scrollbarstyle = 0
 
         # 0 = nothing added
         # 1 = handles
