@@ -57,6 +57,9 @@ Autostart() {
     # Enable Ctrl-Alt-Backspace for zapping X
     setxkbmap -option terminate:ctrl_alt_bksp &
 
+    # Disable touchpad while typing (for 0.5 seconds)
+    OnHost profiterole && sydaemon -i 0.5 &
+
     SleepDo 0.5 COMPOSITE on &
     SleepDo 1.0 PANEL     on &
 }
