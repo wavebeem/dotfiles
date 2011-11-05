@@ -1,8 +1,8 @@
 # vim: set syn=gtkrc:
 
 style "notebook" {
-    xthickness = 3
-    ythickness = 3
+    xthickness = 2
+    ythickness = 2
 
     bg[ACTIVE]   = shade(1.60, @bg_color)
     bg[NORMAL]   = shade(1.00, @bg_color)
@@ -11,7 +11,7 @@ style "notebook" {
 
     # Fallback engine
     engine "murrine" {
-        roundness = 4
+        roundness = 2
         contrast = 1.00
     }
 }

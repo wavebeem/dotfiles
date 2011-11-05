@@ -40,7 +40,8 @@ style "default" {
     GtkMenuBar::internal-padding = 0
     GtkToolbar::internal-padding = 0
 
-    GtkMenuItem::arrow-scaling = 1.00
+    GtkMenuItem::arrow-scaling = 0.50
+    GtkButton::arrow-scaling = 0.50
 
     GtkExpander::expander-size = 14
 
@@ -106,7 +107,7 @@ style "default" {
 
         # 0 = old arrows
         # 1 = filled arrows
-        arrowstyle = 1
+        arrowstyle = 0
 
         # 0 = joined
         # 1 = separated

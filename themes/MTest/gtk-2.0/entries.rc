@@ -1,17 +1,5 @@
 # vim: set syn=gtkrc:
 
-style "toolbar-entry" {
-    ythickness = 3
-    xthickness = 3
-    base[NORMAL] = shade(1.10, @bg_color)
-
-    engine "murrine" {
-        #contrast = 0.80
-        roundness = 0
-        border_shades = {1.75, 0.50}
-    }
-}
-
 style "entry" = "wider" {
     bg[NORMAL]        = shade(1.00, @base_color)
     base[NORMAL]      = shade(1.20, @bg_color)
@@ -19,8 +7,9 @@ style "entry" = "wider" {
 
     engine "murrine" {
         roundness = 0
+        contrast = 1.05
         #border_shades = {1.75, 0.25}
-        border_shades = {1.75, 0.50}
+        #border_shades = {1.75, 0.50}
         focus_color = shade(2.50, @bg_color)
         #contrast = 0.80
     }

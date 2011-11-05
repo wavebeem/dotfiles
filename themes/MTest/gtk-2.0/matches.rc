@@ -107,7 +107,8 @@ widget_class "*ToolButton*" style "smaller-text"
 widget_class "*<GtkToolbar>*<GtkButton>" style: highest "toolbar-button"
 widget_class "*<GtkToolbar>*Combo*"      style: highest "toolbar-button"
 widget_class "*<GtkToolbar>*Separator*"  style: highest "toolbar-separator"
-widget_class "*<GtkToolbar>*<GtkEntry>"  style: highest "toolbar-entry"
+#widget_class "*<GtkToolbar>*<GtkEntry>"  style: highest "toolbar-entry"
+widget_class "*<GtkToolbar>*<GtkEntry>"  style: highest "entry"
 
 widget "*fullscreen-toolbar*"      style: highest "default"
 
