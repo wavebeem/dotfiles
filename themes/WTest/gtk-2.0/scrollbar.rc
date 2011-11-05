@@ -3,7 +3,7 @@
 style "scrollbar" {
     GtkScrollbar::trough-side-details = 0
 
-    GtkRange::trough-border         = 2
+    GtkRange::trough-border         = 0
     GtkRange::trough-under-steppers = 1
 
     bg[SELECTED]    = shade(1.00, @selected_bg_color)
