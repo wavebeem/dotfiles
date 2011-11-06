@@ -28,7 +28,7 @@ Autostart() {
     xscreensaver -no-splash &
 
     # Enable compose key
-    SleepDo 3 setxkbmap us \
+    SleepDo 1 setxkbmap us \
         -variant altgr-intl \
         -option  nodeadkeys  \
         -option  compose:ralt \
@@ -60,15 +60,13 @@ Autostart() {
     # Disable touchpad while typing (for 0.5 seconds)
     OnHost profiterole && sydaemon -i 0.5 &
 
-    SleepDo 0.5 COMPOSITE on &
-    SleepDo 1.0 PANEL     on &
+    SleepDo 0.25 COMPOSITE on &
+    SleepDo 0.50 PANEL on &
 }
 
 # Launch a window manager with proper permissions
 Start() {
-    UsingDriver nvidia &&
-        OnHost truffle &&
-        nvidia-settings -l
+    OnHost truffle && nvidia-settings -l
     exec dbus-launch ck-launch-session "$@"
 }
 
