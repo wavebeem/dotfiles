@@ -22,6 +22,6 @@ style "treeview-header" = "button" {
     bg[PRELIGHT] = shade(1.70, @bg_color)
 
     engine "murrine" {
-        contrast = 1.00
+        contrast = 1.50
     }
 }
