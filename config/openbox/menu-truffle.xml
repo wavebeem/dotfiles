@@ -4,6 +4,7 @@
     xmlns="http://openbox.org/"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://openbox.org/ file:///usr/share/openbox/menu.xsd">
+
   <menu id="root-menu" label="Openbox">
     <item label="Theme">
       <action name="Execute">
@@ -23,6 +24,44 @@
       <action name="Execute">
         <execute>
           nitrogen
+        </execute>
+      </action>
+    </item>
+  </menu>
+
+  <menu id="apps-menu" label="Openbox">
+    <item label="Files">
+      <action name="Execute">
+        <execute>
+          thunar
+        </execute>
+      </action>
+    </item>
+    <item label="Browser">
+      <action name="Execute">
+        <execute>
+          chromium
+        </execute>
+      </action>
+    </item>
+    <item label="Chat">
+      <action name="Execute">
+        <execute>
+          gajim
+        </execute>
+      </action>
+    </item>
+    <item label="Music">
+      <action name="Execute">
+        <execute>
+          MUSIC
+        </execute>
+      </action>
+    </item>
+    <item label="Terminal">
+      <action name="Execute">
+        <execute>
+          TERM
         </execute>
       </action>
     </item>
