@@ -66,8 +66,8 @@ Autostart() {
 
 # Launch a window manager with proper permissions
 Start() {
-    OnHost truffle && nvidia-settings -l
-    exec dbus-launch ck-launch-session "$@"
+    OnHost truffle && nvidia-settings -l &
+    exec ck-launch-session "$@"
 }
 
 if [ -z "$DE" ]; then
