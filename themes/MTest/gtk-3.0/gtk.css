@@ -126,8 +126,8 @@
 @define-color highlighted_border #242220;
 
 @define-color notebook_border #242220;
-@define-color notebook_active_tab_border #444240;
-@define-color notebook_selected_tab_color @theme_selected_bg_color;
+@define-color notebook_active_tab_border #343230;
+@define-color notebook_selected_tab_color #444240;
 
 @define-color notebook_color @theme_base_color;
 
@@ -152,6 +152,7 @@
 @define-color primary_toolbar_entry_fg @theme_text_color;
 
 @define-color treeview_focus_border @progressbar_border;
+@define-color treeview_selection_color mix(@theme_selected_bg_color, shade(@theme_base_color, 1.50), 0.50);
 
 @define-color expander_row_selected_color #444240;
 

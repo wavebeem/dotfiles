@@ -472,8 +472,7 @@ GtkScrolledWindow.frame {
 
     border-color: @notebook_border;
     border-style: solid;
-    border-width: 0;
-    border-top-width: 1;
+    border-width: 1;
 
     background-color: @theme_base_color;
 
@@ -527,7 +526,7 @@ GtkComboBox {
     -GtkWidget-focus-padding: 0;
     -GtkWidget-focus-line-width: 0;
 
-    -GtkComboBox-arrow-scaling: 0.5;
+    -GtkComboBox-arrow-scaling: 0.33;
     -GtkComboBox-shadow-type: none;
 }
 
@@ -558,7 +557,7 @@ GtkComboBox .button {
 }
 
 GtkComboBox .button *:prelight {
-    color: @theme_text_color;
+    color: @button_gradient_color_a;
 }
 
 .primary-toolbar GtkComboBox.combobox-entry .button,
@@ -762,7 +761,7 @@ GtkTreeMenu .menuitem * {
     border-color: @theme_bg_color;
     border-width: 0;
     border-style: solid;
-    padding: 4;
+    padding: 0 1;
 
     -GtkWidget-window-dragging: true;
     -GtkMenuBar-internal-padding: 0;
@@ -771,7 +770,7 @@ GtkTreeMenu .menuitem * {
 .menubar .menuitem {
     border-width: 0;
     border-style: solid;
-    padding: 6 6;
+    padding: 6 8;
 }
 
 .menubar .menuitem:prelight {
@@ -782,7 +781,7 @@ GtkTreeMenu .menuitem * {
     background-color: @menu_bg_color;
     border-color: @menu_border_color;
 
-    border-radius: 8 8 8 8;
+    border-radius: 8;
 }
 
 .menubar .menuitem:hover {
@@ -1424,13 +1423,13 @@ GtkSwitch.slider:insensitive {
 
 GtkViewport,
 GtkIconView {
-    border-radius: 3;
+    border-radius: 1;
     padding: 0;
 }
 
 GtkIconView.view.cell:selected,
 GtkIconView.view.cell:selected:focused {
-    background-color: @theme_selected_bg_color;
+    background-color: @treeview_selection_color;
     border-radius: 4;
 
     /* FIXME: this probably needs to be better;
@@ -1492,15 +1491,12 @@ row:insensitive {
 
 row:selected:focused {
     border-width: 0;
-    background-color: @theme_selected_bg_color;
+    background-color: @treeview_selection_color;
 }
 
 row:selected {
     border-width: 0;
-    background-image: -gtk-gradient(linear,
-                                     left top, left bottom,
-                                     from(@theme_selected_bg_color),
-                                     to(@theme_selected_bg_color));
+    background-color: @treeview_selection_color;
 }
 
 .cell {
@@ -1510,7 +1506,7 @@ row:selected {
 }
 
 .cell:selected {
-    background-color: @theme_selected_bg_color;
+    background-color: @treeview_selection_color;
 }
 
 .expander {
@@ -1550,7 +1546,7 @@ row:selected {
 
     border-color: @expander_row_selected_color;
     color: @expander_row_selected_color;
-    background-color: @theme_selected_bg_color;
+    background-color: @treeview_selection_color;
 }
 
 /* Calendars */

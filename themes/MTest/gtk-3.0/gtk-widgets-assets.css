@@ -131,6 +131,7 @@ GtkComboBox.combobox-entry .button:active:nth-child(first),
 GtkComboBox.combobox-entry .button:hover:active:nth-child(first) {
     border-image: url("assets/combobox-entry-border-active.svg") 2 / 2 0 2 2 stretch;
 }
+*/
 
 GtkScale.trough,
 GtkSwitch.trough,
@@ -225,6 +226,7 @@ GtkScale.scale-has-marks-below.slider.vertical:insensitive {
 .button {
 }
 
+/*
 .button:active,
 .toolbar .button:active,
 .button:hover:active,
