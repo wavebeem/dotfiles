@@ -24,7 +24,7 @@ menu.title.text.justify: right
 !! Selected menu item
 menu.items.active.bg: flat solid border
 menu.items.active.bg.color:        #747270
-menu.items.active.bg.border.color: #848280
+menu.items.active.bg.border.color: #747270
 menu.items.active.text.color: #ffffff
 
 !! Titlebar

@@ -97,6 +97,7 @@
 @define-color progressbar_background_a #646260;
 @define-color progressbar_background_b #646260;
 @define-color progressbar_pattern #545250;
+@define-color progressbar_border_color #242220;
 
 @define-color entry_text_color @theme_text_color;
 
@@ -127,6 +128,7 @@
 
 @define-color notebook_border #242220;
 @define-color notebook_active_tab_border #343230;
+@define-color notebook_active_tab_border @theme_selected_bg_color;
 @define-color notebook_selected_tab_color #444240;
 
 @define-color notebook_color @theme_base_color;
@@ -151,7 +153,7 @@
 @define-color primary_toolbar_entry_bg @theme_base_color;
 @define-color primary_toolbar_entry_fg @theme_text_color;
 
-@define-color treeview_focus_border @progressbar_border;
+@define-color treeview_focus_border @progressbar_border_color;
 @define-color treeview_selection_color mix(@theme_selected_bg_color, shade(@theme_base_color, 1.50), 0.50);
 
 @define-color expander_row_selected_color #444240;

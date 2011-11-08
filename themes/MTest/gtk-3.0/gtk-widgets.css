@@ -191,7 +191,7 @@ GtkComboBox.combobox-entry .button:prelight,
     color: @theme_selected_fg_color;
 
     border-width: 1;
-    border-radius: 3;
+    border-radius: 0;
     /* border-image defined in -assets variant */
 
     -adwaita-progressbar-pattern: none;
@@ -255,9 +255,9 @@ GtkComboBox.combobox-entry .button:prelight,
                                      from(@progressbar_background_a),
                                      to(@progressbar_background_b));
 
-    border-radius: 3;
+    border-radius: 0;
     border-width: 1;
-    border-style: none;
+    border-style: solid;
     /* border-image defined in the -assets variant */
 
     -adwaita-progressbar-pattern: -gtk-gradient(linear,
@@ -300,8 +300,8 @@ GtkProgressBar,
 
     border-width: 1;
     border-style: solid;
-    border-radius: 3;
-    border-color: shade(@inactive_frame_color, 0.8);
+    border-radius: 0;
+    border-color: @progressbar_border_color;
 }
 
 .trough.vertical {
@@ -364,7 +364,7 @@ GtkScale.progressbar {
     background-color: @scale_progress_fill;
 
     border-width: 1;
-    border-radius: 2;
+    border-radius: 0;
     border-style: none;
     /* border-image defined in the -assets variants */
 
@@ -1208,9 +1208,9 @@ GtkPathBar .button:active:hover:nth-child(last) {
                                      to(@trough_bg_color_b));
 
     border-width: 1;
-    border-radius: 2;
+    border-radius: 0;
     border-style: solid;
-    border-color: shade(@internal_element_color, 1.10);
+    border-color: @progressbar_border_color;
     border-image: none;
 
     color: @theme_text_color;

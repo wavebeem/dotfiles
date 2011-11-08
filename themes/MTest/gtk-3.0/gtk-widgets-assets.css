@@ -166,11 +166,15 @@ GtkSwitch.slider:active {
 .progressbar row:hover,
 .progressbar row:selected,
 .progressbar row:selected:focused {
-    border-image: url("assets/progressbar-border.svg") 3 / 3 stretch;
+    border-color: @progressbar_border_color;
+    border-width: 1;
+    border-style: solid;
 }
 
 .progressbar.vertical {
-    border-image: url("assets/progressbar-border-vertical.svg") 3 / 3 stretch;
+    border-color: @progressbar_border_color;
+    border-width: 1;
+    border-style: solid;
 }
 
 GtkScale.slider,
