@@ -83,22 +83,22 @@
 
 @define-color active_switch_bg_color #444240;
 
-@define-color switch_slider_color #545250;
+@define-color switch_slider_color  #545250;
 @define-color switch_slider_border #545250;
 
-@define-color progressbar_background #646260;
-@define-color progressbar_pattern #545250;
+@define-color progressbar_background   #646260;
+@define-color progressbar_pattern      #545250;
 @define-color progressbar_border_color #242220;
 
 @define-color entry_text_color @theme_text_color;
 
-@define-color entry_background #545250;
+@define-color entry_background     #545250;
 @define-color entry_border         #242220;
 @define-color entry_border_focused #a4a2a0;
 
-@define-color internal_element_color #444240;
-@define-color internal_element_prelight @theme_text_color;
-@define-color internal_element_insensitive shade(@internal_element_color, 1.6);
+@define-color internal_element_color       shade(@button_color, 1.25);
+@define-color internal_element_prelight    @theme_text_color;
+@define-color internal_element_insensitive @theme_text_color;
 
 @define-color scale_fill @insensitive_border_color;
 @define-color scale_border_a @internal_element_color;

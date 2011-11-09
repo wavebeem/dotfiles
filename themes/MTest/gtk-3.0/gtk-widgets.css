@@ -144,7 +144,7 @@ GtkStatusbar {
     background-color: @theme_base_color;
 
     border-style: solid;
-    border-width: 1px;
+    border-width: 1;
     border-radius: 0;
     border-image: none;
     border-color: @entry_border;
@@ -250,6 +250,7 @@ GtkComboBox.combobox-entry .button:prelight,
     border-radius: 0;
     border-width: 1;
     border-style: solid;
+    border-color: @progressbar_border_color;
     /* border-image defined in the -assets variant */
 
     -adwaita-progressbar-pattern: -gtk-gradient(linear,
@@ -361,14 +362,14 @@ GtkScale.mark {
 .frame {
     padding: 2;
     border-width: 0;
+    border-color: @button_border;
 }
 
 /* only render frames in a GtkScrolledWindow */
 GtkScrolledWindow.frame {
     border-style: solid;
-    border-color: darker(@theme_bg_color);
     border-width: 1;
-    border-radius: 2;
+    border-radius: 0;
 
     padding: 0;
 }
@@ -524,7 +525,7 @@ GtkComboBox .button {
 }
 
 GtkComboBox .button *:prelight {
-    color: @button_color;
+    color: @internal_element_prelight;
 }
 
 .primary-toolbar GtkComboBox.combobox-entry .button,
@@ -692,27 +693,22 @@ GtkTreeMenu .menuitem * {
     color: @internal_element_color;
 
     border-image: none;
-    border-style: none;
-    border-width: 0;
+    border-style: solid;
+    border-color: shade(@theme_base_color, 1.25);
+    border-width: 1;
 }
 
 .menu.button:hover {
     background-image: none;
     background-color: @theme_base_color;
     color: @theme_text_color;
-
-    border-image: none;
-    border-style: none;
-    border-width: 0;
+    border-color: shade(@theme_base_color, 1.25);
 }
 
 .menu.button:insensitive {
     background-color: @theme_base_color;
     color: lighter(@internal_element_color);
-
-    border-image: none;
-    border-style: none;
-    border-width: 0;
+    border-color: shade(@theme_base_color, 1.25);
 }
 
 /* this controls the general appearance of the menubar */
@@ -768,7 +764,7 @@ GtkTreeMenu .menuitem * {
     background-color: @menu_item_bg_color;
     color: @menu_item_fg_color;
     border-style: solid;
-    border-width: 1px;
+    border-width: 1;
     border-color: @menu_item_border;
 }
 
@@ -794,7 +790,7 @@ GtkTreeMenu .menuitem * {
 .menuitem.separator {
     color: @menu_separator;
 
-    padding: 1px;
+    padding: 1;
 
     -GtkSeparatorMenuItem-horizontal-padding: 0;
 }
