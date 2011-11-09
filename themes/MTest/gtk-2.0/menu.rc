@@ -27,7 +27,7 @@ style "menu-item" = "menu" {
 
     engine "murrine" {
         contrast  = 0.50
-        border_shades = {0.15, 0.15}
+        border_shades = {0.30, 0.30}
         roundness = 4
     }
 }

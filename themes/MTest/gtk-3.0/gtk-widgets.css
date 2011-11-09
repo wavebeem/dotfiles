@@ -1,5 +1,5 @@
 * {
-    engine: unico;
+    engine: adwaita;
     padding: 1;
 
     /* Style properties */
@@ -112,8 +112,6 @@ GtkWindow {
 
 GtkTreeView .separator,
 .separator {
-    engine: adwaita;
-
     color: darker(@theme_bg_color);
 }
 
@@ -790,8 +788,6 @@ GtkTreeMenu .menuitem * {
 
 .menuitem.separator:insensitive,
 .menuitem.separator {
-    engine: adwaita;
-
     color: @menu_separator;
 
     padding: 1;
@@ -803,8 +799,6 @@ GtkTreeMenu .menuitem * {
 .menuitem.radio,
 .menuitem.check:insensitive,
 .menuitem.radio:insensitive {
-    engine: adwaita;
-
     background-image: none;
     background-color: alpha(@theme_base_color, 0.0);
 }

@@ -6,7 +6,7 @@ style "progressbar" {
 
     fg[PRELIGHT] = @selected_fg_color
 
-    bg[SELECTED] = shade(0.90, @selected_bg_color)
+    bg[SELECTED] = shade(1.70, @bg_color)
 
      engine "murrine" {
         roundness = 0
