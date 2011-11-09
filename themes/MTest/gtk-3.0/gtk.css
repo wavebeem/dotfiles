@@ -1,7 +1,7 @@
 /* Default color scheme */
 @define-color base_color #444240;
 @define-color bg_color #444240;
-@define-color tooltip_bg_color #242220;
+@define-color tooltip_bg_color @main_border;
 @define-color selected_bg_color #aa3048;
 @define-color text_color #e4e2e0;
 @define-color fg_color #e4e2e0;
@@ -19,6 +19,8 @@
 @define-color theme_tooltip_fg_color @tooltip_fg_color;
 @define-color theme_selected_bg_color @selected_bg_color;
 @define-color theme_selected_fg_color @selected_fg_color;
+
+@define-color main_border shade(#343230, 0.80);
 
 /*
 @define-color menu_bg_color shade(@theme_bg_color, 1.2);
@@ -64,7 +66,7 @@
 @define-color focused_entry_inset alpha(#d7e4f1, 0.50);
 
 @define-color button_color #545250;
-@define-color button_border #242220;
+@define-color button_border @main_border;
 
 @define-color button_active_color #545250;
 
@@ -88,12 +90,12 @@
 
 @define-color progressbar_background   #646260;
 @define-color progressbar_pattern      #545250;
-@define-color progressbar_border_color #242220;
+@define-color progressbar_border_color @main_border;
 
 @define-color entry_text_color @theme_text_color;
 
 @define-color entry_background     #545250;
-@define-color entry_border         #242220;
+@define-color entry_border         @main_border;
 @define-color entry_border_focused #a4a2a0;
 
 @define-color internal_element_color       shade(@button_color, 1.25);
@@ -112,9 +114,9 @@
 @define-color scrollbar_hover_color  shade(@scrollbar_color, 1.2);
 @define-color scrollbar_active_color shade(@scrollbar_color, 1.4);
 
-@define-color highlighted_border #242220;
+@define-color highlighted_border @main_border;
 
-@define-color notebook_border #242220;
+@define-color notebook_border @main_border;
 @define-color notebook_active_tab_border #343230;
 @define-color notebook_active_tab_border @theme_selected_bg_color;
 @define-color notebook_selected_tab_color #444240;
