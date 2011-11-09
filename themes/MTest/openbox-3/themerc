@@ -1,13 +1,14 @@
+!! vim: set ft=xdefaults:
 !! Menu background
 menu.items.bg: flat solid border
 menu.items.bg.color:        #444240
 menu.items.bg.border.color: #444240
 
 !! Menu separators
-menu.separator.color: #545250
+menu.separator.color: #343230
 menu.separator.width: 1
 menu.separator.padding.width: 0
-menu.separator.padding.height: 1
+menu.separator.padding.height: 0
 
 !! Menu text
 menu.items.text.color: #e4e2e0
@@ -23,13 +24,13 @@ menu.title.text.justify: right
 !! Selected menu item
 menu.items.active.bg: flat solid border
 menu.items.active.bg.color:        #747270
-menu.items.active.bg.border.color: #848280
+menu.items.active.bg.border.color: #747270
 menu.items.active.text.color: #ffffff
 
 !! Titlebar
 window.active.title.bg: flat solid border
-window.active.title.bg.color:        #a4a2a0
-window.active.title.bg.border.color: #a4a2a0
+window.active.title.bg.color:        #444240
+window.active.title.bg.border.color: #444240
 window.inactive.title.bg: flat solid border
 window.inactive.title.bg.color:        #444240
 window.inactive.title.bg.border.color: #444240
@@ -37,40 +38,40 @@ window.inactive.title.bg.border.color: #444240
 !! Titlebar text
 window.label.text.justify: right
 window.active.label.bg: parentrelative
-window.active.label.text.color: #000000
+window.active.label.text.color: #e4e2e0
 window.inactive.label.bg: parentrelative
-window.inactive.label.text.color: #e4e2e0
+window.inactive.label.text.color: #646260
 
 !! Window buttons
-window.active.button.*.pressed.image.color:   parentrelative
-window.inactive.button.*.pressed.image.color: parentrelative
+window.active.button.*.pressed.image.color: #e4e2e0
+window.active.button.*.hover.image.color:   #e4e2e0
+window.active.button.*.image.color:         #e4e2e0
 
-window.active.button.*.hover.image.color:   parentrelative
-window.inactive.button.*.hover.image.color: parentrelative
+window.inactive.button.*.pressed.image.color: #646260
+window.inactive.button.*.hover.image.color:   #646260
+window.inactive.button.*.image.color:         #646260
 
-window.active.button.*.image.color:   parentrelative
-window.inactive.button.*.image.color: parentrelative
 
 window.inactive.button.*.*.bg: flat solid
-window.inactive.button.*.*.bg.color: #444240
+window.inactive.button.*.*.bg.color:        #444240
 window.inactive.button.*.*.bg.border.color: #000000
 
 window.active.button.*.*.bg: flat solid
-window.active.button.*.*.bg.color: #a4a2a0
+window.active.button.*.*.bg.color:        #444240
 window.active.button.*.*.bg.border.color: #000000
 
 window.active.button.*.hover.bg: flat solid border
-window.active.button.*.hover.bg.color: #d4d2d0
-window.active.button.*.hover.bg.border.color: #444240
+window.active.button.*.hover.bg.color:        #242220
+window.active.button.*.hover.bg.border.color: #a4a2a0
 
 window.inactive.button.*.hover.bg: flat solid border
-window.inactive.button.*.hover.bg.color: #242220
+window.inactive.button.*.hover.bg.color:        #242220
 window.inactive.button.*.hover.bg.border.color: #a4a2a0
 
 !! Borders
 window.active.border.color:   #000000
 window.inactive.border.color: #000000
-window.active.title.separator.color:   #000000
+window.active.title.separator.color:   #343230
 window.inactive.title.separator.color: #343230
 border.width:  1
 padding.width: 1
@@ -85,8 +86,8 @@ window.inactive.grip.bg: flat solid
 window.inactive.grip.bg.color: #848280
 window.active.client.color:   #444240
 window.inactive.client.color: #444240
-window.client.padding.width:  1
-window.client.padding.height: 1
+window.client.padding.width:  2
+window.client.padding.height: 2
 window.handle.width: 0
 menu.overlap: 0
 
@@ -101,4 +102,3 @@ osd.unhilight.bg.border.color: #444240
 osd.bg: flat solid border
 osd.bg.color:        #242220
 osd.bg.border.color: #242220
-# vim: set ft=xdefaults:

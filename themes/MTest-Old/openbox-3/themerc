@@ -36,19 +36,19 @@ window.inactive.title.bg.border.color: #545250
 
 !! Titlebar text
 window.label.text.justify: right
-window.active.label.bg: #444240
+window.active.label.bg: parentrelative
 window.active.label.text.color: #000000
-window.inactive.label.bg: #444240
+window.inactive.label.bg: parentrelative
 window.inactive.label.text.color: #e4e2e0
 
 !! Window buttons
-window.active.button.*.pressed.image.color:   #444240
+window.active.button.*.pressed.image.color:   #000000
 window.inactive.button.*.pressed.image.color: #444240
 
-window.active.button.*.hover.image.color:   #444240
+window.active.button.*.hover.image.color:   #000000
 window.inactive.button.*.hover.image.color: #444240
 
-window.active.button.*.image.color:   #444240
+window.active.button.*.image.color:   #000000
 window.inactive.button.*.image.color: #444240
 
 window.inactive.button.*.*.bg: flat solid
