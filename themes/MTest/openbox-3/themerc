@@ -92,13 +92,13 @@ window.handle.width: 0
 menu.overlap: 0
 
 !! On-screen displays
-osd.label.text.color: #e4e2e0
+osd.label.text.color: #a4a2a0
 osd.hilight.bg: flat solid border
 osd.hilight.bg.color:        #a4a2a0
 osd.hilight.bg.border.color: #a4a2a0
 osd.unhilight.bg: flat solid border
-osd.unhilight.bg.color:        #444240
-osd.unhilight.bg.border.color: #444240
+osd.unhilight.bg.color:        #000000
+osd.unhilight.bg.border.color: #646260
 osd.bg: flat solid border
-osd.bg.color:        #242220
-osd.bg.border.color: #242220
+osd.bg.color:        #000000
+osd.bg.border.color: #c4c2c0
