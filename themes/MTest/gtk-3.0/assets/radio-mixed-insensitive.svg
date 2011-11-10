@@ -15,7 +15,7 @@
    id="svg814"
    version="1.1"
    inkscape:version="0.48.2 r9819"
-   sodipodi:docname="radio-mixed.svg">
+   sodipodi:docname="radio-mixed-insensitive.svg">
   <defs
      id="defs816">
     <linearGradient
@@ -170,8 +170,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="45.254834"
-     inkscape:cx="6.9802086"
-     inkscape:cy="8.1440357"
+     inkscape:cx="11.819471"
+     inkscape:cy="6.9618416"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -198,7 +198,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -218,14 +218,13 @@
        d="m 665.47588,255.0668 c 0,4.02825 -2.01821,7.29379 -4.5078,7.29379 -2.48959,0 -4.50781,-3.26554 -4.50781,-7.29379 0,-4.02824 2.01822,-7.29378 4.50781,-7.29378 2.48959,0 4.5078,3.26554 4.5078,7.29378 z"
        transform="matrix(1.4419436,0,0,0.89116967,-945.07873,817.05441)" />
     <path
-       transform="matrix(0.88735442,0,0,0.27420609,-578.51297,974.42133)"
-       d="m 665.47588,255.0668 a 4.5078058,7.2937827 0 1 1 -9.01561,0 4.5078058,7.2937827 0 1 1 9.01561,0 z"
-       sodipodi:ry="7.2937827"
-       sodipodi:rx="4.5078058"
-       sodipodi:cy="255.0668"
-       sodipodi:cx="660.96808"
-       id="path6309"
-       style="color:#000000;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#e4e2e0;stroke-width:1.43349718999999998;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:144.44521581000000765;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;opacity:0.25"
-       sodipodi:type="arc" />
+       style="color:#000000;fill:#e4e2e0;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.37886774999999995;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;opacity:0.25"
+       d="M 6 4 L 6 6 L 4 6 L 4 10 L 6 10 L 6 12 L 10 12 L 10 10 L 12 10 L 12 6 L 10 6 L 10 4 L 6 4 z M 7 5 L 9 5 L 9 7 L 11 7 L 11 9 L 9 9 L 9 11 L 7 11 L 7 9 L 5 9 L 5 7 L 7 7 L 7 5 z "
+       transform="translate(0,1036.3622)"
+       id="rect4031" />
+    <g
+       transform="matrix(0,0.54335376,-0.18143482,0,58.683965,1263.8696)"
+       id="g7610"
+       style="fill:#848280;fill-opacity:1;stroke:none;enable-background:new;opacity:0.25" />
   </g>
 </svg>

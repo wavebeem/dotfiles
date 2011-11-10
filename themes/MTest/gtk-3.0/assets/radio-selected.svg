@@ -170,8 +170,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="32"
-     inkscape:cx="-4.3228569"
-     inkscape:cy="5.1164181"
+     inkscape:cx="6.3646431"
+     inkscape:cy="5.0695431"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -209,7 +209,7 @@
      transform="translate(0,-1036.3622)">
     <path
        sodipodi:type="arc"
-       style="color:#000000;fill:#646260;fill-opacity:1;fill-rule:nonzero;stroke:#242220;stroke-width:0.88215655000000004;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:100;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:new"
+       style="color:#000000;fill:#e4e2e0;fill-opacity:1;fill-rule:nonzero;stroke:#292826;stroke-width:0.88215655000000004;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:100;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:new"
        id="path6307"
        sodipodi:cx="660.96808"
        sodipodi:cy="255.0668"
@@ -217,15 +217,5 @@
        sodipodi:ry="7.2937827"
        d="m 665.47588,255.0668 c 0,4.02825 -2.01821,7.29379 -4.5078,7.29379 -2.48959,0 -4.50781,-3.26554 -4.50781,-7.29379 0,-4.02824 2.01822,-7.29378 4.50781,-7.29378 2.48959,0 4.5078,3.26554 4.5078,7.29378 z"
        transform="matrix(1.4419436,0,0,0.89116967,-945.07873,817.05441)" />
-    <path
-       transform="matrix(0.88735442,0,0,0.54841489,-578.51297,904.47977)"
-       d="m 665.47588,255.0668 c 0,4.02825 -2.01821,7.29379 -4.5078,7.29379 -2.48959,0 -4.50781,-3.26554 -4.50781,-7.29379 0,-4.02824 2.01822,-7.29378 4.50781,-7.29378 2.48959,0 4.5078,3.26554 4.5078,7.29378 z"
-       sodipodi:ry="7.2937827"
-       sodipodi:rx="4.5078058"
-       sodipodi:cy="255.0668"
-       sodipodi:cx="660.96808"
-       id="path6309"
-       style="color:#000000;fill:#a4a2a0;fill-opacity:1;fill-rule:nonzero;stroke:#343230;stroke-width:1.43349718999999998;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:144.44521581000000765;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-       sodipodi:type="arc" />
   </g>
 </svg>

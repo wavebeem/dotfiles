@@ -71,8 +71,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="26.0625"
-     inkscape:cx="-3.2359838"
-     inkscape:cy="3.2139843"
+     inkscape:cx="7.5841601"
+     inkscape:cy="3.3482769"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -115,10 +115,10 @@
     <g
        transform="matrix(1.1772848,0,0,1.1793241,482.60683,713.91735)"
        id="g16853"
-       style="fill:#545250;fill-opacity:1;stroke:#343230;stroke-width:0.84867733999999995;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1;enable-background:new;opacity:0.25">
+       style="fill:#343230;fill-opacity:0.50196081;stroke:#343230;stroke-width:0.84867733999999984;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1;enable-background:new;opacity:0.25000000000000000">
       <rect
          transform="scale(1,-1)"
-         style="color:#000000;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#e4e2e0;stroke-width:0.84867733999999984;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         style="color:#000000;fill:#e4e2e0;fill-opacity:0.50196081;fill-rule:nonzero;stroke:#e4e2e0;stroke-width:0.84867733999999984;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
          id="rect6506"
          width="11.042357"
          height="11.023263"
@@ -126,16 +126,6 @@
          y="-284.86218"
          rx="1.3680552"
          ry="0" />
-    </g>
-    <g
-       transform="matrix(0.72447311,0,0,0.72572799,299.6771,840.62969)"
-       id="g4029"
-       style="fill:#e4e2e0;fill-opacity:1;stroke:none;enable-background:new;opacity:0.25">
-      <path
-         style="color:#000000;fill:#e4e2e0;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.37886774999999995;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-         d="M 4 4 L 4 12 L 12 12 L 12 4 L 4 4 z M 5 5 L 11 5 L 11 11 L 5 11 L 5 5 z "
-         transform="matrix(1.3803135,0,0,1.3779267,-415.02864,268.32713)"
-         id="rect4031" />
     </g>
     <g
        style="fill:#848280;fill-opacity:1;stroke:none;enable-background:new;opacity:0.25"

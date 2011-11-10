@@ -70,9 +70,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="26.0625"
-     inkscape:cx="11.903468"
-     inkscape:cy="4.8593339"
+     inkscape:zoom="18.42897"
+     inkscape:cx="19.368925"
+     inkscape:cy="1.2030588"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -103,7 +103,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -112,6 +112,11 @@
      inkscape:groupmode="layer"
      id="layer1"
      transform="translate(0.9999901,-1035.3622)">
+    <path
+       style="color:#000000;fill:#e4e2e0;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.37886774999999995;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;opacity:0.25"
+       d="M 6 4 L 6 6 L 4 6 L 4 10 L 6 10 L 6 12 L 10 12 L 10 10 L 12 10 L 12 6 L 10 6 L 10 4 L 6 4 z M 7 5 L 9 5 L 9 7 L 11 7 L 11 9 L 9 9 L 9 11 L 7 11 L 7 9 L 5 9 L 5 7 L 7 7 L 7 5 z "
+       transform="translate(-0.9999901,1035.3622)"
+       id="rect7616" />
     <g
        transform="matrix(1.1772848,0,0,1.1793241,482.60683,713.91735)"
        id="g16853"
@@ -126,16 +131,6 @@
          y="-284.86218"
          rx="1.3680552"
          ry="0" />
-    </g>
-    <g
-       transform="matrix(0.72447311,0,0,0.36287025,299.6771,941.9942)"
-       id="g4029"
-       style="fill:#444240;fill-opacity:1;stroke:none;enable-background:new;opacity:0.25">
-      <path
-         style="color:#000000;fill:#e4e2e0;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.37886774999999995;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-         d="M 4 6 L 4 10 L 12 10 L 12 6 L 4 6 z M 5 7 L 11 7 L 11 9 L 5 9 L 5 7 z "
-         transform="matrix(1.3803135,0,0,2.755806,-415.02864,257.30409)"
-         id="rect4031" />
     </g>
     <g
        style="fill:#3465a4;fill-opacity:1;stroke:none;enable-background:new;opacity:0.25"

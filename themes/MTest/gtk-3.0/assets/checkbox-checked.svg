@@ -71,8 +71,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="26.0625"
-     inkscape:cx="-3.7625346"
-     inkscape:cy="6.3599795"
+     inkscape:cx="5.5995757"
+     inkscape:cy="5.8611785"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -118,7 +118,7 @@
        style="fill:#545250;fill-opacity:1;stroke:#343230;stroke-width:0.84867734;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1;enable-background:new">
       <rect
          transform="scale(1,-1)"
-         style="color:#000000;fill:#646260;fill-opacity:1;fill-rule:nonzero;stroke:#242220;stroke-width:0.84867733999999984;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         style="color:#000000;fill:#e4e2e0;fill-opacity:1;fill-rule:nonzero;stroke:#292826;stroke-width:0.84867740999999985;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;stroke-miterlimit:4;stroke-dasharray:none"
          id="rect6506"
          width="11.042357"
          height="11.023263"
@@ -126,36 +126,6 @@
          y="-284.86218"
          rx="1.3680552"
          ry="0" />
-    </g>
-    <g
-       transform="matrix(0.72447311,0,0,0.72572799,299.6771,840.62969)"
-       id="g4029"
-       style="fill:#444240;fill-opacity:1;stroke:none;enable-background:new">
-      <rect
-         transform="scale(1,-1)"
-         style="color:#000000;fill:#444240;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.37886775;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-         id="rect4031"
-         width="11.042357"
-         height="11.023263"
-         x="-409.50739"
-         y="-284.86218"
-         rx="2.2231202"
-         ry="0" />
-    </g>
-    <g
-       style="fill:#848280;fill-opacity:1;stroke:none;enable-background:new"
-       id="g3859"
-       transform="matrix(0.54335376,0,0,0.5442949,226.50739,891.31312)">
-      <rect
-         ry="0"
-         rx="2.9641664"
-         y="-284.86218"
-         x="-409.50739"
-         height="11.023263"
-         width="11.042357"
-         id="rect3861"
-         style="color:#000000;fill:#a4a2a0;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.37886774999999995;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-         transform="scale(1,-1)" />
     </g>
   </g>
 </svg>
