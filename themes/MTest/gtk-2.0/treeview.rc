@@ -11,7 +11,11 @@ style "treeview" {
     text[ACTIVE  ] = @fg_color
 
     base[SELECTED] = mix(0.60, shade(1.00, @selected_bg_color), shade(2.00, @bg_color))
-    base[ACTIVE  ] = mix(0.30, shade(1.00, @selected_bg_color), shade(2.00, @bg_color))
+    base[ACTIVE  ] = mix(0.60, shade(1.00, @selected_bg_color), shade(2.00, @bg_color))
+
+    engine "murrine" {
+        gradient_shades = {0.95, 0.95, 0.95, 0.95}
+    }
 }
 
 style "treeview-header" = "button" {
@@ -23,5 +27,6 @@ style "treeview-header" = "button" {
 
     engine "murrine" {
         contrast = 1.50
+        gradient_shades = {1.00, 1.00, 1.00, 1.00}
     }
 }
