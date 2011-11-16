@@ -1,14 +1,14 @@
 !! vim: set ft=xdefaults:
 !! Menu background
 menu.items.bg: flat solid border
-menu.items.bg.color:        #444240
-menu.items.bg.border.color: #444240
+menu.items.bg.color:        #000000
+menu.items.bg.border.color: #c4c2c0
 
 !! Menu separators
-menu.separator.color: #343230
+menu.separator.color: #848280
 menu.separator.width: 1
-menu.separator.padding.width: 0
-menu.separator.padding.height: 0
+menu.separator.padding.width:  0
+menu.separator.padding.height: 1
 
 !! Menu text
 menu.items.text.color: #e4e2e0
@@ -23,8 +23,8 @@ menu.title.text.justify: right
 
 !! Selected menu item
 menu.items.active.bg: flat solid border
-menu.items.active.bg.color:        #747270
-menu.items.active.bg.border.color: #747270
+menu.items.active.bg.color:        #646260
+menu.items.active.bg.border.color: #a4a2a0
 menu.items.active.text.color: #ffffff
 
 !! Titlebar
