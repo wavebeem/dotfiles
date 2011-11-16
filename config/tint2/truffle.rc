@@ -5,7 +5,7 @@
 rounded          = 0
 border_width     = 1
 background_color = #141210 50
-border_color     = #ffffff 20
+border_color     = #ffffff 10
 
 # ID 2
 rounded          = 0
@@ -29,7 +29,7 @@ border_color     = #0f0f0f 100
 rounded          = 0
 border_width     = 1
 background_color = #242220 70
-border_color     = #ffffff 20
+border_color     = #ffffff 10
 
 # ID 6
 rounded          = 0
