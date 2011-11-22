@@ -393,7 +393,7 @@ GtkScrolledWindow.frame {
     -GtkWidget-focus-line-width: 1;
 
     -GtkButton-child-displacement-x: 0;
-    -GtkButton-child-displacement-y: 1;
+    -GtkButton-child-displacement-y: 2;
     -GtkButton-image-spacing: 4;
     -GtkButton-interior-focus: true;
     -GtkButton-default-border: 0;
