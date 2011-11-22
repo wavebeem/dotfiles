@@ -14,7 +14,7 @@ Mod4 + F1
 "DMENU"
 Mod4 + p
 
-"TERM -e NET"
+"HTOP"
 Mod4 + w
 
 "roxterm -e alsamixer"
