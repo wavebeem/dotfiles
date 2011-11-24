@@ -4,32 +4,32 @@ menu.items.bg.color:        #ffffff
 menu.items.bg.border.color: #ffffff
 
 !! Menu separators
-menu.separator.color: #000000
+menu.separator.color: #cccccc
 menu.separator.width: 1
 menu.separator.padding.width: 0
 menu.separator.padding.height: 0
 
 !! Menu text
 menu.items.text.color: #000000
-menu.items.disabled.text.color: #cccccc
+menu.items.disabled.text.color: #888888
 
 !! Menu headers
 menu.title.bg: flat solid border
-menu.title.bg.color:        #000000
-menu.title.bg.border.color: #000000
+menu.title.bg.color:        #aaaaaa
+menu.title.bg.border.color: #aaaaaa
 menu.title.text.color: #ffffff
 menu.title.text.justify: right
 
 !! Selected menu item
 menu.items.active.bg: flat solid border
-menu.items.active.bg.color:        #00cc00
+menu.items.active.bg.color:        #cccccc
 menu.items.active.bg.border.color: #ffffff
-menu.items.active.text.color: #f4f2f0
+menu.items.active.text.color: #000000
 
 !! Titlebar
 window.active.title.bg: flat solid border
-window.active.title.bg.color:        #00cc00
-window.active.title.bg.border.color: #00cc00
+window.active.title.bg.color:        #aaaaaa
+window.active.title.bg.border.color: #aaaaaa
 window.inactive.title.bg: flat solid border
 window.inactive.title.bg.color:        #ffffff
 window.inactive.title.bg.border.color: #ffffff
@@ -71,7 +71,7 @@ window.inactive.button.*.hover.bg.border.color: #000000
 !! Borders
 window.active.border.color:   #000000
 window.inactive.border.color: #000000
-window.active.title.separator.color:   #000000
+window.active.title.separator.color:   #666666
 window.inactive.title.separator.color: #cccccc
 border.width:  1
 padding.width: 1
@@ -95,8 +95,8 @@ menu.overlap: 0
 osd.label.text.color: #ffffff
 osd.label.text.font: shadow=n
 osd.hilight.bg: flat solid border
-osd.hilight.bg.color:        #00cc00
-osd.hilight.bg.border.color: #00cc00
+osd.hilight.bg.color:        #aaaaaa
+osd.hilight.bg.border.color: #aaaaaa
 osd.unhilight.bg: flat solid border
 osd.unhilight.bg.color:        #ffffff
 osd.unhilight.bg.border.color: #ffffff
