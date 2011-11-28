@@ -798,7 +798,7 @@
   </menu>
   <applications>
     <application name="*" class="Chromium" type="*" role="*">
-      <decor>no</decor>
+      <decor>yes</decor>
     </application>
     <application name="*" class="Gvbam" type="*" role="*">
       <decor>no</decor>
@@ -813,7 +813,7 @@
       <decor>no</decor>
     </application>
     <application name="*" class="XTerm" type="*" role="*">
-      <decor>no</decor>
+      <decor>yes</decor>
     </application>
     <!--
   <application name="the window's _OB_APP_NAME property (see obxprop)"
