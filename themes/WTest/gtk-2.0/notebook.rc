@@ -1,10 +1,10 @@
 # vim: set syn=gtkrc:
 
 style "notebook" {
-    xthickness = 3
-    ythickness = 3
+    xthickness = 2
+    ythickness = 2
 
-    bg[ACTIVE]   = shade(0.80, @bg_color)
+    bg[ACTIVE]   = shade(0.90, @bg_color)
     bg[NORMAL]   = shade(1.05, @bg_color)
 
     bg[SELECTED] = shade(1.10, @selected_bg_color)
@@ -13,11 +13,6 @@ style "notebook" {
     engine "murrine" {
         roundness = 1
         contrast = 1.10
-    }
-
-    # Real engine
-    engine "aurora" {
-        curvature = 2
     }
 }
 

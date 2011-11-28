@@ -52,7 +52,7 @@ style "default" {
     GtkMenu::vertical-padding   = 0
 
     GtkMenuBar::shadow_type = GTK_SHADOW_NONE
-#    GtkToolbar::shadow_type = GTK_SHADOW_NONE
+    GtkToolbar::shadow_type = GTK_SHADOW_NONE
 
     EogStatusBar::shadow_type = GTK_SHADOW_NONE
     EogStatusbar::shadow_type = GTK_SHADOW_NONE
@@ -61,7 +61,7 @@ style "default" {
 
     GtkScrolledWindow::scrollbar-spacing = 1
 
-    GtkTreeView::odd_row_color = shade(0.90, @base_color)
+    GtkTreeView::odd_row_color = shade(0.95, @base_color)
 
     # Glow the tasklist by changing the color, instead of overlaying it with a rectangle
     #WnckTasklist   ::fade-overlay-rect    = 0
@@ -102,7 +102,7 @@ style "default" {
 
         # 0.8 for less contrast,
         # more than 1.0 for more contrast on borders
-        contrast = 1.10
+        contrast = 0.80
 
         # 0 = old arrows
         # 1 = filled arrows
@@ -123,7 +123,7 @@ style "default" {
         # shading on the trough of widgets
         #trough_shades = {0.9, 1.0}
 
-        border_shades = {1.40, 0.33}
+        border_shades = {1.00, 1.00}
         # border_colors = {"#101010", "#202020"}
 
         # change the color of gradients, FALSE to disable
@@ -143,7 +143,7 @@ style "default" {
 
         gradient_shades   = {1.00, 1.00, 1.00, 1.00}
         highlight_shade   = 1.00
-        lightborder_shade = 1.15
+        lightborder_shade = 1.00
 
         # 0 = lightborder on top side
         # 1 = lightborder on all sides
@@ -222,7 +222,7 @@ style "default" {
         # 1 = dotted lines
         # 2 = colored line + tint
         # 3 = glow
-        focusstyle = 3
+        focusstyle = 2
 
         # Glow on top of elements, like lighting
         ### Nice glow
