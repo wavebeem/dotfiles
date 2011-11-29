@@ -306,11 +306,6 @@
     <keybind key="W-q">
       <action name="Close"/>
     </keybind>
-    <keybind key="W-c">
-      <action name="Execute">
-        true
-      </action>
-    </keybind>
     <keybind key="W-S-q">
       <action name="Exit"/>
     </keybind>

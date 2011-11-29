@@ -20,6 +20,12 @@ Mod4 + w
 "roxterm -e alsamixer"
 Mod4 + e
 
+"TIME"
+Mod4 + t
+
+"CAL"
+Mod4 + c
+
 "xkill"
 Mod4 + Escape
 
