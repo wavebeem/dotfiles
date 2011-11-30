@@ -5,31 +5,31 @@
 rounded          = 0
 border_width     = 1
 background_color = #242220 50
-border_color     = #ffffff 15
+border_color     = #ffffff 10
 
 # ID 2
+rounded          = 0
+border_width     = 1
+background_color = #242220 20
+border_color     = #ffffff 10
+
+# ID 3
 rounded          = 0
 border_width     = 1
 background_color = #ffffff 30
 border_color     = #000000 50
 
-# ID 3
+# ID 4
 rounded          = 0
 border_width     = 1
 background_color = #c26000 100
 border_color     = #000000 100
 
-# ID 4
+# ID 5
 rounded          = 0
 border_width     = 1
 background_color = #343230 100
 border_color     = #0f0f0f 100
-
-# ID 5
-rounded          = 0
-border_width     = 1
-background_color = #242220 25
-border_color     = #ffffff 15
 
 # ID 6
 rounded          = 0
@@ -38,7 +38,7 @@ background_color = #000000 0
 border_color     = #000000 0
 
 ### PANEL ###
-panel_background_id = 5
+panel_background_id = 2
 panel_monitor  = all
 panel_position = top center horizontal
 panel_size     = 1924 36
@@ -57,8 +57,8 @@ taskbar_background_id = 1
 
 ### TASKS ###
 task_background_id        = 6
-task_active_background_id = 2
-task_urgent_background_id = 3
+task_active_background_id = 3
+task_urgent_background_id = 4
 task_icon         = 0
 task_text         = 1
 task_maximum_size = 0 18
@@ -112,7 +112,7 @@ tooltip               = 1
 tooltip_padding       = 2 4
 tooltip_show_timeout  = 0.0
 tooltip_hide_timeout  = 0.0
-tooltip_background_id = 4
+tooltip_background_id = 5
 tooltip_font_color    = #ffffff 100
 tooltip_font          = luxi sans bold 12
 
