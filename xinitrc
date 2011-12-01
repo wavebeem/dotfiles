@@ -35,7 +35,7 @@ Autostart() {
         -option  compose:caps  &
 
     # Fix Shift-Backspace not working...
-    xmodmap -e "keycode 22 = BackSpace BackSpace BackSpace VoidSymbol VoidSymbol VoidSymbol Terminate_Server"
+    SleepDo 1 xmodmap -e "keycode 22 = BackSpace BackSpace BackSpace VoidSymbol VoidSymbol VoidSymbol Terminate_Server"
 
     ibus-daemon &
 
