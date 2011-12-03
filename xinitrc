@@ -2,7 +2,6 @@
 # vim: set syn=sh:
 
 source "$HOME/bin/lib/host.sh"
-source "$HOME/bin/lib/driver.sh"
 
 bg_color="#000000"
 default_wm=openbox
