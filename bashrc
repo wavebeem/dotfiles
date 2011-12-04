@@ -129,5 +129,7 @@ export LESS="-R"
 [ "$(tty)" != "/dev/tty1" ] &&
 [ -f "$HOME/.welcome"     ] &&
 [ -z "$SSH_CLIENT"        ] &&
-[ -z "$TMUX"              ] &&
-cat "$HOME/.welcome"
+[ -z "$TMUX"              ] && {
+    echo
+    cat "$HOME/.welcome"
+}
