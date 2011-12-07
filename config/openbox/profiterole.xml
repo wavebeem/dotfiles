@@ -42,7 +42,7 @@
   </placement>
   <theme>
     <name>WTest</name>
-    <titleLayout/>
+    <titleLayout>CL</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
       N: window icon
@@ -57,7 +57,7 @@
     <animateIconify>no</animateIconify>
     <font place="ActiveWindow">
       <name>Luxi Sans</name>
-      <size>1</size>
+      <size>8</size>
       <!-- font size in points -->
       <weight>Bold</weight>
       <!-- 'bold' or 'normal' -->

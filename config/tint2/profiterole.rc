@@ -1,3 +1,4 @@
+# vim: set syn=conf:
 #---------------------------------------------
 # TINT2 CONFIG FILE
 #---------------------------------------------
@@ -9,8 +10,8 @@
 # ID 1
 rounded          = 0
 border_width     = 1
-background_color = #141210 50
-border_color     = #ffffff 25
+background_color = #141210 25
+border_color     = #ffffff 10
 
 # ID 2
 rounded          = 0
@@ -33,8 +34,8 @@ border_color     = #0f0f0f 100
 # ID 5
 rounded          = 0
 border_width     = 1
-background_color = #242220 50
-border_color     = #ffffff 50
+background_color = #141210 30
+border_color     = #ffffff 30
 
 # ID 6
 rounded          = 0
@@ -48,9 +49,9 @@ border_color     = #000000 0
 panel_background_id = 5
 panel_monitor  = all
 panel_position = top center horizontal
-panel_size     = 1028 24
+panel_size     = 1028 27
 panel_margin   = 0 -2
-panel_padding  = 1 1
+panel_padding  = 3 3
 font_shadow    = 0
 wm_menu        = 0
 panel_dock     = 0
@@ -105,7 +106,7 @@ time1_font = Luxi Sans Bold 8
 #time2_font = Luxi Sans Bold 8
 clock_font_color = #ffffff 100
 clock_padding = 4 4
-clock_lclick_command = gsimplecal
+#clock_lclick_command = gsimplecal
 #clock_rclick_command = orage
 clock_tooltip = %Y-%m-%d
 #time1_timezone = :US/Hawaii

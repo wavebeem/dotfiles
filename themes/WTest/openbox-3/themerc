@@ -28,8 +28,8 @@ menu.items.active.text.color: #000000
 
 !! Titlebar
 window.active.title.bg: flat solid border
-window.active.title.bg.color:        #aaaaaa
-window.active.title.bg.border.color: #aaaaaa
+window.active.title.bg.color:        #ffffff
+window.active.title.bg.border.color: #ffffff
 window.inactive.title.bg: flat solid border
 window.inactive.title.bg.color:        #ffffff
 window.inactive.title.bg.border.color: #ffffff
@@ -37,42 +37,41 @@ window.inactive.title.bg.border.color: #ffffff
 !! Titlebar text
 window.label.text.justify: right
 window.active.label.bg: parentrelative
-window.active.label.text.color: #ffffff
-window.active.label.text.font: shadow=y:shadowtint=64:shadowoffset=1
+window.active.label.text.color: #000000
 window.inactive.label.bg: parentrelative
-window.inactive.label.text.color: #ffffff
+window.inactive.label.text.color: #cccccc
 
 !! Window buttons
-window.active.button.*.pressed.image.color:   parentrelative
-window.inactive.button.*.pressed.image.color: parentrelative
+window.active.button.*.pressed.image.color:   #000000
+window.inactive.button.*.pressed.image.color: #cccccc
 
-window.active.button.*.hover.image.color:   parentrelative
-window.inactive.button.*.hover.image.color: parentrelative
+window.active.button.*.hover.image.color:   #000000
+window.inactive.button.*.hover.image.color: #000000
 
-window.active.button.*.image.color:   parentrelative
-window.inactive.button.*.image.color: parentrelative
+window.active.button.*.image.color:   #000000
+window.inactive.button.*.image.color: #cccccc
 
-window.inactive.button.*.*.bg: flat solid
-window.inactive.button.*.*.bg.color: #242220
-window.inactive.button.*.*.bg.border.color: #000000
+window.inactive.button.*.*.bg: parentrelative
+!window.inactive.button.*.*.bg.color: #242220
+!window.inactive.button.*.*.bg.border.color: #000000
 
-window.active.button.*.*.bg: flat solid
-window.active.button.*.*.bg.color: #d4d2d0
-window.active.button.*.*.bg.border.color: #000000
+window.active.button.*.*.bg: parentrelative
+!window.active.button.*.*.bg.color: #d4d2d0
+!window.active.button.*.*.bg.border.color: #000000
 
 window.active.button.*.hover.bg: flat solid border
-window.active.button.*.hover.bg.color: #a4a2a0
-window.active.button.*.hover.bg.border.color: #444240
+window.active.button.*.hover.bg.color: #dddddd
+window.active.button.*.hover.bg.border.color: #aaaaaa
 
 window.inactive.button.*.hover.bg: flat solid border
-window.inactive.button.*.hover.bg.color: #848280
-window.inactive.button.*.hover.bg.border.color: #000000
+window.inactive.button.*.hover.bg.color: #dddddd
+window.inactive.button.*.hover.bg.border.color: #aaaaaa
 
 !! Borders
 window.active.border.color:   #000000
 window.inactive.border.color: #000000
-window.active.title.separator.color:   #666666
-window.inactive.title.separator.color: #cccccc
+window.active.title.separator.color:   #dddddd
+window.inactive.title.separator.color: #dddddd
 border.width:  1
 padding.width: 1
 padding.height: 1
