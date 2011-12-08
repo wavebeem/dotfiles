@@ -1,9 +1,9 @@
 # vim: set syn=conf:
-alignment bottom_left
+alignment top_left
 background no
 border_width 2
 cpu_avg_samples 1
-default_color         a4a2a0
+default_color         d4d2d0
 default_outline_color 242220
 default_shade_color   242220
 draw_borders yes
@@ -17,7 +17,7 @@ use_xft yes
 xftfont aqui
 xftalpha 1.0
 gap_x 4
-gap_y 2
+gap_y 4
 border_inner_margin 4
 border_outer_margin 0
 minimum_width 100
@@ -34,7 +34,7 @@ own_window_type desktop
 own_window_argb_visual yes
 #own_window_transparent yes
 own_window_argb_value 128
-own_window_colour black
+own_window_colour 000000
 stippled_borders 0
 update_interval 1.0
 uppercase yes
