@@ -1,11 +1,11 @@
 # vim: set syn=conf:
-alignment top_left
+alignment top_right
 background no
 border_width 2
 cpu_avg_samples 1
-default_color         d4d2d0
-default_outline_color 242220
-default_shade_color   242220
+default_color         aaaaaa
+default_outline_color 000000
+default_shade_color   000000
 draw_borders yes
 draw_graph_borders yes
 draw_outline no
@@ -14,6 +14,7 @@ use_xft yes
 #xftfont DejaVu Sans Mono:size=10:bold
 #xftfont Luxi Sans:size=10:bold
 #xftfont Luxi Sans:size=8:bold
+#xftfont Sans:size=8:bold
 xftfont aqui
 xftalpha 1.0
 gap_x 4
@@ -43,5 +44,6 @@ show_graph_scale no
 show_graph_range no
 short_units yes
 
+#${time %H:%M}    :::    ${time %Y-%m-%d}    :::    ${battery}
 TEXT
-${time %H:%M}    :::    ${time %Y-%m-%d}    :::    ${battery}
+${battery}
