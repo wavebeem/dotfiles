@@ -761,7 +761,7 @@
       <!-- Menus -->
       <mousebind action="Press" button="Middle">
         <action name="ShowMenu">
-          <menu>client-list-combined-menu</menu>
+          <menu>apps-menu</menu>
         </action>
       </mousebind>
       <mousebind action="Press" button="Right">
