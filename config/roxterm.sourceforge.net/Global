@@ -2,7 +2,7 @@
 [roxterm options]
 warn_close=0
 encoding=UTF-8
-colour_scheme=Browner Pale
+colour_scheme=truffle
 shortcut_scheme=Default
 profile=truffle
 edit_shortcuts=1
