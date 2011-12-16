@@ -1,0 +1,241 @@
+# vim: set syn=gtkrc:
+
+style "default" {
+    ########
+    # Style Properties
+    ########
+    GtkButton      ::child-displacement-x = 0
+    GtkButton      ::child-displacement-y = 2
+    GtkButton      ::default-border       = {0, 0, 0, 0}
+
+    GtkMenu::horizontal-offset = -1
+
+#    GtkCheckButton ::indicator-size       = 15
+#    GtkRadioButton ::indicator-size       = 15
+
+    # Large value for tab curvature seems to make tabs wider and easier to
+    # use. Strange that it's called curvature, then.
+    GtkNotebook::tab-curvature = 4
+    GtkNotebook::tab-overlap   = 3
+
+    GtkPaned::handle-size = 6
+
+    GtkRange::trough-border = 0
+    GtkRange::slider-width  = 12
+    GtkRange::stepper-size  = 10
+
+#    GtkScale::slider-length        = 32
+    GtkScale::trough-side-details  = 1
+
+    GtkScrollbar::min-slider-length = 30
+    GtkScrollbar::slider-width      = 10
+    GtkScrollbar::arrow-scaling     = 1.00
+
+    # Options listed in order they appear on the scrollbar from top to bottom
+    GtkScrollbar::has-backward-stepper           = 0
+    GtkScrollbar::has-secondary-forward-stepper  = 0
+    GtkScrollbar::has-secondary-backward-stepper = 0
+    GtkScrollbar::has-forward-stepper            = 0
+
+    GtkMenuBar::internal-padding = 0
+    GtkToolbar::internal-padding = 0
+
+    GtkMenuItem::arrow-scaling = 0.50
+    GtkButton::arrow-scaling = 0.50
+
+    GtkExpander::expander-size = 14
+
+    GtkTreeView::expander-size        = 14
+    GtkTreeView::vertical-separator   = 2
+    GtkTreeView::horizontal-separator = 2
+
+    GtkMenu::horizontal-padding = 0
+    GtkMenu::vertical-padding   = 0
+
+    GtkMenuBar::shadow_type = GTK_SHADOW_NONE
+    GtkToolbar::shadow_type = GTK_SHADOW_NONE
+
+    EogStatusBar::shadow_type = GTK_SHADOW_NONE
+    EogStatusbar::shadow_type = GTK_SHADOW_NONE
+    GtkStatusBar::shadow_type = GTK_SHADOW_NONE
+    GtkStatusbar::shadow_type = GTK_SHADOW_NONE
+
+    GtkScrolledWindow::scrollbar-spacing = 1
+
+    GtkTreeView::odd_row_color = shade(1.05, @base_color)
+
+    # Glow the tasklist by changing the color, instead of overlaying it with a rectangle
+    #WnckTasklist   ::fade-overlay-rect    = 0
+
+    xthickness = 1
+    ythickness = 1
+
+    fg[NORMAL]        = @fg_color
+    fg[PRELIGHT]      = @fg_color
+    fg[SELECTED]      = @selected_fg_color
+    fg[INSENSITIVE]   = shade(0.65, @bg_color)
+    fg[ACTIVE]        = @fg_color
+
+    bg[NORMAL]        = @bg_color
+    bg[PRELIGHT]      = shade (1.00, @bg_color)
+    bg[SELECTED]      = @selected_bg_color
+    bg[INSENSITIVE]   = @bg_color
+    bg[ACTIVE]        = shade(1.10, @bg_color)
+
+    base[NORMAL]      = @base_color
+    base[PRELIGHT]    = shade (0.95, @bg_color)
+    base[SELECTED]    = shade (1.00, @selected_bg_color)
+    base[INSENSITIVE] = @bg_color
+    base[ACTIVE]      = shade (0.95, @selected_bg_color)
+
+    text[NORMAL]      = @text_color
+    text[PRELIGHT]    = @text_color
+    text[SELECTED]    = @selected_fg_color
+    text[INSENSITIVE] = shade(0.65, @bg_color)
+    text[ACTIVE]      = @selected_fg_color
+
+    GtkWidget::link-color         = "#4a90d9" # blue
+    GtkWidget::visited-link-color = "#75507B" # purple
+
+    engine "murrine" {
+        animation = FALSE
+        colorize_scrollbar = TRUE
+
+        # 0.8 for less contrast,
+        # more than 1.0 for more contrast on borders
+        contrast = 0.80
+
+        # 0 = old arrows
+        # 1 = filled arrows
+        arrowstyle = 0
+
+        # 0 = joined
+        # 1 = separated
+        spinbuttonstyle = 0
+
+        # 0 = normal
+        # 1 = arrow looks detached
+        comboboxstyle = 0
+
+        # 0 = normal
+        # 1 = inset
+        # textstyle = 0
+
+        # shading on the trough of widgets
+        #trough_shades = {0.9, 1.0}
+
+        #border_shades = {1.33, 0.33}
+        border_shades = {1.00, 1.00}
+        # border_colors = {"#101010", "#202020"}
+
+        # change the color of gradients, FALSE to disable
+        # gradient_colors = FALSE
+
+        # 0 = flat highlight
+        # 1 = curved highlight
+        # 2 = concave style
+        # 3 = top curved highlight
+        # 4 = beryl highlight
+        glazestyle = 0
+
+        # 0 = plain
+        # 1 = striped
+        # 2 = cells
+        progressbarstyle = 1
+
+        gradient_shades   = {1.05, 1.05, 1.05, 0.95}
+        #gradient_shades   = {1.00, 1.00, 1.00, 1.00}
+        highlight_shade   = 1.00
+        lightborder_shade = 1.10
+
+        # 0 = lightborder on top side
+        # 1 = lightborder on all sides
+        lightborderstyle = 0
+
+        # 0 = flat
+        # 1 = glassy
+        # 2 = raised
+        listviewheaderstyle = 1
+
+        # 0 = nothing
+        # 1 = dotted
+        listviewstyle = 0
+
+        # 0 = menuitem look
+        # 1 = button look
+        menubaritemstyle = 1
+
+        # 0 = flat
+        # 1 = glassy
+        # 2 = gradient
+        # 3 = striped
+        menubarstyle = 1
+
+        # 0 = flat
+        # 1 = glassy
+        # 2 = striped
+        menuitemstyle = 1
+
+        # 0 = no vertical menu stripe
+        # 1 = display vertical menu stripe
+        menustyle = 0
+
+        # 0 = flat
+        # 1 = inset
+        # 2 = shadow
+        # 3 = shadow w/ gradient
+        # 4 = shadow w/ gradient (strong)
+        reliefstyle = 0
+
+        rgba = FALSE
+        roundness = 0
+
+        # 0 = nothing
+        # 1 = circles
+        # 2 = handles
+        # 3 = diagonal stripes
+        # 4 = diagonal stripes and handles
+        # 5 = horizontal stripes
+        # 6 = horizontal stripes and handles
+        scrollbarstyle = 0
+
+        # 0 = nothing added
+        # 1 = handles
+        sliderstyle = 0
+
+        # 0 = standard
+        # 1 = integrated stepper handles
+        # 2 = square handles, round slider
+        stepperstyle = 1
+
+        # 0 = flat
+        # 1 = glassy
+        # 2 = gradient
+        toolbarstyle = 1
+
+        # 0 = arrow
+        # 1 = circled +/-
+        # 2 = square +/-
+        expanderstyle = 0
+
+        #focus_color = shade(1.00, @selected_bg_color)
+        focus_color = shade(1.50, @bg_color)
+
+        # 0 = none
+        # 1 = dotted lines
+        # 2 = colored line + tint
+        # 3 = glow
+        focusstyle = 2
+
+        # Glow on top of elements, like lighting
+        ### Nice glow
+        #glow_shade = 3.9
+        ### Inverted glow
+        #glow_shade = 0.1
+        glow_shade = 1.0
+
+        # 0 = solid
+        # 1 = fade in/out
+        separatorstyle = 1
+    }
+}
