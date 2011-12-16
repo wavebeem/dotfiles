@@ -116,12 +116,12 @@
     <number>6</number>
     <firstdesk>1</firstdesk>
     <names>
-      <name>.</name>
-      <name>:</name>
-      <name>:.</name>
-      <name>::</name>
-      <name>::.</name>
-      <name>:::</name>
+      <name>&#x25CB;</name>
+      <name>&#x25CE;</name>
+      <name>&#x25CE;&#x25CB;</name>
+      <name>&#x25CE;&#x25CE;</name>
+      <name>&#x25CE;&#x25CE;&#x25CB;</name>
+      <name>&#x25CE;&#x25CE;&#x25CE;</name>
     </names>
     <popupTime>750</popupTime>
     <!-- The number of milliseconds to show the popup for when switching
