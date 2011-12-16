@@ -62,7 +62,6 @@ Autostart() {
     # Disable touchpad while typing (for 0.5 seconds)
     OnHost profiterole && sydaemon -i 0.5 &
 
-    SleepDo 0.25 COMPOSITE on &
     SleepDo 0.50 PANEL on &
 }
 
