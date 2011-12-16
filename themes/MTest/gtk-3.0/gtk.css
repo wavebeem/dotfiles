@@ -2,7 +2,7 @@
 @define-color base_color #444240;
 @define-color bg_color #444240;
 @define-color tooltip_bg_color @main_border;
-@define-color selected_bg_color #aa3048;
+@define-color selected_bg_color #61a6ca;
 @define-color text_color #e4e2e0;
 @define-color fg_color #e4e2e0;
 @define-color tooltip_fg_color #e4e2e0;
