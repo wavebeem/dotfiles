@@ -154,7 +154,7 @@
     <right>0</right>
   </margins>
   <dock>
-    <position>BottomRight</position>
+    <position>Floating</position>
     <!-- (Top|Bottom)(Left|Right|)|Top|Bottom|Left|Right|Floating -->
     <floatingX>0</floatingX>
     <floatingY>0</floatingY>
@@ -163,7 +163,7 @@
     <!-- 'Above', 'Normal', or 'Below' -->
     <direction>Horizontal</direction>
     <!-- 'Vertical' or 'Horizontal' -->
-    <autoHide>yes</autoHide>
+    <autoHide>no</autoHide>
     <hideDelay>300</hideDelay>
     <!-- in milliseconds (1000 = 1 second) -->
     <showDelay>300</showDelay>
@@ -341,6 +341,26 @@
         <linear>yes</linear>
         <dialog>list</dialog>
         <raise>yes</raise>
+      </action>
+    </keybind>
+    <keybind key="S-A-W-l">
+      <action name="MoveRelative">
+        <x>10</x>
+      </action>
+    </keybind>
+    <keybind key="S-A-W-h">
+      <action name="MoveRelative">
+        <x>-10</x>
+      </action>
+    </keybind>
+    <keybind key="S-A-W-k">
+      <action name="MoveRelative">
+        <y>-10</y>
+      </action>
+    </keybind>
+    <keybind key="S-A-W-j">
+      <action name="MoveRelative">
+        <y>10</y>
       </action>
     </keybind>
     <keybind key="C-A-W-o">
