@@ -47,7 +47,7 @@ panel_padding  = 6 6
 font_shadow    = 0
 wm_menu        = 0
 panel_dock     = 0
-panel_layer    = top
+panel_layer    = bottom
 
 ### TASKBAR ###
 taskbar_mode          = multi_desktop
