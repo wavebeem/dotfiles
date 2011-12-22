@@ -62,7 +62,7 @@ style "default" {
 
     GtkScrolledWindow::scrollbar-spacing = 1
 
-    GtkTreeView::odd_row_color = shade(1.20, @base_color)
+    GtkTreeView::odd_row_color = shade(1.05, @base_color)
 
     # Glow the tasklist by changing the color, instead of overlaying it with a rectangle
     #WnckTasklist   ::fade-overlay-rect    = 0
