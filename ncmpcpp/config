@@ -37,7 +37,7 @@ playlist_separate_albums = "no"
 # song_columns_list_format =  "(6f)[cyan]{lr} (40)[]{t} (35)[]{br} (25)[cyan]{a}"
 #song_columns_list_format =  "(6f)[green]{lr}| (40)[cyan]{t} (35)[magenta]{b} (25)[red]{a}"
 #song_columns_list_format =  "(6f)[green]{lr}| (40)[cyan]{t} (35)[magenta]{br} (25)[red]{a}"
-song_columns_list_format =  "(6f)[green]{lr}| (40)[cyan]{t} (35)[magenta]{br} (25)[red]{a}"
+song_columns_list_format =  "(6f)[green]{lr}| (40)[cyan]{t} (30)[magenta]{b} (30)[red]{a}"
 # song_columns_list_format =  "(6f)[red]{lr} (40)[]{t} (35)[cyan]{b} (25)[magenta]{a}"
 #song_columns_list_format =  "(6f)[]{lr}| (40)[yellow]{t}"
 
