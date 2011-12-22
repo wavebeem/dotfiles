@@ -1,8 +1,10 @@
+@define-color main_border shade(#343230, 0.80);
+
 /* Default color scheme */
 @define-color base_color #444240;
 @define-color bg_color #444240;
 @define-color tooltip_bg_color @main_border;
-@define-color selected_bg_color #aa3048;
+@define-color selected_bg_color #61a6ca;
 @define-color text_color #e4e2e0;
 @define-color fg_color #e4e2e0;
 @define-color tooltip_fg_color #e4e2e0;
@@ -20,20 +22,18 @@
 @define-color theme_selected_bg_color @selected_bg_color;
 @define-color theme_selected_fg_color @selected_fg_color;
 
-@define-color main_border shade(#343230, 0.80);
-
 /*
 @define-color menu_bg_color shade(@theme_bg_color, 1.2);
 */
-@define-color menu_bg_color mix(shade(@theme_bg_color, 1.0), shade(@theme_selected_bg_color, 0.80), 0.50);
+@define-color menu_bg_color mix(shade(@theme_bg_color, 0.80), shade(@theme_selected_bg_color, 0.80), 0.50);
 @define-color menu_fg_color @theme_fg_color;
 @define-color menu_border_color #000000;
 @define-color menu_controls_color shade(@theme_fg_color, 0.9);
 @define-color menu_combobox_border #3277bf;
 @define-color menu_separator shade(@menu_bg_color, 0.9);
 
-@define-color menu_item_bg_color mix(shade(@theme_selected_bg_color, 0.80), #fff, 0.10);
-@define-color menu_item_border shade(@menu_item_bg_color, 0.35);
+@define-color menu_item_bg_color mix(shade(@theme_selected_bg_color, 0.65), @theme_fg_color, 0.25);
+@define-color menu_item_border shade(@menu_item_bg_color, 0.30);
 @define-color menu_item_fg_color @theme_fg_color;
 
 @define-color link_color #4a90d9;
@@ -133,7 +133,6 @@
 @define-color toolbar_border_bottom shade(@theme_bg_color, 1.00);
 
 @define-color toolbar_active_button_color #444240;
-@define-color toolbar_active_button_color red;
 
 @define-color primary_toolbar_entry_bg @theme_base_color;
 @define-color primary_toolbar_entry_fg @theme_text_color;

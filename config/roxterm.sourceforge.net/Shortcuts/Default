@@ -1,6 +1,6 @@
 
 [roxterm shortcuts scheme]
-File/New Window=<Alt>n
+File/New Window=<Primary><Shift>n
 File/New Tab=<Alt>u
 File/Close Window=<Shift><Alt>q
 File/Close Tab=<Alt>w
@@ -34,7 +34,7 @@ Search/Find...=<Alt>f
 Tabs/Name Tab...=<Alt>s
 Tabs/Move Tab Right=<Shift><Alt>j
 Tabs/Move Tab Left=<Shift><Alt>k
-Edit/Restart command=<Alt>r
+Edit/Restart command=<Primary><Alt>r
 File/New Window With Profile/profiterole=
 File/New Window With Profile/truffle=
 File/New Tab With Profile/profiterole=
