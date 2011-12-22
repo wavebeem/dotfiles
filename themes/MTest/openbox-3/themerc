@@ -53,26 +53,27 @@ window.active.button.*.pressed.image.color: #141210
 window.active.button.*.hover.image.color:   #343230
 window.active.button.*.image.color:         #343230
 
-window.inactive.button.*.pressed.image.color: #646260
-window.inactive.button.*.hover.image.color:   #646260
-window.inactive.button.*.image.color:         #646260
+window.inactive.button.*.pressed.image.color: #141210
+window.inactive.button.*.hover.image.color:   #343230
+window.inactive.button.*.image.color:         #343230
 
 
-window.inactive.button.*.*.bg: parentrelative
-!window.inactive.button.*.*.bg.color:        #444240
-!window.inactive.button.*.*.bg.border.color: #000000
+!window.inactive.button.*.*.bg: parentrelative
+window.inactive.button.*.*.bg: flat solid border
+window.inactive.button.*.*.bg.color:        #545250
+window.inactive.button.*.*.bg.border.color: #343230
 
 window.active.button.*.*.bg: flat solid border
 window.active.button.*.*.bg.color:        #a4a2a0
 window.active.button.*.*.bg.border.color: #343230
 
 window.active.button.*.hover.bg: flat solid border
-window.active.button.*.hover.bg.color:        #848280
+window.active.button.*.hover.bg.color:        #c4c2c0
 window.active.button.*.hover.bg.border.color: #343230
 
 window.active.button.*.pressed.bg: flat solid border
 window.active.button.*.pressed.bg.color:        #848280
-window.active.button.*.pressed.bg.border.color: #141210
+window.active.button.*.pressed.bg.border.color: #242220
 
 window.inactive.button.*.pressed.bg: parentrelative
 !window.inactive.button.*.pressed.bg.color:        #141210
