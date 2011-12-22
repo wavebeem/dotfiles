@@ -13,10 +13,11 @@ playlist_disable_highlight_delay = "2"
 
 #song_list_format = "{$4 %t $9}|{$2 %f $9}$R{$7 %b $9}"
 #song_list_format = "{$4 %t $9}|{$2 %f $9}$R{$0 (%l) $9}"
-song_list_format = "{$4 %t $9}|{$2 %f $9}$R{$7 %b $9}"
-#song_status_format = "{$4%t$9{ ::: $7%b$9}}|{%f}"
-#song_status_format = "{$7album:$9 %b{ $7by$9 %a}}|{%f}"
-song_status_format = "{$6Artist:$9 %a}|{%f}"
+#song_list_format = "{$4 %t $9}|{$2 %f $9}$R{$7 %b $9}"
+#song_list_format = "{$4 %t $9}|{$2 %f $9}$R{$7 %l $9}"
+song_status_format = "{$4%t$9}|{%f}"
+#song_status_format = "{$7album$9 %b{ $7by$9 %a}}|{%f}"
+#song_status_format = "{$6Artist:$9 %a}|{%f}"
 song_library_format = "{%n - }{%t}|{%f}"
 tag_editor_album_format = "{(%y) }%b"
 
@@ -34,16 +35,18 @@ playlist_separate_albums = "no"
 # song_columns_list_format =  "(6f)[red]{lr} (40)[]{t} (35)[cyan]{br} (25)[magenta]{a}"
 # song_columns_list_format =  "(6f)[red]{lr} (40)[cyan]{t} (35)[green]{br} (25)[magenta]{a}"
 # song_columns_list_format =  "(6f)[cyan]{lr} (40)[]{t} (35)[]{br} (25)[cyan]{a}"
-#song_columns_list_format =  "(6f)[]{lr}| (40)[yellow]{t} (35)[cyan]{b} (25)[]{a}"
+#song_columns_list_format =  "(6f)[green]{lr}| (40)[cyan]{t} (35)[magenta]{b} (25)[red]{a}"
+#song_columns_list_format =  "(6f)[green]{lr}| (40)[cyan]{t} (35)[magenta]{br} (25)[red]{a}"
+song_columns_list_format =  "(6f)[green]{lr}| (40)[cyan]{t} (35)[magenta]{br} (25)[red]{a}"
 # song_columns_list_format =  "(6f)[red]{lr} (40)[]{t} (35)[cyan]{b} (25)[magenta]{a}"
-song_columns_list_format =  "(6f)[]{lr}| (40)[yellow]{t}"
+#song_columns_list_format =  "(6f)[]{lr}| (40)[yellow]{t}"
 
 #execute_on_song_change = ""
 
 playlist_show_remaining_time = "no"
 
-#playlist_display_mode = "columns"
-playlist_display_mode = "classic"
+playlist_display_mode = "columns"
+#playlist_display_mode = "classic"
 
 browser_display_mode = "columns"
 
@@ -55,20 +58,9 @@ seek_time = "5"
 
 autocenter_mode = "yes"
 
-#progressbar_look = "=>"
-#progressbar_look = "=|-"
 progressbar_look = "=|"
 
-#default_place_to_search_in = "database" (database/playlist)
-
-user_interface = "classic" # (classic/alternative)
-
-#media_library_left_column = "a" (possible values: a,y,g,c,p, legend above)
-
-#default_find_mode = "wrapped" (wrapped/normal)
-#default_space_mode = "add" (add/select)
-#default_tag_editor_left_col = "albums" (albums/dirs)
-#default_tag_editor_pattern = "%n - %t"
+user_interface = "classic"
 
 header_visibility = "yes"
 titles_visibility = "no"
@@ -82,25 +74,14 @@ lines_scrolled = "2"
 
 follow_now_playing_lyrics = "yes"
 
-#ncmpc_like_songs_adding = "no"
-#show_hidden_files_in_local_browser = "no"
-
 display_screens_numbers_on_start = "no"
 jump_to_now_playing_song_at_start = "yes"
 
 ask_before_clearing_main_playlist = "yes"
 
-#clock_display_seconds = "no"
-
-#display_bitrate = "no"
-
 display_remaining_time = "no"
 
-#regular_expressions = "basic"
-
 ignore_leading_the = "yes"
-
-#block_search_constraints_change_if_items_found = "yes"
 
 mouse_support = "yes"
 
@@ -108,16 +89,14 @@ empty_tag_marker = "<null>"
 
 enable_window_title = "yes"
 
-#allow_physical_files_deletion = "no"
+allow_physical_files_deletion = "no"
 
-#allow_physical_directories_deletion = "no"
-
-#lyrics_database = "1"
+allow_physical_directories_deletion = "no"
 
 external_editor = "vim"
 use_console_editor = "yes"
 
-#colors_enabled = "yes"
+colors_enabled = "yes"
 empty_tag_color = "red"
 header_window_color = "default"
 volume_color = "default"
