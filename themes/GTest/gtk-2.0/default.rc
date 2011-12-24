@@ -52,7 +52,7 @@ style "default" {
     GtkMenu::horizontal-padding = 0
     GtkMenu::vertical-padding   = 0
 
-    GtkMenuBar::shadow_type = GTK_SHADOW_NONE
+    #GtkMenuBar::shadow_type = GTK_SHADOW_NONE
     GtkToolbar::shadow_type = GTK_SHADOW_NONE
 
     EogStatusBar::shadow_type = GTK_SHADOW_NONE
@@ -143,7 +143,8 @@ style "default" {
         # 2 = cells
         progressbarstyle = 1
 
-        gradient_shades   = {1.05, 1.05, 1.05, 0.95}
+        #gradient_shades   = {1.05, 1.05, 1.05, 0.95}
+        gradient_shades   = {1.02, 1.05, 1.05, 0.98}
         #gradient_shades   = {1.00, 1.00, 1.00, 1.00}
         highlight_shade   = 1.00
         lightborder_shade = 1.00

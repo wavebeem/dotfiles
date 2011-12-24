@@ -4,9 +4,15 @@ style "menu" {
     xthickness = 4
     ythickness = 4
 
-    bg[NORMAL]      = mix(0.50, shade(0.80, @selected_bg_color), shade(1.00, @bg_color))
-    base[NORMAL]    = mix(0.50, shade(0.80, @selected_bg_color), shade(1.30, @bg_color))
-    fg[INSENSITIVE] = mix(0.50, shade(0.80, @selected_bg_color), shade(0.25, @bg_color))
+    bg[NORMAL]     = "#444444"
+    base[NORMAL]   = "#444444"
+    fg[NORMAL]     = "#eeeeee"
+    fg[PRELIGHT]   = "#eeeeee"
+    fg[SELECTED]   = "#eeeeee"
+    text[NORMAL]   = "#eeeeee"
+    text[PRELIGHT] = "#eeeeee"
+    text[SELECTED] = "#eeeeee"
+    fg[INSENSITIVE] = shade(0.80, "#eeeeee")
 
     engine "murrine" {
         contrast = 3.00
@@ -21,17 +27,17 @@ style "menu-item" = "menu" {
 
     font_name = "Bold"
 
-    fg[PRELIGHT] = @selected_fg_color
-
     base[NORMAL]  = @selected_bg_color
 
     bg[INSENSITIVE] = mix(0.50, shade(0.80, @selected_bg_color), shade(1.50, @bg_color))
 
-    bg[SELECTED] = mix(0.50, shade(0.80, @selected_bg_color), "#FFF")
+    #bg[SELECTED] = mix(0.50, shade(0.80, @selected_bg_color), "#FFF")
+    bg[SELECTED] = shade(1.25, "#444444")
+    fg[PRELIGHT] = "#eeeeee"
 
     engine "murrine" {
         contrast  = 0.50
-        border_shades = {0.30, 0.30}
+        border_shades = {0.50, 0.50}
         roundness = 4
     }
 }
