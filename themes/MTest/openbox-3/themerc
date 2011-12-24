@@ -43,34 +43,35 @@ window.inactive.label.bg: parentrelative
 window.inactive.label.text.color: #666666
 
 !! Window buttons
-window.active.button.*.pressed.image.color: #111111
-window.active.button.*.hover.image.color:   #333333
+window.active.button.*.pressed.image.color: #b35959
+window.active.button.*.hover.image.color:   #cc6666
 window.active.button.*.image.color:         #eeeeee
 
-window.inactive.button.*.pressed.image.color: #666666
-window.inactive.button.*.hover.image.color:   #666666
+window.inactive.button.*.pressed.image.color: #b35959
+window.inactive.button.*.hover.image.color:   #cc6666
 window.inactive.button.*.image.color:         #666666
 
+window.*.button.*.*.bg: parentrelative
 
-window.inactive.button.*.*.bg: flat solid
-window.inactive.button.*.*.bg.color:        #444444
-window.inactive.button.*.*.bg.border.color: #000000
+!window.inactive.button.*.*.bg: flat solid
+!window.inactive.button.*.*.bg.color:        #444444
+!window.inactive.button.*.*.bg.border.color: #000000
 
-window.active.button.*.*.bg: flat solid
-window.active.button.*.*.bg.color:        #444444
-window.active.button.*.*.bg.border.color: #000000
+!window.active.button.*.*.bg: flat solid
+!window.active.button.*.*.bg.color:        #444444
+!window.active.button.*.*.bg.border.color: #000000
 
-window.active.button.*.hover.bg: flat solid border
-window.active.button.*.hover.bg.color:        #888888
-window.active.button.*.hover.bg.border.color: #333333
+!window.active.button.*.hover.bg: flat solid border
+!window.active.button.*.hover.bg.color:        #888888
+!window.active.button.*.hover.bg.border.color: #333333
 
-window.active.button.*.pressed.bg: flat solid border
-window.active.button.*.pressed.bg.color:        #888888
-window.active.button.*.pressed.bg.border.color: #111111
+!window.active.button.*.pressed.bg: flat solid border
+!window.active.button.*.pressed.bg.color:        #888888
+!window.active.button.*.pressed.bg.border.color: #111111
 
-window.inactive.button.*.pressed.bg: flat solid border
-window.inactive.button.*.pressed.bg.color:        #111111
-window.inactive.button.*.pressed.bg.border.color: #aaaaaa
+!window.inactive.button.*.pressed.bg: flat solid border
+!window.inactive.button.*.pressed.bg.color:        #111111
+!window.inactive.button.*.pressed.bg.border.color: #aaaaaa
 
 !! Borders
 window.active.border.color:   #000000
