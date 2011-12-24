@@ -4,6 +4,8 @@ style "tooltips" = "wider" {
     xthickness = 6
     ythickness = 6
 
+    font_name = "Bold"
+
     bg[NORMAL] = shade(0.90, @tooltip_bg_color)
     fg[NORMAL] = @tooltip_fg_color
 

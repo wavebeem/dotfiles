@@ -146,7 +146,7 @@ style "default" {
         gradient_shades   = {1.05, 1.05, 1.05, 0.95}
         #gradient_shades   = {1.00, 1.00, 1.00, 1.00}
         highlight_shade   = 1.00
-        lightborder_shade = 1.10
+        lightborder_shade = 1.00
 
         # 0 = lightborder on top side
         # 1 = lightborder on all sides
@@ -219,7 +219,8 @@ style "default" {
         expanderstyle = 0
 
         #focus_color = shade(1.00, @selected_bg_color)
-        focus_color = shade(1.50, @bg_color)
+        focus_color = shade(0.90, @bg_color)
+        #focus_color = shade(1.50, @fg_color)
 
         # 0 = none
         # 1 = dotted lines

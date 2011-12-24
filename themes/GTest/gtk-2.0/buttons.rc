@@ -9,7 +9,7 @@ style "button" = "wider" {
     engine "murrine" {
         roundness = 4
         contrast = 1.10
-        focus_color = shade(2.00, @bg_color)
+        #focus_color = shade(2.00, @bg_color)
     }
 }
 

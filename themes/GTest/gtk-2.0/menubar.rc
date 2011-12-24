@@ -4,13 +4,16 @@ style "menubar" {
     xthickness = 0
     ythickness = 1
 
-    bg[NORMAL]     = shade(1.00, @bg_color)
+    font_name = "Bold"
 
-    fg[PRELIGHT]   = @selected_fg_color
+    bg[NORMAL]     = "#444444"
+    fg[NORMAL]     = "#eeeeee"
 
-    text[PRELIGHT] = @selected_fg_color
+    fg[PRELIGHT]   = "#eeeeee"
 
-    fg[INSENSITIVE] = shade(0.80, @bg_color)
+    text[PRELIGHT] = "#eeeeee"
+
+    fg[INSENSITIVE] = shade(0.80, @fg_color)
 
     engine "murrine" {
         roundness = 0
@@ -20,17 +23,18 @@ style "menubar" {
 
 style "menubar-item" {
     xthickness = 4
-    ythickness = 2
+    ythickness = 3
 
     # To make the menubar items blend in with the menus themselves
     #bg[PRELIGHT] = mix(0.50, shade(0.80, @selected_bg_color), shade(1.30, @bg_color))
     #bg[PRELIGHT] = shade(1.30, @bg_color)
-    bg[PRELIGHT] = shade(0.90, @bg_color)
+    bg[PRELIGHT] = shade(1.25, "#444444")
 
     engine "murrine" {
         roundness = 4
         contrast = 1.70
-        border_shades = {1.20, 1.20}
+        border_shades = {1.30, 1.30}
+        lightborder_shade = 1.00
         #contrast = 2.00
     }
 }

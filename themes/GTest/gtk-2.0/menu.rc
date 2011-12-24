@@ -11,11 +11,15 @@ style "menu" {
     engine "murrine" {
         contrast = 3.00
     }
+
+    font_name = "Bold"
 }
 
 style "menu-item" = "menu" {
     xthickness = 4
     ythickness = 3
+
+    font_name = "Bold"
 
     fg[PRELIGHT] = @selected_fg_color
 
