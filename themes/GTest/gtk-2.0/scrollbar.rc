@@ -19,10 +19,10 @@ style "scrollbar" {
 
     engine "murrine" {
         roundness = 0
-        contrast = 0.60
+        contrast = 0.40
         trough_shades = {0.95, 0.95}
         #border_shades = {0.25, 0.50}
-        border_shades = {1.00, 1.00}
+        border_shades = {1.05, 1.05}
         prelight_shade = 1.10
     }
 }

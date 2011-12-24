@@ -9,6 +9,6 @@ style "radiocheck" = "button" {
     text[SELECTED] = @fg_color
 
     engine "murrine" {
-        contrast = 1.20
+        contrast = 0.75
     }
 }

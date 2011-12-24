@@ -94,8 +94,8 @@ style "default" {
     text[INSENSITIVE] = shade(0.65, @bg_color)
     text[ACTIVE]      = @selected_fg_color
 
-    GtkWidget::link-color         = "#4a90d9" # blue
-    GtkWidget::visited-link-color = "#75507B" # purple
+    GtkWidget::link-color         = "#526470" # blue
+    GtkWidget::visited-link-color = "#75507b" # purple
 
     engine "murrine" {
         animation = FALSE
@@ -103,7 +103,7 @@ style "default" {
 
         # 0.8 for less contrast,
         # more than 1.0 for more contrast on borders
-        contrast = 0.80
+        contrast = 0.50
 
         # 0 = old arrows
         # 1 = filled arrows
@@ -144,7 +144,7 @@ style "default" {
         progressbarstyle = 1
 
         #gradient_shades   = {1.05, 1.05, 1.05, 0.95}
-        gradient_shades   = {1.02, 1.05, 1.05, 0.98}
+        gradient_shades   = {1.02, 1.02, 1.02, 0.98}
         #gradient_shades   = {1.00, 1.00, 1.00, 1.00}
         highlight_shade   = 1.00
         lightborder_shade = 1.00
@@ -234,7 +234,7 @@ style "default" {
         #glow_shade = 3.9
         ### Inverted glow
         #glow_shade = 0.1
-        glow_shade = 1.0
+        #glow_shade = 1.0
 
         # 0 = solid
         # 1 = fade in/out

@@ -10,8 +10,8 @@ style "progressbar" {
 
      engine "murrine" {
         roundness = 0
-        contrast = 1.20
+        contrast = 1.00
         trough_shades = {1.00, 1.00}
-        border_shades = {1.10, 1.10}
+        border_shades = {1.20, 1.20}
      }
 }

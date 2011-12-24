@@ -25,8 +25,8 @@ style "scale" = "button" {
 
     engine "murrine" {
         roundness = 8
-        border_shades = {0.70, 0.70}
-        contrast = 1.25
+        border_shades = {1.00, 1.00}
+        contrast = 1.00
     }
 }
 
