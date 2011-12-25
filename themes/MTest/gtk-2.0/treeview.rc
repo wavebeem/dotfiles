@@ -10,8 +10,8 @@ style "treeview" {
     text[SELECTED] = @selected_fg_color
     text[ACTIVE  ] = @selected_fg_color
 
-    base[SELECTED] = mix(0.60, shade(1.00, @selected_bg_color), shade(2.00, @bg_color))
-    base[ACTIVE  ] = mix(0.60, shade(1.00, @selected_bg_color), shade(2.00, @bg_color))
+    base[SELECTED] = mix(0.85, @selected_bg_color, shade(3.00, @bg_color))
+    base[ACTIVE  ] = mix(0.85, @selected_bg_color, shade(3.00, @bg_color))
 
     engine "murrine" {
         gradient_shades = {0.95, 0.95, 0.95, 0.95}

@@ -1,14 +1,14 @@
 !! vim: set ft=xdefaults:
 !! Menu background
 menu.items.bg: flat solid border
-menu.items.bg.color:        #000000
-menu.items.bg.border.color: #cccccc
+menu.items.bg.color:        #222222
+menu.items.bg.border.color: #222222
 
 !! Menu separators
-menu.separator.color: #888888
+menu.separator.color: #333333
 menu.separator.width: 1
 menu.separator.padding.width:  0
-menu.separator.padding.height: 1
+menu.separator.padding.height: 0
 
 !! Menu text
 menu.items.text.color: #eeeeee
@@ -23,8 +23,8 @@ menu.title.text.justify: right
 
 !! Selected menu item
 menu.items.active.bg: flat solid border
-menu.items.active.bg.color:        #666666
-menu.items.active.bg.border.color: #aaaaaa
+menu.items.active.bg.color:        #555555
+menu.items.active.bg.border.color: #555555
 menu.items.active.text.color: #ffffff
 
 !! Titlebar
@@ -97,13 +97,13 @@ window.handle.width: 0
 menu.overlap: 0
 
 !! On-screen displays
-osd.label.text.color: #aaaaaa
+osd.label.text.color: #eeeeee
 osd.hilight.bg: flat solid border
-osd.hilight.bg.color:        #aaaaaa
-osd.hilight.bg.border.color: #aaaaaa
+osd.hilight.bg.color:        #eeeeee
+osd.hilight.bg.border.color: #eeeeee
 osd.unhilight.bg: flat solid border
-osd.unhilight.bg.color:        #000000
-osd.unhilight.bg.border.color: #666666
+osd.unhilight.bg.color:        #555555
+osd.unhilight.bg.border.color: #555555
 osd.bg: flat solid border
-osd.bg.color:        #000000
-osd.bg.border.color: #cccccc
+osd.bg.color:        #222222
+osd.bg.border.color: #222222
