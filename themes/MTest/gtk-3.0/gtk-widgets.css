@@ -41,9 +41,9 @@
 
     -GtkWidget-focus-padding: 2;
     -GtkWidget-focus-line-width: 1;
-    -adwaita-focus-border-color: alpha(@theme_text_color, 0.4);
     -adwaita-focus-border-radius: 1;
-    -adwaita-focus-fill-color: alpha(@theme_base_color, 0.0);
+    -adwaita-focus-border-color: alpha(@theme_text_color, 0.20);
+    -adwaita-focus-fill-color:   alpha(@theme_text_color, 0.05);
     -adwaita-focus-border-gradient: none;
     -adwaita-focus-border-dashes: 1;
 }
@@ -383,19 +383,19 @@ GtkScrolledWindow.frame {
 }
 
 .button {
-    -adwaita-focus-fill-color: alpha(@theme_base_color, 0.35);
+    -adwaita-focus-fill-color: alpha(@theme_text_color, 0.20);
     -adwaita-focus-border-gradient: -gtk-gradient(linear,
                                                    left top, left bottom,
                                                    from(alpha(@keyboard_focus_border, 0.50)),
                                                    to(alpha(@keyboard_focus_bordeb, 0.50)));
-    -adwaita-focus-border-radius: 1;
-    -adwaita-focus-border-dashes: 0;
+    -adwaita-focus-border-radius: 2;
+    -adwaita-focus-border-dashes: 1;
     -GtkWidget-focus-line-width: 1;
 
     -GtkButton-child-displacement-x: 0;
     -GtkButton-child-displacement-y: 2;
     -GtkButton-image-spacing: 4;
-    -GtkButton-interior-focus: true;
+    -GtkButton-interior-focus: false;
     -GtkButton-default-border: 0;
     -GtkButton-inner-border: 0;
 
@@ -1371,7 +1371,6 @@ row:hover {
 }
 
 row:insensitive {
-    border-width: 0;
 }
 
 row:selected:focused {
@@ -1521,7 +1520,9 @@ ClockBox,
 
 .gnome-panel-menu-bar .menuitem *:prelight {
     color: @os_chrome_selected_fg_color;
+    /*
     text-shadow: @os_chrome_bg_color 0 1;
+    */
 }
 
 PanelApplet .button,
