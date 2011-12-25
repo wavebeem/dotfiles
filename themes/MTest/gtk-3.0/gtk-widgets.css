@@ -1374,12 +1374,10 @@ row:insensitive {
 }
 
 row:selected:focused {
-    border-width: 0;
     background-color: @treeview_selection_color;
 }
 
 row:selected {
-    border-width: 0;
     background-color: @treeview_selection_color;
 }
 
