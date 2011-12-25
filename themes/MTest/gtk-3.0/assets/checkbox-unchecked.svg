@@ -18,6 +18,13 @@
    sodipodi:docname="checkbox-unchecked.svg">
   <defs
      id="defs816">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 8 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="15.999999 : 8 : 1"
+       inkscape:persp3d-origin="7.9999995 : 5.3333333 : 1"
+       id="perspective11124" />
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient10354-2"
@@ -71,17 +78,17 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="26.0625"
-     inkscape:cx="-0.73483454"
-     inkscape:cy="5.2409141"
+     inkscape:cx="3.9462206"
+     inkscape:cy="5.4711299"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
      borderlayer="true"
      inkscape:showpageshadow="false"
      inkscape:window-width="1920"
-     inkscape:window-height="1024"
+     inkscape:window-height="1058"
      inkscape:window-x="0"
-     inkscape:window-y="34"
+     inkscape:window-y="0"
      inkscape:window-maximized="1"
      fit-margin-top="1"
      fit-margin-left="1"
@@ -115,17 +122,17 @@
     <g
        transform="matrix(1.1772848,0,0,1.1793241,482.60683,713.91735)"
        id="g16853"
-       style="fill:#646260;fill-opacity:1;stroke:#292826;stroke-width:0.84867733999999984;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1;enable-background:new">
+       style="fill:#666666;fill-opacity:1;stroke:#303030;stroke-width:0.84867733999999984;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1;enable-background:new">
       <rect
          transform="scale(1,-1)"
-         style="color:#000000;fill:#646260;fill-opacity:1;fill-rule:nonzero;stroke:#292826;stroke-width:0.84867733999999984;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         style="color:#000000;fill:#666666;fill-opacity:1;fill-rule:nonzero;stroke:#303030;stroke-width:0.84867733999999984;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
          id="rect6506"
          width="11.042357"
          height="11.023263"
          x="-409.50739"
          y="-284.86218"
-         rx="1.3680552"
-         ry="0" />
+         rx="2"
+         ry="2" />
     </g>
   </g>
 </svg>

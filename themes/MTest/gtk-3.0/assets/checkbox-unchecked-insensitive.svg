@@ -70,18 +70,18 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="26.0625"
-     inkscape:cx="-3.2359838"
-     inkscape:cy="3.2139843"
+     inkscape:zoom="52.125"
+     inkscape:cx="9.2449022"
+     inkscape:cy="8.4096525"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
      borderlayer="true"
      inkscape:showpageshadow="false"
      inkscape:window-width="1920"
-     inkscape:window-height="1024"
+     inkscape:window-height="1058"
      inkscape:window-x="0"
-     inkscape:window-y="34"
+     inkscape:window-y="0"
      inkscape:window-maximized="1"
      fit-margin-top="1"
      fit-margin-left="1"
@@ -118,14 +118,14 @@
        style="fill:#545250;fill-opacity:1;stroke:#343230;stroke-width:0.84867733999999995;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1;enable-background:new;opacity:0.25">
       <rect
          transform="scale(1,-1)"
-         style="color:#000000;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#e4e2e0;stroke-width:0.84867733999999984;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         style="color:#000000;fill:none;stroke:#e4e2e0;stroke-width:0.84867734;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
          id="rect6506"
          width="11.042357"
          height="11.023263"
          x="-409.50739"
          y="-284.86218"
-         rx="1.3680552"
-         ry="0" />
+         rx="2"
+         ry="2" />
     </g>
     <g
        transform="matrix(0.72447311,0,0,0.72572799,299.6771,840.62969)"
