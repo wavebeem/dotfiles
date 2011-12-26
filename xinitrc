@@ -1,10 +1,7 @@
 #!/bin/bash
 # vim: set syn=sh:
 
-source "$HOME/bin/lib/host.sh"
-
 bg_color="#000000"
-default_wm=openbox
 
 # Enable Japanese input
 export XMODIFIERS="@im=ibus"
@@ -42,7 +39,7 @@ Autostart() {
     xbindkeys &
 
     # Scrobble songs on desktop
-    OnHost truffle && mpdscribble &
+    mpdscribble &
 
     # Load font and cursor settings
     xrdb ~/.Xdefaults &
@@ -59,22 +56,19 @@ Autostart() {
     # Enable Ctrl-Alt-Backspace for zapping X
     setxkbmap -option terminate:ctrl_alt_bksp &
 
-    # Disable touchpad while typing (for 0.5 seconds)
-    OnHost profiterole && sydaemon -i 0.5 &
-
     SleepDo 0.50 PANEL on &
 }
 
 # Launch a window manager with proper permissions
 Start() {
-    OnHost truffle && nvidia-settings -l &
+    nvidia-settings -l &
     exec ck-launch-session "$@"
 }
 
 if [ -z "$DE" ]; then
-    #SleepDo 0.5 Autostart &
-    Autostart &
-    Start WM on
+    SleepDo 0.75 Autostart &
+    #Autostart &
+    Start openbox
 else
     Start "$DE"
 fi

@@ -11,7 +11,7 @@ Control + Mod4 + Return
 "dmenu_run"
 Mod4 + F1
 
-"DMENU"
+"DMENU_RUN"
 Mod4 + p
 
 "HTOP"
