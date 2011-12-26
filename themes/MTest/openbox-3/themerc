@@ -5,10 +5,10 @@ menu.items.bg.color:        #222222
 menu.items.bg.border.color: #222222
 
 !! Menu separators
-menu.separator.color: #333333
+menu.separator.color: #181818
 menu.separator.width: 1
 menu.separator.padding.width:  0
-menu.separator.padding.height: 0
+menu.separator.padding.height: 2
 
 !! Menu text
 menu.items.text.color: #eeeeee
