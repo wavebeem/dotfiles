@@ -801,7 +801,7 @@
     </context>
   </mouse>
   <menu>
-    <file>menu-truffle.xml</file>
+    <file>menu.xml</file>
     <hideDelay>200</hideDelay>
     <middle>no</middle>
     <submenuShowDelay>100</submenuShowDelay>

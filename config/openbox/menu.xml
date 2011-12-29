@@ -16,7 +16,7 @@
     <item label="Openbox">
       <action name="Execute">
         <execute>
-          obconf --config-file /home/brian/.config/openbox/truffle.xml
+          obconf
         </execute>
       </action>
     </item>
