@@ -1269,54 +1269,43 @@ GtkSwitch {
 }
 
 GtkSwitch.trough {
-    color: shade(@internal_element_color, 0.60);
+    color: @theme_fg_color;
 
     border-radius: 1;
     border-width: 1;
-    border-style: none;
+    border-style: solid;
     /* border-image defined in the -assets variant */
 
-    background-color: @trough_bg;
+    background-color: @switch_bg_color;
 }
 
 GtkSwitch.trough:active {
-    color: @theme_base_color;
-    background-color: @active_switch_bg_color;
+    background-color: @switch_selected_bg_color;
 }
 
 GtkSwitch.trough:insensitive {
-    background-image: none;
-    background-color: shade(@theme_bg_color, 0.9);
-
-    border-image: none;
-    border-style: solid;
+    background-color: @switch_active_bg_color;
 }
 
 GtkSwitch.slider {
     border-width: 1;
     border-radius: 1;
-    border-style: none;
+    border-style: solid;
+    border-color: @switch_slider_border;
     /* border-image defined in -assets variant */
 
     padding: 2;
 
-    background-image: -gtk-gradient(linear,
-                                     left top, left bottom,
-                                     from(@theme_base_color),
-                                     to(@switch_slider_color));
-
-    -adwaita-switch-grip-color: shade(@switch_slider_color, 0.97);
+    background-color: @switch_slider_color;
+    -adwaita-switch-grip-color: alpha(@switch_slider_color, 0.0);
 }
 
 GtkSwitch.slider:active {
-    border-color: @switch_slider_border;
+    background-color: @switch_slider_color;
 }
 
 GtkSwitch.slider:insensitive {
-    border-image: none;
-
-    background-image: none;
-    background-color: @insensitive_bg_color;
+    background-color: @switch_slider_color;
 }
 
 GtkViewport,
