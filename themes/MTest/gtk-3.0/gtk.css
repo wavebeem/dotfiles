@@ -65,7 +65,7 @@
 @define-color button_color shade(@theme_bg_color, 1.35);
 @define-color button_border @main_border;
 
-@define-color button_active_color shade(@theme_bg_color, 1.35);
+@define-color button_active_color shade(@theme_selected_bg_color, 0.75);
 
 @define-color button_hover_color shade(@button_color, 1.10);
 
@@ -99,7 +99,10 @@
 @define-color internal_element_prelight    @theme_text_color;
 @define-color internal_element_insensitive @theme_text_color;
 
-@define-color scale_fill @insensitive_border_color;
+@define-color scale_color       shade(@button_color, 1.25);
+@define-color scale_hover_color shade(@button_color, 1.35);
+
+@define-color scale_fill @theme_bg_color;
 @define-color scale_border_a @internal_element_color;
 @define-color scale_border_b shade(@internal_element_color, 1.25);
 @define-color scale_progress_fill #2c85e2;

@@ -305,31 +305,40 @@ GtkProgressBar,
  ************/
 GtkScale {
     -GtkScale-slider-length: 16;
-    -GtkRange-slider-width: 20;
-    -GtkRange-trough-border: 0;
+    -GtkRange-slider-width:  16;
+    -GtkRange-trough-border:  0;
 }
 
 GtkScale.slider,
 GtkScale.slider:hover,
 GtkScale.slider:insensitive {
-    border-width: 0;
-    border-radius: 0;
-    border-style: none;
+    border-width: 1;
+    border-radius: 8;
+    border-style: solid;
+    border-color: @button_border;
 
-    color: alpha(@theme_base_color, 0.0);
-    background-color: alpha(@theme_base_color, 0.0);
+    color:            @scale_color;
+    background-color: @scale_color;
 
     /* background-image in -assets variant */
+}
+
+GtkScale.slider:hover {
+    color:            @scale_hover_color;
+    background-color: @scale_hover_color;
+}
+
+GtkScale.slider:insensitive {
+    color:            @theme_bg_color;
+    background-color: @theme_bg_color;
 }
 
 GtkScale.trough {
     border-width: 1;
     border-radius: 2;
-    border-style: none;
+    border-style: solid;
 
     background-color: @scale_fill;
-
-    /* border-image defined in the -assets variants */
 }
 
 GtkScale.trough:insensitive {
@@ -383,7 +392,7 @@ GtkScrolledWindow.frame {
 }
 
 .button {
-    -adwaita-focus-fill-color: alpha(@theme_text_color, 0.20);
+    -adwaita-focus-fill-color: alpha(@theme_text_color, 0.10);
     -adwaita-focus-border-gradient: -gtk-gradient(linear,
                                                    left top, left bottom,
                                                    from(alpha(@keyboard_focus_border, 0.50)),
@@ -393,7 +402,7 @@ GtkScrolledWindow.frame {
     -GtkWidget-focus-line-width: 1;
 
     -GtkButton-child-displacement-x: 0;
-    -GtkButton-child-displacement-y: 2;
+    -GtkButton-child-displacement-y: 1;
     -GtkButton-image-spacing: 4;
     -GtkButton-interior-focus: false;
     -GtkButton-default-border: 0;
@@ -419,7 +428,7 @@ GtkScrolledWindow.frame {
 .toolbar .button:active,
 .button:hover:active,
 .toolbar .button:hover:active {
-    background-color: @button_color;
+    background-color: @button_active_color;
 }
 
 .button:insensitive {
@@ -1099,7 +1108,7 @@ GtkTreeMenu .menuitem * {
 GtkPathBar .button {
     border-image: none;
     border-style: solid;
-    border-width: 1 0;
+    border-width: 1 1 1 0;
     border-radius: 0;
     border-color: @button_border;
 }
