@@ -1,5 +1,5 @@
 [default]
-
+ao   = alsa
 vo   = gl
 fs   = yes
 ass  = yes
@@ -8,5 +8,3 @@ zoom = yes
 framedrop = yes
 
 stop-xscreensaver = yes
-
-#ao = oss
