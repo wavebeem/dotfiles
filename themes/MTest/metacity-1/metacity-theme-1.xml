@@ -1,11 +1,11 @@
 <?xml version="1.0"?>
 <metacity_theme>
 <info>
-  <name>StormCloud</name>
-  <author>hbweb500</author>
-  <copyright>NONE</copyright>
-  <date>2006</date>
-  <description>A simple dark theme to accompany StormCloud GTK.</description>
+  <name>MTest</name>
+  <author>saikobee</author>
+  <copyright>GPLv2</copyright>
+  <date>2011</date>
+  <description>Metacity is really annoying.</description>
 </info>
 
 <constant name="IconTitleSpacing" value="0"/>
