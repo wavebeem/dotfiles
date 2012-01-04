@@ -1,1 +1,10 @@
-title-1-active.xpm
+/* XPM */
+static char * title_1_active_xpm[] = {
+"5 3 4 1",
+" 	c None",
+"=	c #444444",
+"+	c #444444",
+"-	c #000000",
+"-----",
+"+++++",
+"====="};
