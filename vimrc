@@ -16,6 +16,9 @@ set spelllang=en_us
 " Allow backspacing over everything in insert mode
 set backspace=indent,eol,start
 
+" Stop making stupid swap files
+set noswapfile
+
 " 4 spaces, soft tabs
 set tabstop=8
 set softtabstop=4

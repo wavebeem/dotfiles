@@ -43,12 +43,12 @@ window.inactive.label.bg: parentrelative
 window.inactive.label.text.color: #666666
 
 !! Window buttons
-window.active.button.*.pressed.image.color: #b35959
-window.active.button.*.hover.image.color:   #cc6666
+window.active.button.*.pressed.image.color: #aaaaaa
+window.active.button.*.hover.image.color:   #888888
 window.active.button.*.image.color:         #eeeeee
 
-window.inactive.button.*.pressed.image.color: #b35959
-window.inactive.button.*.hover.image.color:   #cc6666
+window.inactive.button.*.pressed.image.color: #aaaaaa
+window.inactive.button.*.hover.image.color:   #888888
 window.inactive.button.*.image.color:         #666666
 
 window.*.button.*.*.bg: parentrelative
