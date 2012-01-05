@@ -93,13 +93,13 @@
     </font>
     <font place="ActiveOnScreenDisplay">
       <name>Luxi Sans</name>
-      <size>16</size>
+      <size>12</size>
       <weight>Bold</weight>
       <slant>Normal</slant>
     </font>
     <font place="InactiveOnScreenDisplay">
       <name>Luxi Sans</name>
-      <size>16</size>
+      <size>12</size>
       <weight>Bold</weight>
       <slant>Normal</slant>
     </font>
@@ -173,52 +173,156 @@
   </dock>
   <keyboard>
     <chainQuitKey>C-g</chainQuitKey>
-
-    <keybind key="W-b"> <action name="DesktopPrevious"> <wrap>yes</wrap> </action> </keybind>
-    <keybind key="W-n"> <action name="DesktopNext">     <wrap>yes</wrap> </action> </keybind>
-
-    <keybind key="W-S-b"> <action name="SendToDesktopPrevious"> <wrap>yes</wrap> </action> </keybind>
-    <keybind key="W-S-n"> <action name="SendToDesktopNext">     <wrap>yes</wrap> </action> </keybind>
-
+    <keybind key="W-b">
+      <action name="DesktopPrevious">
+        <wrap>yes</wrap>
+      </action>
+    </keybind>
+    <keybind key="W-n">
+      <action name="DesktopNext">
+        <wrap>yes</wrap>
+      </action>
+    </keybind>
+    <keybind key="W-S-b">
+      <action name="SendToDesktopPrevious">
+        <wrap>yes</wrap>
+      </action>
+    </keybind>
+    <keybind key="W-S-n">
+      <action name="SendToDesktopNext">
+        <wrap>yes</wrap>
+      </action>
+    </keybind>
     <keybind key="W-grave">
       <action name="GoToDesktop">
         <to>last</to>
       </action>
     </keybind>
-
-    <keybind key="W-1"> <action name="Desktop"> <desktop>1</desktop> </action> </keybind>
-    <keybind key="W-2"> <action name="Desktop"> <desktop>2</desktop> </action> </keybind>
-    <keybind key="W-3"> <action name="Desktop"> <desktop>3</desktop> </action> </keybind>
-    <keybind key="W-4"> <action name="Desktop"> <desktop>4</desktop> </action> </keybind>
-    <keybind key="W-5"> <action name="Desktop"> <desktop>5</desktop> </action> </keybind>
-    <keybind key="W-6"> <action name="Desktop"> <desktop>6</desktop> </action> </keybind>
-    <keybind key="W-7"> <action name="Desktop"> <desktop>7</desktop> </action> </keybind>
-    <keybind key="W-8"> <action name="Desktop"> <desktop>8</desktop> </action> </keybind>
-    <keybind key="W-9"> <action name="Desktop"> <desktop>9</desktop> </action> </keybind>
-
-    <keybind key="W-S-1"> <action name="SendToDesktop"> <desktop>1</desktop> </action> </keybind>
-    <keybind key="W-S-2"> <action name="SendToDesktop"> <desktop>2</desktop> </action> </keybind>
-    <keybind key="W-S-3"> <action name="SendToDesktop"> <desktop>3</desktop> </action> </keybind>
-    <keybind key="W-S-4"> <action name="SendToDesktop"> <desktop>4</desktop> </action> </keybind>
-    <keybind key="W-S-5"> <action name="SendToDesktop"> <desktop>5</desktop> </action> </keybind>
-    <keybind key="W-S-6"> <action name="SendToDesktop"> <desktop>6</desktop> </action> </keybind>
-    <keybind key="W-S-7"> <action name="SendToDesktop"> <desktop>7</desktop> </action> </keybind>
-    <keybind key="W-S-8"> <action name="SendToDesktop"> <desktop>8</desktop> </action> </keybind>
-    <keybind key="W-S-9"> <action name="SendToDesktop"> <desktop>9</desktop> </action> </keybind>
-
-    <keybind key="C-W-d"> <action name="ToggleShowDesktop"/> </keybind>
-    <keybind key="W-S-q"> <action name="Exit"/> </keybind>
-
-    <keybind key="W-u"> <action name="ToggleAlwaysOnTop"/> </keybind>
-    <keybind key="W-d"> <action name="ToggleDecorations"/> </keybind>
-    <keybind key="W-f"> <action name="ToggleFullscreen"/>  </keybind>
-    <keybind key="W-q"> <action name="Close"/>             </keybind>
-    <keybind key="W-a"> <action name="ToggleOmnipresent"/> </keybind>
-    <keybind key="W-m"> <action name="ToggleMaximizeFull"/> </keybind>
-    <keybind key="W-i"> <action name="ToggleMaximizeHorz"/> </keybind>
-    <keybind key="W-v"> <action name="ToggleMaximizeVert"/> </keybind>
-    <keybind key="W-s"> <action name="ShowMenu"> <menu>client-menu</menu> </action> </keybind>
-
+    <keybind key="W-1">
+      <action name="Desktop">
+        <desktop>1</desktop>
+      </action>
+    </keybind>
+    <keybind key="W-2">
+      <action name="Desktop">
+        <desktop>2</desktop>
+      </action>
+    </keybind>
+    <keybind key="W-3">
+      <action name="Desktop">
+        <desktop>3</desktop>
+      </action>
+    </keybind>
+    <keybind key="W-4">
+      <action name="Desktop">
+        <desktop>4</desktop>
+      </action>
+    </keybind>
+    <keybind key="W-5">
+      <action name="Desktop">
+        <desktop>5</desktop>
+      </action>
+    </keybind>
+    <keybind key="W-6">
+      <action name="Desktop">
+        <desktop>6</desktop>
+      </action>
+    </keybind>
+    <keybind key="W-7">
+      <action name="Desktop">
+        <desktop>7</desktop>
+      </action>
+    </keybind>
+    <keybind key="W-8">
+      <action name="Desktop">
+        <desktop>8</desktop>
+      </action>
+    </keybind>
+    <keybind key="W-9">
+      <action name="Desktop">
+        <desktop>9</desktop>
+      </action>
+    </keybind>
+    <keybind key="W-S-1">
+      <action name="SendToDesktop">
+        <desktop>1</desktop>
+      </action>
+    </keybind>
+    <keybind key="W-S-2">
+      <action name="SendToDesktop">
+        <desktop>2</desktop>
+      </action>
+    </keybind>
+    <keybind key="W-S-3">
+      <action name="SendToDesktop">
+        <desktop>3</desktop>
+      </action>
+    </keybind>
+    <keybind key="W-S-4">
+      <action name="SendToDesktop">
+        <desktop>4</desktop>
+      </action>
+    </keybind>
+    <keybind key="W-S-5">
+      <action name="SendToDesktop">
+        <desktop>5</desktop>
+      </action>
+    </keybind>
+    <keybind key="W-S-6">
+      <action name="SendToDesktop">
+        <desktop>6</desktop>
+      </action>
+    </keybind>
+    <keybind key="W-S-7">
+      <action name="SendToDesktop">
+        <desktop>7</desktop>
+      </action>
+    </keybind>
+    <keybind key="W-S-8">
+      <action name="SendToDesktop">
+        <desktop>8</desktop>
+      </action>
+    </keybind>
+    <keybind key="W-S-9">
+      <action name="SendToDesktop">
+        <desktop>9</desktop>
+      </action>
+    </keybind>
+    <keybind key="C-W-d">
+      <action name="ToggleShowDesktop"/>
+    </keybind>
+    <keybind key="W-S-q">
+      <action name="Exit"/>
+    </keybind>
+    <keybind key="W-t">
+      <action name="ToggleAlwaysOnTop"/>
+    </keybind>
+    <keybind key="W-d">
+      <action name="ToggleDecorations"/>
+    </keybind>
+    <keybind key="W-f">
+      <action name="ToggleFullscreen"/>
+    </keybind>
+    <keybind key="W-q">
+      <action name="Close"/>
+    </keybind>
+    <keybind key="W-a">
+      <action name="ToggleOmnipresent"/>
+    </keybind>
+    <keybind key="W-m">
+      <action name="ToggleMaximizeFull"/>
+    </keybind>
+    <keybind key="W-i">
+      <action name="ToggleMaximizeHorz"/>
+    </keybind>
+    <keybind key="W-v">
+      <action name="ToggleMaximizeVert"/>
+    </keybind>
+    <keybind key="W-g">
+      <action name="ShowMenu">
+        <menu>client-menu</menu>
+      </action>
+    </keybind>
     <keybind key="W-Tab">
       <action name="NextWindow">
         <dialog>none</dialog>
@@ -231,36 +335,198 @@
         <raise>yes</raise>
       </action>
     </keybind>
-
-    <keybind key="W-l"> <action name="MoveRelative">  <x>10</x> </action> </keybind>
-    <keybind key="W-h"> <action name="MoveRelative"> <x>-10</x> </action> </keybind>
-    <keybind key="W-k"> <action name="MoveRelative"> <y>-10</y> </action> </keybind>
-    <keybind key="W-j"> <action name="MoveRelative">  <y>10</y> </action> </keybind>
-
-    <keybind key="S-W-h"> <action name="MoveToEdgeWest"/>  </keybind>
-    <keybind key="S-W-j"> <action name="MoveToEdgeSouth"/> </keybind>
-    <keybind key="S-W-k"> <action name="MoveToEdgeNorth"/> </keybind>
-    <keybind key="S-W-l"> <action name="MoveToEdgeEast"/>  </keybind>
-
-    <keybind key="C-W-h"> <action name="ResizeRelative">   <left>10</left>   </action> </keybind>
-    <keybind key="C-W-j"> <action name="ResizeRelative"> <bottom>10</bottom> </action> </keybind>
-    <keybind key="C-W-k"> <action name="ResizeRelative">    <top>10</top>    </action> </keybind>
-    <keybind key="C-W-l"> <action name="ResizeRelative">  <right>10</right>  </action> </keybind>
-
-    <keybind key="A-W-h"> <action name="ResizeRelative">  <right>-10</right>  </action> </keybind>
-    <keybind key="A-W-j"> <action name="ResizeRelative">    <top>-10</top>    </action> </keybind>
-    <keybind key="A-W-k"> <action name="ResizeRelative"> <bottom>-10</bottom> </action> </keybind>
-    <keybind key="A-W-l"> <action name="ResizeRelative">   <left>-10</left>   </action> </keybind>
-
-    <keybind key="A-S-h"> <action name="GrowToEdgeWest"/>  </keybind>
-    <keybind key="A-S-j"> <action name="GrowToEdgeSouth"/> </keybind>
-    <keybind key="A-S-k"> <action name="GrowToEdgeNorth"/> </keybind>
-    <keybind key="A-S-l"> <action name="GrowToEdgeEast"/>  </keybind>
-
-    <keybind key="A-W-y"> <action name="DirectionalFocusWest"/>  </keybind>
-    <keybind key="A-W-u"> <action name="DirectionalFocusSouth"/> </keybind>
-    <keybind key="A-W-i"> <action name="DirectionalFocusNorth"/> </keybind>
-    <keybind key="A-W-o"> <action name="DirectionalFocusEast"/>  </keybind>
+    <keybind key="W-u" chroot="true">
+      <keybind key="l">
+        <action name="MoveRelative">
+          <x>10</x>
+        </action>
+      </keybind>
+      <keybind key="h">
+        <action name="MoveRelative">
+          <x>-10</x>
+        </action>
+      </keybind>
+      <keybind key="k">
+        <action name="MoveRelative">
+          <y>-10</y>
+        </action>
+      </keybind>
+      <keybind key="j">
+        <action name="MoveRelative">
+          <y>10</y>
+        </action>
+      </keybind>
+      <keybind key="S-h">
+        <action name="MoveToEdgeWest"/>
+      </keybind>
+      <keybind key="S-j">
+        <action name="MoveToEdgeSouth"/>
+      </keybind>
+      <keybind key="S-k">
+        <action name="MoveToEdgeNorth"/>
+      </keybind>
+      <keybind key="S-l">
+        <action name="MoveToEdgeEast"/>
+      </keybind>
+      <keybind key="C-l">
+        <action name="MoveRelative">
+          <x>1</x>
+        </action>
+      </keybind>
+      <keybind key="C-h">
+        <action name="MoveRelative">
+          <x>-1</x>
+        </action>
+      </keybind>
+      <keybind key="C-k">
+        <action name="MoveRelative">
+          <y>-1</y>
+        </action>
+      </keybind>
+      <keybind key="C-j">
+        <action name="MoveRelative">
+          <y>1</y>
+        </action>
+      </keybind>
+      <keybind key="A-l">
+        <action name="MoveRelative">
+          <x>30</x>
+        </action>
+      </keybind>
+      <keybind key="A-h">
+        <action name="MoveRelative">
+          <x>-30</x>
+        </action>
+      </keybind>
+      <keybind key="A-k">
+        <action name="MoveRelative">
+          <y>-30</y>
+        </action>
+      </keybind>
+      <keybind key="A-j">
+        <action name="MoveRelative">
+          <y>30</y>
+        </action>
+      </keybind>
+      <keybind key="Escape">
+        <action name="BreakChroot"/>
+      </keybind>
+      <keybind key="Return">
+        <action name="BreakChroot"/>
+      </keybind>
+    </keybind>
+    <keybind key="W-y" chroot="true">
+      <keybind key="h">
+        <action name="ResizeRelative">
+          <left>10</left>
+        </action>
+      </keybind>
+      <keybind key="j">
+        <action name="ResizeRelative">
+          <bottom>10</bottom>
+        </action>
+      </keybind>
+      <keybind key="k">
+        <action name="ResizeRelative">
+          <top>10</top>
+        </action>
+      </keybind>
+      <keybind key="l">
+        <action name="ResizeRelative">
+          <right>10</right>
+        </action>
+      </keybind>
+      <keybind key="S-h">
+        <action name="ResizeRelative">
+          <right>-10</right>
+        </action>
+      </keybind>
+      <keybind key="S-j">
+        <action name="ResizeRelative">
+          <top>-10</top>
+        </action>
+      </keybind>
+      <keybind key="S-k">
+        <action name="ResizeRelative">
+          <bottom>-10</bottom>
+        </action>
+      </keybind>
+      <keybind key="S-l">
+        <action name="ResizeRelative">
+          <left>-10</left>
+        </action>
+      </keybind>
+      <keybind key="A-h">
+        <action name="ResizeRelative">
+          <left>1</left>
+        </action>
+      </keybind>
+      <keybind key="A-j">
+        <action name="ResizeRelative">
+          <bottom>1</bottom>
+        </action>
+      </keybind>
+      <keybind key="A-k">
+        <action name="ResizeRelative">
+          <top>1</top>
+        </action>
+      </keybind>
+      <keybind key="A-l">
+        <action name="ResizeRelative">
+          <right>1</right>
+        </action>
+      </keybind>
+      <keybind key="A-S-h">
+        <action name="ResizeRelative">
+          <right>-1</right>
+        </action>
+      </keybind>
+      <keybind key="A-S-j">
+        <action name="ResizeRelative">
+          <top>-1</top>
+        </action>
+      </keybind>
+      <keybind key="A-S-k">
+        <action name="ResizeRelative">
+          <bottom>-1</bottom>
+        </action>
+      </keybind>
+      <keybind key="A-S-l">
+        <action name="ResizeRelative">
+          <left>-1</left>
+        </action>
+      </keybind>
+      <keybind key="C-h">
+        <action name="GrowToEdgeWest"/>
+      </keybind>
+      <keybind key="C-j">
+        <action name="GrowToEdgeSouth"/>
+      </keybind>
+      <keybind key="C-k">
+        <action name="GrowToEdgeNorth"/>
+      </keybind>
+      <keybind key="C-l">
+        <action name="GrowToEdgeEast"/>
+      </keybind>
+      <keybind key="Escape">
+        <action name="BreakChroot"/>
+      </keybind>
+      <keybind key="Return">
+        <action name="BreakChroot"/>
+      </keybind>
+    </keybind>
+    <keybind key="W-h">
+      <action name="DirectionalFocusWest"/>
+    </keybind>
+    <keybind key="W-j">
+      <action name="DirectionalFocusSouth"/>
+    </keybind>
+    <keybind key="W-k">
+      <action name="DirectionalFocusNorth"/>
+    </keybind>
+    <keybind key="W-l">
+      <action name="DirectionalFocusEast"/>
+    </keybind>
   </keyboard>
   <mouse>
     <dragThreshold>10</dragThreshold>
