@@ -214,6 +214,9 @@
     <keybind key="W-f"> <action name="ToggleFullscreen"/>  </keybind>
     <keybind key="W-q"> <action name="Close"/>             </keybind>
     <keybind key="W-a"> <action name="ToggleOmnipresent"/> </keybind>
+    <keybind key="W-m"> <action name="ToggleMaximizeFull"/> </keybind>
+    <keybind key="W-i"> <action name="ToggleMaximizeHorz"/> </keybind>
+    <keybind key="W-v"> <action name="ToggleMaximizeVert"/> </keybind>
     <keybind key="W-s"> <action name="ShowMenu"> <menu>client-menu</menu> </action> </keybind>
 
     <keybind key="W-Tab">
@@ -234,34 +237,30 @@
     <keybind key="W-k"> <action name="MoveRelative"> <y>-10</y> </action> </keybind>
     <keybind key="W-j"> <action name="MoveRelative">  <y>10</y> </action> </keybind>
 
-    <keybind key="C-W-l"> <action name="MoveToEdgeEast"/>  </keybind>
-    <keybind key="C-W-k"> <action name="MoveToEdgeNorth"/> </keybind>
-    <keybind key="C-W-h"> <action name="MoveToEdgeWest"/>  </keybind>
-    <keybind key="C-W-j"> <action name="MoveToEdgeSouth"/> </keybind>
+    <keybind key="S-W-h"> <action name="MoveToEdgeWest"/>  </keybind>
+    <keybind key="S-W-j"> <action name="MoveToEdgeSouth"/> </keybind>
+    <keybind key="S-W-k"> <action name="MoveToEdgeNorth"/> </keybind>
+    <keybind key="S-W-l"> <action name="MoveToEdgeEast"/>  </keybind>
 
-    <keybind key="C-A-W-o"> <action name="ResizeRelative">  <right>10</right>  </action> </keybind>
-    <keybind key="C-A-W-y"> <action name="ResizeRelative">   <left>10</left>   </action> </keybind>
-    <keybind key="C-A-W-i"> <action name="ResizeRelative">    <top>10</top>    </action> </keybind>
-    <keybind key="C-A-W-u"> <action name="ResizeRelative"> <bottom>10</bottom> </action> </keybind>
+    <keybind key="C-W-h"> <action name="ResizeRelative">   <left>10</left>   </action> </keybind>
+    <keybind key="C-W-j"> <action name="ResizeRelative"> <bottom>10</bottom> </action> </keybind>
+    <keybind key="C-W-k"> <action name="ResizeRelative">    <top>10</top>    </action> </keybind>
+    <keybind key="C-W-l"> <action name="ResizeRelative">  <right>10</right>  </action> </keybind>
 
-    <keybind key="A-W-o"> <action name="ResizeRelative">   <left>-10</left>   </action> </keybind>
-    <keybind key="A-W-y"> <action name="ResizeRelative">  <right>-10</right>  </action> </keybind>
-    <keybind key="A-W-i"> <action name="ResizeRelative"> <bottom>-10</bottom> </action> </keybind>
-    <keybind key="A-W-u"> <action name="ResizeRelative">    <top>-10</top>    </action> </keybind>
+    <keybind key="A-W-h"> <action name="ResizeRelative">  <right>-10</right>  </action> </keybind>
+    <keybind key="A-W-j"> <action name="ResizeRelative">    <top>-10</top>    </action> </keybind>
+    <keybind key="A-W-k"> <action name="ResizeRelative"> <bottom>-10</bottom> </action> </keybind>
+    <keybind key="A-W-l"> <action name="ResizeRelative">   <left>-10</left>   </action> </keybind>
 
-    <keybind key="W-m"> <action name="ToggleMaximizeFull"/> </keybind>
-    <keybind key="W-i"> <action name="ToggleMaximizeHorz"/> </keybind>
-    <keybind key="W-v"> <action name="ToggleMaximizeVert"/> </keybind>
+    <keybind key="A-S-h"> <action name="GrowToEdgeWest"/>  </keybind>
+    <keybind key="A-S-j"> <action name="GrowToEdgeSouth"/> </keybind>
+    <keybind key="A-S-k"> <action name="GrowToEdgeNorth"/> </keybind>
+    <keybind key="A-S-l"> <action name="GrowToEdgeEast"/>  </keybind>
 
-    <keybind key="C-A-W-k"> <action name="GrowToEdgeNorth"/> </keybind>
-    <keybind key="C-A-W-l"> <action name="GrowToEdgeEast"/>  </keybind>
-    <keybind key="C-A-W-j"> <action name="GrowToEdgeSouth"/> </keybind>
-    <keybind key="C-A-W-h"> <action name="GrowToEdgeWest"/>  </keybind>
-
-    <keybind key="A-W-k"> <action name="DirectionalFocusNorth"/> </keybind>
-    <keybind key="A-W-l"> <action name="DirectionalFocusEast"/>  </keybind>
-    <keybind key="A-W-j"> <action name="DirectionalFocusSouth"/> </keybind>
-    <keybind key="A-W-h"> <action name="DirectionalFocusWest"/>  </keybind>
+    <keybind key="A-W-y"> <action name="DirectionalFocusWest"/>  </keybind>
+    <keybind key="A-W-u"> <action name="DirectionalFocusSouth"/> </keybind>
+    <keybind key="A-W-i"> <action name="DirectionalFocusNorth"/> </keybind>
+    <keybind key="A-W-o"> <action name="DirectionalFocusEast"/>  </keybind>
   </keyboard>
   <mouse>
     <dragThreshold>10</dragThreshold>
