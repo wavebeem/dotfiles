@@ -356,54 +356,54 @@
           <y>10</y>
         </action>
       </keybind>
-      <keybind key="S-h">
+      <keybind key="C-h">
         <action name="MoveToEdgeWest"/>
       </keybind>
-      <keybind key="S-j">
+      <keybind key="C-j">
         <action name="MoveToEdgeSouth"/>
       </keybind>
-      <keybind key="S-k">
+      <keybind key="C-k">
         <action name="MoveToEdgeNorth"/>
       </keybind>
-      <keybind key="S-l">
+      <keybind key="C-l">
         <action name="MoveToEdgeEast"/>
       </keybind>
-      <keybind key="C-l">
+      <keybind key="A-l">
         <action name="MoveRelative">
           <x>1</x>
         </action>
       </keybind>
-      <keybind key="C-h">
+      <keybind key="A-h">
         <action name="MoveRelative">
           <x>-1</x>
         </action>
       </keybind>
-      <keybind key="C-k">
+      <keybind key="A-k">
         <action name="MoveRelative">
           <y>-1</y>
         </action>
       </keybind>
-      <keybind key="C-j">
+      <keybind key="A-j">
         <action name="MoveRelative">
           <y>1</y>
         </action>
       </keybind>
-      <keybind key="A-l">
+      <keybind key="S-l">
         <action name="MoveRelative">
           <x>30</x>
         </action>
       </keybind>
-      <keybind key="A-h">
+      <keybind key="S-h">
         <action name="MoveRelative">
           <x>-30</x>
         </action>
       </keybind>
-      <keybind key="A-k">
+      <keybind key="S-k">
         <action name="MoveRelative">
           <y>-30</y>
         </action>
       </keybind>
-      <keybind key="A-j">
+      <keybind key="S-j">
         <action name="MoveRelative">
           <y>30</y>
         </action>
