@@ -95,11 +95,11 @@ Control + Print
 "RE ibus-daemon"
 Control + Mod4 + F9
 
-"setxkbmap ru -variant phonetic"
+"KBD-RU"
 Control + Mod4 + F10
 
-"setxkbmap gr"
+"KBD-GR"
 Control + Mod4 + F11
 
-"setxkbmap us -variant altgr-intl -option nodeadkeys -option compose:ralt -option compose:caps"
+"KBD-US"
 Control + Mod4 + F12

@@ -23,15 +23,8 @@ Autostart() {
     nitrogen --restore &
     xscreensaver -no-splash &
 
-    # Enable compose key
-    SleepDo 1 setxkbmap us \
-        -variant altgr-intl \
-        -option  nodeadkeys  \
-        -option  compose:ralt \
-        -option  compose:caps  &
-
-    # Fix Shift-Backspace not working...
-    SleepDo 1 xmodmap -e "keycode 22 = BackSpace BackSpace BackSpace VoidSymbol VoidSymbol VoidSymbol Terminate_Server"
+    # Load keyboard stuff
+    SleepDo 1 KBD-US
 
     ibus-daemon &
 
