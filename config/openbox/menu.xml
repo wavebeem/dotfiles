@@ -13,13 +13,6 @@
         </execute>
       </action>
     </item>
-    <item label="Openbox">
-      <action name="Execute">
-        <execute>
-          obconf
-        </execute>
-      </action>
-    </item>
     <item label="Wallpaper">
       <action name="Execute">
         <execute>
