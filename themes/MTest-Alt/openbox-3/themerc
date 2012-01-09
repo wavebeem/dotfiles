@@ -1,46 +1,41 @@
 !! vim: set ft=xdefaults:
 !! Menu background
-menu.items.bg: flat solid border
-menu.items.bg.color:        #222222
-menu.items.bg.border.color: #222222
+menu.items.bg: flat solid
+menu.items.bg.color: #282828
 
 !! Menu separators
-menu.separator.color: #181818
-menu.separator.width: 1
+menu.separator.color: #303030
+menu.separator.width: 3
 menu.separator.padding.width:  0
-menu.separator.padding.height: 2
+menu.separator.padding.height: 0
 
 !! Menu text
-menu.items.text.color: #eeeeee
-menu.items.disabled.text.color: #888888
+menu.items.text.color:          #eeeeee
+menu.items.disabled.text.color: #444444
 
 !! Menu headers
-menu.title.bg: flat solid border
-menu.title.bg.color:        #333333
-menu.title.bg.border.color: #333333
+menu.title.bg: flat solid
+menu.title.bg.color: #333333
 menu.title.text.color: #eeeeee
 menu.title.text.justify: right
 
 !! Selected menu item
-menu.items.active.bg: flat solid border
-menu.items.active.bg.color:        #666666
-menu.items.active.bg.border.color: #666666
+menu.items.active.bg: flat solid
+menu.items.active.bg.color: #666666
 menu.items.active.text.color: #ffffff
 
 !! Titlebar
-window.active.title.bg: flat solid border
-window.active.title.bg.color:        #484848
-window.active.title.bg.border.color: #484848
-window.inactive.title.bg: flat solid border
-window.inactive.title.bg.color:        #404040
-window.inactive.title.bg.border.color: #404040
+window.active.title.bg:   flat solid
+window.inactive.title.bg: flat solid
+window.active.title.bg.color:   #282828
+window.inactive.title.bg.color: #282828
 
 !! Titlebar text
 window.label.text.justify: right
 window.active.label.bg: parentrelative
 window.active.label.text.color: #eeeeee
 window.inactive.label.bg: parentrelative
-window.inactive.label.text.color: #666666
+window.inactive.label.text.color: #444444
 
 !! Window buttons
 window.active.button.*.pressed.image.color: #aaaaaa
@@ -53,32 +48,12 @@ window.inactive.button.*.image.color:         #666666
 
 window.*.button.*.*.bg: parentrelative
 
-!window.inactive.button.*.*.bg: flat solid
-!window.inactive.button.*.*.bg.color:        #444444
-!window.inactive.button.*.*.bg.border.color: #000000
-
-!window.active.button.*.*.bg: flat solid
-!window.active.button.*.*.bg.color:        #444444
-!window.active.button.*.*.bg.border.color: #000000
-
-!window.active.button.*.hover.bg: flat solid border
-!window.active.button.*.hover.bg.color:        #888888
-!window.active.button.*.hover.bg.border.color: #333333
-
-!window.active.button.*.pressed.bg: flat solid border
-!window.active.button.*.pressed.bg.color:        #888888
-!window.active.button.*.pressed.bg.border.color: #111111
-
-!window.inactive.button.*.pressed.bg: flat solid border
-!window.inactive.button.*.pressed.bg.color:        #111111
-!window.inactive.button.*.pressed.bg.border.color: #aaaaaa
-
 !! Borders
-window.active.border.color:   #000000
-window.inactive.border.color: #000000
-window.active.title.separator.color:   #383838
-window.inactive.title.separator.color: #343434
-border.width:  1
+window.active.border.color:   #aaaaaa
+window.inactive.border.color: #aaaaaa
+window.active.title.separator.color:   #242424
+window.inactive.title.separator.color: #242424
+border.width:  2
 padding.width: 1
 padding.height: 2
 window.active.handle.bg: flat solid
@@ -89,21 +64,18 @@ window.inactive.handle.bg: flat solid
 window.inactive.handle.bg.color: #666666
 window.inactive.grip.bg: flat solid
 window.inactive.grip.bg.color: #888888
-window.active.client.color:   #444444
-window.inactive.client.color: #444444
-window.client.padding.width:  2
-window.client.padding.height: 2
+window.active.client.color:   #2a2a2a
+window.inactive.client.color: #2a2a2a
+window.client.padding.width:  0
+window.client.padding.height: 0
 window.handle.width: 0
 menu.overlap: 0
 
 !! On-screen displays
 osd.label.text.color: #eeeeee
-osd.hilight.bg: flat solid border
-osd.hilight.bg.color:        #eeeeee
-osd.hilight.bg.border.color: #eeeeee
-osd.unhilight.bg: flat solid border
-osd.unhilight.bg.color:        #555555
-osd.unhilight.bg.border.color: #555555
-osd.bg: flat solid border
-osd.bg.color:        #222222
-osd.bg.border.color: #222222
+osd.hilight.bg: flat solid
+osd.hilight.bg.color: #eeeeee
+osd.unhilight.bg: flat solid
+osd.unhilight.bg.color: #555555
+osd.bg: flat solid
+osd.bg.color: #222222
