@@ -10,7 +10,7 @@
 
 <constant name="IconTitleSpacing" value="0"/>
 <constant name="BorderColor"      value="#ffffff"/>
-<constant name="BorderDarker"     value="#666666"/>
+<constant name="BorderDarker"     value="#888888"/>
 <constant name="TitleSeparator"   value="#202020"/>
 <constant name="TitleColor"       value="#282828"/>
 
