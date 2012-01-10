@@ -22,6 +22,7 @@
 
 * {
     font-weight: bold;
+    text-shadow: rgba(0, 0, 0, 0.50) 1px 1px 0px;
 }
 
 stage {
@@ -284,13 +285,13 @@ StTooltip StLabel {
 /* Panel */
 
 #panel {
-    border: 1px solid rgba(0, 0, 0, 0.80);
+    border: 2px solid rgba(255, 255, 255, 0.25);
     border-top:    0px;
     border-left:   0px;
     border-right:  0px;
     border-radius: 0px;
     color: rgba(255, 255, 255, 1.0);
-    background-color: rgba(40, 40, 40, 0.80);
+    background-color: rgba(0, 0, 0, 1.00);
     height: 24px;
     font-size: 9pt;
     font-weight: bold;
@@ -1219,9 +1220,8 @@ StTooltip StLabel {
 /* Message Tray */
 #message-tray {
     background-gradient-direction: vertical;
-    background-gradient-start: rgba(0, 0, 0, 0.1);
-    background-gradient-end: rgba(0, 0, 0, 0.4);
-    box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.15);
+    background-gradient-start: rgba(0, 0, 0, 0.0);
+    background-gradient-end:   rgba(0, 0, 0, 0.8);
     border-radius: 0px;
     border-bottom: 0px;
     border-left: 0px;
@@ -1231,7 +1231,7 @@ StTooltip StLabel {
 }
 
 #notification {
-    border: 1px solid rgba(255, 255, 255, 0.4);
+    border: 0px solid rgba(255, 255, 255, 0.4);
     background-gradient-direction: vertical;
     background-gradient-start: rgba(0, 0, 0, 0.8);
     background-gradient-end: rgba(0, 0, 0, 0.8);
@@ -1454,10 +1454,10 @@ StTooltip StLabel {
     padding: 4px;
     selected-color: black;
     color: white;
-    border: 1px solid rgba(0, 0, 0, 0.6);
+    border: 0px solid rgba(0, 0, 0, 0.6);
     background-gradient-direction: vertical;
     background-gradient-start: rgba(60, 60, 60, 0.4);
-    background-gradient-end: rgba(90, 90, 90, 0.6);
+    background-gradient-end: rgba(90, 255, 90, 0.6);
     box-shadow: inset 0px -1px 1px 0px rgba(255, 255, 255, 0.2);
     border-radius: 0px;
     caret-color: #a8a8a8;
@@ -1466,7 +1466,7 @@ StTooltip StLabel {
 
 #notification StEntry:focus {
     color: white;
-    border: 1px solid rgba(0, 0, 0, 0.6);
+    border: 0px solid rgba(0, 0, 0, 0.6);
     background-gradient-direction: vertical;
     background-gradient-start: rgba(60, 60, 60, 0.4);
     background-gradient-end: rgba(90, 90, 90, 0.6);
@@ -1508,9 +1508,9 @@ StTooltip StLabel {
 
 .summary-source-button:selected .summary-source {
     background-gradient-direction: vertical;
-    background-gradient-start: rgba(255, 255, 255, 0.2);
-    background-gradient-end: rgba(255, 255, 255, 0.08);
-    box-shadow: inset 0px 0px 1px 1px rgba(255, 255, 255, 0.06);
+    background-gradient-start: rgba(255, 255, 255, 0.0);
+    background-gradient-end: rgba(255, 255, 255, 0.00);
+    box-shadow: inset 0px 0px 1px 1px rgba(255, 255, 255, 0.00);
     border-radius: 0px;
 }
 
@@ -1641,13 +1641,9 @@ StTooltip StLabel {
 }
 
 .ripple-box {
-    width: 52px;
-    height: 52px;
-    background-image: url("corner-ripple-ltr.png");
 }
 
 .ripple-box:rtl {
-    background-image: url("corner-ripple-rtl.png");
 }
 
 .switcher-arrow {
@@ -1666,11 +1662,10 @@ StTooltip StLabel {
 }
 
 .workspace-switcher-container {
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    background: rgba(214, 214, 214, 1.0);
+    border: 1px solid rgba(255, 255, 255, 0.75);
+    background: rgba(40, 40, 40, 0.5);
     border-radius: 0px;
-    box-shadow: 0px 0px 6px 3px rgba(0, 0, 0, 0.4);
-    padding: 20px;
+    padding: 10px;
 }
 
 .workspace-switcher {
@@ -1682,24 +1677,26 @@ StTooltip StLabel {
 }
 
 .ws-switcher-active-up {
-    height: 100px;
-    border: 0px;
-    background: rgba(255, 255, 255, 0.5);
+    height: 50px;
+    border: 1px;
+    background: rgba(0, 0, 0, 0.5);
     background-image: url("ws-switch-arrow-up.svg");
+    border: 1px solid rgba(255, 255, 255, 0.75);
     border-radius: 0px;
 }
 
 .ws-switcher-active-down {
-    height: 100px;
-    border: 0px;
-    background: rgba(255, 255, 255, 0.5);
+    height: 50px;
+    border: 1px;
+    background: rgba(0, 0, 0, 0.5);
     background-image: url("ws-switch-arrow-down.svg");
+    border: 1px solid rgba(255, 255, 255, 0.75);
     border-radius: 0px;
 }
 
 .ws-switcher-box {
     height: 96px;
-    border: 1px solid rgba(85, 85, 85, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.50);
     background: transparent;
     border-radius: 0px;
 }
