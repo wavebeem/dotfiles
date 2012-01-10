@@ -10,6 +10,7 @@
 
 <constant name="IconTitleSpacing" value="0"/>
 <constant name="BorderColor"      value="#ffffff"/>
+<constant name="BorderDarker"     value="#666666"/>
 <constant name="TitleSeparator"   value="#202020"/>
 <constant name="TitleColor"       value="#282828"/>
 
@@ -64,7 +65,7 @@
 <draw_ops name="title-maximized">
   <rectangle color="TitleColor" x="0" y="0" width="width" height="height" filled="true"/>
   <line color="TitleSeparator" x1="0" y1="height - 2" x2="width" y2="height - 2"/>
-  <line color="BorderColor" x1="0" y1="0" x2="width" y2="0"/>
+  <line color="BorderDarker" x1="0" y1="0" x2="width" y2="0"/>
 </draw_ops>
 
 <draw_ops name="title-shaded">
