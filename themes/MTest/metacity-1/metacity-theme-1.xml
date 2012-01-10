@@ -9,8 +9,9 @@
 </info>
 
 <constant name="IconTitleSpacing" value="0"/>
-<constant name="BorderColor"      value="#4f4f4f"/>
-<constant name="TitleSeparator"   value="#333333"/>
+<constant name="BorderColor"      value="#ffffff"/>
+<constant name="TitleSeparator"   value="#202020"/>
+<constant name="TitleColor"       value="#282828"/>
 
 <frame_geometry name="normal">
   <distance name="left_width"           value="1"/>
@@ -20,9 +21,9 @@
   <distance name="right_titlebar_edge"  value="1"/>
   <distance name="button_width"         value="12"/>
   <distance name="button_height"        value="12"/>
-  <distance name="title_vertical_pad"   value="4"/>
-  <border name="title_border"  left="4" right="4" top="4" bottom="5"/>
-  <border name="button_border" left="4" right="4" top="4" bottom="5"/>
+  <distance name="title_vertical_pad"   value="2"/>
+  <border name="title_border"  left="4" right="4" top="4" bottom="4"/>
+  <border name="button_border" left="4" right="4" top="4" bottom="4"/>
 </frame_geometry>
 
 <frame_geometry name="maximized" parent="normal">
@@ -39,12 +40,13 @@
 </frame_geometry>
 
 <draw_ops name="title-text-focused">
-<!--title color="#ffffff" x="width - title_width" y="(height - title_height) / 2"/-->
+<!-- Code to align text to the right
+<title color="#ffffff" x="width - title_width" y="(height - title_height) / 2"/>
+-->
 <title color="#ffffff" x="0" y="(height - title_height) / 2"/>
 </draw_ops>
 
 <draw_ops name="title-text-unfocused">
-<!--title color="#ffffff" x="width - title_width" y="(height - title_height) / 2"/-->
 <title color="#555555" x="0" y="(height - title_height) / 2"/>
 </draw_ops>
 
@@ -52,38 +54,39 @@
 </draw_ops>
 
 <draw_ops name="title">
-  <rectangle color="gtk:bg[NORMAL]" x="0" y="0" width="width" height="height"/>
-  <line color="TitleSeparator" x1="0" y1="height - 2" x2="width" y2="height - 2"/>
+  <rectangle color="TitleColor" x="0" y="0" width="width" height="height" filled="true"/>
+  <line color="TitleSeparator" x1="0" y1="height - 1" x2="width" y2="height - 1"/>
   <line color="BorderColor" x1="0" y1="0" x2="width" y2="0"/>
   <line color="BorderColor" x1="0" y1="0" x2="0" y2="height"/>
   <line color="BorderColor" x1="width - 1" y1="0" x2="width - 1" y2="height"/>
 </draw_ops>
 
 <draw_ops name="title-maximized">
-  <rectangle color="gtk:bg[NORMAL]" x="0" y="0" width="width" height="height"/>
+  <rectangle color="TitleColor" x="0" y="0" width="width" height="height" filled="true"/>
   <line color="TitleSeparator" x1="0" y1="height - 2" x2="width" y2="height - 2"/>
   <line color="BorderColor" x1="0" y1="0" x2="width" y2="0"/>
+</draw_ops>
+
+<draw_ops name="title-shaded">
+  <rectangle color="TitleColor" x="0" y="0" width="width" height="height" filled="true"/>
+  <line color="BorderColor" x1="0" y1="0" x2="width" y2="0"/>
+  <line color="BorderColor" x1="0" y1="height - 1" x2="width" y2="height - 1"/>
   <line color="BorderColor" x1="0" y1="0" x2="0" y2="height"/>
   <line color="BorderColor" x1="width - 1" y1="0" x2="width - 1" y2="height"/>
 </draw_ops>
 
-<draw_ops name="title-shaded">
-  <rectangle color="gtk:bg[NORMAL]" x="0" y="0" width="width" height="height"/>
-  <line color="BorderColor" x1="0" y1="0" x2="width" y2="0"/>
-</draw_ops>
-
 <draw_ops name="frame-left-focused">
-  <rectangle color="gtk:bg[NORMAL]" x="0" y="0" width="width" height="height"/>
+  <rectangle color="TitleColor" x="0" y="0" width="width" height="height" filled="true"/>
   <line color="BorderColor" x1="0" y1="0" x2="0" y2="height"/>
 </draw_ops>
 
 <draw_ops name="frame-right-focused">
-  <rectangle color="gtk:bg[NORMAL]" x="0" y="0" width="width" height="height"/>
+  <rectangle color="TitleColor" x="0" y="0" width="width" height="height"/>
   <line color="BorderColor" x1="width - 1" y1="0" x2="width - 1" y2="height"/>
 </draw_ops>
 
 <draw_ops name="frame-bottom-focused">
-  <rectangle color="gtk:bg[NORMAL]" x="0" y="0" width="width" height="height"/>
+  <rectangle color="TitleColor" x="0" y="0" width="width" height="height" filled="true"/>
   <line color="BorderColor" x1="0" y1="0" x2="0" y2="height"/>
   <line color="BorderColor" x1="width - 1" y1="0" x2="width - 1" y2="height"/>
   <line color="BorderColor" x1="0" y1="height - 1" x2="width" y2="height - 1"/>
