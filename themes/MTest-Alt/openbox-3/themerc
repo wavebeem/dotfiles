@@ -4,8 +4,8 @@ menu.items.bg: flat solid
 menu.items.bg.color: #282828
 
 !! Menu separators
-menu.separator.color: #303030
-menu.separator.width: 3
+menu.separator.color: #202020
+menu.separator.width: 1
 menu.separator.padding.width:  0
 menu.separator.padding.height: 0
 
@@ -44,16 +44,16 @@ window.active.button.*.image.color:         #eeeeee
 
 window.inactive.button.*.pressed.image.color: #aaaaaa
 window.inactive.button.*.hover.image.color:   #888888
-window.inactive.button.*.image.color:         #666666
+window.inactive.button.*.image.color:         #444444
 
 window.*.button.*.*.bg: parentrelative
 
 !! Borders
-window.active.border.color:   #aaaaaa
-window.inactive.border.color: #aaaaaa
-window.active.title.separator.color:   #242424
-window.inactive.title.separator.color: #242424
-border.width:  2
+window.active.border.color:   #ffffff
+window.inactive.border.color: #ffffff
+window.active.title.separator.color:   #202020
+window.inactive.title.separator.color: #202020
+border.width:  1
 padding.width: 1
 padding.height: 2
 window.active.handle.bg: flat solid

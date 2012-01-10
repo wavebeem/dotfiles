@@ -1,0 +1,37 @@
+# vim: set syn=gtkrc:
+
+style "menubar" {
+    xthickness = 0
+    ythickness = 1
+
+    bg[NORMAL]     = "#282828"
+
+    fg[PRELIGHT]   = @selected_fg_color
+
+    text[PRELIGHT] = @selected_fg_color
+
+    fg[INSENSITIVE] = shade(2.50, "#282828")
+
+    engine "murrine" {
+        roundness = 0
+        #contrast = 0.80
+    }
+}
+
+style "menubar-item" {
+    xthickness = 5
+    ythickness = 3
+
+    # To make the menubar items blend in with the menus themselves
+    #bg[PRELIGHT] = mix(0.50, shade(0.80, @selected_bg_color), shade(1.30, @bg_color))
+    #bg[PRELIGHT] = shade(1.30, @bg_color)
+    #bg[PRELIGHT] = shade(1.50, @bg_color)
+    bg[PRELIGHT] = shade(1.50, "#282828")
+
+    engine "murrine" {
+        roundness = 4
+        contrast = 1.70
+        border_shades = {1.00, 1.00}
+        #contrast = 2.00
+    }
+}
