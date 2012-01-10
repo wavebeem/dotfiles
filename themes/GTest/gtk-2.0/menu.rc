@@ -4,8 +4,8 @@ style "menu" {
     xthickness = 4
     ythickness = 4
 
-    bg[NORMAL]     = "#444444"
-    base[NORMAL]   = "#444444"
+    bg[NORMAL]     = "#282828"
+    base[NORMAL]   = "#282828"
     fg[NORMAL]     = "#eeeeee"
     fg[PRELIGHT]   = "#eeeeee"
     fg[SELECTED]   = "#eeeeee"
@@ -32,7 +32,7 @@ style "menu-item" = "menu" {
     bg[INSENSITIVE] = mix(0.50, shade(0.80, @selected_bg_color), shade(1.50, @bg_color))
 
     #bg[SELECTED] = mix(0.50, shade(0.80, @selected_bg_color), "#FFF")
-    bg[SELECTED] = shade(1.25, "#444444")
+    bg[SELECTED] = shade(1.25, "#282828")
     fg[PRELIGHT] = "#eeeeee"
 
     engine "murrine" {
