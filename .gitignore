@@ -1,2 +1,4 @@
 config/roxterm.sourceforge.net/Sessions
 Cached Theme.pak
+*.crx
+*.pem
