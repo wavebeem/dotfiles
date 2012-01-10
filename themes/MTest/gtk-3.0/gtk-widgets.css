@@ -722,8 +722,10 @@ GtkTreeMenu .menuitem * {
 
 /* this controls the general appearance of the menubar */
 .menubar {
-    border-color: @theme_bg_color;
+    background-color: @menubar_bg;
+    border-color: @menubar_border;
     border-width: 0;
+    border-bottom-width: 1;
     border-style: solid;
     padding: 0 1;
 
@@ -734,22 +736,21 @@ GtkTreeMenu .menuitem * {
 .menubar .menuitem {
     border-width: 0;
     border-style: solid;
-    padding: 6 8;
+    padding: 4 8;
 }
 
 .menubar .menuitem:prelight {
     background-image: none;
     border-style: solid;
-    border-width: 4;
-    border-bottom-width: 4;
-    background-color: @menu_bg_color;
-    border-color: @menu_border_color;
+    border-width: 3;
+    background-color: @menubar_bg;
+    border-color: @menubar_bg;
 
     border-radius: 8;
 }
 
 .menubar .menuitem:hover {
-    background-color: alpha(@button_color, 1.00);
+    background-color: alpha(@theme_fg_color, 0.15);
     border-color: transparent;
 }
 
