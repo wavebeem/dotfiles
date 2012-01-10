@@ -32,6 +32,7 @@ Autostart() {
     xbindkeys &
 
     # Scrobble songs on desktop
+    killall mpdscribble
     mpdscribble &
 
     # Load font and cursor settings
