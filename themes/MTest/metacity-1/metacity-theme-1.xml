@@ -9,15 +9,15 @@
 </info>
 
 <constant name="IconTitleSpacing" value="0"/>
-<constant name="BorderColor"      value="#ffffff"/>
-<constant name="BorderDarker"     value="#888888"/>
-<constant name="TitleSeparator"   value="#202020"/>
-<constant name="TitleColor"       value="#282828"/>
+<constant name="BorderColor"      value="#555555"/>
+<constant name="BorderDarker"     value="#222222"/>
+<constant name="TitleSeparator"   value="#111111"/>
+<constant name="TitleColor"       value="#111111"/>
 
 <frame_geometry name="normal">
-  <distance name="left_width"           value="1"/>
-  <distance name="right_width"          value="1"/>
-  <distance name="bottom_height"        value="1"/>
+  <distance name="left_width"           value="2"/>
+  <distance name="right_width"          value="2"/>
+  <distance name="bottom_height"        value="2"/>
   <distance name="left_titlebar_edge"   value="1"/>
   <distance name="right_titlebar_edge"  value="1"/>
   <distance name="button_width"         value="12"/>
@@ -57,9 +57,9 @@
 <draw_ops name="title">
   <rectangle color="TitleColor" x="0" y="0" width="width" height="height" filled="true"/>
   <line color="TitleSeparator" x1="0" y1="height - 1" x2="width" y2="height - 1"/>
-  <line color="BorderColor" x1="0" y1="0" x2="width" y2="0"/>
-  <line color="BorderColor" x1="0" y1="0" x2="0" y2="height"/>
-  <line color="BorderColor" x1="width - 1" y1="0" x2="width - 1" y2="height"/>
+  <rectangle color="BorderColor" x="0" y="0" width="2" height="height" filled="true"/>
+  <rectangle color="BorderColor" x="width - 2" y="0" width="2" height="height" filled="true"/>
+  <rectangle color="BorderColor" x="0" y="0" width="width" height="2" filled="true"/>
 </draw_ops>
 
 <draw_ops name="title-maximized">
@@ -69,28 +69,23 @@
 </draw_ops>
 
 <draw_ops name="title-shaded">
-  <rectangle color="TitleColor" x="0" y="0" width="width" height="height" filled="true"/>
-  <line color="BorderColor" x1="0" y1="0" x2="width" y2="0"/>
-  <line color="BorderColor" x1="0" y1="height - 1" x2="width" y2="height - 1"/>
-  <line color="BorderColor" x1="0" y1="0" x2="0" y2="height"/>
-  <line color="BorderColor" x1="width - 1" y1="0" x2="width - 1" y2="height"/>
+  <rectangle color="TitleColor"  x="0" y="0" width="width" height="height" filled="true"/>
+  <rectangle color="BorderColor" x="0" y="0" width="2" height="height" filled="true"/>
+  <rectangle color="BorderColor" x="width - 2" y="0" width="2" height="height" filled="true"/>
+  <rectangle color="BorderColor" x="0" y="0" width="width" height="2" filled="true"/>
+  <rectangle color="BorderColor" x="0" y="height - 2" width="width" height="2" filled="true"/>
 </draw_ops>
 
 <draw_ops name="frame-left-focused">
-  <rectangle color="TitleColor" x="0" y="0" width="width" height="height" filled="true"/>
-  <line color="BorderColor" x1="0" y1="0" x2="0" y2="height"/>
+  <rectangle color="BorderColor" x="0" y="0" width="width" height="height" filled="true"/>
 </draw_ops>
 
 <draw_ops name="frame-right-focused">
-  <rectangle color="TitleColor" x="0" y="0" width="width" height="height"/>
-  <line color="BorderColor" x1="width - 1" y1="0" x2="width - 1" y2="height"/>
+  <rectangle color="BorderColor" x="0" y="0" width="width" height="height" filled="true"/>
 </draw_ops>
 
 <draw_ops name="frame-bottom-focused">
-  <rectangle color="TitleColor" x="0" y="0" width="width" height="height" filled="true"/>
-  <line color="BorderColor" x1="0" y1="0" x2="0" y2="height"/>
-  <line color="BorderColor" x1="width - 1" y1="0" x2="width - 1" y2="height"/>
-  <line color="BorderColor" x1="0" y1="height - 1" x2="width" y2="height - 1"/>
+  <rectangle color="BorderColor" x="0" y="0" width="width" height="height" filled="true"/>
 </draw_ops>
 
 <draw_ops name="button">

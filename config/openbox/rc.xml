@@ -116,12 +116,12 @@
     <number>6</number>
     <firstdesk>1</firstdesk>
     <names>
-      <name>&#x25CB;</name>
-      <name>&#x25CE;</name>
-      <name>&#x25CE;&#x25CB;</name>
-      <name>&#x25CE;&#x25CE;</name>
-      <name>&#x25CE;&#x25CE;&#x25CB;</name>
-      <name>&#x25CE;&#x25CE;&#x25CE;</name>
+      <name>Desktop 1</name>
+      <name>Desktop 2</name>
+      <name>Desktop 3</name>
+      <name>Desktop 4</name>
+      <name>Desktop 5</name>
+      <name>Desktop 6</name>
     </names>
     <popupTime>750</popupTime>
     <!-- The number of milliseconds to show the popup for when switching
@@ -650,6 +650,10 @@
     <!-- show the manage desktops section in the client-list-(combined-)menu -->
   </menu>
   <applications>
+    <application name="*" class="*" type="*" role="*">
+      <decor>no</decor>
+    </application>
+    <!--
     <application name="*" class="Chromium" type="*" role="*">
       <decor>yes</decor>
     </application>
@@ -668,6 +672,7 @@
     <application name="*" class="XTerm" type="*" role="*">
       <decor>yes</decor>
     </application>
+    -->
     <!--
   <application name="the window's _OB_APP_NAME property (see obxprop)"
               class="the window's _OB_APP_CLASS property (see obxprop)"
