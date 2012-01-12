@@ -116,12 +116,12 @@
     <number>6</number>
     <firstdesk>1</firstdesk>
     <names>
-      <name>Desktop 1</name>
-      <name>Desktop 2</name>
-      <name>Desktop 3</name>
-      <name>Desktop 4</name>
-      <name>Desktop 5</name>
-      <name>Desktop 6</name>
+      <name>–</name>
+      <name>+</name>
+      <name>+–</name>
+      <name>++</name>
+      <name>++–</name>
+      <name>+++</name>
     </names>
     <popupTime>750</popupTime>
     <!-- The number of milliseconds to show the popup for when switching
@@ -224,13 +224,13 @@
     </keybind>
     <keybind key="W-Tab">
       <action name="NextWindow">
-        <dialog>none</dialog>
+        <dialog>list</dialog>
         <raise>yes</raise>
       </action>
     </keybind>
     <keybind key="W-S-Tab">
       <action name="PreviousWindow">
-        <dialog>none</dialog>
+        <dialog>list</dialog>
         <raise>yes</raise>
       </action>
     </keybind>
