@@ -22,9 +22,9 @@
 
 @define-color row_hover shade(@theme_base_color, 1.2);
 
-@define-color menubar_bg @theme_bg_color;
+@define-color menubar_bg #111111;
 @define-color menubar_border shade(@menubar_bg, 0.75);
-@define-color menubar_hover  shade(@menubar_bg, 1.30);
+@define-color menubar_hover  shade(@menubar_bg, 2.00);
 
 @define-color menu_bg_color mix(shade(@theme_bg_color, 1.00), @theme_selected_bg_color, 0.75);
 @define-color menu_fg_color @theme_fg_color;
