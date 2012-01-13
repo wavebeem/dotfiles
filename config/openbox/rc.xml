@@ -173,6 +173,7 @@
   </dock>
   <keyboard>
     <chainQuitKey>C-g</chainQuitKey>
+
     <keybind key="W-b"> <action name="DesktopPrevious"> <wrap>yes</wrap> </action> </keybind>
     <keybind key="W-n"> <action name="DesktopNext"> <wrap>yes</wrap> </action> </keybind>
 
@@ -217,11 +218,12 @@
     <keybind key="W-i"> <action name="ToggleMaximizeHorz"/> </keybind>
     <keybind key="W-v"> <action name="ToggleMaximizeVert"/> </keybind>
 
-    <keybind key="W-g">
+    <keybind key="W-s">
       <action name="ShowMenu">
         <menu>client-menu</menu>
       </action>
     </keybind>
+
     <keybind key="W-Tab">
       <action name="NextWindow">
         <dialog>list</dialog>
@@ -235,60 +237,45 @@
       </action>
     </keybind>
 
-    <keybind key="W-u" chroot="true">
-      <keybind key="l"> <action name="MoveRelative">  <x>10</x> </action> </keybind>
-      <keybind key="h"> <action name="MoveRelative"> <x>-10</x> </action> </keybind>
-      <keybind key="k"> <action name="MoveRelative"> <y>-10</y> </action> </keybind>
-      <keybind key="j"> <action name="MoveRelative">  <y>10</y> </action> </keybind>
+    <keybind key="W-S-l"> <action name="MoveRelative">  <x>10</x> </action> </keybind>
+    <keybind key="W-S-h"> <action name="MoveRelative"> <x>-10</x> </action> </keybind>
+    <keybind key="W-S-k"> <action name="MoveRelative"> <y>-10</y> </action> </keybind>
+    <keybind key="W-S-j"> <action name="MoveRelative">  <y>10</y> </action> </keybind>
 
-      <keybind key="C-h"> <action name="MoveToEdgeWest"/>  </keybind>
-      <keybind key="C-j"> <action name="MoveToEdgeSouth"/> </keybind>
-      <keybind key="C-k"> <action name="MoveToEdgeNorth"/> </keybind>
-      <keybind key="C-l"> <action name="MoveToEdgeEast"/>  </keybind>
+    <keybind key="W-C-h"> <action name="MoveToEdgeWest"/>  </keybind>
+    <keybind key="W-C-j"> <action name="MoveToEdgeSouth"/> </keybind>
+    <keybind key="W-C-k"> <action name="MoveToEdgeNorth"/> </keybind>
+    <keybind key="W-C-l"> <action name="MoveToEdgeEast"/>  </keybind>
 
-      <keybind key="A-l"> <action name="MoveRelative">  <x>1</x> </action> </keybind>
-      <keybind key="A-h"> <action name="MoveRelative"> <x>-1</x> </action> </keybind>
-      <keybind key="A-k"> <action name="MoveRelative"> <y>-1</y> </action> </keybind>
-      <keybind key="A-j"> <action name="MoveRelative">  <y>1</y> </action> </keybind>
+    <keybind key="W-y"> <action name="ResizeRelative">   <left>10</left>   </action> </keybind>
+    <keybind key="W-u"> <action name="ResizeRelative"> <bottom>10</bottom> </action> </keybind>
+    <keybind key="W-i"> <action name="ResizeRelative">    <top>10</top>    </action> </keybind>
+    <keybind key="W-o"> <action name="ResizeRelative">  <right>10</right>  </action> </keybind>
 
-      <keybind key="S-l"> <action name="MoveRelative">  <x>30</x> </action> </keybind>
-      <keybind key="S-h"> <action name="MoveRelative"> <x>-30</x> </action> </keybind>
-      <keybind key="S-k"> <action name="MoveRelative"> <y>-30</y> </action> </keybind>
-      <keybind key="S-j"> <action name="MoveRelative">  <y>30</y> </action> </keybind>
+    <keybind key="W-S-y"> <action name="ResizeRelative">  <right>-10</right>  </action> </keybind>
+    <keybind key="W-S-u"> <action name="ResizeRelative">    <top>-10</top>    </action> </keybind>
+    <keybind key="W-S-i"> <action name="ResizeRelative"> <bottom>-10</bottom> </action> </keybind>
+    <keybind key="W-S-o"> <action name="ResizeRelative">   <left>-10</left>   </action> </keybind>
 
-      <keybind key="Escape"> <action name="BreakChroot"/> </keybind>
-      <keybind key="Return"> <action name="BreakChroot"/> </keybind>
-    </keybind>
+    <keybind key="W-A-y"> <action name="ResizeRelative">   <left>1</left>   </action> </keybind>
+    <keybind key="W-A-u"> <action name="ResizeRelative"> <bottom>1</bottom> </action> </keybind>
+    <keybind key="W-A-i"> <action name="ResizeRelative">    <top>1</top>    </action> </keybind>
+    <keybind key="W-A-o"> <action name="ResizeRelative">  <right>1</right>  </action> </keybind>
 
-    <keybind key="W-y" chroot="true">
-      <keybind key="h"> <action name="ResizeRelative">   <left>10</left>   </action> </keybind>
-      <keybind key="j"> <action name="ResizeRelative"> <bottom>10</bottom> </action> </keybind>
-      <keybind key="k"> <action name="ResizeRelative">    <top>10</top>    </action> </keybind>
-      <keybind key="l"> <action name="ResizeRelative">  <right>10</right>  </action> </keybind>
+    <keybind key="W-A-S-y"> <action name="ResizeRelative">  <right>-1</right>  </action> </keybind>
+    <keybind key="W-A-S-u"> <action name="ResizeRelative">    <top>-1</top>    </action> </keybind>
+    <keybind key="W-A-S-i"> <action name="ResizeRelative"> <bottom>-1</bottom> </action> </keybind>
+    <keybind key="W-A-S-o"> <action name="ResizeRelative">   <left>-1</left>   </action> </keybind>
 
-      <keybind key="S-h"> <action name="ResizeRelative">  <right>-10</right>  </action> </keybind>
-      <keybind key="S-j"> <action name="ResizeRelative">    <top>-10</top>    </action> </keybind>
-      <keybind key="S-k"> <action name="ResizeRelative"> <bottom>-10</bottom> </action> </keybind>
-      <keybind key="S-l"> <action name="ResizeRelative">   <left>-10</left>   </action> </keybind>
+    <keybind key="W-A-h"> <action name="GrowToEdgeWest"/>  </keybind>
+    <keybind key="W-A-j"> <action name="GrowToEdgeSouth"/> </keybind>
+    <keybind key="W-A-k"> <action name="GrowToEdgeNorth"/> </keybind>
+    <keybind key="W-A-l"> <action name="GrowToEdgeEast"/>  </keybind>
 
-      <keybind key="A-h"> <action name="ResizeRelative">   <left>1</left>   </action> </keybind>
-      <keybind key="A-j"> <action name="ResizeRelative"> <bottom>1</bottom> </action> </keybind>
-      <keybind key="A-k"> <action name="ResizeRelative">    <top>1</top>    </action> </keybind>
-      <keybind key="A-l"> <action name="ResizeRelative">  <right>1</right>  </action> </keybind>
-
-      <keybind key="A-S-h"> <action name="ResizeRelative">  <right>-1</right>  </action> </keybind>
-      <keybind key="A-S-j"> <action name="ResizeRelative">    <top>-1</top>    </action> </keybind>
-      <keybind key="A-S-k"> <action name="ResizeRelative"> <bottom>-1</bottom> </action> </keybind>
-      <keybind key="A-S-l"> <action name="ResizeRelative">   <left>-1</left>   </action> </keybind>
-
-      <keybind key="C-h"> <action name="GrowToEdgeWest"/>  </keybind>
-      <keybind key="C-j"> <action name="GrowToEdgeSouth"/> </keybind>
-      <keybind key="C-k"> <action name="GrowToEdgeNorth"/> </keybind>
-      <keybind key="C-l"> <action name="GrowToEdgeEast"/>  </keybind>
-
-      <keybind key="Escape"> <action name="BreakChroot"/> </keybind>
-      <keybind key="Return"> <action name="BreakChroot"/> </keybind>
-    </keybind>
+    <keybind key="W-C-A-h"> <action name="GrowToEdgeWest"/>  </keybind>
+    <keybind key="W-C-A-j"> <action name="GrowToEdgeSouth"/> </keybind>
+    <keybind key="W-C-A-k"> <action name="GrowToEdgeNorth"/> </keybind>
+    <keybind key="W-C-A-l"> <action name="GrowToEdgeEast"/>  </keybind>
 
     <keybind key="W-h"> <action name="DirectionalFocusWest"/>  </keybind>
     <keybind key="W-j"> <action name="DirectionalFocusSouth"/> </keybind>
