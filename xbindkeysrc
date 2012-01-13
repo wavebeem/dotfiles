@@ -20,17 +20,11 @@ Mod4 + w
 "roxterm -e alsamixer"
 Mod4 + e
 
-"TIME"
-Mod4 + t
-
-"CAL"
-Mod4 + c
-
 "xkill"
 Mod4 + Escape
 
 "power-menu.sh"
-Mod4 + o
+Control + Alt + q
 
 "xterm"
 Mod4 + F2
@@ -73,9 +67,6 @@ Mod4 + F12
 
 "xscreensaver-command -lock"
 Control + Alt + l
-
-"MAMENU"
-Mod4 + g
 
 "COMPOSITE off"
 Mod4 + Alt + F11
