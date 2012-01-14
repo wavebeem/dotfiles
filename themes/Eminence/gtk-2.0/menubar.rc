@@ -28,12 +28,12 @@ style "menubar-item" {
     #bg[PRELIGHT] = mix(0.50, shade(0.80, @selected_bg_color), shade(1.30, @bg_color))
     #bg[PRELIGHT] = shade(1.30, @bg_color)
     #bg[PRELIGHT] = shade(1.50, @bg_color)
-    bg[PRELIGHT] = shade(2.00, "#111111")
+    bg[PRELIGHT] = shade(3.00, "#111111")
 
     engine "murrine" {
         roundness = 8
         contrast = 1.70
-        border_shades = {1.00, 1.00}
+        border_shades = {0.00, 0.00}
         #contrast = 2.00
     }
 }
