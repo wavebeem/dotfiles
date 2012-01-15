@@ -2,13 +2,8 @@ set nocompatible
 
 syntax on
 
-if hostname() == "truffle"
-    set bg=dark
-    color robokai
-elseif hostname() == "profiterole"
-    set bg=light
-    color default
-endif
+set bg=dark
+color robokai
 
 " US English spelling
 set spelllang=en_us
