@@ -1,5 +1,5 @@
 # vim: set syn=conf:
-alignment top_right
+alignment bottom_right
 background no
 border_width 4
 cpu_avg_samples 1
@@ -17,7 +17,7 @@ use_xft yes
 #xftfont DejaVu Sans Mono:size=10:bold
 #xftfont DejaVu Sans Mono:size=8:bold
 #xftfont Luxi Sans:size=10:bold
-xftfont Luxi Sans:size=8:bold
+xftfont Luxi Sans:size=9:bold
 #xftfont Sans:size=8:bold
 #xftfont aqui
 xftalpha 1.0
