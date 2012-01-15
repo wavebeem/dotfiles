@@ -814,18 +814,10 @@ GtkTreeMenu .menuitem * {
 }
 
 .menuitem.check {
-    border-width:  4;
     border-radius: 3;
 }
 
 .menuitem.radio {
-    border-width:  4;
-    border-radius: 8;
-}
-
-.menuitem.check:inconsistent,
-.menuitem.radio:inconsistent {
-    border-width:  4;
     border-radius: 8;
 }
 
@@ -833,6 +825,7 @@ GtkTreeMenu .menuitem * {
 .menuitem.check:active,
 .menuitem.radio:inconsistent,
 .menuitem.check:inconsistent {
+    border-width: 3;
     background-image: none;
     background-color: @menu_radiocheck;
 }
@@ -841,6 +834,7 @@ GtkTreeMenu .menuitem * {
 .menuitem.check:active:prelight,
 .menuitem.radio:inconsistent:prelight,
 .menuitem.check:inconsistent:prelight {
+    border-width: 3;
     background-image: none;
     background-color: @menu_radiocheck_hover;
 }
@@ -851,6 +845,13 @@ GtkTreeMenu .menuitem * {
 .menuitem.check:inconsistent:insensitive {
     background-image: none;
     background-color: @menu_radiocheck_insensitive;
+}
+
+.menuitem.check:inconsistent,
+.menuitem.radio:inconsistent,
+.menuitem.check:inconsistent:prelight,
+.menuitem.radio:inconsistent:prelight {
+    border-width: 4;
 }
 
 /***************
