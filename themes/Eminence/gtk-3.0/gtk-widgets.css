@@ -1394,7 +1394,7 @@ row:selected {
     border-style: solid;
     border-width: 1;
     border-radius: 2;
-    border-color: shade(@internal_element_color, 1.40);
+    border-color: shade(@internal_element_color, 0.40);
 
     color: @internal_element_color;
     background-color: @theme_base_color;
@@ -1405,7 +1405,7 @@ row:selected {
     border-width: 1;
 
     color: @internal_element_color;
-    border-color: shade(@internal_element_color, 1.40);
+    border-color: shade(@internal_element_color, 0.40);
 
     background-color: @theme_base_color;
 }
@@ -1415,7 +1415,7 @@ row:selected {
     border-width: 1;
 
     color: @internal_element_color;
-    border-color: shade(@internal_element_color, 1.40);
+    border-color: shade(@internal_element_color, 0.40);
 
     background-color: shade(@theme_bg_color, 1.02);
 }
