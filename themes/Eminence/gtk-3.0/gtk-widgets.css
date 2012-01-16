@@ -813,44 +813,45 @@ GtkTreeMenu .menuitem * {
     background-color: alpha(@theme_base_color, 0.0);
 }
 
-.menuitem.check:active {
-    background-image: url("assets/checkbox-menuitem-checked.svg");
+.menuitem.check {
+    border-radius: 3;
 }
 
-.menuitem.check:active:prelight {
-    background-image: url("assets/checkbox-menuitem-checked-selected.svg");
+.menuitem.radio {
+    border-radius: 8;
 }
 
-.menuitem.check:active:insensitive {
-    background-image: url("assets/checkbox-menuitem-checked-insensitive.svg");
-}
-
+.menuitem.radio:active,
+.menuitem.check:active,
+.menuitem.radio:inconsistent,
 .menuitem.check:inconsistent {
-    background-image: url("assets/checkbox-menuitem-mixed.svg");
+    border-width: 3;
+    background-image: none;
+    background-color: @menu_radiocheck;
 }
 
+.menuitem.radio:active:prelight,
+.menuitem.check:active:prelight,
+.menuitem.radio:inconsistent:prelight,
+.menuitem.check:inconsistent:prelight {
+    border-width: 3;
+    background-image: none;
+    background-color: @menu_radiocheck_hover;
+}
+
+.menuitem.radio:active:insensitive,
+.menuitem.check:active:insensitive,
+.menuitem.radio:inconsistent:insensitive,
 .menuitem.check:inconsistent:insensitive {
-    background-image: url("assets/checkbox-menuitem-mixed-insensitive.svg");
+    background-image: none;
+    background-color: @menu_radiocheck_insensitive;
 }
 
-.menuitem.radio:active {
-    background-image: url("assets/radio-menuitem-checked.svg");
-}
-
-.menuitem.radio:active:prelight {
-    background-image: url("assets/radio-menuitem-checked-selected.svg");
-}
-
-.menuitem.radio:active:insensitive {
-    background-image: url("assets/radio-menuitem-checked-insensitive.svg");
-}
-
-.menuitem.radio:inconsistent {
-    background-image: url("assets/radio-menuitem-mixed.svg");
-}
-
-.menuitem.radio:inconsistent:insensitive {
-    background-image: url("assets/radio-menuitem-mixed-insensitive.svg");
+.menuitem.check:inconsistent,
+.menuitem.radio:inconsistent,
+.menuitem.check:inconsistent:prelight,
+.menuitem.radio:inconsistent:prelight {
+    border-width: 4;
 }
 
 /***************
@@ -1394,7 +1395,7 @@ row:selected {
     border-style: solid;
     border-width: 1;
     border-radius: 2;
-    border-color: shade(@internal_element_color, 1.40);
+    border-color: shade(@internal_element_color, 0.40);
 
     color: @internal_element_color;
     background-color: @theme_base_color;
@@ -1405,7 +1406,7 @@ row:selected {
     border-width: 1;
 
     color: @internal_element_color;
-    border-color: shade(@internal_element_color, 1.40);
+    border-color: shade(@internal_element_color, 0.40);
 
     background-color: @theme_base_color;
 }
@@ -1415,7 +1416,7 @@ row:selected {
     border-width: 1;
 
     color: @internal_element_color;
-    border-color: shade(@internal_element_color, 1.40);
+    border-color: shade(@internal_element_color, 0.40);
 
     background-color: shade(@theme_bg_color, 1.02);
 }
@@ -1489,6 +1490,23 @@ GtkCalendar.highlight {
 .dim-label:selected,
 .dim-label:selected:focused {
     color: mix(@theme_selected_fg_color, @theme_base_color, 0.50);
+}
+
+.progressbar,
+.entry.progressbar,
+.progressbar row,
+.progressbar row:hover,
+.progressbar row:selected,
+.progressbar row:selected:focused {
+    border-color: @progressbar_border_color;
+    border-width: 1;
+    border-style: solid;
+}
+
+.progressbar.vertical {
+    border-color: @progressbar_border_color;
+    border-width: 1;
+    border-style: solid;
 }
 
 /**********************

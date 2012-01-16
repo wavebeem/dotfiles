@@ -32,6 +32,11 @@
 @define-color menu_controls_color shade(@theme_fg_color, 0.9);
 @define-color menu_combobox_border #3277bf;
 @define-color menu_separator shade(@menu_bg_color, 0.9);
+@define-color menu_radiocheck mix(@menu_bg_color, @menu_fg_color, 0.75);
+@define-color menu_radiocheck_insensitive mix(@menu_bg_color, @menu_fg_color, 0.25);
+@define-color menu_radiocheck_hover mix(@menu_bg_color, @menu_fg_color, 1.00);
+@define-color menu_radiocheck_mixed mix(@menu_bg_color, @menu_fg_color, 0.25);
+@define-color menu_radiocheck_mixed_insensitive mix(@menu_bg_color, @menu_fg_color, 0.15);
 
 @define-color menu_item_bg_color mix(shade(@theme_bg_color, 3.00), @selected_bg_color, 0.75);
 @define-color menu_item_border shade(@menu_item_bg_color, 0.50);

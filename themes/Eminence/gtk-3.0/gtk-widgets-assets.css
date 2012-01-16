@@ -94,20 +94,3 @@
 .sidebar .radio:selected:focused {
     background-image: url("assets/sidebar-radio-selected-prelight.svg");
 }
-
-.progressbar,
-.entry.progressbar,
-.progressbar row,
-.progressbar row:hover,
-.progressbar row:selected,
-.progressbar row:selected:focused {
-    border-color: @progressbar_border_color;
-    border-width: 1;
-    border-style: solid;
-}
-
-.progressbar.vertical {
-    border-color: @progressbar_border_color;
-    border-width: 1;
-    border-style: solid;
-}
