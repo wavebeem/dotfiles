@@ -130,6 +130,5 @@ export LESS="-R"
 [ -f "$HOME/.welcome"     ] &&
 [ -z "$SSH_CLIENT"        ] &&
 [ -z "$TMUX"              ] && {
-    echo
     cat "$HOME/.welcome"
 }
