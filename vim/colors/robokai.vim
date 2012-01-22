@@ -17,10 +17,10 @@ hi WarningMsg   ctermbg=red    ctermfg=white
 hi Folded       ctermbg=none        ctermfg=black           cterm=bold
 hi FoldColumn   ctermbg=none        ctermfg=white           cterm=none
 
-hi DiffAdd      ctermbg=darkgreen   ctermfg=lightgreen      cterm=bold
-hi DiffChange   ctermbg=darkred     ctermfg=lightred        cterm=bold
+hi DiffAdd      ctermbg=darkgreen   ctermfg=white           cterm=bold
+hi DiffChange   ctermbg=darkred     ctermfg=white           cterm=bold
 hi DiffDelete   ctermbg=none        ctermfg=lightgrey       cterm=none
-hi DiffText     ctermbg=darkmagenta ctermfg=lightmagenta    cterm=bold
+hi DiffText     ctermbg=darkmagenta ctermfg=white           cterm=bold
 
 hi Cursor       ctermbg=green
 hi CursorIM     ctermbg=red
