@@ -59,6 +59,4 @@
       </action>
     </item>
   </menu>
-
-  <menu id="stats-menu" label="Stats" execute="OB-STATS-MENU"/>
 </openbox_menu>
