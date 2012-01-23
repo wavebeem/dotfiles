@@ -1,13 +1,13 @@
 !! vim: set ft=xdefaults:
 !! Menu background
 menu.items.bg: flat solid
-menu.items.bg.color: #111111
-menu.border.width: 2
-menu.border.color:   #555555
+menu.items.bg.color: #222222
+menu.border.width: 3
+menu.border.color:   #2e2e2e
 
 !! Menu separators
-menu.separator.color: #222222
-menu.separator.width: 2
+menu.separator.color: #333333
+menu.separator.width: 3
 menu.separator.padding.width:  0
 menu.separator.padding.height: 0
 
@@ -55,7 +55,7 @@ window.active.border.color:   #888888
 window.inactive.border.color: #383838
 window.active.title.separator.color:   #111111
 window.inactive.title.separator.color: #111111
-border.width:  2
+border.width:  3
 padding.width: 1
 padding.height: 2
 window.active.handle.bg: flat solid
@@ -74,12 +74,12 @@ window.handle.width: 0
 menu.overlap: 0
 
 !! On-screen displays
-osd.border.width: 2
-osd.border.color: #555555
+osd.border.width: 3
+osd.border.color: #2e2e2e
 osd.label.text.color: #eeeeee
 osd.hilight.bg: flat solid
 osd.hilight.bg.color: #eeeeee
 osd.unhilight.bg: flat solid
-osd.unhilight.bg.color: #666666
+osd.unhilight.bg.color: #333333
 osd.bg: flat solid
-osd.bg.color: #111111
+osd.bg.color: #222222
