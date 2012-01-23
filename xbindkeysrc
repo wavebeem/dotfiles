@@ -77,6 +77,9 @@ Mod4 + Alt + F12
 "SCROT"
 Print
 
+"SCROT2"
+Shift + Print
+
 "CLICKSHOT"
 Alt + Print
 
