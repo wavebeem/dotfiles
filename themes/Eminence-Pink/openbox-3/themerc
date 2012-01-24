@@ -2,12 +2,12 @@
 !! Menu background
 menu.items.bg: flat solid
 menu.items.bg.color: #111111
-menu.border.width: 2
+menu.border.width: 1
 menu.border.color:   #602740
 
 !! Menu separators
 menu.separator.color: #602740
-menu.separator.width: 2
+menu.separator.width: 1
 menu.separator.padding.width:  0
 menu.separator.padding.height: 0
 
@@ -22,8 +22,9 @@ menu.title.text.color: #eeeeee
 menu.title.text.justify: right
 
 !! Selected menu item
-menu.items.active.bg: flat solid
-menu.items.active.bg.color: #666666
+menu.items.active.bg: flat solid border
+menu.items.active.bg.color:        #a14565
+menu.items.active.bg.border.color: #111111
 menu.items.active.text.color: #ffffff
 
 !! Titlebar
@@ -51,11 +52,11 @@ window.inactive.button.*.image.color:         #666666
 window.*.button.*.*.bg: parentrelative
 
 !! Borders
-window.active.border.color:   #a14565
-window.inactive.border.color: #602740
-window.active.title.separator.color:   #444444
-window.inactive.title.separator.color: #444444
-border.width:  2
+window.active.border.color:   #ba6381
+window.inactive.border.color: #521e46
+window.active.title.separator.color:   #333333
+window.inactive.title.separator.color: #333333
+border.width:  1
 padding.width: 1
 padding.height: 2
 window.active.handle.bg: flat solid
@@ -74,12 +75,13 @@ window.handle.width: 0
 menu.overlap: 0
 
 !! On-screen displays
-osd.border.width: 2
+osd.border.width: 1
 osd.border.color: #602740
 osd.label.text.color: #eeeeee
-osd.hilight.bg: flat solid
-osd.hilight.bg.color: #eeeeee
+osd.hilight.bg: flat solid border
+osd.hilight.bg.color:        #c57d80
+osd.hilight.bg.border.color: #521e46
 osd.unhilight.bg: flat solid
-osd.unhilight.bg.color: #6e2d49
+osd.unhilight.bg.color: #521e46
 osd.bg: flat solid
 osd.bg.color: #111111
