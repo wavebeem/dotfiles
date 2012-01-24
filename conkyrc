@@ -2,7 +2,7 @@
 #alignment bottom_right
 alignment top_right
 background no
-border_width 4
+border_width 2
 cpu_avg_samples 1
 own_window_argb_value 255
 color1                ffffff
