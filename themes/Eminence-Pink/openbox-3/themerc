@@ -3,7 +3,7 @@
 menu.items.bg: flat solid
 menu.items.bg.color: #111111
 menu.border.width: 1
-menu.border.color:   #602740
+menu.border.color:   #ba6381
 
 !! Menu separators
 menu.separator.color: #602740
