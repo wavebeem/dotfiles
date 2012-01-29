@@ -5,6 +5,7 @@ config/roxterm.sourceforge.net
 config/wmfs
 config/openbox
 config/tint2
+mpd/mpd.conf
 chrome-themes
 conkyrc
 vim
