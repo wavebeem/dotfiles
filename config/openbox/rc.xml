@@ -41,7 +41,7 @@
                   'Active' - where the active window is -->
   </placement>
   <theme>
-    <name>Eminence-Smooth-Thick</name>
+    <name>Eminence</name>
     <titleLayout>CL</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
@@ -638,10 +638,10 @@
   </menu>
   <applications>
     <!--
+    -->
     <application name="*" class="*" type="*" role="*">
       <decor>no</decor>
     </application>
-    -->
     <!--
     <application name="*" class="Chromium" type="*" role="*">
       <decor>yes</decor>
