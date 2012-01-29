@@ -1,19 +1,19 @@
 !! vim: set ft=xdefaults:
 !! Menu background
 menu.items.bg: flat solid
-menu.items.bg.color: #111111
-menu.border.width: 2
-menu.border.color:   #555555
+menu.items.bg.color: #444444
+menu.border.width: 3
+menu.border.color:   #383838
 
 !! Menu separators
-menu.separator.color: #222222
-menu.separator.width: 2
+menu.separator.color: #444444
+menu.separator.width: 3
 menu.separator.padding.width:  0
 menu.separator.padding.height: 0
 
 !! Menu text
 menu.items.text.color:          #eeeeee
-menu.items.disabled.text.color: #444444
+menu.items.disabled.text.color: #555555
 
 !! Menu headers
 menu.title.bg: flat solid
@@ -37,7 +37,7 @@ window.label.text.justify: right
 window.active.label.bg: parentrelative
 window.active.label.text.color: #eeeeee
 window.inactive.label.bg: parentrelative
-window.inactive.label.text.color: #555555
+window.inactive.label.text.color: #444444
 
 !! Window buttons
 window.active.button.*.pressed.image.color: #aaaaaa
@@ -51,11 +51,11 @@ window.inactive.button.*.image.color:         #444444
 window.*.button.*.*.bg: parentrelative
 
 !! Borders
-window.active.border.color:   #888888
+window.active.border.color:   #383838
 window.inactive.border.color: #383838
 window.active.title.separator.color:   #444444
 window.inactive.title.separator.color: #444444
-border.width:  2
+border.width:  3
 padding.width: 1
 padding.height: 2
 window.active.handle.bg: flat solid
@@ -66,20 +66,20 @@ window.inactive.handle.bg: flat solid
 window.inactive.handle.bg.color: #666666
 window.inactive.grip.bg: flat solid
 window.inactive.grip.bg.color: #888888
-window.active.client.color:   #2a2a2a
-window.inactive.client.color: #2a2a2a
-window.client.padding.width:  0
-window.client.padding.height: 0
+window.active.client.color:   #444444
+window.inactive.client.color: #444444
+window.client.padding.width:  3
+window.client.padding.height: 3
 window.handle.width: 0
 menu.overlap: 0
 
 !! On-screen displays
-osd.border.width: 2
-osd.border.color: #555555
+osd.border.width: 3
+osd.border.color: #383838
 osd.label.text.color: #eeeeee
 osd.hilight.bg: flat solid
-osd.hilight.bg.color: #eeeeee
+osd.hilight.bg.color: #aaaaaa
 osd.unhilight.bg: flat solid
-osd.unhilight.bg.color: #666666
+osd.unhilight.bg.color: #333333
 osd.bg: flat solid
-osd.bg.color: #111111
+osd.bg.color: #444444
