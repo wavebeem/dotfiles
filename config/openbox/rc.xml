@@ -41,7 +41,7 @@
                   'Active' - where the active window is -->
   </placement>
   <theme>
-    <name>Eminence-Pink</name>
+    <name>Eminence-Static</name>
     <titleLayout>CL</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
@@ -637,6 +637,8 @@
     <!-- show the manage desktops section in the client-list-(combined-)menu -->
   </menu>
   <applications>
+    <!--
+    -->
     <application name="*" class="*" type="*" role="*">
       <decor>no</decor>
     </application>

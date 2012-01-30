@@ -13,7 +13,7 @@ menu.separator.padding.height: 0
 
 !! Menu text
 menu.items.text.color:          #eeeeee
-menu.items.disabled.text.color: #444444
+menu.items.disabled.text.color: #888888
 
 !! Menu headers
 menu.title.bg: flat solid
@@ -22,9 +22,8 @@ menu.title.text.color: #eeeeee
 menu.title.text.justify: right
 
 !! Selected menu item
-menu.items.active.bg: flat solid border
-menu.items.active.bg.color: #666666
-menu.items.active.bg.border.color: #111111
+menu.items.active.bg: flat solid
+menu.items.active.bg.color: #333333
 menu.items.active.text.color: #ffffff
 
 !! Titlebar

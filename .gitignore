@@ -2,3 +2,6 @@ config/roxterm.sourceforge.net/Sessions
 Cached Theme.pak
 *.crx
 *.pem
+mpd/mpd.db
+mpd/mpd.log
+mpd/mpd.pid
