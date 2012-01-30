@@ -82,4 +82,4 @@ osd.hilight.bg.color: #eeeeee
 osd.unhilight.bg: flat solid
 osd.unhilight.bg.color: #666666
 osd.bg: flat solid
-osd.bg.color: #111111
+osd.bg.color: #444444
