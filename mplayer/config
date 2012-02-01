@@ -5,6 +5,8 @@ fs   = yes
 ass  = yes
 zoom = yes
 
+fixed-vo = yes
+
 framedrop = yes
 
 stop-xscreensaver = yes
