@@ -1,19 +1,19 @@
 !! vim: set ft=xdefaults:
 !! Menu background
 menu.items.bg: flat solid
-menu.items.bg.color: #444444
+menu.items.bg.color: #111111
 menu.border.width: 3
-menu.border.color:   #555555
+menu.border.color:   #222222
 
 !! Menu separators
-menu.separator.color: #444444
+menu.separator.color: #222222
 menu.separator.width: 3
 menu.separator.padding.width:  0
 menu.separator.padding.height: 0
 
 !! Menu text
 menu.items.text.color:          #eeeeee
-menu.items.disabled.text.color: #666666
+menu.items.disabled.text.color: #888888
 
 !! Menu headers
 menu.title.bg: flat solid
@@ -29,8 +29,8 @@ menu.items.active.text.color: #ffffff
 !! Titlebar
 window.active.title.bg:   flat solid
 window.inactive.title.bg: flat solid
-window.active.title.bg.color:   #444444
-window.inactive.title.bg.color: #444444
+window.active.title.bg.color:   #111111
+window.inactive.title.bg.color: #111111
 
 !! Titlebar text
 window.label.text.justify: right
@@ -51,10 +51,10 @@ window.inactive.button.*.image.color:         #666666
 window.*.button.*.*.bg: parentrelative
 
 !! Borders
-window.active.border.color:   #666666
-window.inactive.border.color: #555555
-window.active.title.separator.color:   #444444
-window.inactive.title.separator.color: #444444
+window.active.border.color:   #496675
+window.inactive.border.color: #505050
+window.active.title.separator.color:   #111111
+window.inactive.title.separator.color: #111111
 border.width:  3
 padding.width: 1
 padding.height: 2
@@ -75,11 +75,11 @@ menu.overlap: 0
 
 !! On-screen displays
 osd.border.width: 3
-osd.border.color: #555555
+osd.border.color: #222222
 osd.label.text.color: #eeeeee
 osd.hilight.bg: flat solid
 osd.hilight.bg.color: #eeeeee
 osd.unhilight.bg: flat solid
-osd.unhilight.bg.color: #666666
+osd.unhilight.bg.color: #282828
 osd.bg: flat solid
-osd.bg.color: #444444
+osd.bg.color: #111111
