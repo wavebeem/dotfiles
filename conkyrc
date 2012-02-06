@@ -6,7 +6,7 @@ border_width 6
 cpu_avg_samples 1
 own_window_argb_value 255
 color1                ffffff
-default_color         555555
+default_color         1a4ca3
 own_window_colour     000000
 default_outline_color 000000
 default_shade_color   000000
