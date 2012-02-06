@@ -691,7 +691,7 @@ GtkTreeMenu .menuitem * {
 .menu {
     background-color: @menu_bg_color;
     color: @menu_fg_color;
-    padding: 4;
+    padding: 3;
     border-style: solid;
     border-color: @menu_border_color;
 }
@@ -746,7 +746,7 @@ GtkTreeMenu .menuitem * {
     background-color: @menubar_bg;
     border-color: transparent;
 
-    border-radius: 8;
+    border-radius: 6;
 }
 
 .menubar .menuitem:hover {
@@ -764,7 +764,7 @@ GtkTreeMenu .menuitem * {
     -adwaita-menuitem-arrow-color: @menu_controls_color;
     padding: 3;
     border-style: solid;
-    border-radius: 4;
+    border-radius: 0;
 }
 
 .menuitem:active,

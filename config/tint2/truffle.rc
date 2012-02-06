@@ -3,20 +3,20 @@
 ### BACKGROUND AND BORDER ###
 # ID 1
 rounded          = 0
-border_width     = 1
-background_color = #242220 20
-border_color     = #ffffff 20
+border_width     = 0
+background_color = #ffffff 0
+border_color     = #ffffff 0
 
 # ID 2
 rounded          = 0
-border_width     = 1
-background_color = #242220 10
-border_color     = #ffffff 20
+border_width     = 4
+background_color = #111111 100
+border_color     = #222222 100
 
 # ID 3
 rounded          = 0
-border_width     = 1
-background_color = #444240 75
+border_width     = 0
+background_color = #ffffff 15
 border_color     = #ffffff 50
 
 # ID 4
@@ -40,19 +40,19 @@ border_color     = #000000 0
 ### PANEL ###
 panel_background_id = 2
 panel_monitor  = all
-panel_position = top center horizontal
-panel_size     = 1924 36
-panel_margin   = 0 -2
-panel_padding  = 6 6
+panel_position = bottom center horizontal
+panel_size     = 1928 24
+panel_margin   = 0 -4
+panel_padding  = 0 0
 font_shadow    = 0
 wm_menu        = 0
 panel_dock     = 0
 panel_layer    = bottom
 
 ### TASKBAR ###
-taskbar_mode          = multi_desktop
-#taskbar_mode          = single_desktop
-taskbar_padding       = 1 1 1
+#taskbar_mode          = multi_desktop
+taskbar_mode          = single_desktop
+taskbar_padding       = 0 0 0
 taskbar_background_id = 1
 
 ### TASKS ###
@@ -64,10 +64,10 @@ task_text         = 1
 task_maximum_size = 0 18
 task_centered     = 1
 task_padding      = 4 4
-task_font         = luxi sans bold 9
+task_font         = luxi sans bold 8
 urgent_nb_of_blink     = 999999
-task_font_color        = #ffffff 50
-task_active_font_color = #ffffff 100
+task_font_color        = #eeeeee 25
+task_active_font_color = #eeeeee 100
 task_urgent_font_color = #ffffff 100
 task_icon_asb          = 100 0 0
 task_active_icon_asb   = 100 0 0
