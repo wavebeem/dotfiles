@@ -21,7 +21,8 @@ style "menu-item" = "menu" {
 
     base[NORMAL]  = @selected_bg_color
 
-    bg[INSENSITIVE] = mix(0.50, @selected_bg_color, shade(1.50, @bg_color))
+    #bg[INSENSITIVE] = mix(0.50, @selected_bg_color, shade(1.50, @bg_color))
+    bg[INSENSITIVE] = "#222222"
 
     #bg[SELECTED] = mix(0.90, @selected_bg_color, @fg_color)
     bg[SELECTED] = "#383838"
