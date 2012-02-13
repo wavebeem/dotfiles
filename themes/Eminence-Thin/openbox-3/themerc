@@ -3,7 +3,7 @@
 menu.items.bg: flat solid
 menu.items.bg.color: #111111
 menu.border.width: 1
-menu.border.color:   #555555
+menu.border.color:   #dddddd
 
 !! Menu separators
 menu.separator.color: #333333
@@ -51,8 +51,8 @@ window.inactive.button.*.image.color:         #666666
 window.*.button.*.*.bg: parentrelative
 
 !! Borders
-window.active.border.color:   #c57d80
-window.inactive.border.color: #555555
+window.active.border.color:   #dddddd
+window.inactive.border.color: #777777
 window.active.title.separator.color:   #444444
 window.inactive.title.separator.color: #444444
 border.width:  1
@@ -75,12 +75,12 @@ menu.overlap: 0
 
 !! On-screen displays
 osd.border.width: 1
-osd.border.color: #555555
+osd.border.color: #dddddd
 osd.label.text.color: #eeeeee
 osd.hilight.bg: flat solid border
-osd.hilight.bg.color: #eeeeee
+osd.hilight.bg.color: #333333
 osd.hilight.bg.border.color: #333333
 osd.unhilight.bg: flat solid
-osd.unhilight.bg.color: #333333
+osd.unhilight.bg.color: #aaaaaa
 osd.bg: flat solid
 osd.bg.color: #111111

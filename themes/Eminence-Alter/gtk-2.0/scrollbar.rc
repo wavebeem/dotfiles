@@ -1,0 +1,34 @@
+# vim: set syn=gtkrc:
+
+style "scrollbar" {
+    GtkScrollbar::trough-side-details = 0
+
+    GtkRange::trough-border         = 0
+    GtkRange::trough-under-steppers = 1
+
+    bg[SELECTED]    = shade(1.75, @bg_color)
+
+    bg[NORMAL]      = shade(0.75, @bg_color)
+    bg[PRELIGHT]    = shade(1.20, @bg_color)
+    bg[ACTIVE]      = shade(0.75, @bg_color)
+
+    fg[INSENSITIVE] = shade(0.65, @bg_color)
+    fg[NORMAL]      = shade(0.50, @bg_color)
+    fg[PRELIGHT]    = shade(0.85, @bg_color)
+    fg[ACTIVE]      = shade(0.65, @bg_color)
+
+    engine "murrine" {
+        roundness = 0
+        contrast = 0.20
+        trough_shades = {0.95, 0.95}
+        #border_shades = {0.25, 0.50}
+        border_shades = {0.50, 0.50}
+        prelight_shade = 1.10
+    }
+}
+
+style "hscrollbar" {
+}
+
+style "vscrollbar" {
+}
