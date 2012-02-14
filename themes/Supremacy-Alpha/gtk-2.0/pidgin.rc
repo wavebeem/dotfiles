@@ -1,0 +1,20 @@
+# vim: set syn=gtkrc:
+
+style "pidgin" {
+    # Make pidgin beautiful
+    GtkIMHtml::hyperlink-color         = "#729FCF"
+    GtkIMHtml::hyperlink-visited-color = "#AD7FA8"
+
+    #GtkIMHtml::send-name-color         = "#7356A8" # My name
+    #GtkIMHtml::receive-name-color      = "#66D9E5" # Their name
+
+    #GtkIMHtml::send-name-color    = shade(1.00, @selected_bg_color) # My name
+    GtkIMHtml::send-name-color    = shade(4.00, @bg_color) # My name
+    GtkIMHtml::receive-name-color = shade(1.50, @selected_bg_color) # Their name
+
+    GtkIMHtml::highlight-name-color    = "#568C20"
+    GtkIMHtml::action-name-color       = "#568C20"
+
+    base[NORMAL] = shade(1.10, @bg_color)
+}
+class "GtkIMHtml" style: highest "pidgin"

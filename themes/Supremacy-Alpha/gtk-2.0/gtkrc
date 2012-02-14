@@ -2,11 +2,11 @@
 
 gtk_color_scheme = "fg_color:#cccccc
 text_color:#cccccc
-bg_color:#222222
-base_color:#222222
+bg_color:#111111
+base_color:#111111
 selected_bg_color:#A04749
 selected_fg_color:#ffffff
-tooltip_bg_color:#222222
+tooltip_bg_color:#111111
 tooltip_fg_color:#cccccc"
 
 include "base.rc"
