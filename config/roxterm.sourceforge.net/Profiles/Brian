@@ -1,6 +1,6 @@
 
 [roxterm profile]
-background_img=/data/Pictures/Wallpapers/Gurren Lagann/wallpaper-89780.jpg
+background_img=/home/brian/dotfiles/term-bg.png
 hide_menubar=1
 allow_bold=0
 audible_bell=0
@@ -14,8 +14,8 @@ scroll_on_keystroke=1
 disable_menu_shortcuts=1
 disable_menu_access=1
 disable_tab_menu_shortcuts=1
-background_type=0
-saturation=0.060000
+background_type=1
+saturation=0.600000
 visible_bell=0
 use_custom_command=0
 login_shell=0

@@ -42,7 +42,7 @@
   </placement>
   <theme>
     <name>Eminence-Sakamoto</name>
-    <titleLayout>CL</titleLayout>
+    <titleLayout></titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
       N: window icon
@@ -57,7 +57,7 @@
     <animateIconify>no</animateIconify>
     <font place="ActiveWindow">
       <name>Luxi Sans</name>
-      <size>8</size>
+      <size>1</size>
       <!-- font size in points -->
       <weight>Bold</weight>
       <!-- 'bold' or 'normal' -->
@@ -66,7 +66,7 @@
     </font>
     <font place="InactiveWindow">
       <name>Luxi Sans</name>
-      <size>8</size>
+      <size>1</size>
       <!-- font size in points -->
       <weight>Bold</weight>
       <!-- 'bold' or 'normal' -->
@@ -637,8 +637,6 @@
     <!-- show the manage desktops section in the client-list-(combined-)menu -->
   </menu>
   <applications>
-    <!--
-    -->
     <application name="*" class="*" type="*" role="*">
       <decor>no</decor>
     </application>
@@ -658,8 +656,11 @@
     <application name="*" class="MPlayer" type="*" role="*">
       <decor>no</decor>
     </application>
+    <application name="*" class="Roxterm" type="*" role="*">
+      <decor>no</decor>
+    </application>
     <application name="*" class="XTerm" type="*" role="*">
-      <decor>yes</decor>
+      <decor>no</decor>
     </application>
     -->
     <!--
