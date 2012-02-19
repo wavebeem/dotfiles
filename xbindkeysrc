@@ -65,15 +65,6 @@ Mod4 + F11
 "amixer set Master 5%+"
 Mod4 + F12
 
-"amixer set Master toggle"
-XF86AudioMute
-
-"amixer set Master 5%-"
-XF86AudioLowerVolume
-
-"amixer set Master 5%+"
-XF86AudioRaiseVolume
-
 "xscreensaver-command -lock"
 Control + Alt + l
 
@@ -107,6 +98,9 @@ Control + Mod4 + F11
 "KBD-US"
 Control + Mod4 + F12
 
+"mpc toggle"
+XF86AudioPlay
+
 "amixer set Master toggle"
 XF86AudioMute
 
@@ -115,6 +109,3 @@ XF86AudioLowerVolume
 
 "amixer set Master 5%+"
 XF86AudioRaiseVolume
-
-"mpc toggle"
-XF86AudioPlay
