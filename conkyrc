@@ -2,11 +2,11 @@
 #alignment bottom_right
 alignment top_right
 background no
-border_width 6
+border_width 2
 cpu_avg_samples 1
 own_window_argb_value 255
 color1                ffffff
-default_color         214A68
+default_color         521e46
 own_window_colour     000000
 default_outline_color 000000
 default_shade_color   000000
@@ -22,8 +22,8 @@ xftfont Luxi Sans:size=9:bold
 #xftfont Sans:size=8:bold
 #xftfont aqui
 xftalpha 1.0
-gap_x 4
-gap_y 4
+gap_x 2
+gap_y 2
 border_inner_margin 4
 border_outer_margin 0
 minimum_width 100

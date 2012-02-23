@@ -3,7 +3,7 @@
 menu.items.bg: flat solid
 menu.items.bg.color: #111111
 menu.border.width: 1
-menu.border.color:   #ba6381
+menu.border.color:   #ED6694
 
 !! Menu separators
 menu.separator.color: #602740
@@ -52,8 +52,9 @@ window.inactive.button.*.image.color:         #666666
 window.*.button.*.*.bg: parentrelative
 
 !! Borders
-window.active.border.color:   #ba6381
-window.inactive.border.color: #521e46
+window.active.border.color:   #ED6694
+window.inactive.border.color: #9E588D
+!window.inactive.border.color: #521e46
 window.active.title.separator.color:   #000000
 window.inactive.title.separator.color: #000000
 border.width:  1
@@ -67,8 +68,8 @@ window.inactive.handle.bg: flat solid
 window.inactive.handle.bg.color: #666666
 window.inactive.grip.bg: flat solid
 window.inactive.grip.bg.color: #888888
-window.active.client.color:   #555555
-window.inactive.client.color: #555555
+window.active.client.color:   #2a2a2a
+window.inactive.client.color: #2a2a2a
 window.client.padding.width:  0
 window.client.padding.height: 0
 window.handle.width: 0
@@ -76,7 +77,7 @@ menu.overlap: 0
 
 !! On-screen displays
 osd.border.width: 1
-osd.border.color: #602740
+osd.border.color: #ED6694
 osd.label.text.color: #eeeeee
 osd.hilight.bg: flat solid border
 osd.hilight.bg.color:        #c57d80
