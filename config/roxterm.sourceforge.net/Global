@@ -6,3 +6,5 @@ colour_scheme=Brian
 shortcut_scheme=Default
 profile=Brian
 edit_shortcuts=1
+prefer_dark_theme=0
+only_warn_running=0
