@@ -35,91 +35,109 @@ alias l='ls -halF'
 alias ..='cd ..'
 alias vim='vim -p'
 
-Prompt_BW_Gradient() {
-    local b1="%B"
-    local e1="%b"
-
-    local b2=""
-    local e2=""
-
-    local b3="%B%F{black}"
-    local e3="%f%b"
-
-    export PS1="
-${b1}>${e1}${b2}>${e2}${b3}>${e3} "
-    export PS2="${b1}?${e1}${b2}?${e2}${b3}?${e3} "
-
-    export RPROMPT=""
-}
+#Prompt_BW_Gradient() {
+#    local b1="%B"
+#    local e1="%b"
+#
+#    local b2=""
+#    local e2=""
+#
+#    local b3="%B%F{black}"
+#    local e3="%f%b"
+#
+#    export PS1="
+#${b1}>${e1}${b2}>${e2}${b3}>${e3} "
+#    export PS2="${b1}?${e1}${b2}?${e2}${b3}?${e3} "
+#
+#    export RPROMPT=""
+#}
 
 Prompt_Host() {
-    local b="%B%F{black}"
-    local e="%f%b"
+    bb="%B%F{black}"
+    be="%f%b"
+
+    fb="%B%F{cyan}"
+    fe="%f%b"
+
+    _ps1="${bb}%m:${be} "
+    _ps2="${bb}%m?${be} "
 
     precmd() {
         hash -r
         echo
+
+        # If we're in a git repo...
+        if git rev-parse --git-dir >/dev/null 2>&1; then
+            _branch=$(git symbolic-ref HEAD)
+            _branch=${_branch##*/}
+
+            export PS1="${bb}%m(${fb}${_branch}${fe}${bb}):${be} "
+            export PS2="${bb}%m(${fb}${_branch}${fe}${bb})?${be} "
+        else
+            export PS1=$_ps1
+            export PS2=$_ps2
+        fi
     }
 
     preexec() {
     }
 
-    export PS1="${b}%m:${e} "
-    export PS2="${b}%m?${e} "
+    export PS1=$_ps1
+    export PS2=$_ps2
 
     export RPROMPT=""
 }
 
-Prompt_Rainbow() {
-    local ender="%b%f"
-
-    local     red="%B%F{red}"
-    local  orange="%b%F{yellow}"
-    local  yellow="%B%F{yellow}"
-    local   green="%B%F{green}"
-    local    cyan="%B%F{cyan}"
-    local    blue="%B%F{blue}"
-    local magenta="%B%F{magenta}"
-    local   black="%B%F{black}"
-    local   white="%f%B"
-    local default="%f%b"
-    local    grey="%b%F{gray}"
-    local    gray="%b%F{gray}"
-
-    local char1=">"
-    local char2="?"
-    local space=" "
-
-    precmd() {
-        hash -r
-        echo
-    }
-
-    preexec() {
-    }
-
-    export PS1="\
-${red}\
-${char1}${orange}\
-${char1}${yellow}\
-${char1}${green}\
-${char1}${cyan}\
-${char1}${blue}\
-${char1}${magenta}\
-${char1}${ender} "
-
-    export PS2="\
-${black}\
-${char2}${black}\
-${char2}${black}\
-${char2}${grey}\
-${char2}${grey}\
-${char2}${white}\
-${char2}${white}\
-${char2}${ender} "
-
-    export RPROMPT=""
-}
+#Prompt_Rainbow() {
+#    local ender="%b%f"
+#
+#    local     red="%B%F{red}"
+#    local  orange="%b%F{yellow}"
+#    local  yellow="%B%F{yellow}"
+#    local   green="%B%F{green}"
+#    local    cyan="%B%F{cyan}"
+#    local    blue="%B%F{blue}"
+#    local magenta="%B%F{magenta}"
+#    local   black="%B%F{black}"
+#    local   white="%f%B"
+#    local default="%f%b"
+#    local    grey="%b%F{gray}"
+#    local    gray="%b%F{gray}"
+#
+#    local char1=">"
+#    local char2="?"
+#    local space=" "
+#
+#    export PS1="\
+#${red}\
+#${char1}${orange}\
+#${char1}${yellow}\
+#${char1}${green}\
+#${char1}${cyan}\
+#${char1}${blue}\
+#${char1}${magenta}\
+#${char1}${ender} "
+#
+#    export PS2="\
+#${black}\
+#${char2}${black}\
+#${char2}${black}\
+#${char2}${grey}\
+#${char2}${grey}\
+#${char2}${white}\
+#${char2}${white}\
+#${char2}${ender} "
+#
+#    precmd() {
+#        hash -r
+#        echo
+#    }
+#
+#    preexec() {
+#    }
+#
+#    export RPROMPT=""
+#}
 
 #Prompt_BW_Gradient
 #Prompt_Rainbow
