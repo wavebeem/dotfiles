@@ -643,7 +643,7 @@
     </application>
     -->
     <application name="*" class="Chromium" type="*" role="*">
-      <decor>yes</decor>
+      <decor>no</decor>
     </application>
     <application name="*" class="Gvbam" type="*" role="*">
       <decor>no</decor>
