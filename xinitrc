@@ -34,7 +34,7 @@ Autostart() {
     # Scrobble songs on desktop
     killall mpdscribble
     mpdscribble &
-    mpd &
+    mpd ~/.mpd/mpd.conf &
 
     # Load font and cursor settings
     xrdb ~/.Xdefaults &
