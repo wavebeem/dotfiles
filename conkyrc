@@ -1,6 +1,6 @@
 # vim: set syn=conf:
-#alignment bottom_right
-alignment top_right
+alignment bottom_right
+#alignment top_right
 background no
 border_width 0
 cpu_avg_samples 1
@@ -17,7 +17,7 @@ draw_shades  no
 use_xft yes
 #xftfont DejaVu Sans Mono:size=10:bold
 #xftfont DejaVu Sans Mono:size=8:bold
-xftfont Luxi Sans:size=10:bold
+xftfont Luxi Sans:size=12:bold
 #xftfont Luxi Sans:size=11:bold
 #xftfont Sans:size=10:bold
 #xftfont aqui
