@@ -52,8 +52,8 @@ window.inactive.button.*.image.color:         #666666
 window.*.button.*.*.bg: parentrelative
 
 !! Borders
-window.active.border.color:   #888888
-window.inactive.border.color: #333333
+window.active.border.color:   #999999
+window.inactive.border.color: #555555
 window.active.title.separator.color:   #444444
 window.inactive.title.separator.color: #444444
 border.width:  3
@@ -69,8 +69,8 @@ window.inactive.grip.bg: flat solid
 window.inactive.grip.bg.color: #888888
 window.active.client.color:   #444444
 window.inactive.client.color: #444444
-window.client.padding.width:  3
-window.client.padding.height: 3
+window.client.padding.width:  0
+window.client.padding.height: 0
 window.handle.width: 0
 menu.overlap: 0
 

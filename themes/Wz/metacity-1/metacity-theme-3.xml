@@ -10,8 +10,8 @@
 
 <!-- meaningfull constants -->
 
-<constant name="C_border_focused"           value="#ffffff" />
-<constant name="C_border_unfocused"         value="#ffffff" />
+<constant name="C_border_focused"           value="#999999" />
+<constant name="C_border_unfocused"         value="#555555" />
 <constant name="C_border_attached_focused"  value="#ffffff" />
 <constant name="C_titlebar_focused_hilight" value="#ffffff" />
 <constant name="C_titlebar_unfocused"       value="#ffffff" />
@@ -25,28 +25,28 @@
 <!-- geometries -->
 
 <frame_geometry name="normal" title_scale="medium" rounded_top_left="0" rounded_top_right="0">
-	<distance name="left_width" value="1" />
-	<distance name="right_width" value="1" />
-	<distance name="bottom_height" value="1" />
-	<distance name="left_titlebar_edge" value="3"/>
+	<distance name="left_width"    value="3" />
+	<distance name="right_width"   value="3" />
+	<distance name="bottom_height" value="3" />
+	<distance name="left_titlebar_edge"  value="3"/>
 	<distance name="right_titlebar_edge" value="3"/>
-	<distance name="title_vertical_pad" value="9"/>
+	<distance name="title_vertical_pad"  value="9"/>
 	<border name="title_border" left="10" right="10" top="1" bottom="0"/>
 	<border name="button_border" left="0" right="2" top="2" bottom="0"/>
 	<aspect_ratio name="button" value="1"/>
 </frame_geometry>
 
 <frame_geometry name="normal_unfocused" title_scale="medium" rounded_top_left="0" rounded_top_right="0" parent="normal">
-	<distance name="left_titlebar_edge" value="3"/>
+	<distance name="left_titlebar_edge"  value="3"/>
 	<distance name="right_titlebar_edge" value="3"/>
 </frame_geometry>
 
 <frame_geometry name="max" title_scale="medium" parent="normal" rounded_top_left="false" rounded_top_right="false">
-	<distance name="left_width" value="0" />
-	<distance name="right_width" value="0" />
-	<distance name="left_titlebar_edge" value="3"/>
-	<distance name="right_titlebar_edge" value="3"/>
-	<distance name="title_vertical_pad" value="8"/> <!--
+	<distance name="left_width"          value="0" />
+	<distance name="right_width"         value="0" />
+	<distance name="left_titlebar_edge"  value="0"/>
+	<distance name="right_titlebar_edge" value="0"/>
+	<distance name="title_vertical_pad"  value="8"/> <!--
 							This needs to be 1 less then the
 							title_vertical_pad on normal state
 							or you'll have bigger buttons -->
@@ -113,11 +113,11 @@
 </draw_ops>
 
 <draw_ops name="entire_background_unfocused">
-	<include name="entire_background_focused" />
+	<rectangle color="C_border_unfocused" x="0" y="0" width="width" height="height" filled="true" />
 </draw_ops>
 
 <draw_ops name="titlebar_fill_focused">
-	<gradient type="vertical" x="0" y="0" width="width" height="top_height">
+	<gradient type="vertical" x="0" y="3" width="width" height="top_height">
 		<color value="#333333" />
 		<color value="#222222" />
 	</gradient>
@@ -127,24 +127,27 @@
             x2="width"
             y2="height - 2"
             color="C_titlebar_separator" />
-        <line
-            x1="0"
-            y1="0"
-            x2="0"
-            y2="height"
-            color="C_border_focused" />
-        <line
-            x1="0"
-            y1="0"
-            x2="width"
-            y2="0"
-            color="C_border_focused" />
-        <line
-            x1="width - 1"
-            y1="0"
-            x2="width - 1"
-            y2="height"
-            color="C_border_focused" />
+	<rectangle
+            color="C_border_focused"
+            x="0"
+            y="0"
+            width="3"
+            height="height"
+            filled="true" />
+	<rectangle
+            color="C_border_focused"
+            x="0"
+            y="0"
+            width="width"
+            height="1"
+            filled="true" />
+	<rectangle
+            color="C_border_focused"
+            x="width - 3"
+            y="0"
+            width="3"
+            height="height"
+            filled="true" />
 </draw_ops>
 
 
@@ -156,7 +159,37 @@
 </draw_ops>
 
 <draw_ops name="titlebar_fill_unfocused">
-    <include name="titlebar_fill_focused" />
+	<gradient type="vertical" x="0" y="3" width="width" height="top_height">
+		<color value="#333333" />
+		<color value="#222222" />
+	</gradient>
+        <line
+            x1="0"
+            y1="height - 2"
+            x2="width"
+            y2="height - 2"
+            color="C_titlebar_separator" />
+	<rectangle
+            color="C_border_unfocused"
+            x="0"
+            y="0"
+            width="3"
+            height="height"
+            filled="true" />
+	<rectangle
+            color="C_border_unfocused"
+            x="0"
+            y="0"
+            width="width"
+            height="1"
+            filled="true" />
+	<rectangle
+            color="C_border_unfocused"
+            x="width - 3"
+            y="0"
+            width="3"
+            height="height"
+            filled="true" />
 </draw_ops>
 
 <draw_ops name="hilight">
