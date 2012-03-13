@@ -55,41 +55,55 @@ Git_Has_Staged() {
     test "$count" -gt 0
 }
 
+Join() {
+    local sep=$1; shift
+    local n=$#
+    local result=""
+
+    for ((i = 1; i < $n; i++)); do
+        echo -n "${1}${sep}"
+        shift
+    done
+
+    echo "${1}"
+}
+
+Prefix() {
+    local pre=$1; shift
+
+    for arg; do
+        echo -n "${pre}${arg}"
+    done
+    echo
+}
+
 Prompt_Host() {
-    bb="%B%F{black}"
-    be="%f%b"
+    bg="%B%F{black}"
+    fg="%B%F{green}"
+    er="%B%F{red}"
+    e="%f%b"
 
-    fb="%B%F{cyan}"
-    fe="%f%b"
+    _ps1="${bg}%m:${e} "
+    _ps2="${bg}%m?${e} "
 
-    ub="%B%F{green}"
-    ue="%f%b"
+    nl=$'\n'
 
-    _ps1="${bb}%m:${be} "
-    _ps2="${bb}%m?${be} "
-
-    # Code to run before the prompt.
+    # Code to run efore the prompt.
     precmd() {
-        # Rehash to detect new commands.
-        hash -r
-
-        # Blank line for sanity.
-        echo
-
         # If we're in a git repo, set up the prompt.
         if Git_In_Repo; then
             if Git_Has_Unpushed
-            then _unpushed="unpushed-"
+            then _unpushed="unpushed"
             else _unpushed=""
             fi
 
             if Git_Has_Untracked
-            then _untracked="untracked-"
+            then _untracked="untracked"
             else _untracked=""
             fi
 
             if Git_Has_Modified
-            then _modified="modified-"
+            then _modified="modified"
             else _modified=""
             fi
 
@@ -98,16 +112,31 @@ Prompt_Host() {
             else _staging=""
             fi
 
-            _flags="${bb}[${ub}${_unpushed}${_untracked}${_modified}${_staging}${ue}${bb}]"
-            _branch="${fb}$(Git_Branch)${_flags}${fe}"
+            _prefix=" +"
+            _items=(
+                ${_unpushed}
+                ${_untracked}
+                ${_modified}
+                ${_staging}
+            )
+            _flags=$(Prefix "$_prefix" "${_items[@]}")
+            _branch=$(Git_Branch)
 
-            export PS1="${bb}%m(${_branch}${bb}):${be} "
-            export PS2="${bb}%m(${_branch}${bb})?${be} "
+            _git="${fg}${_branch}${er}${_flags}${ue}"
+
+            export PS1="${bg}%m(${_git}${bg}):${e} "
+            export PS2="${bg}%m(${_git}${bg})?${e} "
         # Else use the regular prompt.
         else
             export PS1=$_ps1
             export PS2=$_ps2
         fi
+
+        # Rehash to detect new commands.
+        hash -r
+
+        # Blank line for sanity.
+        echo
     }
 
     # Code to run before executing the command.
