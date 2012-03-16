@@ -86,6 +86,8 @@ Prompt_Host() {
     _ps1="${bg}%m:${e} "
     _ps2="${bg}%m?${e} "
 
+    export RPROMPT=""
+
     nl=$'\n'
 
     # Code to run efore the prompt.
@@ -112,7 +114,7 @@ Prompt_Host() {
             else _staging=""
             fi
 
-            _prefix=" +"
+            _prefix=" -"
             _items=(
                 ${_unpushed}
                 ${_untracked}
@@ -122,10 +124,15 @@ Prompt_Host() {
             _flags=$(Prefix "$_prefix" "${_items[@]}")
             _branch=$(Git_Branch)
 
-            _git="${fg}${_branch}${er}${_flags}${ue}"
+            _git="${bg}git: ${fg}+${_branch}${er}${_flags}${ue}"
 
-            export PS1="${bg}%m(${_git}${bg}):${e} "
-            export PS2="${bg}%m(${_git}${bg})?${e} "
+            #export PS1="${bg}%m(${_git}${bg}):${e} "
+            #export PS2="${bg}%m(${_git}${bg})?${e} "
+
+            nl=$'\n'
+
+            export PS1="${_git}${nl}${_ps1}"
+            export PS2="${_git}${nl}${_ps2}"
         # Else use the regular prompt.
         else
             export PS1=$_ps1
@@ -146,7 +153,7 @@ Prompt_Host() {
     export PS1=$_ps1
     export PS2=$_ps2
 
-    export RPROMPT=""
+    #export RPROMPT=""
 }
 
 Prompt_Host
