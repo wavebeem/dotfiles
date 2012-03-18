@@ -1,14 +1,12 @@
 /* Default color scheme */
-@define-color base_color #444240;
-@define-color bg_color #444240;
-@define-color tooltip_bg_color @main_border;
-@define-color selected_bg_color #aa3048;
-@define-color text_color #e4e2e0;
-@define-color fg_color #e4e2e0;
-@define-color tooltip_fg_color #e4e2e0;
+@define-color base_color #444444;
+@define-color bg_color #444444;
+@define-color tooltip_bg_color #111111;
+@define-color selected_bg_color #597c8f;
+@define-color text_color #eeeeee;
+@define-color fg_color #eeeeee;
+@define-color tooltip_fg_color #eeeeee;
 @define-color selected_fg_color #ffffff;
-
-@define-color row_hover shade(@base_color, 1.2);
 
 /* Colormap actually used by the theme, to be overridden in other css files */
 @define-color theme_base_color @base_color;
@@ -20,20 +18,28 @@
 @define-color theme_selected_bg_color @selected_bg_color;
 @define-color theme_selected_fg_color @selected_fg_color;
 
-@define-color main_border shade(#343230, 0.80);
+@define-color main_border shade(@theme_bg_color, 0.60);
 
-/*
-@define-color menu_bg_color shade(@theme_bg_color, 1.2);
-*/
-@define-color menu_bg_color mix(shade(@theme_bg_color, 1.0), shade(@theme_selected_bg_color, 0.80), 0.50);
+@define-color row_hover shade(@theme_base_color, 1.2);
+
+@define-color menubar_bg #222222;
+@define-color menubar_border shade(@menubar_bg, 0.50);
+@define-color menubar_hover  shade(@menubar_bg, 1.50);
+
+@define-color menu_bg_color #222222;
 @define-color menu_fg_color @theme_fg_color;
 @define-color menu_border_color #000000;
 @define-color menu_controls_color shade(@theme_fg_color, 0.9);
 @define-color menu_combobox_border #3277bf;
 @define-color menu_separator shade(@menu_bg_color, 0.9);
+@define-color menu_radiocheck mix(@menu_bg_color, @menu_fg_color, 0.75);
+@define-color menu_radiocheck_insensitive mix(@menu_bg_color, @menu_fg_color, 0.25);
+@define-color menu_radiocheck_hover mix(@menu_bg_color, @menu_fg_color, 1.00);
+@define-color menu_radiocheck_mixed mix(@menu_bg_color, @menu_fg_color, 0.25);
+@define-color menu_radiocheck_mixed_insensitive mix(@menu_bg_color, @menu_fg_color, 0.15);
 
-@define-color menu_item_bg_color mix(shade(@theme_selected_bg_color, 0.80), #fff, 0.10);
-@define-color menu_item_border shade(@menu_item_bg_color, 0.35);
+@define-color menu_item_bg_color shade(@menu_bg_color, 2.00);
+@define-color menu_item_border shade(@menu_item_bg_color, 0.10);
 @define-color menu_item_fg_color @theme_fg_color;
 
 @define-color link_color #4a90d9;
@@ -52,7 +58,7 @@
 @define-color error_fg_color rgb(166, 38, 38);
 @define-color error_bg_color rgb(237, 54, 54);
 
-@define-color keyboard_focus_border #848280;
+@define-color keyboard_focus_border @theme_fg_color;
 
 @define-color os_chrome_bg_color black;
 @define-color os_chrome_fg_color #ccc;
@@ -65,10 +71,10 @@
 @define-color focused_entry_border #579eea;
 @define-color focused_entry_inset alpha(#d7e4f1, 0.50);
 
-@define-color button_color #545250;
+@define-color button_color shade(@theme_bg_color, 1.35);
 @define-color button_border @main_border;
 
-@define-color button_active_color #545250;
+@define-color button_active_color shade(@theme_selected_bg_color, 0.75);
 
 @define-color button_hover_color shade(@button_color, 1.10);
 
@@ -77,16 +83,18 @@
 
 @define-color button_raised_active_color @button_active_color;
 
-@define-color insensitive_bg_color #444240;
-@define-color insensitive_fg_color #848280;
-@define-color insensitive_border_color #343230;
+@define-color insensitive_bg_color @theme_bg_color;
+@define-color insensitive_fg_color shade(@theme_fg_color, 0.50);
+@define-color insensitive_border_color @main_border;
 
-@define-color trough_bg #444240;
+@define-color trough_bg @theme_bg_color;
 
-@define-color active_switch_bg_color #444240;
+@define-color switch_bg_color          shade(@theme_bg_color, 0.75);
+@define-color switch_active_bg_color   shade(@theme_bg_color, 1.00);
+@define-color switch_selected_bg_color shade(@theme_bg_color, 1.10);
 
-@define-color switch_slider_color  #545250;
-@define-color switch_slider_border #545250;
+@define-color switch_slider_color  @button_color;
+@define-color switch_slider_border @button_border;
 
 @define-color progressbar_background   #646260;
 @define-color progressbar_pattern      #545250;
@@ -94,32 +102,35 @@
 
 @define-color entry_text_color @theme_text_color;
 
-@define-color entry_background     #545250;
+@define-color entry_background     shade(@theme_bg_color, 1.20);
 @define-color entry_border         @main_border;
 @define-color entry_border_focused #a4a2a0;
 
-@define-color internal_element_color       shade(@button_color, 1.25);
-@define-color internal_element_prelight    @theme_text_color;
-@define-color internal_element_insensitive @theme_text_color;
+@define-color internal_element_color       @theme_fg_color;
+@define-color internal_element_prelight    @theme_fg_color;
+@define-color internal_element_insensitive @theme_fg_color;
 
-@define-color scale_fill @insensitive_border_color;
+@define-color scale_color       shade(@button_color, 1.25);
+@define-color scale_hover_color shade(@button_color, 1.35);
+
+@define-color scale_fill @theme_bg_color;
 @define-color scale_border_a @internal_element_color;
 @define-color scale_border_b shade(@internal_element_color, 1.25);
 @define-color scale_progress_fill #2c85e2;
-@define-color scale_progress_border_a #444240;
-@define-color scale_progress_border_b #444240;
+@define-color scale_progress_border_a @theme_bg_color;
+@define-color scale_progress_border_b @theme_bg_color;
 
-@define-color scrollbar_trough shade(@theme_bg_color, 1.0);
-@define-color scrollbar_color shade(@button_color, 1.5);
-@define-color scrollbar_hover_color  shade(@scrollbar_color, 1.2);
-@define-color scrollbar_active_color shade(@scrollbar_color, 1.4);
+@define-color scrollbar_trough       shade(@theme_bg_color, 1.0);
+@define-color scrollbar_color        shade(@theme_bg_color, 1.75);
+@define-color scrollbar_hover_color  shade(@scrollbar_color, 1.1);
+@define-color scrollbar_active_color shade(@scrollbar_color, 1.2);
 
 @define-color highlighted_border @main_border;
 
 @define-color notebook_border @main_border;
-@define-color notebook_active_tab_border #343230;
+@define-color notebook_active_tab_border @main_border;
 @define-color notebook_active_tab_border @theme_selected_bg_color;
-@define-color notebook_selected_tab_color #444240;
+@define-color notebook_selected_tab_color @theme_bg_color;
 
 @define-color notebook_color @theme_base_color;
 
@@ -129,11 +140,10 @@
 
 @define-color toolbar_color @theme_bg_color;
 
-@define-color toolbar_border_top shade(@theme_bg_color, 1.00);
-@define-color toolbar_border_bottom shade(@theme_bg_color, 1.00);
+@define-color toolbar_border_top @theme_bg_color;
+@define-color toolbar_border_bottom @theme_bg_color;
 
-@define-color toolbar_active_button_color #444240;
-@define-color toolbar_active_button_color red;
+@define-color toolbar_active_button_color @theme_bg_color;
 
 @define-color primary_toolbar_entry_bg @theme_base_color;
 @define-color primary_toolbar_entry_fg @theme_text_color;
@@ -141,30 +151,30 @@
 @define-color treeview_focus_border @progressbar_border_color;
 @define-color treeview_selection_color mix(@theme_selected_bg_color, shade(@theme_base_color, 1.50), 0.50);
 
-@define-color expander_row_selected_color #444240;
+@define-color expander_row_selected_color @theme_bg_color;
 
-@define-color wm_highlight #444240;
-@define-color wm_title_highlight #444240;
+@define-color wm_highlight @theme_bg_color;
+@define-color wm_title_highlight @theme_bg_color;
 
-@define-color wm_bg_a shade(@bg_color, 1.1);
+@define-color wm_bg_a @bg_color;
 @define-color wm_bg_b @bg_color;
 
-@define-color wm_button_bg_a shade(@bg_color, 1.0);
+@define-color wm_button_bg_a shade(@bg_color, 1.00);
 @define-color wm_button_bg_b shade(@bg_color, 0.85);
-@define-color wm_button_bg_c shade(@bg_color, 0.8);
-@define-color wm_button_bg_d shade(@bg_color, 0.9);
+@define-color wm_button_bg_c shade(@bg_color, 0.80);
+@define-color wm_button_bg_d shade(@bg_color, 0.90);
 
-@define-color wm_button_bg_hover_a shade(@wm_button_bg_a, 1.1);
-@define-color wm_button_bg_hover_b shade(@wm_button_bg_b, 1.1);
-@define-color wm_button_bg_hover_c shade(@wm_button_bg_c, 1.1);
-@define-color wm_button_bg_hover_d shade(@wm_button_bg_d, 1.1);
+@define-color wm_button_bg_hover_a shade(@wm_button_bg_a, 1.10);
+@define-color wm_button_bg_hover_b shade(@wm_button_bg_b, 1.10);
+@define-color wm_button_bg_hover_c shade(@wm_button_bg_c, 1.10);
+@define-color wm_button_bg_hover_d shade(@wm_button_bg_d, 1.10);
 
-@define-color wm_button_bg_active_a shade(@bg_color, 0.7);
-@define-color wm_button_bg_active_b shade(@bg_color, 0.9);
-@define-color wm_button_bg_active_c shade(@bg_color, 0.9);
+@define-color wm_button_bg_active_a shade(@bg_color, 0.70);
+@define-color wm_button_bg_active_b shade(@bg_color, 0.90);
+@define-color wm_button_bg_active_c shade(@bg_color, 0.90);
 
-@define-color window_grip    shade(@theme_bg_color, 0.9);
-@define-color separator_grip shade(@theme_bg_color, 0.7);
+@define-color window_grip    shade(@theme_bg_color, 1.00);
+@define-color separator_grip shade(@theme_bg_color, 0.70);
 
 @define-color tooltip_border #000000;
 
