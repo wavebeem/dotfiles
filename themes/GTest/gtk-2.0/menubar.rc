@@ -6,8 +6,8 @@ style "menubar" {
 
     font_name = "Bold"
 
-    bg[NORMAL]     = "#222222"
-    fg[NORMAL]     = "#eeeeee"
+    bg[NORMAL]     = "#bbbbbb"
+    fg[NORMAL]     = "#222222"
 
     fg[PRELIGHT]   = "#eeeeee"
     fg[SELECTED]   = "#eeeeee"
