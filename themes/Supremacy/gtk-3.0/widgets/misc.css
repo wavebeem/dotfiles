@@ -379,12 +379,6 @@ GtkScrolledWindow.frame {
     -unico-inner-stroke-color: alpha(shade(@bg_color, 1.26), 0.6);
 }
 
-.button .separator:insensitive,
-.button.separator:insensitive {
-    border-color: shade(@button_insensitive_bg_color, 0.9);
-    -unico-inner-stroke-color: alpha(shade(@button_insensitive_bg_color, 1.26), 0.6);
-}
-
 .notebook .button .separator,
 .notebook .button.separator {
     border-color: shade(@bg_color, 0.84);

@@ -9,7 +9,7 @@ GtkComboBox,
     background-image: -gtk-gradient(linear, left top, left bottom,
         from(@button_bg_color1),
           to(@button_bg_color2));
-    border-radius: 2;
+    border-radius: 4;
     border-style: solid;
 
     text-shadow: 0 1 alpha(shade(@button_bg_color, 1.25), 0.4);

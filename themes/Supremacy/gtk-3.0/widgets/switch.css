@@ -1,10 +1,13 @@
 GtkSwitch {
-    border-radius: 2;
-    padding: 0;
+    border-radius: 4;
+    padding: 2;
 
     -unico-focus-border-radius: 2;
     -unico-focus-border-color: alpha(@selected_bg_color, 0.3);
     -unico-focus-fill-color: @transparent;
+    -unico-outer-stroke-gradient: -gtk-gradient(linear, left top, left bottom,
+        from(alpha(shade(@bg_color, 1.10), 0.00)),
+          to(alpha(shade(@bg_color, 1.20), 1.00)));
 }
 
 GtkSwitch.trough {
@@ -20,20 +23,21 @@ GtkSwitch.trough {
         from(shade(@bg_color, 0.8)),
         to(alpha(@bg_color, 0.0)));
     -unico-inner-stroke-width: 1;
+    -unico-outer-stroke-width: 1;
 }
 
 GtkSwitch.trough:active {
     background-image: -gtk-gradient(linear, left top, left bottom,
-        from(shade(@selected_bg_color, 0.88)),
-        to(shade(@selected_bg_color, 0.98)));
+        from(alpha(@selected_bg_color, 0.30)),
+          to(alpha(@selected_bg_color, 0.40)));
 
     color: @selected_fg_color;
     text-shadow: 0 -1 shade(@selected_bg_color, 0.7);
 
-    border-color: shade(@selected_bg_color, 0.7);
+    border-color: shade(@selected_bg_color, 0.50);
     -unico-inner-stroke-gradient: -gtk-gradient(linear, left top, left bottom,
-        from(shade(@selected_bg_color, 0.8)),
-        to(alpha(@selected_bg_color, 0.0)));
+        from(alpha(white, 0.10)),
+          to(alpha(white, 0.00)));
 }
 
 GtkSwitch.trough:insensitive {
@@ -54,17 +58,17 @@ GtkSwitch.trough:insensitive {
 
 GtkSwitch.slider {
     background-image: -gtk-gradient(linear, left top, left bottom,
-        from(shade(@button_bg_color, 1.2)),
-        to(shade(@button_bg_color, 1.04)));
+        from(@button_bg_color1),
+          to(@button_bg_color2));
 
     -unico-border-gradient: -gtk-gradient(linear, left top, left bottom,
         from(shade(@button_bg_color, 0.7)),
-        to(shade(@button_bg_color, 0.7)));
+          to(shade(@button_bg_color, 0.7)));
     -unico-inner-stroke-gradient: -gtk-gradient(linear, left top, left bottom,
-        from(shade(@button_bg_color, 1.66)),
-        to(shade(@button_bg_color, 1.415)));
+        from(shade(@button_bg_color1, 1.15)),
+          to(shade(@button_bg_color2, 1.00)));
     -unico-inner-stroke-width: 1 1 0 1;
-    -unico-outer-stroke-width: 0;
+    -unico-outer-stroke-width: 1;
 }
 
 GtkSwitch.slider:insensitive {
