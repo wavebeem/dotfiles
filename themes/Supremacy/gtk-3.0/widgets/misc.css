@@ -14,6 +14,7 @@
     -GtkExpander-expander-size: 8;
     -GtkHTML-link-color: @link_color;
     -GtkIMHtml-hyperlink-color: @link_color;
+    -GtkMenu-horizontal-offset: 3;
     -GtkMenu-horizontal-padding: 0;
     -GtkMenu-vertical-padding: 0;
     -GtkMenuBar-internal-padding: 0;
