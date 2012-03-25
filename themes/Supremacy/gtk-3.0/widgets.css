@@ -301,7 +301,7 @@ GtkScale.slider:hover,
           to(shade(@button_insensitive_bg_color, 0.98)));
 }
 
-GtkComboBox.combobox-entry .button,
+/* GtkComboBox.combobox-entry .button, */
 GtkScale.slider,
 GtkScale.slider.vertical,
 .notebook .button,
@@ -328,7 +328,7 @@ GtkScale.slider.vertical,
 
 }
 
-GtkComboBox.combobox-entry .button:hover,
+/* GtkComboBox.combobox-entry .button:hover, */
 GtkScale.slider:hover,
 GtkScale.slider.vertical:hover,
 .notebook .button:hover,
@@ -349,7 +349,7 @@ GtkScale.slider.vertical:hover,
           to(shade(@bg_color, 1.02)));
 }
 
-GtkComboBox.combobox-entry .button:active,
+/* GtkComboBox.combobox-entry .button:active, */
 .notebook .button:active,
 .inline-toolbar.toolbar .button:active {
     background-image: -gtk-gradient(linear, left top, left bottom,
@@ -366,7 +366,7 @@ GtkComboBox.combobox-entry .button:active,
           to(shade(@bg_color, 0.9)));
 }
 
-GtkComboBox.combobox-entry .button:active:hover,
+/* GtkComboBox.combobox-entry .button:active:hover, */
 .notebook .button:active:hover,
 .inline-toolbar.toolbar .button:active:hover {
     background-image: -gtk-gradient(linear, left top, left bottom,
@@ -383,7 +383,7 @@ GtkComboBox.combobox-entry .button:active:hover,
           to(shade(@bg_color, 0.94)));
 }
 
-GtkComboBox.combobox-entry .button:insensitive,
+/* GtkComboBox.combobox-entry .button:insensitive, */
 .notebook .button:insensitive,
 .inline-toolbar.toolbar .button:insensitive {
     background-image: -gtk-gradient(linear, left top, left bottom,
@@ -398,6 +398,24 @@ GtkComboBox.combobox-entry .button:insensitive,
     -unico-inner-stroke-gradient: -gtk-gradient(linear, left top, left bottom,
         from(shade(@bg_color, 1.1)),
           to(shade(@bg_color, 1.0)));
+}
+
+GtkComboBox.combobox-entry .button {
+    background-image: none;
+    background-color: @transparent;
+    border-width: 0;
+    -unico-inner-stroke-width: 1;
+    -unico-outer-stroke-width: 1;
+    -unico-inner-stroke-gradient: -gtk-gradient(linear, left top, left bottom,
+        from(shade(@base_color, 1.1)),
+          to(shade(@base_color, 1.1)));
+}
+
+
+GtkComboBox.combobox-entry .button:hover {
+    -unico-inner-stroke-gradient: -gtk-gradient(linear, left top, left bottom,
+        from(shade(@base_color, 1.3)),
+          to(shade(@base_color, 1.3)));
 }
 
 /* default button */
@@ -659,16 +677,14 @@ column-header .button:active,
 column-header .button,
 .notebook column-header .button {
     background-image: -gtk-gradient(linear, left top, left bottom,
-        from(shade(@button_bg_color, 1.1)),
-        color-stop(0.50, shade(@button_bg_color, 0.98)),
-        color-stop(0.49, shade(@button_bg_color, 1.02)),
-        to(shade(@button_bg_color, 1.04)));
-    border-width: 0;
+        from(shade(@base_color, 1.00)),
+          to(shade(@base_color, 1.10)));
+    border-width: 0 1 1 0;
     text-shadow: 0 1 alpha(shade(@bg_color, 1.25), 0.4);
 
     -unico-glow-color: shade(@bg_color, 1.02);
     -unico-inner-stroke-gradient: -gtk-gradient(linear, left top, left bottom,
-        from(shade(@bg_color, 1.2)),
+        from(shade(@bg_color, 1.20)),
           to(shade(@bg_color, 0.98)));
     -unico-inner-stroke-width: 1 0 1 0;
 }
@@ -689,7 +705,7 @@ column-header .button:hover,
 }
 
 column-header:nth-child(last) .button {
-    border-width: 0;
+    border-right-width: 0;
 }
 
 /******************
@@ -1007,7 +1023,7 @@ GtkIconView.view.cell:selected:focused {
     border-style: solid;
     color: @fg_color;
     background-image: -gtk-gradient(linear, left top, left bottom,
-        from(shade(@bg_color, 1.70)),
+        from(shade(@bg_color, 1.60)),
           to(shade(@bg_color, 1.60)));
     -unico-bullet-color: @dark_fg_color;
 }
@@ -1065,10 +1081,10 @@ GtkIconView.view.cell:selected:focused {
 
     -unico-border-gradient: -gtk-gradient(linear, left top, left bottom,
         from(shade(@bg_color, 0.75)),
-        to(shade(@bg_color, 0.9)));
+          to(shade(@bg_color, 0.90)));
     -unico-outer-stroke-gradient: -gtk-gradient(linear, left top, left bottom,
         from(shade(@bg_color, 0.98)),
-        to(shade(@bg_color, 1.1)));
+          to(shade(@bg_color, 1.10)));
 }
 
 .menuitem GtkScale.trough {
@@ -1115,8 +1131,8 @@ GtkIconView.view.cell:selected:focused {
 
 .notebook tab {
     background-image: -gtk-gradient(linear, left top, left bottom,
-        from(shade(@bg_color, 1.00)),
-          to(shade(@bg_color, 0.95)));
+        from(shade(@bg_color, 1.30)),
+          to(shade(@bg_color, 1.25)));
     padding: 2 2 0 2;
 
     border-width: 1;
@@ -1131,9 +1147,8 @@ GtkIconView.view.cell:selected:focused {
 }
 
 .notebook tab:active {
-    background-image: -gtk-gradient(linear, left top, left bottom,
-        from(shade(@bg_color, 1.10)),
-          to(shade(@bg_color, 0.95)));
+    background-color: @transparent;
+    background-image: none;
 
     -unico-border-gradient: -gtk-gradient(linear, left top, left bottom,
         from(alpha(black, 0.20)),
@@ -1166,7 +1181,7 @@ GtkScale,
 GtkProgressBar {
     border-radius: 0;
     border-width: 1;
-    padding: 0;
+    padding: 1;
 }
 
 .progressbar,
@@ -1176,17 +1191,15 @@ GtkProgressBar {
 .progressbar row:selected:focused {
     background-image: -gtk-gradient(linear, left top, left bottom,
         from(shade(@selected_bg_color, 1.08)),
-        color-stop(0.50, shade(@selected_bg_color, 0.98)),
-        color-stop(0.49, shade(@selected_bg_color, 1.08)),
-        to(shade(@selected_bg_color, 1.04)));
+          to(shade(@selected_bg_color, 1.04)));
     border-width: 1;
 
     -unico-border-gradient: -gtk-gradient(linear, left top, left bottom,
-        from(shade(@selected_bg_color, 0.8)),
-        to(shade(@selected_bg_color, 0.8)));
+        from(shade(@selected_bg_color, 1.0)),
+          to(shade(@selected_bg_color, 1.0)));
     -unico-inner-stroke-gradient: -gtk-gradient(linear, left top, left bottom,
         from(shade(@selected_bg_color, 1.2)),
-        to(shade(@selected_bg_color, 1.1)));
+          to(shade(@selected_bg_color, 1.1)));
     -unico-inner-stroke-width: 1 1 0 1;
     -unico-outer-stroke-width: 0;
 }
@@ -1198,17 +1211,15 @@ GtkProgressBar {
 .progressbar.vertical row:selected:focused {
     background-image: -gtk-gradient(linear, left top, right top,
         from(shade(@selected_bg_color, 1.08)),
-        color-stop(0.50, shade(@selected_bg_color, 0.98)),
-        color-stop(0.49, shade(@selected_bg_color, 1.08)),
-        to(shade(@selected_bg_color, 0.98)));
+          to(shade(@selected_bg_color, 0.98)));
     border-width: 1;
 
     -unico-border-gradient: -gtk-gradient(linear, left top, right top,
-        from(shade(@selected_bg_color, 0.8)),
-        to(shade(@selected_bg_color, 0.8)));
+        from(shade(@selected_bg_color, 1.0)),
+          to(shade(@selected_bg_color, 1.0)));
     -unico-inner-stroke-gradient: -gtk-gradient(linear, left top, right top,
         from(shade(@selected_bg_color, 1.2)),
-        to(shade(@selected_bg_color, 1.1)));
+          to(shade(@selected_bg_color, 1.1)));
     -unico-inner-stroke-width: 1 0 1 1;
     -unico-outer-stroke-width: 0;
 }
@@ -1219,8 +1230,8 @@ GtkProgressBar {
 .trough row:selected,
 .trough row:selected:focused {
     background-image: -gtk-gradient(linear, left top, left bottom,
-        from(shade(@bg_color, 0.88)),
-        to(shade(@bg_color, 0.98)));
+        from(shade(@bg_color, 0.95)),
+          to(shade(@bg_color, 1.00)));
     border-width: 1;
     border-style: solid;
     border-color: shade(@bg_color, 0.8);
@@ -1231,8 +1242,8 @@ GtkProgressBar {
 
 .trough.vertical {
     background-image: -gtk-gradient(linear, left top, right top,
-        from(shade(@bg_color, 0.88)),
-        to(shade(@bg_color, 0.98)));
+        from(shade(@bg_color, 0.95)),
+          to(shade(@bg_color, 1.00)));
     border-width: 1;
     border-style: solid;
     border-color: shade(@bg_color, 0.8);
@@ -1435,11 +1446,11 @@ GtkScrolledWindow.frame {
 .notebook .spinbutton.button {
     background-image: -gtk-gradient(linear, left top, left bottom,
         from(shade(@bg_color, 1.1)),
-        to(shade(@bg_color, 0.9)));
+          to(shade(@bg_color, 0.9)));
 
     -unico-border-gradient: -gtk-gradient(linear, left top, left bottom,
         from(shade(@bg_color, 0.65)),
-        to(shade(@bg_color, 0.7)));
+          to(shade(@bg_color, 0.70)));
 }
 
 .spinbutton,
