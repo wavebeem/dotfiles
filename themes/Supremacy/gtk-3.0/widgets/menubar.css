@@ -1,0 +1,35 @@
+.menubar {
+    -GtkWidget-window-dragging: true;
+    color: @fg_color;
+    text-shadow: 0 1 alpha(shade(@button_bg_color, 1.25), 0.4);
+    background-image: none;
+    background-color: @bg_color;
+    border-width: 0 0 1 0;
+    border-color: shade(@bg_color, 0.85);
+    -unico-inner-stroke-width: 0 0 1 0;
+    -unico-inner-stroke-color: shade(@bg_color, 1.10);
+}
+
+.menubar.menuitem,
+.menubar .menuitem {
+    border-width: 1;
+    color: @fg_color;
+    padding:       4;
+    padding-left:  8;
+    padding-right: 8;
+}
+
+.menubar.menuitem:hover,
+.menubar .menuitem *:hover {
+    color: @fg_color;
+    text-shadow: none;
+    border-width: 4;
+    border-radius: 6;
+    border-style: solid;
+    background-image: -gtk-gradient(linear, left top, left bottom,
+        from(shade(@bg_color, 1.70)),
+          to(shade(@bg_color, 1.60)));
+    border-color: @transparent;
+    -unico-inner-stroke-width: 0;
+    color: @selected_fg_color;
+}

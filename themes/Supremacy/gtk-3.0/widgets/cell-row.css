@@ -1,0 +1,32 @@
+.cell {
+    border-radius: 0;
+    border-width: 0;
+}
+
+.cell:selected {
+}
+
+row:hover {
+    background-color: shade(@base_color, 1.1);
+}
+
+row:insensitive {
+}
+
+row:selected:focused {
+    border-width: 1 0 0 0;
+    border-style: solid;
+    border-color: @selected_bg_color;
+    background-image: -gtk-gradient(linear,left top, left bottom,
+        from(shade(@selected_bg_color, 1.08)),
+          to(shade(@selected_bg_color, 0.98)));
+}
+
+row:selected {
+    border-width: 1 0 0 0;
+    border-style: solid;
+    border-color: @selected_bg_color;
+    background-image: -gtk-gradient(linear,left top, left bottom,
+        from(shade(@selected_bg_color, 1.08)),
+          to(shade(@selected_bg_color, 0.98)));
+}

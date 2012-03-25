@@ -49,7 +49,25 @@
 
 @define-color menubar_color shade(@bg_color, 0.5);
 
-@import url("widgets.css");
+@import url("widgets/misc.css");
+@import url("widgets/button.css");
+@import url("widgets/cell-row.css");
+@import url("widgets/radio-check.css");
+@import url("widgets/column-header.css");
+@import url("widgets/combobox-entry.css");
+@import url("widgets/entry.css");
+@import url("widgets/menu.css");
+@import url("widgets/menubar.css");
+@import url("widgets/menu-item.css");
+@import url("widgets/notebook.css");
+@import url("widgets/progressbar.css");
+@import url("widgets/scale.css");
+@import url("widgets/scrollbar.css");
+@import url("widgets/spinbutton.css");
+@import url("widgets/switch.css");
+@import url("widgets/toolbar.css");
+@import url("widgets/treeview.css");
+
 @import url("apps/gnome-panel.css");
 @import url("apps/gnome-applications.css");
 @import url("apps/nautilus.css");

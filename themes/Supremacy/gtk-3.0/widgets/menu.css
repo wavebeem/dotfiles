@@ -1,0 +1,33 @@
+.menu {
+    padding: 3;
+    background-image: none;
+    background-color: shade(@bg_color, 0.50);
+    color: @fg_color;
+    border-width: 3;
+    border-style: solid;
+    border-color: shade(@bg_color, 0.75);
+
+    -unico-inner-stroke-color: shade(@bg_color, 1.25);
+    -unico-inner-stroke-width: 0;
+}
+
+.menu:selected {
+    background-color: @selected_bg_color;
+}
+
+.menu.button:hover,
+.menu.button:active,
+.menu.button:active:insensitive,
+.menu.button:insensitive,
+.menu.button {
+    background-color: shade(@bg_color, 1.08);
+    background-image: none;
+    border-radius: 0;
+    border-style: none;
+    border-width: 1;
+
+    -unico-border-gradient: none;
+    -unico-glow-radius: 0;
+    -unico-inner-stroke-width: 0;
+    -unico-outer-stroke-width: 0;
+}

@@ -1,0 +1,17 @@
+GtkTreeView .entry {
+    background-image: none;
+    border-radius: 0;
+
+    -unico-inner-stroke-gradient: none;
+    -unico-inner-stroke-width: 1;
+}
+
+GtkTreeView row:nth-child(even),
+GtkTreeView row:nth-child(even):hover {
+    background-color: shade(@base_color, 1.0);
+}
+
+GtkTreeView row:nth-child(odd),
+GtkTreeView row:nth-child(odd):hover {
+    background-color: shade(@base_color, 1.00);
+}

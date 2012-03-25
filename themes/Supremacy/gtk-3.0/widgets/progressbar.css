@@ -1,0 +1,45 @@
+GtkProgressBar {
+    border-radius: 0;
+    border-width: 1;
+    padding: 1;
+}
+
+.progressbar,
+.progressbar row,
+.progressbar row:hover,
+.progressbar row:selected,
+.progressbar row:selected:focused {
+    background-image: -gtk-gradient(linear, left top, left bottom,
+        from(shade(@selected_bg_color, 1.08)),
+          to(shade(@selected_bg_color, 1.04)));
+    border-width: 1;
+
+    -unico-border-gradient: -gtk-gradient(linear, left top, left bottom,
+        from(shade(@selected_bg_color, 1.0)),
+          to(shade(@selected_bg_color, 1.0)));
+    -unico-inner-stroke-gradient: -gtk-gradient(linear, left top, left bottom,
+        from(shade(@selected_bg_color, 1.2)),
+          to(shade(@selected_bg_color, 1.1)));
+    -unico-inner-stroke-width: 1 1 0 1;
+    -unico-outer-stroke-width: 0;
+}
+
+.progressbar.vertical,
+.progressbar.vertical row,
+.progressbar.vertical row:hover,
+.progressbar.vertical row:selected,
+.progressbar.vertical row:selected:focused {
+    background-image: -gtk-gradient(linear, left top, right top,
+        from(shade(@selected_bg_color, 1.08)),
+          to(shade(@selected_bg_color, 0.98)));
+    border-width: 1;
+
+    -unico-border-gradient: -gtk-gradient(linear, left top, right top,
+        from(shade(@selected_bg_color, 1.0)),
+          to(shade(@selected_bg_color, 1.0)));
+    -unico-inner-stroke-gradient: -gtk-gradient(linear, left top, right top,
+        from(shade(@selected_bg_color, 1.2)),
+          to(shade(@selected_bg_color, 1.1)));
+    -unico-inner-stroke-width: 1 0 1 1;
+    -unico-outer-stroke-width: 0;
+}

@@ -1,0 +1,30 @@
+.spinbutton.button:active,
+.spinbutton.button:insensitive,
+.notebook .spinbutton.button:active,
+.notebook .spinbutton.button:insensitive,
+.spinbutton.button,
+.notebook .spinbutton.button {
+    -unico-outer-stroke-width: 1 1 1 0;
+}
+
+.spinbutton.button,
+.notebook .spinbutton.button {
+    background-image: -gtk-gradient(linear, left top, left bottom,
+        from(shade(@bg_color, 1.1)),
+          to(shade(@bg_color, 0.9)));
+
+    -unico-border-gradient: -gtk-gradient(linear, left top, left bottom,
+        from(shade(@bg_color, 0.65)),
+          to(shade(@bg_color, 0.70)));
+}
+
+.spinbutton,
+.spinbutton:hover {
+    color: @fg_color;
+}
+
+.menu.spinner,
+.primary-toolbar .toolbar .spinner,
+.primary-toolbar.toolbar .spinner {
+    color: @selected_bg_color;
+}

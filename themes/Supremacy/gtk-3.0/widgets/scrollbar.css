@@ -1,0 +1,62 @@
+.scrollbar {
+    background-image: none;
+    border-style: solid;
+    -GtkRange-trough-border: 4;
+    -GtkRange-arrow-scaling: 0.444;
+    -GtkRange-slider-width: 7;
+    -GtkRange-stepper-size: 0;
+    -GtkScrollbar-min-slider-length: 30;
+    -GtkRange-stepper-spacing: 0;
+    -GtkRange-trough-under-steppers: 1;
+}
+
+/* Trough */
+.scrollbar.trough {
+    background-image: none;
+    background-color: @transparent;
+    border-width: 0;
+    -unico-inner-stroke-width: 0;
+}
+
+/* Sliders and buttons */
+.scrollbar.slider,
+.scrollbar.button {
+    background-image: none;
+    background-color: alpha(black, 0.5);
+    border-color:     alpha(white, 0.1);
+
+    border-radius: 2;
+    border-width: 1;
+}
+
+.scrollbar.slider:prelight {
+    background-color: alpha(black, 0.6);
+    border-color:     alpha(white, 0.2);
+}
+
+.scrollbar.slider:prelight:active {
+    background-color: alpha(black, 0.7);
+    border-color:     alpha(white, 0.3);
+}
+
+.scrollbar.slider:insensitive {
+    background-color: alpha(black, 0.25);
+    border-color:     alpha(white, 0.05);
+}
+
+
+/* overlay scrollbar */
+OsThumb:selected,
+OsScrollbar:selected {
+    background-color: @selected_bg_color;
+}
+
+OsThumb:active,
+OsScrollbar:active {
+    background-color: shade(@bg_color, 0.6);
+}
+
+OsThumb:insensitive,
+OsScrollbar:insensitive {
+    background-color: shade(@bg_color, 0.85);
+}

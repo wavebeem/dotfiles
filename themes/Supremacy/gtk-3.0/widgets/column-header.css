@@ -1,0 +1,55 @@
+column-header .button,
+column-header .button:active,
+.notebook column-header .button,
+.notebook column-header .button:active {
+    -GtkButton-inner-border: 0;
+    background-image: -gtk-gradient(linear,left top, left bottom,
+        from(shade(@button_bg_color, 1.1)),
+        color-stop(0.50, shade(@button_bg_color, 0.98)),
+        color-stop(0.49, shade(@button_bg_color, 1.02)),
+        to(shade(@button_bg_color, 1.04)));
+    border-radius: 0;
+    border-width: 0;
+
+    -unico-focus-border-radius: 0;
+    -unico-focus-border-color: @transparent;
+    -unico-focus-fill-color: alpha(@selected_bg_color, 0.2);
+    -unico-focus-outer-stroke-color: @transparent;
+
+    -unico-glow-radius: 0;
+    -unico-outer-stroke-width: 0;
+}
+
+column-header .button,
+.notebook column-header .button {
+    background-image: -gtk-gradient(linear, left top, left bottom,
+        from(shade(@base_color, 1.00)),
+          to(shade(@base_color, 1.10)));
+    border-width: 0 1 1 0;
+    text-shadow: 0 1 alpha(shade(@bg_color, 1.25), 0.4);
+
+    -unico-glow-color: shade(@bg_color, 1.02);
+    -unico-inner-stroke-gradient: -gtk-gradient(linear, left top, left bottom,
+        from(shade(@bg_color, 1.20)),
+          to(shade(@bg_color, 0.98)));
+    -unico-inner-stroke-width: 1 0 1 0;
+}
+
+column-header .button:hover,
+.notebook column-header .button:hover {
+    transition: none;
+    background-image: -gtk-gradient(linear, left top, left bottom,
+        from(shade(@button_bg_color, 1.18)),
+        color-stop(0.50, shade(@button_bg_color, 1.06)),
+        color-stop(0.49, shade(@button_bg_color, 1.12)),
+        to(shade(@button_bg_color, 1.16)));
+
+    -unico-inner-stroke-gradient: -gtk-gradient(linear, left top, left bottom,
+        from(shade(@bg_color, 1.2)),
+          to(shade(@selected_bg_color, 0.98)));
+    -unico-inner-stroke-width: 1;
+}
+
+column-header:nth-child(last) .button {
+    border-right-width: 0;
+}

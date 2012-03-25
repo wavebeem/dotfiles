@@ -1,0 +1,47 @@
+.notebook {
+    background-color: @transparent;
+    background-image: none;
+    border-radius: 2;
+    padding: 1;
+
+    border-width: 1;
+    -unico-border-gradient: -gtk-gradient(linear, left top, left bottom,
+        from(alpha(black, 0.20)),
+          to(alpha(black, 0.20)));
+
+    -unico-inner-stroke-color: alpha(white, 0.05);
+    -unico-inner-stroke-width: 1;
+    -unico-outer-stroke-width: 1;
+    -unico-inner-stroke-gradient: none;
+}
+
+.notebook tab {
+    background-image: -gtk-gradient(linear, left top, left bottom,
+        from(shade(@bg_color, 1.30)),
+          to(shade(@bg_color, 1.25)));
+    padding: 2 2 0 2;
+
+    border-width: 1;
+
+    -unico-border-gradient: -gtk-gradient(linear, left top, left bottom,
+        from(alpha(black, 0.20)),
+          to(alpha(black, 0.20)));
+    -unico-inner-stroke-color: alpha(shade(@bg_color, 1.15), 0.34);
+    -unico-inner-stroke-width: 1;
+    -unico-outer-stroke-color: @transparent;
+    -unico-outer-stroke-width: 1;
+}
+
+.notebook tab:active {
+    background-color: @transparent;
+    background-image: none;
+
+    -unico-border-gradient: -gtk-gradient(linear, left top, left bottom,
+        from(alpha(black, 0.20)),
+          to(alpha(black, 0.20)));
+    -unico-inner-stroke-color: alpha(shade(@bg_color, 1.28), 0.34);
+}
+
+.notebook tab .button {
+    padding: 0;
+}
