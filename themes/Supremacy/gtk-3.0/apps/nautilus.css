@@ -5,12 +5,12 @@ NautilusWindow * {
 /* desktop mode */
 .nautilus-desktop.nautilus-canvas-item {
 	color: @bg_color;
-	text-shadow: 1 1 alpha (black, 0.8);
+	text-shadow: 1 1 alpha(black, 0.8);
 }
 
 .nautilus-desktop.nautilus-canvas-item:active {
 	background-image: none;
-	background-color: alpha (@bg_color, 0.84);
+	background-color: alpha(@bg_color, 0.84);
 	border-radius: 2;
 
 	color: @fg_color;
@@ -60,21 +60,23 @@ NautilusFloatingBar {
 	border-radius: 4 4 0 0;
 	border-style: solid;
 	border-width: 1 1 0 1;
-	border-color: alpha(white, 0.15);
+	border-color: alpha(white, 0.05);
         color: white;
 
-	-unico-border-gradient: none;
+	-unico-border-gradient: -gtk-gradient(linear, left top, right bottom,
+            from(alpha(white, 0.20)),
+              to(alpha(white, 0.00)));
 }
 
 NautilusFloatingBar .button {
-	background-color: alpha (@base_color, 0.0);
+	background-color: alpha(@base_color, 0.0);
 	background-image: none;
 
 	border-style: none;
 	border-image: none;
 
 	-GtkButton-image-spacing: 0;
-	-GtkButton-inner-border: 0;
+	-GtkButton-inner-border:  0;
 }
 
 /* sidebar */
