@@ -421,7 +421,8 @@ GtkStatusbar {
  * tooltip *
  ***********/
 .tooltip {
-    border-color: shade(@tooltip_bg_color, 0.7);
+    border-color: shade(@bg_color, 0.75);
+    border-width: 3;
 }
 
 /************
