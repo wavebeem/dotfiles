@@ -19,7 +19,7 @@
     text-shadow: 0 1 shade(@bg_color, 1.1);
 
     -unico-border-gradient: none;
-    -unico-inner-stroke-color: shade(@bg_color, 1.15);
+    -unico-inner-stroke-color: shade(@bg_color, 1.10);
     -unico-inner-stroke-width: 0 0 1 0;
 }
 

@@ -4,9 +4,9 @@
     text-shadow: 0 1 alpha(shade(@button_bg_color, 1.25), 0.4);
     background-image: none;
     background-color: @bg_color;
-    border-width: 0 0 1 0;
+    border-width: 0 0 0 0;
     border-color: shade(@bg_color, 0.85);
-    -unico-inner-stroke-width: 0 0 1 0;
+    -unico-inner-stroke-width: 0 0 0 0;
     -unico-inner-stroke-color: shade(@bg_color, 1.10);
 }
 

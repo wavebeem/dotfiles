@@ -33,16 +33,19 @@ GtkProgressBar {
 .progressbar.vertical row:selected,
 .progressbar.vertical row:selected:focused {
     background-image: -gtk-gradient(linear, left top, right top,
-        from(shade(@selected_bg_color, 1.08)),
-          to(shade(@selected_bg_color, 0.98)));
+        from(shade(@selected_bg_color, 1.00)),
+          to(shade(@selected_bg_color, 1.00)));
     border-width: 1;
 
     -unico-border-gradient: -gtk-gradient(linear, left top, right top,
-        from(shade(@selected_bg_color, 1.0)),
-          to(shade(@selected_bg_color, 1.0)));
+        from(shade(@selected_bg_color, 0.90)),
+          to(shade(@selected_bg_color, 0.90)));
     -unico-inner-stroke-gradient: -gtk-gradient(linear, left top, right top,
-        from(shade(@selected_bg_color, 1.2)),
-          to(shade(@selected_bg_color, 1.1)));
-    -unico-inner-stroke-width: 1 0 1 1;
-    -unico-outer-stroke-width: 0;
+        from(shade(@selected_bg_color, 1.20)),
+          to(shade(@selected_bg_color, 1.20)));
+    -unico-outer-stroke-gradient: -gtk-gradient(linear, left top, right top,
+        from(shade(@selected_bg_color, 1.00)),
+          to(shade(@selected_bg_color, 1.00)));
+    -unico-inner-stroke-width: 1 1 1 0;
+    -unico-outer-stroke-width: 1;
 }

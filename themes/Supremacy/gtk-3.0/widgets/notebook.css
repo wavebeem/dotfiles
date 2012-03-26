@@ -9,10 +9,12 @@
         from(alpha(black, 0.20)),
           to(alpha(black, 0.20)));
 
+    -unico-inner-stroke-gradient: none;
     -unico-inner-stroke-color: alpha(white, 0.05);
+    -unico-outer-stroke-gradient: none;
+    -unico-outer-stroke-color: alpha(white, 0.05);
     -unico-inner-stroke-width: 1;
     -unico-outer-stroke-width: 1;
-    -unico-inner-stroke-gradient: none;
 }
 
 .notebook tab {

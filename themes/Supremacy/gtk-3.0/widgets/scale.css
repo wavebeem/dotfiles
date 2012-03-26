@@ -21,14 +21,20 @@
     border-width: 1;
     border-style: solid;
     border-color: shade(@bg_color, 0.8);
-    -unico-outer-stroke-width: 0;
-    -unico-inner-stroke-width: 0 0 0 1;
+    -unico-outer-stroke-width: 0 0 0 0;
+    -unico-inner-stroke-width: 0 0 0 0;
 }
 
 GtkScale.trough,
 GtkProgressBar.trough {
     -unico-outer-stroke-width: 0 1 1 1;
+    -unico-inner-stroke-width: 0;
     -unico-outer-stroke-color: alpha(white, 0.07);
+}
+
+GtkProgressBar.trough.vertical {
+    -unico-inner-stroke-width: 0;
+    -unico-outer-stroke-width: 1 1 1 0;
 }
 
 GtkScale.trough {
