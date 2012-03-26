@@ -41,8 +41,7 @@
 .radio row:selected:focused:active {
     background-image: -gtk-gradient(linear, left top, left bottom,
         from(shade(@selected_bg_color, 1.2)),
-        color-stop(0.5, shade(@selected_bg_color, 1.0)),
-        to(shade(@selected_bg_color, 0.9)));
+          to(shade(@selected_bg_color, 0.9)));
 
     -unico-bullet-color: shade(@selected_bg_color, 0.535);
     -unico-bullet-outline-color: shade(@selected_bg_color, 1.2);
@@ -69,8 +68,7 @@
 .radio row:selected:focused:active:hover {
     background-image: -gtk-gradient(linear, left top, left bottom,
         from(shade(@selected_bg_color, 1.26)),
-        color-stop(0.5, shade(@selected_bg_color, 1.05)),
-        to(shade(@selected_bg_color, 0.95)));
+          to(shade(@selected_bg_color, 0.95)));
 
     -unico-bullet-color: shade(@selected_bg_color, 0.56);
     -unico-bullet-outline-color: shade(@selected_bg_color, 1.26);

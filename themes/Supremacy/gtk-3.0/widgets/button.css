@@ -34,9 +34,7 @@ GtkScale.slider:hover,
 .button:hover {
     background-image: -gtk-gradient(linear, left top, left bottom,
         from(shade(@button_bg_color, 1.28)),
-        color-stop(0.50, shade(@button_bg_color, 1.06)),
-        color-stop(0.49, shade(@button_bg_color, 1.12)),
-        to(shade(@button_bg_color, 1.16)));
+          to(shade(@button_bg_color, 1.16)));
 
     -unico-border-gradient: -gtk-gradient(linear, left top, left bottom,
         from(shade(@button_bg_color, 0.8)),
@@ -106,9 +104,7 @@ GtkScale.slider.vertical,
 .inline-toolbar.toolbar .button {
     background-image: -gtk-gradient(linear, left top, left bottom,
         from(shade(@button_bg_color, 1.2)),
-        color-stop(0.50, shade(@button_bg_color, 1.04)),
-        color-stop(0.49, shade(@button_bg_color, 1.1)),
-        to(shade(@button_bg_color, 1.04)));
+          to(shade(@button_bg_color, 1.04)));
     border-top-color: shade(@bg_color, 0.82);
     border-right-color: shade(@bg_color, 0.78);
     border-bottom-color: shade(@bg_color, 0.64);
@@ -133,9 +129,7 @@ GtkScale.slider.vertical:hover,
 .inline-toolbar.toolbar .button:hover {
     background-image: -gtk-gradient(linear, left top, left bottom,
         from(shade(@button_bg_color, 1.26)),
-        color-stop(0.50, shade(@button_bg_color, 1.1)),
-        color-stop(0.49, shade(@button_bg_color, 1.14)),
-        to(shade(@button_bg_color, 1.1)));
+          to(shade(@button_bg_color, 1.1)));
     border-top-color:    shade(@bg_color, 0.85);
     border-right-color:  shade(@bg_color, 0.82);
     border-bottom-color: shade(@bg_color, 0.67);
@@ -220,9 +214,7 @@ GtkComboBox.combobox-entry .button:hover {
 .button.default {
     background-image: -gtk-gradient(linear, left top, left bottom,
         from(mix(shade(@selected_bg_color, 1.29), @bg_color, 0.3)),
-        color-stop(0.50, mix(shade(@selected_bg_color, 0.94), @bg_color, 0.3)),
-        color-stop(0.49, mix(shade(@selected_bg_color, 1.06), @bg_color, 0.3)),
-        to(mix(shade(@selected_bg_color, 1.0), @bg_color, 0.3)));
+          to(mix(shade(@selected_bg_color, 1.0), @bg_color, 0.3)));
 
     text-shadow: 0 1 alpha(shade(@selected_bg_color, 1.26), 0.4);
 
@@ -242,9 +234,7 @@ GtkComboBox.combobox-entry .button:hover {
 .button.default:hover {
     background-image: -gtk-gradient(linear, left top, left bottom,
         from(mix(shade(@selected_bg_color, 1.37), @bg_color, 0.3)),
-        color-stop(0.50, mix(shade(@selected_bg_color, 1.02), @bg_color, 0.3)),
-        color-stop(0.49, mix(shade(@selected_bg_color, 1.14), @bg_color, 0.3)),
-        to(mix(shade(@selected_bg_color, 1.08), @bg_color, 0.3)));
+          to(mix(shade(@selected_bg_color, 1.08), @bg_color, 0.3)));
 
     -unico-border-gradient: -gtk-gradient(linear, left top, left bottom,
         from(mix(shade(@selected_bg_color, 0.70), @bg_color, 0.3)),

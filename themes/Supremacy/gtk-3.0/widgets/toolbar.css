@@ -80,7 +80,7 @@
     -unico-inner-stroke-width: 1;
     -unico-outer-stroke-gradient: -gtk-gradient(linear, left top, left bottom,
         from(alpha(shade(@bg_color, 1.2), 0.25)),
-        to(alpha(shade(@bg_color, 1.4), 0.75)));
+          to(alpha(shade(@bg_color, 1.4), 0.75)));
 }
 
 .primary-toolbar GtkComboBox.combobox-entry .button,
@@ -89,10 +89,8 @@
 .primary-toolbar .toolbar .raised.button,
 .primary-toolbar.toolbar .raised.button {
     background-image: -gtk-gradient(linear, left top, left bottom,
-        from(shade(@button_bg_color, 1.2)),
-        color-stop(0.50, shade(@button_bg_color, 0.98)),
-        color-stop(0.49, shade(@button_bg_color, 1.04)),
-        to(shade(@button_bg_color, 1.08)));
+        from(shade(@button_bg_color, 1.20)),
+          to(shade(@button_bg_color, 1.08)));
     color: @fg_color;
     -unico-inner-stroke-width: 1 1 0 1;
 }
@@ -103,9 +101,7 @@
 .primary-toolbar.toolbar .raised.button:hover {
     background-image: -gtk-gradient(linear, left top, left bottom,
         from(shade(@button_bg_color, 1.28)),
-        color-stop(0.50, shade(@button_bg_color, 1.06)),
-        color-stop(0.49, shade(@button_bg_color, 1.12)),
-        to(shade(@button_bg_color, 1.16)));
+          to(shade(@button_bg_color, 1.16)));
 }
 
 .primary-toolbar .toolbar raised.button:active,
@@ -257,9 +253,7 @@
 .inline-toolbar.toolbar .button {
     background-image: -gtk-gradient(linear, left top, left bottom,
         from(shade(@button_bg_color, 1.2)),
-        color-stop(0.50, shade(@button_bg_color, 0.98)),
-        color-stop(0.49, shade(@button_bg_color, 1.04)),
-        to(shade(@button_bg_color, 1.08)));
+          to(shade(@button_bg_color, 1.08)));
     border-radius: 0;
     border-style: solid;
     border-width: 1 0 1 1;

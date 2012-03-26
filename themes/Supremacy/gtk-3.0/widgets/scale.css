@@ -10,8 +10,8 @@
     border-style: solid;
     border-color: shade(@bg_color, 0.8);
     -unico-outer-stroke-width: 0;
-    -unico-inner-stroke-width: 1 0 0 0;
-    -unico-inner-stroke-color: shade(@bg_color, 0.86);
+    -unico-inner-stroke-width: 0;
+    -unico-inner-stroke-color: shade(@bg_color, 1.20);
 }
 
 .trough.vertical {
@@ -23,12 +23,20 @@
     border-color: shade(@bg_color, 0.8);
     -unico-outer-stroke-width: 0;
     -unico-inner-stroke-width: 0 0 0 1;
-    -unico-inner-stroke-color: shade(@bg_color, 0.86);
 }
 
 GtkScale.trough,
+GtkProgressBar.trough {
+    -unico-outer-stroke-width: 0 1 1 1;
+    -unico-outer-stroke-color: alpha(white, 0.07);
+}
+
+GtkScale.trough {
+    border-radius: 4;
+}
+
 GtkScale.trough.vertical {
-    border-radius: 8;
+    -unico-outer-stroke-width: 1 1 1 0;
 }
 
 GtkScale {
