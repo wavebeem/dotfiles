@@ -14,8 +14,18 @@
 .scrollbar.trough {
     background-image: none;
     background-color: @transparent;
-    border-width: 0;
-    -unico-inner-stroke-width: 0;
+    border-color: shade(@bg_color, 0.90);
+    border-width:              0 1 0 1;
+    -unico-inner-stroke-width: 0 1 0 1;
+    -unico-outer-stroke-width: 0 0 0 1;
+    -unico-outer-stroke-color: alpha(white, 0.03);
+    -unico-inner-stroke-color: alpha(white, 0.03);
+}
+
+.scrollbar.horizontal.trough {
+    border-width:              1 0 1 0;
+    -unico-inner-stroke-width: 1 0 1 0;
+    -unico-outer-stroke-width: 1 0 0 0;
 }
 
 /* Sliders and buttons */
