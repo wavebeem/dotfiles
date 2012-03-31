@@ -8,10 +8,10 @@ set -o vi
 export PATH="$HOME/cakemenu:$HOME/Abundant/src:$HOME/bin:$PATH"
 
 # No more \a
-setterm -blength 0
+setterm -blength 0 >/dev/null 2>&1
 
 # Stop blanking the terminal
-setterm -blank 0
+setterm -blank 0 >/dev/null 2>&1
 
 # Colors for man/less
 #export LESS_TERMCAP_mb=$'\E[01;31m'
