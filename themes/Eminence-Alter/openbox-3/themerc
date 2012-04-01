@@ -25,13 +25,13 @@ menu.title.text.justify: right
 menu.items.active.bg: flat solid border
 menu.items.active.bg.color:        #888888
 menu.items.active.bg.border.color: #888888
-menu.items.active.text.color: #000000
+menu.items.active.text.color: #ffffff
 
 !! Titlebar
 window.active.title.bg:   flat solid
 window.inactive.title.bg: flat solid
-window.active.title.bg.color:   #444444
-window.inactive.title.bg.color: #444444
+window.active.title.bg.color:   #222222
+window.inactive.title.bg.color: #222222
 
 !! Titlebar text
 window.label.text.justify: right
@@ -54,8 +54,8 @@ window.*.button.*.*.bg: parentrelative
 !! Borders
 window.active.border.color:   #999999
 window.inactive.border.color: #555555
-window.active.title.separator.color:   #444444
-window.inactive.title.separator.color: #444444
+window.active.title.separator.color:   #333333
+window.inactive.title.separator.color: #333333
 border.width:  3
 padding.width: 1
 padding.height: 2

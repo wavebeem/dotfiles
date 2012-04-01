@@ -42,7 +42,7 @@
   </placement>
   <theme>
     <name>Eminence-Alter</name>
-    <titleLayout></titleLayout>
+    <titleLayout>CL</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
       N: window icon
@@ -57,7 +57,7 @@
     <animateIconify>no</animateIconify>
     <font place="ActiveWindow">
       <name>Luxi Sans</name>
-      <size>4</size>
+      <size>8</size>
       <!-- font size in points -->
       <weight>Bold</weight>
       <!-- 'bold' or 'normal' -->
@@ -66,7 +66,7 @@
     </font>
     <font place="InactiveWindow">
       <name>Luxi Sans</name>
-      <size>4</size>
+      <size>8</size>
       <!-- font size in points -->
       <weight>Bold</weight>
       <!-- 'bold' or 'normal' -->
@@ -642,10 +642,12 @@
     </application>
 
     <application name="*" class="Nitrogen" type="*" role="*">
-      <decor>yes</decor>
+      <decor>no</decor>
+      <maximized>Vertical</maximized>
     </application>
     <application name="*" class="Transmission-gtk" type="*" role="*">
-      <decor>yes</decor>
+      <decor>no</decor>
+      <maximized>Vertical</maximized>
     </application>
 
     <!--
