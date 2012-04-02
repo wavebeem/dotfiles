@@ -79,8 +79,8 @@ au filetype c       abbr MAIN    int<Return>main(int argc, char **argv) {
 au filetype cpp     abbr MAIN    int<Return>main(int argc, char **argv) {
 
 " LaTeX
-au filetype plaintex  setl textwidth=78 spell
-au filetype tex       setl textwidth=78 spell
+au filetype plaintex  setl textwidth=72 spell
+au filetype tex       setl textwidth=72 spell
 
 au BufNewFile,BufRead *.txt  setl ft=text
 au BufNewFile,BufRead todo   setl ft=text
