@@ -7,6 +7,7 @@ config/openbox
 config/tint2
 mpd/mpd.conf
 chrome-themes
+zshenv
 conkyrc
 vim
 vimrc
