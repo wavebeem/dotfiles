@@ -26,10 +26,27 @@ Autostart() {
     # Load keyboard stuff
     SleepDo 1 KBD-US
 
-    ibus-daemon &
-
     # Load keybindings
     xbindkeys &
+
+    # Load font and cursor settings
+    xrdb ~/.Xdefaults &
+
+    # Set cursor type on root window (avoid X-shape)
+    xsetroot -cursor_name left_ptr &
+
+    SleepDo 0.50 PANEL on &
+}
+
+# Launch a window manager with proper permissions
+Start() {
+    ibus-daemon &
+
+    # Remove bell
+    xset b off &
+
+    # Remove screen blanking
+    xset -dpms &
 
     # Scrobble songs on desktop
     killall mpdscribble
@@ -38,30 +55,14 @@ Autostart() {
         mpd ~/.mpd/mpd.conf &
     fi
 
-    # Load font and cursor settings
-    xrdb ~/.Xdefaults &
-
-    # Remove bell
-    xset b off &
-
-    # Remove screen blanking
-    xset -dpms &
-
-    # Set cursor type on root window (avoid X-shape)
-    xsetroot -cursor_name left_ptr &
-
     # Enable Ctrl-Alt-Backspace for zapping X
     setxkbmap -option terminate:ctrl_alt_bksp &
 
-    SleepDo 0.50 PANEL on &
-}
-
-# Launch a window manager with proper permissions
-Start() {
     nvidia-settings -l &
     exec ck-launch-session "$@"
 }
 
+DE=startkde
 if [ -z "$DE" ]; then
     SleepDo 0.75 Autostart &
     #Autostart &
