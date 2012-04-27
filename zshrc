@@ -132,7 +132,7 @@ Prompt_Host() {
             nl=$'\n'
 
             export PS1="${_git}${nl}${_ps1}"
-            export PS2="${_git}${nl}${_ps2}"
+            export PS2="${_ps2}"
         # Else use the regular prompt.
         else
             export PS1=$_ps1
