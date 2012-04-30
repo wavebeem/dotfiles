@@ -277,6 +277,8 @@
     <keybind key="W-A-k"> <action name="ShrinkToEdge"> <direction>north</direction> </action> </keybind>
     <keybind key="W-A-l"> <action name="ShrinkToEdge"> <direction>east</direction>  </action> </keybind>
 
+    <keybind key="C-A-r"> <action name="Reconfigure"> </action> </keybind>
+
     <keybind key="W-h"> <action name="DirectionalFocusWest"/>  </keybind>
     <keybind key="W-j"> <action name="DirectionalFocusSouth"/> </keybind>
     <keybind key="W-k"> <action name="DirectionalFocusNorth"/> </keybind>
@@ -601,11 +603,13 @@
           <menu>apps-menu</menu>
         </action>
       </mousebind>
+      <!--
       <mousebind action="Press" button="Right">
         <action name="ShowMenu">
           <menu>root-menu</menu>
         </action>
       </mousebind>
+      -->
     </context>
     <context name="Root">
       <!-- This just does all the same stuff as desktop windows -->
