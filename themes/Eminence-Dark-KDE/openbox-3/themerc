@@ -59,8 +59,8 @@ window.inactive.border.color: #000000
 window.active.title.separator.color:   #383838
 window.inactive.title.separator.color: #383838
 border.width:  1
-padding.width: 1
-padding.height: 1
+padding.width: 3
+padding.height: 3
 window.active.handle.bg: flat solid
 window.active.handle.bg.color: #aaaaaa
 window.active.grip.bg: flat solid
