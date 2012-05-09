@@ -11,7 +11,7 @@ let g:colors_name = "robokai"
 
 hi Title        ctermbg=lightred
 
-hi Visual       ctermbg=red    ctermfg=yellow   cterm=bold
+hi Visual       ctermbg=blue   ctermfg=white    cterm=bold
 hi WarningMsg   ctermbg=red    ctermfg=white
 
 hi Folded       ctermbg=none        ctermfg=black           cterm=bold
