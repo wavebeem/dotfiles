@@ -1,0 +1,38 @@
+{
+  "version": "1.0",
+  "name": "Eminence",
+  "theme": {
+    "images" : {
+      "theme_frame" : "images/theme_frame.png",
+      "theme_window_control_background" : "images/theme_frame.png",
+      "theme_frame_inactive" : "images/theme_frame_inactive.png",
+      "theme_toolbar" : "images/theme_toolbar.png",
+      "theme_tab_background" : "images/theme_tab_background.png",
+      "theme_tab_background_incognito" : "images/theme_tab_background.png"
+    },
+    "colors" : {
+      "frame"             : [191, 196, 207],
+      "frame_inactive"    : [191, 196, 207],
+      "frame_incognito"   : [191, 196, 207],
+      "frame_incognito_inactive" : [191, 196, 207],
+
+      "toolbar"           : [223, 227, 232],
+      "ntp_text"          : [  0,   0,   0],
+      "ntp_link"          : [  0,   0,   0],
+      "ntp_section"       : [191, 196, 207],
+      "button_background" : [255, 255, 255],
+
+
+      "tab_text"            : [  0,   0,   0],
+      "tab_background_text" : [  0,   0,   0]
+    },
+    "tints" : {
+      "frame"                    : [0.61, 0.48, 0.50],
+      "frame_inactive"           : [0.61, 0.48, 0.50],
+      "frame_incognito"          : [0.61, 0.48, 0.50],
+      "frame_incognito_inactive" : [0.61, 0.48, 0.50]
+    },
+    "properties" : {
+    }
+  }
+}
