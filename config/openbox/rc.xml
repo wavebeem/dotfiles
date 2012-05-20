@@ -41,7 +41,7 @@
                   'Active' - where the active window is -->
   </placement>
   <theme>
-    <name>Eminence-Dark-KDE</name>
+    <name>Eminence-Light-KDE</name>
     <titleLayout>CL</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
@@ -116,12 +116,12 @@
     <number>6</number>
     <firstdesk>1</firstdesk>
     <names>
-      <name>–</name>
-      <name>+</name>
-      <name>+–</name>
-      <name>++</name>
-      <name>++–</name>
-      <name>+++</name>
+      <name>o</name>
+      <name>O</name>
+      <name>Oo</name>
+      <name>OO</name>
+      <name>OOo–</name>
+      <name>OOO</name>
     </names>
     <popupTime>750</popupTime>
     <!-- The number of milliseconds to show the popup for when switching
@@ -657,6 +657,7 @@
     -->
 
     <!--
+    -->
     <application name="*" class="Chromium" type="*" role="*">
       <decor>no</decor>
     </application>
@@ -678,7 +679,6 @@
     <application name="*" class="XTerm" type="*" role="*">
       <decor>no</decor>
     </application>
-    -->
     <!--
   <application name="the window's _OB_APP_NAME property (see obxprop)"
               class="the window's _OB_APP_CLASS property (see obxprop)"

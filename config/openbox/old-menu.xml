@@ -26,7 +26,7 @@
     <item label="Files">
       <action name="Execute">
         <execute>
-          dolphin
+          thunar
         </execute>
       </action>
     </item>
@@ -34,6 +34,13 @@
       <action name="Execute">
         <execute>
           chromium
+        </execute>
+      </action>
+    </item>
+    <item label="Chat">
+      <action name="Execute">
+        <execute>
+          gajim
         </execute>
       </action>
     </item>

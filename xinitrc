@@ -65,7 +65,6 @@ Start() {
 DE=startkde
 if [ -z "$DE" ]; then
     SleepDo 0.75 Autostart &
-    #Autostart &
     Start openbox
 else
     Start "$DE"

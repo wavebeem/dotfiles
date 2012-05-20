@@ -1,6 +1,6 @@
 #keystate_numlock = enable
 #keystate_capslock = enable
-#keystate_scrolllock= enable
+#keystate_scrolllock = enable
 
 "TERM"
 Mod4 + Return
@@ -9,22 +9,22 @@ Mod4 + Return
 Control + Mod4 + Return
 
 "dmenu_run"
-Mod4 + F1
+Mod4 + Shift + F1
 
 "DMENU_RUN"
-Mod4 + p
+Mod4 + F1
 
 "HTOP"
 Mod4 + w
 
-"roxterm -e alsamixer"
+"TERM -e alsamixer"
 Mod4 + e
 
 "xkill"
 Mod4 + Escape
 
-"power-menu.sh"
-Control + Alt + q
+#"power-menu.sh"
+#Control + Alt + q
 
 "xterm"
 Mod4 + F2
@@ -65,14 +65,14 @@ Mod4 + F11
 "amixer set Master 5%+"
 Mod4 + F12
 
-"xscreensaver-command -lock"
-Control + Alt + l
+#"xscreensaver-command -lock"
+#Control + Alt + l
 
-"COMPOSITE off"
-Mod4 + Alt + F11
+#"COMPOSITE off"
+#Mod4 + Alt + F11
 
-"COMPOSITE on"
-Mod4 + Alt + F12
+#"COMPOSITE on"
+#Mod4 + Alt + F12
 
 "SCROT"
 Print
