@@ -67,5 +67,6 @@ if [ -z "$DE" ]; then
     SleepDo 0.75 Autostart &
     Start openbox
 else
+    xbindkeys -f "$HOME/.config/kde-xbindkeysrc"
     Start "$DE"
 fi
