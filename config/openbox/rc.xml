@@ -41,7 +41,7 @@
                   'Active' - where the active window is -->
   </placement>
   <theme>
-    <name>Eminence-Light-KDE</name>
+    <name>Dewgong-Minimal</name>
     <titleLayout>CL</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
@@ -120,7 +120,7 @@
       <name>O</name>
       <name>Oo</name>
       <name>OO</name>
-      <name>OOo–</name>
+      <name>OOo</name>
       <name>OOO</name>
     </names>
     <popupTime>750</popupTime>
