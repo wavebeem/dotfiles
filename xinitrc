@@ -8,6 +8,8 @@ export XMODIFIERS="@im=ibus"
 export GTK_IM_MODULE="ibus"
 export QT_IM_MODULE="ibus"
 
+export QT_PLUGIN_PATH=$HOME/.kde4/lib/kde4/plugins/:/usr/lib/kde4/plugins/
+
 # Sleep before doing a command
 SleepDo() {
     local time="$1"
@@ -62,7 +64,7 @@ Start() {
     exec ck-launch-session "$@"
 }
 
-DE=startkde
+#DE=startkde
 if [ -z "$DE" ]; then
     SleepDo 0.75 Autostart &
     Start openbox

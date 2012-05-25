@@ -6,6 +6,13 @@
     xsi:schemaLocation="http://openbox.org/ file:///usr/share/openbox/menu.xsd">
 
   <menu id="root-menu" label="Openbox">
+    <item label="Settings">
+      <action name="Execute">
+        <execute>
+          systemsettings
+        </execute>
+      </action>
+    </item>
     <item label="Theme">
       <action name="Execute">
         <execute>
