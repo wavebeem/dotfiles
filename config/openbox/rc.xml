@@ -57,7 +57,7 @@
     <animateIconify>no</animateIconify>
     <font place="ActiveWindow">
       <name>Luxi Sans</name>
-      <size>2</size>
+      <size>1</size>
       <!-- font size in points -->
       <weight>Bold</weight>
       <!-- 'bold' or 'normal' -->
