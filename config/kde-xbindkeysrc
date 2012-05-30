@@ -12,6 +12,9 @@ Mod4 + Shift + F1
 "DMENU_RUN"
 Mod4 + F1
 
+"krunner"
+Mod4 + p
+
 "HTOP"
 Mod4 + w
 
