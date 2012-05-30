@@ -60,6 +60,8 @@ Start() {
     # Enable Ctrl-Alt-Backspace for zapping X
     setxkbmap -option terminate:ctrl_alt_bksp &
 
+    krunner &
+
     nvidia-settings -l &
     exec ck-launch-session "$@"
 }
