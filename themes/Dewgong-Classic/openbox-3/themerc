@@ -58,8 +58,8 @@ window.*.button.*.*.bg: parentrelative
 !! Borders
 window.active.border.color:   #4F5561
 window.inactive.border.color: #22262F
-window.active.title.separator.color:   #101216
-window.inactive.title.separator.color: #101216
+window.active.title.separator.color:   #14161B
+window.inactive.title.separator.color: #14161B
 border.width:  3
 padding.width: 3
 padding.height: 3
