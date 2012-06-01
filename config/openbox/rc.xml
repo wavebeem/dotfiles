@@ -41,7 +41,7 @@
                   'Active' - where the active window is -->
   </placement>
   <theme>
-    <name>Dewgong-Minimal</name>
+    <name>Dewgong-Classic</name>
     <titleLayout></titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
@@ -56,7 +56,7 @@
     <keepBorder>yes</keepBorder>
     <animateIconify>no</animateIconify>
     <font place="ActiveWindow">
-      <name>Luxi Sans</name>
+      <name>Sans</name>
       <size>1</size>
       <!-- font size in points -->
       <weight>Bold</weight>
@@ -65,8 +65,8 @@
       <!-- 'italic' or 'normal' -->
     </font>
     <font place="InactiveWindow">
-      <name>Luxi Sans</name>
-      <size>8</size>
+      <name>lime</name>
+      <size>1</size>
       <!-- font size in points -->
       <weight>Bold</weight>
       <!-- 'bold' or 'normal' -->
@@ -640,10 +640,10 @@
   </menu>
   <applications>
     <!--
-    -->
     <application name="*" class="*" type="*" role="*">
       <decor>no</decor>
     </application>
+    -->
 
     <!--
     <application name="*" class="Nitrogen" type="*" role="*">

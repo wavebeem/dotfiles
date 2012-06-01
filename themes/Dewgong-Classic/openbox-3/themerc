@@ -1,19 +1,19 @@
 !! vim: set ft=xdefaults:
 !! Menu background
 menu.items.bg: flat solid
-menu.items.bg.color: #222222
-menu.border.width: 1
-menu.border.color:   #aaaaaa
+menu.items.bg.color: #101216
+menu.border.width: 3
+menu.border.color:   #4F5561
 
 !! Menu separators
-menu.separator.color: #666666
-menu.separator.width: 1
+menu.separator.color: #4F5561
+menu.separator.width: 3
 menu.separator.padding.width:  0
 menu.separator.padding.height: 0
 
 !! Menu text
-menu.items.text.color:          #cccccc
-menu.items.disabled.text.color: #666666
+menu.items.text.color:          #bbc0cc
+menu.items.disabled.text.color: #5F6268
 
 !! Menu headers
 menu.title.bg: flat solid
@@ -23,44 +23,44 @@ menu.title.text.justify: right
 
 !! Selected menu item
 menu.items.active.bg: flat solid border
-menu.items.active.bg.color:        #888888
-menu.items.active.bg.border.color: #888888
+menu.items.active.bg.color:        #8991A4
+menu.items.active.bg.border.color: #8991A4
 menu.items.active.text.color: #000000
 
 !! Titlebar
 window.active.title.bg:   flat gradient vertical
 window.inactive.title.bg: flat gradient vertical
-window.active.title.bg.color:          #bbc0cc
-window.active.title.bg.colorTo:        #bbc0cc
-window.active.title.bg.border.color:   #bbc0cc
-window.inactive.title.bg.color:        #bbc0cc
-window.inactive.title.bg.colorTo:      #bbc0cc
-window.inactive.title.bg.border.color: #bbc0cc
+window.active.title.bg.color:          #14161B
+window.active.title.bg.colorTo:        #14161B
+window.active.title.bg.border.color:   #14161B
+window.inactive.title.bg.color:        #14161B
+window.inactive.title.bg.colorTo:      #14161B
+window.inactive.title.bg.border.color: #14161B
 
 !! Titlebar text
 window.label.text.justify: right
 window.active.label.bg: parentrelative
-window.active.label.text.color: #222222
+window.active.label.text.color: #eeeeee
 window.inactive.label.bg: parentrelative
-window.inactive.label.text.color: #9499A4
+window.inactive.label.text.color: #444444
 
 !! Window buttons
-window.active.button.*.pressed.image.color: #222222
-window.active.button.*.hover.image.color:   #444444
-window.active.button.*.image.color:         #222222
+window.active.button.*.pressed.image.color: #eeeeee
+window.active.button.*.hover.image.color:   #eeeeee
+window.active.button.*.image.color:         #eeeeee
 
-window.inactive.button.*.pressed.image.color: #9499A4
-window.inactive.button.*.hover.image.color:   #9499A4
-window.inactive.button.*.image.color:         #9499A4
+window.inactive.button.*.pressed.image.color: #444444
+window.inactive.button.*.hover.image.color:   #444444
+window.inactive.button.*.image.color:         #444444
 
 window.*.button.*.*.bg: parentrelative
 
 !! Borders
-window.active.border.color:   #3A3C40
-window.inactive.border.color: #3A3C40
-window.active.title.separator.color:   #aaaaaa
-window.inactive.title.separator.color: #aaaaaa
-border.width:  1
+window.active.border.color:   #4F5561
+window.inactive.border.color: #22262F
+window.active.title.separator.color:   #101216
+window.inactive.title.separator.color: #101216
+border.width:  3
 padding.width: 3
 padding.height: 3
 window.active.handle.bg: flat solid
@@ -71,23 +71,23 @@ window.inactive.handle.bg: flat solid
 window.inactive.handle.bg.color: #666666
 window.inactive.grip.bg: flat solid
 window.inactive.grip.bg.color: #888888
-window.active.client.color:   #BBC0CC
-window.inactive.client.color: #BBC0CC
-window.client.padding.width:  1
-window.client.padding.height: 1
+window.active.client.color:   #14161B
+window.inactive.client.color: #14161B
+window.client.padding.width:  6
+window.client.padding.height: 6
 window.handle.width: 0
 menu.overlap: 0
 
 !! On-screen displays
-osd.border.width: 1
-osd.border.color: #aaaaaa
-osd.label.text.color: #cccccc
+osd.border.width: 3
+osd.border.color: #4F5561
+osd.label.text.color: #bbc0cc
 osd.hilight.bg: flat solid border
-osd.hilight.bg.color:        #bbbbbb
-osd.hilight.bg.border.color: #bbbbbb
+osd.hilight.bg.color:        #bbc0cc
+osd.hilight.bg.border.color: #bbc0cc
 osd.unhilight.bg: flat solid border
-osd.unhilight.bg.color:        #555555
-osd.unhilight.bg.border.color: #555555
+osd.unhilight.bg.color:        #4F5561
+osd.unhilight.bg.border.color: #4F5561
 osd.bg: flat solid border
-osd.bg.color: #222222
-osd.bg.border.color: #222222
+osd.bg.color: #101216
+osd.bg.border.color: #101216
