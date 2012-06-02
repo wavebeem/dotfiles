@@ -67,10 +67,11 @@ Start() {
 }
 
 #DE=startkde
+[ -z "$WM" ] && WM=openbox
 if [ -z "$DE" ]; then
     SleepDo 0.75 Autostart &
-    Start openbox
+    Start $WM
 else
     xbindkeys -f "$HOME/.config/kde-xbindkeysrc"
-    Start "$DE"
+    Start $DE
 fi
