@@ -3,7 +3,7 @@ set nocompatible
 syntax on
 
 set bg=dark
-color robokai
+color roboblu
 
 " US English spelling
 set spelllang=en_us
