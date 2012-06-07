@@ -56,7 +56,7 @@
     <keepBorder>yes</keepBorder>
     <animateIconify>no</animateIconify>
     <font place="ActiveWindow">
-      <name>Sans</name>
+      <name>Luxi Sans</name>
       <size>1</size>
       <!-- font size in points -->
       <weight>Bold</weight>
@@ -65,8 +65,8 @@
       <!-- 'italic' or 'normal' -->
     </font>
     <font place="InactiveWindow">
-      <name>lime</name>
-      <size>1</size>
+      <name>Luxi Sans</name>
+      <size>8</size>
       <!-- font size in points -->
       <weight>Bold</weight>
       <!-- 'bold' or 'normal' -->
@@ -640,10 +640,10 @@
   </menu>
   <applications>
     <!--
-    -->
     <application name="*" class="*" type="*" role="*">
       <decor>no</decor>
     </application>
+    -->
 
     <!--
     <application name="*" class="Nitrogen" type="*" role="*">
@@ -657,6 +657,7 @@
     -->
 
     <!--
+    -->
     <application name="*" class="Chromium" type="*" role="*">
       <decor>no</decor>
     </application>
@@ -678,7 +679,9 @@
     <application name="*" class="XTerm" type="*" role="*">
       <decor>no</decor>
     </application>
-    -->
+    <application name="*" class="Konsole" type="*" role="*">
+      <decor>no</decor>
+    </application>
     <!--
   <application name="the window's _OB_APP_NAME property (see obxprop)"
               class="the window's _OB_APP_CLASS property (see obxprop)"
