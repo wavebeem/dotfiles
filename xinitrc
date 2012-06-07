@@ -67,7 +67,8 @@ Start() {
 }
 
 #DE=startkde
-[ -z "$WM" ] && WM=openbox
+[ -z "$WM" ] && WM="openbox"
+[ "$WM" = "compiz" ] && WM="compiz ccp"
 if [ -z "$DE" ]; then
     SleepDo 0.75 Autostart &
     Start $WM
