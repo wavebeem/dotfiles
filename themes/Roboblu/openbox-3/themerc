@@ -3,17 +3,17 @@
 menu.items.bg: flat solid
 menu.items.bg.color: #0E1E36
 menu.border.width: 3
-menu.border.color:   #51556A
+menu.border.color:   #17335E
 
 !! Menu separators
-menu.separator.color: #51556A
+menu.separator.color: #17335E
 menu.separator.width: 3
 menu.separator.padding.width:  0
 menu.separator.padding.height: 0
 
 !! Menu text
 menu.items.text.color:          #bbc0cc
-menu.items.disabled.text.color: #5F6268
+menu.items.disabled.text.color: #345080
 
 !! Menu headers
 menu.title.bg: flat solid
@@ -30,36 +30,36 @@ menu.items.active.text.color: #000000
 !! Titlebar
 window.active.title.bg:   flat gradient vertical
 window.inactive.title.bg: flat gradient vertical
-window.active.title.bg.color:          #0E1E36
-window.active.title.bg.colorTo:        #0E1E36
-window.active.title.bg.border.color:   #0E1E36
-window.inactive.title.bg.color:        #0E1E36
-window.inactive.title.bg.colorTo:      #0E1E36
-window.inactive.title.bg.border.color: #0E1E36
+window.active.title.bg.color:          #bbc0cc
+window.active.title.bg.colorTo:        #bbc0cc
+window.active.title.bg.border.color:   #bbc0cc
+window.inactive.title.bg.color:        #bbc0cc
+window.inactive.title.bg.colorTo:      #bbc0cc
+window.inactive.title.bg.border.color: #bbc0cc
 
 !! Titlebar text
 window.label.text.justify: right
 window.active.label.bg: parentrelative
-window.active.label.text.color: #eeeeee
+window.active.label.text.color: #bbc0cc
 window.inactive.label.bg: parentrelative
-window.inactive.label.text.color: #444444
+window.inactive.label.text.color: #4F78C0
 
 !! Window buttons
-window.active.button.*.pressed.image.color: #eeeeee
-window.active.button.*.hover.image.color:   #eeeeee
-window.active.button.*.image.color:         #eeeeee
+window.active.button.*.pressed.image.color: #bbc0cc
+window.active.button.*.hover.image.color:   #bbc0cc
+window.active.button.*.image.color:         #bbc0cc
 
-window.inactive.button.*.pressed.image.color: #444444
-window.inactive.button.*.hover.image.color:   #444444
-window.inactive.button.*.image.color:         #444444
+window.inactive.button.*.pressed.image.color: #4F78C0
+window.inactive.button.*.hover.image.color:   #4F78C0
+window.inactive.button.*.image.color:         #4F78C0
 
 window.*.button.*.*.bg: parentrelative
 
 !! Borders
-window.active.border.color:   #9B9EB0
+window.active.border.color:   #6C6093
 window.inactive.border.color: #17335E
-window.active.title.separator.color:   #0E1E36
-window.inactive.title.separator.color: #0E1E36
+window.active.title.separator.color:   #bbc0cc
+window.inactive.title.separator.color: #bbc0cc
 border.width:  3
 padding.width: 3
 padding.height: 3
@@ -71,23 +71,23 @@ window.inactive.handle.bg: flat solid
 window.inactive.handle.bg.color: #666666
 window.inactive.grip.bg: flat solid
 window.inactive.grip.bg.color: #888888
-window.active.client.color:   #0E1E36
-window.inactive.client.color: #0E1E36
-window.client.padding.width:  6
-window.client.padding.height: 6
+window.active.client.color:   #bbc0cc
+window.inactive.client.color: #bbc0cc
+window.client.padding.width:  3
+window.client.padding.height: 3
 window.handle.width: 0
 menu.overlap: 0
 
 !! On-screen displays
 osd.border.width: 3
-osd.border.color: #51556A
+osd.border.color: #17335E
 osd.label.text.color: #bbc0cc
 osd.hilight.bg: flat solid border
 osd.hilight.bg.color:        #bbc0cc
 osd.hilight.bg.border.color: #bbc0cc
 osd.unhilight.bg: flat solid border
-osd.unhilight.bg.color:        #51556A
-osd.unhilight.bg.border.color: #51556A
+osd.unhilight.bg.color:        #17335E
+osd.unhilight.bg.border.color: #17335E
 osd.bg: flat solid border
 osd.bg.color: #0E1E36
 osd.bg.border.color: #0E1E36
