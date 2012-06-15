@@ -64,9 +64,9 @@ Start() {
     exec ck-launch-session "$@"
 }
 
-#DE=startkde
-[ -z "$WM" ] && WM="openbox"
+[ -z "$WM"         ] && WM="openbox"
 [ "$WM" = "compiz" ] && WM="compiz ccp"
+[ "$DE" = "kde"    ] && DE="startkde"
 if [ -z "$DE" ]; then
     SleepDo 0.75 Autostart &
     Start $WM
