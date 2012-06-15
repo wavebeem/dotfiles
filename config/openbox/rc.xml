@@ -41,8 +41,8 @@
                   'Active' - where the active window is -->
   </placement>
   <theme>
-    <name>Royal-Robo</name>
-    <titleLayout></titleLayout>
+    <name>Royal-Robo-Classic</name>
+    <titleLayout>CL</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
       N: window icon
@@ -57,7 +57,7 @@
     <animateIconify>no</animateIconify>
     <font place="ActiveWindow">
       <name>Luxi Sans</name>
-      <size>1</size>
+      <size>8</size>
       <!-- font size in points -->
       <weight>Bold</weight>
       <!-- 'bold' or 'normal' -->
@@ -277,7 +277,9 @@
     <keybind key="W-A-k"> <action name="ShrinkToEdge"> <direction>north</direction> </action> </keybind>
     <keybind key="W-A-l"> <action name="ShrinkToEdge"> <direction>east</direction>  </action> </keybind>
 
+    <!--
     <keybind key="C-A-r"> <action name="Reconfigure"> </action> </keybind>
+    -->
 
     <keybind key="W-h"> <action name="DirectionalFocusWest"/>  </keybind>
     <keybind key="W-j"> <action name="DirectionalFocusSouth"/> </keybind>
@@ -676,12 +678,14 @@
     <application name="*" class="Roxterm" type="*" role="*">
       <decor>no</decor>
     </application>
+    <!--
     <application name="*" class="XTerm" type="*" role="*">
       <decor>no</decor>
     </application>
     <application name="*" class="Konsole" type="*" role="*">
       <decor>no</decor>
     </application>
+    -->
     <!--
   <application name="the window's _OB_APP_NAME property (see obxprop)"
               class="the window's _OB_APP_CLASS property (see obxprop)"
