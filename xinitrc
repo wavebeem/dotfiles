@@ -36,6 +36,8 @@ Autostart() {
 
     # Set cursor type on root window (avoid X-shape)
     xsetroot -cursor_name left_ptr &
+
+    PANEL on &
 }
 
 # Launch a window manager with proper permissions
