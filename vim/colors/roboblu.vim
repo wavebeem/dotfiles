@@ -31,26 +31,26 @@ hi Normal           ctermbg=none ctermfg=none cterm=bold
 hi Normal           ctermbg=none ctermfg=none cterm=bold
 
 hi Comment          ctermfg=darkgrey
-hi Constant         ctermfg=lightmagenta
+hi Constant         ctermfg=lightred
   hi String         ctermfg=lightcyan
   hi Character      ctermfg=lightcyan
-  hi Number         ctermfg=lightmagenta
-  hi Boolean        ctermfg=lightmagenta
-  hi Float          ctermfg=lightmagenta
-hi Identifier       ctermfg=grey
-  hi Function       ctermfg=grey
+  hi Number         ctermfg=lightred
+  hi Boolean        ctermfg=lightred
+  hi Float          ctermfg=lightred
+hi Identifier       ctermfg=lightmagenta
+  hi Function       ctermfg=yellow
   hi Statement      ctermfg=white
   hi Conditional    ctermfg=white
   hi Repeat         ctermfg=white
-  hi Label          ctermfg=yellow
-  hi Operator       ctermfg=grey
-  hi hsOperator     ctermfg=grey
+  hi Label          ctermfg=lightmagenta
+  hi Operator       ctermfg=white
+  hi hsOperator     ctermfg=white
   hi Keyword        ctermfg=white
   hi Exception      ctermfg=white
 hi PreProc          ctermfg=white
   hi include        ctermfg=white
   hi Define         ctermfg=white
-  hi Macro          ctermfg=yellow
+  hi Macro          ctermfg=lightmagenta
   hi PreCondit      ctermfg=lightgreen
 hi Type             ctermfg=lightcyan
   hi StorageClass   ctermfg=lightcyan
