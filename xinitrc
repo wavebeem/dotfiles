@@ -65,7 +65,7 @@ Start() {
     nvidia-settings -l &
 
     for script in ~/.screenlayout/*.sh; do
-        if [ -x "$script" ]
+        if [ -x "$script" ]; then
             "$script" &
         fi
     done
