@@ -101,6 +101,9 @@ aur() {
     cd "$pkg"
 }
 alias abs='sudo abs'
+alias a='aptitude'
+alias ai='sudo aptitude install'
+alias as='aptitude search'
 alias p='pacman'
 alias sp='sudo pacman'
 alias update='sp -Syu --noconfirm'
