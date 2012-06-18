@@ -63,6 +63,13 @@ Start() {
     krunner &
 
     nvidia-settings -l &
+
+    for script in ~/.screenlayout/*.sh; do
+        if [ -x "$script" ]; then
+            "$script" &
+        fi
+    done
+
     exec ck-launch-session "$@"
 }
 
