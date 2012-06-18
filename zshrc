@@ -79,8 +79,8 @@ Prefix() {
 
 Prompt_Host() {
     bg="%B%F{black}"
-    fg="%B%F{blue}"
-    er="%B%F{cyan}"
+    fg="%B%F{magenta}"
+    er="%B%F{red}"
     e="%f%b"
 
     _ps1="${bg}%m:${e} "
