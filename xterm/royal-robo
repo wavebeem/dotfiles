@@ -1,0 +1,55 @@
+! vim:set syn=xdefaults:
+
+*VT100*internalBorder: 1
+
+!*VT100*faceName: xft:DejaVu Sans Mono:size=9
+!*VT100*faceNameDoubleSize: xft:VL Gothic:size=9
+
+*VT100*colorMode: on
+*VT100*boldColors: on
+*VT100*dynamicColors: on
+
+*VT100*foreground: #8A88B4
+*VT100*background: #1A192F
+
+! Uncomment this to use color for underline attribute
+*VT100*colorULMode: on
+*VT100*colorUL: #9AEEE5
+
+!*VT100*italicULMode: on
+
+! Uncomment this to disable underlining, e.g., if colorULMode is set.
+!*VT100*underLine: off
+
+! Uncomment this to use color for the bold attribute
+*VT100*colorBDMode: on
+*VT100*colorBD: #FFFFFF
+
+! Uncomment this to use the bold/underline colors in preference to other colors
+!*VT100*colorAttrMode: on
+
+! black
+! red
+! green
+! yellow
+! magenta
+! cyan
+! gray
+
+*VT100*color0: #1A192F
+*VT100*color1: #BF5F7F
+*VT100*color2: #7E9E5F
+*VT100*color3: #C28C55
+*VT100*color4: #324652
+*VT100*color5: #A482AD
+*VT100*color6: #79ABBA
+*VT100*color7: #BCBBC7
+
+*VT100*color8:  #5E5D7E
+*VT100*color9:  #E672D3
+*VT100*color10: #8BD17D
+*VT100*color11: #DCEE9A
+*VT100*color12: #627FA3
+*VT100*color13: #C7A8E0
+*VT100*color14: #9AEEE5
+*VT100*color15: #FFFFFF
