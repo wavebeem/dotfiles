@@ -2,15 +2,18 @@
 
 *VT100*internalBorder: 1
 
-!*VT100*faceName: xft:DejaVu Sans Mono:size=9
-!*VT100*faceNameDoubleSize: xft:VL Gothic:size=9
+XTerm.iconName: terminal
+
+!*VT100*font: 5x7
+
+*VT100*allowBoldFonts: false
+
+*VT100*faceName: xft:DejaVu Sans Mono:size=9
+*VT100*faceNameDoubleSize: xft:VL Gothic:size=9
 
 *VT100*colorMode: on
 *VT100*boldColors: on
 *VT100*dynamicColors: on
-
-*VT100*foreground: #8A88B4
-*VT100*background: #1A192F
 
 ! Uncomment this to use color for underline attribute
 *VT100*colorULMode: on
@@ -35,6 +38,9 @@
 ! magenta
 ! cyan
 ! gray
+
+*VT100*foreground: #8A88B4
+*VT100*background: #1A192F
 
 *VT100*color0: #1A192F
 *VT100*color1: #BF5F7F
