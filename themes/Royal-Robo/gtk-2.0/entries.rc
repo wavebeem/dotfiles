@@ -1,0 +1,16 @@
+# vim: set syn=gtkrc:
+
+style "entry" = "wider" {
+    bg[NORMAL]        = shade(1.15, @base_color)
+    base[NORMAL]      = shade(1.15, @base_color)
+    text[INSENSITIVE] = shade(0.70, @base_color)
+
+    engine "murrine" {
+        roundness = 0
+        contrast = 0.50
+        focus_color = shade(0.60, @bg_color)
+    }
+}
+
+style "comboboxentry" {
+}

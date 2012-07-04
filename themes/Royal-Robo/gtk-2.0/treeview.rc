@@ -1,0 +1,32 @@
+# vim: set syn=gtkrc:
+
+style "treeview" {
+    fg[PRELIGHT] = @selected_fg_color
+
+    bg[NORMAL]   = shade(1.10, @bg_color)
+    bg[SELECTED] = shade(0.70, @selected_bg_color)
+
+    text[NORMAL  ] = @text_color
+    text[SELECTED] = @selected_fg_color
+    text[ACTIVE  ] = @fg_color
+
+    base[SELECTED] = mix(0.70, shade(1.00, @selected_bg_color), shade(0.80, @bg_color))
+    base[ACTIVE  ] = mix(0.70, shade(1.00, @selected_bg_color), shade(0.80, @bg_color))
+
+    engine "murrine" {
+        gradient_shades = {1.05, 1.05, 1.05, 0.95}
+    }
+}
+
+style "treeview-header" = "button" {
+    xthickness = 2
+    ythickness = 2
+
+    bg[NORMAL]   = shade(1.10, @bg_color)
+    bg[PRELIGHT] = shade(1.15, @bg_color)
+
+    engine "murrine" {
+        contrast = 1.10
+        gradient_shades = {1.00, 1.00, 1.00, 1.00}
+    }
+}
