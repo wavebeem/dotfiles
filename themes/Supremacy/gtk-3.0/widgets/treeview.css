@@ -1,9 +1,9 @@
 GtkTreeView .entry {
     background-image: none;
-    border-radius: 0;
+    border-radius: 0px;
 
     -unico-inner-stroke-gradient: none;
-    -unico-inner-stroke-width: 1;
+    -unico-inner-stroke-width: 1px;
 }
 
 GtkTreeView row:nth-child(even),

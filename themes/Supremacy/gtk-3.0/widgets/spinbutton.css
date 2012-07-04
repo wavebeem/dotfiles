@@ -4,7 +4,7 @@
 .notebook .spinbutton.button:insensitive,
 .spinbutton.button,
 .notebook .spinbutton.button {
-    -unico-outer-stroke-width: 1 1 1 0;
+    -unico-outer-stroke-width: 1px 1px 1px 0px;
 }
 
 .spinbutton.button,

@@ -1,6 +1,6 @@
 .cell {
-    border-radius: 0;
-    border-width: 0;
+    border-radius: 0px;
+    border-width: 0px;
 }
 
 .cell:selected {
@@ -14,7 +14,7 @@ row:insensitive {
 }
 
 row:selected:focused {
-    border-width: 1 0 0 0;
+    border-width: 1px 0px 0px 0px;
     border-style: solid;
     border-color: @selected_bg_color;
     background-image: -gtk-gradient(linear,left top, left bottom,
@@ -23,7 +23,7 @@ row:selected:focused {
 }
 
 row:selected {
-    border-width: 1 0 0 0;
+    border-width: 1px 0px 0px 0px;
     border-style: solid;
     border-color: @selected_bg_color;
     background-image: -gtk-gradient(linear,left top, left bottom,

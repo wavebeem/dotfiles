@@ -1,8 +1,8 @@
 GtkSwitch {
-    border-radius: 4;
-    padding: 2;
+    border-radius: 4px;
+    padding: 2px;
 
-    -unico-focus-border-radius: 2;
+    -unico-focus-border-radius: 2px;
     -unico-focus-border-color: alpha(@selected_bg_color, 0.3);
     -unico-focus-fill-color: @transparent;
     -unico-outer-stroke-gradient: -gtk-gradient(linear, left top, left bottom,
@@ -22,8 +22,8 @@ GtkSwitch.trough {
     -unico-inner-stroke-gradient: -gtk-gradient(linear, left top, left bottom,
         from(shade(@bg_color, 0.8)),
         to(alpha(@bg_color, 0.0)));
-    -unico-inner-stroke-width: 1;
-    -unico-outer-stroke-width: 1;
+    -unico-inner-stroke-width: 1px;
+    -unico-outer-stroke-width: 1px;
 }
 
 GtkSwitch.trough:active {
@@ -67,8 +67,8 @@ GtkSwitch.slider {
     -unico-inner-stroke-gradient: -gtk-gradient(linear, left top, left bottom,
         from(shade(@button_bg_color1, 1.15)),
           to(shade(@button_bg_color2, 1.00)));
-    -unico-inner-stroke-width: 1 1 0 1;
-    -unico-outer-stroke-width: 1;
+    -unico-inner-stroke-width: 1px 1px 0px 1px;
+    -unico-outer-stroke-width: 1px;
 }
 
 GtkSwitch.slider:insensitive {

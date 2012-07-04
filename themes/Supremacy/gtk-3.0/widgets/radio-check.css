@@ -12,23 +12,23 @@
     border-bottom-color: shade(@bg_color, 0.82);
     border-left-color:   shade(@bg_color, 0.76);
     border-style: solid;
-    border-width: 1;
+    border-width: 1px;
 
     -unico-border-gradient: none;
     -unico-inner-stroke-gradient: -gtk-gradient(linear, left top, left bottom,
         from(alpha(shade(@bg_color, 0.05), 0.06)),
           to(alpha(shade(@bg_color, 0.05), 0.03)));
-    -unico-inner-stroke-width: 1;
+    -unico-inner-stroke-width: 1px;
 }
 
 .check,
 .check row {
-    border-radius: 2;
+    border-radius: 2px;
 }
 
 .radio,
 .radio row {
-    border-radius: 10;
+    border-radius: 10px;
 }
 
 .check:active,
@@ -55,7 +55,7 @@
     -unico-outer-stroke-gradient: -gtk-gradient(linear, left top, left bottom,
         from(alpha(shade(@bg_color, 0.05), 0.02)),
           to(alpha(shade(@bg_color, 0.05), 0.06)));
-    -unico-outer-stroke-width: 1;
+    -unico-outer-stroke-width: 1px;
 }
 
 .check:active:hover,

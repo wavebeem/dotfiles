@@ -5,10 +5,10 @@ PanelToplevel {
 	background-image: -gtk-gradient (linear, left top, left bottom,
 		from (shade (@dark_bg_color, 1.0)),
 		to (shade (@dark_bg_color, 1.0)));
-	padding: 0;
+	padding: 0px;
 	text-shadow: none;
 	color: @selected_fg_color;
-	border-width: 0;
+	border-width: 0px;
 }
 
 .gnome-panel-menu-bar,
@@ -21,7 +21,7 @@ PanelMenuBar.menubar.menuitem {
 		to (shade (@dark_bg_color, 1.0)));
 	text-shadow: none;
 	color: @selected_fg_color;
-	border-width: 0;
+	border-width: 0px;
 }
 
 PanelAppletFrame { 
@@ -31,7 +31,7 @@ PanelAppletFrame {
 		to (shade (@dark_bg_color, 1.0)));
 	text-shadow: none;
 	color: @selected_fg_color;
-	border-width: 0;
+	border-width: 0px;
 }
 
 .gnome-panel-menu-bar {
@@ -50,8 +50,8 @@ PanelAppletFrame {
 		from (shade (@dark_bg_color, 0.85)),
 		to (shade (@dark_bg_color, 1.0))); 
 	border-color: shade (@dark_bg_color, 0.78);
-	border-radius: 0;
-	border-width: 0 1 0 1;
+	border-radius: 0px;
+	border-width: 0px 1px 0px 1px;
 }
 
 .gnome-panel-menu-bar .menuitem *:prelight {
@@ -61,8 +61,8 @@ PanelAppletFrame {
 		from (shade (@dark_bg_color, 0.85)),
 		to (shade (@dark_bg_color, 1.0))); 
 	border-color: shade (@dark_bg_color, 0.78);
-	border-radius: 0;
-	border-width: 0 1 0 1;
+	border-radius: 0px;
+	border-width: 0px 1px 0px 1px;
 }
 
 PanelApplet .button {
@@ -70,14 +70,14 @@ PanelApplet .button {
 		from (shade (@dark_bg_color, 1.5)),
 		to (shade (@dark_bg_color, 1.05)));
 	border-color: shade (@dark_bg_color, 0.78);
-	border-radius: 0;
-	border-width: 0;
+	border-radius: 0px;
+	border-width: 0px;
 	text-shadow: none;
 
 	-unico-border-gradient: none;
-	-unico-glow-radius: 0;
-	-unico-inner-stroke-width: 0;
-	-unico-outer-stroke-width: 0;
+	-unico-glow-radius: 0px;
+	-unico-inner-stroke-width: 0px;
+	-unico-outer-stroke-width: 0px;
 	color: @selected_fg_color;
 }
 
@@ -87,13 +87,13 @@ PanelApplet .button:active {
 		from (shade (@dark_bg_color, 0.85)),
 		to (shade (@dark_bg_color, 1.0))); 
 	border-color: shade (@dark_bg_color, 0.78);
-	border-radius: 0;
-	border-width: 0 1 0 1;
+	border-radius: 0px;
+	border-width: 0px 1px 0px 1px;
 
 	-unico-border-gradient: none;
-	-unico-glow-radius: 0;
-	-unico-inner-stroke-width: 0;
-	-unico-outer-stroke-width: 0;
+	-unico-glow-radius: 0px;
+	-unico-inner-stroke-width: 0px;
+	-unico-outer-stroke-width: 0px;
 	color: @selected_fg_color;
 	text-shadow: none;
 }
@@ -103,13 +103,13 @@ PanelApplet .button:prelight {
 		from (shade (@dark_bg_color, 1.7)),
 		to (shade (@dark_bg_color, 1.25)));
 	border-color: shade (@dark_bg_color, 0.78);
-	border-radius: 0;
-	border-width: 0 1 0 1;
+	border-radius: 0px;
+	border-width: 0px 1px 0px 1px;
 
 	-unico-border-gradient: none;
-	-unico-glow-radius: 0;
-	-unico-inner-stroke-width: 0;
-	-unico-outer-stroke-width: 0;
+	-unico-glow-radius: 0px;
+	-unico-inner-stroke-width: 0px;
+	-unico-outer-stroke-width: 0px;
 	color: @selected_fg_color;
 	text-shadow: none;
 }
@@ -117,7 +117,7 @@ PanelApplet .button:prelight {
 ClockBox {
 	color: @selected_fg_color;
 	text-shadow: none;
-	border-width: 0;
+	border-width: 0px;
 }
 
 WnckPager, WnckTasklist {
@@ -127,10 +127,10 @@ WnckPager, WnckTasklist {
 }
 
 NaTrayApplet {
-	-NaTrayApplet-icon-padding: 2;
+	-NaTrayApplet-icon-padding: 2px;
 	-NaTrayApplet-icon-size: 16;
 	color: @selected_fg_color;
-	border-width: 0;
+	border-width: 0px;
 }
 
 GsmFailWhaleDialog {

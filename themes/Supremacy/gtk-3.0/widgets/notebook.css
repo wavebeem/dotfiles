@@ -1,10 +1,10 @@
 .notebook {
     background-color: @transparent;
     background-image: none;
-    border-radius: 2;
-    padding: 1;
+    border-radius: 2px;
+    padding: 1px;
 
-    border-width: 1;
+    border-width: 1px;
     -unico-border-gradient: -gtk-gradient(linear, left top, left bottom,
         from(alpha(black, 0.20)),
           to(alpha(black, 0.20)));
@@ -13,25 +13,25 @@
     -unico-inner-stroke-color: alpha(white, 0.05);
     -unico-outer-stroke-gradient: none;
     -unico-outer-stroke-color: alpha(white, 0.05);
-    -unico-inner-stroke-width: 1;
-    -unico-outer-stroke-width: 1;
+    -unico-inner-stroke-width: 1px;
+    -unico-outer-stroke-width: 1px;
 }
 
 .notebook tab {
     background-image: -gtk-gradient(linear, left top, left bottom,
         from(shade(@bg_color, 1.30)),
           to(shade(@bg_color, 1.25)));
-    padding: 2 2 0 2;
+    padding: 2px 2px 0px 2px;
 
-    border-width: 1;
+    border-width: 1px;
 
     -unico-border-gradient: -gtk-gradient(linear, left top, left bottom,
         from(alpha(black, 0.20)),
           to(alpha(black, 0.20)));
     -unico-inner-stroke-color: alpha(shade(@bg_color, 1.15), 0.34);
-    -unico-inner-stroke-width: 1;
+    -unico-inner-stroke-width: 1px;
     -unico-outer-stroke-color: @transparent;
-    -unico-outer-stroke-width: 1;
+    -unico-outer-stroke-width: 1px;
 }
 
 .notebook tab:active {
@@ -45,5 +45,5 @@
 }
 
 .notebook tab .button {
-    padding: 0;
+    padding: 0px;
 }

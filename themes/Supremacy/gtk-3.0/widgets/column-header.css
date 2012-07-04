@@ -6,16 +6,16 @@ column-header .button:active,
     background-image: -gtk-gradient(linear,left top, left bottom,
         from(shade(@button_bg_color, 1.1)),
           to(shade(@button_bg_color, 1.04)));
-    border-radius: 0;
-    border-width: 0;
+    border-radius: 0px;
+    border-width: 0px;
 
-    -unico-focus-border-radius: 0;
+    -unico-focus-border-radius: 0px;
     -unico-focus-border-color: @transparent;
     -unico-focus-fill-color: alpha(@selected_bg_color, 0.2);
     -unico-focus-outer-stroke-color: @transparent;
 
-    -unico-glow-radius: 0;
-    -unico-outer-stroke-width: 0;
+    -unico-glow-radius: 0px;
+    -unico-outer-stroke-width: 0px;
 }
 
 column-header .button,
@@ -23,14 +23,14 @@ column-header .button,
     background-image: -gtk-gradient(linear, left top, left bottom,
         from(shade(@base_color, 1.00)),
           to(shade(@base_color, 1.10)));
-    border-width: 0 1 1 0;
+    border-width: 0px 1px 1px 0px;
     text-shadow: 0 1 alpha(shade(@bg_color, 1.25), 0.4);
 
     -unico-glow-color: shade(@bg_color, 1.02);
     -unico-inner-stroke-gradient: -gtk-gradient(linear, left top, left bottom,
         from(shade(@bg_color, 1.20)),
           to(shade(@bg_color, 0.98)));
-    -unico-inner-stroke-width: 1 0 1 0;
+    -unico-inner-stroke-width: 1px 0px 1px 0px;
 }
 
 column-header .button:hover,
@@ -43,9 +43,9 @@ column-header .button:hover,
     -unico-inner-stroke-gradient: -gtk-gradient(linear, left top, left bottom,
         from(shade(@bg_color, 1.2)),
           to(shade(@selected_bg_color, 0.98)));
-    -unico-inner-stroke-width: 1;
+    -unico-inner-stroke-width: 1px;
 }
 
 column-header:nth-child(last) .button {
-    border-right-width: 0;
+    border-right-width: 0px;
 }

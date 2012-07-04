@@ -6,11 +6,11 @@ GtkComboBox.combobox-entry .entry,
 GtkComboBox.combobox-entry .entry:active,
 GtkComboBox.combobox-entry .entry:focused,
 GtkComboBox.combobox-entry .entry:insensitive {
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-    border-width: 1 0 1 1;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-width: 1px 0px 1px 1px;
 
-    -unico-outer-stroke-width: 1 0 1 1;
+    -unico-outer-stroke-width: 1px 0px 1px 1px;
 }
 
 .primary-toolbar GtkComboBox.combobox-entry .button,
@@ -21,11 +21,11 @@ GtkComboBox.combobox-entry .button,
 GtkComboBox.combobox-entry .button:hover,
 GtkComboBox.combobox-entry .button:active,
 GtkComboBox.combobox-entry .button:insensitive {
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-    border-width: 1 1 1 1;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-width: 1px 1px 1px 1px;
 
-    -unico-outer-stroke-width: 1 1 1 0;
+    -unico-outer-stroke-width: 1px 1px 1px 0px;
 }
 
 GtkComboBox.combobox-entry .button,

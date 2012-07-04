@@ -1,8 +1,8 @@
 .menuitem {
-    padding: 3;
-    border-radius: 0;
+    padding: 3px;
+    border-radius: 0px;
     text-shadow: 0 1 alpha(shade(@button_bg_color, 1.25), 0.4);
-    border-width: 0;
+    border-width: 0px;
     border-style: solid;
     color: @fg_color;
     background-image: -gtk-gradient(linear, left top, left bottom,
@@ -17,7 +17,7 @@
     text-shadow: none;
     -unico-bullet-color: @dark_fg_color;
     border-style: solid;
-    border-width: 0;
+    border-width: 0px;
 }
 
 .menuitem:insensitive,
@@ -44,9 +44,9 @@
 .menuitem GtkCalendar.view {
     background-color: @bg_color;
     background-image: none;
-    border-radius: 0;
-    border-width: 0;
-    padding: 0;
+    border-radius: 0px;
+    border-width: 0px;
+    padding: 0px;
 
     color: @fg_color;
 }

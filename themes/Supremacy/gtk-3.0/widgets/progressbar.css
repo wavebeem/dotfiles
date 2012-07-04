@@ -1,7 +1,7 @@
 GtkProgressBar {
-    border-radius: 0;
-    border-width: 1;
-    padding: 2;
+    border-radius: 0px;
+    border-width: 1px;
+    padding: 2px;
 }
 
 .progressbar,
@@ -12,7 +12,7 @@ GtkProgressBar {
     background-image: -gtk-gradient(linear, left top, left bottom,
         from(shade(@selected_bg_color, 1.00)),
           to(shade(@selected_bg_color, 1.00)));
-    border-width: 1;
+    border-width: 1px;
 
     -unico-border-gradient: -gtk-gradient(linear, left top, left bottom,
         from(shade(@selected_bg_color, 0.90)),
@@ -23,8 +23,8 @@ GtkProgressBar {
     -unico-outer-stroke-gradient: -gtk-gradient(linear, left top, left bottom,
         from(shade(@selected_bg_color, 1.00)),
           to(shade(@selected_bg_color, 1.00)));
-    -unico-inner-stroke-width: 1 1 0 1;
-    -unico-outer-stroke-width: 1;
+    -unico-inner-stroke-width: 1px 1px 0px 1px;
+    -unico-outer-stroke-width: 1px;
 }
 
 .progressbar.vertical,
@@ -35,7 +35,7 @@ GtkProgressBar {
     background-image: -gtk-gradient(linear, left top, right top,
         from(shade(@selected_bg_color, 1.00)),
           to(shade(@selected_bg_color, 1.00)));
-    border-width: 1;
+    border-width: 1px;
 
     -unico-border-gradient: -gtk-gradient(linear, left top, right top,
         from(shade(@selected_bg_color, 0.90)),
@@ -46,6 +46,6 @@ GtkProgressBar {
     -unico-outer-stroke-gradient: -gtk-gradient(linear, left top, right top,
         from(shade(@selected_bg_color, 1.00)),
           to(shade(@selected_bg_color, 1.00)));
-    -unico-inner-stroke-width: 1 1 1 0;
-    -unico-outer-stroke-width: 1;
+    -unico-inner-stroke-width: 1px 1px 1px 0px;
+    -unico-outer-stroke-width: 1px;
 }

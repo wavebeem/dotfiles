@@ -6,14 +6,14 @@
     border-right-color: shade(@bg_color, 0.76);
     border-bottom-color: shade(@bg_color, 0.82);
     border-left-color: shade(@bg_color, 0.76);
-    border-radius: 2;
+    border-radius: 2px;
     border-style: solid;
 
     -unico-border-gradient: none;
     -unico-inner-stroke-gradient: -gtk-gradient(linear, left top, left bottom,
         from(alpha(shade(@bg_color, 0.05), 0.04)),
           to(alpha(shade(@bg_color, 0.05), 0.02)));
-    -unico-inner-stroke-width: 1;
+    -unico-inner-stroke-width: 1px;
 }
 
 .entry:selected,
@@ -45,10 +45,10 @@
     background-image: -gtk-gradient(linear, left top, left bottom,
         from(shade(@selected_bg_color, 0.8)),
           to(shade(@selected_bg_color, 1.1)));
-    border-radius: 2;
-    border-width: 0;
+    border-radius: 2px;
+    border-width: 0px;
 
     color: @selected_fg_color;
 
-    -unico-outer-stroke-width: 0;
+    -unico-outer-stroke-width: 0px;
 }

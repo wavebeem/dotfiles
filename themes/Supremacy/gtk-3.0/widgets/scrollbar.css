@@ -3,7 +3,7 @@
     border-style: solid;
     -GtkRange-trough-border: 4;
     -GtkRange-arrow-scaling: 0.444;
-    -GtkRange-slider-width: 7;
+    -GtkRange-slider-width: 7px;
     -GtkRange-stepper-size: 0;
     -GtkScrollbar-min-slider-length: 30;
     -GtkRange-stepper-spacing: 0;
@@ -15,17 +15,17 @@
     background-image: none;
     background-color: @transparent;
     border-color: shade(@bg_color, 0.90);
-    border-width:              0 1 0 1;
-    -unico-inner-stroke-width: 0 1 0 1;
-    -unico-outer-stroke-width: 0 0 0 1;
+    border-width: 0px 1px 0px 1px;
+    -unico-inner-stroke-width: 0px 1px 0px 1px;
+    -unico-outer-stroke-width: 0px 0px 0px 1px;
     -unico-outer-stroke-color: alpha(white, 0.03);
     -unico-inner-stroke-color: alpha(white, 0.03);
 }
 
 .scrollbar.horizontal.trough {
-    border-width:              1 0 1 0;
-    -unico-inner-stroke-width: 1 0 1 0;
-    -unico-outer-stroke-width: 1 0 0 0;
+    border-width: 1px 0px 1px 0px;
+    -unico-inner-stroke-width: 1px 0px 1px 0px;
+    -unico-outer-stroke-width: 1px 0px 0px 0px;
 }
 
 /* Sliders and buttons */
@@ -35,8 +35,8 @@
     background-color: alpha(black, 0.5);
     border-color:     alpha(white, 0.1);
 
-    border-radius: 2;
-    border-width: 1;
+    border-radius: 2px;
+    border-width: 1px;
 }
 
 .scrollbar.slider:prelight {

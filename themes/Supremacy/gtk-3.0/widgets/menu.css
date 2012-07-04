@@ -1,14 +1,14 @@
 .menu {
-    padding: 3;
+    padding: 3px;
     background-image: none;
     background-color: shade(@bg_color, 0.50);
     color: @fg_color;
-    border-width: 3;
+    border-width: 3px;
     border-style: solid;
     border-color: shade(@bg_color, 0.75);
 
     -unico-inner-stroke-color: shade(@bg_color, 1.25);
-    -unico-inner-stroke-width: 0;
+    -unico-inner-stroke-width: 0px;
 }
 
 .menu:selected {
@@ -22,12 +22,12 @@
 .menu.button {
     background-color: shade(@bg_color, 1.08);
     background-image: none;
-    border-radius: 0;
+    border-radius: 0px;
     border-style: none;
-    border-width: 1;
+    border-width: 1px;
 
     -unico-border-gradient: none;
-    -unico-glow-radius: 0;
-    -unico-inner-stroke-width: 0;
-    -unico-outer-stroke-width: 0;
+    -unico-glow-radius: 0px;
+    -unico-inner-stroke-width: 0px;
+    -unico-outer-stroke-width: 0px;
 }
