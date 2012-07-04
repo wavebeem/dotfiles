@@ -1,0 +1,13 @@
+# Shinobi xfwm theme by Brian Mock mock.brian@gmail.com
+# mod of Axiom Dark xfwm theme by Rogier Koppejan.
+
+active_text_color=#FFFFFF
+button_offset=0
+button_spacing=1
+full_width_title=true
+inactive_text_color=#000000
+maximized_offset=0
+show_app_icon=false
+title_horizontal_offset=0
+title_vertical_offset_active=1
+title_vertical_offset_inactive=1

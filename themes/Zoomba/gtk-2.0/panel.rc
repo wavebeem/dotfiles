@@ -1,0 +1,170 @@
+style "theme-panel" = "murrine-button"
+{
+    xthickness = 1
+    ythickness = 1
+
+    bg[NORMAL]          = "#222"
+    bg[PRELIGHT]        = "#444434"
+    bg[SELECTED]        = @selected_bg_color
+    bg[ACTIVE]          = "#333323"
+    bg[INSENSITIVE]     = "#000"
+
+    fg[NORMAL]          = "#FFE"
+    fg[PRELIGHT]        = "#FFE"
+    fg[SELECTED]        = @selected_fg_color
+    fg[ACTIVE]          = "#FFE"
+    fg[INSENSITIVE]     = "#AA8"
+
+    text[NORMAL]        = "#FFE"
+    text[PRELIGHT]      = "#FFE"
+    text[SELECTED]      = @selected_fg_color
+    text[ACTIVE]        = "#FFE"
+    text[INSENSITIVE]   = "#AA8"
+
+
+    font_name = "Bold 7"
+
+    engine "murrine" {
+        contrast            = 1.00
+        highlight_shade     = 1.00
+#       lightborder_shade   = 1.00
+        lightborder_shade   = 1.10
+        animation           = FALSE
+        roundness           = 2
+#       gradient_shades     = {1.0, 1.0, 1.0, 1.0}
+        gradient_shades     = {1.05, 1.0, 1.0, 0.95}
+    }
+}
+
+style "bg-image" {
+    bg_pixmap[NORMAL] = "panel-overlay.png"
+}
+style "no-bg-image" {
+    bg_pixmap[NORMAL] = ""
+}
+
+style "progressbar" {
+    xthickness = 1
+    ythickness = 1
+
+    bg[SELECTED] = @selected_fg_color
+    bg[NORMAL]   = @selected_bg_color
+#   bg[NORMAL]   = "#555"
+
+    engine "clearlooks" {
+        style       = INVERTED
+        radius      = 0.0
+        contrast    = 1.00
+        hint        = "progressbar"
+    }
+
+#    engine "murrine" {
+#        roundness = 0
+#        contrast  = 2.00
+#    }
+}
+
+style "pager" {
+    bg[NORMAL]          = @selected_bg_color
+#   bg[NORMAL]          = "#555"
+    bg[SELECTED]        = @selected_fg_color
+
+    fg[NORMAL]          = shade(0.75, @selected_bg_color)
+#   fg[NORMAL]          = shade(0.50, "#777")
+    fg[SELECTED]        = shade(0.65, @selected_fg_color)
+#   fg[SELECTED]        = shade(0.85, "#777")
+}
+
+style "frame" { # and separators
+    ythickness = 4
+    xthickness = 4
+
+    bg[NORMAL] = "#222"
+    
+    engine "murrine" {
+        contrast = 1.15
+    }
+}
+
+style "tasklist" {
+    #bg[NORMAL]      = "#444"
+    #bg[ACTIVE]      = "#777"
+#   bg[PRELIGHT]    = "#FFF"
+#   fg[PRELIGHT]    = "#000"
+#   text[PRELIGHT]  = "#000"
+
+    engine "murrine" {
+        roundness = 2
+    }
+}
+
+style "notes" {
+    bg[NORMAL]      = "#FFEF75"
+    bg[ACTIVE]      = "#E5D76A"
+    bg[PRELIGHT]    = "#E5D76A"
+    bg[SELECTED]    = "#E5D76A"
+    fg[NORMAL]      = "#000"
+    fg[ACTIVE]      = "#000"
+    fg[PRELIGHT]    = "#000"
+    base[NORMAL]    = "#FFEF75"
+    text[NORMAL]    = "#000"
+
+    engine "murrine" {
+        contrast = 0.75
+#       gradient_shades = {1.25, 1.00, 1.00, 0.75}
+    }
+}
+
+style "socket" {
+    bg_pixmap[NORMAL] = "<parent>"
+    bg[NORMAL] = "#222"
+}
+
+style "notify" {
+    bg[NORMAL]      = "#FFEF75"
+    bg[ACTIVE]      = "#E5D76A"
+    bg[PRELIGHT]    = "#E5D76A"
+    fg[NORMAL]      = "#000"
+    fg[ACTIVE]      = "#000"
+    fg[PRELIGHT]    = "#000"
+    base[NORMAL]    = "#FFEF75"
+    text[NORMAL]    = "#000"
+}
+
+# Panel settings
+widget "*PanelWidget*"      style "theme-panel"
+widget "*PanelApplet*"      style "theme-panel"
+widget "*fast-user-switch*" style "theme-panel"
+class "PanelApp*"           style "theme-panel"
+class "PanelToplevel*"      style "theme-panel"
+#widget_class "*Mail*"      style "theme-panel" # Disabled to fix Evolution bug.
+#class "*Panel*"            style "theme-panel" # Disabled to fix bug.
+widget_class "*notif*"      style "notify"
+widget_class "*Notif*"      style "notify"
+
+# Disabled to fix pidgin...
+#widget_class "*Tray*"       style "theme-panel" 
+#widget_class "*tray*"       style "theme-panel"
+
+# XFCE panel theming.
+widget "*Xfce*Panel*"          style "theme-panel"
+class  "*Xfce*Panel*"          style "theme-panel"
+#widget "*Xfce*Panel*"          style "bg-image"
+#class  "*Xfce*Panel*"         style "bg-image"
+#class  "*Xfce*Socket*"        style "bg-image"
+#widget "*Xfce*Socket*"        style "no-bg-image"
+#class  "*Xfce*Socket*"        style "no-bg-image"
+#widget "*Xfce*Socket*"        style "socket"
+#class  "*Xfce*Socket*"        style "socket"
+###
+# Customized tweaks for Xfce panel
+###
+widget "*Panel*GtkProgressBar" style "progressbar"
+widget "*Panel*NetkPager"      style "pager"
+widget "*Panel*Frame*"         style "frame"
+widget "*Panel*DrawingArea*"   style "frame" # Separators
+widget "*Panel*NetkTasklist*"  style "tasklist"
+widget "xfce*notes*"           style: highest "notes"
+widget "*Xfce*Panel*Frame*Alignment*" style "socket"
+class  "*Xfce*Panel*Frame*Alignment*" style "socket"
+# vim: set syn=gtkrc:
