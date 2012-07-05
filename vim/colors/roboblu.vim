@@ -27,8 +27,8 @@ hi CursorIM     ctermbg=red
 
 
 " Note: This needs to be done twice... why?
-hi Normal           ctermbg=none ctermfg=none cterm=bold
-hi Normal           ctermbg=none ctermfg=none cterm=bold
+hi Normal           ctermbg=none ctermfg=gray cterm=none
+hi Normal           ctermbg=none ctermfg=gray cterm=none
 
 hi Comment          ctermfg=darkgrey
 hi Constant         ctermfg=lightred
