@@ -7,7 +7,7 @@ menu.border.color:   #48427F
 
 !! Menu separators
 menu.separator.color: #48427F
-menu.separator.width: 1
+menu.separator.width: 0
 menu.separator.padding.width:  0
 menu.separator.padding.height: 0
 
@@ -17,8 +17,8 @@ menu.items.disabled.text.color: #48427F
 
 !! Menu headers
 menu.title.bg: flat solid
-menu.title.bg.color: #222222
-menu.title.text.color: #cccccc
+menu.title.bg.color: #312D63
+menu.title.text.color: #756FB3
 menu.title.text.justify: right
 
 !! Selected menu item

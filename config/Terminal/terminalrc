@@ -2,7 +2,7 @@
 MiscAlwaysShowTabs=FALSE
 MiscBell=FALSE
 MiscBordersDefault=TRUE
-MiscCursorBlinks=FALSE
+MiscCursorBlinks=TRUE
 MiscCursorShape=TERMINAL_CURSOR_SHAPE_BLOCK
 MiscDefaultGeometry=80x24
 MiscInheritGeometry=FALSE
@@ -36,7 +36,7 @@ ColorPalette15=#a740eeeee73f
 ColorPalette8=#9fdc9d98cf5b
 ColorBackground=#1a1a19192f2f
 ColorForeground=#8a8a8888b4b4
-ColorCursor=#9a9aeeeee5e4
+ColorCursor=#5e5e5d5d7e7e
 TabActivityColor=#e6e67272d3d2
 AccelNewTab=<Alt>u
 AccelCloseTab=<Alt>w
