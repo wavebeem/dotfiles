@@ -12,7 +12,7 @@ style "menu" {
     text[NORMAL]   = "#D7D7E0"
     text[PRELIGHT] = "#D7D7E0"
     text[SELECTED] = "#D7D7E0"
-    fg[INSENSITIVE] = shade(0.80, "#D7D7E0")
+    fg[INSENSITIVE] = mix(0.60, "#2B2757", "#D7D7E0")
 
     engine "murrine" {
         contrast = 3.00
