@@ -5,6 +5,7 @@ config/roxterm.sourceforge.net
 config/openbox
 config/tint2
 config/kde-xbindkeysrc
+config/Terminal
 mpd/mpd.conf
 chrome-themes
 zshenv
