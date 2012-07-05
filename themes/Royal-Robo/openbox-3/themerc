@@ -55,7 +55,7 @@ window.*.button.*.*.bg: parentrelative
 
 !! Borders
 window.active.border.color:   #48427F
-window.inactive.border.color: #48427F
+window.inactive.border.color: #3A3566
 window.active.title.separator.color:   #2B2757
 window.inactive.title.separator.color: #2B2757
 border.width:  1

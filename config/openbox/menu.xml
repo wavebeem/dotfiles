@@ -9,7 +9,7 @@
     <item label="Settings">
       <action name="Execute">
         <execute>
-          systemsettings
+          obconf
         </execute>
       </action>
     </item>
@@ -33,14 +33,14 @@
     <item label="Files">
       <action name="Execute">
         <execute>
-          dolphin
+          FM
         </execute>
       </action>
     </item>
     <item label="Browser">
       <action name="Execute">
         <execute>
-          chromium
+          BROWSER
         </execute>
       </action>
     </item>

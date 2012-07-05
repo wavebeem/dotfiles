@@ -678,6 +678,12 @@
     <application name="*" class="Roxterm" type="*" role="*">
       <decor>no</decor>
     </application>
+    <application name="*" class="Terminal" type="*" role="*">
+      <decor>no</decor>
+    </application>
+    <application name="*" class="XTerm" type="*" role="*">
+      <decor>no</decor>
+    </application>
     <!--
     <application name="*" class="XTerm" type="*" role="*">
       <decor>no</decor>
