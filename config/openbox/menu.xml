@@ -27,6 +27,23 @@
         </execute>
       </action>
     </item>
+
+    <separator label="Compositing"/>
+
+    <item label="On">
+      <action name="Execute">
+        <execute>
+          COMPOSITE on
+        </execute>
+      </action>
+    </item>
+    <item label="Off">
+      <action name="Execute">
+        <execute>
+          COMPOSITE off
+        </execute>
+      </action>
+    </item>
   </menu>
 
   <menu id="apps-menu" label="Openbox">

@@ -75,7 +75,7 @@
     </font>
     <font place="MenuHeader">
       <name>Luxi Sans</name>
-      <size>9</size>
+      <size>8</size>
       <!-- font size in points -->
       <weight>Bold</weight>
       <!-- 'bold' or 'normal' -->
