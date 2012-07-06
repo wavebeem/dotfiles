@@ -12,6 +12,11 @@ style "notebook" {
     # Fallback engine
     engine "murrine" {
         roundness = 0
-        contrast = 0.75
+        contrast = 0.50
+    }
+
+    engine "industrial" {
+        contrast = 0.50
+        rounded_buttons = FALSE
     }
 }

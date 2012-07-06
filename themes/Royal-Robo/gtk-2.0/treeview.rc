@@ -14,7 +14,7 @@ style "treeview" {
     base[ACTIVE  ] = mix(0.70, shade(1.00, @selected_bg_color), shade(0.80, @bg_color))
 
     engine "murrine" {
-        gradient_shades = {1.05, 1.05, 1.05, 0.95}
+        gradient_shades = {0.98, 0.98, 0.98, 0.95}
     }
 }
 
