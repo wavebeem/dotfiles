@@ -22,7 +22,6 @@ style "scrollbar" {
         roundness = 0
         contrast = 0.20
         trough_shades = {0.95, 0.95}
-        #border_shades = {0.25, 0.50}
         border_shades = {0.75, 0.75}
         prelight_shade = 0.90
     }
