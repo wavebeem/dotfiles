@@ -83,15 +83,15 @@ systray_icon_asb  = 100 0 0
 
 ### CLOCK ###
 clock_background_id = 1
-time1_format = %m/%d
+time1_format = %A – %Y-%m-%d
 time1_font = luxi sans bold 8
-time2_format = %A
-time2_font = luxi sans bold 8
+#time2_format = %A
+#time2_font = luxi sans bold 7
 clock_font_color = #ffffff 50
 clock_padding = 8 8
 #clock_lclick_command = gsimplecal
 #clock_rclick_command = orage
-clock_tooltip = %A %Y-%m-%d
+clock_tooltip = %A – %Y-%m-%d
 #time1_timezone = :US/Hawaii
 #time2_timezone = :US/Eastern
 #clock_tooltip_timezone = :/usr/share/zoneinfo/Europe/Paris
