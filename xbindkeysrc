@@ -14,6 +14,9 @@ Mod4 + Shift + F1
 "DMENU_RUN"
 Mod4 + F1
 
+"DMENU_RUN"
+Mod4 + p
+
 "HTOP"
 Mod4 + w
 
@@ -23,8 +26,8 @@ Mod4 + e
 "xkill"
 Mod4 + Escape
 
-#"power-menu.sh"
-#Control + Alt + q
+"power-menu.sh"
+Control + Alt + q
 
 "xterm"
 Mod4 + F2
@@ -68,11 +71,11 @@ Mod4 + F12
 #"xscreensaver-command -lock"
 #Control + Alt + l
 
-#"COMPOSITE off"
-#Mod4 + Alt + F11
+"COMPOSITE off"
+Mod4 + Alt + F11
 
-#"COMPOSITE on"
-#Mod4 + Alt + F12
+"COMPOSITE on"
+Mod4 + Alt + F12
 
 "SCROT"
 Print
