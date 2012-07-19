@@ -70,7 +70,7 @@ export BROWSER='chromium'
 export PAGER='less'
 
 # Force Java to anti-alias text
-export _JAVA_OPTIONS="-Dawt.useSystemAAFontSettings=on"
+#export _JAVA_OPTIONS="-Dawt.useSystemAAFontSettings=on"
 
 alias img="viewnior"
 
