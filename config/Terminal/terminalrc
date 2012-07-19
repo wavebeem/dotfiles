@@ -43,7 +43,7 @@ AccelCloseTab=<Alt>w
 AccelPrevTab=<Alt>k
 AccelNextTab=<Alt>j
 ShortcutsNoMnemonics=TRUE
-BackgroundDarkness=0.870000
+BackgroundDarkness=0.900000
 AccelSetTitle=<Alt>s
 AccelPreferences=<Alt>comma
 AccelNewWindow=<Primary><Shift>n
@@ -52,7 +52,7 @@ AccelContents=<Alt>F1
 ScrollingLines=9000
 AccelResetAndClear=
 AccelReset=
-BackgroundMode=TERMINAL_BACKGROUND_TRANSPARENT
 ShortcutsNoMenukey=TRUE
 FontAllowBold=FALSE
+BackgroundMode=TERMINAL_BACKGROUND_TRANSPARENT
 
