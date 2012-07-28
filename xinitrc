@@ -60,8 +60,6 @@ Start() {
     # Enable Ctrl-Alt-Backspace for zapping X
     setxkbmap -option terminate:ctrl_alt_bksp &
 
-    krunner &
-
     nvidia-settings -l &
 
     for script in ~/.screenlayout/*.sh; do
