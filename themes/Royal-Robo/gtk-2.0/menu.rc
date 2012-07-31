@@ -4,15 +4,15 @@ style "menu" {
     xthickness = 1
     ythickness = 1
 
-    bg[NORMAL]     = "#2B2757"
-    base[NORMAL]   = "#2B2757"
-    fg[NORMAL]     = "#D7D7E0"
-    fg[PRELIGHT]   = "#D7D7E0"
-    fg[SELECTED]   = "#D7D7E0"
-    text[NORMAL]   = "#D7D7E0"
-    text[PRELIGHT] = "#D7D7E0"
-    text[SELECTED] = "#D7D7E0"
-    fg[INSENSITIVE] = mix(0.60, "#2B2757", "#D7D7E0")
+    bg[NORMAL]     = @dark_bg_color
+    base[NORMAL]   = @dark_bg_color
+    fg[NORMAL]     = @dark_fg_color
+    fg[PRELIGHT]   = @dark_fg_color
+    fg[SELECTED]   = @dark_fg_color
+    text[NORMAL]   = @dark_fg_color
+    text[PRELIGHT] = @dark_fg_color
+    text[SELECTED] = @dark_fg_color
+    fg[INSENSITIVE] = mix(0.60, @dark_bg_color, @dark_fg_color)
 
     engine "murrine" {
         contrast = 3.00
@@ -37,12 +37,12 @@ style "menu-item" = "menu" {
     bg[INSENSITIVE] = mix(0.50, shade(0.80, @selected_bg_color), shade(1.50, @bg_color))
 
     #bg[SELECTED] = mix(0.50, shade(0.80, @selected_bg_color), "#FFF")
-    bg[SELECTED] = "#3C386B"
-    fg[PRELIGHT] = "#ffffff"
+    bg[SELECTED] = @dark_selected_bg_color
+    fg[PRELIGHT] = @dark_selected_fg_color
 
     engine "murrine" {
         contrast  = 0.00
-        border_shades = {1.00, 1.00}
+        border_shades = {1.10, 1.10}
         roundness = 0
     }
 }

@@ -6,13 +6,13 @@ style "menubar" {
 
     font_name = "Bold"
 
-    bg[NORMAL]     = "#2B2757"
-    fg[NORMAL]     = "#D7D7E0"
+    bg[NORMAL]     = @dark_bg_color
+    fg[NORMAL]     = @dark_fg_color
 
-    fg[PRELIGHT]   = "#D7D7E0"
-    fg[SELECTED]   = "#D7D7E0"
-    text[PRELIGHT] = "#D7D7E0"
-    text[SELECTED] = "#D7D7E0"
+    fg[PRELIGHT]   = @dark_fg_color
+    fg[SELECTED]   = @dark_fg_color
+    text[PRELIGHT] = @dark_fg_color
+    text[SELECTED] = @dark_fg_color
 
     fg[INSENSITIVE] = shade(0.80, @fg_color)
 
@@ -29,13 +29,13 @@ style "menubar-item" {
     ythickness = 3
 
     # To make the menubar items blend in with the menus themselves
-    bg[PRELIGHT] = "#3C386B"
+    bg[PRELIGHT] = @dark_selected_bg_color
     #bg[PRELIGHT] = "#2B2757"
 
     engine "murrine" {
         roundness = 0
         contrast = 0.50
-        border_shades = {1.50, 1.50}
+        border_shades = {1.25, 1.25}
         lightborder_shade = 1.00
         #contrast = 2.00
     }

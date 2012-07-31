@@ -7,7 +7,7 @@ style "scrollbar" {
     GtkRange::trough-under-steppers = 1
 
     #bg[SELECTED]    = shade(1.15, @bg_color)
-    bg[SELECTED]    = "#2B2757"
+    bg[SELECTED]    = @dark_bg_color
 
     bg[NORMAL]      = shade(0.75, @bg_color)
     bg[PRELIGHT]    = shade(1.20, @bg_color)
