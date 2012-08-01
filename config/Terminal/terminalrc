@@ -54,4 +54,5 @@ AccelResetAndClear=
 AccelReset=
 ShortcutsNoMenukey=TRUE
 FontAllowBold=FALSE
+BackgroundMode=TERMINAL_BACKGROUND_TRANSPARENT
 

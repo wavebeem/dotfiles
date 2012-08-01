@@ -12,7 +12,7 @@ tooltip_bg_color:#D2D8E6
 tooltip_fg_color:#222222
 dark_bg_color:#2B2757
 dark_fg_color:#D7D7E0
-dark_selected_bg_color:#3C386B
+dark_selected_bg_color:#48457D
 dark_selected_fg_color:#ffffff"
 
 include "base.rc"
