@@ -1,8 +1,8 @@
 # vim: set syn=gtkrc:
 
 style "menu" {
-    xthickness = 0
-    ythickness = 0
+    xthickness = 2
+    ythickness = 2
 
     bg[NORMAL]     = shade(1.10, @bg_color)
     base[NORMAL]   = shade(1.10, @bg_color)
@@ -15,7 +15,7 @@ style "menu" {
     fg[INSENSITIVE] = mix(0.60, @bg_color, @fg_color)
 
     engine "murrine" {
-        contrast = 0.50
+        contrast = 0.75
     }
 
 #   engine "industrial" {
