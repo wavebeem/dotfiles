@@ -3,31 +3,33 @@
 ### BACKGROUND AND BORDER ###
 # ID 1
 rounded          = 0
-border_width     = 1
-background_color = #121027 50
-border_color     = #ffffff 6
+border_width     = 0
+background_color = #1A192F 100
+border_color     = #ffffff 5
 
 # ID 2
 rounded          = 0
-border_width     = 1
-background_color = #121027 0
-border_color     = #000000 0
+border_width     = 3
+background_color = #28254A 100
+border_color     = #28254A 100
 
 # ID 3
 rounded          = 0
-border_width     = 1
-background_color = #ffffff 25
+border_width     = 0
+#background_color = #ffffff 25
+background_color = #48457d 85
 border_color     = #000000 25
 
 # ID 4
 rounded          = 0
 border_width     = 0
 background_color = #c26000 100
+#background_color = #fcaf3e 100
 border_color     = #f5d6b8 50
 
 # ID 5
 rounded          = 0
-border_width     = 1
+border_width     = 3
 background_color = #2B2757 100
 border_color     = #48427F 100
 
@@ -40,10 +42,10 @@ border_color     = #000000 0
 ### PANEL ###
 panel_background_id = 2
 panel_monitor  = all
-panel_position = top center horizontal
-panel_size     = 1920 36
-panel_margin   = 0 0
-panel_padding  = 3 3
+panel_position = top left vertical
+panel_size     = 1092 40
+panel_margin   = -3 -6
+panel_padding  = 3 0
 font_shadow    = 0
 wm_menu        = 0
 panel_dock     = 0
@@ -61,7 +63,7 @@ task_active_background_id = 3
 task_urgent_background_id = 4
 task_icon         = 1
 task_text         = 0
-task_maximum_size = 36 16
+task_maximum_size = 36 26
 task_centered     = 1
 task_padding      = 5 5
 task_font         = luxi sans bold 8
@@ -83,8 +85,8 @@ systray_icon_asb  = 100 0 0
 
 ### CLOCK ###
 clock_background_id = 1
-time1_format = %A – %Y-%m-%d
-time1_font = luxi sans bold 8
+#time1_format = %A – %Y-%m-%d
+#time1_font = luxi sans bold 8
 #time2_format = %A
 #time2_font = luxi sans bold 7
 clock_font_color = #ffffff 50
@@ -124,7 +126,8 @@ mouse_scroll_down = next_task
 
 ### AUTOHIDE OPTIONS ###
 #autohide              = 0
-#autohide_show_timeout = 0.3
-#autohide_hide_timeout = 2
-#autohide_height       = 4
+#autohide_show_timeout = 0.1
+#autohide_hide_timeout = 0.5
+#autohide_height       = 6
 #strut_policy          = minimum
+#strut_policy          = none
