@@ -5,7 +5,7 @@ eval $(dircolors)
 set -o vi
 
 # Add my programs to the path
-export PATH="$HOME/.local/bin:$HOME/cakemenu:$HOME/Abundant/src:$HOME/bin:$PATH"
+export PATH="$HOME/.local/bin:$HOME/.gem/ruby/1.9.1/bin:$HOME/bin:$PATH"
 
 # No more \a
 setterm -blength 0 >/dev/null 2>&1
