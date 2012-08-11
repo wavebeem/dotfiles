@@ -113,15 +113,13 @@
 
        use obconf if you want to change these without having to log out
        and back in -->
-    <number>6</number>
+    <number>4</number>
     <firstdesk>1</firstdesk>
     <names>
-      <name>o</name>
-      <name>O</name>
-      <name>Oo</name>
-      <name>OO</name>
-      <name>OOo</name>
-      <name>OOO</name>
+      <name>&#x5317;</name>
+      <name>&#x5357;</name>
+      <name>&#x6771;</name>
+      <name>&#x897F;</name>
     </names>
     <popupTime>750</popupTime>
     <!-- The number of milliseconds to show the popup for when switching
