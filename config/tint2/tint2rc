@@ -16,7 +16,7 @@ border_color     = #28254A 100
 # ID 3
 rounded          = 0
 border_width     = 0
-background_color = #4C4970 75
+background_color = #4C4970 50
 border_color     = #000000 25
 
 # ID 4
@@ -35,6 +35,12 @@ border_color     = #48427F 100
 rounded          = 0
 border_width     = 1
 background_color = #000000 0
+border_color     = #000000 0
+
+# ID 7
+rounded          = 0
+border_width     = 0
+background_color = #4C4970 100
 border_color     = #000000 0
 
 ### PANEL ###
@@ -59,7 +65,7 @@ taskbar_background_id = 1
 taskbar_name                        = 1
 taskbar_name_padding                = 6
 taskbar_name_background_id          = 2
-taskbar_name_active_background_id   = 2
+taskbar_name_active_background_id   = 7
 taskbar_name_font                   = luxi sans bold 8
 taskbar_name_font_color             = #ffffff 20
 taskbar_name_active_font_color      = #ffffff 75
