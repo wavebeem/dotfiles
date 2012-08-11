@@ -121,7 +121,7 @@
       <name>&#x6771;</name>
       <name>&#x897F;</name>
     </names>
-    <popupTime>750</popupTime>
+    <popupTime>0</popupTime>
     <!-- The number of milliseconds to show the popup for when switching
        desktops.  Set this to 0 to disable the popup. -->
   </desktops>
