@@ -98,7 +98,7 @@ au filetype perl        setl foldmethod=indent
 au filetype conf        setl foldmethod=indent
 
 " Enable syntax highlighting for GLSL files
-au BufNewFile,BufRead *.frag,*.vert,*.fp,*.vp,*.glsl setf glsl
+au BufNewFile,BufRead *.frag,*.vert,*.vsh,*.fsh,*.fp,*.vp,*.glsl setf glsl
 
 " Highlight space at the end of the line as an error,
 " but don't highlight while in insert mode
