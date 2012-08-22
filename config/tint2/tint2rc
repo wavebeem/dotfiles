@@ -4,7 +4,8 @@
 # ID 1
 rounded          = 0
 border_width     = 0
-background_color = #1A192F 100
+#background_color = #1A192F 100
+background_color = #0F0D1C 100
 border_color     = #ffffff 5
 
 # ID 2
@@ -16,7 +17,7 @@ border_color     = #28254A 100
 # ID 3
 rounded          = 0
 border_width     = 0
-background_color = #4C4970 50
+background_color = #4C4970 75
 border_color     = #000000 25
 
 # ID 4
@@ -40,13 +41,20 @@ border_color     = #000000 0
 # ID 7
 rounded          = 0
 border_width     = 0
-background_color = #4C4970 100
+background_color = #4C4970 75
+border_color     = #000000 0
+
+# ID 8
+rounded          = 0
+border_width     = 0
+#background_color = #0F0D1C 100
+background_color = #1A192F 100
 border_color     = #000000 0
 
 ### PANEL ###
 panel_background_id = 2
 panel_monitor  = all
-panel_position = bottom center horizontal
+panel_position = top center horizontal
 panel_size     = 1932 26
 panel_margin   = -6 -3
 panel_padding  = 0 0
@@ -64,10 +72,11 @@ taskbar_background_id = 1
 ### TASKBAR NAME ###
 taskbar_name                        = 1
 taskbar_name_padding                = 6
-taskbar_name_background_id          = 2
-taskbar_name_active_background_id   = 7
+taskbar_name_background_id          = 8
+taskbar_name_active_background_id   = 8
+#taskbar_name_active_background_id   = 7
 taskbar_name_font                   = luxi sans bold 8
-taskbar_name_font_color             = #ffffff 20
+taskbar_name_font_color             = #ffffff 15
 taskbar_name_active_font_color      = #ffffff 75
 
 ### TASKS ###
@@ -97,16 +106,16 @@ task_urgent_icon_asb   = 100 0 0
 #systray_icon_asb  = 100 0 0
 
 ### CLOCK ###
-clock_background_id = 2
-time1_format = %A – %Y-%m-%d
+clock_background_id = 8
+time1_format = %A  ::  %Y-%m-%d
 time1_font = luxi sans bold 8
 #time2_format = %A
 #time2_font = luxi sans bold 7
 clock_font_color = #ffffff 50
 clock_padding = 8 8
-#clock_lclick_command = gsimplecal
+clock_lclick_command = xterm -geometry 64x9 -r -T Calendar -hold -e CAL
 #clock_rclick_command = orage
-clock_tooltip = %A – %Y-%m-%d
+#clock_tooltip = %H:%M  :::  %A  :::  %Y-%m-%d
 #time1_timezone = :US/Hawaii
 #time2_timezone = :US/Eastern
 #clock_tooltip_timezone = :/usr/share/zoneinfo/Europe/Paris
@@ -132,10 +141,12 @@ tooltip_font_color    = #ffffff 75
 tooltip_font          = luxi sans bold 12
 
 ### MOUSE ACTION ON TASK ###
-#mouse_middle      = none
+#mouse_middle      = toggle
 mouse_right       = close
 mouse_scroll_up   = prev_task
 mouse_scroll_down = next_task
+#mouse_scroll_up   = desktop_left
+#mouse_scroll_down = desktop_right
 
 ### AUTOHIDE OPTIONS ###
 #autohide              = 0
