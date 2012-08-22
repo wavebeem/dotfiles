@@ -44,6 +44,8 @@ playlist_separate_albums = "no"
 #song_columns_list_format =  "(6f)[green]{lr} (60)[cyan]{t} (40)[red]{b}"
 song_columns_list_format =  "(6f)[green]{lr} (100)[]{t}"
 
+song_window_title_format = "%t - %a"
+
 #execute_on_song_change = ""
 
 playlist_show_remaining_time = "no"
