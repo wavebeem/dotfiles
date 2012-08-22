@@ -1,11 +1,11 @@
 # vim: set syn=gtkrc:
 
 style "menu" {
-    xthickness = 0
-    ythickness = 0
+    xthickness = 1
+    ythickness = 1
 
-    bg[NORMAL]     = shade(1.10, @bg_color)
-    base[NORMAL]   = shade(1.10, @bg_color)
+    bg[NORMAL]     = shade(1.20, @bg_color)
+    base[NORMAL]   = shade(1.20, @bg_color)
     fg[NORMAL]     = @fg_color
     fg[PRELIGHT]   = @fg_color
     fg[SELECTED]   = @fg_color
@@ -15,7 +15,7 @@ style "menu" {
     fg[INSENSITIVE] = mix(0.60, @bg_color, @fg_color)
 
     engine "murrine" {
-        contrast = 0.60
+        contrast = 0.80
     }
 
 #   engine "industrial" {
@@ -34,15 +34,15 @@ style "menu-item" = "menu" {
 
     base[NORMAL]  = @bg_color
 
-    bg[INSENSITIVE] = shade(1.10, @bg_color)
+    bg[INSENSITIVE] = shade(1.20, @bg_color)
 
     #bg[SELECTED] = mix(0.50, shade(0.80, @selected_bg_color), "#FFF")
-    bg[SELECTED] = shade(0.95, @bg_color)
+    bg[SELECTED] = shade(1.05, @bg_color)
     fg[PRELIGHT] = @fg_color
 
     engine "murrine" {
         contrast  = 0.00
-        border_shades = {0.90, 0.90}
+        border_shades = {1.00, 1.00}
         roundness = 0
         gradient_shades = {1.00, 1.00, 1.00, 1.00}
     }
