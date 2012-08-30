@@ -1,0 +1,16 @@
+# Author: Brian Mock <mock.brian@gmail.com>
+
+gtk_color_scheme = "fg_color:#222222
+text_color:#111111
+bg_color:#cccccc
+base_color:#cccccc
+selected_bg_color:#B5B1E3
+selected_fg_color:#221f1e
+tooltip_bg_color:#D2D8E6
+tooltip_fg_color:#222222
+dark_bg_color:#222222
+dark_fg_color:#dddddd
+dark_selected_bg_color:#444444
+dark_selected_fg_color:#ffffff"
+
+include "base.rc"

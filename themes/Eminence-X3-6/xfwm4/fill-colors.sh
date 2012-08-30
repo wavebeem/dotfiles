@@ -1,6 +1,6 @@
 #!/bin/bash
-nbg="5b606c"
-fbg="8b909c"
+nbg="4b505c"
+fbg="9ba0ac"
 
 for img in *-active.xpm; do
     sed -i 's/=\tc #....../=\tc #'"${fbg}/" "$img"

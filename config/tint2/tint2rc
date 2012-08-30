@@ -5,19 +5,19 @@
 rounded          = 0
 border_width     = 0
 #background_color = #1A192F 100
-background_color = #0F0D1C 100
+background_color = #000000 100
 border_color     = #ffffff 5
 
 # ID 2
 rounded          = 0
 border_width     = 3
-background_color = #28254A 100
-border_color     = #28254A 100
+background_color = #222222 0
+border_color     = #222222 100
 
 # ID 3
 rounded          = 0
 border_width     = 0
-background_color = #4C4970 75
+background_color = #444444 75
 border_color     = #000000 25
 
 # ID 4
@@ -29,8 +29,8 @@ border_color     = #f5d6b8 50
 # ID 5
 rounded          = 0
 border_width     = 3
-background_color = #3A3566 100
-border_color     = #48427F 100
+background_color = #333333 100
+border_color     = #444444 100
 
 # ID 6
 rounded          = 0
@@ -41,14 +41,14 @@ border_color     = #000000 0
 # ID 7
 rounded          = 0
 border_width     = 0
-background_color = #4C4970 75
+background_color = #444444 75
 border_color     = #000000 0
 
 # ID 8
 rounded          = 0
 border_width     = 0
 #background_color = #0F0D1C 100
-background_color = #1A192F 100
+background_color = #111111 100
 border_color     = #000000 0
 
 ### PANEL ###

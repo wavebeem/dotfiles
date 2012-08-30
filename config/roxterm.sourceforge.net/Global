@@ -2,7 +2,7 @@
 [roxterm options]
 warn_close=0
 encoding=UTF-8
-colour_scheme=Royal Robo
+colour_scheme=Ember
 shortcut_scheme=Default
 profile=Brian
 edit_shortcuts=1
