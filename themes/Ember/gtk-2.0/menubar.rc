@@ -29,13 +29,14 @@ style "menubar-item" {
     ythickness = 3
 
     # To make the menubar items blend in with the menus themselves
-    bg[PRELIGHT] = @dark_selected_bg_color
+    #bg[PRELIGHT] = @dark_selected_bg_color
+    bg[PRELIGHT] = shade(0.90, @bg_color)
     #bg[PRELIGHT] = "#2B2757"
 
     engine "murrine" {
         roundness = 0
         contrast = 0.50
-        border_shades = {1.50, 1.50}
+        border_shades = {0.50, 0.50}
         lightborder_shade = 1.00
         #contrast = 2.00
     }

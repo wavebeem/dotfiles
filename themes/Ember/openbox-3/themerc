@@ -1,30 +1,30 @@
 !! vim: set ft=xdefaults:
 !! Menu background
 menu.items.bg: flat solid
-menu.items.bg.color: #2B2757
+menu.items.bg.color: #262626
 menu.border.width: 3
-menu.border.color:   #353263
+menu.border.color:   #363636
 
 !! Menu separators
-menu.separator.color: #2B2757
+menu.separator.color: #262626
 menu.separator.width: 0
 menu.separator.padding.width:  0
 menu.separator.padding.height: 0
 
 !! Menu text
-menu.items.text.color:          #D7D7E0
-menu.items.disabled.text.color: #48427F
+menu.items.text.color:          #dddddd
+menu.items.disabled.text.color: #666666
 
 !! Menu headers
 menu.title.bg: flat solid
-menu.title.bg.color: #312D63
-menu.title.text.color: #756FB3
+menu.title.bg.color: #363636
+menu.title.text.color: #888888
 menu.title.text.justify: right
 
 !! Selected menu item
 menu.items.active.bg: flat solid border
-menu.items.active.bg.color:        #3C386B
-menu.items.active.bg.border.color: #3C386B
+menu.items.active.bg.color:        #444444
+menu.items.active.bg.border.color: #444444
 menu.items.active.text.color: #ffffff
 
 !! Titlebar
@@ -78,14 +78,14 @@ menu.overlap: -9
 
 !! On-screen displays
 osd.border.width: 3
-osd.border.color: #353263
+osd.border.color: #363636
 osd.label.text.color: #D7D7E0
 osd.hilight.bg: flat solid
-osd.hilight.bg.color:        #928CCF
-osd.hilight.bg.border.color: #2B2757
+osd.hilight.bg.color:        #5a8aaa
+osd.hilight.bg.border.color: #5a8aaa
 osd.unhilight.bg: flat solid
-osd.unhilight.bg.color:        #353263
-osd.unhilight.bg.border.color: #353263
+osd.unhilight.bg.color:        #363636
+osd.unhilight.bg.border.color: #363636
 osd.bg: flat solid
-osd.bg.color: #211E43
-osd.bg.border.color: #211E43
+osd.bg.color: #262626
+osd.bg.border.color: #262626
