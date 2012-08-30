@@ -12,4 +12,5 @@ Xft.antialias: true
 Xft.dpi:       96
 Xft.rgba:      none
 
-#include ".xterm/royal-robo"
+!#include ".xterm/royal-robo"
+#include ".xterm/ember"
