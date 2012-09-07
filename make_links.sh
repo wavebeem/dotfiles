@@ -6,6 +6,7 @@ config/openbox
 config/tint2
 config/kde-xbindkeysrc
 config/Terminal
+config/fontconfig
 mpd/mpd.conf
 chrome-themes
 zshenv
@@ -18,7 +19,6 @@ xinitrc
 zshrc
 bashrc
 bash_profile
-fonts.conf
 ncmpcpp/config
 tmux.conf
 gitconfig
