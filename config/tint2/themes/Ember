@@ -3,21 +3,22 @@
 ### BACKGROUND AND BORDER ###
 # ID 1
 rounded          = 0
-border_width     = 3
-background_color = #000000 0
-border_color     = #ffffff 0
+border_width     = 0
+#background_color = #1A192F 100
+background_color = #000000 100
+border_color     = #ffffff 5
 
 # ID 2
 rounded          = 0
-border_width     = 0
+border_width     = 3
 background_color = #222222 0
 border_color     = #222222 100
 
 # ID 3
 rounded          = 0
-border_width     = 1
-background_color = #000000 25
-border_color     = #ffffff 25
+border_width     = 0
+background_color = #444444 75
+border_color     = #000000 25
 
 # ID 4
 rounded          = 0
@@ -27,9 +28,9 @@ border_color     = #f5d6b8 50
 
 # ID 5
 rounded          = 0
-border_width     = 1
-background_color = #B2BDD9 100
-border_color     = #a2a8b6 100
+border_width     = 3
+background_color = #333333 100
+border_color     = #444444 100
 
 # ID 6
 rounded          = 0
@@ -45,49 +46,38 @@ border_color     = #000000 0
 
 # ID 8
 rounded          = 0
-border_width     = 1
-background_color = #0D0C17 50
-border_color     = #ffffff 10
-
-# ID 9
-rounded          = 0
 border_width     = 0
-background_color = #000000 0
+#background_color = #0F0D1C 100
+background_color = #000000 100
 border_color     = #000000 0
 
-# ID 9
-rounded          = 0
-border_width     = 0
-background_color = #ffffff 25
-border_color     = #ffffff 0
-
 ### PANEL ###
-panel_background_id = 1
+panel_background_id = 2
 panel_monitor  = all
 panel_position = top center horizontal
-panel_size     = 1982 24
-panel_margin   = 0 0
+panel_size     = 1932 26
+panel_margin   = -6 -3
 panel_padding  = 0 0
 font_shadow    = 0
 wm_menu        = 0
 panel_dock     = 0
-panel_layer    = top
+panel_layer    = bottom
 
 ### TASKBAR ###
-#taskbar_mode          = multi_desktop
-taskbar_mode          = single_desktop
+taskbar_mode          = multi_desktop
+#taskbar_mode          = single_desktop
 taskbar_padding       = 0 0 0
-taskbar_background_id = 2
+taskbar_background_id = 1
 
 ### TASKBAR NAME ###
 taskbar_name                        = 1
 taskbar_name_padding                = 6
-taskbar_name_background_id          = 9
-taskbar_name_active_background_id   = 9
+taskbar_name_background_id          = 8
+taskbar_name_active_background_id   = 3
 #taskbar_name_active_background_id   = 7
 taskbar_name_font                   = luxi sans bold 8
-taskbar_name_font_color             = #000000 50
-taskbar_name_active_font_color      = #000000 50
+taskbar_name_font_color             = #ffffff 50
+taskbar_name_active_font_color      = #ffffff 75
 
 ### TASKS ###
 task_background_id        = 6
@@ -100,7 +90,7 @@ task_centered     = 1
 task_padding      = 5 5
 task_font         = luxi sans bold 8
 urgent_nb_of_blink     = 999999
-task_font_color        = #000000 50
+task_font_color        = #ffffff 50
 task_active_font_color = #ffffff 75
 task_urgent_font_color = #ffffff 100
 task_icon_asb          = 75 0 0
@@ -116,12 +106,12 @@ task_urgent_icon_asb   = 100 0 0
 #systray_icon_asb  = 100 0 0
 
 ### CLOCK ###
-clock_background_id = 2
+clock_background_id = 8
 time1_format = %H:%M  ::  %A  ::  %Y-%m-%d
 time1_font = luxi sans bold 8
 #time2_format = %A
 #time2_font = luxi sans bold 7
-clock_font_color = #000000 50
+clock_font_color = #ffffff 50
 clock_padding = 8 8
 clock_lclick_command = xterm -geometry 64x9 -r -T Calendar -hold -e CAL
 #clock_rclick_command = orage
@@ -144,10 +134,10 @@ battery_padding    = 4 4
 ### TOOLTIP ###
 tooltip               = 1
 tooltip_padding       = 2 4
-tooltip_show_timeout  = 1.0
+tooltip_show_timeout  = 0.0
 tooltip_hide_timeout  = 0.0
 tooltip_background_id = 5
-tooltip_font_color    = #222222 100
+tooltip_font_color    = #ffffff 75
 tooltip_font          = luxi sans bold 12
 
 ### MOUSE ACTION ON TASK ###
@@ -159,9 +149,9 @@ mouse_scroll_down = next_task
 #mouse_scroll_down = desktop_right
 
 ### AUTOHIDE OPTIONS ###
-#autohide              = 1
+#autohide              = 0
 #autohide_show_timeout = 0.1
 #autohide_hide_timeout = 0.5
-#autohide_height       = 9
+#autohide_height       = 6
 #strut_policy          = minimum
-##strut_policy          = none
+#strut_policy          = none

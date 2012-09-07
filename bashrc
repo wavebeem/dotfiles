@@ -135,3 +135,6 @@ export LESS="-R"
 [ -z "$TMUX"              ] && {
     cat "$HOME/.welcome"
 }
+
+# Autostart X if logging in to tty1
+[ "$(tty)" = "/dev/tty1" ] && exec g

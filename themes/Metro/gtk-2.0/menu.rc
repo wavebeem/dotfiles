@@ -12,14 +12,14 @@ style "menu" {
     text[NORMAL]   = @dark_fg_color
     text[PRELIGHT] = @dark_fg_color
     text[SELECTED] = @dark_fg_color
-    fg[INSENSITIVE] = mix(0.60, @bg_color, @fg_color)
+    fg[INSENSITIVE] = mix(0.60, @dark_bg_color, @dark_fg_color)
 
     engine "murrine" {
-        contrast = 0.30
+        contrast = 0.50
     }
 
 #   engine "industrial" {
-#       contrast = 0.75
+#       contrast = 0.90
 #       rounded_buttons = FALSE
 #   }
 
@@ -32,12 +32,11 @@ style "menu-item" = "menu" {
 
     font_name = "Bold"
 
-    base[NORMAL]  = @bg_color
+    base[NORMAL]  = @selected_bg_color
 
-    bg[INSENSITIVE] = shade(1.20, @bg_color)
+    bg[INSENSITIVE] = mix(0.50, shade(0.80, @selected_bg_color), shade(1.50, @bg_color))
 
-    #bg[SELECTED] = shade(1.30, @bg_color)
-    #bg[SELECTED] = mix(0.60, shade(0.90, @bg_color), @selected_bg_color)
+    #bg[SELECTED] = mix(0.50, shade(0.80, @selected_bg_color), "#FFF")
     bg[SELECTED] = @dark_selected_bg_color
     fg[PRELIGHT] = @dark_selected_fg_color
 
@@ -45,7 +44,6 @@ style "menu-item" = "menu" {
         contrast  = 0.00
         border_shades = {1.00, 1.00}
         roundness = 0
-        gradient_shades = {1.05, 1.00, 1.00, 0.95}
     }
 }
 

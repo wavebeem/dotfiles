@@ -41,8 +41,8 @@
                   'Active' - where the active window is -->
   </placement>
   <theme>
-    <name>Ember</name>
-    <titleLayout></titleLayout>
+    <name>Metro</name>
+    <titleLayout>CL</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
       N: window icon
@@ -57,7 +57,7 @@
     <animateIconify>no</animateIconify>
     <font place="ActiveWindow">
       <name>Luxi Sans</name>
-      <size>1</size>
+      <size>8</size>
       <!-- font size in points -->
       <weight>Bold</weight>
       <!-- 'bold' or 'normal' -->
@@ -121,7 +121,7 @@
       <name>&#x6771;</name>
       <name>&#x897F;</name>
     </names>
-    <popupTime>0</popupTime>
+    <popupTime>500</popupTime>
     <!-- The number of milliseconds to show the popup for when switching
        desktops.  Set this to 0 to disable the popup. -->
   </desktops>
@@ -656,31 +656,16 @@
     </application>
     -->
 
-    <application name="*" class="Chromium" type="*" role="*">
-      <decor>no</decor>
-    </application>
-    <application name="*" class="Gvbam" type="*" role="*">
-      <decor>no</decor>
-    </application>
-    <application name="*" class="Snes9x-gtk" type="*" role="*">
-      <decor>no</decor>
-    </application>
-    <application name="*" class="Viewnior" type="*" role="*">
-      <decor>no</decor>
-    </application>
-    <application name="*" class="MPlayer" type="*" role="*">
-      <decor>no</decor>
-    </application>
+    <application name="*" class="Chromium"    type="*" role="*"><decor>no</decor></application>
+    <application name="*" class="Gvbam"       type="*" role="*"><decor>no</decor></application>
+    <application name="*" class="Snes9x-gtk"  type="*" role="*"><decor>no</decor></application>
+    <application name="*" class="Viewnior"    type="*" role="*"><decor>no</decor></application>
+    <application name="*" class="MPlayer"     type="*" role="*"><decor>no</decor></application>
+    <application name="*" class="mplayer2"    type="*" role="*"><decor>no</decor></application>
+    <application name="*" class="Roxterm"     type="*" role="*"><decor>no</decor></application>
+    <application name="*" class="Terminal"    type="*" role="*"><decor>no</decor></application>
+    <application name="*" class="XTerm"       type="*" role="*"><decor>no</decor></application>
     <!--
-    <application name="*" class="Roxterm" type="*" role="*">
-      <decor>no</decor>
-    </application>
-    <application name="*" class="Terminal" type="*" role="*">
-      <decor>no</decor>
-    </application>
-    <application name="*" class="XTerm" type="*" role="*">
-      <decor>no</decor>
-    </application>
     -->
     <!--
     <application name="*" class="XTerm" type="*" role="*">
