@@ -39,3 +39,5 @@ maximise=0
 scrollback_lines=8000
 new_tabs_adjacent=1
 width=80
+show_tab_num=1
+middle_click_tab=1

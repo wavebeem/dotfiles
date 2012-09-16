@@ -2,7 +2,7 @@
 [roxterm options]
 warn_close=0
 encoding=UTF-8
-colour_scheme=Metro-King
+colour_scheme=Metro
 shortcut_scheme=Default
 profile=Brian
 edit_shortcuts=1

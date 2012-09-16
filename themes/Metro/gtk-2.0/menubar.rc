@@ -1,8 +1,8 @@
 # vim: set syn=gtkrc:
 
 style "menubar" {
-    xthickness = 0
-    ythickness = 0
+    xthickness = 1
+    ythickness = 1
 
     font_name = "Bold"
 

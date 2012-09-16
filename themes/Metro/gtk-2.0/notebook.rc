@@ -16,7 +16,7 @@ style "notebook" {
     }
 
     engine "industrial" {
-        contrast = 0.50
+        contrast = 0.30
         rounded_buttons = FALSE
     }
 }

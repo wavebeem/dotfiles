@@ -9,6 +9,7 @@ style "default" {
     GtkButton      ::default-border       = {0, 0, 0, 0}
 
     GtkMenu::horizontal-offset = 6
+    #GtkMenu::horizontal-offset = -1
 
 #    GtkCheckButton ::indicator-size       = 15
 #    GtkRadioButton ::indicator-size       = 15
@@ -52,7 +53,7 @@ style "default" {
     GtkMenu::horizontal-padding = 0
     GtkMenu::vertical-padding   = 0
 
-    GtkMenuBar::shadow_type = GTK_SHADOW_NONE
+    #GtkMenuBar::shadow_type = GTK_SHADOW_NONE
     GtkToolbar::shadow_type = GTK_SHADOW_NONE
 
     EogStatusBar::shadow_type = GTK_SHADOW_NONE
@@ -103,7 +104,7 @@ style "default" {
 
         # 0.8 for less contrast,
         # more than 1.0 for more contrast on borders
-        contrast = 0.50
+        contrast = 0.30
 
         # 0 = old arrows
         # 1 = filled arrows
