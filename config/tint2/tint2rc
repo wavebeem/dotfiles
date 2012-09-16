@@ -3,9 +3,9 @@
 ### BACKGROUND AND BORDER ###
 # ID 1
 rounded          = 0
-border_width     = 3
-background_color = #000000 0
-border_color     = #ffffff 0
+border_width     = 1
+background_color = #bbc0cc 50
+border_color     = #4b505c 20
 
 # ID 2
 rounded          = 0
@@ -15,9 +15,9 @@ border_color     = #222222 100
 
 # ID 3
 rounded          = 0
-border_width     = 1
-background_color = #000000 25
-border_color     = #ffffff 25
+border_width     = 0
+background_color = #2B303C 100
+border_color     = #000000 100
 
 # ID 4
 rounded          = 0
@@ -64,14 +64,14 @@ border_color     = #ffffff 0
 ### PANEL ###
 panel_background_id = 1
 panel_monitor  = all
-panel_position = top center horizontal
-panel_size     = 1982 24
-panel_margin   = 0 0
+panel_position = top right horizontal
+panel_size     = 20% 22
+panel_margin   = -1 -1
 panel_padding  = 0 0
 font_shadow    = 0
-wm_menu        = 0
+wm_menu        = 1
 panel_dock     = 0
-panel_layer    = top
+panel_layer    = bottom
 
 ### TASKBAR ###
 #taskbar_mode          = multi_desktop
@@ -93,17 +93,17 @@ taskbar_name_active_font_color      = #000000 50
 task_background_id        = 6
 task_active_background_id = 3
 task_urgent_background_id = 4
-task_icon         = 0
-task_text         = 1
-task_maximum_size = 0 99
+task_icon         = 1
+task_text         = 0
+task_maximum_size = 24 99
 task_centered     = 1
-task_padding      = 5 5
+task_padding      = 3 3
 task_font         = luxi sans bold 8
 urgent_nb_of_blink     = 999999
 task_font_color        = #000000 50
-task_active_font_color = #ffffff 75
-task_urgent_font_color = #ffffff 100
-task_icon_asb          = 75 0 0
+task_active_font_color = #000000 75
+task_urgent_font_color = #000000 100
+task_icon_asb          = 100 0 0
 task_active_icon_asb   = 100 0 0
 task_urgent_icon_asb   = 100 0 0
 
@@ -123,7 +123,7 @@ time1_font = luxi sans bold 8
 #time2_font = luxi sans bold 7
 clock_font_color = #000000 50
 clock_padding = 8 8
-clock_lclick_command = xterm -geometry 64x9 -r -T Calendar -hold -e CAL
+clock_lclick_command = xterm -geometry 64x9 -T Calendar -hold -e CAL
 #clock_rclick_command = orage
 #clock_tooltip = %H:%M  :::  %A  :::  %Y-%m-%d
 #time1_timezone = :US/Hawaii
@@ -138,13 +138,13 @@ battery_low_status = 10
 battery_low_cmd    = notify-send "Battery Low"
 bat1_font          = luxi sans bold 9
 bat2_font          = luxi sans bold 0
-battery_font_color = #ffffff 100
+battery_font_color = #000000 100
 battery_padding    = 4 4
 
 ### TOOLTIP ###
 tooltip               = 1
-tooltip_padding       = 2 4
-tooltip_show_timeout  = 1.0
+tooltip_padding       = 4 4
+tooltip_show_timeout  = 0.0
 tooltip_hide_timeout  = 0.0
 tooltip_background_id = 5
 tooltip_font_color    = #222222 100
@@ -153,15 +153,15 @@ tooltip_font          = luxi sans bold 12
 ### MOUSE ACTION ON TASK ###
 #mouse_middle      = toggle
 mouse_right       = close
-mouse_scroll_up   = prev_task
-mouse_scroll_down = next_task
+#mouse_scroll_up   = prev_task
+#mouse_scroll_down = next_task
 #mouse_scroll_up   = desktop_left
 #mouse_scroll_down = desktop_right
 
 ### AUTOHIDE OPTIONS ###
-#autohide              = 1
-#autohide_show_timeout = 0.1
-#autohide_hide_timeout = 0.5
-#autohide_height       = 9
+autohide              = 0
+autohide_show_timeout = 0.1
+autohide_hide_timeout = 0.5
+autohide_height       = 21
 #strut_policy          = minimum
-##strut_policy          = none
+strut_policy          = none

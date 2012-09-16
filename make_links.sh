@@ -10,7 +10,6 @@ config/fontconfig
 mpd/mpd.conf
 chrome-themes
 zshenv
-conkyrc
 vim
 vimrc
 Xresources

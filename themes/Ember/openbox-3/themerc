@@ -81,8 +81,8 @@ osd.border.width: 3
 osd.border.color: #363636
 osd.label.text.color: #D7D7E0
 osd.hilight.bg: flat solid
-osd.hilight.bg.color:        #5a8aaa
-osd.hilight.bg.border.color: #5a8aaa
+osd.hilight.bg.color:        #666666
+osd.hilight.bg.border.color: #666666
 osd.unhilight.bg: flat solid
 osd.unhilight.bg.color:        #363636
 osd.unhilight.bg.border.color: #363636
