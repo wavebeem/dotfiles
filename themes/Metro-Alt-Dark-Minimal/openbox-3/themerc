@@ -1,0 +1,91 @@
+!! vim: set ft=xdefaults:
+!! Menu background
+menu.items.bg: flat solid
+menu.items.bg.color: #2b303c
+menu.border.width: 3
+menu.border.color:   #3b404c
+
+!! Menu separators
+menu.separator.color: #3b404c
+menu.separator.width: 3
+menu.separator.padding.width:  0
+menu.separator.padding.height: 0
+
+!! Menu text
+menu.items.text.color:          #cbd0dc
+menu.items.disabled.text.color: #6c707c
+
+!! Menu headers
+menu.title.bg: flat solid
+menu.title.bg.color: #1b202c
+menu.title.text.color: #6b707c
+menu.title.text.justify: right
+
+!! Selected menu item
+menu.items.active.bg: flat solid border
+menu.items.active.bg.color:        #4b505c
+menu.items.active.bg.border.color: #4b505c
+menu.items.active.text.color: #ffffff
+
+!! Titlebar
+window.active.title.bg:   flat solid border
+window.inactive.title.bg: flat solid border
+window.active.title.bg.color:          #4b505c
+window.active.title.bg.border.color:   #4b505c
+window.inactive.title.bg.color:        #4b505c
+window.inactive.title.bg.border.color: #4b505c
+
+!! Titlebar text
+window.label.text.justify: left
+window.active.label.bg: parentrelative
+window.active.label.text.color: #2b303c
+window.inactive.label.bg: parentrelative
+window.inactive.label.text.color: #6c707c
+
+!! Window buttons
+window.active.button.*.pressed.image.color: #2b303c
+window.active.button.*.hover.image.color:   #2b303c
+window.active.button.*.image.color:         #6b707c
+
+window.inactive.button.*.pressed.image.color: #9ba0ac
+window.inactive.button.*.hover.image.color:   #8b909c
+window.inactive.button.*.image.color:         #8b909c
+
+window.*.button.*.*.bg: parentrelative
+
+!! Borders
+window.active.border.color:   #3b404c
+window.inactive.border.color: #2b303c
+window.active.title.separator.color:   #4b505c
+window.inactive.title.separator.color: #4b505c
+border.width:  3
+padding.width:  6
+padding.height: 3
+window.active.handle.bg: flat solid
+window.active.handle.bg.color: #4b505c
+window.active.grip.bg: flat solid
+window.active.grip.bg.color: #5b606c
+window.inactive.handle.bg: flat solid
+window.inactive.handle.bg.color: #4b505c
+window.inactive.grip.bg: flat solid
+window.inactive.grip.bg.color: #4b505c
+window.active.client.color:   #4b505c
+window.inactive.client.color: #4b505c
+window.client.padding.width:  3
+window.client.padding.height: 3
+window.handle.width: 0
+menu.overlap: -6
+
+!! On-screen displays
+osd.border.width: 3
+osd.border.color: #3b404c
+osd.label.text.color: #D7D7E0
+osd.hilight.bg: flat solid
+osd.hilight.bg.color:        #9ba0ac
+osd.hilight.bg.border.color: #9ba0ac
+osd.unhilight.bg: flat solid
+osd.unhilight.bg.color:        #3b404c
+osd.unhilight.bg.border.color: #3b404c
+osd.bg: flat solid border
+osd.bg.color: #2b303c
+osd.bg.border.color: #2b303c

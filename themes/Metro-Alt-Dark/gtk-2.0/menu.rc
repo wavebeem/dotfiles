@@ -1,0 +1,76 @@
+# vim: set syn=gtkrc:
+
+style "menu" {
+    xthickness = 2
+    ythickness = 2
+
+    bg[NORMAL]     = @menu_bg_color
+    base[NORMAL]   = @menu_bg_color
+    fg[NORMAL]     = @menu_fg_color
+    fg[PRELIGHT]   = @menu_fg_color
+    fg[SELECTED]   = @menu_fg_color
+    text[NORMAL]   = @menu_fg_color
+    text[PRELIGHT] = @menu_fg_color
+    text[SELECTED] = @menu_fg_color
+    fg[INSENSITIVE] = mix(0.60, @menu_bg_color, @menu_fg_color)
+
+    engine "murrine" {
+        #contrast = 0.50
+        contrast = 0.75
+        #contrast = 1.00
+        #contrast = 1.25
+        #contrast = 1.50
+    }
+
+#   engine "industrial" {
+#       contrast = 0.90
+#       rounded_buttons = FALSE
+#   }
+
+    font_name = "Bold"
+}
+
+style "menu-item" = "menu" {
+    xthickness = 4
+    ythickness = 3
+
+    font_name = "Bold"
+
+    base[NORMAL]  = @selected_bg_color
+
+    bg[INSENSITIVE] = mix(0.50, shade(0.80, @selected_bg_color), shade(1.50, @bg_color))
+
+    #bg[SELECTED] = mix(0.50, shade(0.80, @selected_bg_color), "#FFF")
+    bg[SELECTED] = @menu_selected_bg_color
+    fg[PRELIGHT] = @menu_selected_fg_color
+
+    engine "murrine" {
+        contrast  = 0.50
+        #border_shades = {1.00, 1.00}
+        border_shades = {0.50, 0.50}
+        #border_shades = {0.75, 0.75}
+        lightborder_shade = 1.50
+        roundness = 0
+    }
+}
+
+style "tearoff-menu-item" = "menu" {
+    engine "murrine" {
+        roundness = 0
+    }
+}
+
+style "separator-menu-item" = "menu-item" {
+    engine "murrine" {
+        contrast = 0.50
+    }
+}
+
+style "menu-progressbar" {
+    xthickness = 0
+    ythickness = 0
+
+    engine "murrine" {
+        roundness = 0
+    }
+}
