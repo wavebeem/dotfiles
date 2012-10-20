@@ -21,8 +21,10 @@ SleepDo() {
 
 # Programs to help flesh out a window manager
 Autostart() {
-    xsetroot -solid "$bg_color" &
-    nitrogen --restore &
+    (
+        xsetroot -solid "$bg_color"
+        nitrogen --restore
+    )&
     xscreensaver -no-splash &
 
     # Load keyboard stuff
@@ -71,7 +73,11 @@ Start() {
     exec ck-launch-session "$@"
 }
 
-[ -z "$WM"         ] && WM="openbox"
+#DE=startkde
+#WM=compiz
+[ -z "$WM"         ] && WM="$HOME/dana-ob/openbox/openbox"
+#[ -z "$WM"         ] && WM="$HOME/openbox/openbox/openbox"
+#[ -z "$WM"         ] && WM="openbox"
 [ "$WM" = "compiz" ] && WM="compiz ccp"
 [ "$DE" = "kde"    ] && DE="startkde"
 if [ -z "$DE" ]; then

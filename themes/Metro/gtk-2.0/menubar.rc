@@ -1,7 +1,7 @@
 # vim: set syn=gtkrc:
 
 style "menubar" {
-    xthickness = 1
+    xthickness = 3
     ythickness = 1
 
     font_name = "Bold"
@@ -31,7 +31,7 @@ style "menubar" {
 
 style "menubar-item" {
     xthickness = 4
-    ythickness = 3
+    ythickness = 2
 
     # To make the menubar items blend in with the menus themselves
     bg[PRELIGHT] = @dark_selected_bg_color
@@ -40,7 +40,8 @@ style "menubar-item" {
     engine "murrine" {
         roundness = 0
         contrast = 0.50
-        border_shades = {1.25, 1.25}
+        #border_shades = {1.25, 1.25}
+        border_shades = {1.00, 1.00}
         lightborder_shade = 1.00
         #contrast = 2.00
     }

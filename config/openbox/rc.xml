@@ -26,14 +26,14 @@
   <placement>
     <policy>Smart</policy>
     <!-- 'Smart' or 'UnderMouse' -->
-    <center>yes</center>
+    <center>no</center>
     <!-- whether to place windows in the center of the free area found or
        the top left corner -->
     <monitor>Active</monitor>
     <!-- with Smart placement on a multi-monitor system, try to place new windows
        on: 'Any' - any monitor, 'Mouse' - where the mouse is, 'Active' - where
        the active window is -->
-    <primaryMonitor>Active</primaryMonitor>
+    <primaryMonitor>1</primaryMonitor>
     <!-- The monitor where Openbox should place popup dialogs such as the
        focus cycling popup, or the desktop switch popup.  It can be an index
        from 1, specifying a particular monitor.  Or it can be one of the
@@ -41,7 +41,7 @@
                   'Active' - where the active window is -->
   </placement>
   <theme>
-    <name>Metro</name>
+    <name>Metro-Minimal</name>
     <titleLayout>CL</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
@@ -57,7 +57,7 @@
     <animateIconify>no</animateIconify>
     <font place="ActiveWindow">
       <name>Luxi Sans</name>
-      <size>9</size>
+      <size>8</size>
       <!-- font size in points -->
       <weight>Bold</weight>
       <!-- 'bold' or 'normal' -->
@@ -66,7 +66,7 @@
     </font>
     <font place="InactiveWindow">
       <name>Luxi Sans</name>
-      <size>9</size>
+      <size>8</size>
       <!-- font size in points -->
       <weight>Bold</weight>
       <!-- 'bold' or 'normal' -->
@@ -116,10 +116,10 @@
     <number>4</number>
     <firstdesk>1</firstdesk>
     <names>
-      <name>&#x5317;</name>
-      <name>&#x5357;</name>
-      <name>&#x6771;</name>
-      <name>&#x897F;</name>
+      <name>|...</name>
+      <name>||..</name>
+      <name>|||.</name>
+      <name>||||</name>
     </names>
     <popupTime>0</popupTime>
     <!-- The number of milliseconds to show the popup for when switching
@@ -367,42 +367,42 @@
     </keybind>
     <keybind key="W-y">
       <action name="ResizeRelative">
-        <left>10</left>
+        <left>50</left>
       </action>
     </keybind>
     <keybind key="W-u">
       <action name="ResizeRelative">
-        <bottom>10</bottom>
+        <bottom>50</bottom>
       </action>
     </keybind>
     <keybind key="W-i">
       <action name="ResizeRelative">
-        <top>10</top>
+        <top>50</top>
       </action>
     </keybind>
     <keybind key="W-o">
       <action name="ResizeRelative">
-        <right>10</right>
+        <right>50</right>
       </action>
     </keybind>
     <keybind key="W-S-y">
       <action name="ResizeRelative">
-        <right>-10</right>
+        <right>-50</right>
       </action>
     </keybind>
     <keybind key="W-S-u">
       <action name="ResizeRelative">
-        <top>-10</top>
+        <top>-50</top>
       </action>
     </keybind>
     <keybind key="W-S-i">
       <action name="ResizeRelative">
-        <bottom>-10</bottom>
+        <bottom>-50</bottom>
       </action>
     </keybind>
     <keybind key="W-S-o">
       <action name="ResizeRelative">
-        <left>-10</left>
+        <left>-50</left>
       </action>
     </keybind>
     <keybind key="W-A-y">
@@ -857,10 +857,10 @@
   </menu>
   <applications>
     <!--
+    -->
     <application name="*" class="*" type="*" role="*">
       <decor>no</decor>
     </application>
-    -->
     <!--
     <application name="*" class="Nitrogen" type="*" role="*">
       <decor>no</decor>
@@ -871,6 +871,7 @@
       <maximized>Vertical</maximized>
     </application>
     -->
+    <!--
     <application name="*" class="Chromium" type="*" role="*">
       <decor>no</decor>
     </application>
@@ -889,15 +890,14 @@
     <application name="*" class="mplayer2" type="*" role="*">
       <decor>no</decor>
     </application>
-    <!--
     <application name="*" class="Roxterm" type="*" role="*">
-      <decor>no</decor>
+      <decor>yes</decor>
     </application>
     <application name="*" class="Terminal" type="*" role="*">
-      <decor>no</decor>
+      <decor>yes</decor>
     </application>
     <application name="*" class="XTerm" type="*" role="*">
-      <decor>no</decor>
+      <decor>yes</decor>
     </application>
     -->
     <!--

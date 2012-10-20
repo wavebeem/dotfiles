@@ -3,7 +3,7 @@
 menu.items.bg: flat solid
 menu.items.bg.color: #4b505c
 menu.border.width: 1
-menu.border.color:   #3b404c
+menu.border.color:   #1b202c
 
 !! Menu separators
 menu.separator.color: #3b404c
@@ -12,7 +12,7 @@ menu.separator.padding.width:  0
 menu.separator.padding.height: 0
 
 !! Menu text
-menu.items.text.color:          #eeeeee
+menu.items.text.color:          #cbd0dc
 menu.items.disabled.text.color: #6c707c
 
 !! Menu headers
@@ -24,7 +24,7 @@ menu.title.text.justify: right
 !! Selected menu item
 menu.items.active.bg: flat solid border
 menu.items.active.bg.color:        #2b303c
-menu.items.active.bg.border.color: #2b303c
+menu.items.active.bg.border.color: #4b505c
 menu.items.active.text.color: #ffffff
 
 !! Titlebar
@@ -45,7 +45,7 @@ window.inactive.label.text.color: #6c707c
 !! Window buttons
 window.active.button.*.pressed.image.color: #cbd0dc
 window.active.button.*.hover.image.color:   #cbd0dc
-window.active.button.*.image.color:         #6c707c
+window.active.button.*.image.color:         #8b909c
 
 window.inactive.button.*.pressed.image.color: #9ba0ac
 window.inactive.button.*.hover.image.color:   #6c707c
@@ -54,13 +54,13 @@ window.inactive.button.*.image.color:         #6c707c
 window.*.button.*.*.bg: parentrelative
 
 !! Borders
-window.active.border.color:   #13161F
-window.inactive.border.color: #13161F
+window.active.border.color:   #3b404c
+window.inactive.border.color: #3b404c
 window.active.title.separator.color:   #40454F
 window.inactive.title.separator.color: #40454F
 border.width:  1
 padding.width:  6
-padding.height: 3
+padding.height: 4
 window.active.handle.bg: flat solid
 window.active.handle.bg.color: #4b505c
 window.active.grip.bg: flat solid
@@ -72,20 +72,20 @@ window.inactive.grip.bg.color: #4b505c
 window.active.client.color:   #4b505c
 window.inactive.client.color: #4b505c
 window.client.padding.width:  0
-window.client.padding.height: 0
+window.client.padding.height: 2
 window.handle.width: 0
 menu.overlap: -6
 
 !! On-screen displays
 osd.border.width: 1
-osd.border.color: #3b404c
+osd.border.color: #13161F
 osd.label.text.color: #D7D7E0
 osd.hilight.bg: flat solid
 osd.hilight.bg.color:        #9ba0ac
 osd.hilight.bg.border.color: #9ba0ac
 osd.unhilight.bg: flat solid
-osd.unhilight.bg.color:        #4b505c
-osd.unhilight.bg.border.color: #4b505c
+osd.unhilight.bg.color:        #1b202c
+osd.unhilight.bg.border.color: #1b202c
 osd.bg: flat solid border
-osd.bg.color: #4b505c
-osd.bg.border.color: #4b505c
+osd.bg.color: #2b303c
+osd.bg.border.color: #2b303c

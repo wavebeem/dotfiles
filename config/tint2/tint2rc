@@ -3,9 +3,9 @@
 ### BACKGROUND AND BORDER ###
 # ID 1
 rounded          = 0
-border_width     = 1
-background_color = #bbc0cc 50
-border_color     = #4b505c 20
+border_width     = 0
+background_color = #000000 100
+border_color     = #ffffff 20
 
 # ID 2
 rounded          = 0
@@ -16,7 +16,7 @@ border_color     = #222222 100
 # ID 3
 rounded          = 0
 border_width     = 0
-background_color = #2B303C 100
+background_color = #000000 100
 border_color     = #000000 100
 
 # ID 4
@@ -63,10 +63,10 @@ border_color     = #ffffff 0
 
 ### PANEL ###
 panel_background_id = 1
-panel_monitor  = all
-panel_position = top right horizontal
-panel_size     = 20% 22
-panel_margin   = -1 -1
+panel_monitor  = 1
+panel_position = top center horizontal
+panel_size     = 100% 20
+panel_margin   = -2 0
 panel_padding  = 0 0
 font_shadow    = 0
 wm_menu        = 1
@@ -86,23 +86,23 @@ taskbar_name_background_id          = 9
 taskbar_name_active_background_id   = 9
 #taskbar_name_active_background_id   = 7
 taskbar_name_font                   = luxi sans bold 8
-taskbar_name_font_color             = #000000 50
-taskbar_name_active_font_color      = #000000 50
+taskbar_name_font_color             = #ffffff 50
+taskbar_name_active_font_color      = #ffffff 50
 
 ### TASKS ###
 task_background_id        = 6
 task_active_background_id = 3
 task_urgent_background_id = 4
-task_icon         = 1
-task_text         = 0
-task_maximum_size = 24 99
+task_icon         = 0
+task_text         = 1
+task_maximum_size = 0 99
 task_centered     = 1
 task_padding      = 3 3
 task_font         = luxi sans bold 8
 urgent_nb_of_blink     = 999999
-task_font_color        = #000000 50
-task_active_font_color = #000000 75
-task_urgent_font_color = #000000 100
+task_font_color        = #ffffff 50
+task_active_font_color = #ffffff 100
+task_urgent_font_color = #ffffff 100
 task_icon_asb          = 100 0 0
 task_active_icon_asb   = 100 0 0
 task_urgent_icon_asb   = 100 0 0
@@ -121,7 +121,7 @@ time1_format = %H:%M  ::  %A  ::  %Y-%m-%d
 time1_font = luxi sans bold 8
 #time2_format = %A
 #time2_font = luxi sans bold 7
-clock_font_color = #000000 50
+clock_font_color = #ffffff 50
 clock_padding = 8 8
 clock_lclick_command = xterm -geometry 64x9 -T Calendar -hold -e CAL
 #clock_rclick_command = orage
@@ -159,9 +159,9 @@ mouse_right       = close
 #mouse_scroll_down = desktop_right
 
 ### AUTOHIDE OPTIONS ###
-autohide              = 0
-autohide_show_timeout = 0.1
-autohide_hide_timeout = 0.5
-autohide_height       = 21
-#strut_policy          = minimum
-strut_policy          = none
+#autohide              = 0
+#autohide_show_timeout = 0.1
+#autohide_hide_timeout = 0.5
+#autohide_height       = 21
+##strut_policy          = minimum
+#strut_policy          = none
