@@ -83,8 +83,8 @@ Prompt_Host() {
     er="%B%F{red}"
     e="%f%b"
 
-    _ps1="${bg}%m:${e} "
-    _ps2="${bg}%m?${e} "
+    _ps1="${bg}[%m]${e} "
+    _ps2="${bg}[?]${e} "
 
     export RPROMPT=""
 
@@ -124,7 +124,7 @@ Prompt_Host() {
             _flags=$(Prefix "$_prefix" "${_items[@]}")
             _branch=$(Git_Branch)
 
-            _git="${bg}git: ${fg}+${_branch}${er}${_flags}${ue}"
+            _git="${bg}[git] ${fg}+${_branch}${er}${_flags}${ue}"
 
             #export PS1="${bg}%m(${_git}${bg}):${e} "
             #export PS2="${bg}%m(${_git}${bg})?${e} "
