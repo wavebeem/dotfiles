@@ -1,5 +1,7 @@
 # Set up ls colors
-eval $(dircolors)
+if which dircolors 2>&1 >/dev/null
+then eval $(dircolors)
+fi
 
 # Make the shell line editor behave like vi!
 set -o vi
@@ -11,11 +13,13 @@ export PATH="$HOME/.local/bin:$HOME/.gem/ruby/1.9.1/bin:$HOME/bin:$PATH"
 
 export LD_LIBRARY_PATH="$HOME/.local/lib"
 
-# No more \a
-setterm -blength 0 >/dev/null 2>&1
+if which setterm 2>&1 >/dev/null; then
+    # No more \a
+    setterm -blength 0 >/dev/null 2>&1
 
-# Stop blanking the terminal
-setterm -blank 0 >/dev/null 2>&1
+    # Stop blanking the terminal
+    setterm -blank 0 >/dev/null 2>&1
+fi
 
 # Colors for man/less
 #export LESS_TERMCAP_mb=$'\E[01;31m'
@@ -74,16 +78,12 @@ alias gou='cd "$(dirname "$_")"'
 export LESS="-R"
 
 # Greet me with ASCII/ANSI art,
-# if the file exists and we're not doing SSH
-[ "$(tty)" != "/dev/tty1" ] &&
-[ -f "$HOME/.welcome"     ] &&
-[ -z "$SSH_CLIENT"        ] && {
-    cat "$HOME/.welcome"
-}
+if [ -z "$SSH_CLIENT" -o -n "$TMUX" ] && [ -f "$HOME/.welcome" ]
+then cat "$HOME/.welcome"
+else uptime
+fi
 
-[ "$TMUX" != "" ] && cat "$HOME/.welcome"
-
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+export PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+[ -s "$HOME/.rvm/scripts/rvm" ] && source "$HOME/.rvm/scripts/rvm"
 
 [ -z "$SSH_AGENT_PID" ] && eval "$(ssh-agent)"
