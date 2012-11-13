@@ -9,6 +9,8 @@ set -o vi
 # Add my programs to the path
 export PATH="$HOME/.local/bin:$HOME/.gem/ruby/1.9.1/bin:$HOME/bin:$PATH"
 
+export LD_LIBRARY_PATH="$HOME/.local/lib"
+
 # No more \a
 setterm -blength 0 >/dev/null 2>&1
 
@@ -80,3 +82,8 @@ export LESS="-R"
 }
 
 [ "$TMUX" != "" ] && cat "$HOME/.welcome"
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+
+[ -z "$SSH_AGENT_PID" ] && eval "$(ssh-agent)"

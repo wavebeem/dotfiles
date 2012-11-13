@@ -33,8 +33,9 @@ alias vim='vim -p'
 
 Git_Branch() {
     local branch
-    branch=$(git symbolic-ref HEAD)
-    branch=${branch##*/}
+    branch=$(git symbolic-ref HEAD 2>/dev/null)
+    branch=${branch:-<error>}
+    branch=${branch##refs/heads/}
     echo "$branch"
 }
 
@@ -83,7 +84,7 @@ Prompt_Host() {
     er="%B%F{red}"
     e="%f%b"
 
-    _ps1="${bg}[%m]${e} "
+    _ps1="${bg}[%M]${e} "
     _ps2="${bg}[?]${e} "
 
     export RPROMPT=""
@@ -114,7 +115,7 @@ Prompt_Host() {
             else _staging=""
             fi
 
-            _prefix=" -"
+            _prefix=" #"
             _items=(
                 ${_unpushed}
                 ${_untracked}
@@ -124,7 +125,7 @@ Prompt_Host() {
             _flags=$(Prefix "$_prefix" "${_items[@]}")
             _branch=$(Git_Branch)
 
-            _git="${bg}[git] ${fg}+${_branch}${er}${_flags}${ue}"
+            _git="${bg}[git] ${fg}${_branch}${er}${_flags}${ue}"
 
             #export PS1="${bg}%m(${_git}${bg}):${e} "
             #export PS2="${bg}%m(${_git}${bg})?${e} "
