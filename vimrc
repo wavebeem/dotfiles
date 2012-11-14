@@ -48,6 +48,7 @@ set foldcolumn=0
 " and enable the wildmenu
 set cmdheight=1
 set wildmenu
+set wildmode=longest:full,full
 
 " Number of lines to offset when scrolling
 " so as to keep more code on screen
