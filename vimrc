@@ -1,4 +1,12 @@
 set nocompatible
+filetype off
+
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+Bundle 'gmarik/vundle'
+"Bundle 'godlygeek/csapprox'
+set t_Co=16
 
 syntax on
 
