@@ -19,7 +19,7 @@ hi FoldColumn   ctermbg=none        ctermfg=white           cterm=none
 
 hi DiffAdd      ctermbg=darkgreen   ctermfg=white           cterm=bold
 hi DiffChange   ctermbg=darkred     ctermfg=white           cterm=bold
-hi DiffDelete   ctermbg=none        ctermfg=lightgrey       cterm=none
+hi DiffDelete   ctermbg=none        ctermfg=lightgray       cterm=none
 hi DiffText     ctermbg=darkmagenta ctermfg=white           cterm=bold
 
 hi Cursor       ctermbg=green
@@ -30,7 +30,7 @@ hi CursorIM     ctermbg=red
 hi Normal           ctermbg=none ctermfg=gray cterm=none
 hi Normal           ctermbg=none ctermfg=gray cterm=none
 
-hi Comment          ctermfg=darkgrey
+hi Comment          ctermfg=darkgray
 hi Constant         ctermfg=lightred
   hi String         ctermfg=lightcyan
   hi Character      ctermfg=lightcyan
@@ -59,22 +59,22 @@ hi Type             ctermfg=yellow
 hi Special          ctermfg=lightcyan
   hi Specialchar    ctermfg=lightgreen
   hi Tag            ctermfg=lightgreen
-  hi Delimiter      ctermfg=lightgrey
-  hi Debug          ctermfg=lightgrey
-hi Underlined       ctermfg=lightgrey
-hi Ignore           ctermfg=lightgrey
+  hi Delimiter      ctermfg=lightgray
+  hi Debug          ctermfg=lightgray
+hi Underlined       ctermfg=lightgray
+hi Ignore           ctermfg=lightgray
 hi Error            ctermfg=yellow      ctermbg=red
 hi ErrorMsg         ctermfg=yellow      ctermbg=red
-hi Todo             ctermfg=lightgrey   ctermbg=none
+hi Todo             ctermfg=lightgray   ctermbg=none
 
-hi SpecialKey   ctermfg=grey
-hi NonText      ctermfg=darkgrey
+hi SpecialKey   ctermfg=gray
+hi NonText      ctermfg=darkgray
 hi Directory    ctermfg=lightgreen
 hi IncSearch    ctermbg=yellow      ctermfg=black cterm=none
 hi Search       ctermbg=yellow      ctermfg=black cterm=none
 hi MoreMsg      ctermfg=yellow
 hi ModeMsg      ctermfg=yellow
-hi Question     ctermbg=lightcyan
+hi Question     ctermbg=blue        ctermfg=white
 
 hi MatchParen   ctermbg=brown ctermfg=black
 
@@ -84,9 +84,9 @@ hi TabLineFill  ctermfg=black     ctermbg=none    cterm=underline,bold
 
 hi LineNr       ctermfg=black cterm=bold
 
-hi VertSplit    cterm=none        ctermbg=none     ctermfg=darkgrey
+hi VertSplit    cterm=none        ctermbg=none     ctermfg=darkgray
 hi StatusLine   cterm=underline   ctermbg=none     ctermfg=white
-hi StatusLineNC cterm=underline   ctermbg=none     ctermfg=darkgrey
+hi StatusLineNC cterm=underline   ctermbg=none     ctermfg=darkgray
 
 hi WildMenu     ctermbg=none ctermfg=none cterm=reverse,underline
 
@@ -101,23 +101,23 @@ hi PmenuSbar    ctermbg=blue    ctermfg=blue
 hi PmenuThumb   ctermbg=white   ctermfg=white
 
 " Java
-hi javaCommentTitle     ctermfg=grey
-hi javaDocParam         ctermfg=grey
-hi javaDocTag           ctermfg=grey
-hi javaDocTags          ctermfg=grey
+hi javaCommentTitle     ctermfg=gray
+hi javaDocParam         ctermfg=gray
+hi javaDocTag           ctermfg=gray
+hi javaDocTags          ctermfg=gray
 
 " Perl
-hi perlOperator             ctermfg=grey
+hi perlOperator             ctermfg=gray
 hi perlStatementList        ctermfg=lightcyan
 hi perlStatementScalar      ctermfg=lightcyan
 hi perlStatementVector      ctermfg=lightcyan
 hi perlMisc                 ctermfg=lightcyan
 hi perlStatementIOfunc      ctermfg=lightcyan
 hi perlStatementHash        ctermfg=lightcyan
-hi perlStatementRegexp      ctermfg=lightgrey
+hi perlStatementRegexp      ctermfg=lightgray
 
 " Haskell
-hi hsDelimiter      ctermfg=grey
+hi hsDelimiter      ctermfg=gray
 
 " Python
 hi pythonFunction   ctermfg=lightcyan cterm=bold
