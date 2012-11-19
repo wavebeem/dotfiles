@@ -7,8 +7,24 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 Bundle 'tpope/vim-markdown'
 Bundle 'ddollar/nerdcommenter'
+Bundle 'JavaScript-syntax'
+" Bundle 'othree/javascript-syntax.vim'
+
+" Dependency for FuzzyFinder
+Bundle 'L9'
+Bundle 'FuzzyFinder'
+
 " Bundle 'godlygeek/csapprox'
 set t_Co=16
+
+" Better % bouncing (for languages like Ruby)
+runtime macros/matchit.vim
+
+" Allow me to hide buffers with changes
+set hidden
+
+" Remove annoying messages like 'Press RETURN to continue'
+set shortmess=atI
 
 syntax on
 
@@ -73,20 +89,21 @@ set nohlsearch
 " List of pattersn to ignore in the wildmenu
 set wildignore=*.swp,*.swo,*.pyc,*.class,*.o
 
-" Toggle spellcheck with F3
-map <F3> :set spell!<Return>
+" Make comment toggling easier
+map <C-q> <Plug>NERDCommenterToggle
 
-" Toggle line numbers with F4
-map <F4> :set number!<Return>
+" Opening files should be easier too
+map <C-s> :FufCoverageFile<CR>
 
-" Disable mouse support with F5
-map <F5> :set mouse=<Return>
+map <C-p> :previous<CR>
+map <C-n> :next<CR>
 
-" Enable mouse support with F5
-map <F6> :set mouse=a<Return>
+map <F1> :set spell!<CR>:set spell?<CR>
+map <F2> :set number!<CR>:set number?<CR>
+map <F3> :set paste!<CR>:set paste?<CR>
 
-" Toggle paste support
-map <F7> :set paste!<Return>:set paste?<Return>
+" Stop bringing up help when I hit F1 instead of Esc in insert mode
+imap <F1> <Nop>
 
 filetype plugin on
 
@@ -94,15 +111,11 @@ filetype plugin on
 let ruby_operators = 1
 let ruby_fold = 1
 
-"au filetype c       set tags+=/home/brian/stl.tags
-"au filetype cpp     set tags+=/home/brian/cstdlib.tags
-au filetype java    abbr sop System.out.println
+au filetype java abbr sop System.out.println
+
 au filetype javascript abbr ctn document.createTextNode
 au filetype javascript abbr dce document.createElement
 au filetype javascript abbr gid document.getElementById
-
-au filetype c       abbr MAIN    int<Return>main(int argc, char **argv) {
-au filetype cpp     abbr MAIN    int<Return>main(int argc, char **argv) {
 
 " LaTeX
 au filetype plaintex  setl textwidth=72 spell
@@ -142,8 +155,5 @@ set showmatch
 " Disable matchparen plugin
 let loaded_matchparen = 1
 
-map <F1> :previous<Return>
-map <F2> :next<Return>
-
 " Stick stupid .netrwhist elsewhere
-let g:netrw_home = "/tmp"
+let g:netrw_home = '/tmp'

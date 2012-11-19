@@ -3,6 +3,11 @@ if which dircolors 2>&1 >/dev/null
 then eval $(dircolors)
 fi
 
+# Turn of ^S and ^Q flow control
+if which stty 2>&1 >/dev/null
+then stty -ixon 2>&1 >/dev/null
+fi
+
 # Make the shell line editor behave like vi!
 set -o vi
 
@@ -42,7 +47,7 @@ alias sl='sl -alF'
 alias rb='exec "$(readlink /proc/$$/exe)"'
 
 alias t="tmux"
-alias T="tmux attach"
+alias T="tmux attach -d"
 
 export EDITOR='vim'
 export VISUAL='vim'
