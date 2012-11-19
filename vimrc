@@ -1,6 +1,8 @@
 set nocompatible
 filetype off
 
+let mapleader = ' '
+
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
@@ -18,13 +20,10 @@ Bundle 'FuzzyFinder'
 set t_Co=16
 
 " Better % bouncing (for languages like Ruby)
-runtime macros/matchit.vim
+runtime 'macros/matchit.vim'
 
 " Allow me to hide buffers with changes
 set hidden
-
-" Remove annoying messages like 'Press RETURN to continue'
-set shortmess=atI
 
 syntax on
 
@@ -74,9 +73,6 @@ set scrolloff=0
 set visualbell
 set t_vb=
 
-" Set 256 colors mode
-"set t_Co=256
-
 " Enable all mouse settings
 set mouse=a
 
@@ -89,11 +85,18 @@ set nohlsearch
 " List of pattersn to ignore in the wildmenu
 set wildignore=*.swp,*.swo,*.pyc,*.class,*.o
 
+" I Would think the first map would work here, but somehow that
+" removes the original binding for NERD Commenter toggle.
+"
 " Make comment toggling easier
-map <C-q> <Plug>NERDCommenterToggle
+" map <C-q> <Plug>NERDCommenterToggle
+"
+map <C-q> <Leader>c<Space>
 
 " Opening files should be easier too
 map <C-s> :FufCoverageFile<CR>
+map <Leader>s :FufBuffer<CR>
+map <Leader><C-s> :FufFile<CR>
 
 map <C-p> :previous<CR>
 map <C-n> :next<CR>
@@ -117,7 +120,6 @@ au filetype javascript abbr ctn document.createTextNode
 au filetype javascript abbr dce document.createElement
 au filetype javascript abbr gid document.getElementById
 
-" LaTeX
 au filetype plaintex  setl textwidth=72 spell
 au filetype tex       setl textwidth=72 spell
 
@@ -141,7 +143,7 @@ au filetype conf        setl foldmethod=indent
 " Enable syntax highlighting for GLSL files
 au BufNewFile,BufRead *.frag,*.vert,*.vsh,*.fsh,*.fp,*.vp,*.glsl setf glsl
 
-" Highlight _*.erb files as JavaScript instead of erb.
+" Highlight _*.erb files as JavaScript instead of erb
 au BufNewFile,BufRead _*.erb set ft=javascript
 
 " Highlight space at the end of the line as an error,
