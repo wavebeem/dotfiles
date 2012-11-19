@@ -17,6 +17,8 @@
     lg = log --stat --graph --decorate --summary --all
     lg1 = log --pretty=oneline
     d = daemon --export-all --base-path=..
+[push]
+    default = current
 [core]
     excludesfile = /home/brian/.gitignore_global
 [web]
