@@ -3,7 +3,7 @@ if which dircolors 2>&1 >/dev/null
 then eval $(dircolors)
 fi
 
-# Turn of ^S and ^Q flow control
+# Turn off ^S and ^Q flow control
 if which stty 2>&1 >/dev/null
 then stty -ixon 2>&1 >/dev/null
 fi
@@ -43,7 +43,7 @@ export RI="-f ansi"
 alias wu='ssh bmock@shell.willamette.edu'
 
 alias dim='echo ${COLUMNS}x${LINES}'
-alias sl='sl -alF'
+alias sl='sl -l'
 alias rb='exec "$(readlink /proc/$$/exe)"'
 
 alias t="tmux"
