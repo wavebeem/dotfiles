@@ -12,6 +12,8 @@ Bundle 'ddollar/nerdcommenter'
 Bundle 'JavaScript-syntax'
 " Bundle 'othree/javascript-syntax.vim'
 
+Bundle 'ScrollColors'
+
 " Dependency for FuzzyFinder
 Bundle 'L9'
 Bundle 'FuzzyFinder'
@@ -104,6 +106,9 @@ map <C-n> :next<CR>
 map <F1> :set spell!<CR>:set spell?<CR>
 map <F2> :set number!<CR>:set number?<CR>
 map <F3> :set paste!<CR>:set paste?<CR>
+
+map <silent><F9>  :PREVCOLOR<CR>
+map <silent><F10> :NEXTCOLOR<CR>
 
 " Stop bringing up help when I hit F1 instead of Esc in insert mode
 imap <F1> <Nop>
