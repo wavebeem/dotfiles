@@ -53,7 +53,10 @@ export EDITOR='vim'
 export VISUAL='vim'
 export PAGER='less'
 
-alias ls='ls --color=auto'
+case "$(uname)" in
+Darwin) alias ls='ls -G' ;;
+*)      alias ls='ls --color=auto' ;;
+esac
 alias l='ls -hl'
 alias la='l -a'
 alias ..='cd ..'
