@@ -78,17 +78,17 @@ hi Question     ctermbg=blue        ctermfg=white
 
 hi MatchParen   ctermbg=brown ctermfg=black
 
-hi TabLineSel   ctermfg=black     ctermbg=white   cterm=none
-hi TabLine      ctermfg=gray      ctermbg=none    cterm=bold,underline
-hi TabLineFill  ctermfg=black     ctermbg=none    cterm=underline,bold
+hi TabLineSel   ctermbg=lightgray  ctermfg=black     cterm=none
+hi TabLine      ctermbg=darkblue   ctermfg=lightgray cterm=none
+hi TabLineFill  ctermbg=darkblue   ctermfg=lightgray cterm=none
 
 hi LineNr       ctermfg=black cterm=bold
 
-hi VertSplit    cterm=none        ctermbg=none     ctermfg=darkgray
-hi StatusLine   cterm=underline   ctermbg=none     ctermfg=white
-hi StatusLineNC cterm=underline   ctermbg=none     ctermfg=darkgray
+hi VertSplit    cterm=none   ctermbg=darkblue   ctermfg=lightblue
+hi StatusLine   cterm=none   ctermbg=lightgray  ctermfg=black
+hi StatusLineNC cterm=none   ctermbg=darkblue   ctermfg=lightgray
 
-hi WildMenu     ctermbg=none ctermfg=none cterm=reverse,underline
+hi WildMenu     ctermbg=darkblue ctermfg=lightgray cterm=none
 
 hi spellBad     ctermbg=red ctermfg=yellow
 hi spellCap     ctermbg=red ctermfg=yellow
