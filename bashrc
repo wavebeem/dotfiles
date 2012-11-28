@@ -54,15 +54,29 @@ export VISUAL='vim'
 export PAGER='less'
 
 case "$(uname)" in
-Darwin) alias ls='ls -G' ;;
-*)      alias ls='ls --color=auto' ;;
+Darwin)
+    if which gls 2>&1 >/dev/null;
+    then alias ls='gls --color=auto'
+    else alias ls='ls -G'
+    fi
+    ;;
+*)
+    alias ls='ls --color=auto'
+    ;;
 esac
+
 alias l='ls -hl'
 alias la='l -a'
 alias ..='cd ..'
 alias vim='vim -p'
-alias du='ncdu'
-alias df='pydf'
+
+if which ncdu 2>&1 >/dev/null
+then alias du='ncdu'
+fi
+
+if which pydx 2>&1 >/dev/null
+then alias df='pydf'
+fi
 
 # Quicker job control
 alias k='kill %%'
