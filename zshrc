@@ -85,7 +85,12 @@ Prompt_Host() {
     er="%B%F{red}"
     e="%f%b"
 
-    _ps1="${bg}[%M]${e} "
+    _host='%M'
+    _name=$(hostname -f 2>/dev/null)
+    case "$_name" in
+    *.local) _host='%m' ;;
+    esac
+    _ps1="${bg}[${_host}]${e} "
     _ps2="${bg}[?]${e} "
 
     export RPROMPT=""
