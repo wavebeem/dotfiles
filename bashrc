@@ -14,7 +14,7 @@ set -o vi
 [ -z "$SSH_AGENT_PID" ] && eval "$(ssh-agent)"
 
 # Add my programs to the path
-export PATH="$HOME/.local/bin:$HOME/.gem/ruby/1.9.1/bin:$HOME/bin:$PATH"
+export PATH="$HOME/.local/bin:$HOME/.gem/ruby/1.9.1/bin:$HOME/bin:/usr/local/share/npm/bin:$PATH"
 
 export LD_LIBRARY_PATH="$HOME/.local/lib"
 
