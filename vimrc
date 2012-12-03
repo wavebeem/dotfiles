@@ -1,6 +1,7 @@
 set nocompatible
 filetype off
 
+" <Space> is so much easier to type than <Backslash>
 let mapleader = ' '
 
 set rtp+=~/.vim/bundle/vundle/
@@ -9,8 +10,15 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 Bundle 'tpope/vim-markdown'
 Bundle 'ddollar/nerdcommenter'
-Bundle 'JavaScript-syntax'
-" Bundle 'othree/javascript-syntax.vim'
+
+" Vim's default JS syntax highlighting is terrible,
+" so let's try to find a decent one
+" Bundle 'pangloss/vim-javascript-syntax'
+" Bundle 'Enhanced-Javascript-syntax'
+" Bundle 'drslump/vim-syntax-js'
+" Bundle 'jelera/vim-javascript-syntax'
+" Bundle 'JavaScript-syntax'
+Bundle 'othree/javascript-syntax.vim'
 
 Bundle 'ScrollColors'
 
@@ -23,6 +31,10 @@ set t_Co=16
 
 " Better % bouncing (for languages like Ruby)
 runtime 'macros/matchit.vim'
+
+" Nice info in the bottom line area
+" (apparently this is off by default...)
+set ruler
 
 " Allow me to hide buffers with changes
 set hidden
