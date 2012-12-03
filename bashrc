@@ -91,6 +91,8 @@ alias ai='sudo aptitude install'
 alias ar='sudo aptitude remove'
 alias as='aptitude search'
 
+alias http='python -m SimpleHTTPServer'
+
 # Move around the fs tree faster
 alias go='cd "$_"'
 alias gou='cd "$(dirname "$_")"'
