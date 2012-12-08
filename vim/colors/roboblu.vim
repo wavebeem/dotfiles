@@ -43,7 +43,6 @@ hi Identifier       ctermfg=lightmagenta
   hi Conditional    ctermfg=white
   hi Repeat         ctermfg=white
   hi Label          ctermfg=lightmagenta
-  hi Operator       ctermfg=white
   hi hsOperator     ctermfg=white
   hi Keyword        ctermfg=white
   hi Exception      ctermfg=white
@@ -52,7 +51,7 @@ hi PreProc          ctermfg=white
   hi Define         ctermfg=white
   hi Macro          ctermfg=lightmagenta
   hi PreCondit      ctermfg=lightgreen
-hi Type             ctermfg=yellow
+hi Type             ctermfg=lightblue
   hi StorageClass   ctermfg=lightcyan
   hi Structure      ctermfg=lightcyan
   hi Typedef        ctermfg=lightcyan
@@ -61,6 +60,14 @@ hi Special          ctermfg=lightcyan
   hi Tag            ctermfg=lightgreen
   hi Delimiter      ctermfg=lightgray
   hi Debug          ctermfg=lightgray
+
+hi Parens           ctermfg=lightblue
+hi Braces           ctermfg=lightblue
+hi Operator         ctermfg=lightblue
+hi Comma            ctermfg=lightblue
+hi Semicolon        ctermfg=lightblue
+hi Dot              ctermfg=lightblue
+
 hi Underlined       ctermfg=lightgray
 hi Ignore           ctermfg=lightgray
 hi Error            ctermfg=yellow      ctermbg=red
