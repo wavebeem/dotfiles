@@ -14,7 +14,7 @@ set -o vi
 [ -z "$SSH_AGENT_PID" ] && eval "$(ssh-agent)"
 
 # Add my programs to the path
-export PATH="$HOME/.local/bin:$HOME/.gem/ruby/1.9.1/bin:$HOME/bin:$PATH"
+export PATH="$HOME/.local/bin:$HOME/.gem/ruby/1.9.1/bin:$HOME/bin:/usr/local/share/npm/bin:$PATH"
 
 export LD_LIBRARY_PATH="$HOME/.local/lib"
 
@@ -91,6 +91,8 @@ alias sag='sudo apt-get'
 alias ai='sudo aptitude install'
 alias ar='sudo aptitude remove'
 alias as='aptitude search'
+
+alias http='python -m SimpleHTTPServer'
 
 # Move around the fs tree faster
 alias go='cd "$_"'

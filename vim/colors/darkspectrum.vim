@@ -48,8 +48,8 @@ hi Folded		guibg=#000000 guifg=#FFFFFF gui=bold
 hi vimFold		guibg=#000000 guifg=#FFFFFF gui=bold
 hi FoldColumn	guibg=#000000 guifg=#FFFFFF gui=bold
 
-hi LineNr		guifg=#535353 guibg=#202020
-hi NonText		guifg=#535353 guibg=#202020
+hi LineNr		guifg=#535353 guibg=#2f2f2f
+hi NonText		guifg=#535353 guibg=#2f2f2f
 hi Folded		guifg=#535353 guibg=#202020 gui=bold
 hi FoldeColumn  guifg=#535353 guibg=#202020 gui=bold
 "hi VertSplit	guibg=#ffffff guifg=#ffffff gui=none
@@ -130,7 +130,7 @@ hi TabLineSel	guifg=#FFFFFF gui=bold
 "hi TabLineSel	guifg=#FFFFFF guibg=#000000 gui=bold
 
 " Mods for Shinobi
-hi Normal guibg=#222222 guifg=#E0E0E0
+hi Normal guibg=#222222 guifg=#b0b0b0
 hi Comment guifg=#606060
 
 " vim: sw=4 ts=4
