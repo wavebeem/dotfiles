@@ -81,6 +81,7 @@ fi
 # Quicker job control
 alias k='kill %%'
 alias kk='kill -9 %%'
+alias j='jobs'
 
 alias irb='irb --readline -r irb/completion'
 
