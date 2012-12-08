@@ -9,7 +9,7 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 Bundle 'tpope/vim-markdown'
 Bundle 'ddollar/nerdcommenter'
-Bundle 'JavaScript-syntax'
+" Bundle 'JavaScript-syntax'
 " Bundle 'othree/javascript-syntax.vim'
 
 Bundle 'ScrollColors'
