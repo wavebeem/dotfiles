@@ -20,7 +20,7 @@ endif
 
 setlocal iskeyword+=$
 
-syn match   javaScriptOps               '+\|++\|-\|--\|\*\|/\|>>\|<<\|>>>\||\|&\|||\|&&\|%\|\~\|=\|?\|:\|+=\|-=\|\*=\|/='
+syn match   javaScriptOps               '+\|++\|-\|--\|\*\|/\|>>\|<<\|>>>\||\|&\|||\|&&\|%\|\~\|!\|=\|?\|:\|+=\|-=\|\*=\|/='
 syn match   javaScriptDot               '\.'
 syn match   javaScriptComma             ','
 syn match   javaScriptSemicolon         ';'

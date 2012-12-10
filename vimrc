@@ -24,8 +24,13 @@ Bundle 'ScrollColors'
 Bundle 'L9'
 Bundle 'FuzzyFinder'
 
-" Bundle 'godlygeek/csapprox'
+syntax on
+
+set bg=dark
+
 set t_Co=16
+color lethean
+" color roboblu
 
 " Better % bouncing (for languages like Ruby)
 runtime 'macros/matchit.vim'
@@ -36,11 +41,6 @@ set ruler
 
 " Allow me to hide buffers with changes
 set hidden
-
-syntax on
-
-set bg=dark
-color roboblu
 
 " US English spelling
 set spelllang=en_us
