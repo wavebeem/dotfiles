@@ -11,6 +11,7 @@ Bundle 'gmarik/vundle'
 Bundle 'tpope/vim-markdown'
 Bundle 'ddollar/nerdcommenter'
 
+" Bundle 'saikobee/vim-javascript-syntax'
 " Bundle 'pangloss/vim-javascript-syntax'
 " Bundle 'Enhanced-Javascript-syntax'
 " Bundle 'drslump/vim-syntax-js'
