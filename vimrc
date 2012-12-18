@@ -32,8 +32,11 @@ syntax on
 set bg=dark
 
 set t_Co=16
-color lethean
-" color roboblu
+if match(hostname(), 'mockbook') >= 0
+    color lethean
+else
+    color roboblu
+endif
 
 " Better % bouncing (for languages like Ruby)
 runtime 'macros/matchit.vim'
@@ -162,6 +165,7 @@ au BufNewFile,BufRead *.frag,*.vert,*.vsh,*.fsh,*.fp,*.vp,*.glsl setf glsl
 
 " Highlight _*.erb files as JavaScript instead of erb
 au BufNewFile,BufRead _*.erb set ft=javascript
+au BufNewFile,BufRead _*.erb set fdm=indent
 
 " Highlight space at the end of the line as an error,
 " but don't highlight while in insert mode
