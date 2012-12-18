@@ -112,6 +112,20 @@ hi Parens    ctermfg=lightgray
 hi Comma     ctermfg=lightgray
 hi Dot       ctermfg=lightgray
 
+" hi link cssFontDescriptorProp       Type
+" hi link cssColorProp                Type
+" hi link cssTextProp                 Type
+" hi link cssBoxProp                  Type
+" hi link cssGeneratedContentProp     Type
+" hi link cssFontProp                 Type
+
+hi link cssFontAttr             String
+hi link cssCommonAttr           String
+hi link cssFontDescriptorAttr   String
+hi link cssColorAttr            Constant
+hi link cssTextAttr             String
+hi link cssBoxAttr              String
+
 hi TabLine      ctermfg=lightgray ctermbg=black     cterm=none
 hi TabLineFill  ctermfg=lightgray ctermbg=black     cterm=none
 hi TabLineSel   ctermfg=black     ctermbg=lightgray cterm=none

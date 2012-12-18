@@ -129,8 +129,8 @@ if version >= 508 || !exists("did_javascript_syn_inits")
   HiLink javaScriptLabel                Label
   HiLink javaScriptException            Exception
   HiLink javaScriptMessage              Keyword
-  HiLink javaScriptGlobal               Keyword
-  HiLink javaScriptMember               Keyword
+  HiLink javaScriptGlobal               Identifier
+  HiLink javaScriptMember               Identifier
   HiLink javaScriptDeprecated           Exception
   HiLink javaScriptReserved             Keyword
   HiLink javaScriptDebug                Debug
