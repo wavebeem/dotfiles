@@ -167,4 +167,5 @@ Prompt_Host() {
 
 Prompt_Host
 
+[ -f ~/.local-zshrc ] && source ~/.local-zshrc
 source ~/.bashrc
