@@ -44,9 +44,9 @@ Git_In_Repo() { git rev-parse --git-dir >/dev/null 2>&1; }
 
 Git_Root() { git rev-parse --show-toplevel 2>/dev/null; }
 
-Git_Unpushed_Count()  { git log @{upstream}..                    2>/dev/null | wc -l; }
-Git_Untracked_Count() { git ls-files --others --exclude-standard 2>/dev/null | wc -l; }
-Git_Modified_Count()  { git ls-files --modified "$(Git_Root)"    2>/dev/null | wc -l; }
+Git_Unpushed_Count()  { git log @{upstream}..                                  2>/dev/null | wc -l; }
+Git_Untracked_Count() { git ls-files --others --exclude-standard "$(Git_Root)" 2>/dev/null | wc -l; }
+Git_Modified_Count()  { git ls-files --modified                  "$(Git_Root)" 2>/dev/null | wc -l; }
 
 Git_Has_Unpushed()  { test "$(Git_Unpushed_Count)"  -gt 0; }
 Git_Has_Modified()  { test "$(Git_Modified_Count)"  -gt 0; }
