@@ -33,9 +33,9 @@ set bg=dark
 
 set t_Co=16
 if match(hostname(), 'mockbook') >= 0
-    color lethean
-else
     color roboblu
+else
+    color lethean
 endif
 
 " Better % bouncing (for languages like Ruby)
