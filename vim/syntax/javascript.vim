@@ -20,7 +20,7 @@ endif
 
 setlocal iskeyword+=$
 
-syn match   javaScriptOps               '+\|++\|-\|--\|\*\|/\|>>\|<<\|>>>\||\|&\|||\|&&\|%\|\~\|!\|=\|?\|:\|+=\|-=\|\*=\|/='
+syn match   javaScriptOps               '+\|++\|-\|--\|\*\|/\|>\|<\|>>\|<<\|>>>\||\|&\|||\|&&\|%\|\~\|!\|=\|?\|:\|+=\|-=\|\*=\|/='
 syn match   javaScriptDot               '\.'
 syn match   javaScriptComma             ','
 syn match   javaScriptSemicolon         ';'
@@ -37,6 +37,7 @@ syn match   javaScriptSpecialCharacter "'\\.'"
 " syn match   javaScriptNumber           '-\=\<\d\+L\=\>\|0[xX][0-9a-fA-F]\+\>\|NaN'
 syn match   javaScriptNumber           '-\=\<\d\+\>\|0[xX][0-9a-fA-F]\+\>'
 syn match   javaScriptFloat            '-\=\<\d\+\.\d\+\([eE]\d\+\)\=\>'
+syn match   javaScriptFloat            '-\=\<\d\+[eE]\d\+\>'
 syn region  javaScriptRegexpString     start=+/[^/*]+me=e-1 skip=+\\\\\|\\/+ end=+/[gi]\{0,2\}\s*$+ end=+/[gi]\{0,2\}\s*[;.,)\]}]+me=e-1 contains=@htmlPreproc oneline
 
 syn keyword javaScriptConditional       if else switch
