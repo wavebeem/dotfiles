@@ -142,6 +142,8 @@ let ruby_fold = 1
 
 au filetype java abbr sop System.out.println
 
+au filetype html abbr viewport meta name="viewport" content="width=device-width, initial-scale=1"
+
 au filetype javascript abbr ctn document.createTextNode
 au filetype javascript abbr dce document.createElement
 au filetype javascript abbr gid document.getElementById
