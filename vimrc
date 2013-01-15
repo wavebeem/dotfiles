@@ -23,8 +23,6 @@ Bundle 'Colour-Sampler-Pack'
 
 Bundle 'ScrollColors'
 
-Bundle 'godlygeek/tabular'
-
 " Dependency for FuzzyFinder
 Bundle 'L9'
 Bundle 'FuzzyFinder'
@@ -131,11 +129,6 @@ map <F3> :set paste!<CR>:set paste?<CR>
 
 map <silent><F9>  :PREVCOLOR<CR>
 map <silent><F10> :NEXTCOLOR<CR>
-
-nmap <leader>a= :Tabularize /=<CR>
-vmap <leader>a= :Tabularize /=<CR>
-nmap <leader>a: :Tabularize /:\zs<CR>
-vmap <leader>a: :Tabularize /:\zs<CR>
 
 " Stop bringing up help when I hit F1 instead of Esc in insert mode
 imap <F1> <Nop>
