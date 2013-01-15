@@ -32,7 +32,7 @@ syntax on
 set bg=dark
 
 set t_Co=16
-if match(hostname(), 'mockbook') >= 0
+if match(hostname(), 'mockbook\|janrain.com') >= 0
     color roboblu
 else
     color lethean
