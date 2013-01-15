@@ -11,6 +11,8 @@ Bundle 'gmarik/vundle'
 Bundle 'tpope/vim-markdown'
 Bundle 'ddollar/nerdcommenter'
 
+Bundle 'Colour-Sampler-Pack'
+
 " Bundle 'saikobee/vim-javascript-syntax'
 " Bundle 'pangloss/vim-javascript-syntax'
 " Bundle 'Enhanced-Javascript-syntax'
@@ -110,6 +112,10 @@ set wildignore=*.swp,*.swo,*.pyc,*.class,*.o
 " map <C-q> <Plug>NERDCommenterToggle
 "
 map <C-q> <Leader>c<Space>
+
+" Make it easier to delete lines without cutting them
+map <C-d> "_dd
+map <Leader>d "_dd
 
 " Opening files should be easier too
 map <C-s> :FufCoverageFile<CR>
