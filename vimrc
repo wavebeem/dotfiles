@@ -23,9 +23,10 @@ Bundle 'Colour-Sampler-Pack'
 
 Bundle 'ScrollColors'
 
-" Dependency for FuzzyFinder
-Bundle 'L9'
-Bundle 'FuzzyFinder'
+let g:ctrlp_map = '<C-s>'
+Bundle 'kien/ctrlp.vim'
+map <Leader>s :CtrlPMixed<CR>
+map <Leader><C-s> :CtrlPBuffer<CR>
 
 syntax on
 
@@ -116,9 +117,6 @@ map <C-d> "_dd
 map <Leader>d "_dd
 
 " Opening files should be easier too
-map <C-s> :FufCoverageFile<CR>
-map <Leader>s :FufBuffer<CR>
-map <Leader><C-s> :FufFile<CR>
 
 map <C-p> :previous<CR>
 map <C-n> :next<CR>
