@@ -13,6 +13,7 @@
     diffc = diff --cached
     co = checkout
     cob = checkout -b
+    cop = checkout -p
     cot = checkout -t
     stat = status
     lg = log --stat --graph --decorate --summary --all
