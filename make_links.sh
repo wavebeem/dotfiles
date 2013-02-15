@@ -1,33 +1,34 @@
 #!/bin/bash
 
 files=(
-#config/roxterm.sourceforge.net
-#config/openbox
-#config/tint2
-#config/kde-xbindkeysrc
-#config/Terminal
-#config/fontconfig
-#mpd/mpd.conf
-#chrome-themes
-zshenv
-vim
-vimrc
+# config/roxterm.sourceforge.net
+# config/openbox
+# config/tint2
+# config/kde-xbindkeysrc
+# config/Terminal
+# config/fontconfig
+# mpd/mpd.conf
+# chrome-themes
+ackrc
+# zshenv
+# vim
+# vimrc
 #Xresources
 #Xdefaults
 #xinitrc
-zshrc
-bashrc
-bash_profile
-#ncmpcpp/config
-tmux.conf
-#gitconfig
-#gitignore_global
-#hgrc
-inputrc
-#xbindkeysrc
-#mplayer
-#themes
-#welcome
+# zshrc
+# bashrc
+# bash_profile
+# ncmpcpp/config
+# tmux.conf
+# gitconfig
+# gitignore_global
+# hgrc
+# inputrc
+# xbindkeysrc
+# mplayer
+# themes
+# welcome
 )
 
 SetupLink() {
