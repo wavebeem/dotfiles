@@ -33,11 +33,7 @@ syntax on
 set bg=dark
 
 set t_Co=16
-if match(hostname(), 'mockbook\|janrain.com') >= 0
-    color roboblu
-else
-    color lethean
-endif
+color roboblu
 
 " Better % bouncing (for languages like Ruby)
 runtime 'macros/matchit.vim'

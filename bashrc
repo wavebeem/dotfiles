@@ -11,8 +11,6 @@ fi
 # Make the shell line editor behave like vi!
 set -o vi
 
-[ -z "$SSH_AGENT_PID" ] && eval "$(ssh-agent)"
-
 # Add my programs to the path
 export PATH="$HOME/.local/bin:$HOME/.gem/ruby/1.9.1/bin:$HOME/bin:/usr/local/share/npm/bin:$PATH"
 
@@ -72,10 +70,12 @@ alias vim='vim -p'
 
 if which ncdu 2>&1 >/dev/null
 then alias du='ncdu'
+else alias du='du -csh'
 fi
 
-if which pydx 2>&1 >/dev/null
+if which pydf 2>&1 >/dev/null
 then alias df='pydf'
+else alias df='df -h'
 fi
 
 # Quicker job control
