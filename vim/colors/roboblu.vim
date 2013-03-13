@@ -107,6 +107,10 @@ hi PmenuSel     ctermbg=red     ctermfg=white   cterm=bold
 hi PmenuSbar    ctermbg=blue    ctermfg=blue
 hi PmenuThumb   ctermbg=white   ctermfg=white
 
+" Ruby
+hi rubyInterpolationDelimiter   ctermfg=darkcyan
+hi rubyInterpolation            ctermfg=green
+
 " Java
 hi javaCommentTitle     ctermfg=gray
 hi javaDocParam         ctermfg=gray
