@@ -111,4 +111,6 @@ fi
 export PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 [ -s "$HOME/.rvm/scripts/rvm" ] && source "$HOME/.rvm/scripts/rvm"
 
-[ -z "$SSH_AGENT_PID" ] && eval "$(ssh-agent)"
+case "$HOST" in
+truffle) [ -z "$SSH_AGENT_PID" ] && eval "$(ssh-agent)" ;;
+esac
