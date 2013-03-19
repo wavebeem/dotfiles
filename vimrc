@@ -30,6 +30,9 @@ map <Leader><C-s> :CtrlPBuffer<CR>
 
 syntax on
 
+" Allow modelines
+set modeline
+
 set bg=dark
 
 set t_Co=16
