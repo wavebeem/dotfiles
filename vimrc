@@ -120,15 +120,14 @@ map <Leader>d "_dd
 map <C-p> :previous<CR>
 map <C-n> :next<CR>
 
-map <F1> :set spell!<CR>:set spell?<CR>
+map <F1> :set hlsearch!<CR>:set hlsearch?<CR>
 map <F2> :set number!<CR>:set number?<CR>
-map <F3> :set paste!<CR>:set paste?<CR>
+map <F3> :set spell!<CR>:set spell?<CR>
+
+set pastetoggle=<F1>
 
 map <silent><F9>  :PREVCOLOR<CR>
 map <silent><F10> :NEXTCOLOR<CR>
-
-" Stop bringing up help when I hit F1 instead of Esc in insert mode
-imap <F1> <Nop>
 
 filetype plugin on
 
@@ -136,16 +135,16 @@ filetype plugin on
 let ruby_operators = 1
 let ruby_fold = 1
 
-au filetype java abbr sop System.out.println
+au filetype java iabbrev <buffer> sop System.out.println
 
-au filetype html abbr viewport meta name="viewport" content="width=device-width, initial-scale=1"
+au filetype html iabbrev <buffer> viewport meta name="viewport" content="width=device-width, initial-scale=1"
 
-au filetype javascript abbr ctn document.createTextNode
-au filetype javascript abbr dce document.createElement
-au filetype javascript abbr gid document.getElementById
+au filetype javascript iabbrev <buffer> ctn document.createTextNode
+au filetype javascript iabbrev <buffer> dce document.createElement
+au filetype javascript iabbrev <buffer> gid document.getElementById
 
 " I hate how often I typo this one
-au filetype javascript abbr fucntion function
+au filetype javascript iabbrev <buffer> fucntion function
 
 au filetype plaintex  setl textwidth=72 spell
 au filetype tex       setl textwidth=72 spell
