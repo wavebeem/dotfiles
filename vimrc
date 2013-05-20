@@ -13,20 +13,17 @@ Bundle 'ddollar/nerdcommenter'
 
 Bundle 'Colour-Sampler-Pack'
 
+Bundle 'ack.vim'
+
+" This is in my own ~/.vim/ already
 " Bundle 'saikobee/vim-javascript-syntax'
-" Bundle 'pangloss/vim-javascript-syntax'
-" Bundle 'Enhanced-Javascript-syntax'
-" Bundle 'drslump/vim-syntax-js'
-" Bundle 'jelera/vim-javascript-syntax'
-" Bundle 'JavaScript-syntax'
-" Bundle 'othree/javascript-syntax.vim'
 
 Bundle 'ScrollColors'
 
 let g:ctrlp_map = '<C-s>'
 Bundle 'kien/ctrlp.vim'
-map <Leader>s :CtrlPMixed<CR>
-map <Leader><C-s> :CtrlPBuffer<CR>
+nmap <Leader>s :CtrlPMixed<CR>
+nmap <Leader><C-s> :CtrlPBuffer<CR>
 
 syntax on
 
@@ -34,7 +31,6 @@ syntax on
 set modeline
 
 set bg=dark
-
 set t_Co=16
 color roboblu
 
@@ -116,18 +112,28 @@ map <C-d> "_dd
 map <Leader>d "_dd
 
 " Opening files should be easier too
+nmap <C-p> :previous<CR>
+nmap <C-n> :next<CR>
 
-map <C-p> :previous<CR>
-map <C-n> :next<CR>
+" Toggle some important settings
+nmap <F1> :set hlsearch!<CR>:set hlsearch?<CR>
+nmap <F2> :set number!<CR>:set number?<CR>
+nmap <F3> :set spell!<CR>:set spell?<CR>
 
-map <F1> :set hlsearch!<CR>:set hlsearch?<CR>
-map <F2> :set number!<CR>:set number?<CR>
-map <F3> :set spell!<CR>:set spell?<CR>
+" Save all and build on F5
+nmap <F5> :wa<CR>:make<CR><CR>
+nmap <F6> :cw<CR>
+
+" Double tap leader to save file
+nmap <Leader><Leader> :w<CR>
+
+" Leader then q to save and quit
+nmap <Leader>q :wq<CR>
 
 set pastetoggle=<F1>
 
-map <silent><F9>  :PREVCOLOR<CR>
-map <silent><F10> :NEXTCOLOR<CR>
+nmap <silent><F9>  :PREVCOLOR<CR>
+nmap <silent><F10> :NEXTCOLOR<CR>
 
 filetype plugin on
 
@@ -163,6 +169,13 @@ au BufNewFile,BufRead *.frag,*.vert,*.vsh,*.fsh,*.fp,*.vp,*.glsl setf glsl
 " Highlight _*.erb files as JavaScript instead of erb
 au BufNewFile,BufRead _*.erb set ft=javascript
 au BufNewFile,BufRead _*.erb set fdm=indent
+
+" F5 to reload .vimrc when editing it
+au BufNewFile,BufRead .vimrc nunmap <buffer> <F5>
+au BufNewFile,BufRead .vimrc nmap <buffer> <silent> <F5> :w<CR>:so %<CR>:echo 'Reloaded .vimrc'<CR>
+if expand("%") == $MYVIMRC
+    nmap <buffer> <silent> <F5> :w<CR>:so %<CR>:echo 'Reloaded .vimrc'<CR>
+endif
 
 " Highlight space at the end of the line as an error,
 " but don't highlight while in insert mode
