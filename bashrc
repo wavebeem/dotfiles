@@ -108,6 +108,14 @@ then cat "$HOME/.welcome"
 else uptime
 fi
 
+# Execute Dropbox daemon if it's not running
+if which dropbox >/dev/null 2>/dev/null; then
+    dropbox running >/dev/null
+    if [ $? = 0 ]; then
+        dropbox start >/dev/null
+    fi
+fi
+
 export PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 [ -s "$HOME/.rvm/scripts/rvm" ] && source "$HOME/.rvm/scripts/rvm"
 
