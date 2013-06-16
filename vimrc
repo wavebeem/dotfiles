@@ -171,10 +171,8 @@ au BufNewFile,BufRead _*.erb set ft=javascript
 au BufNewFile,BufRead _*.erb set fdm=indent
 
 " F5 to reload .vimrc when editing it
-au BufNewFile,BufRead .vimrc nunmap <buffer> <F5>
 au BufNewFile,BufRead .vimrc nmap <buffer> <silent> <F5> :w<CR>:so %<CR>:echo 'Reloaded .vimrc'<CR>
 if expand("%") == $MYVIMRC
-    nunmap <buffer> <F5>
     nmap <buffer> <silent> <F5> :w<CR>:so %<CR>:echo 'Reloaded .vimrc'<CR>
 endif
 
