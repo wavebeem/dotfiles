@@ -41,6 +41,10 @@ runtime 'macros/matchit.vim'
 " (apparently this is off by default...)
 set ruler
 
+" Always display bottom bar (keeps the buffer from scrolling around when you
+" open vertical splits).
+set laststatus=2
+
 " Allow me to hide buffers with changes
 set hidden
 

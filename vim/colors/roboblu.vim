@@ -93,7 +93,7 @@ hi LineNr       ctermfg=black cterm=bold
 
 hi VertSplit    cterm=none   ctermbg=darkblue   ctermfg=lightblue
 hi StatusLine   cterm=none   ctermbg=lightgray  ctermfg=black
-hi StatusLineNC cterm=none   ctermbg=darkblue   ctermfg=lightgray
+hi StatusLineNC cterm=none   ctermbg=darkblue   ctermfg=darkcyan
 
 hi WildMenu     ctermbg=darkblue ctermfg=lightgray cterm=none
 
