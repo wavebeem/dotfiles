@@ -41,6 +41,10 @@ runtime 'macros/matchit.vim'
 " (apparently this is off by default...)
 set ruler
 
+" This cryptic beast gives me a slightly modified statusbar, without the extra
+" weight of vim powerline.
+set stl=%1(%)%f%1(%)%(%h%r%m%)%=%<%2(%)%l,%c%7(%)%P%1(%)
+
 " Always display bottom bar (keeps the buffer from scrolling around when you
 " open vertical splits).
 set laststatus=2
