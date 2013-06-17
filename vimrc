@@ -41,6 +41,10 @@ runtime 'macros/matchit.vim'
 " (apparently this is off by default...)
 set ruler
 
+" Always display bottom bar (keeps the buffer from scrolling around when you
+" open vertical splits).
+set laststatus=2
+
 " Allow me to hide buffers with changes
 set hidden
 
@@ -171,10 +175,8 @@ au BufNewFile,BufRead _*.erb set ft=javascript
 au BufNewFile,BufRead _*.erb set fdm=indent
 
 " F5 to reload .vimrc when editing it
-au BufNewFile,BufRead .vimrc nunmap <buffer> <F5>
 au BufNewFile,BufRead .vimrc nmap <buffer> <silent> <F5> :w<CR>:so %<CR>:echo 'Reloaded .vimrc'<CR>
 if expand("%") == $MYVIMRC
-    nunmap <buffer> <F5>
     nmap <buffer> <silent> <F5> :w<CR>:so %<CR>:echo 'Reloaded .vimrc'<CR>
 endif
 
