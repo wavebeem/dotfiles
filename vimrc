@@ -9,6 +9,9 @@ call vundle#rc()
 
 Bundle 'gmarik/vundle'
 Bundle 'tpope/vim-markdown'
+
+" I can make my own keybindings, thanks :)
+let g:NERDCreateDefaultMappings = 0
 Bundle 'ddollar/nerdcommenter'
 
 Bundle 'Colour-Sampler-Pack'
@@ -76,6 +79,14 @@ set number
 " Enable terminal titles (default?)
 set title
 
+" Make splits better
+set splitright
+nmap <C-w>v     :tabnew<CR>:bwipeout<CR>:vsplit<CR>
+nmap <C-w><C-v> :tabnew<CR>:bwipeout<CR>:vsplit<CR>
+
+" Cycle through open windows
+nmap <Tab> :wincmd w<CR>
+
 " Nice setup for code folding
 set foldmethod=indent
 set foldlevel=999
@@ -107,13 +118,7 @@ set nohlsearch
 " List of pattersn to ignore in the wildmenu
 set wildignore=*.swp,*.swo,*.pyc,*.class,*.o
 
-" I Would think the first map would work here, but somehow that
-" removes the original binding for NERD Commenter toggle.
-"
-" Make comment toggling easier
-" map <C-q> <Plug>NERDCommenterToggle
-"
-map <C-q> <Leader>c<Space>
+map <C-q> <Plug>NERDCommenterToggle
 
 " Make it easier to delete lines without cutting them
 map <C-d> "_dd
