@@ -23,10 +23,11 @@ Bundle 'ack.vim'
 
 Bundle 'ScrollColors'
 
+let g:ctrlp_max_files = 2000
 let g:ctrlp_map = '<C-s>'
 Bundle 'kien/ctrlp.vim'
-nmap <Leader>s :CtrlPMixed<CR>
-nmap <Leader><C-s> :CtrlPBuffer<CR>
+nmap <Leader><C-s> :CtrlPMixed<CR>
+nmap <Leader>s :CtrlPBuffer<CR>
 
 syntax on
 
