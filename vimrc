@@ -9,6 +9,9 @@ call vundle#rc()
 
 Bundle 'gmarik/vundle'
 Bundle 'tpope/vim-markdown'
+
+" I can make my own keybindings, thanks :)
+let g:NERDCreateDefaultMappings = 0
 Bundle 'ddollar/nerdcommenter'
 
 Bundle 'Colour-Sampler-Pack'
@@ -41,6 +44,10 @@ runtime 'macros/matchit.vim'
 " (apparently this is off by default...)
 set ruler
 
+" This cryptic beast gives me a slightly modified statusbar, without the extra
+" weight of vim powerline.
+set stl=%1(%)%f%1(%)%(%h%r%m%)%=%<%2(%)%l,%c%7(%)%P%1(%)
+
 " Always display bottom bar (keeps the buffer from scrolling around when you
 " open vertical splits).
 set laststatus=2
@@ -71,6 +78,14 @@ set number
 
 " Enable terminal titles (default?)
 set title
+
+" Make splits better
+set splitright
+nmap <C-w>v     :tabnew<CR>:bwipeout<CR>:vsplit<CR>
+nmap <C-w><C-v> :tabnew<CR>:bwipeout<CR>:vsplit<CR>
+
+" Cycle through open windows
+nmap <Tab> :wincmd w<CR>
 
 " Nice setup for code folding
 set foldmethod=indent
@@ -103,13 +118,7 @@ set nohlsearch
 " List of pattersn to ignore in the wildmenu
 set wildignore=*.swp,*.swo,*.pyc,*.class,*.o
 
-" I Would think the first map would work here, but somehow that
-" removes the original binding for NERD Commenter toggle.
-"
-" Make comment toggling easier
-" map <C-q> <Plug>NERDCommenterToggle
-"
-map <C-q> <Leader>c<Space>
+map <C-q> <Plug>NERDCommenterToggle
 
 " Make it easier to delete lines without cutting them
 map <C-d> "_dd
