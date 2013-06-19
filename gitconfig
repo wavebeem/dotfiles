@@ -11,6 +11,7 @@
     addi = add --interactive
     addp = add --patch
     diffc = diff --cached
+    diffw = diff --word-diff
     co = checkout
     cob = checkout -b
     cop = checkout -p
@@ -23,7 +24,3 @@
     default = current
 [core]
     excludesfile = /home/brian/.gitignore_global
-[web]
-    browser = chromium
-[browser "chromium"]
-    cmd = chromium
