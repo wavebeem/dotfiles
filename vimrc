@@ -15,6 +15,7 @@ let g:NERDCreateDefaultMappings = 0
 Bundle 'ddollar/nerdcommenter'
 
 Bundle 'Colour-Sampler-Pack'
+Bundle 'vim-scripts/mimicpak'
 
 Bundle 'ack.vim'
 
@@ -82,11 +83,9 @@ set title
 
 " Make splits better
 set splitright
-nmap <C-w>v     :tabnew<CR>:bwipeout<CR>:vsplit<CR>
-nmap <C-w><C-v> :tabnew<CR>:bwipeout<CR>:vsplit<CR>
 
 " Cycle through open windows
-nmap <Tab> :wincmd w<CR>
+nmap <silent> <Tab> :wincmd w<CR>
 
 " Nice setup for code folding
 set foldmethod=indent
