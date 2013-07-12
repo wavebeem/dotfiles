@@ -98,10 +98,6 @@ set cmdheight=1
 set wildmenu
 set wildmode=longest:full,full
 
-" Number of lines to offset when scrolling
-" so as to keep more code on screen
-set scrolloff=0
-
 " Set visual bell then disable the output of visual bell
 set visualbell
 set t_vb=
@@ -115,7 +111,7 @@ set incsearch
 " Disable highlighting search terms
 set nohlsearch
 
-" List of pattersn to ignore in the wildmenu
+" List of patterns to ignore in the wildmenu
 set wildignore=*.swp,*.swo,*.pyc,*.class,*.o
 
 map <C-q> <Plug>NERDCommenterToggle
