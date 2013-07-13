@@ -153,6 +153,7 @@ let ruby_fold = 1
 au filetype java iabbrev <buffer> sop System.out.println
 
 au filetype html iabbrev <buffer> viewport meta name="viewport" content="width=device-width, initial-scale=1"
+au filetype html iabbrev <buffer> doctype !DOCTYPE html
 
 au filetype javascript iabbrev <buffer> ctn document.createTextNode
 au filetype javascript iabbrev <buffer> dce document.createElement
