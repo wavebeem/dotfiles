@@ -122,6 +122,24 @@ if which dropbox >/dev/null 2>/dev/null; then
     fi
 fi
 
+HTML_Init() {
+    touch style.css main.js index.html
+    cat >index.html <<EOF
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Web Page</title>
+        <script src="main.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+    </body>
+</html>
+EOF
+}
+
 export PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 [ -s "$HOME/.rvm/scripts/rvm" ] && source "$HOME/.rvm/scripts/rvm"
 
