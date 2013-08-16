@@ -22,6 +22,8 @@ Bundle 'ack.vim'
 " This is in my own ~/.vim/ already
 " Bundle 'saikobee/vim-javascript-syntax'
 
+Bundle 'cakebaker/scss-syntax.vim'
+
 Bundle 'ScrollColors'
 
 let g:ctrlp_max_files = 2000
@@ -158,6 +160,10 @@ au filetype html iabbrev <buffer> doctype !DOCTYPE html
 au filetype javascript iabbrev <buffer> ctn document.createTextNode
 au filetype javascript iabbrev <buffer> dce document.createElement
 au filetype javascript iabbrev <buffer> gid document.getElementById
+
+au filetype javascript iabbrev <buffer> koo ko.observable
+au filetype javascript iabbrev <buffer> koa ko.observableArray
+au filetype javascript iabbrev <buffer> koc ko.computed
 
 " I hate how often I typo this one
 au filetype javascript iabbrev <buffer> fucntion function
