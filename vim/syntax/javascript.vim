@@ -126,6 +126,13 @@ if version >= 508 || !exists("did_javascript_syn_inits")
   HiLink javaScriptComma                Comma
   HiLink javaScriptSemicolon            Semicolon
 
+  HiLink Dot                            Punctuation
+  HiLink Type                           Punctuation
+  HiLink Braces                         Punctuation
+  HiLink Parens                         Punctuation
+  HiLink Comma                          Punctuation
+  HiLink Semicolon                      Punctuation
+
   HiLink javaScriptIdentifier           Identifier
   HiLink javaScriptLabel                Label
   HiLink javaScriptException            Exception

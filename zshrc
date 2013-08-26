@@ -90,18 +90,20 @@ Prefix() {
 }
 
 Prompt_Host() {
-    bg="%B%F{black}"
-    fg="%B%F{blue}"
-    er="%B%F{red}"
-    e="%f%b"
+    bg="%F{cyan}"
+    rg="%F{yellow}"
+    fg="%F{blue}"
+    er="%F{green}"
+    e="%f"
 
     _host='%M'
     _name=$(hostname -f 2>/dev/null)
     case "$_name" in
     *.local) _host='%m' ;;
     esac
-    _ps1="${bg}[${_host}]${e} "
-    _ps2="${bg}[?]${e} "
+    # _ps1="${bg}[${_host}]${e} "
+    _ps1="${bg}>${e} "
+    _ps2="${bg}?${e} "
 
     export RPROMPT=""
 
@@ -141,7 +143,8 @@ Prompt_Host() {
             _flags=$(Prefix "$_prefix" "${_items[@]}")
             _branch=$(Git_Branch)
 
-            _git="${bg}[git] ${fg}${_branch}${er}${_flags}${ue}"
+            # _git="${bg}[git] ${fg}${_branch}${er}${_flags}${ue}"
+            _git="${rg}git ${fg}${_branch}${er}${_flags}${ue}"
 
             #export PS1="${bg}%m(${_git}${bg}):${e} "
             #export PS2="${bg}%m(${_git}${bg})?${e} "

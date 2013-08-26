@@ -10,6 +10,7 @@ files=(
 # mpd/mpd.conf
 # chrome-themes
 ackrc
+irbrc
 # zshenv
 # vim
 # vimrc

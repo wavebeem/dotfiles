@@ -14,8 +14,9 @@ Bundle 'tpope/vim-markdown'
 let g:NERDCreateDefaultMappings = 0
 Bundle 'ddollar/nerdcommenter'
 
-Bundle 'Colour-Sampler-Pack'
+" Bundle 'Colour-Sampler-Pack'
 Bundle 'vim-scripts/mimicpak'
+Bundle 'altercation/vim-colors-solarized'
 
 Bundle 'ack.vim'
 
@@ -23,6 +24,7 @@ Bundle 'ack.vim'
 " Bundle 'saikobee/vim-javascript-syntax'
 
 Bundle 'cakebaker/scss-syntax.vim'
+Bundle 'groenewege/vim-less'
 
 Bundle 'ScrollColors'
 
@@ -39,7 +41,13 @@ set modeline
 
 set bg=dark
 set t_Co=16
-color roboblu
+
+" color roboblu
+
+let g:solarized_termtrans = 1
+color solarized
+hi Punctuation ctermfg=darkgray
+hi Visual ctermbg=darkgreen ctermfg=black cterm=none
 
 " Better % bouncing (for languages like Ruby)
 runtime 'macros/matchit.vim'
@@ -118,7 +126,7 @@ set incsearch
 set nohlsearch
 
 " List of patterns to ignore in the wildmenu
-set wildignore=*.swp,*.swo,*.pyc,*.class,*.o
+set wildignore=*.swp,*.swo,*.pyc,*.class,*.o,node_modules
 
 map <C-q> <Plug>NERDCommenterToggle
 
