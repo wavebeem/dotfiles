@@ -48,6 +48,11 @@ let g:solarized_termtrans = 1
 color solarized
 hi Punctuation ctermfg=darkgray
 hi Visual ctermbg=darkgreen ctermfg=black cterm=none
+hi Folded ctermfg=10 cterm=none
+
+hi TabLine      cterm=none
+hi TabLineFill  cterm=none
+hi TabLineSel   cterm=reverse
 
 " Better % bouncing (for languages like Ruby)
 runtime 'macros/matchit.vim'
@@ -206,8 +211,9 @@ endif
 
 " Highlight space at the end of the line as an error,
 " but don't highlight while in insert mode
-au InsertEnter * match Error //
-au InsertLeave * match Error /\v\s+$/
+hi TrailingWhitespace ctermbg=darkred cterm=none guibg=#cc0000
+au InsertEnter * match TrailingWhitespace //
+au InsertLeave * match TrailingWhitespace /\v\s+$/
 
 " Bounce between matching ()[]{} while typing
 set showmatch
