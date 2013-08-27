@@ -44,8 +44,6 @@ export LESS_TERMCAP_us=$'\E[01;36m'
 # ANSI formatting for pretty-ness
 export RI="-f ansi"
 
-alias wu='ssh bmock@shell.willamette.edu'
-
 alias dim='echo ${COLUMNS}x${LINES}'
 alias sl='sl -l'
 alias rb='exec "$(readlink /proc/$$/exe)"'
