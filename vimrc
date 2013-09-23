@@ -29,10 +29,10 @@ Bundle 'groenewege/vim-less'
 Bundle 'ScrollColors'
 
 let g:ctrlp_max_files = 2000
-let g:ctrlp_map = '<C-s>'
+let g:ctrlp_map = '<Leader><C-s>'
 Bundle 'kien/ctrlp.vim'
-nmap <Leader><C-s> :CtrlPMixed<CR>
-nmap <Leader>s :CtrlPBuffer<CR>
+nmap <Leader>s :CtrlPMixed<CR>
+nmap <Tab> :CtrlPBuffer<CR>
 
 syntax on
 
@@ -47,15 +47,17 @@ set t_Co=16
 let g:solarized_termtrans = 1
 color solarized
 hi Punctuation ctermfg=darkgray
-hi Visual ctermbg=darkgreen ctermfg=black cterm=none
+hi Visual ctermbg=10 ctermfg=black cterm=none
 hi Folded ctermfg=10 cterm=none
 
 hi TabLine      cterm=none
 hi TabLineFill  cterm=none
 hi TabLineSel   cterm=reverse
 
+hi link rubyStringDelimiter String
+
 " Better % bouncing (for languages like Ruby)
-runtime 'macros/matchit.vim'
+" runtime 'macros/matchit.vim'
 
 " Nice info in the bottom line area
 " (apparently this is off by default...)
@@ -104,7 +106,7 @@ set title
 set splitright
 
 " Cycle through open windows
-nmap <silent> <Tab> :wincmd w<CR>
+" nmap <silent> <Tab> :wincmd w<CR>
 
 " Nice setup for code folding
 set foldmethod=indent
@@ -134,6 +136,11 @@ set nohlsearch
 set wildignore=*.swp,*.swo,*.pyc,*.class,*.o,node_modules
 
 map <C-q> <Plug>NERDCommenterToggle
+map <Leader>c <Plug>NERDCommenterToggle
+
+" Map C-k to k so I can hold down control and hit j/k to navigate
+" and q to comment
+nmap <C-k> k
 
 " Make it easier to delete lines without cutting them
 map <C-d> "_dd
@@ -157,6 +164,9 @@ nmap <Leader><Leader> :w<CR>
 
 " Leader then q to save and quit
 nmap <Leader>q :wq<CR>
+
+" Leader then t to open a new tab
+nmap <Leader>t :tabedit<CR>
 
 set pastetoggle=<F1>
 
@@ -184,6 +194,7 @@ au filetype javascript iabbrev <buffer> koc ko.computed
 
 " I hate how often I typo this one
 au filetype javascript iabbrev <buffer> fucntion function
+au filetype javascript iabbrev <buffer> fuynction function
 
 au filetype plaintex  setl textwidth=72 spell
 au filetype tex       setl textwidth=72 spell
@@ -199,9 +210,7 @@ au filetype text setl tabstop=2 softtabstop=2 shiftwidth=2
 " Enable syntax highlighting for GLSL files
 au BufNewFile,BufRead *.frag,*.vert,*.vsh,*.fsh,*.fp,*.vp,*.glsl setf glsl
 
-" Highlight _*.erb files as JavaScript instead of erb
-au BufNewFile,BufRead _*.erb set ft=javascript
-au BufNewFile,BufRead _*.erb set fdm=indent
+au BufNewFile,BufRead * set fdm=indent
 
 " F5 to reload .vimrc when editing it
 au BufNewFile,BufRead .vimrc nmap <buffer> <silent> <F5> :w<CR>:so %<CR>:echo 'Reloaded .vimrc'<CR>
