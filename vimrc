@@ -168,6 +168,11 @@ nmap <Leader>q :wq<CR>
 " Leader then t to open a new tab
 nmap <Leader>t :tabedit<CR>
 
+" Leader then b to open a vertical split
+nmap <Leader>v :vsplit<CR>
+
+nmap K <Nop>
+
 set pastetoggle=<F1>
 
 nmap <silent><F9>  :PREVCOLOR<CR>
