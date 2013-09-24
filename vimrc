@@ -29,9 +29,8 @@ Bundle 'groenewege/vim-less'
 Bundle 'ScrollColors'
 
 let g:ctrlp_max_files = 2000
-let g:ctrlp_map = '<Leader><C-s>'
+let g:ctrlp_map = '<C-s>'
 Bundle 'kien/ctrlp.vim'
-nmap <Leader>s :CtrlPMixed<CR>
 nmap <Tab> :CtrlPBuffer<CR>
 
 syntax on
