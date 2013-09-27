@@ -1,4 +1,6 @@
 set nocompatible
+
+nmap <Tab> :wincmd w<CR>
 filetype off
 
 " <Space> is so much easier to type than <Backslash>
@@ -31,7 +33,6 @@ Bundle 'ScrollColors'
 let g:ctrlp_max_files = 2000
 let g:ctrlp_map = '<C-s>'
 Bundle 'kien/ctrlp.vim'
-nmap <Tab> :CtrlPBuffer<CR>
 
 syntax on
 
@@ -134,16 +135,21 @@ set nohlsearch
 " List of patterns to ignore in the wildmenu
 set wildignore=*.swp,*.swo,*.pyc,*.class,*.o,node_modules
 
-map <C-q> <Plug>NERDCommenterToggle
+map <C-d> <Plug>NERDCommenterToggle
 map <Leader>c <Plug>NERDCommenterToggle
+
+nmap <Tab> :wincmd w<CR>
 
 " Map C-k to k so I can hold down control and hit j/k to navigate
 " and q to comment
 nmap <C-k> k
 
+" Accidentally going into ex mode is a bummer, let's just use it to reflow text
+nmap Q gq
+
 " Make it easier to delete lines without cutting them
-map <C-d> "_dd
-map <Leader>d "_dd
+" map <C-d> "_dd
+" map <Leader>d "_dd
 
 " Opening files should be easier too
 nmap <C-p> :previous<CR>
