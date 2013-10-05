@@ -216,6 +216,8 @@ au BufNewFile,BufRead TODO   setl ft=text
 au filetype text setl textwidth=78
 au filetype text setl tabstop=2 softtabstop=2 shiftwidth=2
 
+au filetype scala setl tabstop=2 softtabstop=2 shiftwidth=2
+
 au filetype less set iskeyword-=-
 
 " Enable syntax highlighting for GLSL files
