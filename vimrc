@@ -1,6 +1,5 @@
 set nocompatible
 
-nmap <Tab> :wincmd w<CR>
 filetype off
 
 " <Space> is so much easier to type than <Backslash>
@@ -19,6 +18,8 @@ Bundle 'ddollar/nerdcommenter'
 " Bundle 'Colour-Sampler-Pack'
 Bundle 'vim-scripts/mimicpak'
 Bundle 'altercation/vim-colors-solarized'
+
+Bundle 'briancollins/vim-jst'
 
 Bundle 'ack.vim'
 
@@ -106,7 +107,7 @@ set title
 set splitright
 
 " Cycle through open windows
-" nmap <silent> <Tab> :wincmd w<CR>
+nmap <silent> <Tab> :wincmd w<CR>
 
 " Nice setup for code folding
 set foldmethod=indent
@@ -137,8 +138,6 @@ set wildignore=*.swp,*.swo,*.pyc,*.class,*.o,node_modules
 
 map <C-d> <Plug>NERDCommenterToggle
 map <Leader>c <Plug>NERDCommenterToggle
-
-nmap <Tab> :wincmd w<CR>
 
 " Map C-k to k so I can hold down control and hit j/k to navigate
 " and q to comment
@@ -222,6 +221,8 @@ au BufNewFile,BufRead todo   setl ft=text
 au BufNewFile,BufRead TODO   setl ft=text
 au filetype text setl textwidth=78
 au filetype text setl tabstop=2 softtabstop=2 shiftwidth=2
+
+au filetype scala setl tabstop=2 softtabstop=2 shiftwidth=2
 
 au filetype less set iskeyword-=-
 
