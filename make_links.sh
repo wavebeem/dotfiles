@@ -9,8 +9,9 @@ files=(
 # config/fontconfig
 # mpd/mpd.conf
 # chrome-themes
-ackrc
-irbrc
+# ackrc
+# irbrc
+dircolors
 # zshenv
 # vim
 # vimrc

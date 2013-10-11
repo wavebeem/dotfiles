@@ -1,6 +1,6 @@
 # Set up ls colors
 if which dircolors 2>&1 >/dev/null
-then eval $(dircolors)
+then eval $(dircolors ~/.dircolors)
 fi
 
 # Turn off ^S and ^Q flow control
