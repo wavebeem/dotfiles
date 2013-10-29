@@ -1,3 +1,4 @@
 --pager=less
 --smart-case
 --ignore-dir=node_modules
+--ignore-dir=build

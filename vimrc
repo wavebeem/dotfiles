@@ -167,7 +167,7 @@ nmap <F6> :cw<CR>
 nmap <Leader><Leader> :w<CR>
 
 " Leader then q to save and quit
-nmap <Leader>q :wq<CR>
+nmap <Leader>q :q<CR>
 
 " Leader then t to open a new tab
 nmap <Leader>t :tabedit<CR>
