@@ -145,6 +145,7 @@ nmap <C-k> k
 
 " Accidentally going into ex mode is a bummer, let's just use it to reflow text
 nmap Q gq
+vmap Q gq
 
 " Make it easier to delete lines without cutting them
 " map <C-d> "_dd
@@ -172,7 +173,7 @@ nmap <Leader>q :q<CR>
 " Leader then t to open a new tab
 nmap <Leader>t :tabedit<CR>
 
-" Leader then b to open a vertical split
+" Leader then v to open a vertical split
 nmap <Leader>v :vsplit<CR>
 
 nmap K <Nop>
@@ -194,8 +195,13 @@ au filetype html iabbrev <buffer> viewport meta name="viewport" content="width=d
 au filetype html iabbrev <buffer> doctype !DOCTYPE html
 
 au filetype javascript iabbrev <buffer> ctn document.createTextNode
+au filetype eruby      iabbrev <buffer> ctn document.createTextNode
+
 au filetype javascript iabbrev <buffer> dce document.createElement
+au filetype eruby      iabbrev <buffer> dce document.createElement
+
 au filetype javascript iabbrev <buffer> gid document.getElementById
+au filetype eruby      iabbrev <buffer> gid document.getElementById
 
 au filetype javascript iabbrev <buffer> koo ko.observable
 au filetype javascript iabbrev <buffer> koa ko.observableArray
