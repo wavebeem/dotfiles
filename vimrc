@@ -47,13 +47,13 @@ set t_Co=16
 
 let g:solarized_termtrans = 1
 color solarized
-hi Punctuation ctermfg=darkgray
+hi Punctuation ctermfg=darkgray guifg=#586e75
 hi Visual ctermbg=10 ctermfg=black cterm=none
 hi Folded ctermfg=10 cterm=none
 
-hi TabLine      cterm=none
-hi TabLineFill  cterm=none
-hi TabLineSel   cterm=reverse
+hi TabLine      cterm=none      guibg=#586e75 guifg=#93a1a1 gui=none
+hi TabLineFill  cterm=none      guibg=#586e75 guifg=#93a1a1 gui=none
+hi TabLineSel   cterm=reverse   guibg=#073642 guifg=#fdf6e3 gui=none
 
 hi link rubyStringDelimiter String
 
@@ -177,6 +177,10 @@ nmap <Leader>t :tabedit<CR>
 nmap <Leader>v :vsplit<CR>
 
 nmap K <Nop>
+
+" Easier tab switching
+nmap <C-j> gt
+nmap <C-k> gT
 
 set pastetoggle=<F1>
 
