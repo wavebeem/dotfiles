@@ -82,6 +82,8 @@ then alias df='pydf'
 else alias df='df -h'
 fi
 
+alias mount='mount | column -t'
+
 # Quicker job control
 alias k='kill %%'
 alias kk='kill -9 %%'
