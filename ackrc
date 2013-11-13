@@ -3,3 +3,4 @@
 --ignore-dir=node_modules
 --ignore-dir=build
 --ignore-dir=docs
+--ignore-dir=instrument

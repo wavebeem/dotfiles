@@ -47,7 +47,7 @@ set t_Co=16
 
 let g:solarized_termtrans = 1
 color solarized
-hi Punctuation ctermfg=darkgray guifg=#586e75
+hi Punctuation ctermfg=darkgray guifg=#1f5a6c
 hi Visual ctermbg=10 ctermfg=black cterm=none
 hi Folded ctermfg=10 cterm=none
 
@@ -134,7 +134,7 @@ set incsearch
 set nohlsearch
 
 " List of patterns to ignore in the wildmenu
-set wildignore=*.swp,*.swo,*.pyc,*.class,*.o,node_modules
+set wildignore=*.swp,*.swo,*.pyc,*.class,*.o,node_modules,docs,build,instrument
 
 map <C-d> <Plug>NERDCommenterToggle
 map <Leader>c <Plug>NERDCommenterToggle
