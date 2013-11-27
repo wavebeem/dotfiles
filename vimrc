@@ -1,19 +1,19 @@
+" Who cares about vi compatibility?
 set nocompatible
 
+" Set up Vundle for managing plugins
 filetype off
-
-" <Space> is so much easier to type than <Backslash>
-let mapleader = ' '
-
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
-
 Bundle 'gmarik/vundle'
+
 Bundle 'tpope/vim-markdown'
 
+" Vim's JSON syntax highlighting is awful
 let g:vim_json_syntax_conceal = 0
 Bundle 'elzr/vim-json'
 
+" Make :JsBeautify command to reformat JSON
 Bundle 'maksimr/vim-jsbeautify'
 command! JsBeautify call JsBeautify()
 
@@ -40,18 +40,22 @@ let g:ctrlp_max_files = 2000
 let g:ctrlp_map = '<C-s>'
 Bundle 'kien/ctrlp.vim'
 
+" <Space> is so much easier to type than <Backslash>
+let mapleader = ' '
+
+" Syntax highlighting is a must
 syntax on
 
 " Allow modelines
 set modeline
 
-set bg=dark
-set t_Co=16
-
 " color roboblu
 
+set bg=dark
+set t_Co=16
 let g:solarized_termtrans = 1
 color solarized
+
 hi Punctuation ctermfg=darkgray guifg=#1f5a6c
 hi Visual ctermbg=10 ctermfg=black cterm=none
 hi Folded ctermfg=10 cterm=none
@@ -61,9 +65,6 @@ hi TabLineFill  cterm=none      guibg=#586e75 guifg=#93a1a1 gui=none
 hi TabLineSel   cterm=reverse   guibg=#073642 guifg=#fdf6e3 gui=none
 
 hi link rubyStringDelimiter String
-
-" Better % bouncing (for languages like Ruby)
-" runtime 'macros/matchit.vim'
 
 " Nice info in the bottom line area
 " (apparently this is off by default...)
@@ -144,10 +145,6 @@ set wildignore=*.swp,*.swo,*.pyc,*.class,*.o,node_modules,docs,build,instrument
 map <C-d> <Plug>NERDCommenterToggle
 map <Leader>c <Plug>NERDCommenterToggle
 
-" Map C-k to k so I can hold down control and hit j/k to navigate
-" and q to comment
-nmap <C-k> k
-
 " Accidentally going into ex mode is a bummer, let's just use it to reflow text
 nmap Q gq
 vmap Q gq
@@ -183,8 +180,10 @@ nmap K <Nop>
 nmap <C-j> gt
 nmap <C-k> gT
 
+" Easily allow sane pasting into terminal Vim
 set pastetoggle=<F1>
 
+" Fun way to cycle through colors
 nmap <silent><F9>  :PREVCOLOR<CR>
 nmap <silent><F10> :NEXTCOLOR<CR>
 
@@ -217,8 +216,7 @@ au filetype javascript iabbrev <buffer> fucntion function
 au filetype javascript iabbrev <buffer> fuynction function
 au filetype javascript iabbrev <buffer> fun function
 
-au filetype javascript imap <buffer> <C-f> function() {<cr>});<esc>O<tab>
-
+au filetype gitcommit setl textwidth=72 spell
 au filetype plaintex  setl textwidth=72 spell
 au filetype tex       setl textwidth=72 spell
 
@@ -237,11 +235,11 @@ au BufNewFile,BufRead *.frag,*.vert,*.vsh,*.fsh,*.fp,*.vp,*.glsl setf glsl
 
 au BufNewFile,BufRead * set fdm=indent
 
-" F5 to reload .vimrc when editing it
-au BufNewFile,BufRead .vimrc nmap <buffer> <silent> <F5> :w<CR>:so %<CR>:echo 'Reloaded .vimrc'<CR>
-if expand("%") == $MYVIMRC
-    nmap <buffer> <silent> <F5> :w<CR>:so %<CR>:echo 'Reloaded .vimrc'<CR>
-endif
+" Automatically reload vimrc when saving it
+augroup vimrc
+au!
+au BufWritePost $MYVIMRC source $MYVIMRC
+augroup END
 
 " Highlight space at the end of the line as an error,
 " but don't highlight while in insert mode
