@@ -9,6 +9,13 @@ Bundle 'gmarik/vundle'
 
 Bundle 'tpope/vim-markdown'
 
+" Trying out snippets
+let g:UltiSnipsEditSplit = 'vertical'
+let g:UltiSnipsSnippetsDir = '~/.vim/UltiSnips'
+" Awful default value; need this to override built-in snippets
+let g:UltiSnipsDontReverseSearchPath = 1
+Bundle 'SirVer/ultisnips'
+
 " Vim's JSON syntax highlighting is awful
 let g:vim_json_syntax_conceal = 0
 Bundle 'elzr/vim-json'
