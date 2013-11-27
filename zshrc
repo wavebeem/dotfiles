@@ -9,8 +9,8 @@ SAVEHIST=1000
 # miliseconds.
 KEYTIMEOUT=1
 
-setopt appendhistory extendedglob nomatch notify
-unsetopt beep
+setopt appendhistory extendedglob notify
+unsetopt beep nomatch
 bindkey -v
 bindkey '^R' history-incremental-search-backward
 zstyle :compinstall filename '/home/brian/.zshrc'
