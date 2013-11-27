@@ -7,8 +7,6 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 Bundle 'gmarik/vundle'
 
-Bundle 'tpope/vim-markdown'
-
 " Trying out snippets
 let g:UltiSnipsEditSplit = 'vertical'
 let g:UltiSnipsSnippetsDir = '~/.vim/UltiSnips'
@@ -24,25 +22,33 @@ Bundle 'elzr/vim-json'
 Bundle 'maksimr/vim-jsbeautify'
 command! JsBeautify call JsBeautify()
 
-" I can make my own keybindings, thanks :)
+" <C-d> to toggle comments
 let g:NERDCreateDefaultMappings = 0
 Bundle 'ddollar/nerdcommenter'
+map <C-d> <Plug>NERDCommenterToggle
+map <Leader>c <Plug>NERDCommenterToggle
 
-" Bundle 'Colour-Sampler-Pack'
+" Various color schemes
 Bundle 'vim-scripts/mimicpak'
 Bundle 'altercation/vim-colors-solarized'
 
+" Syntax highlighting
 Bundle 'briancollins/vim-jst'
+Bundle 'groenewege/vim-less'
+Bundle 'tpope/vim-markdown'
 
+" Integrate ack into vim via :Ack command
 Bundle 'ack.vim'
 
 " This is in my own ~/.vim/ already
 " Bundle 'saikobee/vim-javascript-syntax'
 
-Bundle 'groenewege/vim-less'
-
+" Commands to cycle colors
 Bundle 'ScrollColors'
+nmap <silent><F9>  :PREVCOLOR<CR>
+nmap <silent><F10> :NEXTCOLOR<CR>
 
+" Fuzzy file searching
 let g:ctrlp_max_files = 2000
 let g:ctrlp_map = '<C-s>'
 Bundle 'kien/ctrlp.vim'
@@ -152,11 +158,8 @@ set nohlsearch
 " List of patterns to ignore in the wildmenu
 set wildignore=*.swp,*.swo,*.pyc,*.class,*.o,node_modules,docs,build,instrument
 
-map <C-d> <Plug>NERDCommenterToggle
-map <Leader>c <Plug>NERDCommenterToggle
-
 " Accidentally going into ex mode is a bummer, let's just use it to reflow text
-nmap Q gq
+nmap Q gqq
 vmap Q gq
 
 " Opening files should be easier too
@@ -172,18 +175,13 @@ nmap <F3> :set spell!<CR>:set spell?<CR>
 nmap <F5> :wa<CR>:make<CR><CR>
 nmap <F6> :cw<CR>
 
-" Double tap leader to save file
+" Various shortcuts
 nmap <Leader><Leader> :w<CR>
-
-" Leader then q to save and quit
 nmap <Leader>q :x<CR>
-
-" Leader then t to open a new tab
 nmap <Leader>t :tabedit<CR>
-
-" Leader then v to open a vertical split
 nmap <Leader>v :vsplit<CR>
 
+" I rarely want to open man pages for the word under the cursor
 nmap K <Nop>
 
 " Easier tab switching
@@ -192,10 +190,6 @@ nmap <C-k> gT
 
 " Easily allow sane pasting into terminal Vim
 set pastetoggle=<F1>
-
-" Fun way to cycle through colors
-nmap <silent><F9>  :PREVCOLOR<CR>
-nmap <silent><F10> :NEXTCOLOR<CR>
 
 filetype plugin on
 
@@ -207,19 +201,6 @@ au filetype java iabbrev <buffer> sop System.out.println
 
 au filetype html iabbrev <buffer> viewport meta name="viewport" content="width=device-width, initial-scale=1"
 au filetype html iabbrev <buffer> doctype !DOCTYPE html
-
-au filetype javascript iabbrev <buffer> ctn document.createTextNode
-au filetype eruby      iabbrev <buffer> ctn document.createTextNode
-
-au filetype javascript iabbrev <buffer> dce document.createElement
-au filetype eruby      iabbrev <buffer> dce document.createElement
-
-au filetype javascript iabbrev <buffer> gid document.getElementById
-au filetype eruby      iabbrev <buffer> gid document.getElementById
-
-au filetype javascript iabbrev <buffer> koo ko.observable
-au filetype javascript iabbrev <buffer> koa ko.observableArray
-au filetype javascript iabbrev <buffer> koc ko.computed
 
 " I hate how often I typo this one
 au filetype javascript iabbrev <buffer> fucntion function
@@ -239,6 +220,8 @@ au filetype text setl tabstop=2 softtabstop=2 shiftwidth=2
 au filetype scala setl tabstop=2 softtabstop=2 shiftwidth=2
 
 au filetype less set iskeyword-=-
+
+au BufNewFile,BufRead *.js.erb setf javascript.eruby
 
 " Enable syntax highlighting for GLSL files
 au BufNewFile,BufRead *.frag,*.vert,*.vsh,*.fsh,*.fp,*.vp,*.glsl setf glsl
