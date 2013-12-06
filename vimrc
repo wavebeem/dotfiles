@@ -39,6 +39,7 @@ Bundle 'tpope/vim-markdown'
 
 " Integrate ack into vim via :Ack command
 Bundle 'ack.vim'
+command! Wack exec 'Ack "' . expand('<cword>') . '"'
 
 " This is in my own ~/.vim/ already
 " Bundle 'saikobee/vim-javascript-syntax'
@@ -156,7 +157,7 @@ set incsearch
 set nohlsearch
 
 " List of patterns to ignore in the wildmenu
-set wildignore=*.swp,*.swo,*.pyc,*.class,*.o,node_modules,docs,build,instrument
+set wildignore=*.swp,*.swo,*.pyc,*.class,*.o,node_modules,docs,build,instrument,testbed
 
 " Accidentally going into ex mode is a bummer, let's just use it to reflow text
 nmap Q gqq
@@ -207,6 +208,7 @@ au filetype javascript iabbrev <buffer> fucntion function
 au filetype javascript iabbrev <buffer> fuynction function
 au filetype javascript iabbrev <buffer> fun function
 
+au filetype gitcommit setl iskeyword+=-
 au filetype gitcommit setl textwidth=72 spell
 au filetype plaintex  setl textwidth=72 spell
 au filetype tex       setl textwidth=72 spell
@@ -217,9 +219,11 @@ au BufNewFile,BufRead TODO   setl ft=text
 au filetype text setl textwidth=78
 au filetype text setl tabstop=2 softtabstop=2 shiftwidth=2
 
+au BufRead *.js.erb   setl ft=javascript.eruby
+
 au filetype scala setl tabstop=2 softtabstop=2 shiftwidth=2
 
-au filetype less set iskeyword-=-
+au filetype less setl iskeyword-=-
 
 au BufNewFile,BufRead *.js.erb setf javascript.eruby
 
