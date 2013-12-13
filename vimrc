@@ -7,16 +7,11 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 Bundle 'gmarik/vundle'
 
-" Trying out snippets
-let g:UltiSnipsEditSplit = 'vertical'
-let g:UltiSnipsSnippetsDir = '~/.vim/UltiSnips'
-" Awful default value; need this to override built-in snippets
+" Snippets
 let g:UltiSnipsDontReverseSearchPath = 1
 Bundle 'SirVer/ultisnips'
-
-" Vim's JSON syntax highlighting is awful
-let g:vim_json_syntax_conceal = 0
-Bundle 'elzr/vim-json'
+" set rtp+=/home/brian/ultisnips/
+" set rtp^=/home/brian/ultisnips/
 
 " Make :JsBeautify command to reformat JSON
 Bundle 'maksimr/vim-jsbeautify'
@@ -36,6 +31,8 @@ Bundle 'altercation/vim-colors-solarized'
 Bundle 'briancollins/vim-jst'
 Bundle 'groenewege/vim-less'
 Bundle 'tpope/vim-markdown'
+let g:vim_json_syntax_conceal = 0
+Bundle 'elzr/vim-json'
 
 " Integrate ack into vim via :Ack command
 Bundle 'ack.vim'
@@ -73,6 +70,9 @@ color solarized
 hi Punctuation ctermfg=darkgray guifg=#1f5a6c
 hi Visual ctermbg=10 ctermfg=black cterm=none
 hi Folded ctermfg=10 cterm=none
+
+hi VarId ctermfg=none
+hi hsDelimiter ctermfg=darkgray
 
 hi TabLine      cterm=none      guibg=#586e75 guifg=#93a1a1 gui=none
 hi TabLineFill  cterm=none      guibg=#586e75 guifg=#93a1a1 gui=none
