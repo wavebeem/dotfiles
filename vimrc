@@ -95,8 +95,8 @@ set stl=%1(%)%f%1(%)%(%h%r%m%)%=%<%2(%)%l,%c%7(%)%P%1(%)
 " open vertical splits).
 set laststatus=2
 
-" Allow me to hide buffers with changes
-set hidden
+" Don't allow me to hide buffers with changes
+set nohidden
 
 " US English spelling
 set spelllang=en_us
@@ -156,7 +156,7 @@ set incsearch
 set nohlsearch
 
 " List of patterns to ignore in the wildmenu
-set wildignore=*.swp,*.swo,*.pyc,*.class,*.o,node_modules,docs,build,instrument
+set wildignore=*.swp,*.swo,*.pyc,*.class,*.o,node_modules,docs,build,instrument,testbed
 
 " Accidentally going into ex mode is a bummer, let's just use it to reflow text
 nmap Q gqq
@@ -207,7 +207,7 @@ au filetype javascript iabbrev <buffer> fucntion function
 au filetype javascript iabbrev <buffer> fuynction function
 au filetype javascript iabbrev <buffer> fun function
 
-au filetype gitcommit setl textwidth=72 spell
+au filetype gitcommit setl textwidth=72 spell iskeyword+=-
 au filetype plaintex  setl textwidth=72 spell
 au filetype tex       setl textwidth=72 spell
 
@@ -219,7 +219,7 @@ au filetype text setl tabstop=2 softtabstop=2 shiftwidth=2
 
 au filetype scala setl tabstop=2 softtabstop=2 shiftwidth=2
 
-au filetype less set iskeyword-=-
+au filetype less setl iskeyword-=-
 
 au BufNewFile,BufRead *.js.erb setf javascript.eruby
 
