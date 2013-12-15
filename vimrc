@@ -134,9 +134,6 @@ set foldmethod=indent
 set foldlevel=999
 set foldcolumn=0
 
-" Show a nice character when line-wrapping text
-set showbreak=↪
-
 " Set the height of the command window
 " and enable the wildmenu
 set cmdheight=1
