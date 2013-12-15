@@ -172,10 +172,6 @@ nmap <F1> :set hlsearch!<CR>:set hlsearch?<CR>
 nmap <F2> :set number!<CR>:set number?<CR>
 nmap <F3> :set spell!<CR>:set spell?<CR>
 
-" Save all and build on F5
-nmap <F5> :wa<CR>:make<CR><CR>
-nmap <F6> :cw<CR>
-
 " Various shortcuts
 nmap <Leader><Leader> :w<CR>
 nmap <Leader>q :x<CR>
@@ -198,37 +194,8 @@ filetype plugin on
 let ruby_operators = 1
 let ruby_fold = 1
 
-au filetype java iabbrev <buffer> sop System.out.println
-
-au filetype html iabbrev <buffer> viewport meta name="viewport" content="width=device-width, initial-scale=1"
-au filetype html iabbrev <buffer> doctype !DOCTYPE html
-
-" I hate how often I typo this one
-au filetype javascript iabbrev <buffer> fucntion function
-au filetype javascript iabbrev <buffer> fuynction function
-au filetype javascript iabbrev <buffer> fun function
-
-au filetype gitcommit setl textwidth=72 spell iskeyword+=-
-au filetype plaintex  setl textwidth=72 spell
-au filetype tex       setl textwidth=72 spell
-
-au BufNewFile,BufRead *.txt  setl ft=text
-au BufNewFile,BufRead todo   setl ft=text
-au BufNewFile,BufRead TODO   setl ft=text
-au filetype text setl textwidth=78
-au filetype text setl tabstop=2 softtabstop=2 shiftwidth=2
-
-au BufRead *.js.erb   setl ft=javascript.eruby
-
-au filetype scala setl tabstop=2 softtabstop=2 shiftwidth=2
-
-au filetype less setl iskeyword-=-
-
+au BufNewFile,BufRead *.txt,todo,TODO setl ft=text
 au BufNewFile,BufRead *.js.erb setf javascript.eruby
-
-" Enable syntax highlighting for GLSL files
-au BufNewFile,BufRead *.frag,*.vert,*.vsh,*.fsh,*.fp,*.vp,*.glsl setf glsl
-
 au BufNewFile,BufRead * set fdm=indent
 
 " Automatically reload vimrc when saving it
