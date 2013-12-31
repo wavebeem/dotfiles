@@ -8,10 +8,13 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 
 " Snippets
-let g:UltiSnipsDontReverseSearchPath = 1
-Bundle 'SirVer/ultisnips'
-" set rtp+=/home/brian/ultisnips/
+" let g:UltiSnipsDontReverseSearchPath = 1
+" Bundle 'SirVer/ultisnips'
+set rtp+=/home/brian/ultisnips/
 " set rtp^=/home/brian/ultisnips/
+
+" Extra keybindings to make netrw better
+Bundle 'tpope/vim-vinegar'
 
 " Make :JsBeautify command to reformat JSON
 Bundle 'maksimr/vim-jsbeautify'
@@ -63,7 +66,6 @@ set modeline
 " color roboblu
 
 set bg=dark
-set t_Co=16
 let g:solarized_termtrans = 1
 color solarized
 
@@ -95,6 +97,9 @@ set stl=%1(%)%f%1(%)%(%h%r%m%)%=%<%2(%)%l,%c%7(%)%P%1(%)
 " Always display bottom bar (keeps the buffer from scrolling around when you
 " open vertical splits).
 set laststatus=2
+
+" Allow block selections to go where there aren't actually characters.
+set virtualedit=block
 
 " Don't allow me to hide buffers with changes
 set nohidden
