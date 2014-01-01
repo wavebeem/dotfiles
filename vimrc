@@ -8,13 +8,13 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 
 " Snippets
-" let g:UltiSnipsDontReverseSearchPath = 1
-" Bundle 'SirVer/ultisnips'
-set rtp+=/home/brian/ultisnips/
+let g:UltiSnipsDontReverseSearchPath = 1
+let g:UltiSnipsExpandTrigger         = '<tab>'
+let g:UltiSnipsJumpForwardTrigger    = '<tab>'
+let g:UltiSnipsJumpBackwardTrigger   = '<s-tab>'
+Bundle 'SirVer/ultisnips'
+" set rtp+=/home/brian/ultisnips/
 " set rtp^=/home/brian/ultisnips/
-
-" Extra keybindings to make netrw better
-Bundle 'tpope/vim-vinegar'
 
 " Make :JsBeautify command to reformat JSON
 Bundle 'maksimr/vim-jsbeautify'
