@@ -15,7 +15,11 @@ Bundle 'SirVer/ultisnips'
 
 " Make :JsBeautify command to reformat JSON
 Bundle 'maksimr/vim-jsbeautify'
-command! JsBeautify call JsBeautify()
+function! JsonBeautify()
+    set ft=json
+    call JsBeautify()
+endfunction
+command! JsonBeautify call JsonBeautify()
 
 " <C-d> to toggle comments
 let g:NERDCreateDefaultMappings = 0
