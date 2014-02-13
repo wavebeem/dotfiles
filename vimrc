@@ -28,7 +28,7 @@ command! JsonBeautify call JsonBeautify()
 let g:NERDCreateDefaultMappings = 0
 Bundle 'ddollar/nerdcommenter'
 map <C-d> <Plug>NERDCommenterToggle
-map <Leader>c <Plug>NERDCommenterToggle
+map <Leader>c <C-d>
 
 " Various color schemes
 Bundle 'vim-scripts/mimicpak'

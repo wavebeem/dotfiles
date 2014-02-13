@@ -29,7 +29,7 @@ update_title() {
     host="$HOST"
     dir="${PWD/$HOME/~}"
 
-    set_title "$host ($dir)"
+    set_title "$dir"
 }
 
 # aliases and such
