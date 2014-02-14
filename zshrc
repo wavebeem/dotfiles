@@ -168,12 +168,13 @@ Prompt_Host() {
 
     # Code to run before executing the command.
     preexec() {
+        set_title "$1"
     }
 
     export PS1=$_ps1
     export PS2=$_ps2
 
-    #export RPROMPT=""
+    export RPROMPT="%~"
 }
 
 Prompt_Host

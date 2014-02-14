@@ -66,6 +66,7 @@ Darwin)
     ;;
 esac
 
+alias gs='git status'
 alias l='ls -hl'
 alias la='l -a'
 alias ..='cd ..'
