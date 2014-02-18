@@ -8,7 +8,7 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 
 " Snippets
-let g:UltiSnipsDontReverseSearchPath = 1
+" let g:UltiSnipsDontReverseSearchPath = 1
 let g:UltiSnipsExpandTrigger         = '<tab>'
 let g:UltiSnipsJumpForwardTrigger    = '<tab>'
 let g:UltiSnipsJumpBackwardTrigger   = '<s-tab>'
@@ -35,9 +35,7 @@ Bundle 'vim-scripts/mimicpak'
 Bundle 'altercation/vim-colors-solarized'
 
 " Syntax highlighting
-Bundle 'briancollins/vim-jst'
 Bundle 'groenewege/vim-less'
-Bundle 'tpope/vim-markdown'
 let g:vim_json_syntax_conceal = 0
 Bundle 'elzr/vim-json'
 
@@ -57,6 +55,7 @@ nmap <silent><F10> :NEXTCOLOR<CR>
 let g:ctrlp_max_files = 2000
 let g:ctrlp_map = '<C-s>'
 Bundle 'kien/ctrlp.vim'
+nnoremap <C-j> :CtrlPBuffer<CR>
 
 " <Space> is so much easier to type than <Backslash>
 let mapleader = ' '
@@ -170,7 +169,6 @@ nmap Q gqq
 vmap Q gq
 
 " Opening files should be easier too
-nmap <C-p> :previous<CR>
 nmap <C-n> :next<CR>
 
 " Toggle some important settings
@@ -180,16 +178,18 @@ nmap <F3> :set spell!<CR>:set spell?<CR>
 
 " Various shortcuts
 nmap <Leader><Leader> :w<CR>
-nmap <Leader>q :x<CR>
+nmap <Leader>q :bd<CR>
 nmap <Leader>t :tabedit<CR>
 nmap <Leader>v :vsplit<CR>
+nmap <Leader>s :split<CR>
+nmap <Leader>a :wa<CR>
 
 " I rarely want to open man pages for the word under the cursor
 nmap K <Nop>
 
 " Easier tab switching
-nmap <C-j> gt
-nmap <C-k> gT
+" nmap <C-j> gt
+nmap <C-k> gt
 
 " Easily allow sane pasting into terminal Vim
 set pastetoggle=<F1>
