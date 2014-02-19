@@ -55,7 +55,7 @@ nmap <silent><F10> :NEXTCOLOR<CR>
 let g:ctrlp_max_files = 2000
 let g:ctrlp_map = '<C-s>'
 Bundle 'kien/ctrlp.vim'
-nnoremap <C-j> :CtrlPBuffer<CR>
+nnoremap <C-n> :CtrlPBuffer<CR>
 
 " <Space> is so much easier to type than <Backslash>
 let mapleader = ' '
@@ -169,7 +169,7 @@ nmap Q gqq
 vmap Q gq
 
 " Opening files should be easier too
-nmap <C-n> :next<CR>
+" nmap <C-n> :next<CR>
 
 " Toggle some important settings
 nmap <F1> :set hlsearch!<CR>:set hlsearch?<CR>
@@ -178,18 +178,22 @@ nmap <F3> :set spell!<CR>:set spell?<CR>
 
 " Various shortcuts
 nmap <Leader><Leader> :w<CR>
-nmap <Leader>q :bd<CR>
+nmap <Leader>q :confirm bd<CR>
 nmap <Leader>t :tabedit<CR>
 nmap <Leader>v :vsplit<CR>
 nmap <Leader>s :split<CR>
 nmap <Leader>a :wa<CR>
 
+vnoremap < <gv
+vnoremap > >gv
+
 " I rarely want to open man pages for the word under the cursor
-nmap K <Nop>
+nnoremap K <Nop>
+vnoremap K <Nop>
 
 " Easier tab switching
-" nmap <C-j> gt
-nmap <C-k> gt
+nmap <C-j> gt
+nmap <C-k> gT
 
 " Easily allow sane pasting into terminal Vim
 set pastetoggle=<F1>

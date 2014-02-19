@@ -70,7 +70,6 @@ alias gs='git status'
 alias l='ls -hl'
 alias la='l -a'
 alias ..='cd ..'
-alias vim='vim -p'
 
 if which ncdu 2>&1 >/dev/null
 then alias du='ncdu'

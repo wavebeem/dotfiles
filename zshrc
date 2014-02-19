@@ -37,9 +37,6 @@ alias ls='ls --color=auto'
 alias l='ls -halF'
 alias ..='cd ..'
 
-# Use tabs by default in vim
-alias vim='vim -p'
-
 Git_Branch() {
     local branch
     branch=$(git symbolic-ref HEAD 2>/dev/null)
