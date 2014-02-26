@@ -57,6 +57,10 @@ Git_Has_Unpushed()  { test "$(Git_Unpushed_Count)"  -gt 0; }
 Git_Has_Modified()  { test "$(Git_Modified_Count)"  -gt 0; }
 Git_Has_Untracked() { test "$(Git_Untracked_Count)" -gt 0; }
 
+Git_Has_Stash() {
+    git stash show >/dev/null 2>&1
+}
+
 Git_Has_Staged() {
     local count
     count=$(git diff --staged | head -n 1 | wc -l)
@@ -130,12 +134,18 @@ Prompt_Host() {
             else _staging=""
             fi
 
+            if Git_Has_Stash
+            then _stash="stash"
+            else _stash=""
+            fi
+
             _prefix=" #"
             _items=(
                 ${_unpushed}
                 ${_untracked}
                 ${_modified}
                 ${_staging}
+                ${_stash}
             )
             _flags=$(Prefix "$_prefix" "${_items[@]}")
             _branch=$(Git_Branch)
