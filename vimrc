@@ -31,8 +31,11 @@ map <C-d> <Plug>NERDCommenterToggle
 map <Leader>c <C-d>
 
 " Various color schemes
-Bundle 'vim-scripts/mimicpak'
+Bundle 'mimicpak'
 Bundle 'altercation/vim-colors-solarized'
+Bundle 'summerfruit.vim'
+Bundle 'fruity.vim'
+Bundle 'pyte'
 
 " Syntax highlighting
 Bundle 'groenewege/vim-less'
@@ -68,9 +71,11 @@ set modeline
 
 " color roboblu
 
-set bg=dark
-let g:solarized_termtrans = 1
-color solarized
+" set bg=dark
+" let g:solarized_termtrans = 1
+" color solarized
+
+color default
 
 hi Punctuation ctermfg=darkgray guifg=#1f5a6c
 hi Visual ctermbg=10 ctermfg=black cterm=none

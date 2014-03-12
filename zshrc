@@ -91,11 +91,19 @@ Prefix() {
 }
 
 Prompt_Host() {
+    # dark bg
     bg="%F{cyan}"
     rg="%F{yellow}"
     fg="%F{blue}"
     er="%F{green}"
     e="%f"
+
+    # light bg
+    bg="%B%F{green}"
+    rg="%B%F{green}"
+    fg="%B%F{blue}"
+    er="%B%F{red}"
+    e="%f%b"
 
     _host='%M'
     _name=$(hostname -f 2>/dev/null)
