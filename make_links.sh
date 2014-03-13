@@ -1,35 +1,21 @@
 #!/bin/bash
 
 files=(
-# config/roxterm.sourceforge.net
-# config/openbox
-# config/tint2
-# config/kde-xbindkeysrc
-# config/Terminal
-# config/fontconfig
 # mpd/mpd.conf
-# chrome-themes
-# ackrc
-# irbrc
+ackrc
+irbrc
 dircolors
-# zshenv
-# vim
-# vimrc
-#Xresources
-#Xdefaults
-#xinitrc
-# zshrc
-# bashrc
-# bash_profile
-# ncmpcpp/config
-# tmux.conf
+zshenv
+vim
+vimrc
+zshrc
+bashrc
+bash_profile
+tmux.conf
 # gitconfig
 # gitignore_global
 # hgrc
-# inputrc
-# xbindkeysrc
-# mplayer
-# themes
+inputrc
 # welcome
 )
 
