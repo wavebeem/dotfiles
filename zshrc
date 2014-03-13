@@ -114,7 +114,8 @@ Prompt_Host() {
     _ps1="${bg}>${e} "
     _ps2="${bg}?${e} "
 
-    export RPROMPT=""
+    # export RPROMPT=""
+    export RPROMPT="%B%F{cyan}%~%f%b"
 
     nl=$'\n'
 
@@ -188,8 +189,6 @@ Prompt_Host() {
 
     export PS1=$_ps1
     export PS2=$_ps2
-
-    export RPROMPT="%~"
 }
 
 Prompt_Host
