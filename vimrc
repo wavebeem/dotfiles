@@ -34,6 +34,7 @@ map <Leader>c <C-d>
 Bundle 'mimicpak'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'summerfruit.vim'
+Bundle 'summerfruit256.vim'
 Bundle 'fruity.vim'
 Bundle 'pyte'
 
@@ -139,8 +140,8 @@ set title
 " Make splits better
 set splitright
 
-" Cycle through open windows
-nmap <silent> <Tab> :wincmd w<CR>
+" Cycle between two most recent windows
+nmap <silent> <Tab> :wincmd p<CR>
 
 " Nice setup for code folding
 set foldmethod=indent
