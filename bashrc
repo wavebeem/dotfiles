@@ -45,7 +45,6 @@ export RI="-f ansi"
 
 alias dim='echo ${COLUMNS}x${LINES}'
 alias sl='sl -l'
-alias rb='exec "$(readlink /proc/$$/exe)"'
 
 alias t="tmux"
 alias T="tmux attach -d"
@@ -67,6 +66,7 @@ Darwin)
 esac
 
 alias gs='git status'
+alias g='git status'
 alias l='ls -hl'
 alias la='l -a'
 alias ..='cd ..'
