@@ -10,17 +10,17 @@ if exists("syntax_on")
 endif
 
 hi Statement        ctermfg=darkyellow  cterm=bold
-hi LineNr           ctermbg=gray        ctermfg=darkgray    cterm=bold
-hi VertSplit        ctermbg=darkgray    ctermfg=darkgray
-hi StatusLine       ctermbg=darkblue    ctermfg=white       cterm=bold
-hi StatusLineNC     ctermbg=gray        ctermfg=black       cterm=NONE
-hi TabLine          ctermbg=gray        ctermfg=black       cterm=bold
-hi TabLineFill      ctermbg=gray        ctermfg=black       cterm=bold
-hi TabLineSel       ctermbg=darkblue    ctermfg=white       cterm=bold
-hi Punctuation      ctermfg=gray        cterm=bold
+hi LineNr           ctermbg=white       ctermfg=black       cterm=bold
+hi VertSplit        ctermbg=darkred     ctermfg=darkred
+hi StatusLine       ctermbg=darkred     ctermfg=white       cterm=bold
+hi StatusLineNC     ctermbg=white       ctermfg=black       cterm=NONE
+hi TabLine          ctermbg=white       ctermfg=black       cterm=bold
+hi TabLineFill      ctermbg=white       ctermfg=black       cterm=bold
+hi TabLineSel       ctermbg=darkred     ctermfg=white       cterm=bold
+hi Punctuation      ctermfg=white       cterm=bold
 hi Comment          ctermfg=darkgreen   cterm=bold
 hi Number           ctermfg=magenta
-hi NonText          ctermfg=gray
+hi NonText          ctermfg=white
 hi Identifier       ctermfg=cyan        cterm=bold
 hi Type             ctermfg=black       cterm=bold
 hi PreProc          ctermfg=magenta     cterm=bold
