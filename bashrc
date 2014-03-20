@@ -30,15 +30,13 @@ if which setterm 2>&1 >/dev/null; then
 fi
 
 # Colors for man/less
-#export LESS_TERMCAP_mb=$'\E[01;31m'
-#export LESS_TERMCAP_mb=$'\E[01;31m'
-export LESS_TERMCAP_md=$'\E[01m'
-export LESS_TERMCAP_md=$'\E[01m'
-export LESS_TERMCAP_me=$'\E[0m'
-export LESS_TERMCAP_se=$'\E[0m'
-export LESS_TERMCAP_so=$'\E[01;41;33m'
-export LESS_TERMCAP_ue=$'\E[0m'
-export LESS_TERMCAP_us=$'\E[01;36m'
+# export LESS_TERMCAP_md=$'\E[01m'
+# export LESS_TERMCAP_md=$'\E[01m'
+# export LESS_TERMCAP_me=$'\E[0m'
+# export LESS_TERMCAP_se=$'\E[0m'
+# export LESS_TERMCAP_so=$'\E[01;41;33m'
+# export LESS_TERMCAP_ue=$'\E[0m'
+# export LESS_TERMCAP_us=$'\E[01;36m'
 
 # ANSI formatting for pretty-ness
 export RI="-f ansi"
@@ -65,6 +63,8 @@ Darwin)
     ;;
 esac
 
+alias gdc='git diff --cached'
+alias gd='git diff'
 alias gs='git status'
 alias g='git status'
 alias l='ls -hl'
