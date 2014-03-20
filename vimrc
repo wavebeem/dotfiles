@@ -37,6 +37,8 @@ Bundle 'summerfruit.vim'
 Bundle 'summerfruit256.vim'
 Bundle 'fruity.vim'
 Bundle 'pyte'
+Bundle 'Wombat'
+Bundle 'morhetz/gruvbox'
 
 " Syntax highlighting
 Bundle 'groenewege/vim-less'
