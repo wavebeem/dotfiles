@@ -78,20 +78,9 @@ set modeline
 " let g:solarized_termtrans = 1
 " color solarized
 
-color default
+color defpp
 
-hi Punctuation ctermfg=darkgray guifg=#1f5a6c
-hi Visual ctermbg=10 ctermfg=black cterm=none
-hi Folded ctermfg=10 cterm=none
-
-hi VarId ctermfg=none
-hi hsDelimiter ctermfg=darkgray
-
-hi TabLine      cterm=none      guibg=#586e75 guifg=#93a1a1 gui=none
-hi TabLineFill  cterm=none      guibg=#586e75 guifg=#93a1a1 gui=none
-hi TabLineSel   cterm=reverse   guibg=#073642 guifg=#fdf6e3 gui=none
-
-hi link rubyStringDelimiter String
+" hi link rubyStringDelimiter String
 
 " Nice info in the bottom line area
 " (apparently this is off by default...)
