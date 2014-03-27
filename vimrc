@@ -195,6 +195,10 @@ nmap <C-k> gT
 " Easily allow sane pasting into terminal Vim
 set pastetoggle=<F1>
 
+" Show characters I hate
+set list
+set listchars=nbsp:¬,tab:>-,extends:»,precedes:«,trail:•
+
 filetype plugin on
 
 " Nice Ruby stuff
