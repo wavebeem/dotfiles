@@ -197,7 +197,7 @@ set pastetoggle=<F1>
 
 " Show characters I hate
 set list
-set listchars=nbsp:¬,tab:>-,extends:»,precedes:«,trail:•
+set listchars=nbsp:¬,tab:├─,extends:»,precedes:«,trail:•
 
 filetype plugin on
 
@@ -217,7 +217,7 @@ augroup END
 
 " Highlight space at the end of the line as an error,
 " but don't highlight while in insert mode
-hi TrailingWhitespace ctermbg=darkred cterm=none guibg=#cc0000
+hi TrailingWhitespace ctermbg=darkred ctermfg=white cterm=none guibg=#cc0000 guifg=#e62e2e
 au InsertEnter * match TrailingWhitespace //
 au InsertLeave * match TrailingWhitespace /\v\s+$/
 
