@@ -13,49 +13,44 @@ setopt appendhistory extendedglob notify
 unsetopt beep nomatch
 bindkey -v
 bindkey '^R' history-incremental-search-backward
-zstyle :compinstall filename '/home/brian/.zshrc'
+zstyle :compinstall filename ~/.zshrc
 
 autoload -Uz compinit
 compinit
 
-precmd_functions=($precmd_functions update_title)
-set_title() {
+Set_Title() {
     case "$TERM" in
     xterm*) echo -ne "\033]0;$*\007" ;;
     esac
 }
-update_title() {
-    user="$USER"
-    host="$HOST"
-    dir="${PWD/$HOME/~}"
+Update_Title() {
+    local user="$USER"
+    local host="$HOST"
+    local dir="${PWD/$HOME/~}"
 
-    set_title "$dir"
+    Set_Title "$dir"
 }
 
-# aliases and such
-alias ls='ls --color=auto'
-alias l='ls -halF'
-alias ..='cd ..'
-
 Git_Branch() {
-    local branch
-    branch=$(git symbolic-ref HEAD 2>/dev/null)
-    branch=${branch:-<error>}
+    # Try to use branch name and fall back to SHA1
+    local branch=$(git symbolic-ref HEAD 2>/dev/null)
+    local sha1=$(git rev-parse HEAD 2>/dev/null)
+    branch=${branch:-$sha1}
     branch=${branch##refs/heads/}
     echo "$branch"
 }
 
 Git_In_Repo() { git rev-parse --git-dir >/dev/null 2>&1; }
+Git_Root()    { git rev-parse --show-toplevel 2>/dev/null; }
 
-Git_Root() { git rev-parse --show-toplevel 2>/dev/null; }
+Git_Has() {
+    local count=$(git "$@" 2>/dev/null | wc -l)
+    test "$count" -gt 0
+}
 
-Git_Unpushed_Count()  { git log @{upstream}..                                  2>/dev/null | wc -l; }
-Git_Untracked_Count() { git ls-files --others --exclude-standard "$(Git_Root)" 2>/dev/null | wc -l; }
-Git_Modified_Count()  { git ls-files --modified                  "$(Git_Root)" 2>/dev/null | wc -l; }
-
-Git_Has_Unpushed()  { test "$(Git_Unpushed_Count)"  -gt 0; }
-Git_Has_Modified()  { test "$(Git_Modified_Count)"  -gt 0; }
-Git_Has_Untracked() { test "$(Git_Untracked_Count)" -gt 0; }
+Git_Has_Unpushed()  { Git_Has log @{upstream}..; }
+Git_Has_Untracked() { Git_Has ls-files --others --exclude-standard "$(Git_Root)"; }
+Git_Has_Modified()  { Git_Has ls-files --modified "$(Git_Root)"; }
 
 Git_Has_Stash() {
     git stash show >/dev/null 2>&1
@@ -68,130 +63,56 @@ Git_Has_Staged() {
     test "$count" -gt 0
 }
 
-Join() {
-    local sep=$1; shift
-    local n=$#
-    local result=""
+precmd() {
+    Update_Title
 
-    for ((i = 1; i < $n; i++)); do
-        echo -n "${1}${sep}"
-        shift
-    done
+    local c1="%B%F{green}"
+    local c2="%B%F{red}"
+    local c3="%B%F{magenta}"
+    local cr="%f%b"
 
-    echo "${1}"
-}
+    export RPROMPT=""
+    local _pwd_stuff="%B%F{cyan}%~%f%b"
 
-Prefix() {
-    local pre=$1; shift
-
-    for arg; do
-        echo -n "${pre}${arg}"
-    done
-    echo
-}
-
-Prompt_Host() {
-    ## dark bg
-    # bg="%F{cyan}"
-    # rg="%F{yellow}"
-    # fg="%F{blue}"
-    # er="%F{green}"
-    # e="%f"
-
-    # light bg
-    bg="%B%F{green}"
-    rg="%B%F{green}"
-    fg="%B%F{red}"
-    er="%B%F{magenta}"
-    e="%f%b"
-
-    _host='%M'
-    _name=$(hostname -f 2>/dev/null)
+    local _host='%M'
+    local _name=$(hostname -f 2>/dev/null)
     case "$_name" in
     *.local) _host='%m' ;;
     esac
-    # _ps1="${bg}[${_host}]${e} "
-    _ps1="${bg}>${e} "
-    _ps2="${bg}?${e} "
+    local _ps1="${c1}${_host}[$_pwd_stuff${c1}]>${cr} "
+    local _ps2="${c1}${_host}[$_pwd_stuff${c1}]?${cr} "
 
-    # export RPROMPT=""
-    export RPROMPT="%B%F{cyan}%~%f%b"
+    if Git_In_Repo; then
+        local _flags=$(
+            Git_Has_Unpushed    && echo "-unpushed"
+            Git_Has_Untracked   && echo "-untracked"
+            Git_Has_Modified    && echo "-modified"
+            Git_Has_Staged      && echo "-staging"
+            Git_Has_Stash       && echo "-stash"
+        )
+        local _branch=$(Git_Branch)
 
-    nl=$'\n'
+        local _git="${c1}git[${c2}${_branch}${c3}${_flags}${ue}${c1}]${cr}"
 
-    # Code to run efore the prompt.
-    precmd() {
-        # If we're in a git repo, set up the prompt.
-        if Git_In_Repo; then
-            if Git_Has_Unpushed
-            then _unpushed="unpushed"
-            else _unpushed=""
-            fi
+        local nl=$'\n'
 
-            if Git_Has_Untracked
-            then _untracked="untracked"
-            else _untracked=""
-            fi
+        export PS1="${_git}${nl}${_ps1}"
+        export PS2="${_ps2}"
+    else
+        export PS1=$_ps1
+        export PS2=$_ps2
+    fi
 
-            if Git_Has_Modified
-            then _modified="modified"
-            else _modified=""
-            fi
+    # Rehash to detect new commands
+    hash -r
 
-            if Git_Has_Staged
-            then _staging="staging"
-            else _staging=""
-            fi
-
-            if Git_Has_Stash
-            then _stash="stash"
-            else _stash=""
-            fi
-
-            _prefix=" #"
-            _items=(
-                ${_unpushed}
-                ${_untracked}
-                ${_modified}
-                ${_staging}
-                ${_stash}
-            )
-            _flags=$(Prefix "$_prefix" "${_items[@]}")
-            _branch=$(Git_Branch)
-
-            # _git="${bg}[git] ${fg}${_branch}${er}${_flags}${ue}"
-            _git="${rg}git ${fg}${_branch}${er}${_flags}${ue}"
-
-            #export PS1="${bg}%m(${_git}${bg}):${e} "
-            #export PS2="${bg}%m(${_git}${bg})?${e} "
-
-            nl=$'\n'
-
-            export PS1="${_git}${nl}${_ps1}"
-            export PS2="${_ps2}"
-        # Else use the regular prompt.
-        else
-            export PS1=$_ps1
-            export PS2=$_ps2
-        fi
-
-        # Rehash to detect new commands.
-        hash -r
-
-        # Blank line for sanity.
-        echo
-    }
-
-    # Code to run before executing the command.
-    preexec() {
-        set_title "$1"
-    }
-
-    export PS1=$_ps1
-    export PS2=$_ps2
+    # Blank line for sanity
+    echo
 }
 
-Prompt_Host
+preexec() {
+    Set_Title "$1"
+}
 
 [ -f ~/.local-zshrc ] && source ~/.local-zshrc
 source ~/.bashrc

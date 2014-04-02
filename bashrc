@@ -29,15 +29,6 @@ if which setterm 2>&1 >/dev/null; then
     setterm -blank 0 >/dev/null 2>&1
 fi
 
-# Colors for man/less
-# export LESS_TERMCAP_md=$'\E[01m'
-# export LESS_TERMCAP_md=$'\E[01m'
-# export LESS_TERMCAP_me=$'\E[0m'
-# export LESS_TERMCAP_se=$'\E[0m'
-# export LESS_TERMCAP_so=$'\E[01;41;33m'
-# export LESS_TERMCAP_ue=$'\E[0m'
-# export LESS_TERMCAP_us=$'\E[01;36m'
-
 # ANSI formatting for pretty-ness
 export RI="-f ansi"
 
@@ -101,7 +92,6 @@ alias http='python -m SimpleHTTPServer'
 
 # Move around the fs tree faster
 alias go='cd "$_"'
-alias gou='cd "$(dirname "$_")"'
 
 # Tab size 4
 # Allow ANSI color sequences
@@ -113,17 +103,19 @@ then cat "$HOME/.welcome"
 else uptime
 fi
 
-# Execute Dropbox daemon if it's not running
-if which dropbox >/dev/null 2>/dev/null; then
-    dropbox running >/dev/null
-    if [ $? = 0 ]; then
-        dropbox start >/dev/null
-    fi
-fi
-
 export PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 [ -s "$HOME/.rvm/scripts/rvm" ] && source "$HOME/.rvm/scripts/rvm"
 
 case "$HOST" in
-truffle) [ -z "$SSH_AGENT_PID" ] && eval "$(ssh-agent)" ;;
+truffle)
+    [ -z "$SSH_AGENT_PID" ] && eval "$(ssh-agent)"
+
+    # Execute Dropbox daemon if it's not running
+    if which dropbox >/dev/null 2>/dev/null; then
+        dropbox running >/dev/null
+        if [ $? = 0 ]; then
+            dropbox start >/dev/null
+        fi
+    fi
+    ;;
 esac
