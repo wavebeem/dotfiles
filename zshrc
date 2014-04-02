@@ -32,9 +32,11 @@ Update_Title() {
 }
 
 Git_Branch() {
+    local branch
+    local sha1
     # Try to use branch name and fall back to SHA1
-    local branch=$(git symbolic-ref HEAD 2>/dev/null)
-    local sha1=$(git rev-parse HEAD 2>/dev/null)
+    sha1=$(git rev-parse HEAD 2>/dev/null)
+    branch=$(git symbolic-ref HEAD 2>/dev/null)
     branch=${branch:-$sha1}
     branch=${branch##refs/heads/}
     echo "$branch"
@@ -44,7 +46,8 @@ Git_In_Repo() { git rev-parse --git-dir >/dev/null 2>&1; }
 Git_Root()    { git rev-parse --show-toplevel 2>/dev/null; }
 
 Git_Has() {
-    local count=$(git "$@" 2>/dev/null | wc -l)
+    local count
+    count=$(git "$@" 2>/dev/null | wc -l)
     test "$count" -gt 0
 }
 
