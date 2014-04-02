@@ -57,9 +57,7 @@ Git_Has_Stash() {
 }
 
 Git_Has_Staged() {
-    local count
-    count=$(git diff --staged | head -n 1 | wc -l)
-
+    local count=$(git diff --staged | head -n 1 | wc -l)
     test "$count" -gt 0
 }
 
