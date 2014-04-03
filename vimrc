@@ -44,6 +44,7 @@ Bundle 'morhetz/gruvbox'
 Bundle 'groenewege/vim-less'
 let g:vim_json_syntax_conceal = 0
 Bundle 'elzr/vim-json'
+Bundle 'leafgarland/typescript-vim'
 
 " Integrate ack into vim via :Ack command
 Bundle 'ack.vim'
