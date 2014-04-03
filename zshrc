@@ -60,7 +60,8 @@ Git_Has_Stash() {
 }
 
 Git_Has_Staged() {
-    local count=$(git diff --staged | head -n 1 | wc -l)
+    local count
+    count=$(git diff --staged | head -n 1 | wc -l)
     test "$count" -gt 0
 }
 
@@ -85,11 +86,11 @@ precmd() {
 
     if Git_In_Repo; then
         local _flags=$(
-            Git_Has_Unpushed    && echo "-unpushed"
-            Git_Has_Untracked   && echo "-untracked"
-            Git_Has_Modified    && echo "-modified"
-            Git_Has_Staged      && echo "-staging"
-            Git_Has_Stash       && echo "-stash"
+            Git_Has_Unpushed    && echo -n "-unpushed"
+            Git_Has_Untracked   && echo -n "-untracked"
+            Git_Has_Modified    && echo -n "-modified"
+            Git_Has_Staged      && echo -n "-staging"
+            Git_Has_Stash       && echo -n "-stash"
         )
         local _branch=$(Git_Branch)
 
