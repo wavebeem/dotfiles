@@ -1,5 +1,21 @@
+case "$(uname)" in
+Darwin)
+    if which gls 2>&1 >/dev/null;
+    then alias ls='gls --color=auto'
+    else alias ls='ls -G'
+    fi
+
+    if which gdircolors 2>&1 >/dev/null;
+    then alias dircolors=gdircolors
+    fi
+    ;;
+*)
+    alias ls='ls --color=auto'
+    ;;
+esac
+
 # Set up ls colors
-if which dircolors 2>&1 >/dev/null
+if type dircolors 2>&1 >/dev/null
 then eval $(dircolors ~/.dircolors)
 fi
 
@@ -41,18 +57,6 @@ alias T="tmux attach -d"
 export EDITOR='vim'
 export VISUAL='vim'
 export PAGER='less'
-
-case "$(uname)" in
-Darwin)
-    if which gls 2>&1 >/dev/null;
-    then alias ls='gls --color=auto'
-    else alias ls='ls -G'
-    fi
-    ;;
-*)
-    alias ls='ls --color=auto'
-    ;;
-esac
 
 alias gdc='git diff --cached'
 alias gd='git diff'
