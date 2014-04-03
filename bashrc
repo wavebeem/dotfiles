@@ -27,14 +27,6 @@ fi
 # Make the shell line editor behave like vi!
 set -o vi
 
-# Add my programs to the path
-export PATH="/usr/local/bin:$PATH"
-export PATH="/usr/local/sbin:$PATH"
-export PATH="/usr/local/share/npm/bin:$PATH"
-export PATH="$HOME/.local/bin:$PATH"
-export PATH="$HOME/Dropbox/bin:$PATH"
-export PATH="$HOME/bin:$PATH"
-
 export LD_LIBRARY_PATH="$HOME/.local/lib"
 
 if which setterm 2>&1 >/dev/null; then
@@ -107,8 +99,9 @@ then cat "$HOME/.welcome"
 else uptime
 fi
 
-export PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-[ -s "$HOME/.rvm/scripts/rvm" ] && source "$HOME/.rvm/scripts/rvm"
+path() {
+    echo "$PATH" | tr ':' '\n'
+}
 
 case "$HOST" in
 truffle)
