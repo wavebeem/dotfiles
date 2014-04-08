@@ -68,13 +68,13 @@ Git_Has_Staged() {
 precmd() {
     Update_Title
 
-    local c1="%B%F{green}"
-    local c2="%B%F{red}"
+    local c1="%B%F{cyan}"
+    local c2="%B%F{yellow}"
     local c3="%B%F{magenta}"
     local cr="%f%b"
 
     export RPROMPT=""
-    local _pwd_stuff="%B%F{cyan}%~%f%b"
+    local _pwd_stuff="%B%F{green}%~%f%b"
 
     local _host='%M'
     local _name=$(hostname -f 2>/dev/null)
@@ -85,18 +85,18 @@ precmd() {
     local _ps2="${c1}${_host}[$_pwd_stuff${c1}]?${cr} "
 
     if Git_In_Repo; then
-        local _flags=$(
-            Git_Has_Unpushed    && echo -n "-unpushed"
-            Git_Has_Untracked   && echo -n "-untracked"
-            Git_Has_Modified    && echo -n "-modified"
-            Git_Has_Staged      && echo -n "-staging"
-            Git_Has_Stash       && echo -n "-stash"
+        local _flags _branch _git nl
+
+        _flags=$(
+            Git_Has_Unpushed    && echo -n ' :unpushed'
+            Git_Has_Untracked   && echo -n ' :untracked'
+            Git_Has_Modified    && echo -n ' :modified'
+            Git_Has_Staged      && echo -n ' :staging'
+            Git_Has_Stash       && echo -n ' :stash'
         )
-        local _branch=$(Git_Branch)
-
-        local _git="${c1}git[${c2}${_branch}${c3}${_flags}${ue}${c1}]${cr}"
-
-        local nl=$'\n'
+        _branch=$(Git_Branch)
+        _git="${c1}git[${c2}${_branch}${c3}${_flags}${ue}${c1}]${cr}"
+        nl=$'\n'
 
         export PS1="${_git}${nl}${_ps1}"
         export PS2="${_ps2}"
