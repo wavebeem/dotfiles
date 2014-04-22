@@ -186,7 +186,7 @@ vnoremap < <gv
 vnoremap > >gv
 
 " I rarely want to open man pages for the word under the cursor
-nnoremap K <Nop>
+nnoremap K :Wack<CR>
 vnoremap K <Nop>
 
 " Easier tab switching
