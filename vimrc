@@ -23,6 +23,7 @@ function! JsonBeautify()
     call JsBeautify()
 endfunction
 command! JsonBeautify call JsonBeautify()
+command! JsBeautify call JsBeautify()
 
 " <C-d> to toggle comments
 let g:NERDCreateDefaultMappings = 0
@@ -72,12 +73,6 @@ syntax on
 
 " Allow modelines
 set modeline
-
-" color roboblu
-
-" set bg=dark
-" let g:solarized_termtrans = 1
-" color solarized
 
 color defpp
 
@@ -160,10 +155,9 @@ set incsearch
 set nohlsearch
 
 " List of patterns to ignore in the wildmenu
-set wildignore=*.swp,*.swo,*.pyc,*.class,*.o,node_modules,docs,build,instrument,testbed
+set wildignore=*.swp,*.swo,*.pyc,*.class,*.o,node_modules,docs,build,instrument,testbed,reports
 
 " Accidentally going into ex mode is a bummer, let's just use it to reflow text
-nmap Q gqq
 vmap Q gq
 
 " Opening files should be easier too
@@ -177,6 +171,7 @@ nmap <F3> :set spell!<CR>:set spell?<CR>
 " Various shortcuts
 nmap <Leader><Leader> :w<CR>
 nmap <Leader>q :confirm bd<CR>
+nmap Q :confirm bd<CR>
 nmap <Leader>t :tabedit<CR>
 nmap <Leader>v :vsplit<CR>
 nmap <Leader>s :split<CR>
@@ -214,6 +209,7 @@ au BufNewFile,BufRead * set fdm=indent
 augroup vimrc
 au!
 au BufWritePost $MYVIMRC source $MYVIMRC
+au BufWritePost $MYGVIMRC source $MYGVIMRC
 augroup END
 
 " Highlight space at the end of the line as an error,

@@ -4,3 +4,5 @@
 --ignore-dir=build
 --ignore-dir=docs
 --ignore-dir=instrument
+--ignore-dir=testbed
+--ignore-dir=reports
