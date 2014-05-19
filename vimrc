@@ -201,6 +201,8 @@ filetype plugin on
 let ruby_operators = 1
 let ruby_fold = 1
 
+au BufNewFile,BufRead *.md setl ft=markdown
+
 au BufNewFile,BufRead *.txt,todo,TODO setl ft=text
 au BufNewFile,BufRead *.js.erb setf javascript.eruby
 au BufNewFile,BufRead * set fdm=indent
