@@ -13,8 +13,6 @@ let g:UltiSnipsExpandTrigger         = '<tab>'
 let g:UltiSnipsJumpForwardTrigger    = '<tab>'
 let g:UltiSnipsJumpBackwardTrigger   = '<s-tab>'
 Bundle 'SirVer/ultisnips'
-" set rtp+=/home/brian/ultisnips/
-" set rtp^=/home/brian/ultisnips/
 
 " Make :JsBeautify command to reformat JSON
 Bundle 'maksimr/vim-jsbeautify'
@@ -41,6 +39,9 @@ Bundle 'pyte'
 Bundle 'Wombat'
 Bundle 'morhetz/gruvbox'
 
+" Allow per-project editor configuration settings
+Bundle 'editorconfig/editorconfig-vim'
+
 " Syntax highlighting
 Bundle 'groenewege/vim-less'
 let g:vim_json_syntax_conceal = 0
@@ -61,8 +62,11 @@ nmap <silent><F10> :NEXTCOLOR<CR>
 
 " Fuzzy file searching
 let g:ctrlp_max_files = 2000
+let g:ctrlp_mruf_relative = 1
+" let g:ctrlp_extension = ['tag', 'mixed']
 let g:ctrlp_map = '<C-s>'
 Bundle 'kien/ctrlp.vim'
+nnoremap <C-s> :CtrlPMixed<CR>
 nnoremap <C-n> :CtrlPBuffer<CR>
 
 " <Space> is so much easier to type than <Backslash>
@@ -71,12 +75,10 @@ let mapleader = ' '
 " Syntax highlighting is a must
 syntax on
 
-" Allow modelines
-set modeline
+" Disallow modelines
+set nomodeline
 
 color defpp
-
-" hi link rubyStringDelimiter String
 
 " Nice info in the bottom line area
 " (apparently this is off by default...)
@@ -118,8 +120,8 @@ set expandtab
 " Indentation
 set autoindent
 
-" Enable line numbers
-set number
+" Disable line numbers
+set nonumber
 
 " Enable terminal titles (default?)
 set title
@@ -155,7 +157,19 @@ set incsearch
 set nohlsearch
 
 " List of patterns to ignore in the wildmenu
-set wildignore=*.swp,*.swo,*.pyc,*.class,*.o,node_modules,docs,build,instrument,testbed,reports
+set wildignore=*.swp
+set wildignore+=*.swo
+set wildignore+=*.pyc
+set wildignore+=*.class
+set wildignore+=*.o
+set wildignore+=node_modules
+set wildignore+=bower_components
+set wildignore+=docs
+set wildignore+=build
+set wildignore+=instrument
+set wildignore+=testbed
+set wildignore+=reports
+set wildignore+=public
 
 " Accidentally going into ex mode is a bummer, let's just use it to reflow text
 vmap Q gq
@@ -216,7 +230,12 @@ augroup END
 
 " Highlight space at the end of the line as an error,
 " but don't highlight while in insert mode
-hi TrailingWhitespace ctermbg=darkred ctermfg=white cterm=none guibg=#cc0000 guifg=#e62e2e
+hi TrailingWhitespace
+    \ ctermbg=darkred
+    \ ctermfg=white
+    \ cterm=none
+    \ guibg=#cc0000
+    \ guifg=#e62e2e
 au InsertEnter * match TrailingWhitespace //
 au InsertLeave * match TrailingWhitespace /\v\s+$/
 
@@ -228,3 +247,10 @@ let loaded_matchparen = 1
 
 " Stick stupid .netrwhist elsewhere
 let g:netrw_home = '/tmp'
+
+" Make columns past 80 look funny
+" let &colorcolumn = join(range(81, 999), ",")
+" set colorcolumn=81,82,83,101,102,103,121,122,123
+set colorcolumn=
+hi ColorColumn ctermbg=none
+hi NonText ctermbg=white ctermfg=gray

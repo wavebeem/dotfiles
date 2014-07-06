@@ -28,7 +28,7 @@ Update_Title() {
     local host="$HOST"
     local dir="${PWD/$HOME/~}"
 
-    Set_Title "$dir"
+    Set_Title "zsh: $dir"
 }
 
 Git_Branch() {
