@@ -170,6 +170,7 @@ set wildignore+=instrument
 set wildignore+=testbed
 set wildignore+=reports
 set wildignore+=public
+set wildignore+=vendor
 
 " Accidentally going into ex mode is a bummer, let's just use it to reflow text
 vmap Q gq
