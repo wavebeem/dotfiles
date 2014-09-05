@@ -42,6 +42,9 @@ Bundle 'morhetz/gruvbox'
 " Allow per-project editor configuration settings
 Bundle 'editorconfig/editorconfig-vim'
 
+" Easy copy/paste for terminal Vim!
+Bundle 'ConradIrwin/vim-bracketed-paste'
+
 " Syntax highlighting
 Bundle 'groenewege/vim-less'
 let g:vim_json_syntax_conceal = 0
@@ -171,6 +174,7 @@ set wildignore+=testbed
 set wildignore+=reports
 set wildignore+=public
 set wildignore+=vendor
+set wildignore+=coverage
 
 " Accidentally going into ex mode is a bummer, let's just use it to reflow text
 vmap Q gq

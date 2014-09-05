@@ -24,9 +24,9 @@ hi VertSplit        ctermfg=black       ctermbg=black       cterm=bold
 hi StatusLine       ctermfg=white       ctermbg=black       cterm=bold
 hi StatusLineNC     ctermfg=black       ctermbg=white       cterm=bold
 
-hi TabLine          ctermfg=black       ctermbg=white       cterm=bold
-hi TabLineFill      ctermfg=black       ctermbg=white       cterm=bold
-hi TabLineSel       ctermfg=white       ctermbg=black       cterm=bold
+hi TabLineSel       ctermfg=black       ctermbg=white       cterm=bold
+hi TabLine          ctermfg=white       ctermbg=black       cterm=bold
+hi TabLineFill      ctermfg=white       ctermbg=black       cterm=bold
 
 " Custom syntax file stuff
 hi Punctuation      ctermfg=darkyellow  guifg=#1f5a6c   cterm=NONE
