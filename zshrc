@@ -96,11 +96,11 @@ precmd() {
 
     if Git_In_Repo; then
         _flags=$(
-            Git_Has_Unpushed    && echo -n '>'
-            Git_Has_Untracked   && echo -n '+'
-            Git_Has_Modified    && echo -n '*'
-            Git_Has_Staged      && echo -n '<'
-            Git_Has_Stash       && echo -n '_'
+            Git_Has_Unpushed    && echo -n ' >'
+            Git_Has_Untracked   && echo -n ' +'
+            Git_Has_Modified    && echo -n ' *'
+            Git_Has_Staged      && echo -n ' <'
+            Git_Has_Stash       && echo -n ' @'
         )
 
         _branch=$(Git_Branch)
