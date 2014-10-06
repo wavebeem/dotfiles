@@ -42,6 +42,10 @@ Bundle 'morhetz/gruvbox'
 " Allow per-project editor configuration settings
 Bundle 'editorconfig/editorconfig-vim'
 
+" Adds indentation guides
+" let g:indentLine_char = '|'
+Bundle 'Yggdroot/indentLine'
+
 " Easy copy/paste for terminal Vim!
 Bundle 'ConradIrwin/vim-bracketed-paste'
 
