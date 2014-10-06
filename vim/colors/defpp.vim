@@ -28,6 +28,8 @@ hi TabLineSel       ctermfg=black       ctermbg=white       cterm=bold
 hi TabLine          ctermfg=white       ctermbg=black       cterm=bold
 hi TabLineFill      ctermfg=white       ctermbg=black       cterm=bold
 
+hi Visual           ctermfg=white       ctermbg=green
+
 " Custom syntax file stuff
 hi Punctuation      ctermfg=darkyellow  guifg=#1f5a6c   cterm=NONE
 
