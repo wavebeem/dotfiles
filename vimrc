@@ -192,9 +192,9 @@ nmap <F2> :set number!<CR>:set number?<CR>
 nmap <F3> :set spell!<CR>:set spell?<CR>
 
 " Various shortcuts
-nmap <Leader><Leader> :w<CR>
+nmap <Leader><Leader> :wa<CR>
 nmap <Leader>q :confirm bd<CR>
-nmap Q :1,999bd<CR>
+nmap Q :confirm 1,999bd<CR>
 nmap <Leader>t :tabedit<CR>
 nmap <Leader>v :vsplit<CR>
 nmap <Leader>s :split<CR>
