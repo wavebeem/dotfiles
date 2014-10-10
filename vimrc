@@ -50,6 +50,7 @@ Bundle 'Yggdroot/indentLine'
 Bundle 'ConradIrwin/vim-bracketed-paste'
 
 " Syntax highlighting
+Bundle 'wting/rust.vim'
 Bundle 'groenewege/vim-less'
 let g:vim_json_syntax_conceal = 0
 Bundle 'elzr/vim-json'
