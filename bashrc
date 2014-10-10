@@ -50,6 +50,9 @@ export EDITOR='vim'
 export VISUAL='vim'
 export PAGER='less'
 
+# Let me lazily paste commands from the internet that have dollar in front...
+alias '$'=''
+
 alias gdc='git diff --cached'
 alias gd='git diff'
 alias gs='git status'
