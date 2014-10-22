@@ -46,6 +46,7 @@ Bundle 'editorconfig/editorconfig-vim'
 Bundle 'ConradIrwin/vim-bracketed-paste'
 
 " Syntax highlighting
+Bundle 'wizicer/vim-jison'
 Bundle 'wting/rust.vim'
 Bundle 'groenewege/vim-less'
 let g:vim_json_syntax_conceal = 0
