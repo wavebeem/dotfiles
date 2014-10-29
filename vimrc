@@ -176,6 +176,7 @@ set wildignore+=reports
 set wildignore+=public
 set wildignore+=vendor
 set wildignore+=coverage
+set wildignore+=.sass-cache
 
 " Accidentally going into ex mode is a bummer, let's just use it to reflow text
 vmap Q gq
