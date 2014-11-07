@@ -1,8 +1,12 @@
 --pager=less
 --smart-case
 --ignore-dir=node_modules
+--ignore-dir=bower_components
 --ignore-dir=build
 --ignore-dir=docs
 --ignore-dir=instrument
 --ignore-dir=testbed
 --ignore-dir=reports
+--ignore-dir=public
+--ignore-dir=coverage
+--ignore-dir=.sass-cache
