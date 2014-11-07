@@ -3,19 +3,19 @@ set nocompatible
 
 " Set up Vundle for managing plugins
 filetype off
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
-Bundle 'gmarik/vundle'
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+Plugin 'gmarik/vundle'
 
 " Snippets
 " let g:UltiSnipsDontReverseSearchPath = 1
 let g:UltiSnipsExpandTrigger         = '<tab>'
 let g:UltiSnipsJumpForwardTrigger    = '<tab>'
 let g:UltiSnipsJumpBackwardTrigger   = '<s-tab>'
-Bundle 'SirVer/ultisnips'
+Plugin 'SirVer/ultisnips'
 
 " Make :JsBeautify command to reformat JSON
-Bundle 'maksimr/vim-jsbeautify'
+Plugin 'maksimr/vim-jsbeautify'
 function! JsonBeautify()
     set ft=json
     call JsBeautify()
@@ -25,43 +25,45 @@ command! JsBeautify call JsBeautify()
 
 " <C-d> to toggle comments
 let g:NERDCreateDefaultMappings = 0
-Bundle 'ddollar/nerdcommenter'
+Plugin 'ddollar/nerdcommenter'
 map <C-d> <Plug>NERDCommenterToggle
 map <Leader>c <C-d>
 
 " Various color schemes
-Bundle 'mimicpak'
-Bundle 'altercation/vim-colors-solarized'
-Bundle 'summerfruit.vim'
-Bundle 'summerfruit256.vim'
-Bundle 'fruity.vim'
-Bundle 'pyte'
-Bundle 'Wombat'
-Bundle 'morhetz/gruvbox'
+Plugin 'mimicpak'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'summerfruit.vim'
+Plugin 'summerfruit256.vim'
+Plugin 'fruity.vim'
+Plugin 'pyte'
+Plugin 'Wombat'
+Plugin 'morhetz/gruvbox'
 
 " Allow per-project editor configuration settings
-Bundle 'editorconfig/editorconfig-vim'
+Plugin 'editorconfig/editorconfig-vim'
 
 " Easy copy/paste for terminal Vim!
-Bundle 'ConradIrwin/vim-bracketed-paste'
+Plugin 'ConradIrwin/vim-bracketed-paste'
 
 " Syntax highlighting
-Bundle 'wizicer/vim-jison'
-Bundle 'wting/rust.vim'
-Bundle 'groenewege/vim-less'
+Plugin 'digitaltoad/vim-jade'
+Plugin 'alunny/pegjs-vim'
+Plugin 'wizicer/vim-jison'
+Plugin 'wting/rust.vim'
+Plugin 'groenewege/vim-less'
 let g:vim_json_syntax_conceal = 0
-Bundle 'elzr/vim-json'
-Bundle 'leafgarland/typescript-vim'
+Plugin 'elzr/vim-json'
+Plugin 'leafgarland/typescript-vim'
 
 " Integrate ack into vim via :Ack command
-Bundle 'ack.vim'
+Plugin 'ack.vim'
 command! Wack exec 'Ack "' . expand('<cword>') . '"'
 
 " This is in my own ~/.vim/ already
 " Bundle 'saikobee/vim-javascript-syntax'
 
 " Commands to cycle colors
-Bundle 'ScrollColors'
+Plugin 'ScrollColors'
 nmap <silent><F9>  :PREVCOLOR<CR>
 nmap <silent><F10> :NEXTCOLOR<CR>
 
@@ -70,9 +72,12 @@ let g:ctrlp_max_files = 2000
 let g:ctrlp_mruf_relative = 1
 " let g:ctrlp_extension = ['tag', 'mixed']
 let g:ctrlp_map = '<C-s>'
-Bundle 'kien/ctrlp.vim'
+Plugin 'kien/ctrlp.vim'
 nnoremap <C-s> :CtrlPMixed<CR>
 nnoremap <C-n> :CtrlPBuffer<CR>
+
+call vundle#end()
+filetype plugin on
 
 " <Space> is so much easier to type than <Backslash>
 let mapleader = ' '
@@ -216,13 +221,13 @@ set pastetoggle=<F1>
 set list
 set listchars=nbsp:¬,tab:├─,extends:»,precedes:«,trail:•
 
-filetype plugin on
-
 " Nice Ruby stuff
 let ruby_operators = 1
 let ruby_fold = 1
 
 au BufNewFile,BufRead *.md setl ft=markdown
+
+au BufNewFile,BufRead *.pegjs setl ft=pegjs
 
 au BufNewFile,BufRead *.txt,todo,TODO setl ft=text
 au BufNewFile,BufRead *.js.erb setf javascript.eruby
