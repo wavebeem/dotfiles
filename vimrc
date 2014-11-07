@@ -5,7 +5,7 @@ set nocompatible
 filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
-Plugin 'gmarik/vundle'
+Plugin 'gmarik/Vundle.vim'
 
 " Snippets
 " let g:UltiSnipsDontReverseSearchPath = 1
