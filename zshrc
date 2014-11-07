@@ -18,6 +18,9 @@ zstyle :compinstall filename ~/.zshrc
 autoload -Uz compinit
 compinit
 
+# Let me lazily paste commands from the internet that have dollar in front...
+alias '$'=''
+
 Set_Title() {
     case "$TERM" in
     xterm*) echo -ne "\033]0;$*\007" ;;
