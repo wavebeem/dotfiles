@@ -4,20 +4,7 @@ use warnings;
 use File::Path qw(make_path remove_tree);
 use File::Basename;
 
-my @files = qw(
-    ackrc
-    dircolors
-    zshenv
-    vim
-    vimrc
-    zshrc
-    bashrc
-    bash_profile
-    tmux.conf
-    inputrc
-);
-
-sub process {
+sub install {
     my ($f) = @_;
     my $HOME = $ENV{HOME};
     my $src = "$HOME/dotfiles/$f";
@@ -36,4 +23,15 @@ sub process {
     symlink($src, $dst);
 }
 
-process($_) for @files;
+install($_) for qw(
+    ackrc
+    dircolors
+    zshenv
+    vim
+    vimrc
+    zshrc
+    bashrc
+    bash_profile
+    tmux.conf
+    inputrc
+);
