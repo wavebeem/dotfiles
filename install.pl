@@ -4,17 +4,17 @@ use warnings;
 use File::Path qw(make_path remove_tree);
 use File::Basename;
 
-my @files = (
-    "ackrc",
-    "dircolors",
-    "zshenv",
-    "vim",
-    "vimrc",
-    "zshrc",
-    "bashrc",
-    "bash_profile",
-    "tmux.conf",
-    "inputrc",
+my @files = qw(
+    ackrc
+    dircolors
+    zshenv
+    vim
+    vimrc
+    zshrc
+    bashrc
+    bash_profile
+    tmux.conf
+    inputrc
 );
 
 sub process {
