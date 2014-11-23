@@ -1,3 +1,5 @@
+export LSCOLORS="ExfxcxdxBxegedabagacad"
+
 case "$(uname)" in
 FreeBSD|Darwin)
     if which gls 2>&1 >/dev/null;
