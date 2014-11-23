@@ -1,5 +1,5 @@
 case "$(uname)" in
-Darwin)
+FreeBSD|Darwin)
     if which gls 2>&1 >/dev/null;
     then alias ls='gls --color=auto'
     else alias ls='ls -G'
