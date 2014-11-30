@@ -46,6 +46,7 @@ Plugin 'editorconfig/editorconfig-vim'
 Plugin 'ConradIrwin/vim-bracketed-paste'
 
 " Syntax highlighting
+Plugin 'mustache/vim-mustache-handlebars'
 Plugin 'digitaltoad/vim-jade'
 Plugin 'alunny/pegjs-vim'
 Plugin 'wizicer/vim-jison'
