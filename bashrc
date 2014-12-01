@@ -107,7 +107,7 @@ path() {
 }
 
 case "$HOST" in
-truffle)
+truffle|croissant|beignet)
     [ -z "$SSH_AGENT_PID" ] && eval "$(ssh-agent)"
 
     # Execute Dropbox daemon if it's not running
