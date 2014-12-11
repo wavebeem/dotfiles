@@ -116,6 +116,9 @@ set nohidden
 " Don't save stinkin' backup files
 set nobackup
 
+" Sure, save my undo history
+set undodir=~/tmp/vim
+
 " US English spelling
 set spelllang=en_us
 
@@ -224,7 +227,10 @@ set pastetoggle=<F1>
 
 " Show characters I hate
 set list
-set listchars=nbsp:X,tab:>-,extends:>,precedes:<,trail:.
+set listchars=nbsp:¬,tab:├─,extends:»,precedes:«,trail:•
+" Backup ASCII listchars
+" set listchars=nbsp:X,tab:>-,extends:>,precedes:<,trail:.
+
 
 " Nice Ruby stuff
 let ruby_operators = 1
