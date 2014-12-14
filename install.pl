@@ -14,7 +14,7 @@ sub install {
         unlink($dst);
     }
     elsif (-e $dst) {
-        print("Delete $dst? [y/N]\n");
+        print("Delete $dst? [y/N] ");
         return unless <STDIN> =~ /^y/i;
         remove_tree($dst);
     }
