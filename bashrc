@@ -88,6 +88,8 @@ alias sag='sudo apt-get'
 alias ai='sudo aptitude install'
 alias ar='sudo aptitude remove'
 alias as='aptitude search'
+alias dp='dpkg'
+alias dq='dpkg-query'
 
 alias http='python -m SimpleHTTPServer'
 
