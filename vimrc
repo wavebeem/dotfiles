@@ -29,8 +29,6 @@ Plugin 'ddollar/nerdcommenter'
 map <C-d> <Plug>NERDCommenterToggle
 map <Leader>c <C-d>
 
-Plugin 'wakatime/vim-wakatime'
-
 " Various color schemes
 Plugin 'mimicpak'
 Plugin 'altercation/vim-colors-solarized'
