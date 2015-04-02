@@ -75,11 +75,6 @@ fi
 
 alias mount='mount | column -t'
 
-# Quicker job control
-alias k='kill %%'
-alias kk='kill -9 %%'
-alias j='jobs'
-
 alias irb='irb --readline -r irb/completion'
 
 alias a='aptitude'
@@ -94,7 +89,7 @@ alias dq='dpkg-query'
 alias http='python -m SimpleHTTPServer'
 
 # Move around the fs tree faster
-alias go='cd "$_"'
+alias j='cd "$_"'
 
 # Tab size 4
 # Allow ANSI color sequences
