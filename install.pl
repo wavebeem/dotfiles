@@ -34,4 +34,5 @@ install($_) for qw(
     bash_profile
     tmux.conf
     inputrc
+    Preferences.sublime-settings
 );

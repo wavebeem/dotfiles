@@ -1,0 +1,44 @@
+{
+	"always_show_minimap_viewport": true,
+	"auto_complete_commit_on_tab": true,
+	"caret_style": "smooth",
+	"color_scheme": "Packages/Colorsublime - Themes/NeonGlow.tmTheme",
+	"drag_text": false,
+	"draw_minimap_border": true,
+	"ensure_newline_at_eof_on_save": true,
+	"folder_exclude_patterns":
+	[
+		".git",
+		".svn",
+		".hg",
+		"node_modules",
+		"node_modules",
+		"bower_components",
+		"docs",
+		"build",
+		"instrument",
+		"testbed",
+		"reports",
+		"public",
+		"vendor",
+		"coverage",
+		".sass-cache",
+		"CVS"
+	],
+	"font_face": "Fira Mono",
+	"font_size": 15,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"rulers":
+	[
+		80,
+		100
+	],
+	"show_full_path": true,
+	"theme": "Spacegray.sublime-theme",
+	"translate_tabs_to_spaces": true,
+	"use_tab_stops": true,
+	"vintage_start_in_command_mode": true
+}
