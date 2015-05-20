@@ -34,5 +34,7 @@ install($_) for qw(
     bash_profile
     tmux.conf
     inputrc
+    config/fish/config.fish
+    config/fish/functions
     Preferences.sublime-settings
 );
