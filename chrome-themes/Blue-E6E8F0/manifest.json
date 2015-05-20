@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "version": "1.0",
-  "name": "Eminence",
+  "name": "Blue-E6E8F0",
   "theme": {
     "images" : {
       "theme_frame" : "images/theme_frame.png",
@@ -17,21 +17,21 @@
       "frame_incognito"   : [ 64,  64,  64],
       "frame_incognito_inactive" : [ 64,  64,  64],
 
-      "toolbar"           : [212, 212, 212],
+      "toolbar"           : [230, 232, 240],
       "ntp_text"          : [  0,   0,   0],
       "ntp_link"          : [  0,   0,   0],
-      "ntp_section"       : [192, 192, 192],
+      "ntp_section"       : [230, 232, 240],
       "button_background" : [255, 255, 255],
 
 
       "tab_text"            : [  0,   0,   0],
-      "tab_background_text" : [  0,   0,   0]
+      "tab_background_text" : [ 74,  82, 123]
     },
     "tints" : {
-      "frame"                    : [0.00, 0.00, 0.50],
-      "frame_inactive"           : [0.00, 0.00, 0.50],
-      "frame_incognito"          : [0.00, 0.00, 0.50],
-      "frame_incognito_inactive" : [0.00, 0.00, 0.50]
+      "frame"                    : [0.63, 0.60, 0.50],
+      "frame_inactive"           : [0.63, 0.60, 0.50],
+      "frame_incognito"          : [0.63, 0.60, 0.50],
+      "frame_incognito_inactive" : [0.63, 0.60, 0.50]
     },
     "properties" : {
     }
