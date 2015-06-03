@@ -1,14 +1,1 @@
-set editing-mode vi
-set keymap       vi-insert
 
-"\C-l": clear-screen
-# I dunno why I need this next line
-"s": self-insert
-
-"\C-r": reverse-search-history
-"\C-s": forward-search-history
-
-"\e[A": previous-history
-"\e[B": next-history
-"\e[C": forward-char
-"\e[D": backward-char
