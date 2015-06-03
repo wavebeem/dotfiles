@@ -21,7 +21,7 @@ end
 
 alias l 'ls'
 alias ll 'ls -hl'
-alias la 'l -a'
+alias la 'll -a'
 
 alias serve 'python -m SimpleHTTPServer'
 

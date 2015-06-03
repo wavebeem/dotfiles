@@ -33,11 +33,13 @@ Update_Title() {
 
 precmd() {
     Update_Title
-    export PROMPT="%B%F{green}$%f%b "
-    export RPROMPT=""
     hash -r
     echo
 }
+
+poo=$(echo "\U0001f4a9")
+export PROMPT="$poo  "
+export RPROMPT=""
 
 preexec() {
     Set_Title "$1"
