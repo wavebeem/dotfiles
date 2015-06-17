@@ -4,5 +4,5 @@ function fish_prompt
     set -l poo \U0001f4a9
     set_color normal
     echo
-	echo -n "$poo  "
+    echo -n "$poo  "
 end
