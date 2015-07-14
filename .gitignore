@@ -1,8 +1,12 @@
-# Chrome developer stuff
+# Chrome developer garbage
 Cached Theme.pak
 *.crx
 *.pem
 
+# OS X Finder garbage
+.DS_Store
+
+# Vim garbage
 vim/bundle
 
 # Sublime Text Package Control garbage
