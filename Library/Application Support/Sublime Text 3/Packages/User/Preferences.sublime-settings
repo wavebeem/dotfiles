@@ -1,9 +1,10 @@
 {
 	"always_show_minimap_viewport": true,
-	"auto_complete_commit_on_tab": true,
+	"auto_complete_commit_on_tab": false,
 	"caret_style": "smooth",
+	"color_scheme": "Packages/User/Brian Test.tmTheme",
 	"drag_text": false,
-	"draw_minimap_border": true,
+	"draw_minimap_border": false,
 	"ensure_newline_at_eof_on_save": true,
 	"fade_fold_buttons": false,
 	"folder_exclude_patterns":

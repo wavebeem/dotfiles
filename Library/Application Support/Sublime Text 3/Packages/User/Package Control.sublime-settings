@@ -4,7 +4,10 @@
 	],
 	"installed_packages":
 	[
+		"All Autocomplete",
+		"GitGutter",
 		"Package Control",
+		"Pretty JSON",
 		"Theme - Spacegray"
 	]
 }
