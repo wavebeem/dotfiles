@@ -2,82 +2,82 @@
 set nocompatible
 
 " Set up Vundle for managing plugins
-filetype off
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-Plugin 'gmarik/Vundle.vim'
+" filetype off
+" set rtp+=~/.vim/bundle/Vundle.vim
+" call vundle#begin()
+" Plugin 'gmarik/Vundle.vim'
 
 " Snippets
 " let g:UltiSnipsDontReverseSearchPath = 1
-let g:UltiSnipsExpandTrigger         = '<tab>'
-let g:UltiSnipsJumpForwardTrigger    = '<tab>'
-let g:UltiSnipsJumpBackwardTrigger   = '<s-tab>'
-Plugin 'SirVer/ultisnips'
+" let g:UltiSnipsExpandTrigger         = '<tab>'
+" let g:UltiSnipsJumpForwardTrigger    = '<tab>'
+" let g:UltiSnipsJumpBackwardTrigger   = '<s-tab>'
+" Plugin 'SirVer/ultisnips'
 
 " Make :JsBeautify command to reformat JSON
-Plugin 'maksimr/vim-jsbeautify'
-function! JsonBeautify()
-    set ft=json
-    call JsBeautify()
-endfunction
-command! JsonBeautify call JsonBeautify()
-command! JsBeautify call JsBeautify()
+" Plugin 'maksimr/vim-jsbeautify'
+" function! JsonBeautify()
+"    set ft=json
+"    call JsBeautify()
+" endfunction
+" command! JsonBeautify call JsonBeautify()
+" command! JsBeautify call JsBeautify()
 
 " <C-d> to toggle comments
-let g:NERDCreateDefaultMappings = 0
-Plugin 'ddollar/nerdcommenter'
-map <C-d> <Plug>NERDCommenterToggle
-map <Leader>c <C-d>
+"let g:NERDCreateDefaultMappings = 0
+"Plugin 'ddollar/nerdcommenter'
+"map <C-d> <Plug>NERDCommenterToggle
+"map <Leader>c <C-d>
 
 " Various color schemes
-Plugin 'mimicpak'
-Plugin 'altercation/vim-colors-solarized'
-Plugin 'summerfruit.vim'
-Plugin 'summerfruit256.vim'
-Plugin 'fruity.vim'
-Plugin 'pyte'
-Plugin 'Wombat'
-Plugin 'morhetz/gruvbox'
+"Plugin 'mimicpak'
+"Plugin 'altercation/vim-colors-solarized'
+"Plugin 'summerfruit.vim'
+"Plugin 'summerfruit256.vim'
+"Plugin 'fruity.vim'
+"Plugin 'pyte'
+"Plugin 'Wombat'
+"Plugin 'morhetz/gruvbox'
 
 " Allow per-project editor configuration settings
-Plugin 'editorconfig/editorconfig-vim'
+"Plugin 'editorconfig/editorconfig-vim'
 
 " Easy copy/paste for terminal Vim!
-Plugin 'ConradIrwin/vim-bracketed-paste'
+"Plugin 'ConradIrwin/vim-bracketed-paste'
 
 " Syntax highlighting
-Plugin 'mustache/vim-mustache-handlebars'
-Plugin 'digitaltoad/vim-jade'
-Plugin 'alunny/pegjs-vim'
-Plugin 'wizicer/vim-jison'
-Plugin 'wting/rust.vim'
-Plugin 'groenewege/vim-less'
-let g:vim_json_syntax_conceal = 0
-Plugin 'elzr/vim-json'
-Plugin 'leafgarland/typescript-vim'
+"Plugin 'mustache/vim-mustache-handlebars'
+"Plugin 'digitaltoad/vim-jade'
+"Plugin 'alunny/pegjs-vim'
+"Plugin 'wizicer/vim-jison'
+"Plugin 'wting/rust.vim'
+"Plugin 'groenewege/vim-less'
+"let g:vim_json_syntax_conceal = 0
+"Plugin 'elzr/vim-json'
+"Plugin 'leafgarland/typescript-vim'
 
 " Integrate ack into vim via :Ack command
-Plugin 'ack.vim'
-command! Wack exec 'Ack "' . expand('<cword>') . '"'
+"Plugin 'ack.vim'
+"command! Wack exec 'Ack "' . expand('<cword>') . '"'
 
 " This is in my own ~/.vim/ already
 " Bundle 'saikobee/vim-javascript-syntax'
 
 " Commands to cycle colors
-Plugin 'ScrollColors'
-nmap <silent><F9>  :PREVCOLOR<CR>
-nmap <silent><F10> :NEXTCOLOR<CR>
+"Plugin 'ScrollColors'
+"nmap <silent><F9>  :PREVCOLOR<CR>
+"nmap <silent><F10> :NEXTCOLOR<CR>
 
 " Fuzzy file searching
-let g:ctrlp_max_files = 2000
-let g:ctrlp_mruf_relative = 1
+"let g:ctrlp_max_files = 2000
+"let g:ctrlp_mruf_relative = 1
 " let g:ctrlp_extension = ['tag', 'mixed']
-let g:ctrlp_map = '<C-s>'
-Plugin 'kien/ctrlp.vim'
-nnoremap <C-s> :CtrlPMixed<CR>
-nnoremap <C-n> :CtrlPBuffer<CR>
+"let g:ctrlp_map = '<C-s>'
+"Plugin 'kien/ctrlp.vim'
+"nnoremap <C-s> :CtrlPMixed<CR>
+"nnoremap <C-n> :CtrlPBuffer<CR>
 
-call vundle#end()
+"call vundle#end()
 filetype plugin on
 
 " <Space> is so much easier to type than <Backslash>
@@ -89,7 +89,7 @@ syntax on
 " Disallow modelines
 set nomodeline
 
-color defpp
+"color defpp
 
 " Nice info in the bottom line area
 " (apparently this is off by default...)
@@ -215,8 +215,8 @@ vnoremap < <gv
 vnoremap > >gv
 
 " I rarely want to open man pages for the word under the cursor
-nnoremap K :Wack<CR>
-vnoremap K <Nop>
+"nnoremap K :Wack<CR>
+"vnoremap K <Nop>
 
 " Easier tab switching
 nmap <C-j> gt
@@ -227,9 +227,9 @@ set pastetoggle=<F1>
 
 " Show characters I hate
 set list
-set listchars=nbsp:¬,tab:├─,extends:»,precedes:«,trail:•
+"set listchars=nbsp:¬,tab:├─,extends:»,precedes:«,trail:•
 " Backup ASCII listchars
-" set listchars=nbsp:X,tab:>-,extends:>,precedes:<,trail:.
+set listchars=nbsp:X,tab:>-,extends:>,precedes:<,trail:.
 
 
 " Nice Ruby stuff

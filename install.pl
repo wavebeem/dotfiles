@@ -23,18 +23,19 @@ sub install {
     symlink($src, $dst);
 }
 
-install($_) for qw(
-    ackrc
-    dircolors
-    zshenv
-    vim
-    vimrc
-    zshrc
-    bashrc
-    bash_profile
-    tmux.conf
-    inputrc
-    config/fish/config.fish
-    config/fish/functions
-    Library/Application Support/Sublime Text 3/Packages/User
+install($_) for (
+    "ackrc",
+    "dircolors",
+    "zshenv",
+    "vim",
+    "vimrc",
+    "zshrc",
+    "bashrc",
+    "bash_profile",
+    "tmux.conf",
+    "inputrc",
+    "gitconfig",
+    "config/fish/config.fish",
+    "config/fish/functions",
+    "Library/Application Support/Sublime Text 3/Packages/User",
 );
