@@ -1,10 +1,13 @@
-config/roxterm.sourceforge.net/Sessions
-config/roxterm.sourceforge.net/Searches
+# Chrome developer stuff
 Cached Theme.pak
 *.crx
 *.pem
-mpd/mpd.db
-mpd/mpd.log
-mpd/mpd.pid
-themes/Zukini
+
 vim/bundle
+
+# Sublime Text Package Control garbage
+Package Control.cache
+Package Control.system-ca-bundle
+Package Control.last-run
+Package Control.user-ca-bundle
+Package Control.merged-ca-bundle

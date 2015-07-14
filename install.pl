@@ -36,5 +36,5 @@ install($_) for qw(
     inputrc
     config/fish/config.fish
     config/fish/functions
-    Preferences.sublime-settings
+    Library/Application Support/Sublime Text 3/Packages/User
 );

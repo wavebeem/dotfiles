@@ -2,7 +2,6 @@
 	"always_show_minimap_viewport": true,
 	"auto_complete_commit_on_tab": true,
 	"caret_style": "smooth",
-	"color_scheme": "Packages/User/Brian Test.tmTheme",
 	"drag_text": false,
 	"draw_minimap_border": true,
 	"ensure_newline_at_eof_on_save": true,
@@ -26,8 +25,8 @@
 		".sass-cache",
 		"CVS"
 	],
-	"font_face": "Fira Mono",
-	"font_size": 15,
+	"font_face": "Menlo",
+	"font_size": 14,
 	"ignored_packages":
 	[
 		"Vintage"
@@ -39,7 +38,7 @@
 		100
 	],
 	"show_full_path": true,
-	"theme": "Spacegray.sublime-theme",
+	"theme": "Spacegray Light.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"use_tab_stops": true,
 	"vintage_start_in_command_mode": true,
