@@ -5,6 +5,7 @@
 	"installed_packages":
 	[
 		"All Autocomplete",
+		"Git",
 		"GitGutter",
 		"Package Control",
 		"Pretty JSON",
