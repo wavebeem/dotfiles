@@ -1,6 +1,7 @@
 {
 	"always_show_minimap_viewport": true,
 	"auto_complete_commit_on_tab": false,
+	"auto_close_tags": false,
 	"caret_style": "smooth",
 	"color_scheme": "Packages/User/Brian Test.tmTheme",
 	"drag_text": false,
