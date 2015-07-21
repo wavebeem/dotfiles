@@ -38,6 +38,8 @@ set -x PATH ~/Dropbox/bin $PATH
 set -x PATH $GOPATH/bin $PATH
 set -x PATH ~/.local/bin $PATH
 
+set fish_greeting
+
 set -l main_color green
 set fish_color_normal $main_color
 set fish_color_command $main_color
