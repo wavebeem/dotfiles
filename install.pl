@@ -5,10 +5,12 @@ use File::Path qw(make_path remove_tree);
 use File::Basename;
 
 sub install {
-    my ($f) = @_;
+    my ($file) = @_;
+    my $dotless = $file;
+    $dotless =~ s/^\.//;
     my $HOME = $ENV{HOME};
-    my $src = "$HOME/dotfiles/$f";
-    my $dst = "$HOME/.$f";
+    my $src = "$HOME/dotfiles/$dotless";
+    my $dst = "$HOME/$file";
     my $dir = dirname($dst);
     if (-l $dst) {
         unlink($dst);
@@ -24,18 +26,19 @@ sub install {
 }
 
 install($_) for (
-    "ackrc",
-    "dircolors",
-    "zshenv",
-    "vim",
-    "vimrc",
-    "zshrc",
-    "bashrc",
-    "bash_profile",
-    "tmux.conf",
-    "inputrc",
-    "gitconfig",
-    "config/fish/config.fish",
-    "config/fish/functions",
+    ".welcome",
+    ".ackrc",
+    ".dircolors",
+    ".zshenv",
+    ".vim",
+    ".vimrc",
+    ".zshrc",
+    ".bashrc",
+    ".bash_profile",
+    ".tmux.conf",
+    ".inputrc",
+    ".gitconfig",
+    ".config/fish/config.fish",
+    ".config/fish/functions",
     "Library/Application Support/Sublime Text 3/Packages/User",
 );
