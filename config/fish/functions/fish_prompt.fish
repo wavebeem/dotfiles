@@ -1,34 +1,27 @@
 function fish_prompt
-    set soon \U1f51c
-    set hamburger \U1f354
-    set poo \U1f4a9
-    set tengu \U1f47a
-    set watermelon \U1f349
-    set beginner \U1f530
-    set cyclone \U1f300
+    set E
+    set E $E \U1F51C # soon
+    set E $E \U1F354 # hamburger
+    set E $E \U1F4A9 # poo
+    set E $E \U1F47A # tengu
+    set E $E \U1F349 # watermelon
+    set E $E \U1F300 # cyclone
+    set E $E \U1F37A # beer
+    set E $E \U1F382 # cake
+    set E $E \U1F369 # donut
+    set E $E \U1F344 # mushroom
+    set E $E \U2615  # coffee
+    set E $E \U1F35C # ramen
+    set E $E \U1F363 # sushi
+    set E $E \U1F36A # cookie
+    set E $E \U1F36B # chocolate
+    set E $E \U1F371 # bento
+    set E $E \U1F411 # sheep
+    set E $E \U1F525 # fire
 
-    switch (date +%H)
-    case 0 1 2 3 4 5 6 7
-        set symbol $watermelon
-    case 8 9 10
-        set symbol $tengu
-    case 11 12
-        set symbol $hamburger
-    case '*'
-        set symbol $poo
-    end
-
-    # set choices \
-    #     $soon \
-    #     $hamburger \
-    #     $poo \
-    #     $tengu \
-    #     $watermelon \
-    #     $beginner \
-    #     $cyclone
-    # set n (math (random)%(count $choices))
-    # set m (math $n + 1)
-    # set symbol $choices[$m]
+    set n (math (random)%(count $E))
+    set m (math $n+1)
+    set symbol $E[$m]
 
     set_color normal
     echo
