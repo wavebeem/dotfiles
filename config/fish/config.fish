@@ -6,11 +6,10 @@ function '$'
     eval $argv
 end
 
-alias gdc 'git diff --cached'
-alias gd 'git diff'
-alias gs 'git status'
-alias g 'git status'
-alias gl 'git lg'
+abbr -a gdc 'git diff --cached'
+abbr -a gd 'git diff'
+abbr -a g 'git status'
+abbr -a gl 'git lg'
 
 switch (uname)
 case Darwin
@@ -33,9 +32,6 @@ set -x VISUAL 'vim'
 set -x PAGER 'less'
 set -x LESS '-R'
 
-set -x GOPATH ~/go
-set -x PATH ~/Dropbox/bin $PATH
-set -x PATH $GOPATH/bin $PATH
 set -x PATH ~/.local/bin $PATH
 
 set fish_greeting
