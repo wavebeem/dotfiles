@@ -6,11 +6,16 @@
 	[
 		"All Autocomplete",
 		"Bison",
+		"ColorSchemeSelector",
 		"fish-shell",
 		"Git",
 		"GitGutter",
 		"Package Control",
+		"PEG.js",
 		"Pretty JSON",
-		"Theme - Spacegray"
+		"Sass",
+		"Theme - Spacegray",
+		"TrailingSpaces",
+		"WordCount"
 	]
 }

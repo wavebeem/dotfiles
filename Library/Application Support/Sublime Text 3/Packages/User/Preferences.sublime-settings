@@ -27,8 +27,8 @@
 		".sass-cache",
 		"CVS"
 	],
-	"font_face": "Menlo",
-	"font_size": 12,
+	"font_face": "Input",
+	"font_size": 13,
 	"highlight_line": true,
 	"ignored_packages":
 	[
