@@ -13,7 +13,7 @@
 		".git",
 		".svn",
 		".hg",
-		"node_modules",
+		"_site",
 		"node_modules",
 		"bower_components",
 		"docs",
