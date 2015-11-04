@@ -5,6 +5,7 @@
 	],
 	"installed_packages":
 	[
+		"AAAPackageDev",
 		"All Autocomplete",
 		"Bison",
 		"ColorSchemeSelector",
@@ -16,6 +17,7 @@
 		"PEG.js",
 		"Pretty JSON",
 		"Sass",
+		"ScopeHunter",
 		"Theme - Spacegray",
 		"TrailingSpaces",
 		"WordCount"
