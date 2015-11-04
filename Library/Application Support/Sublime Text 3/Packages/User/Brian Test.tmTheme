@@ -86,7 +86,7 @@
         <key>name</key>
         <string>Delimiters</string>
         <key>scope</key>
-        <string>punctuation.separator, punctuation.section, meta.brace</string>
+        <string>punctuation.separator, punctuation.section, meta.brace, meta.delimiter</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
