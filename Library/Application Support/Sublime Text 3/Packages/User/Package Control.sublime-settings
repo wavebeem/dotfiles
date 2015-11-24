@@ -8,18 +8,24 @@
 		"AAAPackageDev",
 		"All Autocomplete",
 		"Bison",
+		"ChannelRepositoryTools",
 		"ColorSchemeSelector",
 		"Colorsublime",
 		"fish-shell",
 		"Git",
 		"GitGutter",
+		"Markdown Extended",
 		"Package Control",
 		"PEG.js",
 		"Pretty JSON",
 		"Sass",
 		"ScopeHunter",
+		"Squiggle",
 		"Theme - Spacegray",
 		"TrailingSpaces",
 		"WordCount"
+	],
+	"repositories":
+	[
 	]
 }
