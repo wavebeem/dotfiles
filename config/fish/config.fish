@@ -8,6 +8,7 @@ end
 
 abbr -a gdc 'git diff --cached'
 abbr -a ga 'git add'
+abbr -a ga. 'git add .'
 abbr -a gd 'git diff'
 abbr -a g 'git status'
 abbr -a gl 'git lg'
