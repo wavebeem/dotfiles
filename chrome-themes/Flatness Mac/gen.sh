@@ -19,7 +19,7 @@ ImgConvert() {
 Build() {
     local color="$1"
     local name="$2"
-    ImgConvert "xc:#$color" -size 20x20 "$dir/$name.png"
+    ImgConvert "xc:#$color" -resize 1x1 "$dir/$name.png"
 }
 
 Build dddddd frame
