@@ -1,8 +1,9 @@
 {
 	"always_show_minimap_viewport": true,
 	"auto_close_tags": false,
-	"auto_complete_commit_on_tab": false,
-	"caret_style": "smooth",
+	"auto_complete_commit_on_tab": true,
+	"bold_folder_labels": true,
+	"caret_style": "phase",
 	"color_scheme": "Packages/User/Brian Test.tmTheme",
 	"drag_text": false,
 	"draw_minimap_border": false,
@@ -44,6 +45,5 @@
 	"theme": "Spacegray Light.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"use_tab_stops": true,
-	"vintage_start_in_command_mode": true,
 	"word_wrap": true
 }
