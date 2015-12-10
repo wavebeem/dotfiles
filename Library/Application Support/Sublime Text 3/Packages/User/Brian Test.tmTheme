@@ -39,15 +39,15 @@
       </dict>
       <dict>
         <key>name</key>
-        <string>Text</string>
+        <string>Parameter</string>
         <key>scope</key>
         <string>variable.parameter.function</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>#cc0000</string>
+          <string>#aa00ee</string>
           <key>background</key>
-          <string>#cc00000a</string>
+          <string>#aa00ee0a</string>
           <key>fontStyle</key>
           <string/>
         </dict>
