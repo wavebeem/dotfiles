@@ -10,7 +10,6 @@
 	"color_scheme": "Packages/User/Brian Test.tmTheme",
 	"drag_text": false,
 	"draw_minimap_border": false,
-	"indent_guide_options": ["draw_normal", "draw_active"],
 	"ensure_newline_at_eof_on_save": true,
 	"fade_fold_buttons": false,
 	"folder_exclude_patterns":
@@ -38,6 +37,11 @@
 	"ignored_packages":
 	[
 		"Vintage"
+	],
+	"indent_guide_options":
+	[
+		"draw_normal",
+		"draw_active"
 	],
 	"overlay_scroll_bars": "enabled",
 	"rulers":

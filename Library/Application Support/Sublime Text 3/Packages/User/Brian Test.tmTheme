@@ -641,13 +641,13 @@
         <key>name</key>
         <string>Illegal</string>
         <key>scope</key>
-        <string>invalid.illegal</string>
+        <string>invalid, invalid.illegal</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>#cc0000</string>
+          <string>#f8f8f8</string>
           <key>background</key>
-          <string>#cc00000a</string>
+          <string>#cc0000cc</string>
           <key>fontStyle</key>
           <string>bold</string>
         </dict>
