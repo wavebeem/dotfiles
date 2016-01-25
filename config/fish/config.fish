@@ -37,6 +37,8 @@ set -x LESS '-R'
 
 set -x PATH ~/.local/bin $PATH
 
+set -x HOMEBREW_INSTALL_BADGE \U1F52E
+
 set fish_greeting
 
 set -l main_color green
