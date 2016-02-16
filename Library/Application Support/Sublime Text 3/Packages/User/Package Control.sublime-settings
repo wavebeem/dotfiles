@@ -5,7 +5,6 @@
 	],
 	"installed_packages":
 	[
-		"AAAPackageDev",
 		"All Autocomplete",
 		"Bison",
 		"ChannelRepositoryTools",
@@ -20,6 +19,7 @@
 		"JavaScriptNext - ES6 Syntax",
 		"Markdown Extended",
 		"Package Control",
+		"PackageDev",
 		"PEG.js",
 		"Pretty JSON",
 		"PureScript",

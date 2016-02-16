@@ -1,5 +1,5 @@
 {
-	"always_show_minimap_viewport": true,
+	"always_show_minimap_viewport": false,
 	"auto_close_tags": false,
 	"auto_complete_commit_on_tab": true,
 	"bold_folder_labels": true,
@@ -50,7 +50,6 @@
 		100
 	],
 	"show_full_path": true,
-	"theme": "Spacegray Light.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"use_tab_stops": true,
 	"word_wrap": true
