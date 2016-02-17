@@ -6,6 +6,7 @@
 	"installed_packages":
 	[
 		"All Autocomplete",
+		"Better CoffeeScript",
 		"Bison",
 		"ChannelRepositoryTools",
 		"ColorSchemeSelector",
@@ -16,7 +17,6 @@
 		"Git",
 		"GitGutter",
 		"INI",
-		"JavaScriptNext - ES6 Syntax",
 		"Markdown Extended",
 		"Package Control",
 		"PackageDev",

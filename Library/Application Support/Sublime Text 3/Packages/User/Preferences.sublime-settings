@@ -7,13 +7,14 @@
 	"caret_extra_top": 1,
 	"caret_extra_width": 1,
 	"caret_style": "phase",
-	"color_scheme": "Packages/User/Brian Test.tmTheme",
+	"color_scheme": "Packages/User/Blue Blur.tmTheme",
 	"drag_text": false,
 	"draw_minimap_border": false,
 	"ensure_newline_at_eof_on_save": true,
 	"fade_fold_buttons": false,
 	"folder_exclude_patterns":
 	[
+		"tmp",
 		".git",
 		".svn",
 		".hg",
@@ -41,8 +42,8 @@
 	"indent_guide_options":
 	[
 		"draw_normal",
-		"draw_active"
 	],
+	"match_brackets": true,
 	"overlay_scroll_bars": "enabled",
 	"rulers":
 	[
@@ -50,6 +51,7 @@
 		100
 	],
 	"show_full_path": true,
+	"theme": "Spacegray Light.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"use_tab_stops": true,
 	"word_wrap": true
