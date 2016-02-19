@@ -2,6 +2,7 @@
 	"extensions":
 	[
 		".jshintrc",
-		".jscsrc"
+		".jscsrc",
+		".ember-cli"
 	]
 }
