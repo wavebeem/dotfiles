@@ -12,8 +12,8 @@ Linux)
 esac
 
 # Turn off ^S and ^Q flow control
-if which stty 2>&1 >/dev/null
-then stty -ixon 2>&1 >/dev/null
+if which stty >/dev/null 2>&1; then
+  stty -ixon >/dev/null 2>&1
 fi
 
 alias dim='echo ${COLUMNS}x${LINES}'
@@ -36,9 +36,3 @@ alias serve='python -m SimpleHTTPServer'
 # Tab size 4
 # Allow ANSI color sequences
 export LESS="-R"
-
-# Greet me with ASCII/ANSI art,
-if [ -f "$HOME/.welcome" ]
-then cat "$HOME/.welcome"
-else uptime
-fi
