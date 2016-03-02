@@ -53,6 +53,7 @@
 	],
 	"show_full_path": true,
 	"theme": "Spacegray Light.sublime-theme",
+	"tab_size": 2,
 	"translate_tabs_to_spaces": true,
 	"use_tab_stops": true,
 	"word_wrap": true
