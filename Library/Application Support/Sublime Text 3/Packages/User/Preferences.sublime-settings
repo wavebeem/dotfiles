@@ -31,8 +31,7 @@
 		"reports",
 		"testbed",
 		"tmp",
-		"cache",
-		"vendor"
+		"cache"
 	],
 	"font_face": "Input",
 	"font_size": 14,
