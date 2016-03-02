@@ -6,6 +6,7 @@ function '$'
     eval $argv
 end
 
+abbr -a gco 'git checkout'
 abbr -a gdc 'git diff --cached'
 abbr -a ga 'git add'
 abbr -a ga. 'git add .'

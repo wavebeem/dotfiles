@@ -26,6 +26,7 @@ sub install {
 }
 
 install($_) for (
+    ".hushlogin",
     ".jscsrc",
     ".welcome",
     ".ackrc",
