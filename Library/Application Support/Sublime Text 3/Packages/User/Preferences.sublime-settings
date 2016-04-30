@@ -7,7 +7,7 @@
 	"caret_extra_top": 1,
 	"caret_extra_width": 1,
 	"caret_style": "phase",
-	"color_scheme": "Packages/User/Blue Blur.tmTheme",
+	"color_scheme": "Packages/User/Foggy Morning.tmTheme",
 	"drag_text": false,
 	"draw_minimap_border": false,
 	"ensure_newline_at_eof_on_save": true,
@@ -33,7 +33,7 @@
 		"CVS"
 	],
 	"font_face": "Input",
-	"font_size": 12,
+	"font_size": 14,
 	"highlight_line": true,
 	"ignored_packages":
 	[
@@ -41,7 +41,7 @@
 	],
 	"indent_guide_options":
 	[
-		"draw_normal",
+		"draw_normal"
 	],
 	"match_brackets": true,
 	"overlay_scroll_bars": "enabled",
@@ -51,7 +51,7 @@
 		100
 	],
 	"show_full_path": true,
-	"theme": "Spacegray Light.sublime-theme",
+	"tab_size": 2,
 	"translate_tabs_to_spaces": true,
 	"use_tab_stops": true,
 	"word_wrap": true

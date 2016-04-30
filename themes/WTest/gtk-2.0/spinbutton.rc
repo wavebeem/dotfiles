@@ -1,9 +1,0 @@
-# vim: set syn=gtkrc:
-
-style "spinbutton" = "button" {
-    bg[NORMAL] = @bg_color
-
-    engine "murrine" {
-        roundness = 1
-    }
-}
