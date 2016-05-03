@@ -15,3 +15,6 @@ Package Control.system-ca-bundle
 Package Control.last-run
 Package Control.user-ca-bundle
 Package Control.merged-ca-bundle
+
+# Sublime Themes are kept in other repos
+*.tmTheme
