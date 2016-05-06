@@ -1,29 +1,13 @@
 [user]
-    name = Brian Mock
-    email = brian@mockbrian.com
+  name = Brian Mock
+  email = brian@mockbrian.com
 [color]
-    diff = auto
-    status = auto
-    branch = auto
-[alias]
-    ci = commit
-    cia = commit -a
-    addi = add --interactive
-    addp = add --patch
-    diffc = diff --cached
-    diffw = diff --word-diff
-    co = checkout
-    cob = checkout -b
-    cop = checkout -p
-    cot = checkout -t
-    stat = status
-    s = status
-    lg = log --stat --graph --decorate --summary --all
-    lg1 = log --pretty=oneline
-    d = daemon --export-all --base-path=..
+  diff = auto
+  status = auto
+  branch = auto
 [push]
-    default = current
+  default = current
 [filter "lfs"]
-	clean = git-lfs clean %f
-	smudge = git-lfs smudge %f
-	required = true
+  clean = git-lfs clean %f
+  smudge = git-lfs smudge %f
+  required = true

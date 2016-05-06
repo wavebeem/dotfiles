@@ -27,4 +27,4 @@ set list
 set listchars=nbsp:X,tab:>-,extends:>,precedes:<,trail:.
 set showmatch
 let loaded_matchparen = 1
-let g:netrw_home = '/tmp'
+
