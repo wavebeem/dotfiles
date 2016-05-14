@@ -1,9 +1,9 @@
 function dim
-    echo "$COLUMNS by $LINES"
+  echo "$COLUMNS by $LINES"
 end
 
 function '$'
-    eval $argv
+  eval $argv
 end
 
 abbr -a gco 'git checkout'
@@ -15,12 +15,13 @@ abbr -a gd 'git diff'
 abbr -a gm 'git commit -m'
 abbr -a g 'git status'
 abbr -a gl 'git lg'
+abbr -a gg 'git commit'
 
 switch (uname)
 case Darwin
-    alias ls 'ls -G'
+  alias ls 'ls -G'
 case '*'
-    alias ls 'ls --color=auto'
+  alias ls 'ls --color=auto'
 end
 
 alias l 'ls'
@@ -59,11 +60,11 @@ set fish_color_escape $main_color
 set fish_color_cwd $main_color
 
 if [ -f $HOME/.welcome ]
-    cat $HOME/.welcome
+  cat $HOME/.welcome
 else
-    uptime
+  uptime
 end
 
 if which rbenv >/dev/null
-    rbenv init - | source
+  rbenv init - | source
 end
