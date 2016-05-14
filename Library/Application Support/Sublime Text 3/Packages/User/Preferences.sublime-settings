@@ -14,6 +14,7 @@
 	"fade_fold_buttons": false,
 	"file_exclude_patterns":
 	[
+		"bundle.js",
 		"*development.log",
 		"*.pyc",
 		"*.pyo",
