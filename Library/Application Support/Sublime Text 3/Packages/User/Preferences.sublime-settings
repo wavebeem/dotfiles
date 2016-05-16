@@ -16,6 +16,7 @@
 	[
 		"bundle.js",
 		"*development.log",
+		"*.log",
 		"*.pyc",
 		"*.pyo",
 		"*.exe",
