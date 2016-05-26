@@ -7,11 +7,10 @@
 	"caret_extra_top": 1,
 	"caret_extra_width": 1,
 	"caret_style": "phase",
-	"color_scheme": "Packages/User/Foggy Morning.tmTheme",
+	"color_scheme": "Packages/User/Foggy Evening.tmTheme",
 	"drag_text": false,
 	"draw_minimap_border": true,
 	"ensure_newline_at_eof_on_save": true,
-	"fade_fold_buttons": false,
 	"file_exclude_patterns":
 	[
 		"bundle.js",
@@ -58,7 +57,7 @@
 		"cache"
 	],
 	"font_face": "Input",
-	"font_size": 14,
+	"font_size": 15,
 	"highlight_line": true,
 	"ignored_packages":
 	[

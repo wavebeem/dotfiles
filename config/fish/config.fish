@@ -7,14 +7,13 @@ function '$'
 end
 
 abbr -a gco 'git checkout'
-abbr -a gdc 'git diff --cached'
 abbr -a gdd 'git diff --cached'
 abbr -a ga 'git add'
-abbr -a ga. 'git add .'
+abbr -a gaa 'git add -A'
 abbr -a gd 'git diff'
 abbr -a gm 'git commit -m'
 abbr -a g 'git status'
-abbr -a gl 'git lg'
+abbr -a gl 'git log'
 abbr -a gg 'git commit'
 
 switch (uname)
