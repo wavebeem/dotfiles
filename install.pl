@@ -32,7 +32,6 @@ install($_) for (
     ".ackrc",
     ".dircolors",
     ".zshenv",
-    ".vim",
     ".vimrc",
     ".zshrc",
     ".bashrc",

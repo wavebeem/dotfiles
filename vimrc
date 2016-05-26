@@ -17,14 +17,6 @@ set shiftwidth=2
 set expandtab
 set autoindent
 set nonumber
-set title
+set iskeyword+=-
 set visualbell
 set t_vb=
-set mouse=a
-set incsearch
-set nohlsearch
-set list
-set listchars=nbsp:X,tab:>-,extends:>,precedes:<,trail:.
-set showmatch
-let loaded_matchparen = 1
-
