@@ -7,12 +7,13 @@
 	"caret_extra_top": 1,
 	"caret_extra_width": 1,
 	"caret_style": "phase",
-	"color_scheme": "Packages/User/Foggy Evening.tmTheme",
+	"color_scheme": "Packages/User/Foggy Morning.tmTheme",
 	"drag_text": false,
 	"draw_minimap_border": true,
 	"ensure_newline_at_eof_on_save": true,
 	"file_exclude_patterns":
 	[
+		"*.map",
 		"bundle.js",
 		"*development.log",
 		"*.log",
@@ -39,6 +40,7 @@
 	],
 	"folder_exclude_patterns":
 	[
+		"dist",
 		".git",
 		".hg",
 		".sass-cache",
@@ -58,7 +60,7 @@
 		"cache"
 	],
 	"font_face": "Input",
-	"font_size": 15,
+	"font_size": 18,
 	"highlight_line": true,
 	"ignored_packages":
 	[
@@ -77,6 +79,7 @@
 	],
 	"show_full_path": true,
 	"tab_size": 2,
+	"theme": "Spacegray Light.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"use_tab_stops": true,
 	"word_wrap": true
