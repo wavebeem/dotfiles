@@ -7,7 +7,7 @@
 	"caret_extra_top": 1,
 	"caret_extra_width": 1,
 	"caret_style": "phase",
-	"color_scheme": "Packages/User/Foggy Morning.tmTheme",
+	"color_scheme": "Packages/User/Flat Light.tmTheme",
 	"drag_text": false,
 	"draw_minimap_border": true,
 	"ensure_newline_at_eof_on_save": true,
@@ -77,7 +77,9 @@
 		80,
 		100
 	],
+	"show_encoding": true,
 	"show_full_path": true,
+	"show_line_endings": true,
 	"tab_size": 2,
 	"theme": "Spacegray Light.sublime-theme",
 	"translate_tabs_to_spaces": true,

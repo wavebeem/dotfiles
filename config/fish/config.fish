@@ -43,13 +43,15 @@ set -x HOMEBREW_INSTALL_BADGE \U1F52E
 
 set fish_greeting
 
-set -l main_color '--bold'
+set -l main_color yellow --bold
+set -l error_color red --bold
+
 set fish_color_normal $main_color
 set fish_color_command $main_color
 set fish_color_quote $main_color
 set fish_color_redirection $main_color
 set fish_color_end $main_color
-set fish_color_error red
+set fish_color_error $error_color
 set fish_color_param $main_color
 set fish_color_comment $main_color
 set fish_color_match $main_color
@@ -58,10 +60,12 @@ set fish_color_operator $main_color
 set fish_color_escape $main_color
 set fish_color_cwd $main_color
 
-if [ -f $HOME/.welcome ]
-  cat $HOME/.welcome
-else
-  uptime
+if status --is-interactive
+  if [ -f $HOME/.welcome ]
+    cat $HOME/.welcome
+  else
+    uptime
+  end
 end
 
 if which rbenv >/dev/null

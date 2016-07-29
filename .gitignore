@@ -6,8 +6,10 @@ Cached Theme.pak
 # OS X Finder garbage
 .DS_Store
 
+# General Sublime Text garbage
+*.cache
+
 # Sublime Text Package Control garbage
-Package Control.cache
 Package Control.system-ca-bundle
 Package Control.last-run
 Package Control.user-ca-bundle
