@@ -6,40 +6,38 @@ function '$'
   eval $argv
 end
 
-abbr -a gco 'git checkout'
-abbr -a gdd 'git diff --cached'
-abbr -a ga 'git add'
-abbr -a gaa 'git add -A'
-abbr -a gd 'git diff'
-abbr -a gm 'git commit -m'
-abbr -a g 'git status'
-abbr -a gl 'git log'
-abbr -a gg 'git commit'
+abbr -a gco "git checkout"
+abbr -a gdd "git diff --cached"
+abbr -a ga "git add"
+abbr -a gaa "git add -A"
+abbr -a gd "git diff"
+abbr -a gm "git commit -m"
+abbr -a g "git status"
+abbr -a gl "git log"
+abbr -a gg "git commit"
 
 switch (uname)
 case Darwin
-  alias ls 'ls -G'
-case '*'
-  alias ls 'ls --color=auto'
+  alias ls "ls -G"
+case "*"
+  alias ls "ls --color=auto"
 end
 
-alias l 'ls'
-alias ll 'ls -hl'
-alias la 'll -a'
+alias l "ls"
+alias ll "ls -hl"
+alias la "ll -a"
 
-alias serve 'python -m SimpleHTTPServer'
+alias serve "python -m SimpleHTTPServer"
 
-set -x LANG 'en_US.UTF-8'
-set -x LSCOLORS 'ExfxcxdxBxegedabagacad'
+set -x LANG "en_US.UTF-8"
+set -x LSCOLORS "ExfxcxdxBxegedabagacad"
 
-set -x EDITOR 'vim'
-set -x VISUAL 'vim'
-set -x PAGER 'less'
-set -x LESS '-R'
+set -x EDITOR "vim"
+set -x VISUAL "vim"
+set -x PAGER "less"
+set -x LESS "-R"
 
 set -x PATH ~/.local/bin $PATH
-
-set -x HOMEBREW_INSTALL_BADGE \U1F52E
 
 set fish_greeting
 
@@ -62,13 +60,13 @@ set fish_color_escape $secondary_color
 set fish_color_cwd $secondary_color
 
 if status --is-interactive
+  if which rbenv >/dev/null
+    rbenv init - | source
+  end
+
   if [ -f $HOME/.welcome ]
     cat $HOME/.welcome
   else
     uptime
   end
-end
-
-if which rbenv >/dev/null
-  rbenv init - | source
 end

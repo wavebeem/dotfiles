@@ -41,7 +41,6 @@ my $normals = [
   ".vimrc",
   ".zshrc",
   ".bashrc",
-  ".bash_profile",
   ".tmux.conf",
   ".inputrc",
   ".gitconfig",
