@@ -43,22 +43,23 @@ set -x HOMEBREW_INSTALL_BADGE \U1F52E
 
 set fish_greeting
 
-set -l main_color yellow --bold
-set -l error_color red --bold
+set -l primary_color cyan --bold
+set -l secondary_color magenta --bold
+set -l error_color red
 
-set fish_color_normal $main_color
-set fish_color_command $main_color
-set fish_color_quote $main_color
-set fish_color_redirection $main_color
-set fish_color_end $main_color
+set fish_color_normal $secondary_color
+set fish_color_command $primary_color
+set fish_color_quote $secondary_color
+set fish_color_redirection $secondary_color
+set fish_color_end $secondary_color
 set fish_color_error $error_color
-set fish_color_param $main_color
-set fish_color_comment $main_color
-set fish_color_match $main_color
-set fish_color_search_match $main_color
-set fish_color_operator $main_color
-set fish_color_escape $main_color
-set fish_color_cwd $main_color
+set fish_color_param $secondary_color
+set fish_color_comment $secondary_color
+set fish_color_match $secondary_color
+set fish_color_search_match $secondary_color
+set fish_color_operator $secondary_color
+set fish_color_escape $secondary_color
+set fish_color_cwd $secondary_color
 
 if status --is-interactive
   if [ -f $HOME/.welcome ]
