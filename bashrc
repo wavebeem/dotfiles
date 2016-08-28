@@ -8,8 +8,8 @@ precmd() {
 
 PROMPT_COMMAND="precmd"
 
-PS1=">>> "
-PS2="??? "
+PS1="$ "
+PS2="  "
 
 alias gco="git checkout"
 alias gdd="git diff --cached"
