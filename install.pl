@@ -33,7 +33,6 @@ sub install_as {
 
 my $normals = [
   ".hushlogin",
-  ".jscsrc",
   ".welcome",
   ".ackrc",
   ".dircolors",
@@ -48,12 +47,4 @@ my $normals = [
   ".config/fish/functions",
 ];
 
-my $specials = [
-  [
-    "_sublime",
-    "$HOME/Library/Application Support/Sublime Text 3/Packages/User"
-  ]
-];
-
 install($_) for @$normals;
-install_as(@$_) for @$specials;
