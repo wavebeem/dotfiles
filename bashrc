@@ -8,8 +8,12 @@ precmd() {
 
 PROMPT_COMMAND="precmd"
 
-PS1="$ "
-PS2="  "
+bold="\[$(tput bold)\]"
+cyan="\[$(tput setaf 2)\]"
+reset="\[$(tput sgr0)\]"
+
+export PS1="${reset}${bold}${cyan}\$ ${reset}"
+export PS2="${reset}  "
 
 alias gco="git checkout"
 alias gdd="git diff --cached"
