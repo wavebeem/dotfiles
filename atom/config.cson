@@ -1,0 +1,51 @@
+"*":
+  "autocomplete-plus":
+    confirmCompletion: "tab always, enter when suggestion explicitly selected"
+  blame: {}
+  core:
+    audioBeep: false
+    closeEmptyWindows: false
+    disabledPackages: [
+      "minimap"
+    ]
+    ignoredNames: [
+      ".git"
+      ".hg"
+      ".svn"
+      ".DS_Store"
+      "._*"
+      "Thumbs.db"
+      "node_modules"
+      "bower_components"
+      "tmp"
+    ]
+    themes: [
+      "one-light-ui"
+      "flat-light-syntax"
+    ]
+  editor:
+    autoIndentOnPaste: false
+    backUpBeforeSaving: true
+    fontFamily: "Fira Code"
+    fontSize: 17
+    lineHeight: 1.3
+    scrollPastEnd: true
+    showIndentGuide: true
+    softWrap: true
+  "exception-reporting":
+    userId: "af76c611-f193-35a7-fa38-e2d22712f423"
+  linter:
+    errorPanelHeight: 95
+    showErrorInline: false
+    showErrorTabLine: true
+  minimap: {}
+  "one-dark-ui":
+    fontSize: 13
+    layoutMode: "Compact"
+    tabSizing: "Even"
+  "one-light-ui":
+    fontSize: 13
+    layoutMode: "Compact"
+    tabSizing: "Even"
+  welcome:
+    showOnStartup: false

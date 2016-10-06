@@ -45,6 +45,11 @@ my $normals = [
   ".gitconfig",
   ".config/fish/config.fish",
   ".config/fish/functions",
+  ".atom/config.cson",
+  ".atom/init.coffee",
+  ".atom/keymap.cson",
+  ".atom/snippets.cson",
+  ".atom/styles.less",
 ];
 
 install($_) for @$normals;
