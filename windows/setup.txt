@@ -1,0 +1,4 @@
+Run both of these commands in an Admin PowerShell window:
+
+Set-ExecutionPolicy -Scope CurrentUser RemoteSigned
+fsutil behavior set SymlinkEvaluation L2L:1 L2R:0 R2L:0 R2R:0

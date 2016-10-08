@@ -4,6 +4,7 @@
   blame: {}
   core:
     audioBeep: false
+    autoHideMenuBar: true
     closeEmptyWindows: false
     disabledPackages: [
       "minimap"
@@ -27,7 +28,7 @@
     autoIndentOnPaste: false
     backUpBeforeSaving: true
     fontFamily: "Fira Code"
-    fontSize: 17
+    fontSize: 18
     lineHeight: 1.3
     scrollPastEnd: true
     showIndentGuide: true
