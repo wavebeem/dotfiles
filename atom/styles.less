@@ -5,3 +5,10 @@
     color: #fff;
   }
 }
+
+atom-text-editor.is-focused::shadow .cursor {
+  @edge: fade(white, 50%);
+  box-shadow:
+    -1px 0 0 @edge,
+    inset 1px 0 0 @edge;
+}

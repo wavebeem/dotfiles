@@ -36,7 +36,7 @@
   "exception-reporting":
     userId: "af76c611-f193-35a7-fa38-e2d22712f423"
   linter:
-    errorPanelHeight: 95
+    errorPanelHeight: 125
     showErrorInline: false
     showErrorTabLine: true
   minimap: {}
