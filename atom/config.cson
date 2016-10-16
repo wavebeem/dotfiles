@@ -22,7 +22,7 @@
     ]
     themes: [
       "one-light-ui"
-      "flat-light-syntax"
+      "ficus-syntax"
     ]
   editor:
     autoIndentOnPaste: false
@@ -39,9 +39,10 @@
     tabPaneIcon: false
   "git-diff": {}
   linter:
+    displayLinterStatus: false
     errorPanelHeight: 125
+    gutterEnabled: false
     showErrorInline: false
-    showErrorTabLine: true
   "markdown-preview":
     breakOnSingleNewline: true
     useGitHubStyle: true
