@@ -37,6 +37,8 @@ set -x VISUAL "vim"
 set -x PAGER "less"
 set -x LESS "-R"
 
+set -x PATH /usr/local/bin $PATH
+set -x PATH /usr/local/sbin $PATH
 set -x PATH ~/.local/bin $PATH
 
 set fish_greeting
