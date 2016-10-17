@@ -56,7 +56,7 @@
     tabSizing: "Even"
   "one-light-ui":
     fontSize: 13
-    layoutMode: "Compact"
+    layoutMode: "Spacious"
     tabSizing: "Even"
   tabs:
     enableVcsColoring: true
