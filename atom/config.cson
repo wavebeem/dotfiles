@@ -30,7 +30,7 @@
     autoIndentOnPaste: false
     backUpBeforeSaving: true
     fontFamily: "Fira Code"
-    fontSize: 18
+    fontSize: 17
     lineHeight: 1.3
     scrollPastEnd: true
     showIndentGuide: true
@@ -56,7 +56,7 @@
     tabSizing: "Even"
   "one-light-ui":
     fontSize: 13
-    layoutMode: "Spacious"
+    layoutMode: "Compact"
     tabSizing: "Even"
   tabs:
     enableVcsColoring: true
