@@ -1,8 +1,8 @@
 "*":
   "atom-material-ui":
     colors:
-      abaseColor: "#7e57c2"
-      predefinedColor: "Purple"
+      abaseColor: "#5c6bc0"
+      predefinedColor: "Indigo"
     tabs:
       compactTabs: true
     treeView:
@@ -18,9 +18,6 @@
     audioBeep: false
     autoHideMenuBar: true
     closeEmptyWindows: false
-    disabledPackages: [
-      "minimap"
-    ]
     ignoredNames: [
       ".git"
       ".hg"
@@ -34,7 +31,7 @@
     ]
     telemetryConsent: "limited"
     themes: [
-      "atom-material-ui"
+      "one-light-ui"
       "ficus-syntax"
     ]
     warnOnLargeFileLimit: 4
