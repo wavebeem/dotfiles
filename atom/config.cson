@@ -1,11 +1,15 @@
 "*":
   "atom-material-ui":
+    colors:
+      abaseColor: "#7e57c2"
+      predefinedColor: "Purple"
     tabs:
       compactTabs: true
     treeView:
       blendTabs: true
       compactList: true
     ui:
+      panelContrast: true
       panelShadows: true
   "autocomplete-plus":
     confirmCompletion: "tab always, enter when suggestion explicitly selected"
