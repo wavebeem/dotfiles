@@ -1,4 +1,12 @@
 "*":
+  "atom-material-ui":
+    tabs:
+      compactTabs: true
+    treeView:
+      blendTabs: true
+      compactList: true
+    ui:
+      panelShadows: true
   "autocomplete-plus":
     confirmCompletion: "tab always, enter when suggestion explicitly selected"
   blame: {}
@@ -22,7 +30,7 @@
     ]
     telemetryConsent: "limited"
     themes: [
-      "one-light-ui"
+      "atom-material-ui"
       "ficus-syntax"
     ]
     warnOnLargeFileLimit: 4
@@ -62,5 +70,11 @@
     enableVcsColoring: true
   "tree-view":
     focusOnReveal: false
+  "unity-ui":
+    colorStatusIndicatorsInTreeView: true
+    showIcons: true
   welcome:
     showOnStartup: false
+  "yosemate-ui":
+    colorStatusIndicatorsInTreeView: true
+    showIcons: true
