@@ -48,7 +48,7 @@
     showErrorInline: false
   "markdown-preview":
     breakOnSingleNewline: true
-    useGitHubStyle: true
+    liveUpdate: false
   minimap: {}
   "one-dark-ui":
     fontSize: 13
