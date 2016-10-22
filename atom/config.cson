@@ -39,7 +39,6 @@
     autoIndentOnPaste: false
     backUpBeforeSaving: true
     fontFamily: "Fira Code"
-    fontSize: 17
     lineHeight: 1.3
     scrollPastEnd: true
     showIndentGuide: true
