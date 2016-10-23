@@ -34,11 +34,13 @@
       "one-light-ui"
       "flat-light-syntax"
     ]
+    useCustomTitleBar: true
     warnOnLargeFileLimit: 4
   editor:
     autoIndentOnPaste: false
     backUpBeforeSaving: true
     fontFamily: "Fira Code"
+    fontSize: 16
     lineHeight: 1.3
     scrollPastEnd: true
     showIndentGuide: true
