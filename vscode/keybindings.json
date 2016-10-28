@@ -1,0 +1,27 @@
+[
+  {
+    "key": "cmd+l",
+    "command": "expandLineSelection",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+cmd+i",
+    "command": "workbench.action.toggleDevTools",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "cmd+0",
+    "command": "workbench.action.zoomReset",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+shift+k",
+    "command": "editor.action.deleteLines",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+shift+m",
+    "command": "editor.action.jumpToBracket",
+    "when": "editorTextFocus"
+  }
+]

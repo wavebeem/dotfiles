@@ -54,3 +54,7 @@ install "atom\init.coffee"
 install "atom\keymap.cson"
 install "atom\snippets.cson"
 install "atom\styles.less"
+
+### TODO: Install VS Code files too
+# installAs "vscode/keybindings.json" "$VSCODE/keybindings.json"
+# installAs "vscode/settings.json" "$VSCODE/settings.json"

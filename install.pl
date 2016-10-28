@@ -5,6 +5,7 @@ use File::Path qw(make_path remove_tree);
 use File::Basename;
 
 my $HOME = $ENV{HOME};
+my $VSCODE = "$HOME/Library/Application Support/Code/User";
 
 sub install {
   my ($file) = @_;
@@ -31,7 +32,7 @@ sub install_as {
   symlink($src, $dst);
 }
 
-my $normals = [
+install($_) for (
   ".hushlogin",
   ".welcome",
   ".ackrc",
@@ -50,6 +51,7 @@ my $normals = [
   ".atom/keymap.cson",
   ".atom/snippets.cson",
   ".atom/styles.less",
-];
+);
 
-install($_) for @$normals;
+install_as("vscode/keybindings.json", "$VSCODE/keybindings.json");
+install_as("vscode/settings.json", "$VSCODE/settings.json");
