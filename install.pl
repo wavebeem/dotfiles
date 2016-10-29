@@ -6,51 +6,56 @@ use File::Basename;
 
 my $HOME = $ENV{HOME};
 my $VSCODE = "$HOME/Library/Application Support/Code/User";
+my $DOTFILES = "$HOME/dotfiles";
 
 sub install {
-  my ($file) = @_;
-  my $dst = "$HOME/$file";
-  install_as($file, $dst);
+  my ($path) = @_;
+  my $dest = "$HOME/.$path";
+  install_as($path, $dest);
 }
 
 sub install_as {
-  my ($file, $dst) = @_;
-  my $dotless = $file;
-  $dotless =~ s/^\.//;
-  my $src = "$HOME/dotfiles/$dotless";
-  my $dir = dirname($dst);
-  if (-l $dst) {
-    unlink($dst);
+  my ($path, $dest) = @_;
+  if (-e $dest) {
+    if (-l $dest) {
+      unlink($dest);
+    } else {
+      return unless confirm("Delete $dest? [y/N] ");
+      remove_tree($dest);
+    }
   }
-  elsif (-e $dst) {
-    print("Delete $dst? [y/N] ");
-    return unless <STDIN> =~ /^y/i;
-    remove_tree($dst);
-  }
-  print("$src -> $dst\n");
+  my $dir = dirname($dest);
   make_path($dir) unless -d $dir;
-  symlink($src, $dst);
+  my $src = "$DOTFILES/$path";
+  print("$src -> $dest\n");
+  symlink($src, $dest);
+}
+
+sub confirm {
+  my ($message) = @_;
+  print($message);
+  <STDIN> =~ /^y/i;
 }
 
 install($_) for (
-  ".hushlogin",
-  ".welcome",
-  ".ackrc",
-  ".dircolors",
-  ".zshenv",
-  ".vimrc",
-  ".zshrc",
-  ".bashrc",
-  ".tmux.conf",
-  ".inputrc",
-  ".gitconfig",
-  ".config/fish/config.fish",
-  ".config/fish/functions",
-  ".atom/config.cson",
-  ".atom/init.coffee",
-  ".atom/keymap.cson",
-  ".atom/snippets.cson",
-  ".atom/styles.less",
+  "hushlogin",
+  "welcome",
+  "ackrc",
+  "dircolors",
+  "zshenv",
+  "vimrc",
+  "zshrc",
+  "bashrc",
+  "tmux.conf",
+  "inputrc",
+  "gitconfig",
+  "config/fish/config.fish",
+  "config/fish/functions",
+  "atom/config.cson",
+  "atom/init.coffee",
+  "atom/keymap.cson",
+  "atom/snippets.cson",
+  "atom/styles.less",
 );
 
 install_as("vscode/keybindings.json", "$VSCODE/keybindings.json");

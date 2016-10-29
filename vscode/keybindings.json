@@ -5,6 +5,11 @@
     "when": "editorTextFocus"
   },
   {
+    "key": "ctrl+l",
+    "command": "expandLineSelection",
+    "when": "editorTextFocus"
+  },
+  {
     "key": "alt+cmd+i",
     "command": "workbench.action.toggleDevTools",
     "when": "editorTextFocus"

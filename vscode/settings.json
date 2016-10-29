@@ -9,6 +9,8 @@
   "editor.renderIndentGuides": false,
   "editor.renderWhitespace": "boundary",
   "editor.cursorBlinking": "smooth",
+  // Use PowerShell on Windows
+  "terminal.integrated.shell.windows": "C:\\WINDOWS\\sysnative\\WindowsPowerShell\\v1.0\\powershell.exe",
   // Controls whether the terminal cursor blinks.
   "terminal.integrated.cursorBlinking": true,
   "files.exclude": {
