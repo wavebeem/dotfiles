@@ -1,11 +1,13 @@
 # dotfiles
 
-## Installation
+## Installation (Mac/Linux)
 
 ```
 ./install.pl
 ```
 
-## Advanced
+## Installation (Windows)
 
-Edit the `@file` array in `./install.pl` to install a different list of files.
+```
+.\windows\install.ps1
+```
