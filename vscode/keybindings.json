@@ -28,5 +28,10 @@
     "key": "ctrl+shift+m",
     "command": "editor.action.jumpToBracket",
     "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+k",
+    "command": "workbench.action.terminal.clear",
+    "when": "terminalFocus"
   }
 ]
