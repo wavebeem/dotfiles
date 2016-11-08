@@ -1,19 +1,22 @@
 {
   "workbench.editor.showTabs": false,
+  "workbench.editor.enablePreviewFromQuickOpen": false,
   "editor.fontFamily": "Fira Code, Menlo, monospace",
   "editor.fontSize": 16,
   "editor.fontLigatures": true,
   "editor.rulers": [80, 100, 120],
   "editor.tabSize": 2,
+  "editor.wordWrap": true,
   "editor.renderIndentGuides": false,
   "editor.renderWhitespace": "boundary",
   "editor.cursorBlinking": "smooth",
-  "terminal.integrated.lineHeight": 1.5,
+  "editor.wrappingIndent": "indent",
   // Use PowerShell on Windows
   "terminal.integrated.shell.windows": "C:\\WINDOWS\\sysnative\\WindowsPowerShell\\v1.0\\powershell.exe",
   // Controls whether the terminal cursor blinks.
   "terminal.integrated.cursorBlinking": true,
   "files.exclude": {
+    "**/.sass-cache": true,
     "**/dist": true,
     "**/.git": true,
     "**/.svn": true,
