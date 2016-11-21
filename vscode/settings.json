@@ -2,7 +2,7 @@
   "workbench.editor.showTabs": false,
   "workbench.editor.enablePreviewFromQuickOpen": false,
   "editor.fontFamily": "Fira Code, Menlo, monospace",
-  "editor.fontSize": 16,
+  "editor.fontSize": 14,
   "editor.fontLigatures": true,
   "editor.rulers": [
     80,
@@ -30,5 +30,6 @@
     "**/node_modules": true,
     "**/bower_components": true
   },
-  "git.confirmSync": false
+  "git.confirmSync": false,
+  "window.zoomLevel": 0
 }
