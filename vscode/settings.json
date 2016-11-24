@@ -1,7 +1,7 @@
 {
   "workbench.editor.showTabs": false,
   "workbench.editor.enablePreviewFromQuickOpen": false,
-  "editor.fontFamily": "Fira Code, Menlo, monospace",
+  "editor.fontFamily": "'Fira Code', Menlo, monospace",
   "editor.fontSize": 14,
   "editor.fontLigatures": true,
   "editor.rulers": [
@@ -14,7 +14,7 @@
   "editor.renderIndentGuides": false,
   "editor.renderWhitespace": "boundary",
   "editor.cursorBlinking": "smooth",
-  "editor.wrappingIndent": "indent",
+  "editor.wrappingIndent": "same",
   // Use PowerShell on Windows
   "terminal.integrated.shell.windows": "C:\\WINDOWS\\sysnative\\WindowsPowerShell\\v1.0\\powershell.exe",
   // Controls whether the terminal cursor blinks.
@@ -31,5 +31,7 @@
     "**/bower_components": true
   },
   "git.confirmSync": false,
+  "html.format.indentHandlebars": true,
+  "html.format.endWithNewline": true,
   "window.zoomLevel": 0
 }
