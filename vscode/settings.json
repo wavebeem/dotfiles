@@ -2,7 +2,7 @@
   "workbench.editor.showTabs": false,
   "workbench.editor.enablePreviewFromQuickOpen": false,
   "editor.fontFamily": "'Fira Code', Menlo, monospace",
-  "editor.fontSize": 14,
+  "editor.fontSize": 16,
   "editor.fontLigatures": true,
   "editor.rulers": [
     80,
@@ -19,6 +19,7 @@
   "terminal.integrated.shell.windows": "C:\\WINDOWS\\sysnative\\WindowsPowerShell\\v1.0\\powershell.exe",
   // Controls whether the terminal cursor blinks.
   "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.fontSize": 14,
   "files.exclude": {
     "**/.sass-cache": true,
     "**/dist": true,
