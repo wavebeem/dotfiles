@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <key name="Software">
 	<key name="ConEmu">
-		<key name=".Vanilla" modified="2016-11-04 22:02:23" build="161022">
+		<key name=".Vanilla" modified="2016-12-04 15:41:43" build="161203">
 			<value name="StartType" type="hex" data="02"/>
 			<value name="CmdLine" type="string" data="bash"/>
 			<value name="StartTasksFile" type="string" data=""/>
@@ -125,7 +125,7 @@
 			<value name="Multi.SplitHeight" type="hex" data="04"/>
 			<value name="KeyboardHooks" type="hex" data="01"/>
 			<value name="FontName" type="string" data="Fira Code"/>
-			<value name="FontName2" type="string" data=""/>
+			<value name="FontName2" type="string" data="Fira Code"/>
 			<value name="FontAutoSize" type="hex" data="00"/>
 			<value name="FontSize" type="ulong" data="16"/>
 			<value name="FontSizeX" type="ulong" data="0"/>
@@ -156,11 +156,11 @@
 			<value name="Cascaded" type="hex" data="01"/>
 			<value name="IntegralSize" type="hex" data="01"/>
 			<value name="WindowMode" type="dword" data="0000051f"/>
-			<value name="ConWnd X" type="long" data="1675"/>
-			<value name="ConWnd Y" type="long" data="0"/>
+			<value name="ConWnd X" type="long" data="632"/>
+			<value name="ConWnd Y" type="long" data="155"/>
 			<value name="LastMonitor" type="string" data="0,0,2560,1400"/>
-			<value name="ConWnd Width" type="dword" data="00000055"/>
-			<value name="ConWnd Height" type="dword" data="00000046"/>
+			<value name="ConWnd Width" type="dword" data="00000059"/>
+			<value name="ConWnd Height" type="dword" data="00000030"/>
 			<value name="16bit Height" type="ulong" data="0"/>
 			<value name="QuakeStyle" type="hex" data="00"/>
 			<value name="Restore2ActiveMon" type="hex" data="00"/>
@@ -257,12 +257,12 @@
 			<value name="DragPanelBothEdges" type="hex" data="00"/>
 			<value name="KeyBarRClick" type="hex" data="01"/>
 			<value name="StatusBar.Show" type="hex" data="00"/>
-			<value name="StatusBar.Flags" type="dword" data="00000007"/>
+			<value name="StatusBar.Flags" type="dword" data="00000002"/>
 			<value name="StatusFontFace" type="string" data="Segoe UI Semibold"/>
 			<value name="StatusFontCharSet" type="ulong" data="0"/>
 			<value name="StatusFontHeight" type="long" data="12"/>
-			<value name="StatusBar.Color.Back" type="dword" data="00ebeff3"/>
-			<value name="StatusBar.Color.Light" type="dword" data="005c7b8e"/>
+			<value name="StatusBar.Color.Back" type="dword" data="00ffffff"/>
+			<value name="StatusBar.Color.Light" type="dword" data="00747474"/>
 			<value name="StatusBar.Color.Dark" type="dword" data="00dddddd"/>
 			<value name="StatusBar.Hide.VCon" type="hex" data="01"/>
 			<value name="StatusBar.Hide.CapsL" type="hex" data="01"/>
@@ -404,7 +404,7 @@
 			<value name="Update.DownloadPath" type="string" data="%TEMP%\ConEmu"/>
 			<value name="Update.LeavePackages" type="hex" data="00"/>
 			<value name="Update.PostUpdateCmd" type="string" data="echo Last successful update&gt;ConEmuUpdate.info &amp;&amp; date /t&gt;&gt;ConEmuUpdate.info &amp;&amp; time /t&gt;&gt;ConEmuUpdate.info"/>
-			<key name="HotKeys" modified="2016-11-04 22:02:23" build="161022">
+			<key name="HotKeys" modified="2016-12-04 15:41:43" build="161203">
 				<value name="KeyMacroVersion" type="hex" data="02"/>
 				<value name="Multi.Modifier" type="dword" data="000000a2"/>
 				<value name="Multi.ArrowsModifier" type="dword" data="0000105b"/>
@@ -456,7 +456,7 @@
 				<value name="KillProcessKey" type="dword" data="00000000"/>
 				<value name="KillAllButShellKey" type="dword" data="00105b2e"/>
 				<value name="DuplicateRootKey" type="dword" data="00005b53"/>
-				<value name="CloseConEmuKey" type="dword" data="00005b73"/>
+				<value name="CloseConEmuKey" type="dword" data="00001251"/>
 				<value name="Multi.Rename" type="dword" data="00005d52"/>
 				<value name="AffinityPriorityKey" type="dword" data="00005d41"/>
 				<value name="Multi.MoveLeft" type="dword" data="00125b25"/>
@@ -509,7 +509,7 @@
 				<value name="Key.BufTop" type="dword" data="00005d24"/>
 				<value name="Key.BufBottom" type="dword" data="00005d23"/>
 				<value name="Key.BufCursor" type="dword" data="00005d08"/>
-				<value name="Key.ResetTerm" type="dword" data="0010114b"/>
+				<value name="Key.ResetTerm" type="dword" data="0000114b"/>
 				<value name="FontLargerKey" type="dword" data="000011d0"/>
 				<value name="FontSmallerKey" type="dword" data="000011d1"/>
 				<value name="FontOriginalKey" type="dword" data="00001104"/>
@@ -589,9 +589,9 @@
 				<value name="DndRKey" type="hex" data="a2"/>
 				<value name="WndDragKey" type="dword" data="00121101"/>
 			</key>
-			<key name="Tasks" modified="2016-11-04 22:02:23" build="161022">
+			<key name="Tasks" modified="2016-12-04 15:41:43" build="161203">
 				<value name="Count" type="long" data="12"/>
-				<key name="Task1" modified="2016-11-04 22:02:23" build="161022">
+				<key name="Task1" modified="2016-12-04 15:41:43" build="161203">
 					<value name="Name" type="string" data="{Shells::cmd}"/>
 					<value name="Flags" type="dword" data="00000002"/>
 					<value name="Hotkey" type="dword" data="00000000"/>
@@ -600,7 +600,7 @@
 					<value name="Active" type="long" data="0"/>
 					<value name="Count" type="long" data="1"/>
 				</key>
-				<key name="Task2" modified="2016-11-04 22:02:23" build="161022">
+				<key name="Task2" modified="2016-12-04 15:41:43" build="161203">
 					<value name="Name" type="string" data="{Shells::cmd (Admin)}"/>
 					<value name="Flags" type="dword" data="00000000"/>
 					<value name="Hotkey" type="dword" data="00000000"/>
@@ -609,7 +609,7 @@
 					<value name="Active" type="long" data="0"/>
 					<value name="Count" type="long" data="1"/>
 				</key>
-				<key name="Task3" modified="2016-11-04 22:02:23" build="161022">
+				<key name="Task3" modified="2016-12-04 15:41:43" build="161203">
 					<value name="Name" type="string" data="{Shells::cmd-32}"/>
 					<value name="Flags" type="dword" data="00000000"/>
 					<value name="Hotkey" type="dword" data="00000000"/>
@@ -618,7 +618,7 @@
 					<value name="Active" type="long" data="0"/>
 					<value name="Count" type="long" data="1"/>
 				</key>
-				<key name="Task4" modified="2016-11-04 22:02:23" build="161022">
+				<key name="Task4" modified="2016-12-04 15:41:43" build="161203">
 					<value name="Name" type="string" data="{Shells::cmd 64/32}"/>
 					<value name="Flags" type="dword" data="00000000"/>
 					<value name="Hotkey" type="dword" data="00000000"/>
@@ -628,7 +628,7 @@
 					<value name="Active" type="long" data="1"/>
 					<value name="Count" type="long" data="2"/>
 				</key>
-				<key name="Task5" modified="2016-11-04 22:02:23" build="161022">
+				<key name="Task5" modified="2016-12-04 15:41:43" build="161203">
 					<value name="Name" type="string" data="{Shells::PowerShell}"/>
 					<value name="Flags" type="dword" data="00000000"/>
 					<value name="Hotkey" type="dword" data="00005b4e"/>
@@ -637,7 +637,7 @@
 					<value name="Active" type="long" data="0"/>
 					<value name="Count" type="long" data="1"/>
 				</key>
-				<key name="Task6" modified="2016-11-04 22:02:23" build="161022">
+				<key name="Task6" modified="2016-12-04 15:41:43" build="161203">
 					<value name="Name" type="string" data="{Shells::PowerShell (Admin)}"/>
 					<value name="Flags" type="dword" data="00000000"/>
 					<value name="Hotkey" type="dword" data="00125b4e"/>
@@ -646,7 +646,7 @@
 					<value name="Active" type="long" data="0"/>
 					<value name="Count" type="long" data="1"/>
 				</key>
-				<key name="Task7" modified="2016-11-04 22:02:23" build="161022">
+				<key name="Task7" modified="2016-12-04 15:41:43" build="161203">
 					<value name="Name" type="string" data="{Bash::CygWin bash}"/>
 					<value name="Flags" type="dword" data="00000000"/>
 					<value name="Hotkey" type="dword" data="00000000"/>
@@ -655,7 +655,7 @@
 					<value name="Active" type="long" data="0"/>
 					<value name="Count" type="long" data="1"/>
 				</key>
-				<key name="Task8" modified="2016-11-04 22:02:23" build="161022">
+				<key name="Task8" modified="2016-12-04 15:41:43" build="161203">
 					<value name="Name" type="string" data="{Bash::Git bash}"/>
 					<value name="Flags" type="dword" data="00000000"/>
 					<value name="Hotkey" type="dword" data="00000000"/>
@@ -664,7 +664,7 @@
 					<value name="Active" type="long" data="0"/>
 					<value name="Count" type="long" data="1"/>
 				</key>
-				<key name="Task9" modified="2016-11-04 22:02:23" build="161022">
+				<key name="Task9" modified="2016-12-04 15:41:43" build="161203">
 					<value name="Name" type="string" data="{Helper::Show ANSI colors}"/>
 					<value name="Flags" type="dword" data="00000000"/>
 					<value name="Hotkey" type="dword" data="00000000"/>
@@ -673,7 +673,7 @@
 					<value name="Active" type="long" data="0"/>
 					<value name="Count" type="long" data="1"/>
 				</key>
-				<key name="Task10" modified="2016-11-04 22:02:23" build="161022">
+				<key name="Task10" modified="2016-12-04 15:41:43" build="161203">
 					<value name="Name" type="string" data="{Tools::Chocolatey (Admin)}"/>
 					<value name="Flags" type="dword" data="00000000"/>
 					<value name="Hotkey" type="dword" data="00000000"/>
@@ -682,7 +682,7 @@
 					<value name="Active" type="long" data="0"/>
 					<value name="Count" type="long" data="1"/>
 				</key>
-				<key name="Task11" modified="2016-11-04 22:02:23" build="161022">
+				<key name="Task11" modified="2016-12-04 15:41:43" build="161203">
 					<value name="Name" type="string" data="{WSL-Bash}"/>
 					<value name="Flags" type="dword" data="00000001"/>
 					<value name="Hotkey" type="dword" data="00115b4e"/>
@@ -691,7 +691,7 @@
 					<value name="Active" type="long" data="0"/>
 					<value name="Count" type="long" data="1"/>
 				</key>
-				<key name="Task12" modified="2016-11-04 22:02:23" build="161022">
+				<key name="Task12" modified="2016-12-04 15:41:43" build="161203">
 					<value name="Name" type="string" data="{WSL-Bash::Admin}"/>
 					<value name="Flags" type="dword" data="00000000"/>
 					<value name="Hotkey" type="dword" data="00000000"/>
@@ -701,12 +701,12 @@
 					<value name="Count" type="long" data="1"/>
 				</key>
 			</key>
-			<key name="Apps" modified="2016-11-04 22:02:23" build="161022">
+			<key name="Apps" modified="2016-12-04 15:41:43" build="161203">
 				<value name="Count" type="long" data="0"/>
 			</key>
-			<key name="Colors" modified="2016-11-04 22:02:23" build="161022">
+			<key name="Colors" modified="2016-12-04 15:41:43" build="161203">
 				<value name="Count" type="long" data="5"/>
-				<key name="Palette1" modified="2016-11-04 22:02:23" build="161022">
+				<key name="Palette1" modified="2016-12-04 15:41:43" build="161203">
 					<value name="Name" type="string" data="#Attached:powershell"/>
 					<value name="ExtendColors" type="hex" data="00"/>
 					<value name="ExtendColorIdx" type="hex" data="0e"/>
@@ -747,7 +747,7 @@
 					<value name="ColorTable30" type="dword" data="003bebff"/>
 					<value name="ColorTable31" type="dword" data="00eeeeee"/>
 				</key>
-				<key name="Palette2" modified="2016-11-04 22:02:23" build="161022">
+				<key name="Palette2" modified="2016-12-04 15:41:43" build="161203">
 					<value name="Name" type="string" data="Blue"/>
 					<value name="ExtendColors" type="hex" data="00"/>
 					<value name="ExtendColorIdx" type="hex" data="0b"/>
@@ -788,7 +788,7 @@
 					<value name="ColorTable30" type="dword" data="0000ffff"/>
 					<value name="ColorTable31" type="dword" data="00ffffff"/>
 				</key>
-				<key name="Palette3" modified="2016-11-04 22:02:23" build="161022">
+				<key name="Palette3" modified="2016-12-04 15:41:43" build="161203">
 					<value name="Name" type="string" data="Ficus"/>
 					<value name="ExtendColors" type="hex" data="00"/>
 					<value name="ExtendColorIdx" type="hex" data="0b"/>
@@ -829,7 +829,7 @@
 					<value name="ColorTable30" type="dword" data="0000ffff"/>
 					<value name="ColorTable31" type="dword" data="00ffffff"/>
 				</key>
-				<key name="Palette4" modified="2016-11-04 22:02:23" build="161022">
+				<key name="Palette4" modified="2016-12-04 15:41:43" build="161203">
 					<value name="Name" type="string" data="Flat Light"/>
 					<value name="ExtendColors" type="hex" data="00"/>
 					<value name="ExtendColorIdx" type="hex" data="0b"/>
@@ -870,7 +870,7 @@
 					<value name="ColorTable30" type="dword" data="0000ffff"/>
 					<value name="ColorTable31" type="dword" data="00ffffff"/>
 				</key>
-				<key name="Palette5" modified="2016-11-04 22:02:23" build="161022">
+				<key name="Palette5" modified="2016-12-04 15:41:43" build="161203">
 					<value name="Name" type="string" data="material-light"/>
 					<value name="ExtendColors" type="hex" data="01"/>
 					<value name="ExtendColorIdx" type="hex" data="0b"/>
@@ -912,6 +912,7 @@
 					<value name="ColorTable31" type="dword" data="00ffffff"/>
 				</key>
 			</key>
+			<value name="StatusBar.Hide.CellI" type="hex" data="01"/>
 		</key>
 	</key>
 </key>
