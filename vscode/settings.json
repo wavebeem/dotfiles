@@ -19,7 +19,8 @@
   "terminal.integrated.shell.windows": "C:\\WINDOWS\\sysnative\\WindowsPowerShell\\v1.0\\powershell.exe",
   // Controls whether the terminal cursor blinks.
   "terminal.integrated.cursorBlinking": true,
-  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.lineHeight": 1.5,
+  "terminal.integrated.fontSize": 16,
   "files.exclude": {
     "**/*.pyc": true,
     "**/.sass-cache": true,
