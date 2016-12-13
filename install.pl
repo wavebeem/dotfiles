@@ -51,11 +51,6 @@ install($_) for (
   "gitconfig",
   "config/fish/config.fish",
   "config/fish/functions",
-  "atom/config.cson",
-  "atom/init.coffee",
-  "atom/keymap.cson",
-  "atom/snippets.cson",
-  "atom/styles.less",
 );
 
 install_as("vscode/keybindings.json", "$VSCODE/keybindings.json");
