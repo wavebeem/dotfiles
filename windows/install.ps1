@@ -11,6 +11,8 @@ function install($path) {
 }
 
 function installAs($path, $dest) {
+  $src = "$DOTFILES\$path"
+  show $src $dest
   if (Test-Path $dest) {
     if (isSymlink $dest) {
       Remove-Item $dest
@@ -23,15 +25,17 @@ function installAs($path, $dest) {
   }
   $dir = (Get-Item $path).DirectoryName
   maybeCreatePrefix $dir
-  $src = "$DOTFILES\$path"
   linkItUp $src $dest
 }
 
-function linkItUp($src, $dest) {
+function show($src, $dest) {
   Write-Host -NoNewline -Foreground Green $src
   Write-Host -NoNewline -Foreground Blue " => "
   Write-Host -NoNewline -Foreground Red $dest
   Write-Host
+}
+
+function linkItUp($src, $dest) {
   New-Item -ItemType SymbolicLink -Path $dest -Value $src | Out-Null
 }
 
@@ -56,11 +60,7 @@ function isSymlink($path) {
 
 install "vimrc"
 install "gitconfig"
-install "atom\config.cson"
-install "atom\init.coffee"
-install "atom\keymap.cson"
-install "atom\snippets.cson"
-install "atom\styles.less"
 
+installAs "windows\Microsoft.PowerShell_profile.ps1" $profile
 installAs "vscode\keybindings.json" "$VSCODE\keybindings.json"
 installAs "vscode\settings.json" "$VSCODE\settings.json"
