@@ -21,6 +21,7 @@
   "terminal.integrated.cursorBlinking": true,
   "terminal.integrated.fontSize": 14,
   "files.exclude": {
+    "**/*.pyc": true,
     "**/.sass-cache": true,
     "**/dist": true,
     "**/.git": true,
