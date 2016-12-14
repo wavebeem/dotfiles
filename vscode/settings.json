@@ -24,6 +24,7 @@
   "files.exclude": {
     "**/*.pyc": true,
     "**/.sass-cache": true,
+    "**/build": true,
     "**/dist": true,
     "**/.git": true,
     "**/.svn": true,
