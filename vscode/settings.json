@@ -37,5 +37,10 @@
   "git.confirmSync": false,
   "html.format.indentHandlebars": true,
   "html.format.endWithNewline": true,
-  "window.zoomLevel": 0
+  "window.zoomLevel": 0,
+  "files.insertFinalNewline": true,
+  "editor.renderLineHighlight": "line",
+  "window.titleBarStyle": "native",
+  "window.fullScreenZenMode": false,
+  "terminal.integrated.scrollback": 10000
 }
