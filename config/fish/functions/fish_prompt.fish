@@ -1,7 +1,6 @@
 function fish_prompt
   set poo \U1F4A9
   set lollipop \U1F36D
-  set arrow "►"
 
   if test $status -eq 0
     set emoji $lollipop
@@ -11,5 +10,5 @@ function fish_prompt
 
   set_color reset
   echo
-  echo -n "$emoji  $arrow "
+  echo -n "$emoji  "
 end
