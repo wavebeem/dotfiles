@@ -1,15 +1,5 @@
 [
   {
-    "key": "cmd+l",
-    "command": "expandLineSelection",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "ctrl+l",
-    "command": "expandLineSelection",
-    "when": "editorTextFocus"
-  },
-  {
     "key": "alt+cmd+i",
     "command": "workbench.action.toggleDevTools",
     "when": "editorTextFocus"
@@ -17,16 +7,6 @@
   {
     "key": "cmd+0",
     "command": "workbench.action.zoomReset",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "ctrl+shift+k",
-    "command": "editor.action.deleteLines",
-    "when": "editorTextFocus && !editorReadonly"
-  },
-  {
-    "key": "ctrl+shift+m",
-    "command": "editor.action.jumpToBracket",
     "when": "editorTextFocus"
   },
   {
@@ -38,20 +18,5 @@
     "key": "ctrl+shift-w",
     "command": "workbench.action.terminal.kill",
     "when": "terminalFocus"
-  },
-  {
-    "key": "ctrl+shift+up",
-    "command": "editor.action.insertCursorAbove",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "cmd+shift+l",
-    "command": "editor.action.insertCursorAtEndOfEachLineSelected",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "ctrl+shift+down",
-    "command": "editor.action.insertCursorBelow",
-    "when": "editorTextFocus"
   }
 ]
