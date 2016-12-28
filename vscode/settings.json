@@ -11,8 +11,8 @@
   ],
   "editor.tabSize": 2,
   "editor.wordWrap": true,
-  "editor.renderIndentGuides": false,
-  "editor.renderWhitespace": "boundary",
+  "editor.renderIndentGuides": true,
+  "editor.renderWhitespace": "none",
   "editor.cursorBlinking": "smooth",
   "editor.wrappingIndent": "same",
   // Use PowerShell on Windows
