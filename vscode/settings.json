@@ -1,7 +1,7 @@
 {
   "workbench.editor.showTabs": false,
   "workbench.editor.enablePreviewFromQuickOpen": false,
-  "editor.fontFamily": "'Fira Code', Menlo, monospace",
+  "editor.fontFamily": "'Fira Code', Menlo, Consolas, monospace",
   "editor.fontSize": 16,
   "editor.fontLigatures": true,
   "editor.rulers": [

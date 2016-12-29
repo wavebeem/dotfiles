@@ -10,6 +10,11 @@
     "when": "editorTextFocus"
   },
   {
+    "key": "ctrl+0",
+    "command": "workbench.action.zoomReset",
+    "when": "editorTextFocus"
+  },
+  {
     "key": "ctrl+k",
     "command": "workbench.action.terminal.clear",
     "when": "terminalFocus"
@@ -18,5 +23,19 @@
     "key": "ctrl+shift-w",
     "command": "workbench.action.terminal.kill",
     "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+shift+j",
+    "command": "workbench.action.togglePanel"
+  },
+  {
+    "key": "shift+alt+t",
+    "command": "workbench.action.closeOtherEditors",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+,",
+    "command": "workbench.action.openGlobalSettings",
+    "when": "editorTextFocus"
   }
 ]
