@@ -44,5 +44,6 @@
   "window.titleBarStyle": "native",
   "window.fullScreenZenMode": false,
   "terminal.integrated.scrollback": 10000,
-  "workbench.activityBar.visible": true
+  "workbench.activityBar.visible": true,
+  "diffEditor.renderSideBySide": false
 }
