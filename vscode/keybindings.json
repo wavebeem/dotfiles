@@ -25,7 +25,7 @@
     "when": "terminalFocus"
   },
   {
-    "key": "ctrl+shift+;",
+    "key": "ctrl+shift+'",
     "command": "workbench.action.togglePanel"
   },
   {
