@@ -29,6 +29,8 @@ alias la "ll -a"
 
 alias serve "python -m SimpleHTTPServer"
 
+set -x VIRTUAL_ENV_DISABLE_PROMPT "yup"
+
 set -x LANG "en_US.UTF-8"
 set -x LSCOLORS "ExfxcxdxBxegedabagacad"
 
