@@ -415,7 +415,7 @@
 	<key>NSTableView Supports v2 KeyBingingTable</key>
 	<true/>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>258 296 796 473 0 0 1280 778 </string>
+	<string>199 202 918 416 0 0 1280 778 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
 	<string>427 4 850 774 0 0 1280 778 </string>
 	<key>New Bookmarks</key>
@@ -676,7 +676,7 @@
 				<real>0.98624563217163086</real>
 			</dict>
 			<key>Blinking Cursor</key>
-			<false/>
+			<true/>
 			<key>Blur</key>
 			<false/>
 			<key>Bold Color</key>
@@ -739,6 +739,8 @@
 				<key>Red Component</key>
 				<real>0.95686274766921997</real>
 			</dict>
+			<key>Cursor Type</key>
+			<integer>1</integer>
 			<key>Custom Command</key>
 			<string>No</string>
 			<key>Custom Directory</key>
@@ -1155,7 +1157,7 @@
 			<key>Use Bold Font</key>
 			<true/>
 			<key>Use Bright Bold</key>
-			<true/>
+			<false/>
 			<key>Use Italic Font</key>
 			<true/>
 			<key>Use Non-ASCII Font</key>
