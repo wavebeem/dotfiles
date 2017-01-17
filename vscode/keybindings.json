@@ -37,5 +37,14 @@
     "key": "ctrl+,",
     "command": "workbench.action.openGlobalSettings",
     "when": "editorTextFocus"
+  },
+  {
+    "key": "cmd+k cmd+p",
+    "command": "workbench.action.files.copyPathOfActiveFile"
+  },
+  {
+    "key": "cmd+k cmd+f",
+    "command": "editor.action.formatDocument",
+    "when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly"
   }
 ]

@@ -2,7 +2,6 @@
   "workbench.editor.showTabs": false,
   "workbench.editor.enablePreviewFromQuickOpen": false,
   "editor.fontFamily": "'Fira Code', Menlo, Consolas, monospace",
-  "editor.fontSize": 16,
   "editor.fontLigatures": true,
   "editor.rulers": [
     80,
@@ -20,7 +19,6 @@
   // Controls whether the terminal cursor blinks.
   "terminal.integrated.cursorBlinking": true,
   "terminal.integrated.lineHeight": 1.2,
-  "terminal.integrated.fontSize": 14,
   "files.exclude": {
     "**/_site": true,
     "**/*.pyc": true,
@@ -45,5 +43,7 @@
   "window.fullScreenZenMode": false,
   "terminal.integrated.scrollback": 10000,
   "workbench.activityBar.visible": true,
-  "diffEditor.renderSideBySide": false
+  "diffEditor.renderSideBySide": false,
+  "terminal.integrated.fontSize": 19,
+  "editor.fontSize": 19
 }
