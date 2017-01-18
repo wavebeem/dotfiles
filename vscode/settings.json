@@ -44,6 +44,6 @@
   "terminal.integrated.scrollback": 10000,
   "workbench.activityBar.visible": true,
   "diffEditor.renderSideBySide": false,
-  "terminal.integrated.fontSize": 16,
+  "terminal.integrated.fontSize": 14,
   "editor.fontSize": 16
 }
