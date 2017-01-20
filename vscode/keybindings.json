@@ -1,4 +1,5 @@
 [
+  // TODO: Add mac/win keybinds for stuff too.
   {
     "key": "alt+cmd+i",
     "command": "workbench.action.toggleDevTools",
@@ -46,5 +47,10 @@
     "key": "cmd+k cmd+f",
     "command": "editor.action.formatDocument",
     "when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly"
-  }
+  },
+  {
+    "key": "cmd+k cmd+z",
+    "command": "editor.action.toggleWordWrap",
+    "when": "editorTextFocus"
+  },
 ]
