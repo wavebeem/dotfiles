@@ -20,6 +20,7 @@
   "terminal.integrated.cursorBlinking": true,
   "terminal.integrated.lineHeight": 1.2,
   "files.exclude": {
+    "**/bundle.*": true,
     "**/_site": true,
     "**/*.pyc": true,
     "**/.sass-cache": true,
@@ -38,7 +39,7 @@
   "html.format.endWithNewline": true,
   "window.zoomLevel": 0,
   "files.insertFinalNewline": true,
-  "editor.renderLineHighlight": "line",
+  "editor.renderLineHighlight": "all",
   "window.titleBarStyle": "native",
   "window.fullScreenZenMode": false,
   "terminal.integrated.scrollback": 10000,
