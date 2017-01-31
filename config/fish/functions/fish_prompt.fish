@@ -9,5 +9,7 @@ function fish_prompt
     set char "✖︎"
   end
   echo
-  echo -n "$char "
+  echo -n $char
+  set_color reset
+  echo -n " "
 end
