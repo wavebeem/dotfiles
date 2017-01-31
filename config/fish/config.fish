@@ -45,8 +45,8 @@ set -x PATH ~/.local/bin $PATH
 
 set fish_greeting
 
-set -l primary_color green --bold
-set -l secondary_color magenta --bold
+set -l primary_color blue --bold
+set -l secondary_color yellow --bold
 set -l error_color red
 
 set fish_color_normal $secondary_color
