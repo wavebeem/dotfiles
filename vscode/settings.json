@@ -15,7 +15,8 @@
   "editor.cursorBlinking": "smooth",
   "editor.wrappingIndent": "same",
   // Use PowerShell on Windows
-  "terminal.integrated.shell.windows": "C:\\WINDOWS\\sysnative\\WindowsPowerShell\\v1.0\\powershell.exe",
+  // Shouldn't be necessary now
+  // "terminal.integrated.shell.windows": "C:\\WINDOWS\\sysnative\\WindowsPowerShell\\v1.0\\powershell.exe",
   // Controls whether the terminal cursor blinks.
   "terminal.integrated.cursorBlinking": true,
   "terminal.integrated.lineHeight": 1.2,
@@ -41,10 +42,11 @@
   "files.insertFinalNewline": true,
   "editor.renderLineHighlight": "all",
   "window.titleBarStyle": "native",
-  "window.fullScreenZenMode": false,
   "terminal.integrated.scrollback": 10000,
   "workbench.activityBar.visible": true,
   "diffEditor.renderSideBySide": false,
   "terminal.integrated.fontSize": 14,
-  "editor.fontSize": 16
+  "editor.fontSize": 16,
+  "terminal.integrated.cursorStyle": "line",
+  "zenMode.fullScreen": false
 }
