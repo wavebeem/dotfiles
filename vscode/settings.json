@@ -14,10 +14,6 @@
   "editor.renderWhitespace": "none",
   "editor.cursorBlinking": "smooth",
   "editor.wrappingIndent": "same",
-  // Use PowerShell on Windows
-  // Shouldn't be necessary now
-  // "terminal.integrated.shell.windows": "C:\\WINDOWS\\sysnative\\WindowsPowerShell\\v1.0\\powershell.exe",
-  // Controls whether the terminal cursor blinks.
   "terminal.integrated.cursorBlinking": true,
   "terminal.integrated.lineHeight": 1.2,
   "files.exclude": {
@@ -48,5 +44,6 @@
   "terminal.integrated.fontSize": 14,
   "editor.fontSize": 16,
   "terminal.integrated.cursorStyle": "line",
-  "zenMode.fullScreen": false
+  "zenMode.fullScreen": false,
+  "window.menuBarVisibility": "toggle"
 }

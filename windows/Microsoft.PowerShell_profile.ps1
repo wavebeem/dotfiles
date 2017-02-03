@@ -15,7 +15,7 @@ Set-Alias l ls
 
 function prompt {
   Write-Host ""
-  Write-Host ">" -NoNewline -ForegroundColor $color
+  Write-Host "=>" -NoNewline -ForegroundColor $color
   return " "
 }
 
