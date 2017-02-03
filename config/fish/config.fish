@@ -29,6 +29,8 @@ alias la "ll -a"
 
 alias serve "python -m SimpleHTTPServer"
 
+set -x VIRTUAL_ENV_DISABLE_PROMPT "yup"
+
 set -x LANG "en_US.UTF-8"
 set -x LSCOLORS "ExfxcxdxBxegedabagacad"
 
@@ -43,8 +45,8 @@ set -x PATH ~/.local/bin $PATH
 
 set fish_greeting
 
-set -l primary_color green --bold
-set -l secondary_color magenta --bold
+set -l primary_color blue --bold
+set -l secondary_color yellow --bold
 set -l error_color red
 
 set fish_color_normal $secondary_color

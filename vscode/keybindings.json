@@ -1,4 +1,5 @@
 [
+  // TODO: Add mac/win keybinds for stuff too.
   {
     "key": "alt+cmd+i",
     "command": "workbench.action.toggleDevTools",
@@ -25,7 +26,7 @@
     "when": "terminalFocus"
   },
   {
-    "key": "ctrl+shift+j",
+    "key": "ctrl+shift+'",
     "command": "workbench.action.togglePanel"
   },
   {
@@ -37,5 +38,19 @@
     "key": "ctrl+,",
     "command": "workbench.action.openGlobalSettings",
     "when": "editorTextFocus"
-  }
+  },
+  {
+    "key": "cmd+k cmd+p",
+    "command": "workbench.action.files.copyPathOfActiveFile"
+  },
+  {
+    "key": "cmd+k cmd+f",
+    "command": "editor.action.formatDocument",
+    "when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "cmd+k cmd+z",
+    "command": "editor.action.toggleWordWrap",
+    "when": "editorTextFocus"
+  },
 ]

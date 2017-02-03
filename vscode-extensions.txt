@@ -1,0 +1,11 @@
+LaurentTreguier.vscode-simple-icons
+TeddyDD.fish
+dbaeumer.vscode-eslint
+donjayamanne.python
+groksrc.haml
+ms-vscode.PowerShell
+ms-vscode.sublime-keybindings
+peterjuras.fontsize-shortcuts
+rebornix.Ruby
+shardulm94.trailing-spaces
+wavebeem.theme-unoduetre
