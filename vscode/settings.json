@@ -19,9 +19,7 @@
   "files.watcherExclude": {
     "**/.git/objects/**": true,
     "**/node_modules/**": true,
-    "**/bower_components/**": true,
-    "**/**": true,
-    "**/*": true
+    "**/bower_components/**": true
   },
   "files.exclude": {
     "**/bundle.*": true,
@@ -50,7 +48,7 @@
   "diffEditor.renderSideBySide": false,
   "terminal.integrated.fontSize": 14,
   "editor.fontSize": 16,
-  "terminal.integrated.cursorStyle": "line",
+  "terminal.integrated.cursorStyle": "block",
   "zenMode.fullScreen": false,
   "window.menuBarVisibility": "toggle"
 }
