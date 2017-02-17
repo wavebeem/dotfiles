@@ -3,10 +3,10 @@ function fish_prompt
   set_color reset
   if test $last_status -eq 0
     set_color green
-    set char "=>"
+    set char "=>>"
   else
     set_color red
-    set char "!!"
+    set char "***"
   end
   echo
   echo -n $char
