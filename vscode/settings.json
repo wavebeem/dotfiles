@@ -52,5 +52,6 @@
   "editor.fontSize": 16,
   "terminal.integrated.cursorStyle": "block",
   "zenMode.fullScreen": false,
-  "window.menuBarVisibility": "toggle"
+  "window.menuBarVisibility": "toggle",
+  "editor.acceptSuggestionOnEnter": false
 }
