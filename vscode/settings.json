@@ -22,6 +22,8 @@
     "**/bower_components/**": true
   },
   "files.exclude": {
+    "**/*.min.css": true,
+    "**/*.min.js": true,
     "**/bundle.*": true,
     "**/_site": true,
     "**/*.pyc": true,
