@@ -41,6 +41,7 @@ set -x LESS "-R"
 
 set -x PATH /usr/local/bin $PATH
 set -x PATH /usr/local/sbin $PATH
+set -x PATH ~/Library/Python/2.7/bin $PATH
 set -x PATH ~/.local/bin $PATH
 
 set fish_greeting
