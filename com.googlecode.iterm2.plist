@@ -842,14 +842,10 @@
 	<false/>
 	<key>LoadPrefsFromCustomFolder</key>
 	<true/>
-	<key>NSFontPanelAttributes</key>
-	<string>1, 0</string>
 	<key>NSNavLastRootDirectory</key>
-	<string>~/dotfiles/themes/iTerm</string>
+	<string>~/dotfiles</string>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
-	<string>{712, 459}</string>
-	<key>NSNavPanelExpandedSizeForSaveMode</key>
-	<string>{712, 488}</string>
+	<string>{712, 448}</string>
 	<key>NSQuotedKeystrokeBinding</key>
 	<string></string>
 	<key>NSRepeatCountBinding</key>
@@ -865,7 +861,7 @@
 	gAKACoAN0xAJChEVGVdOUy5rZXlzoxITFIADgASABaMWFxiABoAHgAiACVpJZGVudGlm
 	aWVyVVdpZHRoVkhpZGRlblEwI0BowAAAAAAACNIhIiMkWiRjbGFzc25hbWVYJGNsYXNz
 	ZXNcTlNEaWN0aW9uYXJ5oiMlWE5TT2JqZWN00xAJCicrGaMSExSAA4AEgAWjLC0YgAuA
-	DIAIgAlRMSNAdCAAAAAAANIhIjM0Xk5TTXV0YWJsZUFycmF5ozM1JVdOU0FycmF5XxAP
+	DIAIgAlRMSNAdCGdsi0OVtIhIjM0Xk5TTXV0YWJsZUFycmF5ozM1JVdOU0FycmF5XxAP
 	TlNLZXllZEFyY2hpdmVy0Tg5VUFycmF5gAEACAARABoAIwAtADIANwBGAEwAUQBcAGMA
 	ZgBoAGoAbABzAHsAfwCBAIMAhQCJAIsAjQCPAJEAnACiAKkAqwC0ALUAugDFAM4A2wDe
 	AOcA7gDyAPQA9gD4APwA/gEAAQIBBAEGAQ8BFAEjAScBLwFBAUQBSgAAAAAAAAIBAAAA
@@ -881,6 +877,7 @@
 	</data>
 	<key>NSTableView Supports v2 KeyBingingTable</key>
 	<true/>
+<<<<<<< HEAD
 	<key>NSToolbar Configuration com.apple.NSColorPanel</key>
 	<dict>
 		<key>TB Is Shown</key>
@@ -906,6 +903,12 @@
 	<string>565 131 682 741 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
 	<string>301 66 682 740 0 0 1440 878 </string>
+=======
+	<key>NSWindow Frame SharedPreferences</key>
+	<string>288 301 796 473 0 0 1280 777 </string>
+	<key>NSWindow Frame iTerm Window 0</key>
+	<string>598 14 682 764 0 0 1280 778 </string>
+>>>>>>> 80aa797eb513a2eb24e07cbedd808fc0324507da
 	<key>NeverWarnAboutShortLivedSessions_63E84873-BFE5-429D-932C-20AE5FE46D55</key>
 	<true/>
 	<key>NeverWarnAboutShortLivedSessions_63E84873-BFE5-429D-932C-20AE5FE46D55_selection</key>
@@ -1798,34 +1801,18 @@
 			<string>/Users/brian</string>
 		</dict>
 	</array>
-	<key>NoSyncConfirmBeta</key>
-	<true/>
-	<key>NoSyncDoNotWarnBeforeMultilinePaste</key>
-	<true/>
-	<key>NoSyncDoNotWarnBeforeMultilinePaste_selection</key>
-	<integer>1</integer>
-	<key>NoSyncHaveWarnedAboutIncompatibleSoftware</key>
+	<key>NoSyncHaveWarnedAboutPasteConfirmationChange</key>
 	<true/>
 	<key>NoSyncInstallationId</key>
-	<string>5EE2B5D4-ABB3-47C5-A786-FCDE4086BBDC</string>
-	<key>NoSyncLastTipTime</key>
-	<real>493163161.409428</real>
+	<string>669B15DB-171C-4B4A-95A6-146929206EDD</string>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
 	<integer>1</integer>
 	<key>NoSyncPermissionToShowTip</key>
 	<false/>
-	<key>NoSyncSuppressAnnyoingBellOffer</key>
-	<true/>
-	<key>NoSyncTimeOfFirstLaunchForIncompatibilityWarnings</key>
-	<real>485114037.05143201</real>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
-	<real>477261712.86271799</real>
-	<key>NoSyncTipsToNotShow</key>
-	<array>
-		<string>000</string>
-	</array>
+	<real>506325812.60123497</real>
 	<key>OnlyWhenMoreTabs</key>
 	<false/>
 	<key>PMPrintingExpandedStateForPrint2</key>
@@ -1864,7 +1851,7 @@
 		</dict>
 	</dict>
 	<key>PrefsCustomFolder</key>
-	<string>/Users/bmock/dotfiles</string>
+	<string>/Users/brian/dotfiles</string>
 	<key>PromptOnQuit</key>
 	<false/>
 	<key>SUEnableAutomaticChecks</key>
@@ -1872,11 +1859,15 @@
 	<key>SUFeedAlternateAppNameKey</key>
 	<string>iTerm</string>
 	<key>SUFeedURL</key>
-	<string>https://iterm2.com/appcasts/final.xml?shard=59</string>
+	<string>https://iterm2.com/appcasts/final.xml?shard=92</string>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
+<<<<<<< HEAD
 	<date>2017-03-01T16:14:33Z</date>
+=======
+	<date>2017-02-23T05:38:56Z</date>
+>>>>>>> 80aa797eb513a2eb24e07cbedd808fc0324507da
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>ShowBookmarkName</key>
@@ -1893,8 +1884,6 @@
 	<integer>0</integer>
 	<key>TabViewType</key>
 	<integer>0</integer>
-	<key>UKCrashReporterLastCrashReportDate</key>
-	<real>1471558272</real>
 	<key>URLHandlersByGuid</key>
 	<dict>
 		<key>ssh</key>
@@ -1907,7 +1896,7 @@
 	<key>WordCharacters</key>
 	<string>/-+\~_.</string>
 	<key>iTerm Version</key>
-	<string>3.0.20161214-nightly</string>
+	<string>3.0.20170113-nightly</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>0</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>

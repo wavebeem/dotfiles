@@ -26,6 +26,8 @@
     "**/*-min.*": true,
     "**/*-min-*": true,
     "**/*.min.*": true,
+    "**/*.min.css": true,
+    "**/*.min.js": true,
     "**/bundle.*": true,
     "**/_site": true,
     "**/*.pyc": true,
