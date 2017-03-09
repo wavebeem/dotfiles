@@ -877,38 +877,10 @@
 	</data>
 	<key>NSTableView Supports v2 KeyBingingTable</key>
 	<true/>
-<<<<<<< HEAD
-	<key>NSToolbar Configuration com.apple.NSColorPanel</key>
-	<dict>
-		<key>TB Is Shown</key>
-		<integer>1</integer>
-	</dict>
-	<key>NSWindow Frame NSFontPanel</key>
-	<string>180 225 634 406 0 0 2560 1418 </string>
-	<key>NSWindow Frame Preferences</key>
-	<string>1021 596 606 456 0 0 2560 1417 </string>
-	<key>NSWindow Frame SUStatusFrame</key>
-	<string>1080 967 400 129 0 0 2560 1418 </string>
-	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>410 364 620 392 0 0 1440 877 </string>
-	<key>NSWindow Frame SessionsPreferences</key>
-	<string>36 478 599 388 0 0 1440 878 </string>
-	<key>NSWindow Frame SharedPreferences</key>
-	<string>1252 539 796 473 0 0 2560 1417 </string>
-	<key>NSWindow Frame UKCrashReporter</key>
-	<string>230 833 592 584 0 0 2560 1417 </string>
-	<key>NSWindow Frame iTerm Window 0</key>
-	<string>855 4 1705 1413 0 0 2560 1417 </string>
-	<key>NSWindow Frame iTerm Window 1</key>
-	<string>565 131 682 741 0 0 2560 1417 </string>
-	<key>NSWindow Frame iTerm Window 2</key>
-	<string>301 66 682 740 0 0 1440 878 </string>
-=======
 	<key>NSWindow Frame SharedPreferences</key>
 	<string>288 301 796 473 0 0 1280 777 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
 	<string>598 14 682 764 0 0 1280 778 </string>
->>>>>>> 80aa797eb513a2eb24e07cbedd808fc0324507da
 	<key>NeverWarnAboutShortLivedSessions_63E84873-BFE5-429D-932C-20AE5FE46D55</key>
 	<true/>
 	<key>NeverWarnAboutShortLivedSessions_63E84873-BFE5-429D-932C-20AE5FE46D55_selection</key>
@@ -1863,11 +1835,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-<<<<<<< HEAD
 	<date>2017-03-01T16:14:33Z</date>
-=======
-	<date>2017-02-23T05:38:56Z</date>
->>>>>>> 80aa797eb513a2eb24e07cbedd808fc0324507da
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>ShowBookmarkName</key>
