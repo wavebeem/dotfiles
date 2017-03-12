@@ -39,10 +39,18 @@ set -x VISUAL "vim"
 set -x PAGER "less"
 set -x LESS "-R"
 
-set -x PATH /usr/local/bin $PATH
-set -x PATH /usr/local/sbin $PATH
-set -x PATH ~/Library/Python/2.7/bin $PATH
-set -x PATH ~/.local/bin $PATH
+function path_pre
+  if test -d $1
+    set -x PATH $1 $PATH
+  end
+end
+
+path_pre /usr/local/bin
+path_pre /usr/local/sbin
+path_pre ~/Library/Python/2.7/bin
+path_pre ~/.local/bin
+
+functions --erase path_pre
 
 set fish_greeting
 
