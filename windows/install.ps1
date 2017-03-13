@@ -60,6 +60,7 @@ function isSymlink($path) {
 
 install "vimrc"
 install "gitconfig"
+install "gitignore"
 
 installAs "windows\Microsoft.PowerShell_profile.ps1" $profile
 installAs "vscode\keybindings.json" "$VSCODE\keybindings.json"
