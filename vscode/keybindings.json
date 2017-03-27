@@ -53,4 +53,8 @@
     "command": "editor.action.toggleWordWrap",
     "when": "editorTextFocus"
   },
+  {
+    "key": "ctrl+shift+;",
+    "command": "workbench.action.toggleMaximizedPanel"
+  }
 ]
