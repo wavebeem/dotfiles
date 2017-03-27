@@ -65,8 +65,8 @@
   "editor.minimap.enabled": false,
   "editor.minimap.renderCharacters": true,
   "terminal.integrated.fontFamily": "'Fira Code', Menlo, Consolas, monospace",
+  "terminal.integrated.fontLigatures": true,
   "[python]": {
     "editor.tabSize": 4
-  },
-  "terminal.integrated.fontLigatures": true
+  }
 }
