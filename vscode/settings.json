@@ -37,6 +37,7 @@
     "**/.svn": true,
     "**/.hg": true,
     "**/.DS_Store": true,
+    "**/coverage": true,
     "**/tmp": true,
     "**/log": true,
     "**/logs": true,
