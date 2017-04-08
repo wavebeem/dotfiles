@@ -62,7 +62,7 @@
   "window.menuBarVisibility": "toggle",
   "editor.acceptSuggestionOnEnter": false,
   "workbench.colorTheme": "Uno Due Tre",
-  "workbench.iconTheme": "simple-icons",
+  "workbench.iconTheme": "vscode-icon-theme",
   "editor.minimap.enabled": false,
   "editor.minimap.renderCharacters": true,
   "terminal.integrated.fontFamily": "'Fira Code', Menlo, Consolas, monospace",

@@ -15,6 +15,7 @@ abbr -a gm "git commit -m"
 abbr -a g "git status"
 abbr -a gl "git log"
 abbr -a gg "git commit"
+abbr -a dc docker-compose
 
 switch (uname)
 case Darwin
@@ -40,8 +41,8 @@ set -x PAGER "less"
 set -x LESS "-R"
 
 function path_pre
-  if test -d $1
-    set -x PATH $1 $PATH
+  if test -d $argv[1]
+    set -x PATH $argv[1] $PATH
   end
 end
 
@@ -49,6 +50,7 @@ path_pre /usr/local/bin
 path_pre /usr/local/sbin
 path_pre ~/Library/Python/2.7/bin
 path_pre ~/.local/bin
+path_pre ~/.rbenv/bin
 
 functions --erase path_pre
 
