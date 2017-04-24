@@ -22,6 +22,7 @@
     "**/bower_components/**": true
   },
   "files.exclude": {
+    "**/.venv": true,
     "**/*-min.*": true,
     "**/*-min-*": true,
     "**/*.min.*": true,
@@ -69,5 +70,6 @@
   "terminal.integrated.fontLigatures": true,
   "[python]": {
     "editor.tabSize": 4
-  }
+  },
+  "python.linting.pep8Enabled": true
 }
