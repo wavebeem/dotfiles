@@ -52,7 +52,7 @@
   "window.zoomLevel": 0,
   "files.insertFinalNewline": true,
   "editor.renderLineHighlight": "all",
-  "window.titleBarStyle": "custom",
+  "window.titleBarStyle": "native",
   "terminal.integrated.scrollback": 10000,
   "workbench.activityBar.visible": true,
   "diffEditor.renderSideBySide": false,
