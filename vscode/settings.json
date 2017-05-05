@@ -1,5 +1,5 @@
 {
-  "workbench.editor.showTabs": false,
+  "workbench.editor.showTabs": true,
   "workbench.editor.enablePreviewFromQuickOpen": false,
   "editor.fontFamily": "'Fira Code', Menlo, Consolas, monospace",
   "editor.fontLigatures": true,
@@ -51,7 +51,7 @@
   "html.format.endWithNewline": true,
   "window.zoomLevel": 0,
   "files.insertFinalNewline": true,
-  "editor.renderLineHighlight": "line",
+  "editor.renderLineHighlight": "all",
   "window.titleBarStyle": "native",
   "terminal.integrated.scrollback": 10000,
   "workbench.activityBar.visible": true,
@@ -72,5 +72,6 @@
     "editor.tabSize": 4
   },
   "python.linting.pep8Enabled": true,
-  "python.linting.pylintEnabled": false
+  "python.linting.pylintEnabled": false,
+  "terminal.integrated.shell.windows": "C:\\WINDOWS\\Sysnative\\WindowsPowerShell\\v1.0\\powershell.exe"
 }

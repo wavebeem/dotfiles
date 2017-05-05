@@ -56,5 +56,9 @@
   {
     "key": "ctrl+shift+;",
     "command": "workbench.action.toggleMaximizedPanel"
+  },
+  {
+    "key": "ctrl+k ctrl+r",
+    "command": "workbench.action.reloadWindow"
   }
 ]
