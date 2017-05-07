@@ -1,11 +1,11 @@
 LaurentTreguier.vscode-simple-icons
 TeddyDD.fish
+arcticicestudio.nord-visual-studio-code
 dbaeumer.vscode-eslint
 donjayamanne.python
-groksrc.haml
+jtlowe.vscode-icon-theme
 ms-vscode.PowerShell
 ms-vscode.sublime-keybindings
-peterjuras.fontsize-shortcuts
 rebornix.Ruby
 shardulm94.trailing-spaces
 wavebeem.theme-unoduetre

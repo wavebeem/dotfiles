@@ -1,7 +1,7 @@
 [
   // TODO: Add mac/win keybinds for stuff too.
   {
-    "key": "alt+cmd+i",
+    "mac": "alt+cmd+i",
     "command": "workbench.action.toggleDevTools",
     "when": "editorTextFocus"
   },
@@ -60,5 +60,15 @@
   {
     "key": "ctrl+k ctrl+r",
     "command": "workbench.action.reloadWindow"
+  },
+  {
+    "key": "ctrl+shift+j",
+    "command": "workbench.action.terminal.focusNext",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+shift+k",
+    "command": "workbench.action.terminal.focusPrevious",
+    "when": "terminalFocus"
   }
 ]

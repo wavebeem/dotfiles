@@ -62,7 +62,6 @@
   "zenMode.fullScreen": false,
   "window.menuBarVisibility": "toggle",
   "editor.acceptSuggestionOnEnter": false,
-  "workbench.colorTheme": "Uno Due Tre",
   "workbench.iconTheme": "vscode-icon-theme",
   "editor.minimap.enabled": false,
   "editor.minimap.renderCharacters": true,
@@ -74,5 +73,6 @@
   "python.linting.pep8Enabled": true,
   "python.linting.pylintEnabled": false,
   "terminal.integrated.shell.windows": "C:\\WINDOWS\\Sysnative\\WindowsPowerShell\\v1.0\\powershell.exe",
-  "window.title": "${rootName}${separator}${appName}"
+  "window.title": "${rootName}${separator}${appName}",
+  "workbench.colorTheme": "Uno Due Tre"
 }

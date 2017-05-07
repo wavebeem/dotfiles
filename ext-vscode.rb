@@ -10,7 +10,7 @@ def load
 end
 
 def save
-  ext = `code --list-extensions`
+  ext = `code --list-extensions`.lines.sort.join
   File.write FILENAME, ext
 end
 
