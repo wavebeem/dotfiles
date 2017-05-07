@@ -59,6 +59,7 @@
   },
   {
     "key": "ctrl+k ctrl+r",
-    "command": "workbench.action.reloadWindow"
+    "command": "workbench.action.reloadWindow",
+    "when": "!terminalFocus"
   }
 ]
