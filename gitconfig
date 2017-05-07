@@ -1,15 +1,8 @@
 [user]
   name = Brian Mock
   email = brian@mockbrian.com
-[color]
-  diff = auto
-  status = auto
-  branch = auto
 [push]
   default = current
-[filter "lfs"]
-  clean = git-lfs clean %f
-  smudge = git-lfs smudge %f
-  required = true
 [core]
   excludesfile = ~/.gitignore
+  autocrlf = input
