@@ -1,4 +1,4 @@
-$color = "Cyan"
+$color = "Green"
 Set-PSReadlineOption -TokenKind None -ForegroundColor $color
 Set-PSReadlineOption -TokenKind Comment -ForegroundColor $color
 Set-PSReadlineOption -TokenKind Keyword -ForegroundColor $color
