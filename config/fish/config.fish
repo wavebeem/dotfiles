@@ -15,7 +15,6 @@ abbr -a gm "git commit -m"
 abbr -a g "git status"
 abbr -a gl "git log"
 abbr -a gg "git commit"
-abbr -a dc docker-compose
 
 switch (uname)
 case Darwin
