@@ -6,14 +6,5 @@ Cached Theme.pak
 # OS X Finder garbage
 .DS_Store
 
-# General Sublime Text garbage
-*.cache
-
-# Sublime Text Package Control garbage
-Package Control.system-ca-bundle
-Package Control.last-run
-Package Control.user-ca-bundle
-Package Control.merged-ca-bundle
-
-# Sublime Themes are kept in other repos
-*.tmTheme
+# npm garbage
+*.log
