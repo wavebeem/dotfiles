@@ -45,6 +45,7 @@ function path_pre
   end
 end
 
+path_pre /usr/sbin
 path_pre /usr/local/bin
 path_pre /usr/local/sbin
 path_pre ~/Library/Python/2.7/bin
