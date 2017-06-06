@@ -48,7 +48,6 @@ install($_) for (
   "bashrc",
   "tmux.conf",
   "inputrc",
-  "gitconfig",
   "gitignore",
   "config/fish/config.fish",
   "config/fish/functions",
