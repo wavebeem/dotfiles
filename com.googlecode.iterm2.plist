@@ -12,8 +12,6 @@
 	<integer>1</integer>
 	<key>AutoCommandHistory</key>
 	<false/>
-	<key>CommandSelection</key>
-	<true/>
 	<key>Custom Color Presets</key>
 	<dict>
 		<key>Dark</key>
@@ -729,8 +727,8 @@
 	<string>63E84873-BFE5-429D-932C-20AE5FE46D55</string>
 	<key>DisableWindowSizeSnap</key>
 	<true/>
-	<key>DoubleClickPerformsSmartSelection</key>
-	<false/>
+	<key>DrawOutlineAroundCursor</key>
+	<true/>
 	<key>EnableDivisionView</key>
 	<true/>
 	<key>EnableProxyIcon</key>
@@ -740,14 +738,14 @@
 		<key>0x19-0x60000</key>
 		<dict>
 			<key>Action</key>
-			<integer>39</integer>
+			<integer>2</integer>
 			<key>Text</key>
 			<string></string>
 		</dict>
 		<key>0x9-0x40000</key>
 		<dict>
 			<key>Action</key>
-			<integer>32</integer>
+			<integer>0</integer>
 			<key>Text</key>
 			<string></string>
 		</dict>
@@ -758,13 +756,6 @@
 			<key>Text</key>
 			<string></string>
 		</dict>
-		<key>0xf700-0x380000</key>
-		<dict>
-			<key>Action</key>
-			<integer>5</integer>
-			<key>Text</key>
-			<string></string>
-		</dict>
 		<key>0xf701-0x300000</key>
 		<dict>
 			<key>Action</key>
@@ -772,7 +763,42 @@
 			<key>Text</key>
 			<string></string>
 		</dict>
-		<key>0xf701-0x380000</key>
+		<key>0xf702-0x300000</key>
+		<dict>
+			<key>Action</key>
+			<integer>11</integer>
+			<key>Text</key>
+			<string>0x01</string>
+		</dict>
+		<key>0xf702-0x320000</key>
+		<dict>
+			<key>Action</key>
+			<integer>33</integer>
+			<key>Text</key>
+			<string></string>
+		</dict>
+		<key>0xf703-0x300000</key>
+		<dict>
+			<key>Action</key>
+			<integer>11</integer>
+			<key>Text</key>
+			<string>0x05</string>
+		</dict>
+		<key>0xf703-0x320000</key>
+		<dict>
+			<key>Action</key>
+			<integer>34</integer>
+			<key>Text</key>
+			<string></string>
+		</dict>
+		<key>0xf729-0x100000</key>
+		<dict>
+			<key>Action</key>
+			<integer>5</integer>
+			<key>Text</key>
+			<string></string>
+		</dict>
+		<key>0xf72b-0x100000</key>
 		<dict>
 			<key>Action</key>
 			<integer>4</integer>
@@ -855,17 +881,16 @@
 	</data>
 	<key>NSTableView Supports v2 KeyBingingTable</key>
 	<true/>
-	<key>NSToolbar Configuration com.apple.NSColorPanel</key>
-	<dict>
-		<key>TB Is Shown</key>
-		<integer>1</integer>
-	</dict>
+	<key>NSWindow Frame NSFontPanel</key>
+	<string>2032 82 616 314 1280 -280 1920 1057 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>119 222 796 473 0 0 1280 777 </string>
+	<string>2119 227 796 473 1280 -280 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>428 4 852 773 0 0 1280 777 </string>
+	<string>1358 151 604 585 1280 -280 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>246 7 688 750 0 0 1280 777 </string>
+	<string>1527 -173 688 753 1280 -280 1920 1057 </string>
+	<key>NSWindow Frame iTerm Window 2</key>
+	<string>1548 -196 688 753 1280 -280 1920 1057 </string>
 	<key>NeverWarnAboutShortLivedSessions_63E84873-BFE5-429D-932C-20AE5FE46D55</key>
 	<true/>
 	<key>NeverWarnAboutShortLivedSessions_63E84873-BFE5-429D-932C-20AE5FE46D55_selection</key>
@@ -1194,7 +1219,7 @@
 				<real>0.95686274766921997</real>
 			</dict>
 			<key>Cursor Type</key>
-			<integer>2</integer>
+			<integer>1</integer>
 			<key>Custom Command</key>
 			<string>No</string>
 			<key>Custom Directory</key>
@@ -1487,13 +1512,6 @@
 					<key>Text</key>
 					<string>b</string>
 				</dict>
-				<key>0xf702-0x300000</key>
-				<dict>
-					<key>Action</key>
-					<integer>11</integer>
-					<key>Text</key>
-					<string>0x01</string>
-				</dict>
 				<key>0xf703-0x220000</key>
 				<dict>
 					<key>Action</key>
@@ -1521,13 +1539,6 @@
 					<integer>10</integer>
 					<key>Text</key>
 					<string>f</string>
-				</dict>
-				<key>0xf703-0x300000</key>
-				<dict>
-					<key>Action</key>
-					<integer>11</integer>
-					<key>Text</key>
-					<string>0x05</string>
 				</dict>
 				<key>0xf704-0x20000</key>
 				<dict>
@@ -1757,7 +1768,7 @@
 			<key>Use Cursor Guide</key>
 			<false/>
 			<key>Use Italic Font</key>
-			<false/>
+			<true/>
 			<key>Use Non-ASCII Font</key>
 			<false/>
 			<key>Use Tab Color</key>
@@ -1775,18 +1786,10 @@
 	<key>NoSyncHaveWarnedAboutPasteConfirmationChange</key>
 	<true/>
 	<key>NoSyncInstallationId</key>
-	<string>669B15DB-171C-4B4A-95A6-146929206EDD</string>
-	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
-	<true/>
-	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
-	<integer>1</integer>
-	<key>NoSyncPermissionToShowTip</key>
-	<false/>
+	<string>EB1CC69B-3701-4744-B87C-E6082C045273</string>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
-	<real>506325812.60123497</real>
+	<real>517873013.30527902</real>
 	<key>OnlyWhenMoreTabs</key>
-	<false/>
-	<key>OptionClickMovesCursor</key>
 	<false/>
 	<key>PMPrintingExpandedStateForPrint2</key>
 	<false/>
@@ -1824,19 +1827,19 @@
 		</dict>
 	</dict>
 	<key>PrefsCustomFolder</key>
-	<string>/Users/brian/dotfiles</string>
+	<string>/Users/bmock/dotfiles</string>
 	<key>PromptOnQuit</key>
-	<false/>
+	<true/>
 	<key>SUEnableAutomaticChecks</key>
 	<true/>
 	<key>SUFeedAlternateAppNameKey</key>
 	<string>iTerm</string>
 	<key>SUFeedURL</key>
-	<string>https://iterm2.com/appcasts/final.xml?shard=92</string>
+	<string>https://iterm2.com/appcasts/final.xml?shard=19</string>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-06-01T03:59:14Z</date>
+	<date>2017-06-05T16:51:10Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>ShowBookmarkName</key>
@@ -1850,7 +1853,7 @@
 	<key>StretchTabsToFillBar</key>
 	<true/>
 	<key>TabStyle</key>
-	<integer>2</integer>
+	<integer>0</integer>
 	<key>TabViewType</key>
 	<integer>0</integer>
 	<key>TerminalMargin</key>
@@ -1871,7 +1874,7 @@
 	<key>findMode_iTerm</key>
 	<integer>0</integer>
 	<key>iTerm Version</key>
-	<string>3.1.20170406-nightly</string>
+	<string>3.1.20170530-nightly</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>0</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
