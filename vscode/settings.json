@@ -1,5 +1,5 @@
 {
-  "workbench.editor.showTabs": true,
+  "workbench.editor.showTabs": false,
   "workbench.editor.enablePreviewFromQuickOpen": false,
   "editor.fontFamily": "'Fira Code', Menlo, Consolas, monospace",
   "editor.fontLigatures": true,
@@ -52,7 +52,7 @@
   "window.zoomLevel": 0,
   "files.insertFinalNewline": true,
   "editor.renderLineHighlight": "all",
-  "window.titleBarStyle": "custom",
+  "window.titleBarStyle": "native",
   "terminal.integrated.scrollback": 10000,
   "workbench.activityBar.visible": true,
   "diffEditor.renderSideBySide": false,
