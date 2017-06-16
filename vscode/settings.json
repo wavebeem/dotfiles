@@ -58,7 +58,7 @@
   "diffEditor.renderSideBySide": false,
   "terminal.integrated.fontSize": 14,
   "editor.fontSize": 16,
-  "terminal.integrated.cursorStyle": "line",
+  "terminal.integrated.cursorStyle": "block",
   "zenMode.fullScreen": false,
   "window.menuBarVisibility": "toggle",
   "editor.acceptSuggestionOnEnter": false,
@@ -75,5 +75,6 @@
   "python.linting.pylintEnabled": false,
   "terminal.integrated.shell.windows": "C:\\WINDOWS\\Sysnative\\WindowsPowerShell\\v1.0\\powershell.exe",
   "window.title": "${rootName}${separator}${appName}",
-  "git.enableSmartCommit": true
+  "git.enableSmartCommit": true,
+  "git.enabled": true
 }
