@@ -4,17 +4,17 @@ function fish_prompt
   echo
   set light aaa
   set_color $light --bold
-  echo -n "::: "
+  echo -n ":: "
   set_color cyan --bold
   set user (whoami)
   set host (hostname -s)
   echo -n $user
   set_color $light --bold
-  echo -n " ::: "
+  echo -n " :: "
   set_color magenta --bold
   echo -n $host
   set_color $light --bold
-  echo -n " :::"
+  echo -n " ::"
   set_color reset
   echo -n " "
 end

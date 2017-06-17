@@ -76,7 +76,7 @@ set fish_color_escape $secondary_color
 set fish_color_cwd $secondary_color
 
 if status --is-interactive
-  if which rbenv ^/dev/null
+  if which rbenv >/dev/null ^/dev/null
     rbenv init - | source
   end
 
