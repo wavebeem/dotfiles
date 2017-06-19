@@ -1,6 +1,6 @@
+Equinusocio.vsc-material-theme
 LaurentTreguier.vscode-simple-icons
 TeddyDD.fish
-arcticicestudio.nord-visual-studio-code
 dbaeumer.vscode-eslint
 donjayamanne.python
 jtlowe.vscode-icon-theme

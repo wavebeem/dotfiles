@@ -61,7 +61,7 @@
   "terminal.integrated.cursorStyle": "block",
   "zenMode.fullScreen": false,
   "window.menuBarVisibility": "toggle",
-  "editor.acceptSuggestionOnEnter": false,
+  "editor.acceptSuggestionOnEnter": "off",
   "workbench.colorTheme": "Uno Due Tre",
   "workbench.iconTheme": "simple-icons",
   "editor.minimap.enabled": false,
