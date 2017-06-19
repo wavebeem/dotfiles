@@ -1,26 +1,27 @@
 $color = "Green"
-Set-PSReadlineOption -TokenKind None -ForegroundColor $color
-Set-PSReadlineOption -TokenKind Comment -ForegroundColor $color
-Set-PSReadlineOption -TokenKind Keyword -ForegroundColor $color
-Set-PSReadlineOption -TokenKind String -ForegroundColor $color
-Set-PSReadlineOption -TokenKind Operator -ForegroundColor $color
-Set-PSReadlineOption -TokenKind Variable -ForegroundColor $color
-Set-PSReadlineOption -TokenKind Command -ForegroundColor $color
-Set-PSReadlineOption -TokenKind Parameter -ForegroundColor $color
-Set-PSReadlineOption -TokenKind Type -ForegroundColor $color
-Set-PSReadlineOption -TokenKind Number -ForegroundColor $color
-Set-PSReadlineOption -TokenKind Member -ForegroundColor $color
+
+Set-PSReadlineOption -ForegroundColor $color -TokenKind None
+Set-PSReadlineOption -ForegroundColor $color -TokenKind Comment
+Set-PSReadlineOption -ForegroundColor $color -TokenKind Keyword
+Set-PSReadlineOption -ForegroundColor $color -TokenKind String
+Set-PSReadlineOption -ForegroundColor $color -TokenKind Operator
+Set-PSReadlineOption -ForegroundColor $color -TokenKind Variable
+Set-PSReadlineOption -ForegroundColor $color -TokenKind Command
+Set-PSReadlineOption -ForegroundColor $color -TokenKind Parameter
+Set-PSReadlineOption -ForegroundColor $color -TokenKind Type
+Set-PSReadlineOption -ForegroundColor $color -TokenKind Number
+Set-PSReadlineOption -ForegroundColor $color -TokenKind Member
 
 Set-Alias l ls
 Set-Alias ll ls
 
 function prompt {
   Write-Host ""
-  Write-Host ":: " -NoNewline -ForegroundColor Gray
-  Write-Host (hostname) -NoNewline -ForegroundColor Red
-  Write-Host " - " -NoNewline -ForegroundColor Gray
-  Write-Host $env:UserName -NoNewline -ForegroundColor Blue
-  Write-Host " ::" -NoNewline -ForegroundColor Gray
+  Write-Host -NoNewline -ForegroundColor Gray ":: "
+  Write-Host -NoNewline -ForegroundColor Red (hostname)
+  Write-Host -NoNewline -ForegroundColor Gray " - "
+  Write-Host -NoNewline -ForegroundColor Blue $env:UserName
+  Write-Host -NoNewline -ForegroundColor Gray " ::"
   return " "
 }
 

@@ -1,7 +1,7 @@
 # cd to directory of dotfiles based on this script.
 $scriptDir = Split-Path $SCRIPT:MyInvocation.MyCommand.Path -Parent
 $DOTFILES = Resolve-Path (Join-Path $scriptDir "..")
-cd $DOTFILES
+Set-Location $DOTFILES
 
 $VSCODE = "$env:APPDATA\Code\User"
 
