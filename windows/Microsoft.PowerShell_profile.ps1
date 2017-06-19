@@ -12,10 +12,15 @@ Set-PSReadlineOption -TokenKind Number -ForegroundColor $color
 Set-PSReadlineOption -TokenKind Member -ForegroundColor $color
 
 Set-Alias l ls
+Set-Alias ll ls
 
 function prompt {
   Write-Host ""
-  Write-Host "=>" -NoNewline -ForegroundColor $color
+  Write-Host ":: " -NoNewline -ForegroundColor Gray
+  Write-Host (hostname) -NoNewline -ForegroundColor Red
+  Write-Host " - " -NoNewline -ForegroundColor Gray
+  Write-Host $env:UserName -NoNewline -ForegroundColor Blue
+  Write-Host " ::" -NoNewline -ForegroundColor Gray
   return " "
 }
 
