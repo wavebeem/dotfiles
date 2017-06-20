@@ -76,5 +76,5 @@
   "terminal.integrated.shell.windows": "C:\\WINDOWS\\Sysnative\\WindowsPowerShell\\v1.0\\powershell.exe",
   "window.title": "${rootName}${separator}${appName}",
   "git.enableSmartCommit": true,
-  "git.enabled": true
+  "editor.dragAndDrop": false
 }
