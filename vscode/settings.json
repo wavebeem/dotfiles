@@ -62,7 +62,6 @@
   "zenMode.fullScreen": false,
   "window.menuBarVisibility": "toggle",
   "editor.acceptSuggestionOnEnter": "off",
-  "workbench.colorTheme": "Uno Due Tre",
   "workbench.iconTheme": "simple-icons",
   "editor.minimap.enabled": false,
   "editor.minimap.renderCharacters": true,
@@ -76,5 +75,6 @@
   "terminal.integrated.shell.windows": "C:\\WINDOWS\\Sysnative\\WindowsPowerShell\\v1.0\\powershell.exe",
   "window.title": "${rootName}${separator}${appName}",
   "git.enableSmartCommit": true,
-  "git.enabled": true
+  "git.enabled": true,
+  "workbench.colorTheme": "Uno Due Tre"
 }
