@@ -30,6 +30,10 @@ function dim {
   Write-Host $size.Width "by" $size.Height
 }
 
+function .. {
+  Set-Location ..
+}
+
 function g {
   git status
 }
