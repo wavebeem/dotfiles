@@ -25,6 +25,11 @@ function prompt {
   return " "
 }
 
+function dim {
+  $size = $host.UI.RawUI.WindowSize
+  Write-Host $size.Width "by" $size.Height
+}
+
 function g {
   git status
 }

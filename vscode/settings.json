@@ -76,5 +76,6 @@
   "window.title": "${rootName}${separator}${appName}",
   "git.enableSmartCommit": true,
   "git.enabled": true,
-  "workbench.colorTheme": "Uno Due Tre"
+  "workbench.colorTheme": "Uno Due Tre",
+  "editor.dragAndDrop": false
 }
