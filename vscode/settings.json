@@ -62,8 +62,7 @@
   "zenMode.fullScreen": false,
   "window.menuBarVisibility": "toggle",
   "editor.acceptSuggestionOnEnter": "off",
-  "workbench.colorTheme": "Uno Due Tre",
-  "workbench.iconTheme": "simple-icons",
+  "workbench.iconTheme": "minimalistic-icons",
   "editor.minimap.enabled": false,
   "editor.minimap.renderCharacters": true,
   "terminal.integrated.fontFamily": "'Fira Code', Menlo, Consolas, monospace",
@@ -76,5 +75,7 @@
   "terminal.integrated.shell.windows": "C:\\WINDOWS\\Sysnative\\WindowsPowerShell\\v1.0\\powershell.exe",
   "window.title": "${rootName}${separator}${appName}",
   "git.enableSmartCommit": true,
-  "editor.dragAndDrop": false
+  "git.enabled": true,
+  "editor.dragAndDrop": false,
+  "workbench.colorTheme": "Uno Due Tre"
 }

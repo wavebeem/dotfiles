@@ -57,7 +57,7 @@ functions --erase path_pre
 
 set fish_greeting
 
-set -l primary_color blue --bold
+set -l primary_color cyan --bold
 set -l secondary_color yellow --bold
 set -l error_color red
 
