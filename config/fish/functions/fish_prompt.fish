@@ -1,7 +1,6 @@
 function fish_prompt
   set last_status $status
   set_color reset
-  echo
   set light aaa
   # set_color $light --bold
   # echo -n ":: "
