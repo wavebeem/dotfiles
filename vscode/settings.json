@@ -62,7 +62,7 @@
   "zenMode.fullScreen": false,
   "window.menuBarVisibility": "toggle",
   "editor.acceptSuggestionOnEnter": "off",
-  "workbench.iconTheme": "simple-icons",
+  "workbench.iconTheme": "minimalistic-icons",
   "editor.minimap.enabled": false,
   "editor.minimap.renderCharacters": true,
   "terminal.integrated.fontFamily": "'Fira Code', Menlo, Consolas, monospace",
@@ -76,6 +76,6 @@
   "window.title": "${rootName}${separator}${appName}",
   "git.enableSmartCommit": true,
   "git.enabled": true,
-  "workbench.colorTheme": "Uno Due Tre",
-  "editor.dragAndDrop": false
+  "editor.dragAndDrop": false,
+  "workbench.colorTheme": "Uno Due Tre"
 }
