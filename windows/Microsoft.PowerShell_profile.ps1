@@ -17,11 +17,8 @@ Set-Alias ll ls
 
 function prompt {
   Write-Host ""
-  Write-Host -NoNewline -ForegroundColor Gray ":: "
-  Write-Host -NoNewline -ForegroundColor Red $env:UserName
-  Write-Host -NoNewline -ForegroundColor Gray " - "
-  Write-Host -NoNewline -ForegroundColor Magenta (hostname)
-  Write-Host -NoNewline -ForegroundColor Gray " ::"
+  Write-Host -NoNewline -ForegroundColor Blue (hostname)
+  Write-Host -NoNewline -ForegroundColor Gray " :::"
   return " "
 }
 
