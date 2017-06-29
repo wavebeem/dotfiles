@@ -839,9 +839,9 @@
 	<key>HideTab</key>
 	<true/>
 	<key>HideTabCloseButton</key>
-	<true/>
+	<false/>
 	<key>HideTabNumber</key>
-	<true/>
+	<false/>
 	<key>HotkeyMigratedFromSingleToMulti</key>
 	<true/>
 	<key>JobName</key>
@@ -883,19 +883,18 @@
 	</data>
 	<key>NSTableView Supports v2 KeyBingingTable</key>
 	<true/>
-	<key>NSToolbar Configuration com.apple.NSColorPanel</key>
-	<dict>
-		<key>TB Is Shown</key>
-		<integer>1</integer>
-	</dict>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>307 765 918 381 0 0 2560 1418 </string>
+	<string>1515 732 796 473 0 0 3440 1418 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>428 25 688 753 0 0 1280 778 </string>
+	<string>1478 463 688 753 0 0 3440 1418 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>458 504 688 753 0 0 2560 1418 </string>
+	<string>2361 308 688 753 0 0 3440 1418 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
-	<string>173 4 688 774 0 0 1280 778 </string>
+	<string>0 665 688 753 0 0 3440 1418 </string>
+	<key>NSWindow Frame iTerm Window 3</key>
+	<string>0 545 477 872 0 0 3440 1417 </string>
+	<key>NSWindow Frame iTerm Window 4</key>
+	<string>537 112 688 753 0 0 3440 1417 </string>
 	<key>NeverWarnAboutShortLivedSessions_63E84873-BFE5-429D-932C-20AE5FE46D55</key>
 	<true/>
 	<key>NeverWarnAboutShortLivedSessions_63E84873-BFE5-429D-932C-20AE5FE46D55_selection</key>
@@ -1224,7 +1223,7 @@
 				<real>0.95686274766921997</real>
 			</dict>
 			<key>Cursor Type</key>
-			<integer>1</integer>
+			<integer>2</integer>
 			<key>Custom Command</key>
 			<string>No</string>
 			<key>Custom Directory</key>
@@ -1791,16 +1790,14 @@
 	<key>NoSyncHaveWarnedAboutPasteConfirmationChange</key>
 	<true/>
 	<key>NoSyncInstallationId</key>
-	<string>669B15DB-171C-4B4A-95A6-146929206EDD</string>
-	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
-	<true/>
-	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
-	<integer>1</integer>
+	<string>7B8755CB-03FE-44F3-905B-C12727C34612</string>
 	<key>NoSyncPermissionToShowTip</key>
 	<false/>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
-	<real>506325812.60123497</real>
+	<real>518734448.33850098</real>
 	<key>OnlyWhenMoreTabs</key>
+	<false/>
+	<key>OpenBookmark</key>
 	<false/>
 	<key>PMPrintingExpandedStateForPrint2</key>
 	<false/>
@@ -1838,7 +1835,7 @@
 		</dict>
 	</dict>
 	<key>PrefsCustomFolder</key>
-	<string>/Users/brian/dotfiles</string>
+	<string>/Users/bmock/dotfiles</string>
 	<key>PromptOnQuit</key>
 	<false/>
 	<key>SUEnableAutomaticChecks</key>
@@ -1846,11 +1843,11 @@
 	<key>SUFeedAlternateAppNameKey</key>
 	<string>iTerm</string>
 	<key>SUFeedURL</key>
-	<string>https://iterm2.com/appcasts/final.xml?shard=92</string>
+	<string>https://iterm2.com/appcasts/final.xml?shard=90</string>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-06-18T20:23:17Z</date>
+	<date>2017-06-23T18:46:30Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>ShowBookmarkName</key>
@@ -1866,7 +1863,7 @@
 	<key>StretchTabsToFillBar</key>
 	<true/>
 	<key>TabStyle</key>
-	<integer>2</integer>
+	<integer>0</integer>
 	<key>TabViewType</key>
 	<integer>0</integer>
 	<key>TerminalMargin</key>
@@ -1887,7 +1884,7 @@
 	<key>findMode_iTerm</key>
 	<integer>0</integer>
 	<key>iTerm Version</key>
-	<string>3.1.20170406-nightly</string>
+	<string>3.1.20170609-nightly</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>0</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
