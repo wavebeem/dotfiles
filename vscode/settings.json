@@ -22,6 +22,7 @@
     "**/bower_components/**": true
   },
   "files.exclude": {
+    "**/.nyc_output": true,
     "**/.venv": true,
     "**/*-min.*": true,
     "**/*-min-*": true,
