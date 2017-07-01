@@ -39,10 +39,8 @@ set -x VISUAL "vim"
 set -x PAGER "less"
 set -x LESS "-R"
 
-function path_pre
-  if test -d $argv[1]
-    set -x PATH $argv[1] $PATH
-  end
+function postexec --on-event fish_postexec
+  echo
 end
 
 path_pre /sbin
@@ -52,8 +50,6 @@ path_pre /usr/local/sbin
 path_pre ~/Library/Python/2.7/bin
 path_pre ~/.local/bin
 path_pre ~/.rbenv/bin
-
-functions --erase path_pre
 
 set fish_greeting
 

@@ -17,17 +17,18 @@ Set-Alias ll ls
 
 function prompt {
   Write-Host ""
-  Write-Host -NoNewline -ForegroundColor Gray ":: "
-  Write-Host -NoNewline -ForegroundColor Red $env:UserName
-  Write-Host -NoNewline -ForegroundColor Gray " - "
-  Write-Host -NoNewline -ForegroundColor Magenta (hostname)
-  Write-Host -NoNewline -ForegroundColor Gray " ::"
+  Write-Host -NoNewline -ForegroundColor Blue (hostname)
+  Write-Host -NoNewline -ForegroundColor Gray " :::"
   return " "
 }
 
 function dim {
   $size = $host.UI.RawUI.WindowSize
   Write-Host $size.Width "by" $size.Height
+}
+
+function .. {
+  Set-Location ..
 }
 
 function g {
