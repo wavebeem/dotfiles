@@ -22,6 +22,7 @@
     "**/bower_components/**": true
   },
   "files.exclude": {
+    "**/*.egg-info": true,
     "**/.venv": true,
     "**/*-min.*": true,
     "**/*-min-*": true,
