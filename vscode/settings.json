@@ -22,7 +22,11 @@
     "**/bower_components/**": true
   },
   "files.exclude": {
+<<<<<<< HEAD
     "**/*.egg-info": true,
+=======
+    "**/.nyc_output": true,
+>>>>>>> 482720a62929bf33f1e038bf3df27041da5503ce
     "**/.venv": true,
     "**/*-min.*": true,
     "**/*-min-*": true,

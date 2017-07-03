@@ -1,14 +1,18 @@
 function fish_prompt
-  set last_status $status
   set_color reset
-  set light aaa
+
+  # Apparently you actually have to quote for `test` with fish :/
+  if test -n "$VIRTUAL_ENV"
+    set_color aaa --bold
+    echo -n "(venv) "
+  end
+
   set_color green --bold
-  set user (whoami)
-  set host (hostname -s)
-  set_color green --bold
-  echo -n $host
-  set_color $light --bold
+  echo -n (hostname -s)
+
+  set_color aaa --bold
   echo -n " :::"
+
   set_color reset
   echo -n " "
 end
