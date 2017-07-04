@@ -1,11 +1,3 @@
-function dim
-  echo "$COLUMNS by $LINES"
-end
-
-function '$'
-  eval $argv
-end
-
 abbr -a gco "git checkout"
 abbr -a gdd "git diff --cached"
 abbr -a ga "git add"
@@ -39,10 +31,6 @@ set -x VISUAL "vim"
 set -x PAGER "less"
 set -x LESS "-R"
 
-function postexec --on-event fish_postexec
-  echo
-end
-
 path_pre /sbin
 path_pre /usr/sbin
 path_pre /usr/local/bin
@@ -50,6 +38,8 @@ path_pre /usr/local/sbin
 path_pre ~/Library/Python/2.7/bin
 path_pre ~/.local/bin
 path_pre ~/.rbenv/bin
+
+set -g fish_prompt_pwd_dir_length 0
 
 set fish_greeting
 
