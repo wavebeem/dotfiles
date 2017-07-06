@@ -10,7 +10,7 @@ function fish_prompt
 
   printf "%s%s" $c_light (whoami)
   printf "%s" $separator
-  printf "%s%s" $c_green (hostname)
+  printf "%s%s" $c_green (hostname -s)
   printf "%s" $separator
   printf "%s%s" $c_normal (prompt_pwd)
 
