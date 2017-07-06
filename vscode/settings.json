@@ -80,5 +80,6 @@
   "git.enabled": true,
   "editor.dragAndDrop": false,
   "workbench.colorTheme": "Uno Due Tre",
-  "gitlens.codeLens.enabled": false
+  "gitlens.codeLens.enabled": false,
+  "gitlens.blame.line.enabled": false
 }
