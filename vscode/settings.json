@@ -79,5 +79,6 @@
   "git.enableSmartCommit": true,
   "git.enabled": true,
   "editor.dragAndDrop": false,
-  "workbench.colorTheme": "Uno Due Tre"
+  "workbench.colorTheme": "Uno Due Tre",
+  "gitlens.codeLens.enabled": false
 }

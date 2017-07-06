@@ -16,13 +16,11 @@ sub install {
 
 sub install_as {
   my ($path, $dest) = @_;
-  if (-e $dest) {
-    if (-l $dest) {
-      unlink($dest);
-    } else {
-      return unless confirm("Delete $dest? [y/N] ");
-      remove_tree($dest);
-    }
+  if (-l $dest) {
+    unlink($dest);
+  } else if (-e $dest) {
+    return unless confirm("Delete $dest? [y/N] ");
+    remove_tree($dest);
   }
   my $dir = dirname($dest);
   make_path($dir) unless -d $dir;
