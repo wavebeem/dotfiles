@@ -1,5 +1,6 @@
 --pager=less
 --smart-case
+--ignore-dir=log
 --ignore-dir=node_modules
 --ignore-dir=bower_components
 --ignore-dir=tmp
@@ -12,3 +13,4 @@
 --ignore-dir=public
 --ignore-dir=coverage
 --ignore-dir=.sass-cache
+--ignore-file=ext:log
