@@ -19,8 +19,6 @@ function fish_prompt
     printf "%s%s" $c_light "venv"
   end
 
-  __fish_git_prompt $separator"%s"
-
   echo
 
   printf "%s%s%s " $c_light ">>-" $c_reset
