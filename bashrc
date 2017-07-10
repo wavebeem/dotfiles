@@ -12,8 +12,20 @@ bold="\[$(tput bold)\]"
 cyan="\[$(tput setaf 2)\]"
 reset="\[$(tput sgr0)\]"
 
-export PS1="${reset}${bold}${cyan}\$ ${reset}"
-export PS2="${reset}  "
+separator="${reset} :: "
+space=" "
+
+export PS1="\
+${reset}${bold}\u\
+${separator}${reset}${bold}${cyan}\h\
+${separator}${reset}${bold}\w\
+\n${reset}${bold}>>- ${reset}\
+"
+export PS2="\
+${reset}${bold}\
+${space}${space}${space}${space}\
+${reset}\
+"
 
 alias gco="git checkout"
 alias gdd="git diff --cached"

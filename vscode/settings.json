@@ -64,7 +64,7 @@
   "zenMode.fullScreen": false,
   "window.menuBarVisibility": "toggle",
   "editor.acceptSuggestionOnEnter": "off",
-  "workbench.iconTheme": "minimalistic-icons",
+  "workbench.iconTheme": "simple-icons",
   "editor.minimap.enabled": false,
   "editor.minimap.renderCharacters": true,
   "terminal.integrated.fontFamily": "'Fira Code', Menlo, Consolas, monospace",
