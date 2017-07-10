@@ -18,7 +18,7 @@ sub install_as {
   my ($path, $dest) = @_;
   if (-l $dest) {
     unlink($dest);
-  } else if (-e $dest) {
+  } elsif (-e $dest) {
     return unless confirm("Delete $dest? [y/N] ");
     remove_tree($dest);
   }
