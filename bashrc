@@ -72,3 +72,7 @@ export LESS="-R"
 
 export PATH="~/.local/bin:$PATH"
 export PATH="~/.rbenv/bin:$PATH"
+
+if type rbenv >/dev/null 2>&1; then
+  source <(rbenv init -)
+fi
