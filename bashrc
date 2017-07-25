@@ -59,3 +59,4 @@ export PAGER="less"
 export LESS="-R"
 
 export PATH="~/.local/bin:$PATH"
+export PATH="~/.rbenv/bin:$PATH"
