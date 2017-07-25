@@ -1,6 +1,7 @@
 set nocompatible
 filetype plugin on
 syntax on
+colorscheme shine
 set nomodeline
 set ruler
 set ignorecase

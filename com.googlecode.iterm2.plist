@@ -730,7 +730,7 @@
 	<key>DrawOutlineAroundCursor</key>
 	<true/>
 	<key>EnableDivisionView</key>
-	<true/>
+	<false/>
 	<key>EnableProxyIcon</key>
 	<false/>
 	<key>GlobalKeyMap</key>
@@ -883,14 +883,21 @@
 	</data>
 	<key>NSTableView Supports v2 KeyBingingTable</key>
 	<true/>
+	<key>NSToolbar Configuration com.apple.NSColorPanel</key>
+	<dict>
+		<key>TB Is Shown</key>
+		<integer>1</integer>
+	</dict>
+	<key>NSWindow Frame SessionsPreferences</key>
+	<string>269 415 599 388 0 0 3440 1418 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>1515 732 796 473 0 0 3440 1418 </string>
+	<string>790 667 918 416 0 0 3440 1418 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>1478 463 688 753 0 0 3440 1418 </string>
+	<string>1723 0 1717 1418 0 0 3440 1418 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>2361 308 688 753 0 0 3440 1418 </string>
+	<string>1392 131 688 752 0 0 3440 1418 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
-	<string>0 665 688 753 0 0 3440 1418 </string>
+	<string>244 0 717 878 0 0 1440 878 </string>
 	<key>NSWindow Frame iTerm Window 3</key>
 	<string>0 545 477 872 0 0 3440 1417 </string>
 	<key>NSWindow Frame iTerm Window 4</key>
@@ -1711,26 +1718,26 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.0092889098450541496</real>
+				<real>0.32013238941340866</real>
 				<key>Color Space</key>
-				<string>Calibrated</string>
+				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.32742533087730408</real>
+				<real>0.546722412109375</real>
 				<key>Red Component</key>
-				<real>0.43246865272521973</real>
+				<real>0.29168928740546107</real>
 			</dict>
 			<key>Selection Color</key>
 			<dict>
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.58359163999557495</real>
+				<real>0.7673724889755249</real>
 				<key>Color Space</key>
-				<string>Calibrated</string>
+				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.8789486289024353</real>
+				<real>0.91407316923141479</real>
 				<key>Red Component</key>
-				<real>0.95868790149688721</real>
+				<real>0.74895763397216797</real>
 			</dict>
 			<key>Send Code When Idle</key>
 			<false/>
@@ -1763,6 +1770,8 @@
 			<integer>0</integer>
 			<key>Transparency</key>
 			<real>0.0</real>
+			<key>Unicode Version</key>
+			<integer>9</integer>
 			<key>Unlimited Scrollback</key>
 			<false/>
 			<key>Use Bold Font</key>
@@ -1787,6 +1796,8 @@
 			<string>/Users/brian</string>
 		</dict>
 	</array>
+	<key>NoSyncHaveWarnedAboutIncompatibleSoftware</key>
+	<true/>
 	<key>NoSyncHaveWarnedAboutPasteConfirmationChange</key>
 	<true/>
 	<key>NoSyncInstallationId</key>
@@ -1847,7 +1858,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-06-23T18:46:30Z</date>
+	<date>2017-07-21T17:23:53Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>ShowBookmarkName</key>
@@ -1863,7 +1874,7 @@
 	<key>StretchTabsToFillBar</key>
 	<true/>
 	<key>TabStyle</key>
-	<integer>0</integer>
+	<integer>1</integer>
 	<key>TabViewType</key>
 	<integer>0</integer>
 	<key>TerminalMargin</key>
@@ -1877,6 +1888,8 @@
 	</dict>
 	<key>UseBorder</key>
 	<false/>
+	<key>UseSystemCursorWhenPossible</key>
+	<true/>
 	<key>WindowNumber</key>
 	<false/>
 	<key>WordCharacters</key>
@@ -1889,5 +1902,7 @@
 	<integer>0</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
 	<true/>
+	<key>kCPKUseSystemColorPicker</key>
+	<false/>
 </dict>
 </plist>
