@@ -19,7 +19,7 @@ sub install_as {
   if (-l $dest) {
     unlink($dest);
   } elsif (-e $dest) {
-    return unless confirm("Delete $dest? [Y/n] ");
+    return unless confirm("Delete $dest?");
     remove_tree($dest);
   }
   my $dir = dirname($dest);
@@ -31,7 +31,7 @@ sub install_as {
 
 sub confirm {
   my ($message) = @_;
-  print($message);
+  print($message, " [Y/n] ");
   <STDIN> !~ /^n/i;
 }
 
