@@ -19,23 +19,25 @@ sub install_as {
   if (-l $dest) {
     unlink($dest);
   } elsif (-e $dest) {
-    return unless confirm("Delete $dest? [y/N] ");
+    return unless confirm("Delete $dest? [Y/n] ");
     remove_tree($dest);
   }
   my $dir = dirname($dest);
   make_path($dir) unless -d $dir;
   my $src = "$DOTFILES/$path";
-  print("$src -> $dest\n");
+  print("$dest\n");
   symlink($src, $dest);
 }
 
 sub confirm {
   my ($message) = @_;
   print($message);
-  <STDIN> =~ /^y/i;
+  <STDIN> !~ /^n/i;
 }
 
 install($_) for (
+  "ncmpcpp/config",
+  "mpd/mpd.conf",
   "hushlogin",
   "welcome",
   "ackrc",
