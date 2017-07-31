@@ -4,21 +4,17 @@ function fish_prompt
   set c2 $cr(set_color green --bold)
   set c3 $cr
   set separator " :: "
-
-  printf "%s%s" $c1 (whoami)
-  printf "%s%s" $c3 $separator
-  printf "%s%s" $c2 (hostname -s)
-  printf "%s%s" $c3 $separator
-  printf "%s%s" $c1 (prompt_pwd)
-
+  echo -ns $c1 (whoami)
+  echo -ns $c3 $separator
+  echo -ns $c2 (hostname -s)
+  echo -ns $c3 $separator
+  echo -ns $c1 (prompt_pwd)
   if not set -q $VIRTUAL_ENV
-    printf "%s%s" $c3 $separator
-    printf "%s%s" $c1 "venv"
+    echo -ns $c3 $separator
+    echo -ns $c1 "venv"
   end
-
   echo
-
-  printf "%s%s%s " $c1 ">>-" $cr
+  echo -ns $c1 ">>-" $cr " "
 end
 
 # I would totally put this in a separate file, but because functions are
