@@ -22,4 +22,5 @@ end
 # defined. But fish *knows* to load `fish_prompt` so we're ok if it's over here.
 function postexec --on-event fish_postexec
   echo
+  echo
 end
