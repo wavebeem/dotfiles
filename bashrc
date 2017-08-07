@@ -4,6 +4,7 @@ dim() {
 
 precmd() {
   echo
+  echo
 }
 
 PROMPT_COMMAND="precmd"
