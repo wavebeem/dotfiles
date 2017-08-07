@@ -14,9 +14,9 @@ fix_ssh() {
 
 PROMPT_COMMAND="precmd"
 
-bold="\[$(tput bold)\]"
-cyan="\[$(tput setaf 2)\]"
-reset="\[$(tput sgr0)\]"
+bold=$'\e[1m'
+cyan=$'\e[32m'
+reset=$'\e[0m'
 
 separator="${reset} :: "
 space=" "
