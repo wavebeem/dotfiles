@@ -7,6 +7,11 @@ precmd() {
   echo
 }
 
+fix_ssh() {
+  var="$(tmux showenv -g | grep 'SSH_AUTH_SOCK=')"
+  eval "export $var"
+}
+
 PROMPT_COMMAND="precmd"
 
 bold="\[$(tput bold)\]"
