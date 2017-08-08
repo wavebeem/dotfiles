@@ -58,6 +58,8 @@ alias l="ls"
 alias ll="ls -hl"
 alias la="ll -a"
 
+alias ..='cd ..'
+
 alias serve="python -m SimpleHTTPServer"
 
 export LANG="en_US.UTF-8"
