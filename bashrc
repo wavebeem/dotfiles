@@ -12,11 +12,15 @@ fix_ssh() {
   eval "export $var"
 }
 
+_ansi() {
+  printf "\[%s%s\]" $'\e' "[$@m"
+}
+
 PROMPT_COMMAND="precmd"
 
-bold=$'\e[1m'
-cyan=$'\e[32m'
-reset=$'\e[0m'
+bold=$(_ansi 1)
+cyan=$(_ansi 32)
+reset=$(_ansi 0)
 
 separator="${reset} :: "
 space=" "
