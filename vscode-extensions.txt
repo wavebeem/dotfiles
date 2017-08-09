@@ -1,15 +1,12 @@
 LaurentTreguier.vscode-simple-icons
 PeterJausovec.vscode-docker
 TeddyDD.fish
-Tyriar.theme-sapphire
-arcticicestudio.nord-visual-studio-code
 dbaeumer.vscode-eslint
 donjayamanne.python
 eamodio.gitlens
-file-icons.file-icons
-jtlowe.vscode-icon-theme
 ms-vscode.PowerShell
 ms-vscode.sublime-keybindings
 rebornix.Ruby
+richie5um2.vscode-sort-json
 shardulm94.trailing-spaces
 wavebeem.theme-unoduetre
