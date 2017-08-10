@@ -76,7 +76,7 @@
   "terminal.integrated.shell.windows": "C:\\WINDOWS\\Sysnative\\WindowsPowerShell\\v1.0\\powershell.exe",
   "window.menuBarVisibility": "toggle",
   "window.title": "${rootName}${separator}${appName}",
-  "window.titleBarStyle": "native",
+  "window.titleBarStyle": "custom",
   "window.zoomLevel": 0,
   "workbench.activityBar.visible": true,
   "workbench.colorTheme": "Uno Due Tre",
