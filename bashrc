@@ -73,6 +73,14 @@ export LESS="-R"
 export PATH="~/.local/bin:$PATH"
 export PATH="~/.rbenv/bin:$PATH"
 
-if type rbenv >/dev/null 2>&1; then
-  source <(rbenv init -)
+# If stdin and stdout are connected to the tty (interactive mode)
+if test -t 0 && test -t 1; then
+  if type rbenv >/dev/null 2>&1; then
+    source <(rbenv init -)
+  fi
+  if test -f ~/.welcome; then
+    cat ~/.welcome
+  else
+    uptime
+  fi
 fi
