@@ -9,4 +9,5 @@ ms-vscode.sublime-keybindings
 rebornix.Ruby
 richie5um2.vscode-sort-json
 shardulm94.trailing-spaces
+stkb.rewrap
 wavebeem.theme-unoduetre
