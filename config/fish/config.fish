@@ -1,3 +1,10 @@
+# Fix the value of $SHELL if it's broken
+switch $SHELL
+case "*fish"
+case "*"
+  set -x SHELL (which fish)
+end
+
 abbr -a gco "git checkout"
 abbr -a gdd "git diff --cached"
 abbr -a ga "git add"
@@ -18,6 +25,10 @@ end
 alias l "ls"
 alias ll "ls -hl"
 alias la "ll -a"
+
+abbr -a st 'ssh-agent tmux'
+abbr -a t tmux
+abbr -a T 'tmux attach'
 
 alias serve "python -m SimpleHTTPServer"
 
