@@ -2,6 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>AddNewTabAtEndOfTabs</key>
+	<false/>
 	<key>AdjustWindowForFontSizeChange</key>
 	<false/>
 	<key>AppleAntiAliasingThreshold</key>
@@ -725,14 +727,20 @@
 	</dict>
 	<key>Default Bookmark Guid</key>
 	<string>63E84873-BFE5-429D-932C-20AE5FE46D55</string>
+	<key>DetectPasswordInput</key>
+	<false/>
 	<key>DisableWindowSizeSnap</key>
 	<true/>
 	<key>DrawOutlineAroundCursor</key>
 	<true/>
+	<key>EliminateCloseButtons</key>
+	<true/>
 	<key>EnableDivisionView</key>
-	<false/>
+	<true/>
 	<key>EnableProxyIcon</key>
 	<false/>
+	<key>FlashTabBarInFullscreen</key>
+	<true/>
 	<key>GlobalKeyMap</key>
 	<dict>
 		<key>0x19-0x60000</key>
@@ -839,9 +847,9 @@
 	<key>HideTab</key>
 	<true/>
 	<key>HideTabCloseButton</key>
-	<false/>
+	<true/>
 	<key>HideTabNumber</key>
-	<false/>
+	<true/>
 	<key>HotkeyMigratedFromSingleToMulti</key>
 	<true/>
 	<key>JobName</key>
@@ -895,13 +903,13 @@
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>79 369 599 388 0 0 1440 878 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>1712 665 796 473 0 0 3440 1418 </string>
+	<string>536 452 918 416 0 0 3440 1418 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>1 75 688 752 0 0 1440 878 </string>
+	<string>482 23 958 855 0 0 1440 878 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>716 71 688 752 0 0 1440 878 </string>
+	<string>203 90 688 753 0 0 1440 878 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
-	<string>2330 0 1110 1418 0 0 3440 1418 </string>
+	<string>1723 666 688 752 0 0 3440 1418 </string>
 	<key>NSWindow Frame iTerm Window 3</key>
 	<string>1697 458 688 752 0 0 3440 1418 </string>
 	<key>NSWindow Frame iTerm Window 4</key>
@@ -973,39 +981,39 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.061850633472204208</real>
+				<real>0.063999943435192108</real>
 				<key>Color Space</key>
-				<string>Calibrated</string>
+				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.44326245784759521</real>
+				<real>0.51786667108535767</real>
 				<key>Red Component</key>
-				<real>0.74938642978668213</real>
+				<real>0.80000001192092896</real>
 			</dict>
 			<key>Ansi 12 Color</key>
 			<dict>
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.52492636442184448</real>
+				<real>0.59579992294311523</real>
 				<key>Color Space</key>
-				<string>Calibrated</string>
+				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.67379069328308105</real>
+				<real>0.72000002861022949</real>
 				<key>Red Component</key>
-				<real>0.19375263154506683</real>
+				<real>0.22320005297660828</real>
 			</dict>
 			<key>Ansi 13 Color</key>
 			<dict>
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.47093001008033752</real>
+				<real>0.47231656312942505</real>
 				<key>Color Space</key>
-				<string>Calibrated</string>
+				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.32165047526359558</real>
+				<real>0.32299995422363281</real>
 				<key>Red Component</key>
-				<real>0.85348963737487793</real>
+				<real>0.85000008344650269</real>
 			</dict>
 			<key>Ansi 14 Color</key>
 			<dict>
@@ -1706,7 +1714,7 @@
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>FiraCode-Regular 14</string>
+			<string>FiraCode-Regular 16</string>
 			<key>Option Key Sends</key>
 			<integer>2</integer>
 			<key>Prompt Before Closing 2</key>
@@ -1719,6 +1727,8 @@
 			<integer>-1</integer>
 			<key>Scrollback Lines</key>
 			<integer>100000</integer>
+			<key>Scrollback in Alternate Screen</key>
+			<false/>
 			<key>Selected Text Color</key>
 			<dict>
 				<key>Alpha Component</key>
@@ -1787,7 +1797,7 @@
 			<key>Use Cursor Guide</key>
 			<false/>
 			<key>Use Italic Font</key>
-			<true/>
+			<false/>
 			<key>Use Non-ASCII Font</key>
 			<false/>
 			<key>Use Tab Color</key>
@@ -2759,7 +2769,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-08-09T22:47:33Z</date>
+	<date>2017-08-15T17:25:18Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>ShowBookmarkName</key>
@@ -2775,7 +2785,7 @@
 	<key>StretchTabsToFillBar</key>
 	<true/>
 	<key>TabStyle</key>
-	<integer>1</integer>
+	<integer>2</integer>
 	<key>TabViewType</key>
 	<integer>0</integer>
 	<key>TerminalMargin</key>

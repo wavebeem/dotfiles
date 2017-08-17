@@ -73,7 +73,6 @@
   "terminal.integrated.fontSize": 14,
   "terminal.integrated.lineHeight": 1.2,
   "terminal.integrated.scrollback": 10000,
-  "terminal.integrated.shell.windows": "C:\\WINDOWS\\Sysnative\\WindowsPowerShell\\v1.0\\powershell.exe",
   "window.menuBarVisibility": "toggle",
   "window.title": "${rootName}${separator}${appName}",
   "window.titleBarStyle": "custom",
