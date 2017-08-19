@@ -68,10 +68,10 @@ alias gg="git commit"
 
 case "$(uname)" in
 Darwin)
-  alias ls "ls -G"
+  alias ls="ls -G"
   ;;
 *)
-  alias ls "ls --color=auto"
+  alias ls="ls --color=auto"
   ;;
 esac
 
