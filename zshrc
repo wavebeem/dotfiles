@@ -1,8 +1,12 @@
-# zsh's first run configurator wrote this junk
 HISTFILE=~/.histfile
 HISTSIZE=1000
 SAVEHIST=1000
-setopt APPEND_HISTORY EXTENDED_GLOB NO_MATCH GLOB_STAR_SHORT
+setopt APPEND_HISTORY
+setopt EXTENDED_GLOB
+setopt NO_MATCH
+# zsh 5.1 doesn't have this option...
+setopt GLOB_STAR_SHORT 2>/dev/null
+setopt INTERACTIVE_COMMENTS
 bindkey -e
 zstyle :compinstall filename "$HOME/.zshrc"
 autoload -Uz compinit
