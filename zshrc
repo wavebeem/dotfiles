@@ -65,6 +65,7 @@ alias gm="git commit -m"
 alias g="git status"
 alias gl="git log"
 alias gg="git commit"
+alias gp="git push origin HEAD"
 
 case "$(uname)" in
 Darwin)
@@ -106,19 +107,24 @@ else
   uptime
 fi
 
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=cyan"
 if test -f ~/.zsh-autosuggestions/zsh-autosuggestions.zsh; then
   source ~/.zsh-autosuggestions/zsh-autosuggestions.zsh
 fi
 
-sep=" :: "
-glyph=">>-"
-username="%n"
-hostname="%m"
-cwd="%~"
-reset="%b%f%u%s"
-prompt="\
+__set_prompt() {
+  sep=" :: "
+  glyph=">>-"
+  username="%n"
+  hostname="%m"
+  cwd="%~"
+  reset="%b%f%u%s"
+  prompt="\
 ${reset}\
 %B${username}${reset}${sep}\
 %B%F{green}${hostname}${reset}${sep}\
 %B${cwd}${reset}
 %B${glyph}${reset} "
+}
+
+__set_prompt
