@@ -24,6 +24,12 @@ __set_title() {
   print -Pn "\e]0;$1\a"
 }
 
+__install_zsh_autosuggestions() {
+  git clone \
+    git://github.com/zsh-users/zsh-autosuggestions \
+    ~/.zsh-autosuggestions
+}
+
 precmd() {
   __set_title "zsh %~"
   echo
@@ -96,7 +102,6 @@ else
   uptime
 fi
 
-# git clone git://github.com/zsh-users/zsh-autosuggestions ~/.zsh-autosuggestions
 if test -f ~/.zsh-autosuggestions/zsh-autosuggestions.zsh; then
   source ~/.zsh-autosuggestions/zsh-autosuggestions.zsh
 fi
