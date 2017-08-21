@@ -1,3 +1,7 @@
+if test -f ~/.zsh-autosuggestions/zsh-autosuggestions.zsh; then
+  source ~/.zsh-autosuggestions/zsh-autosuggestions.zsh
+fi
+
 HISTFILE=~/.histfile
 HISTSIZE=1000
 SAVEHIST=1000
@@ -110,9 +114,6 @@ else
 fi
 
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=cyan"
-if test -f ~/.zsh-autosuggestions/zsh-autosuggestions.zsh; then
-  source ~/.zsh-autosuggestions/zsh-autosuggestions.zsh
-fi
 
 __set_prompt() {
   sep=" :: "
@@ -121,12 +122,15 @@ __set_prompt() {
   hostname="%m"
   cwd="%~"
   reset="%b%f%u%s"
+  c1="%B%F{green}"
+  c2="%B%F{cyan}"
+  c3="%F{cyan}"
   prompt="\
 ${reset}\
-%B${username}${reset}${sep}\
-%B%F{green}${hostname}${reset}${sep}\
-%B${cwd}${reset}
-%B${glyph}${reset} "
+${c2}${username}${reset}${c3}${sep}\
+${c1}${hostname}${reset}${c3}${sep}\
+${c2}${cwd}${reset}
+${c2}${glyph}${reset} "
 }
 
 __set_prompt
