@@ -80,8 +80,10 @@ alias l="ls"
 alias ll="ls -hl"
 alias la="ll -a"
 
-alias t=tmux
-alias T='tmux attach'
+alias t="tmux"
+alias T="tmux attach"
+
+alias ..="cd .."
 
 alias serve="python -m SimpleHTTPServer"
 
