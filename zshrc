@@ -134,3 +134,7 @@ ${c2}${glyph}${reset} "
 }
 
 __set_prompt
+
+if test -f ~/.after.zsh; then
+  source ~/.after.zsh
+fi
