@@ -75,7 +75,7 @@
   "terminal.integrated.lineHeight": 1.2,
   "terminal.integrated.scrollback": 10000,
   "window.menuBarVisibility": "toggle",
-  "window.title": "${rootName}${separator}${appName}",
+  "window.title": "${rootPath}${separator}${appName}",
   "window.titleBarStyle": "custom",
   "window.zoomLevel": 0,
   "workbench.activityBar.visible": true,
