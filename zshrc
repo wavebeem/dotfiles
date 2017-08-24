@@ -29,7 +29,13 @@ sa() {
 }
 
 __set_title() {
-  print -Pn "\e]0;$1\a"
+  case "$TERM" in
+  linux)
+    ;;
+  *)
+    print -Pn "\e]0;$1\a"
+    ;;
+  esac
 }
 
 __install_zsh_autosuggestions() {
@@ -107,8 +113,8 @@ if which rbenv >/dev/null 2>&1; then
   eval "$(rbenv init -)"
 fi
 
-if test -f "$HOME/.welcome"; then
-  cat "$HOME/.welcome"
+if test -f ~/.welcome; then
+  cat ~/.welcome
 else
   uptime
 fi
