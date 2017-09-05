@@ -1,16 +1,16 @@
-$color = "Green"
+$c1 = "Yellow"
 
-Set-PSReadlineOption -ForegroundColor $color -TokenKind None
-Set-PSReadlineOption -ForegroundColor $color -TokenKind Comment
-Set-PSReadlineOption -ForegroundColor $color -TokenKind Keyword
-Set-PSReadlineOption -ForegroundColor $color -TokenKind String
-Set-PSReadlineOption -ForegroundColor $color -TokenKind Operator
-Set-PSReadlineOption -ForegroundColor $color -TokenKind Variable
-Set-PSReadlineOption -ForegroundColor $color -TokenKind Command
-Set-PSReadlineOption -ForegroundColor $color -TokenKind Parameter
-Set-PSReadlineOption -ForegroundColor $color -TokenKind Type
-Set-PSReadlineOption -ForegroundColor $color -TokenKind Number
-Set-PSReadlineOption -ForegroundColor $color -TokenKind Member
+Set-PSReadlineOption -ForegroundColor $c1 -TokenKind None
+Set-PSReadlineOption -ForegroundColor $c1 -TokenKind Comment
+Set-PSReadlineOption -ForegroundColor $c1 -TokenKind Keyword
+Set-PSReadlineOption -ForegroundColor $c1 -TokenKind String
+Set-PSReadlineOption -ForegroundColor $c1 -TokenKind Operator
+Set-PSReadlineOption -ForegroundColor $c1 -TokenKind Variable
+Set-PSReadlineOption -ForegroundColor $c1 -TokenKind Command
+Set-PSReadlineOption -ForegroundColor $c1 -TokenKind Parameter
+Set-PSReadlineOption -ForegroundColor $c1 -TokenKind Type
+Set-PSReadlineOption -ForegroundColor $c1 -TokenKind Number
+Set-PSReadlineOption -ForegroundColor $c1 -TokenKind Member
 
 Set-Alias l ls
 Set-Alias ll ls
@@ -18,13 +18,13 @@ Set-Alias ll ls
 function prompt {
   Write-Host ""
   Write-Host ""
-  Write-Host -NoNewline $env:UserName
-  Write-Host -NoNewline " :: "
-  Write-Host -NoNewline -ForegroundColor Blue (hostname)
-  Write-Host -NoNewline " :: "
-  Write-Host -NoNewline -ForegroundColor Red (Get-Location)
+  Write-Host -NoNewline -ForegroundColor Cyan $env:UserName
+  Write-Host -NoNewline -ForegroundColor Cyan " :: "
+  Write-Host -NoNewline -ForegroundColor Green (hostname)
+  Write-Host -NoNewline -ForegroundColor Cyan " :: "
+  Write-Host -NoNewline -ForegroundColor Cyan (Get-Location)
   Write-Host ""
-  Write-Host -NoNewline ">>-"
+  Write-Host -NoNewline -ForeGroundColor Cyan ">>-"
   return " "
 }
 
