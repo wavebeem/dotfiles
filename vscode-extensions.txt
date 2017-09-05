@@ -3,6 +3,7 @@ PeterJausovec.vscode-docker
 dbaeumer.vscode-eslint
 donjayamanne.python
 eamodio.gitlens
+esbenp.prettier-vscode
 ms-vscode.PowerShell
 ms-vscode.sublime-keybindings
 rebornix.Ruby
