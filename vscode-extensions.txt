@@ -1,6 +1,5 @@
 LaurentTreguier.vscode-simple-icons
 PeterJausovec.vscode-docker
-TeddyDD.fish
 dbaeumer.vscode-eslint
 donjayamanne.python
 eamodio.gitlens
