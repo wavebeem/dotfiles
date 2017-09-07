@@ -71,5 +71,9 @@
     "key": "ctrl+shift+j",
     "command": "search.action.focusActiveEditor",
     "when": "terminalFocus"
+  },
+  {
+    "key": "alt+cmd+t",
+    "command": "workbench.action.tasks.test"
   }
 ]
