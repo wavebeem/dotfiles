@@ -857,8 +857,10 @@
 	<key>LoadPrefsFromCustomFolder</key>
 	<true/>
 	<key>NSNavLastRootDirectory</key>
-	<string>~/dotfiles</string>
+	<string>~/dotfiles/themes/iTerm</string>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
+	<string>{712, 448}</string>
+	<key>NSNavPanelExpandedSizeForSaveMode</key>
 	<string>{712, 448}</string>
 	<key>NSQuotedKeystrokeBinding</key>
 	<string></string>
@@ -896,16 +898,92 @@
 		<key>TB Is Shown</key>
 		<integer>1</integer>
 	</dict>
+	<key>NSWindow Frame NSFontPanel</key>
+	<string>1948 470 542 305 0 0 3440 1418 </string>
 	<key>NSWindow Frame SessionsPreferences</key>
-	<string>269 288 599 388 0 0 1280 778 </string>
+	<string>268 957 599 388 0 0 3440 1418 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>116 270 796 473 0 0 1280 778 </string>
+	<string>2352 528 796 473 0 0 3440 1418 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>1710 23 850 1395 0 0 2560 1418 </string>
+	<string>2584 23 856 1395 0 0 3440 1418 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>424 0 856 778 0 0 1280 778 </string>
+	<string>2286 313 688 753 0 0 3440 1418 </string>
+	<key>NSWindow Frame iTerm Window 10</key>
+	<string>365 0 856 878 0 0 1440 878 </string>
+	<key>NSWindow Frame iTerm Window 11</key>
+	<string>386 0 856 878 0 0 1440 878 </string>
+	<key>NSWindow Frame iTerm Window 12</key>
+	<string>407 0 856 878 0 0 1440 878 </string>
+	<key>NSWindow Frame iTerm Window 13</key>
+	<string>428 0 856 878 0 0 1440 878 </string>
+	<key>NSWindow Frame iTerm Window 14</key>
+	<string>449 0 856 878 0 0 1440 878 </string>
+	<key>NSWindow Frame iTerm Window 15</key>
+	<string>470 0 856 878 0 0 1440 878 </string>
+	<key>NSWindow Frame iTerm Window 16</key>
+	<string>491 0 856 878 0 0 1440 878 </string>
+	<key>NSWindow Frame iTerm Window 17</key>
+	<string>512 0 856 878 0 0 1440 878 </string>
+	<key>NSWindow Frame iTerm Window 18</key>
+	<string>533 0 856 878 0 0 1440 878 </string>
+	<key>NSWindow Frame iTerm Window 19</key>
+	<string>554 0 856 878 0 0 1440 878 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
-	<string>173 25 688 753 0 0 1280 778 </string>
+	<string>4 665 688 753 0 0 3440 1418 </string>
+	<key>NSWindow Frame iTerm Window 20</key>
+	<string>575 0 856 878 0 0 1440 878 </string>
+	<key>NSWindow Frame iTerm Window 21</key>
+	<string>584 0 856 878 0 0 1440 878 </string>
+	<key>NSWindow Frame iTerm Window 22</key>
+	<string>584 0 856 878 0 0 1440 878 </string>
+	<key>NSWindow Frame iTerm Window 23</key>
+	<string>584 0 856 878 0 0 1440 878 </string>
+	<key>NSWindow Frame iTerm Window 24</key>
+	<string>584 0 856 878 0 0 1440 878 </string>
+	<key>NSWindow Frame iTerm Window 25</key>
+	<string>584 0 856 878 0 0 1440 878 </string>
+	<key>NSWindow Frame iTerm Window 26</key>
+	<string>584 0 856 878 0 0 1440 878 </string>
+	<key>NSWindow Frame iTerm Window 27</key>
+	<string>584 0 856 878 0 0 1440 878 </string>
+	<key>NSWindow Frame iTerm Window 28</key>
+	<string>584 0 856 878 0 0 1440 878 </string>
+	<key>NSWindow Frame iTerm Window 29</key>
+	<string>584 0 856 878 0 0 1440 878 </string>
+	<key>NSWindow Frame iTerm Window 3</key>
+	<string>464 0 856 878 0 0 1440 878 </string>
+	<key>NSWindow Frame iTerm Window 30</key>
+	<string>584 0 856 878 0 0 1440 878 </string>
+	<key>NSWindow Frame iTerm Window 31</key>
+	<string>584 0 856 878 0 0 1440 878 </string>
+	<key>NSWindow Frame iTerm Window 32</key>
+	<string>584 0 856 878 0 0 1440 878 </string>
+	<key>NSWindow Frame iTerm Window 33</key>
+	<string>584 0 856 878 0 0 1440 878 </string>
+	<key>NSWindow Frame iTerm Window 34</key>
+	<string>584 0 856 878 0 0 1440 878 </string>
+	<key>NSWindow Frame iTerm Window 35</key>
+	<string>584 0 856 878 0 0 1440 878 </string>
+	<key>NSWindow Frame iTerm Window 36</key>
+	<string>584 0 856 878 0 0 1440 878 </string>
+	<key>NSWindow Frame iTerm Window 37</key>
+	<string>584 0 856 878 0 0 1440 878 </string>
+	<key>NSWindow Frame iTerm Window 38</key>
+	<string>584 0 856 878 0 0 1440 878 </string>
+	<key>NSWindow Frame iTerm Window 39</key>
+	<string>584 0 856 878 0 0 1440 878 </string>
+	<key>NSWindow Frame iTerm Window 4</key>
+	<string>147 0 856 878 0 0 1440 878 </string>
+	<key>NSWindow Frame iTerm Window 5</key>
+	<string>260 0 856 878 0 0 1440 878 </string>
+	<key>NSWindow Frame iTerm Window 6</key>
+	<string>281 0 856 878 0 0 1440 878 </string>
+	<key>NSWindow Frame iTerm Window 7</key>
+	<string>302 0 856 878 0 0 1440 878 </string>
+	<key>NSWindow Frame iTerm Window 8</key>
+	<string>323 0 856 878 0 0 1440 878 </string>
+	<key>NSWindow Frame iTerm Window 9</key>
+	<string>344 0 856 878 0 0 1440 878 </string>
 	<key>NeverWarnAboutShortLivedSessions_63E84873-BFE5-429D-932C-20AE5FE46D55</key>
 	<true/>
 	<key>NeverWarnAboutShortLivedSessions_63E84873-BFE5-429D-932C-20AE5FE46D55_selection</key>
@@ -2699,23 +2777,23 @@
 			<string>/Users/brian</string>
 		</dict>
 	</array>
+	<key>NoSyncHaveWarnedAboutIncompatibleSoftware</key>
+	<true/>
 	<key>NoSyncHaveWarnedAboutPasteConfirmationChange</key>
 	<true/>
 	<key>NoSyncInstallationId</key>
-	<string>669B15DB-171C-4B4A-95A6-146929206EDD</string>
-	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
-	<true/>
-	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
-	<integer>1</integer>
+	<string>7B8755CB-03FE-44F3-905B-C12727C34612</string>
 	<key>NoSyncPermissionToShowTip</key>
 	<false/>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
-	<real>506325812.60123497</real>
+	<real>518734448.33850098</real>
 	<key>OnlyWhenMoreTabs</key>
 	<false/>
 	<key>OpenBookmark</key>
 	<false/>
 	<key>PMPrintingExpandedStateForPrint2</key>
+	<false/>
+	<key>PerformDNSLookups</key>
 	<false/>
 	<key>PointerActions</key>
 	<dict>
@@ -2751,7 +2829,7 @@
 		</dict>
 	</dict>
 	<key>PrefsCustomFolder</key>
-	<string>/Users/brian/dotfiles</string>
+	<string>/Users/bmock/dotfiles</string>
 	<key>PromptOnQuit</key>
 	<false/>
 	<key>SUEnableAutomaticChecks</key>
@@ -2759,11 +2837,11 @@
 	<key>SUFeedAlternateAppNameKey</key>
 	<string>iTerm</string>
 	<key>SUFeedURL</key>
-	<string>https://iterm2.com/appcasts/final.xml?shard=92</string>
+	<string>https://iterm2.com/appcasts/final.xml?shard=90</string>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-08-20T02:16:14Z</date>
+	<date>2017-09-16T17:12:25Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>ShowBookmarkName</key>
@@ -2804,7 +2882,7 @@
 	<key>findMode_iTerm</key>
 	<integer>0</integer>
 	<key>iTerm Version</key>
-	<string>3.1.20170406-nightly</string>
+	<string>3.1.20170609-nightly</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>0</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
