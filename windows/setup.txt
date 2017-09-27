@@ -7,3 +7,5 @@ fsutil behavior set SymlinkEvaluation L2L:1 L2R:0 R2L:0 R2R:0
 ### Run this in a regular PowerShell window:
 
 New-Item $profile -ItemType File -Force
+
+### Create a shortcut file in "%AppData%\Microsoft\Windows\Start Menu\Programs\Startup" pointing to "AHK\misc.ahk"
