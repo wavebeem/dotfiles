@@ -29,13 +29,22 @@ sa() {
 }
 
 __set_title() {
+  local title="$1"
   case "$TERM" in
   linux)
     ;;
   *)
-    print -Pn "\e]0;$1\a"
+    print -Pn "\e]0;"
+    # Don't allow % escapes in the parameter
+    print -n "$title"
+    print -Pn "\a"
     ;;
   esac
+}
+
+__set_title_special() {
+  local expanded_title="${(%)1}"
+  __set_title "$expanded_title"
 }
 
 __install_zsh_autosuggestions() {
@@ -45,13 +54,15 @@ __install_zsh_autosuggestions() {
 }
 
 precmd() {
-  __set_title "zsh %~"
+  title="zsh %~"
+  __set_title_special "zsh %~"
   echo
   echo
 }
 
 preexec() {
-  __set_title "$1"
+  local title="$1"
+  __set_title "$title"
 }
 
 # Fix the value of $SHELL if it's broken
