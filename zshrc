@@ -24,10 +24,6 @@ fix_ssh() {
   eval "export $(tmux showenv SSH_AUTH_SOCK)"
 }
 
-sa() {
-  eval "$(ssh-agent)"
-}
-
 __set_title() {
   local title="$1"
   case "$TERM" in
@@ -71,6 +67,16 @@ case "$SHELL" in
   ;;
 *)
   export SHELL="$(which zsh)"
+  ;;
+esac
+
+case "$(uname -r)" in
+*Microsoft)
+  start() {
+    local first="$1"
+    shift
+    powershell.exe -Command Start-Process "$first" -- "$@"
+  }
   ;;
 esac
 

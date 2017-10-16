@@ -15,10 +15,17 @@
   "editor.renderIndentGuides": true,
   "editor.renderLineHighlight": "all",
   "editor.renderWhitespace": "none",
-  "editor.rulers": [80, 100, 120],
+  "editor.rulers": [
+    80,
+    100,
+    120
+  ],
   "editor.tabSize": 2,
   "editor.wordWrap": "on",
   "editor.wrappingIndent": "same",
+  "files.associations": {
+    "zshrc": "shellscript"
+  },
   "files.exclude": {
     "**/*-min-*": true,
     "**/*-min.*": true,
