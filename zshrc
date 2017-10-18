@@ -50,7 +50,7 @@ __install_zsh_autosuggestions() {
 }
 
 precmd() {
-  title="zsh %~"
+  local title="zsh %~"
   __set_title_special "zsh %~"
   echo
   echo
