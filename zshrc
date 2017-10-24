@@ -1,6 +1,8 @@
-if test -f ~/.zsh-autosuggestions/zsh-autosuggestions.zsh; then
-  source ~/.zsh-autosuggestions/zsh-autosuggestions.zsh
-fi
+__maybe_source() {
+  test -f "$1" && source "$1"
+}
+
+__maybe_source ~/.zsh-autosuggestions/zsh-autosuggestions.zsh
 
 HISTFILE=~/.histfile
 HISTSIZE=1000
@@ -13,8 +15,17 @@ setopt GLOB_STAR_SHORT 2>/dev/null
 setopt INTERACTIVE_COMMENTS
 bindkey -e
 zstyle :compinstall filename "$HOME/.zshrc"
-autoload -Uz compinit
-compinit
+autoload -Uz compinit && compinit
+
+# Search through history using up/down arrows
+autoload -U up-line-or-beginning-search
+autoload -U down-line-or-beginning-search
+zle -N up-line-or-beginning-search
+zle -N down-line-or-beginning-search
+bindkey "^[[A" up-line-or-beginning-search
+bindkey "^P" up-line-or-beginning-search
+bindkey "^[[B" down-line-or-beginning-search
+bindkey "^N" down-line-or-beginning-search
 
 dim() {
   echo "$COLUMNS by $LINES"
@@ -158,6 +169,4 @@ ${c2}${glyph}${reset} "
 
 __set_prompt
 
-if test -f ~/.after.zsh; then
-  source ~/.after.zsh
-fi
+__maybe_source ~/.zsh-autosuggestions/zsh-autosuggestions.zsh

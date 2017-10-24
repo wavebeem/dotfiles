@@ -904,14 +904,18 @@
 	</dict>
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>1948 470 542 305 0 0 3440 1418 </string>
+	<key>NSWindow Frame SUStatusFrame</key>
+	<string>546 270 400 129 0 0 1440 878 </string>
+	<key>NSWindow Frame SUUpdateAlert</key>
+	<string>412 364 620 392 0 0 1440 878 </string>
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>268 957 599 388 0 0 3440 1418 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>1371 765 918 381 0 0 3440 1418 </string>
+	<string>112 232 796 473 0 0 1440 878 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>2584 23 856 1395 0 0 3440 1418 </string>
+	<string>482 0 958 878 0 0 1440 878 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>1606 285 688 753 0 0 3440 1418 </string>
+	<string>691 91 688 753 0 0 1440 878 </string>
 	<key>NSWindow Frame iTerm Window 10</key>
 	<string>365 0 856 878 0 0 1440 878 </string>
 	<key>NSWindow Frame iTerm Window 11</key>
@@ -1810,26 +1814,26 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.28604382929642447</real>
+				<real>0.0</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.47058823529411764</real>
+				<real>0.0</real>
 				<key>Red Component</key>
-				<real>0.33407599865541521</real>
+				<real>0.0</real>
 			</dict>
 			<key>Selection Color</key>
 			<dict>
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.67843100000000001</real>
+				<real>0.99607843137254903</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.96470599999999995</real>
+				<real>0.84313725490196079</real>
 				<key>Red Component</key>
-				<real>0.75294099999999997</real>
+				<real>0.69803921568627447</real>
 			</dict>
 			<key>Send Code When Idle</key>
 			<false/>
@@ -2847,13 +2851,13 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-10-17T16:51:31Z</date>
+	<date>2017-10-19T22:05:08Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>ShowBookmarkName</key>
 	<false/>
 	<key>ShowFullScreenTabBar</key>
-	<true/>
+	<false/>
 	<key>ShowNewOutputIndicator</key>
 	<false/>
 	<key>ShowPaneTitles</key>
