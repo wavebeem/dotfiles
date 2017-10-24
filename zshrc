@@ -1,9 +1,3 @@
-__maybe_source() {
-  test -f "$1" && source "$1"
-}
-
-__maybe_source ~/.zsh-autosuggestions/zsh-autosuggestions.zsh
-
 HISTFILE=~/.histfile
 HISTSIZE=1000
 SAVEHIST=1000
@@ -35,6 +29,11 @@ fix_ssh() {
   eval "export $(tmux showenv SSH_AUTH_SOCK)"
 }
 
+__maybe_source() {
+  local file="$1"
+  test -f "$file" && source "$file"
+}
+
 __set_title() {
   local title="$1"
   case "$TERM" in
@@ -61,7 +60,6 @@ __install_zsh_autosuggestions() {
 }
 
 precmd() {
-  local title="zsh %~"
   __set_title_special "zsh %~"
   echo
   echo
@@ -147,8 +145,6 @@ else
   uptime
 fi
 
-ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=cyan"
-
 __set_prompt() {
   sep=" :: "
   glyph=">>-"
@@ -170,3 +166,6 @@ ${c2}${glyph}${reset} "
 __set_prompt
 
 __maybe_source ~/.zsh-autosuggestions/zsh-autosuggestions.zsh
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=cyan"
+
+__maybe_source ~/.after.zsh
