@@ -87,5 +87,6 @@
   "workbench.editor.showTabs": false,
   "workbench.iconTheme": "simple-icons",
   "zenMode.fullScreen": false,
-  "gitlens.gitExplorer.files.layout": "list"
+  "gitlens.gitExplorer.files.layout": "list",
+  "workbench.panel.location": "bottom"
 }
