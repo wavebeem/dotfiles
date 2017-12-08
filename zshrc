@@ -134,6 +134,8 @@ path=(
   "$HOME/Library/Python/2.7/bin"
   "$HOME/.local/bin"
   "$HOME/.rbenv/bin"
+  "$ANDROID_HOME/tools"
+  "$ANDROID_HOME/platform-tools"
   $path
 )
 
