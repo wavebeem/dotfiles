@@ -10,7 +10,7 @@
   "editor.fontLigatures": true,
   "editor.fontSize": 16,
   "editor.formatOnPaste": false,
-  "editor.formatOnSave": true,
+  "editor.formatOnSave": false,
   "editor.minimap.enabled": false,
   "editor.minimap.renderCharacters": true,
   "editor.multiCursorModifier": "alt",
@@ -90,5 +90,6 @@
   "workbench.editor.showTabs": false,
   "workbench.iconTheme": "simple-icons",
   "workbench.panel.location": "bottom",
-  "zenMode.fullScreen": false
+  "zenMode.fullScreen": false,
+  "explorer.confirmDelete": false
 }

@@ -117,11 +117,13 @@ alias ll="ls -hl"
 alias la="ll -a"
 
 alias t="tmux"
-alias T="tmux attach"
+alias T="tmux attach -d"
 
 alias ..="cd .."
 
-alias serve="python -m SimpleHTTPServer"
+if ! which serve >/dev/null 2>&1; then
+  alias serve="python -m SimpleHTTPServer"
+fi
 
 # TODO: Do I want these in zshenv instead?
 path=(
