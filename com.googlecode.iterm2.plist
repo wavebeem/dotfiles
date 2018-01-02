@@ -909,17 +909,19 @@
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>1948 470 542 305 0 0 3440 1418 </string>
 	<key>NSWindow Frame SUStatusFrame</key>
-	<string>591 697 400 129 0 0 3440 1418 </string>
+	<string>2043 893 400 129 0 0 3440 1418 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>2585 756 620 392 0 0 3440 1418 </string>
+	<string>412 364 620 392 0 0 1440 878 </string>
 	<key>NSWindow Frame SessionsPreferences</key>
-	<string>268 957 599 388 0 0 3440 1418 </string>
+	<string>79 459 599 388 0 0 1440 878 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>1027 523 796 473 0 0 3440 1418 </string>
+	<string>250 371 770 429 0 0 1440 878 </string>
+	<key>NSWindow Frame UKCrashReporter</key>
+	<string>99 294 592 584 0 0 1440 878 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>2581 0 859 1418 0 0 3440 1418 </string>
+	<string>2580 0 860 1418 0 0 3440 1418 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>4 665 688 753 0 0 3440 1418 </string>
+	<string>2123 665 688 753 0 0 3440 1418 </string>
 	<key>NSWindow Frame iTerm Window 10</key>
 	<string>365 0 856 878 0 0 1440 878 </string>
 	<key>NSWindow Frame iTerm Window 11</key>
@@ -941,7 +943,7 @@
 	<key>NSWindow Frame iTerm Window 19</key>
 	<string>554 0 856 878 0 0 1440 878 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
-	<string>384 236 887 1030 0 0 3440 1418 </string>
+	<string>384 0 853 1389 0 0 3440 1418 </string>
 	<key>NSWindow Frame iTerm Window 20</key>
 	<string>575 0 856 878 0 0 1440 878 </string>
 	<key>NSWindow Frame iTerm Window 21</key>
@@ -963,7 +965,7 @@
 	<key>NSWindow Frame iTerm Window 29</key>
 	<string>584 0 856 878 0 0 1440 878 </string>
 	<key>NSWindow Frame iTerm Window 3</key>
-	<string>1024 411 688 752 0 0 3440 1418 </string>
+	<string>1024 0 852 1373 0 0 3440 1418 </string>
 	<key>NSWindow Frame iTerm Window 30</key>
 	<string>584 0 856 878 0 0 1440 878 </string>
 	<key>NSWindow Frame iTerm Window 31</key>
@@ -3684,6 +3686,8 @@
 			<string>/Users/brian</string>
 		</dict>
 	</array>
+	<key>NoSyncAutoBurialReveal</key>
+	<true/>
 	<key>NoSyncHaveWarnedAboutIncompatibleSoftware</key>
 	<true/>
 	<key>NoSyncHaveWarnedAboutPasteConfirmationChange</key>
@@ -3741,8 +3745,12 @@
 	</dict>
 	<key>PrefsCustomFolder</key>
 	<string>/Users/bmock/dotfiles</string>
+	<key>Print In Black And White</key>
+	<true/>
 	<key>PromptOnQuit</key>
 	<false/>
+	<key>SUAutomaticallyUpdate</key>
+	<true/>
 	<key>SUEnableAutomaticChecks</key>
 	<true/>
 	<key>SUFeedAlternateAppNameKey</key>
@@ -3752,13 +3760,13 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-10-27T16:21:29Z</date>
+	<date>2017-12-11T23:12:34Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>ShowBookmarkName</key>
 	<false/>
 	<key>ShowFullScreenTabBar</key>
-	<false/>
+	<true/>
 	<key>ShowNewOutputIndicator</key>
 	<false/>
 	<key>ShowPaneTitles</key>
@@ -3775,6 +3783,8 @@
 	<integer>8</integer>
 	<key>TerminalVMargin</key>
 	<integer>8</integer>
+	<key>UKCrashReporterLastCrashReportDate</key>
+	<real>1511291648</real>
 	<key>URLHandlersByGuid</key>
 	<dict>
 		<key>ssh</key>
@@ -3793,7 +3803,7 @@
 	<key>findMode_iTerm</key>
 	<integer>0</integer>
 	<key>iTerm Version</key>
-	<string>3.1.20171023-nightly</string>
+	<string>3.1.20171203-nightly</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>6</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>

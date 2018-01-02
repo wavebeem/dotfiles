@@ -92,5 +92,6 @@
   "workbench.panel.location": "bottom",
   "zenMode.fullScreen": false,
   "explorer.confirmDelete": false,
-  "explorer.confirmDragAndDrop": false
+  "explorer.confirmDragAndDrop": false,
+  "git.autofetch": true
 }
