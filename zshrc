@@ -125,6 +125,14 @@ if ! which serve >/dev/null 2>&1; then
   alias serve="python -m SimpleHTTPServer"
 fi
 
+if which rbenv >/dev/null 2>&1; then
+  eval "$(rbenv init -)"
+fi
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
+[ -s "$NVM_DIR/bash_completion" ] && . "$NVM_DIR/bash_completion"
+
 # TODO: Do I want these in zshenv instead?
 path=(
   "/sbin"
@@ -139,14 +147,6 @@ path=(
   $path
 )
 
-if which rbenv >/dev/null 2>&1; then
-  eval "$(rbenv init -)"
-fi
-
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
-[ -s "$NVM_DIR/bash_completion" ] && . "$NVM_DIR/bash_completion"
-
 if test -f ~/.welcome; then
   cat ~/.welcome
 else
@@ -154,21 +154,23 @@ else
 fi
 
 __set_prompt() {
-  sep=" :: "
-  glyph=">>-"
-  username="%n"
-  hostname="%m"
-  cwd="%~"
-  reset="%b%f%u%s"
-  c1="%B%F{green}"
-  c2="%B%F{cyan}"
-  c3="%F{cyan}"
+  local sep=" :: "
+  local glyph=">>-"
+  local username="%n"
+  local hostname="%m"
+  local cwd="%~"
+  local reset="%b%f%u%s"
+  local c1="%B%F{green}"
+  local c2="%B%F{cyan}"
+  local c3="%F{cyan}"
+  local end="${c2}${glyph}${reset} "
   prompt="\
-${reset}\
+${reset}
 ${c2}${username}${reset}${c3}${sep}\
 ${c1}${hostname}${reset}${c3}${sep}\
 ${c2}${cwd}${reset}
 ${c2}${glyph}${reset} "
+  PS2="${c2}...${reset} "
 }
 
 __set_prompt
