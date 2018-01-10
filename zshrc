@@ -62,7 +62,6 @@ __install_zsh_autosuggestions() {
 precmd() {
   __set_title_special "zsh %~"
   echo
-  echo
 }
 
 preexec() {
