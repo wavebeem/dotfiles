@@ -123,6 +123,7 @@ alias ..="cd .."
 if ! which serve >/dev/null 2>&1; then
   alias serve="python -m SimpleHTTPServer"
 fi
+
 [ -s "$NVM_DIR/bash_completion" ] && . "$NVM_DIR/bash_completion"
 
 if test -f ~/.welcome; then
