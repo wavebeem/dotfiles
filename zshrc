@@ -120,6 +120,20 @@ alias T="tmux attach -d"
 
 alias ..="cd .."
 
+# TODO: Do I want these in zshenv instead?
+path=(
+  "$HOME/.local/bin"
+  "$HOME/.rbenv/bin"
+  "$HOME/Library/Python/2.7/bin"
+  "$ANDROID_HOME/tools"
+  "$ANDROID_HOME/platform-tools"
+  "/sbin"
+  "/usr/sbin"
+  "/usr/local/bin"
+  "/usr/local/sbin"
+  $path
+)
+
 if ! which serve >/dev/null 2>&1; then
   alias serve="python -m SimpleHTTPServer"
 fi
@@ -131,20 +145,6 @@ fi
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
 [ -s "$NVM_DIR/bash_completion" ] && . "$NVM_DIR/bash_completion"
-
-# TODO: Do I want these in zshenv instead?
-path=(
-  "/sbin"
-  "/usr/sbin"
-  "/usr/local/bin"
-  "/usr/local/sbin"
-  "$HOME/Library/Python/2.7/bin"
-  "$HOME/.local/bin"
-  "$HOME/.rbenv/bin"
-  "$ANDROID_HOME/tools"
-  "$ANDROID_HOME/platform-tools"
-  $path
-)
 
 if test -f ~/.welcome; then
   cat ~/.welcome
