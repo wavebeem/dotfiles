@@ -100,5 +100,6 @@
   "workbench.editor.showTabs": false,
   "workbench.iconTheme": "simple-icons",
   "workbench.panel.location": "bottom",
-  "zenMode.fullScreen": false
+  "zenMode.fullScreen": false,
+  "simpleIcons.hideArrows": false
 }
