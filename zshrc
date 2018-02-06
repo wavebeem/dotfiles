@@ -29,11 +29,6 @@ fix_ssh() {
   eval "export $(tmux showenv SSH_AUTH_SOCK)"
 }
 
-__maybe_source() {
-  local file="$1"
-  test -f "$file" && source "$file"
-}
-
 __set_title() {
   local title="$1"
   case "$TERM" in
@@ -128,10 +123,6 @@ if which rbenv >/dev/null 2>&1; then
   eval "$(rbenv init -)"
 fi
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
-[ -s "$NVM_DIR/bash_completion" ] && . "$NVM_DIR/bash_completion"
-
 if test -f ~/.welcome; then
   cat ~/.welcome
 else
@@ -163,4 +154,4 @@ __set_prompt
 __maybe_source ~/.zsh-autosuggestions/zsh-autosuggestions.zsh
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=cyan"
 
-__maybe_source ~/.after.zsh
+__maybe_source ~/.after.zshrc.zsh

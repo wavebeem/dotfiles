@@ -19,3 +19,10 @@ path=(
   "/usr/local/sbin"
   $path
 )
+
+__maybe_source() {
+  local file="$1"
+  test -f "$file" && source "$file"
+}
+
+__maybe_source ~/.after.zshenv.sh
