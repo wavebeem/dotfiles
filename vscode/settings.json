@@ -73,15 +73,15 @@
   "git.confirmSync": false,
   "git.enableSmartCommit": true,
   "git.enabled": true,
-  "gitlens.blame.line.enabled": false,
   "gitlens.codeLens.enabled": false,
+  "gitlens.currentLine.enabled": false,
   "gitlens.gitExplorer.files.layout": "list",
   "html.format.endWithNewline": true,
   "html.format.indentHandlebars": true,
   "python.linting.pep8Enabled": true,
   "python.linting.pylintEnabled": false,
   "search.useIgnoreFiles": true,
-  "search.useIgnoreFilesByDefault": true,
+  "simpleIcons.hideArrows": false,
   "sublimeTextKeymap.promptV3Features": true,
   "terminal.integrated.cursorBlinking": true,
   "terminal.integrated.cursorStyle": "block",
@@ -99,7 +99,5 @@
   "workbench.editor.enablePreviewFromQuickOpen": false,
   "workbench.editor.showTabs": false,
   "workbench.iconTheme": "simple-icons",
-  "workbench.panel.location": "bottom",
-  "zenMode.fullScreen": false,
-  "simpleIcons.hideArrows": false
+  "zenMode.fullScreen": false
 }
