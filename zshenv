@@ -25,4 +25,4 @@ __maybe_source() {
   test -f "$file" && source "$file"
 }
 
-__maybe_source ~/.after.zshenv.sh
+__maybe_source ~/.after.zshenv.zsh
