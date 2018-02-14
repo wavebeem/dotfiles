@@ -71,5 +71,21 @@
     "key": "ctrl+shift+j",
     "command": "search.action.focusActiveEditor",
     "when": "terminalFocus"
+  },
+  {
+    "key": "alt+.",
+    "command": "editor.emmet.action.balanceOut"
+  },
+  {
+    "key": "alt+,",
+    "command": "editor.emmet.action.balanceIn"
+  },
+  {
+    "key": "alt+w",
+    "command": "editor.emmet.action.wrapWithAbbreviation"
+  },
+  {
+    "key": "alt+v",
+    "command": "workbench.action.terminal.paste"
   }
 ]

@@ -30,6 +30,9 @@
   "editor.tabSize": 2,
   "editor.wordWrap": "on",
   "editor.wrappingIndent": "same",
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
   "files.associations": {
@@ -89,6 +92,7 @@
   "terminal.integrated.fontLigatures": true,
   "terminal.integrated.fontSize": 14,
   "terminal.integrated.lineHeight": 1,
+  "terminal.integrated.macOptionIsMeta": true,
   "terminal.integrated.scrollback": 10000,
   "window.menuBarVisibility": "toggle",
   "window.title": "${rootPath}${separator}${appName}",
