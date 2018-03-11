@@ -7,7 +7,6 @@ jtlowe.vscode-icon-theme
 ms-python.python
 ms-vscode.PowerShell
 ms-vscode.sublime-keybindings
-rebornix.Ruby
 richie5um2.vscode-sort-json
 shardulm94.trailing-spaces
 svipben.notification-tester
