@@ -867,7 +867,7 @@
 	<key>LoadPrefsFromCustomFolder</key>
 	<true/>
 	<key>NSNavLastRootDirectory</key>
-	<string>~/dotfiles</string>
+	<string>~/themer-flat-light/themer-iterm</string>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
 	<string>{712, 448}</string>
 	<key>NSQuotedKeystrokeBinding</key>
@@ -906,18 +906,24 @@
 		<key>TB Is Shown</key>
 		<integer>1</integer>
 	</dict>
-	<key>NSWindow Frame NSFontPanel</key>
-	<string>852 535 350 115 0 0 1920 1058 </string>
+	<key>NSWindow Frame SUStatusFrame</key>
+	<string>440 486 400 129 0 0 1280 778 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>370 192 700 622 0 0 1440 878 </string>
+	<string>290 117 700 622 0 0 1280 778 </string>
+	<key>NSWindow Frame SessionsPreferences</key>
+	<string>333 299 606 469 0 0 1280 778 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>550 518 796 473 0 0 1920 1058 </string>
+	<string>4 296 937 464 0 0 1280 778 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 305 688 753 0 0 1920 1058 </string>
+	<string>427 0 853 778 0 0 1280 778 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>921 149 688 753 0 0 1920 1058 </string>
+	<string>427 25 688 753 0 0 1280 778 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
-	<string>218 25 688 753 0 0 1920 1058 </string>
+	<string>37 0 688 753 0 0 1280 778 </string>
+	<key>NSWindow Frame iTerm Window 3</key>
+	<string>194 4 688 753 0 0 1280 778 </string>
+	<key>NSWindow Frame iTerm Window 4</key>
+	<string>215 25 688 753 0 0 1280 778 </string>
 	<key>NeverWarnAboutShortLivedSessions_63E84873-BFE5-429D-932C-20AE5FE46D55</key>
 	<true/>
 	<key>NeverWarnAboutShortLivedSessions_63E84873-BFE5-429D-932C-20AE5FE46D55_selection</key>
@@ -3606,39 +3612,28 @@
 			<string>/Users/brian</string>
 		</dict>
 	</array>
+	<key>NoSyncHaveUsedCopyMode</key>
+	<true/>
 	<key>NoSyncHaveWarnedAboutPasteConfirmationChange</key>
 	<true/>
 	<key>NoSyncInstallationId</key>
-	<string>8C939E0F-6ED0-44FF-AF1E-1CB6D9C0242B</string>
-	<key>NoSyncLastTipTime</key>
-	<real>541443435.37592804</real>
-	<key>NoSyncPermissionToShowTip</key>
+	<string>669B15DB-171C-4B4A-95A6-146929206EDD</string>
+	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
+	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
+	<integer>0</integer>
+	<key>NoSyncPermissionToShowTip</key>
+	<false/>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
-	<real>539546638.67050803</real>
-	<key>NoSyncTipsToNotShow</key>
-	<array>
-		<string>000</string>
-		<string>0000</string>
-		<string>0001</string>
-		<string>0002</string>
-		<string>0003</string>
-		<string>0004</string>
-		<string>0005</string>
-		<string>0006</string>
-		<string>0007</string>
-		<string>0008</string>
-		<string>0009</string>
-		<string>0010</string>
-	</array>
+	<real>506325812.60123497</real>
 	<key>OnlyWhenMoreTabs</key>
 	<true/>
 	<key>OpenArrangementAtStartup</key>
-	<true/>
+	<false/>
 	<key>OpenBookmark</key>
 	<false/>
 	<key>OpenNoWindowsAtStartup</key>
-	<false/>
+	<true/>
 	<key>PMPrintingExpandedStateForPrint2</key>
 	<false/>
 	<key>PerformDNSLookups</key>
@@ -3677,7 +3672,7 @@
 		</dict>
 	</dict>
 	<key>PrefsCustomFolder</key>
-	<string>/Users/brianmock/dotfiles</string>
+	<string>/Users/brian/dotfiles</string>
 	<key>Print In Black And White</key>
 	<true/>
 	<key>PromptOnQuit</key>
@@ -3691,7 +3686,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2018-02-27T17:12:27Z</date>
+	<date>2018-03-09T04:44:43Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>ShowBookmarkName</key>
@@ -3734,7 +3729,7 @@
 	<key>findMode_iTerm</key>
 	<integer>0</integer>
 	<key>iTerm Version</key>
-	<string>3.2.20180224-nightly</string>
+	<string>3.2.20180305-nightly</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>6</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>

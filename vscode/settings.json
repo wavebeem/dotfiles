@@ -11,7 +11,7 @@
   "editor.dragAndDrop": false,
   "editor.fontFamily": "'Fira Code', Menlo, Consolas, monospace",
   "editor.fontLigatures": true,
-  "editor.fontSize": 16,
+  "editor.fontSize": 14,
   "editor.formatOnPaste": false,
   "editor.formatOnSave": false,
   "editor.minimap.enabled": false,
@@ -21,7 +21,11 @@
   "editor.renderIndentGuides": true,
   "editor.renderLineHighlight": "all",
   "editor.renderWhitespace": "none",
-  "editor.rulers": [80, 100, 120],
+  "editor.rulers": [
+    80,
+    100,
+    120
+  ],
   "editor.snippetSuggestions": "top",
   "editor.tabSize": 2,
   "editor.wordWrap": "on",
@@ -73,7 +77,11 @@
   "git.enableSmartCommit": true,
   "git.enabled": true,
   "gitlens.blame.avatars": false,
-  "gitlens.blame.highlight.locations": ["gutter", "line", "overview"],
+  "gitlens.blame.highlight.locations": [
+    "gutter",
+    "line",
+    "overview"
+  ],
   "gitlens.codeLens.enabled": false,
   "gitlens.currentLine.enabled": false,
   "gitlens.explorers.avatars": false,
@@ -92,7 +100,7 @@
   "terminal.integrated.cursorStyle": "block",
   "terminal.integrated.fontFamily": "'Fira Code', Menlo, Consolas, monospace",
   "terminal.integrated.fontLigatures": true,
-  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.fontSize": 12,
   "terminal.integrated.lineHeight": 1,
   "terminal.integrated.macOptionIsMeta": true,
   "terminal.integrated.scrollback": 10000,
@@ -101,9 +109,10 @@
   "window.titleBarStyle": "custom",
   "window.zoomLevel": 0,
   "workbench.activityBar.visible": true,
-  "workbench.colorTheme": "Uno Due Tre",
+  "workbench.colorTheme": "Uno Due Tre (Dark)",
   "workbench.editor.enablePreviewFromQuickOpen": false,
   "workbench.editor.showTabs": false,
   "workbench.iconTheme": "simple-icons",
-  "zenMode.fullScreen": false
+  "zenMode.fullScreen": false,
+  "gitlens.keymap": "alternate"
 }
