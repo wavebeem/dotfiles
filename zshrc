@@ -168,4 +168,6 @@ __set_prompt
 __maybe_source ~/.zsh-autosuggestions/zsh-autosuggestions.zsh
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=cyan"
 
+__maybe_source ~/.travis/travis.sh
+
 __maybe_source ~/.after.zshrc.zsh

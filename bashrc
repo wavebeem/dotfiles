@@ -84,3 +84,6 @@ if test -t 0 && test -t 1; then
     uptime
   fi
 fi
+
+# added by travis gem
+[ -f ~/.travis/travis.sh ] && source ~/.travis/travis.sh
