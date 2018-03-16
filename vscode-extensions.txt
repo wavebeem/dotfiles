@@ -1,13 +1,13 @@
 LaurentTreguier.vscode-simple-icons
-PeterJausovec.vscode-docker
 dbaeumer.vscode-eslint
-donjayamanne.python
 eamodio.gitlens
+eg2.tslint
 esbenp.prettier-vscode
+jtlowe.vscode-icon-theme
+ms-python.python
 ms-vscode.PowerShell
 ms-vscode.sublime-keybindings
-rebornix.Ruby
 richie5um2.vscode-sort-json
 shardulm94.trailing-spaces
-stkb.rewrap
+svipben.notification-tester
 wavebeem.theme-unoduetre
