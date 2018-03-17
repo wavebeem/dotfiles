@@ -50,7 +50,7 @@ __set_title_special() {
 
 __install_zsh_autosuggestions() {
   git clone \
-    git://github.com/zsh-users/zsh-autosuggestions \
+    https://github.com/zsh-users/zsh-autosuggestions \
     ~/.zsh-autosuggestions
 }
 
