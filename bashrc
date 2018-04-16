@@ -60,6 +60,9 @@ alias la="ll -a"
 
 alias ..='cd ..'
 
+alias t="tmux"
+alias T="tmux attach -d"
+
 alias serve="python -m SimpleHTTPServer"
 
 export LANG="en_US.UTF-8"
