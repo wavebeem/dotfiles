@@ -20,20 +20,21 @@ PROMPT_COMMAND="precmd"
 
 bold=$(_ansi 1)
 cyan=$(_ansi 32)
+purple=$(_ansi 35)
 reset=$(_ansi 0)
 
-separator="${reset} :: "
+separator="${reset}${purple} || "
 space=" "
 
 export PS1="\
-${reset}${bold}\u\
+${reset}${bold}${purple}\u\
 ${separator}${reset}${bold}${cyan}\h\
-${separator}${reset}${bold}\w\
-\n${reset}${bold}>>- ${reset}\
+${separator}${reset}${bold}${purple}\w\
+\n${reset}${bold}${purple}\$ ${reset}\
 "
 export PS2="\
 ${reset}${bold}\
-${space}${space}${space}${space}\
+${space}${space}\
 ${reset}\
 "
 
@@ -59,6 +60,9 @@ alias ll="ls -hl"
 alias la="ll -a"
 
 alias ..='cd ..'
+
+alias t="tmux"
+alias T="tmux attach -d"
 
 alias serve="python -m SimpleHTTPServer"
 

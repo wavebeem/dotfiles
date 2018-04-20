@@ -31,16 +31,12 @@ fix_ssh() {
 
 __set_title() {
   local title="$1"
-  case "$TERM" in
-  linux)
-    ;;
-  *)
+  if [[ $TERM != linux ]]; then
     print -Pn "\e]0;"
     # Don't allow % escapes in the parameter
     print -n "$title"
     print -Pn "\a"
-    ;;
-  esac
+  fi
 }
 
 __set_title_special() {
@@ -79,23 +75,17 @@ preexec() {
 }
 
 # Fix the value of $SHELL if it's broken
-case "$SHELL" in
-*zsh)
-  ;;
-*)
+if [[ $SHELL = *zsh ]]; then
   export SHELL="$(which zsh)"
-  ;;
-esac
+fi
 
-case "$(uname -r)" in
-*Microsoft)
+if [[ $(uname -r) = *Microsoft ]]; then
   start() {
     local first="$1"
     shift
     powershell.exe -Command Start-Process "$first" -- "$@"
   }
-  ;;
-esac
+fi
 
 # Allow pasting commands with "$" from the internet
 alias '$'=""
@@ -111,14 +101,11 @@ alias gl="git log"
 alias gg="git commit"
 alias gp="git push origin HEAD"
 
-case "$(uname)" in
-Darwin)
+if [[ $(uname) = Darwin ]]; then
   alias ls="ls -G"
-  ;;
-*)
+else
   alias ls="ls --color=auto"
-  ;;
-esac
+fi
 
 alias l="ls"
 alias ll="ls -hl"
@@ -137,15 +124,15 @@ if which rbenv >/dev/null 2>&1; then
   eval "$(rbenv init -)"
 fi
 
-if test -f ~/.welcome; then
+if [[ -f ~/.welcome ]]; then
   cat ~/.welcome
 else
   uptime
 fi
 
 __set_prompt() {
-  local sep=" :: "
-  local glyph=">>-"
+  local sep=" || "
+  local glyph="\$"
   local username="%n"
   local hostname="%m"
   local cwd="%~"

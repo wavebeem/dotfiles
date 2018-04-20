@@ -1,7 +1,0 @@
-song_columns_list_format = "(40)[green]{b} (5f)[red]{lr} (40)[yellow]{t} (20)[cyan]{ar}"
-song_list_format = "$3%b $4%t$R$7%a $2[%l]"
-song_status_format = "$4%t$9 • $7%a$9"
-playlist_display_mode = "classic"
-browser_display_mode = "classic"
-progressbar_color = "white"
-progressbar_look = "—●"
