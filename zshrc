@@ -131,8 +131,8 @@ else
 fi
 
 __set_prompt() {
-  local sep=" :: "
-  local glyph=">>-"
+  local sep=" || "
+  local glyph="\$"
   local username="%n"
   local hostname="%m"
   local cwd="%~"
