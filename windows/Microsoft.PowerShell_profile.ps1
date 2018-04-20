@@ -19,12 +19,12 @@ function prompt {
   Write-Host ""
   Write-Host ""
   Write-Host -NoNewline -ForegroundColor Cyan $env:UserName
-  Write-Host -NoNewline -ForegroundColor Cyan " :: "
+  Write-Host -NoNewline -ForegroundColor Blue " || "
   Write-Host -NoNewline -ForegroundColor Green (hostname)
-  Write-Host -NoNewline -ForegroundColor Cyan " :: "
+  Write-Host -NoNewline -ForegroundColor Blue " || "
   Write-Host -NoNewline -ForegroundColor Cyan (Get-Location)
   Write-Host ""
-  Write-Host -NoNewline -ForeGroundColor Cyan ">>-"
+  Write-Host -NoNewline -ForeGroundColor Blue "$"
   return " "
 }
 
