@@ -46,6 +46,7 @@ install($_) for (
   "zshrc",
   "vimrc",
   "bashrc",
+  "hyper.js",
   "tmux.conf",
   "inputrc",
   "gitignore",
