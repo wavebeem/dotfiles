@@ -1,3 +1,14 @@
+BoldAsFont=-1
+CursorType=block
+Font=Fira Code Retina
+FontHeight=12
+FontWeight=450
+BoldAsColour=no
+Scrollbar=none
+Term=xterm-256color
+Columns=90
+Rows=48
+
 BackgroundColour=255,255,255
 ForegroundColour=48,54,75
 CursorColour=48,54,75

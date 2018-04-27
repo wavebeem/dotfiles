@@ -4,7 +4,6 @@ $DOTFILES = Resolve-Path (Join-Path $scriptDir "..")
 Set-Location $DOTFILES
 
 $VSCODE = "$env:APPDATA\Code\User"
-$MINTTY = "$env:APPDATA\mintty"
 
 function install($path) {
   $dest = "$HOME\.$path"
@@ -63,7 +62,8 @@ install "vimrc"
 install "gitconfig"
 install "gitignore"
 
-installAs "windows\mintty\config" "$MINTTY\config"
+installAs "windows\minttyrc" "$HOME\.minttyrc"
+installAs "windows\wsltty\config" "$env:APPDATA\wsltty\config"
 installAs "windows\Microsoft.PowerShell_profile.ps1" $profile
 installAs "vscode\keybindings.json" "$VSCODE\keybindings.json"
 installAs "vscode\settings.json" "$VSCODE\settings.json"
