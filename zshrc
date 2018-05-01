@@ -50,20 +50,6 @@ __install_zsh_autosuggestions() {
     ~/.zsh-autosuggestions
 }
 
-iterm-tab-create() {
-  local cmd="$1"
-  osascript -i <<EOF
-    tell application "iTerm"
-      tell current window
-        create tab with default profile
-        tell the current session
-          write text "$cmd"
-        end tell
-      end tell
-    end tell
-EOF
-}
-
 precmd() {
   __set_title_special "zsh %~"
   echo

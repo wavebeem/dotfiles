@@ -37,10 +37,6 @@ function .. {
   Set-Location ..
 }
 
-function zsh {
-  bash -c "exec zsh"
-}
-
 function g {
   git status
 }
