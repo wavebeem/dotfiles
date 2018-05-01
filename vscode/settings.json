@@ -23,7 +23,11 @@
   "editor.renderIndentGuides": true,
   "editor.renderLineHighlight": "all",
   "editor.renderWhitespace": "none",
-  "editor.rulers": [80, 100, 120],
+  "editor.rulers": [
+    80,
+    100,
+    120
+  ],
   "editor.snippetSuggestions": "top",
   "editor.tabSize": 2,
   "editor.wordWrap": "on",
@@ -54,18 +58,22 @@
     "**/.venv": true,
     "**/_site": true,
     "**/bower_components": true,
-    "**/build": true,
     "**/bundle.*": true,
     "**/coverage": true,
     "**/db.json": true,
-    "**/dist": true,
     "**/log": true,
     "**/logs": true,
     "**/node_modules": true,
     "**/tmp": true
   },
+  "search.exclude": {
+    "**/build": true,
+    "**/dist": true
+  },
   "files.insertFinalNewline": true,
   "files.watcherExclude": {
+    "**/build": true,
+    "**/dist": true,
     "**/.git/objects/**": true,
     "**/bower_components/**": true,
     "**/node_modules/**": true
@@ -85,7 +93,11 @@
     "suppressShowKeyBindingsNotice": true
   },
   "gitlens.blame.avatars": false,
-  "gitlens.blame.highlight.locations": ["gutter", "line", "overview"],
+  "gitlens.blame.highlight.locations": [
+    "gutter",
+    "line",
+    "overview"
+  ],
   "gitlens.codeLens.enabled": false,
   "gitlens.currentLine.enabled": false,
   "gitlens.explorers.avatars": false,
@@ -111,7 +123,7 @@
   "window.titleBarStyle": "custom",
   "window.zoomLevel": 0,
   "workbench.activityBar.visible": true,
-  "workbench.colorTheme": "Uno Due Tre",
+  "workbench.colorTheme": "Uno Due Tre (Nature)",
   "workbench.editor.enablePreviewFromQuickOpen": false,
   "workbench.editor.showTabs": false,
   "workbench.iconTheme": "simple-icons",
