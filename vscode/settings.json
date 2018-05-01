@@ -23,11 +23,7 @@
   "editor.renderIndentGuides": true,
   "editor.renderLineHighlight": "all",
   "editor.renderWhitespace": "none",
-  "editor.rulers": [
-    80,
-    100,
-    120
-  ],
+  "editor.rulers": [80, 100, 120],
   "editor.snippetSuggestions": "top",
   "editor.tabSize": 2,
   "editor.wordWrap": "on",
@@ -93,11 +89,7 @@
     "suppressShowKeyBindingsNotice": true
   },
   "gitlens.blame.avatars": false,
-  "gitlens.blame.highlight.locations": [
-    "gutter",
-    "line",
-    "overview"
-  ],
+  "gitlens.blame.highlight.locations": ["gutter", "line", "overview"],
   "gitlens.codeLens.enabled": false,
   "gitlens.currentLine.enabled": false,
   "gitlens.explorers.avatars": false,
