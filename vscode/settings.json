@@ -5,6 +5,7 @@
   "[python]": {
     "editor.tabSize": 4
   },
+  "diffEditor.ignoreTrimWhitespace": true,
   "diffEditor.renderSideBySide": false,
   "editor.acceptSuggestionOnEnter": "off",
   "editor.cursorBlinking": "smooth",
@@ -54,11 +55,9 @@
     "**/.venv": true,
     "**/_site": true,
     "**/bower_components": true,
-    "**/build": true,
     "**/bundle.*": true,
     "**/coverage": true,
     "**/db.json": true,
-    "**/dist": true,
     "**/log": true,
     "**/logs": true,
     "**/node_modules": true,
@@ -68,6 +67,8 @@
   "files.watcherExclude": {
     "**/.git/objects/**": true,
     "**/bower_components/**": true,
+    "**/build": true,
+    "**/dist": true,
     "**/node_modules/**": true
   },
   "git.autofetch": true,
@@ -97,6 +98,10 @@
   "html.format.indentHandlebars": true,
   "python.linting.pep8Enabled": true,
   "python.linting.pylintEnabled": false,
+  "search.exclude": {
+    "**/build": true,
+    "**/dist": true
+  },
   "search.smartCase": true,
   "search.useIgnoreFiles": true,
   "simpleIcons.hideArrows": false,
@@ -117,6 +122,6 @@
   "workbench.iconTheme": "simple-icons",
   "workbench.startupEditor": "newUntitledFile",
   "workbench.statusBar.visible": true,
-  "zenMode.fullScreen": false,
-  "zenMode.centerLayout": false
+  "zenMode.centerLayout": false,
+  "zenMode.fullScreen": false
 }
