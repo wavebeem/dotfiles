@@ -32,11 +32,7 @@ ${separator}${reset}${bold}${cyan}\h\
 ${separator}${reset}${bold}${purple}\w\
 \n${reset}${bold}${purple}\$ ${reset}\
 "
-export PS2="\
-${reset}${bold}\
-${space}${space}\
-${reset}\
-"
+export PS2="${reset}${bold}${purple}\$ ${reset}"
 
 alias gco="git checkout"
 alias gdd="git diff --cached"
