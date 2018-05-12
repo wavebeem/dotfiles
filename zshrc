@@ -61,7 +61,7 @@ preexec() {
 }
 
 # Fix the value of $SHELL if it's broken
-if [[ $SHELL = *zsh ]]; then
+if [[ $SHELL != *zsh ]]; then
   export SHELL="$(which zsh)"
 fi
 

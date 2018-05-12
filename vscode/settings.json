@@ -111,12 +111,12 @@
   "window.titleBarStyle": "custom",
   "window.zoomLevel": 0,
   "workbench.activityBar.visible": true,
-  "workbench.colorTheme": "Uno Due Tre",
+  "workbench.colorTheme": "Uno Due Tre (Nature)",
   "workbench.editor.enablePreviewFromQuickOpen": false,
   "workbench.editor.showTabs": false,
   "workbench.iconTheme": "simple-icons",
   "workbench.startupEditor": "newUntitledFile",
   "workbench.statusBar.visible": true,
-  "zenMode.fullScreen": false,
-  "zenMode.centerLayout": false
+  "zenMode.centerLayout": false,
+  "zenMode.fullScreen": false
 }
