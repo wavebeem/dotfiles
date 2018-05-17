@@ -36,6 +36,7 @@
   "files.associations": {
     "zshrc": "shellscript"
   },
+  "files.defaultLanguage": "markdown",
   "files.exclude": {
     "**/*-min-*": true,
     "**/*-min.*": true,
@@ -90,6 +91,7 @@
   "gitlens.currentLine.enabled": false,
   "gitlens.explorers.avatars": false,
   "gitlens.gitExplorer.files.layout": "auto",
+  "gitlens.historyExplorer.enabled": true,
   "gitlens.hovers.currentLine.over": "line",
   "gitlens.hovers.enabled": false,
   "gitlens.keymap": "none",
