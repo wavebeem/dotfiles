@@ -1,8 +1,8 @@
 BoldAsFont=-1
 CursorType=block
-Font=Fira Code Retina
+Font=Input
 FontHeight=12
-FontWeight=450
+FontWeight=400
 BoldAsColour=no
 Scrollbar=none
 Term=xterm-256color
