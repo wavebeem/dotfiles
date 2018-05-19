@@ -12,6 +12,9 @@ Set-PSReadlineOption -ForegroundColor $c1 -TokenKind Type
 Set-PSReadlineOption -ForegroundColor $c1 -TokenKind Number
 Set-PSReadlineOption -ForegroundColor $c1 -TokenKind Member
 
+$host.PrivateData.ErrorForegroundColor = 'White'
+$host.PrivateData.ErrorBackgroundCOlor = 'Red'
+
 Set-Alias l ls
 Set-Alias ll ls
 
@@ -19,9 +22,9 @@ function prompt {
   Write-Host ""
   Write-Host ""
   Write-Host -NoNewline -ForegroundColor Cyan $env:UserName
-  Write-Host -NoNewline -ForegroundColor Blue " || "
+  Write-Host -NoNewline -ForegroundColor Blue " | "
   Write-Host -NoNewline -ForegroundColor Green (hostname)
-  Write-Host -NoNewline -ForegroundColor Blue " || "
+  Write-Host -NoNewline -ForegroundColor Blue " | "
   Write-Host -NoNewline -ForegroundColor Cyan (Get-Location)
   Write-Host ""
   Write-Host -NoNewline -ForeGroundColor Blue "$"
