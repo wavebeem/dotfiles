@@ -57,6 +57,8 @@ alias la="ll -a"
 
 alias ..='cd ..'
 
+alias z="exec zsh"
+
 alias t="tmux"
 alias T="tmux attach -d"
 
@@ -74,16 +76,12 @@ export PATH="~/.local/bin:$PATH"
 export PATH="~/.rbenv/bin:$PATH"
 
 # If stdin and stdout are connected to the tty (interactive mode)
-if test -t 0 && test -t 1; then
-  if type rbenv >/dev/null 2>&1; then
-    source <(rbenv init -)
-  fi
-  if test -f ~/.welcome; then
-    cat ~/.welcome
-  else
-    uptime
-  fi
+if type rbenv >/dev/null 2>&1; then
+  source <(rbenv init -)
 fi
 
-# added by travis gem
-[ -f ~/.travis/travis.sh ] && source ~/.travis/travis.sh
+if [[ -f ~/.welcome ]]; then
+  cat ~/.welcome
+else
+  uptime
+fi
