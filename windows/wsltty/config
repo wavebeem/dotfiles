@@ -1,7 +1,7 @@
 BoldAsFont=-1
 CursorType=block
 Font=Input
-FontHeight=12
+FontHeight=11
 FontWeight=400
 BoldAsColour=no
 Scrollbar=none
@@ -28,3 +28,4 @@ Cyan=60,170,169
 BoldCyan=60,170,169
 White=255,255,255
 BoldWhite=255,255,255
+FontSmoothing=default

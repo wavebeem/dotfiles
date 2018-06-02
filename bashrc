@@ -21,16 +21,17 @@ PROMPT_COMMAND="precmd"
 bold=$(_ansi 1)
 cyan=$(_ansi 32)
 purple=$(_ansi 35)
+blue=$(_ansi 34)
 reset=$(_ansi 0)
 
-separator="${reset}${purple} || "
+separator="${reset}${blue} | "
 space=" "
 
 export PS1="\
 ${reset}${bold}${purple}\u\
 ${separator}${reset}${bold}${cyan}\h\
 ${separator}${reset}${bold}${purple}\w\
-\n${reset}${bold}${purple}\$ ${reset}\
+\n${reset}${bold}${blue}\$ ${reset}\
 "
 export PS2="${reset}${bold}${purple}\$ ${reset}"
 
