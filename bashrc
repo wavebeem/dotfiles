@@ -31,9 +31,9 @@ export PS1="\
 ${reset}${bold}${purple}\u\
 ${separator}${reset}${bold}${cyan}\h\
 ${separator}${reset}${bold}${purple}\w\
-\n${reset}${bold}${blue}\$ ${reset}\
+\n${reset}${blue}\$ ${reset}\
 "
-export PS2="${reset}${bold}${purple}\$ ${reset}"
+export PS2="${reset}${purple}\$ ${reset}"
 
 alias gco="git checkout"
 alias gdd="git diff --cached"
