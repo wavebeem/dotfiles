@@ -21,18 +21,19 @@ PROMPT_COMMAND="precmd"
 bold=$(_ansi 1)
 cyan=$(_ansi 32)
 purple=$(_ansi 35)
+blue=$(_ansi 34)
 reset=$(_ansi 0)
 
-separator="${reset}${purple} || "
+separator="${reset}${blue} | "
 space=" "
 
 export PS1="\
 ${reset}${bold}${purple}\u\
 ${separator}${reset}${bold}${cyan}\h\
 ${separator}${reset}${bold}${purple}\w\
-\n${reset}${bold}${purple}\$ ${reset}\
+\n${reset}${blue}\$ ${reset}\
 "
-export PS2="${reset}${bold}${purple}\$ ${reset}"
+export PS2="${reset}${purple}\$ ${reset}"
 
 alias gco="git checkout"
 alias gdd="git diff --cached"
@@ -57,6 +58,8 @@ alias la="ll -a"
 
 alias ..='cd ..'
 
+alias z="exec zsh"
+
 alias t="tmux"
 alias T="tmux attach -d"
 
@@ -74,16 +77,12 @@ export PATH="~/.local/bin:$PATH"
 export PATH="~/.rbenv/bin:$PATH"
 
 # If stdin and stdout are connected to the tty (interactive mode)
-if test -t 0 && test -t 1; then
-  if type rbenv >/dev/null 2>&1; then
-    source <(rbenv init -)
-  fi
-  if test -f ~/.welcome; then
-    cat ~/.welcome
-  else
-    uptime
-  fi
+if type rbenv >/dev/null 2>&1; then
+  source <(rbenv init -)
 fi
 
-# added by travis gem
-[ -f ~/.travis/travis.sh ] && source ~/.travis/travis.sh
+if [[ -f ~/.welcome ]]; then
+  cat ~/.welcome
+else
+  uptime
+fi
