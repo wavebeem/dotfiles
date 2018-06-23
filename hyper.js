@@ -30,7 +30,7 @@ module.exports = {
     fontSize: 14,
 
     // font family with optional fallbacks
-    fontFamily: '"Fira Code", Menlo, Consolas, "Lucida Console", monospace',
+    fontFamily: 'Input, Menlo, Consolas, monospace',
 
     // default font weight: 'normal' or 'bold'
     fontWeight: "normal",
@@ -69,9 +69,9 @@ module.exports = {
         border: 0 !important;
       }
 
+      .tabs_title,
       .tab_active {
         color: #000 !important;
-        font-weight: bold;
       }
     `,
 
@@ -88,7 +88,7 @@ module.exports = {
     showWindowControls: "",
 
     // custom padding (CSS format, i.e.: `top right bottom left`)
-    padding: "4px 8px",
+    padding: "8px",
 
     // the full list. if you're going to provide the full color palette,
     // including the 6 x 6 color cubes and the grayscale map, just provide
