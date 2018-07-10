@@ -125,7 +125,7 @@ __set_prompt() {
   local reset="%b%f%u%s"
   local c1="%B%F{green}"
   local c2="%B%F{cyan}"
-  local c3="%F{cyan}"
+  local c3="%F{blue}"
   local end="${c2}${glyph}${reset} "
   prompt="\
 ${reset}

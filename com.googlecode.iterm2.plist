@@ -2696,19 +2696,19 @@
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>270 105 515 208 0 0 1440 878 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>610 327 700 622 0 0 1920 1058 </string>
+	<string>930 596 700 622 0 0 2560 1417 </string>
 	<key>NSWindow Frame SessionsPreferences</key>
-	<string>-1 477 609 401 0 0 1920 1058 </string>
+	<string>484 187 609 401 0 0 1440 878 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>19 378 928 394 0 0 1440 878 </string>
+	<string>943 503 770 389 0 0 2560 1417 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>230 834 592 584 0 0 2560 1418 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 125 688 753 0 0 1440 878 </string>
+	<string>1414 209 688 753 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>0 0 1440 878 0 0 1440 878 </string>
+	<string>0 664 688 753 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
-	<string>0 125 688 753 0 0 1440 878 </string>
+	<string>1280 664 688 753 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 3</key>
 	<string>289 61 688 753 0 0 1920 1058 </string>
 	<key>NeverWarnAboutShortLivedSessions_63E84873-BFE5-429D-932C-20AE5FE46D55</key>
@@ -2734,6 +2734,8 @@
 			<string></string>
 			<key>AWDS Window Option</key>
 			<string>No</string>
+			<key>Allow Title Setting</key>
+			<true/>
 			<key>Ambiguous Double Width</key>
 			<false/>
 			<key>Ansi 0 Color</key>
@@ -3583,6 +3585,8 @@
 			<string>xterm-256color</string>
 			<key>Thin Strokes</key>
 			<integer>0</integer>
+			<key>Title Components</key>
+			<integer>1</integer>
 			<key>Transparency</key>
 			<real>0.0</real>
 			<key>Unicode Version</key>
@@ -5409,6 +5413,50 @@
 	<real>548271058.54526198</real>
 	<key>NoSyncPermissionToShowTip</key>
 	<true/>
+	<key>NoSyncRecordedVariableNames</key>
+	<dict>
+		<key>1</key>
+		<array>
+			<string>session.jobName</string>
+			<string>session.id</string>
+			<string>session.terminalIconName</string>
+			<string>session.profileName</string>
+			<string>session.tmuxClientName</string>
+			<string>session.name</string>
+			<string>session.termid</string>
+			<string>session.hostname</string>
+			<string>session.username</string>
+			<string>session.tmuxRole</string>
+			<string>session.path</string>
+			<string>session.autoName</string>
+			<string>session.creationTimeString</string>
+			<string>session.rows</string>
+			<string>session.tmuxWindowTitle</string>
+			<string>session.tty</string>
+			<string>session.autoLogId</string>
+			<string>session.terminalWindowName</string>
+			<string>session.presentationName</string>
+			<string>session.columns</string>
+		</array>
+		<key>2</key>
+		<array>
+			<string>currentSession.session.jobName</string>
+			<string>currentSession.session.terminalIconName</string>
+			<string>currentSession.session.rows</string>
+			<string>currentSession.session.presentationName</string>
+			<string>currentSession.session.terminalWindowName</string>
+			<string>tmuxWindow</string>
+			<string>currentSession.session.columns</string>
+			<string>currentSession</string>
+			<string>currentSession.session.autoName</string>
+			<string>currentSession.session.name</string>
+			<string>currentSession.session.tty</string>
+		</array>
+		<key>4</key>
+		<array>
+			<string>pid</string>
+		</array>
+	</dict>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
 	<real>539546638.67050803</real>
 	<key>NoSyncTipsDisabled</key>
@@ -5536,7 +5584,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2018-05-21T18:39:51Z</date>
+	<date>2018-07-10T20:34:52Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>ShowBookmarkName</key>
@@ -5581,7 +5629,7 @@
 	<key>findMode_iTerm</key>
 	<integer>0</integer>
 	<key>iTerm Version</key>
-	<string>3.2.20180510-nightly</string>
+	<string>3.2.20180710-nightly</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>6</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>

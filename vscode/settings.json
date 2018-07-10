@@ -5,6 +5,10 @@
   "[python]": {
     "editor.tabSize": 4
   },
+  "[markdown]": {
+    "editor.wordWrap": "wordWrapColumn",
+    "editor.wordWrapColumn": 80
+  },
   "diffEditor.ignoreTrimWhitespace": true,
   "diffEditor.renderSideBySide": false,
   "editor.acceptSuggestionOnEnter": "off",
@@ -28,9 +32,6 @@
   "editor.tabSize": 2,
   "editor.wordWrap": "on",
   "editor.wrappingIndent": "same",
-  "emmet.includeLanguages": {
-    "javascript": "javascriptreact"
-  },
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
   "files.associations": {
@@ -75,26 +76,6 @@
   "git.confirmSync": false,
   "git.enableSmartCommit": true,
   "git.enabled": true,
-  "gitlens.advanced.messages": {
-    "suppressCommitHasNoPreviousCommitWarning": false,
-    "suppressCommitNotFoundWarning": false,
-    "suppressFileNotUnderSourceControlWarning": false,
-    "suppressGitVersionWarning": false,
-    "suppressLineUncommittedWarning": false,
-    "suppressNoRepositoryWarning": false,
-    "suppressResultsExplorerNotice": false,
-    "suppressShowKeyBindingsNotice": true
-  },
-  "gitlens.blame.avatars": false,
-  "gitlens.blame.highlight.locations": ["gutter", "line", "overview"],
-  "gitlens.codeLens.enabled": false,
-  "gitlens.currentLine.enabled": false,
-  "gitlens.explorers.avatars": false,
-  "gitlens.gitExplorer.files.layout": "auto",
-  "gitlens.historyExplorer.enabled": true,
-  "gitlens.hovers.currentLine.over": "line",
-  "gitlens.hovers.enabled": false,
-  "gitlens.keymap": "none",
   "html.format.endWithNewline": true,
   "html.format.indentHandlebars": true,
   "python.linting.pep8Enabled": true,
