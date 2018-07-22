@@ -1,5 +1,7 @@
 $c1 = "Yellow"
 
+Set-PSReadlineOption -BellStyle None
+
 Set-PSReadlineOption -ForegroundColor $c1 -TokenKind None
 Set-PSReadlineOption -ForegroundColor $c1 -TokenKind Comment
 Set-PSReadlineOption -ForegroundColor $c1 -TokenKind Keyword
