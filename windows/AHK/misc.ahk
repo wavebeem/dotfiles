@@ -38,6 +38,7 @@ CapsLock::Control
 >!+-::Send {u+2014} ; em-dash
 >!+l::Send {u+03bb} ; lambda
 >!+p::Send {u+03c0} ; pi
+>!+d::Send {u+0394} ; delta
 >!a::Send {u+2190} ; left arrow
 >!w::Send {u+2191} ; up arrow
 >!d::Send {u+2192} ; right arrow
