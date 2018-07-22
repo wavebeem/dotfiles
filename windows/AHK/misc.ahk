@@ -36,3 +36,9 @@ CapsLock::Control
 >!e::Send {u+00e9} ; e-acute
 >!n::Send {u+00f1} ; n-tilde
 >!+-::Send {u+2014} ; em-dash
+>!+l::Send {u+03bb} ; lambda
+>!+p::Send {u+03c0} ; pi
+>!a::Send {u+2190} ; left arrow
+>!w::Send {u+2191} ; up arrow
+>!d::Send {u+2192} ; right arrow
+>!s::Send {u+2193} ; down arrow
