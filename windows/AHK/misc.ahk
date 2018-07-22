@@ -1,3 +1,4 @@
+; Reload the script without confirmation when re-executing
 #SingleInstance force
 
 ; I can't live without this one now...
