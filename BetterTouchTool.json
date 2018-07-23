@@ -1,0 +1,131 @@
+{
+  "BTTPresetName": "Default",
+  "BTTPresetUUID": "E806215D-9135-47DA-B27A-2EB76EE67075",
+  "BTTPresetContent": [
+    {
+      "BTTAppBundleIdentifier": "BT.G",
+      "BTTAppName": "Global",
+      "BTTAppSpecificSettings": {},
+      "BTTTriggers": [
+        {
+          "BTTTriggerClass": "BTTTriggerTypeKeyboardShortcut",
+          "BTTPredefinedActionType": 22,
+          "BTTPredefinedActionName": "Mute",
+          "BTTAdditionalConfiguration": "524352",
+          "BTTTriggerOnDown": 1,
+          "BTTEnabled": 1,
+          "BTTShortcutKeyCode": 36,
+          "BTTShortcutModifierKeys": 524288,
+          "BTTOrder": 2,
+          "BTTTriggerConfig": {
+            "BTTTouchBarItemIconHeight": 0,
+            "BTTTouchBarItemIconWidth": 0,
+            "BTTLeftRightModifierDifferentiation": 1
+          }
+        },
+        {
+          "BTTTriggerClass": "BTTTriggerTypeKeyboardShortcut",
+          "BTTPredefinedActionType": 26,
+          "BTTPredefinedActionName": "Previous",
+          "BTTAdditionalConfiguration": "524352",
+          "BTTTriggerOnDown": 1,
+          "BTTEnabled": 1,
+          "BTTShortcutKeyCode": 33,
+          "BTTShortcutModifierKeys": 524288,
+          "BTTOrder": 4,
+          "BTTTriggerConfig": {
+            "BTTTouchBarItemIconHeight": 0,
+            "BTTTouchBarItemIconWidth": 0,
+            "BTTLeftRightModifierDifferentiation": 1
+          }
+        },
+        {
+          "BTTTriggerClass": "BTTTriggerTypeKeyboardShortcut",
+          "BTTPredefinedActionType": 25,
+          "BTTPredefinedActionName": "Volume Down",
+          "BTTAdditionalConfiguration": "524352",
+          "BTTTriggerOnDown": 1,
+          "BTTEnabled": 1,
+          "BTTShortcutKeyCode": 41,
+          "BTTShortcutModifierKeys": 524288,
+          "BTTOrder": 0,
+          "BTTTriggerConfig": {
+            "BTTTouchBarItemIconHeight": 0,
+            "BTTTouchBarItemIconWidth": 0,
+            "BTTLeftRightModifierDifferentiation": 1
+          }
+        },
+        {
+          "BTTTriggerClass": "BTTTriggerTypeKeyboardShortcut",
+          "BTTPredefinedActionType": 23,
+          "BTTPredefinedActionName": "Play/Pause",
+          "BTTAdditionalConfiguration": "524352",
+          "BTTTriggerOnDown": 1,
+          "BTTEnabled": 1,
+          "BTTShortcutKeyCode": 35,
+          "BTTShortcutModifierKeys": 524288,
+          "BTTOrder": 3,
+          "BTTTriggerConfig": {
+            "BTTTouchBarItemIconHeight": 0,
+            "BTTTouchBarItemIconWidth": 0,
+            "BTTLeftRightModifierDifferentiation": 1
+          }
+        },
+        {
+          "BTTTriggerClass": "BTTTriggerTypeKeyboardShortcut",
+          "BTTPredefinedActionType": 27,
+          "BTTPredefinedActionName": "Next",
+          "BTTAdditionalConfiguration": "524352",
+          "BTTTriggerOnDown": 1,
+          "BTTEnabled": 1,
+          "BTTShortcutKeyCode": 30,
+          "BTTShortcutModifierKeys": 524288,
+          "BTTOrder": 5,
+          "BTTTriggerConfig": {
+            "BTTTouchBarItemIconHeight": 0,
+            "BTTTouchBarItemIconWidth": 0,
+            "BTTLeftRightModifierDifferentiation": 1
+          }
+        },
+        {
+          "BTTTriggerClass": "BTTTriggerTypeKeyboardShortcut",
+          "BTTPredefinedActionType": 158,
+          "BTTPredefinedActionName": "Lock Screen",
+          "BTTAdditionalConfiguration": "524352",
+          "BTTTriggerOnDown": 1,
+          "BTTEnabled": 1,
+          "BTTShortcutKeyCode": 37,
+          "BTTShortcutModifierKeys": 524288,
+          "BTTOrder": 6,
+          "BTTTriggerConfig": {
+            "BTTTouchBarItemIconHeight": 0,
+            "BTTTouchBarItemIconWidth": 0,
+            "BTTLeftRightModifierDifferentiation": 1
+          }
+        },
+        {
+          "BTTTriggerClass": "BTTTriggerTypeKeyboardShortcut",
+          "BTTPredefinedActionType": 24,
+          "BTTPredefinedActionName": "Volume Up",
+          "BTTAdditionalConfiguration": "524352",
+          "BTTTriggerOnDown": 1,
+          "BTTEnabled": 1,
+          "BTTShortcutKeyCode": 39,
+          "BTTShortcutModifierKeys": 524288,
+          "BTTOrder": 1,
+          "BTTTriggerConfig": {
+            "BTTTouchBarItemIconHeight": 0,
+            "BTTTouchBarItemIconWidth": 0,
+            "BTTLeftRightModifierDifferentiation": 1
+          }
+        }
+      ]
+    },
+    {
+      "BTTAppBundleIdentifier": "com.apple.finder",
+      "BTTAppName": "Finder",
+      "BTTTriggers": []
+    }
+  ],
+  "BTTPresetSnapAreas": []
+}
