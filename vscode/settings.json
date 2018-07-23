@@ -2,12 +2,12 @@
   "[html]": {
     "editor.formatOnSave": false
   },
-  "[python]": {
-    "editor.tabSize": 4
-  },
   "[markdown]": {
     "editor.wordWrap": "wordWrapColumn",
     "editor.wordWrapColumn": 80
+  },
+  "[python]": {
+    "editor.tabSize": 4
   },
   "diffEditor.ignoreTrimWhitespace": true,
   "diffEditor.renderSideBySide": false,
@@ -76,6 +76,19 @@
   "git.confirmSync": false,
   "git.enableSmartCommit": true,
   "git.enabled": true,
+  "gitlens.advanced.messages": {
+    "suppressShowKeyBindingsNotice": true
+  },
+  "gitlens.blame.avatars": false,
+  "gitlens.blame.highlight.locations": ["gutter", "line", "overview"],
+  "gitlens.codeLens.enabled": false,
+  "gitlens.currentLine.enabled": false,
+  "gitlens.explorers.avatars": false,
+  "gitlens.historyExplorer.avatars": false,
+  "gitlens.hovers.currentLine.over": "line",
+  "gitlens.hovers.enabled": false,
+  "gitlens.keymap": "none",
+  "gitlens.settings.mode": "advanced",
   "html.format.endWithNewline": true,
   "html.format.indentHandlebars": true,
   "python.linting.pep8Enabled": true,
@@ -104,17 +117,5 @@
   "workbench.startupEditor": "newUntitledFile",
   "workbench.statusBar.visible": true,
   "zenMode.centerLayout": false,
-  "zenMode.fullScreen": false,
-  "gitlens.advanced.messages": {
-    "suppressShowKeyBindingsNotice": true
-  },
-  "gitlens.hovers.enabled": false,
-  "gitlens.currentLine.enabled": false,
-  "gitlens.hovers.currentLine.over": "line",
-  "gitlens.codeLens.enabled": false,
-  "gitlens.settings.mode": "advanced",
-  "gitlens.explorers.avatars": false,
-  "gitlens.historyExplorer.avatars": false,
-  "gitlens.blame.avatars": false,
-  "gitlens.blame.highlight.locations": ["gutter", "line", "overview"]
+  "zenMode.fullScreen": false
 }
