@@ -1,6 +1,6 @@
 {
   "BTTPresetName": "Default",
-  "BTTPresetUUID": "FC2D1B99-49DD-4ABA-B110-11456214654E",
+  "BTTPresetUUID": "7FD9A279-43DF-4E02-91BE-5A4BD9B0DEB3",
   "BTTPresetContent": [
     {
       "BTTAppBundleIdentifier": "BT.G",
@@ -25,46 +25,14 @@
         },
         {
           "BTTTriggerClass": "BTTTriggerTypeKeyboardShortcut",
-          "BTTPredefinedActionType": 26,
-          "BTTPredefinedActionName": "Previous",
+          "BTTPredefinedActionType": 22,
+          "BTTPredefinedActionName": "Mute",
           "BTTAdditionalConfiguration": "524352",
           "BTTTriggerOnDown": 1,
           "BTTEnabled": 1,
-          "BTTShortcutKeyCode": 33,
+          "BTTShortcutKeyCode": 36,
           "BTTShortcutModifierKeys": 524288,
-          "BTTOrder": 4,
-          "BTTTriggerConfig": {
-            "BTTTouchBarItemIconHeight": 0,
-            "BTTTouchBarItemIconWidth": 0,
-            "BTTLeftRightModifierDifferentiation": 1
-          }
-        },
-        {
-          "BTTTriggerClass": "BTTTriggerTypeKeyboardShortcut",
-          "BTTPredefinedActionType": 158,
-          "BTTPredefinedActionName": "Lock Screen",
-          "BTTAdditionalConfiguration": "524352",
-          "BTTTriggerOnDown": 1,
-          "BTTEnabled": 1,
-          "BTTShortcutKeyCode": 37,
-          "BTTShortcutModifierKeys": 524288,
-          "BTTOrder": 6,
-          "BTTTriggerConfig": {
-            "BTTTouchBarItemIconHeight": 0,
-            "BTTTouchBarItemIconWidth": 0,
-            "BTTLeftRightModifierDifferentiation": 1
-          }
-        },
-        {
-          "BTTTriggerClass": "BTTTriggerTypeKeyboardShortcut",
-          "BTTPredefinedActionType": 23,
-          "BTTPredefinedActionName": "Play/Pause",
-          "BTTAdditionalConfiguration": "524352",
-          "BTTTriggerOnDown": 1,
-          "BTTEnabled": 1,
-          "BTTShortcutKeyCode": 35,
-          "BTTShortcutModifierKeys": 524288,
-          "BTTOrder": 3,
+          "BTTOrder": 2,
           "BTTTriggerConfig": {
             "BTTTouchBarItemIconHeight": 0,
             "BTTTouchBarItemIconWidth": 0,
@@ -105,14 +73,14 @@
         },
         {
           "BTTTriggerClass": "BTTTriggerTypeKeyboardShortcut",
-          "BTTPredefinedActionType": 22,
-          "BTTPredefinedActionName": "Mute",
+          "BTTPredefinedActionType": 23,
+          "BTTPredefinedActionName": "Play/Pause",
           "BTTAdditionalConfiguration": "524352",
           "BTTTriggerOnDown": 1,
           "BTTEnabled": 1,
-          "BTTShortcutKeyCode": 36,
+          "BTTShortcutKeyCode": 42,
           "BTTShortcutModifierKeys": 524288,
-          "BTTOrder": 2,
+          "BTTOrder": 3,
           "BTTTriggerConfig": {
             "BTTTouchBarItemIconHeight": 0,
             "BTTTouchBarItemIconWidth": 0,
@@ -129,6 +97,38 @@
           "BTTShortcutKeyCode": 27,
           "BTTShortcutModifierKeys": 524288,
           "BTTOrder": 8,
+          "BTTTriggerConfig": {
+            "BTTTouchBarItemIconHeight": 0,
+            "BTTTouchBarItemIconWidth": 0,
+            "BTTLeftRightModifierDifferentiation": 1
+          }
+        },
+        {
+          "BTTTriggerClass": "BTTTriggerTypeKeyboardShortcut",
+          "BTTPredefinedActionType": 26,
+          "BTTPredefinedActionName": "Previous",
+          "BTTAdditionalConfiguration": "524352",
+          "BTTTriggerOnDown": 1,
+          "BTTEnabled": 1,
+          "BTTShortcutKeyCode": 33,
+          "BTTShortcutModifierKeys": 524288,
+          "BTTOrder": 4,
+          "BTTTriggerConfig": {
+            "BTTTouchBarItemIconHeight": 0,
+            "BTTTouchBarItemIconWidth": 0,
+            "BTTLeftRightModifierDifferentiation": 1
+          }
+        },
+        {
+          "BTTTriggerClass": "BTTTriggerTypeKeyboardShortcut",
+          "BTTPredefinedActionType": 158,
+          "BTTPredefinedActionName": "Lock Screen",
+          "BTTAdditionalConfiguration": "524352",
+          "BTTTriggerOnDown": 1,
+          "BTTEnabled": 1,
+          "BTTShortcutKeyCode": 37,
+          "BTTShortcutModifierKeys": 524288,
+          "BTTOrder": 6,
           "BTTTriggerConfig": {
             "BTTTouchBarItemIconHeight": 0,
             "BTTTouchBarItemIconWidth": 0,
