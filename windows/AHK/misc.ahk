@@ -29,6 +29,7 @@ CapsLock::Control
 ; Unicode characters
 >!c::Send {u+00a9} ; copyright
 >!r::Send {u+00ae} ; registered trademark
+>!t::Send {u+2122} ; trademark
 >!8::Send {u+2022} ; bullet
 >!-::Send {u+2013} ; en-dash
 >!.::Send {u+2026} ; ellipses
