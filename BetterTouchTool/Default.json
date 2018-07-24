@@ -1,6 +1,6 @@
 {
   "BTTPresetName": "Default",
-  "BTTPresetUUID": "7FD9A279-43DF-4E02-91BE-5A4BD9B0DEB3",
+  "BTTPresetUUID": "A0C42573-ABD1-42A7-A18F-5D251C5002CA",
   "BTTPresetContent": [
     {
       "BTTAppBundleIdentifier": "BT.G",
@@ -46,7 +46,7 @@
           "BTTAdditionalConfiguration": "524352",
           "BTTTriggerOnDown": 1,
           "BTTEnabled": 1,
-          "BTTShortcutKeyCode": 24,
+          "BTTShortcutKeyCode": 47,
           "BTTShortcutModifierKeys": 524288,
           "BTTOrder": 7,
           "BTTTriggerConfig": {
@@ -94,7 +94,7 @@
           "BTTAdditionalConfiguration": "524352",
           "BTTTriggerOnDown": 1,
           "BTTEnabled": 1,
-          "BTTShortcutKeyCode": 27,
+          "BTTShortcutKeyCode": 43,
           "BTTShortcutModifierKeys": 524288,
           "BTTOrder": 8,
           "BTTTriggerConfig": {
