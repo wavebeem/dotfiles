@@ -38,6 +38,9 @@ CapsLock::Control
 >!n::Send {u+00f1} ; n-tilde
 >!+-::Send {u+2014} ; em-dash
 
++>!1::Send {u+25ca} ; lozenge
++>!2::Send {u+2605} ; star
+
 +>!l::Send {u+03bb} ; lambda
 +>!p::Send {u+03c0} ; pi
 +>!d::Send {u+0394} ; delta
@@ -50,3 +53,4 @@ CapsLock::Control
 #>!q::Send {u+2196} ; NW arrow
 #>!c::Send {u+2198} ; SE arrow
 #>!z::Send {u+2199} ; SW arrow
+#>!x::Send {u+21BB} ; 360 arrow
