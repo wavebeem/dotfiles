@@ -26,6 +26,10 @@ CapsLock::Control
 >!'::Volume_Up
 >!Enter::Volume_Mute
 
+; Random taskbar icons flash using these keyboard shortcuts
+; >!a::Send #^{Left}
+; >!d::Send #^{Right}
+
 ; Unicode characters
 >!c::Send {u+00a9} ; copyright
 >!r::Send {u+00ae} ; registered trademark
