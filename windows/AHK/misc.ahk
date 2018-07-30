@@ -17,7 +17,7 @@ CapsLock::Control
 >!l::DllCall("LockWorkStation")
 
 ; Media keys
->!p::Media_Play_Pause
+>!\::Media_Play_Pause
 >![::Media_Prev
 >!]::Media_Next
 
@@ -37,10 +37,20 @@ CapsLock::Control
 >!e::Send {u+00e9} ; e-acute
 >!n::Send {u+00f1} ; n-tilde
 >!+-::Send {u+2014} ; em-dash
->!+l::Send {u+03bb} ; lambda
->!+p::Send {u+03c0} ; pi
->!+d::Send {u+0394} ; delta
->!a::Send {u+2190} ; left arrow
->!w::Send {u+2191} ; up arrow
->!d::Send {u+2192} ; right arrow
->!s::Send {u+2193} ; down arrow
+
++>!1::Send {u+25ca} ; lozenge
++>!2::Send {u+2605} ; star
+
++>!l::Send {u+03bb} ; lambda
++>!p::Send {u+03c0} ; pi
++>!d::Send {u+0394} ; delta
+
+#>!w::Send {u+2191} ; N arrow
+#>!d::Send {u+2192} ; E arrow
+#>!s::Send {u+2193} ; S arrow
+#>!a::Send {u+2190} ; W arrow
+#>!e::Send {u+2197} ; NE arrow
+#>!q::Send {u+2196} ; NW arrow
+#>!c::Send {u+2198} ; SE arrow
+#>!z::Send {u+2199} ; SW arrow
+#>!x::Send {u+21BB} ; 360 arrow

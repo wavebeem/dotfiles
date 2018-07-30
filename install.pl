@@ -36,8 +36,6 @@ sub confirm {
 }
 
 install($_) for (
-  "ncmpcpp/config",
-  "mpd/mpd.conf",
   "hushlogin",
   "welcome",
   "ackrc",
@@ -50,8 +48,6 @@ install($_) for (
   "tmux.conf",
   "inputrc",
   "gitignore",
-  "config/fish/config.fish",
-  "config/fish/functions",
 );
 
 install_as("vscode/keybindings.json", "$VSCODE/keybindings.json");
