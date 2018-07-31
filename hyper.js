@@ -2,15 +2,17 @@
 // which will not automatically be merged into this file.
 // See https://hyper.is#cfg for all currently supported options.
 
-const default_ = "#5c668d";
-const black = "#5c668d";
-const red = "#a91b1b";
-const green = "#00a237";
-const yellow = "#cc8410";
-const blue = "#38b797";
-const magenta = "#d85278";
-const cyan = "#7e9607";
-const white = "#dedede";
+const borderColor = "rgba(255, 255, 255, 0.1)";
+const backgroundColor = "#281c40";
+const default_ = "#decffc";
+const black = "#3c2e57";
+const red = "#cd547d";
+const green = "#69b89c";
+const yellow = "#d29ea0";
+const blue = "#9277ed";
+const magenta = "#d277e0";
+const cyan = "#62bfe8";
+const white = "#d4c7f0";
 const lightBlack = black;
 const lightRed = red;
 const lightGreen = green;
@@ -55,13 +57,13 @@ module.exports = {
 
     // terminal background color
     // opacity is only supported on macOS
-    backgroundColor: "#fff",
+    backgroundColor,
 
     // terminal selection color
     selectionColor: "rgba(255, 128, 0, 0.3)",
 
     // border color (window, tabs)
-    borderColor: "#ddd",
+    borderColor,
 
     // custom CSS to embed in the main window
     css: `
@@ -71,7 +73,7 @@ module.exports = {
 
       .tabs_title,
       .tab_active {
-        color: #000 !important;
+        color: #fff !important;
       }
     `,
 
