@@ -69,7 +69,7 @@
   },
   {
     "key": "ctrl+shift+j",
-    "command": "search.action.focusActiveEditor",
+    "command": "workbench.action.focusActiveEditorGroup",
     "when": "terminalFocus"
   },
   {
