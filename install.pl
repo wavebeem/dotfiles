@@ -52,3 +52,4 @@ install($_) for (
 
 install_as("vscode/keybindings.json", "$VSCODE/keybindings.json");
 install_as("vscode/settings.json", "$VSCODE/settings.json");
+install_as("vscode/snippets", "$VSCODE/snippets");
