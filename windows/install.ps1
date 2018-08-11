@@ -23,7 +23,7 @@ function installAs($path, $dest) {
       Remove-Item $dest
     }
   }
-  $dir = (Get-Item $path).DirectoryName
+  $dir = Split-Path -Path $path
   maybeCreatePrefix $dir
   linkItUp $src $dest
 }
@@ -36,10 +36,17 @@ function show($src, $dest) {
 }
 
 function linkItUp($src, $dest) {
-  New-Item -ItemType SymbolicLink -Path $dest -Value $src | Out-Null
+  if (Test-Path -PathType Container -Path $src) {
+    cmd /c mklink /d $dest $src
+  } else {
+    cmd /c mklink $dest $src
+  }
 }
 
 function maybeCreatePrefix($path) {
+  if (($path -Eq $null) -Or ($path -Eq "")) {
+    return
+  }
   if (-Not (Test-Path -PathType Container $path)) {
     New-Item $path
   }
