@@ -9,6 +9,7 @@
   "[python]": {
     "editor.tabSize": 4
   },
+  "breadcrumbs.enabled": true,
   "diffEditor.ignoreTrimWhitespace": true,
   "diffEditor.renderSideBySide": false,
   "editor.acceptSuggestionOnCommitCharacter": false,
