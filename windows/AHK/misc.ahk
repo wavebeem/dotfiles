@@ -7,6 +7,9 @@ FileEncoding UTF-8-RAW
 ; I can't live without this one now...
 CapsLock::Control
 
+; Tap control and both shift keys for caps lock
+^>+RShift::CapsLock
+
 ; Alt-Q to close windows
 !q::!F4
 
