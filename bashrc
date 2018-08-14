@@ -86,3 +86,5 @@ if [[ -f ~/.welcome ]]; then
 else
   uptime
 fi
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash

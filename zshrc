@@ -50,6 +50,11 @@ __install_zsh_autosuggestions() {
     ~/.zsh-autosuggestions
 }
 
+__install_fzf() {
+  git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+  ~/.fzf/install
+}
+
 precmd() {
   __set_title_special "zsh %~"
   echo
@@ -102,6 +107,8 @@ alias T="tmux attach -d"
 
 alias ..="cd .."
 
+export FZF_DEFAULT_OPTS="--color=light --bind ctrl-j:accept"
+
 if ! which serve >/dev/null 2>&1; then
   alias serve="python -m SimpleHTTPServer"
 fi
@@ -144,5 +151,7 @@ ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=cyan"
 __maybe_source ~/.travis/travis.sh
 __maybe_source ~/google-cloud-sdk/path.zsh.inc
 __maybe_source ~/google-cloud-sdk/completion.zsh.inc
+
+__maybe_source ~/.fzf.zsh
 
 __maybe_source ~/.after.zshrc.zsh
