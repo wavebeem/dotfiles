@@ -11,22 +11,8 @@ bindkey -e
 zstyle :compinstall filename "$HOME/.zshrc"
 autoload -Uz compinit && compinit
 
-# Search through history using up/down arrows
-autoload -U up-line-or-beginning-search
-autoload -U down-line-or-beginning-search
-zle -N up-line-or-beginning-search
-zle -N down-line-or-beginning-search
-bindkey "^[[A" up-line-or-beginning-search
-bindkey "^P" up-line-or-beginning-search
-bindkey "^[[B" down-line-or-beginning-search
-bindkey "^N" down-line-or-beginning-search
-
 dim() {
   echo "$COLUMNS by $LINES"
-}
-
-fix_ssh() {
-  eval "export $(tmux showenv SSH_AUTH_SOCK)"
 }
 
 __set_title() {
@@ -45,7 +31,7 @@ __set_title_special() {
 }
 
 __install_zsh_autosuggestions() {
-  git clone \
+  git clone --depth 1 \
     https://github.com/zsh-users/zsh-autosuggestions \
     ~/.zsh-autosuggestions
 }
@@ -146,12 +132,11 @@ ${c3}${glyph}${reset} "
 __set_prompt
 
 __maybe_source ~/.zsh-autosuggestions/zsh-autosuggestions.zsh
-ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=cyan"
-
 __maybe_source ~/.travis/travis.sh
 __maybe_source ~/google-cloud-sdk/path.zsh.inc
 __maybe_source ~/google-cloud-sdk/completion.zsh.inc
-
 __maybe_source ~/.fzf.zsh
+
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=cyan"
 
 __maybe_source ~/.after.zshrc.zsh
