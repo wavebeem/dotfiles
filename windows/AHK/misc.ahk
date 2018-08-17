@@ -14,7 +14,7 @@ CapsLock::Control
 !q::!F4
 
 ; Unbind Ctrl-Shift-Q to prevent accidental program quits
-^+q::
+^+q::Return
 
 ; Alt-L to lock computer; annoyingly #l doesn't work on the RHS here
 >!l::DllCall("LockWorkStation")
