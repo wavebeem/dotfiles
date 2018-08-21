@@ -8,7 +8,7 @@ FileEncoding UTF-8-RAW
 CapsLock::Control
 
 ; Sometimes caps lock is fun, I guess...
-^RShift::CapsLock
+<^RShift::CapsLock
 
 ; Alt-Q to close windows
 !q::!F4
