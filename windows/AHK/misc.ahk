@@ -32,7 +32,7 @@ CapsLock::Control
 >!l::DllCall("LockWorkStation")
 
 ; Media keys
->!\::Media_Play_Pause
+>!p::Media_Play_Pause
 >![::Media_Prev
 >!]::Media_Next
 
