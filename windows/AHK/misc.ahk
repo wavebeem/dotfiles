@@ -7,20 +7,32 @@ FileEncoding UTF-8-RAW
 ; I can't live without this one now...
 CapsLock::Control
 
-; Tap control and both shift keys for caps lock
-^>+RShift::CapsLock
+; Sometimes caps lock is fun, I guess...
+<^RShift::CapsLock
 
 ; Alt-Q to close windows
 !q::!F4
 
 ; Unbind Ctrl-Shift-Q to prevent accidental program quits
-^+q::
+^+q::Return
+
+; Send an ISO8601-ish filesystem timestamp, good for naming files
+>!^t::
+  FormatTime, time, A_now, yyyy-MM-dd HH.mm.ss
+  Send %time%
+  Return
+
+; Reload this script and display a notification
+>!^r::
+  TrayTip, AutoHotkey, AutoHotkey configuration reloaded
+  Reload
+  Return
 
 ; Alt-L to lock computer; annoyingly #l doesn't work on the RHS here
 >!l::DllCall("LockWorkStation")
 
 ; Media keys
->!\::Media_Play_Pause
+>!p::Media_Play_Pause
 >![::Media_Prev
 >!]::Media_Next
 
