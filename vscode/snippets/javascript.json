@@ -1,10 +1,9 @@
 {
-  "Info to console": {
+  "console.info": {
     "prefix": "info",
-    "body": ["console.info($1);$0"],
-    "description": "Log info to the console"
+    "body": ["console.info($1);$0"]
   },
-  "Log to console": {
+  "console.log": {
     "prefix": "log",
     "body": ["console.log($1);$0"],
     "description": "Log to the console"
