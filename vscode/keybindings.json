@@ -1,19 +1,18 @@
 [
-  // TODO: Add mac/win keybinds for stuff too.
   {
     "key": "alt+cmd+i",
     "command": "workbench.action.toggleDevTools",
-    "when": "editorTextFocus"
+    "when": "isMac && editorTextFocus"
   },
   {
     "key": "cmd+0",
     "command": "workbench.action.zoomReset",
-    "when": "editorTextFocus"
+    "when": "isMac && editorTextFocus"
   },
   {
     "key": "ctrl+0",
     "command": "workbench.action.zoomReset",
-    "when": "editorTextFocus"
+    "when": "isMac && editorTextFocus"
   },
   {
     "key": "ctrl+k",
@@ -21,18 +20,8 @@
     "when": "terminalFocus"
   },
   {
-    "key": "ctrl+shift-w",
-    "command": "workbench.action.terminal.kill",
-    "when": "terminalFocus"
-  },
-  {
     "key": "ctrl+shift+'",
     "command": "workbench.action.togglePanel"
-  },
-  {
-    "key": "shift+alt+t",
-    "command": "workbench.action.closeOtherEditors",
-    "when": "editorTextFocus"
   },
   {
     "key": "ctrl+,",
@@ -41,7 +30,8 @@
   },
   {
     "key": "cmd+k cmd+p",
-    "command": "workbench.action.files.copyPathOfActiveFile"
+    "command": "workbench.action.files.copyPathOfActiveFile",
+    "when": "isMac"
   },
   {
     "key": "cmd+k cmd+f",
@@ -51,7 +41,7 @@
   {
     "key": "cmd+k cmd+z",
     "command": "editor.action.toggleWordWrap",
-    "when": "editorTextFocus"
+    "when": "isMac && editorTextFocus"
   },
   {
     "key": "ctrl+shift+;",
@@ -98,30 +88,27 @@
   },
   {
     "key": "cmd+=",
-    "command": "editor.action.fontZoomIn"
+    "command": "editor.action.fontZoomIn",
+    "when": "isMac"
   },
   {
     "key": "cmd+-",
-    "command": "editor.action.fontZoomOut"
+    "command": "editor.action.fontZoomOut",
+    "when": "isMac"
   },
   {
     "key": "shift+cmd+-",
-    "command": "editor.action.fontZoomOut"
+    "command": "editor.action.fontZoomOut",
+    "when": "isMac"
   },
   {
     "key": "cmd+-",
-    "command": "editor.action.fontZoomOut"
-  },
-  {
-    "key": "cmd+numpad0",
-    "command": "editor.action.fontZoomReset"
+    "command": "editor.action.fontZoomOut",
+    "when": "isMac"
   },
   {
     "key": "cmd+0",
-    "command": "editor.action.fontZoomReset"
-  },
-  {
-    "key": "ctrl+numpad_add",
-    "command": "editor.action.fontZoomIn"
+    "command": "editor.action.fontZoomReset",
+    "when": "isMac"
   }
 ]
