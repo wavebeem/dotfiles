@@ -70,12 +70,12 @@ alias '$'=""
 alias gco="git checkout"
 alias gdd="git diff --cached"
 alias ga="git add"
-alias gaa="git add -A"
+alias gaa="git add --all"
 alias gd="git diff"
-alias gm="git commit -m"
+alias gm="git commit --message"
 alias g="git status"
 alias gl="git log"
-alias gg="git commit"
+alias gg="git commit --verbose"
 alias gp="git push origin HEAD"
 
 if [[ $(uname) = Darwin ]]; then
@@ -103,28 +103,31 @@ if which rbenv >/dev/null 2>&1; then
   eval "$(rbenv init -)"
 fi
 
-if [[ -f ~/.welcome ]]; then
-  cat ~/.welcome
-else
-  uptime
+if [[ $__already_welcome != "yes" ]]; then
+  if [[ -f ~/.welcome ]]; then
+    cat ~/.welcome
+  else
+    uptime
+  fi
 fi
+__already_welcome="yes"
 
 __set_prompt() {
-  local sep=" | "
+  local pad="  "
   local glyph="\$"
   local username="%n"
   local hostname="%m"
-  local cwd="%~"
-  local reset="%b%f%u%s"
-  local c1="%B%F{green}"
-  local c2="%B%F{cyan}"
+  local cwd="%3~"
+  local reset="%b%f%k%u%s"
+  local c1="%B%F{white}%K{magenta}"
+  local c2="%B%F{white}%K{green}"
   local c3="%F{blue}"
   local end="${c2}${glyph}${reset} "
   prompt="\
 ${reset}
-${c2}${username}${reset}${c3}${sep}\
-${c1}${hostname}${reset}${c3}${sep}\
-${c2}${cwd}${reset}
+${c2}${pad}${username}${pad}${reset} ${c3}\
+${c1}${pad}@${hostname}${pad}${reset} ${c3}\
+${c2}${pad}${cwd}${pad}${reset}
 ${c3}${glyph}${reset} "
   PS2="${c3}${glyph}${reset} "
 }
