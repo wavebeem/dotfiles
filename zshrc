@@ -114,22 +114,22 @@ __already_welcome="yes"
 
 __set_prompt() {
   local pad="  "
-  local glyph="\$"
+  local glyph=">"
   local username="%n"
   local hostname="%m"
   local cwd="%3~"
   local reset="%b%f%k%u%s"
   local c1="%B%F{white}%K{magenta}"
   local c2="%B%F{white}%K{green}"
-  local c3="%F{blue}"
+  local c3="%B%F{blue}"
   local end="${c2}${glyph}${reset} "
-  prompt="\
+  PROMPT="\
 ${reset}
 ${c2}${pad}${username}${pad}${reset} ${c3}\
 ${c1}${pad}@${hostname}${pad}${reset} ${c3}\
 ${c2}${pad}${cwd}${pad}${reset}
 ${c3}${glyph}${reset} "
-  PS2="${c3}${glyph}${reset} "
+  PROMPT2="${c3}${glyph}${reset} "
 }
 
 __set_prompt
