@@ -11,7 +11,7 @@ CapsLock::Control
 <^RShift::CapsLock
 
 ; Alt-Q to close windows
-!q::!F4
+!q::Send !{F4}
 
 ; Unbind Ctrl-Shift-Q to prevent accidental program quits
 ^+q::Return
@@ -32,14 +32,14 @@ CapsLock::Control
 >!l::DllCall("LockWorkStation")
 
 ; Media keys
->!p::Media_Play_Pause
->![::Media_Prev
->!]::Media_Next
+>!p::Send {Media_Play_Pause}
+>![::Send {Media_Prev}
+>!]::Send {Media_Next}
 
 ; Volume controls
->!;::Volume_Down
->!'::Volume_Up
->!Enter::Volume_Mute
+>!;::Send {Volume_Down}
+>!'::Send {Volume_Up}
+>!Enter::Send {Volume_Mute}
 
 ; Random taskbar icons flash using these keyboard shortcuts
 ; >!a::Send #^{Left}
