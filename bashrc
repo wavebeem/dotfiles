@@ -4,7 +4,6 @@ dim() {
 
 precmd() {
   echo
-  echo
 }
 
 fix_ssh() {
@@ -19,21 +18,23 @@ _ansi() {
 PROMPT_COMMAND="precmd"
 
 bold=$(_ansi 1)
-cyan=$(_ansi 32)
-purple=$(_ansi 35)
-blue=$(_ansi 34)
+bg_cyan=$(_ansi 42)
+bg_purple=$(_ansi 45)
+fg_white=$(_ansi 37)
+fg_blue=$(_ansi 34)
 reset=$(_ansi 0)
 
-separator="${reset}${blue} | "
+separator="${reset} "
 space=" "
 
 export PS1="\
-${reset}${bold}${purple}\u\
-${separator}${reset}${bold}${cyan}\h\
-${separator}${reset}${bold}${purple}\w\
-\n${reset}${blue}\$ ${reset}\
+
+${reset}${bold}${bg_purple}${fg_white}  \u  \
+${separator}${reset}${bold}${bg_cyan}${fg_white}  @\h  \
+${separator}${reset}${bold}${bg_purple}${fg_white}  \w  \
+\n${reset}${fg_blue}\$ ${reset}\
 "
-export PS2="${reset}${purple}\$ ${reset}"
+export PS2="${reset}${fg_blue}\$ ${reset}"
 
 alias gco="git checkout"
 alias gdd="git diff --cached"
@@ -76,7 +77,6 @@ export LESS="-R"
 export PATH="~/.local/bin:$PATH"
 export PATH="~/.rbenv/bin:$PATH"
 
-# If stdin and stdout are connected to the tty (interactive mode)
 if type rbenv >/dev/null 2>&1; then
   source <(rbenv init -)
 fi

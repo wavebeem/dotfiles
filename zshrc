@@ -114,7 +114,7 @@ __already_welcome="yes"
 
 __set_prompt() {
   local pad="  "
-  local glyph="\$"
+  local glyph="%%"
   local username="%n"
   local hostname="%m"
   local cwd="%3~"
