@@ -77,6 +77,13 @@
   "git.confirmSync": false,
   "git.enableSmartCommit": true,
   "git.enabled": true,
+  "github.hosts": [
+    {
+      "host": "https://github.com",
+      "token": "system",
+      "username": "oauth"
+    }
+  ],
   "gitlens.advanced.messages": {
     "suppressShowKeyBindingsNotice": true
   },
@@ -89,6 +96,7 @@
   "gitlens.hovers.currentLine.over": "line",
   "gitlens.hovers.enabled": false,
   "gitlens.keymap": "none",
+  "gitlens.resultsExplorer.files.layout": "list",
   "gitlens.settings.mode": "advanced",
   "html.format.endWithNewline": true,
   "html.format.indentHandlebars": true,
@@ -118,12 +126,5 @@
   "workbench.startupEditor": "newUntitledFile",
   "workbench.statusBar.visible": true,
   "zenMode.centerLayout": false,
-  "zenMode.fullScreen": false,
-  "github.hosts": [
-    {
-      "host": "https://github.com",
-      "username": "oauth",
-      "token": "system"
-    }
-  ]
+  "zenMode.fullScreen": false
 }
