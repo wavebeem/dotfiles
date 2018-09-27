@@ -132,6 +132,8 @@ ${c3}${glyph}${reset} "
   PROMPT2="${c3}${glyph}${reset} "
 }
 
+# defaults write -g CGFontRenderingFontSmoothingDisabled -bool FALSE
+
 __set_prompt
 
 __maybe_source ~/.zsh-autosuggestions/zsh-autosuggestions.zsh
