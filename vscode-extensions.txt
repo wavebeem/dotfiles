@@ -1,4 +1,8 @@
+EditorConfig.EditorConfig
+GitHub.vscode-pull-request-github
 LaurentTreguier.vscode-simple-icons
+PeterJausovec.vscode-docker
+ban.spellright
 castwide.solargraph
 dbaeumer.vscode-eslint
 eamodio.gitlens
@@ -9,7 +13,7 @@ ms-python.python
 ms-vscode.PowerShell
 ms-vscode.sublime-keybindings
 ms-vsliveshare.vsliveshare
-rebornix.Ruby
+rebornix.ruby
 richie5um2.vscode-sort-json
 shardulm94.trailing-spaces
 stkb.rewrap
