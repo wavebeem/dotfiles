@@ -1,6 +1,7 @@
 $c1 = "Yellow"
 
 Set-PSReadlineOption -BellStyle None
+Set-PSReadlineOption -EditMode Emacs
 
 Set-PSReadlineOption -ForegroundColor $c1 -TokenKind None
 Set-PSReadlineOption -ForegroundColor $c1 -TokenKind Comment
@@ -20,14 +21,18 @@ $host.PrivateData.ErrorBackgroundColor = $host.ui.RawUI.BackgroundColor
 Set-Alias l ls
 Set-Alias ll ls
 
+function WC($bg, $fg, $str) {
+  Write-Host -NoNewline -BackgroundColor $bg -ForegroundColor $fg $str
+}
+
 function prompt {
   Write-Host ""
   Write-Host ""
-  Write-Host -NoNewline -BackgroundColor Cyan "  $env:UserName  "
+  WC Cyan White "  $env:UserName  "
   Write-Host -NoNewline " "
-  Write-Host -NoNewline -BackgroundColor Green "  @$(hostname)  "
+  WC Green White "  @$(hostname)  "
   Write-Host -NoNewline " "
-  Write-Host -NoNewline -BackgroundColor Cyan "  $(Get-Location)  "
+  WC Cyan White "  $(Get-Location)  "
   Write-Host ""
   Write-Host -NoNewline -ForeGroundColor Blue ">"
   return " "
