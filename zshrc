@@ -57,11 +57,9 @@ if [[ $SHELL != *zsh ]]; then
 fi
 
 if [[ $(uname -r) = *Microsoft ]]; then
-  start() {
-    local first="$1"
-    shift
-    powershell.exe -Command Start-Process "$first" -- "$@"
-  }
+  alias o='explorer.exe'
+else
+  alias o='open'
 fi
 
 # Allow pasting commands with "$" from the internet
