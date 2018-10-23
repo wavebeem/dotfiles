@@ -110,5 +110,13 @@
     "key": "cmd+0",
     "command": "editor.action.fontZoomReset",
     "when": "isMac"
+  },
+  {
+    "key": "ctrl+'",
+    "command": "workbench.action.terminal.toggleTerminal"
+  },
+  {
+    "key": "ctrl+`",
+    "command": "-workbench.action.terminal.toggleTerminal"
   }
 ]
