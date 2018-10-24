@@ -5,8 +5,11 @@
   },
   "console.log": {
     "prefix": "log",
-    "body": ["console.log($1);$0"],
-    "description": "Log to the console"
+    "body": ["console.log($1);$0"]
+  },
+  "import": {
+    "prefix": "import",
+    "body": "import ${2:___} from \"${1:___}\";"
   },
   "React function component": {
     "prefix": "rfc",
