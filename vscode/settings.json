@@ -77,7 +77,7 @@
   "git.confirmSync": false,
   "git.enableSmartCommit": true,
   "git.enabled": true,
-  "github.hosts": [
+  "githubPullRequests.hosts": [
     {
       "host": "https://github.com",
       "token": "system",
