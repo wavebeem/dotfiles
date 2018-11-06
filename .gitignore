@@ -8,4 +8,7 @@ Cached Theme.pak
 
 # npm garbage
 *.log
-config/configstore
+
+# Opt-in certain config folders so we don't back them all up
+config/*
+!config/karabiner
