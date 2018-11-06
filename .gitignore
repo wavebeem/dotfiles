@@ -8,3 +8,4 @@ Cached Theme.pak
 
 # npm garbage
 *.log
+config/configstore
