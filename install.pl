@@ -36,6 +36,7 @@ sub confirm {
 }
 
 install($_) for (
+  "config",
   "hushlogin",
   "welcome",
   "ackrc",
