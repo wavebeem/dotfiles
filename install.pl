@@ -36,7 +36,6 @@ sub confirm {
 }
 
 install($_) for (
-  "config",
   "hushlogin",
   "welcome",
   "ackrc",
@@ -51,6 +50,7 @@ install($_) for (
   "gitignore",
 );
 
+install_as("karabiner", "$HOME/.config/karabiner");
 install_as("vscode/keybindings.json", "$VSCODE/keybindings.json");
 install_as("vscode/settings.json", "$VSCODE/settings.json");
 install_as("vscode/snippets", "$VSCODE/snippets");
