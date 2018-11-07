@@ -15,7 +15,69 @@
         },
         "rules": [
           {
-            "description": "TODO: Backtick / Escape Garbage",
+            "profiles": [
+              {
+                "complex_modifications": {
+                  "rules": [
+                    {
+                      "manipulators": [
+                        {
+                          "description": "Space + L = RIGHT",
+                          "type": "basic",
+                          "from": {
+                            "key_code": "quote",
+                            "modifiers": { "mandatory": ["right_command"] }
+                          },
+                          "to": [{ "key_code": "right_arrow" }]
+                        }
+                      ]
+                    },
+                    {
+                      "manipulators": [
+                        {
+                          "description": "Space + K = DOWN",
+                          "type": "basic",
+                          "from": {
+                            "key_code": "semicolon",
+                            "modifiers": { "mandatory": ["right_command"] }
+                          },
+                          "to": [{ "key_code": "down_arrow" }]
+                        }
+                      ]
+                    },
+                    {
+                      "manipulators": [
+                        {
+                          "description": "Space + J = Left",
+                          "type": "basic",
+                          "from": {
+                            "key_code": "l",
+                            "modifiers": { "mandatory": ["right_command"] }
+                          },
+                          "to": [{ "key_code": "left_arrow" }]
+                        }
+                      ]
+                    },
+                    {
+                      "manipulators": [
+                        {
+                          "description": "Space + I = UP",
+                          "type": "basic",
+                          "from": {
+                            "key_code": "p",
+                            "modifiers": { "mandatory": ["right_command"] }
+                          },
+                          "to": [{ "key_code": "up_arrow" }]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "description": "Make Backtick Work Like a 60% Keyboard",
             "manipulators": [
               {
                 "from": {
