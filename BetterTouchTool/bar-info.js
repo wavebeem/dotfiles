@@ -1,12 +1,16 @@
-#!/usr/bin/env node
-const os = require("os");
+const { execSync } = require("child_process");
 
-const uptime = os.uptime();
-const hours = uptime / 60/ 60;
-const days = hours / 24;
-const info = [
-  os.userInfo().username + "@" + os.hostname(),
-  days.toFixed(2) + " days",
-  os.loadavg().map(n => n.toFixed(2)).join(" / ")
-];
-console.log(info.join("  •  "));
+const str = execSync("pmset -g batt", { encoding: "utf-8" });
+const [, level] = str.match(/(\d+)%/);
+const pct = Number(level);
+const symbols = [0x1f315, 0x1f316, 0x1f317, 0x1f318, 0x1f311].map(n => {
+  return String.fromCodePoint(n);
+});
+for (let x = 0; x < Math.floor(pct / 10); x++) {
+  process.stdout.write(symbols[0]);
+}
+process.stdout.write(symbols[Math.floor((pct % 10) / 10 * symbols.length)]);
+for (let x = 0; x < Math.floor((100 - pct) / 10); x++) {
+  process.stdout.write(symbols[symbols.length - 1]);
+}
+process.stdout.write("\n");
