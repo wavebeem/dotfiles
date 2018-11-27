@@ -1,16 +1,33 @@
 const { execSync } = require("child_process");
 
+const sep = " ";
 const str = execSync("pmset -g batt", { encoding: "utf-8" });
 const [, level] = str.match(/(\d+)%/);
-const pct = Number(level);
-const symbols = [0x1f315, 0x1f316, 0x1f317, 0x1f318, 0x1f311].map(n => {
-  return String.fromCodePoint(n);
-});
-for (let x = 0; x < Math.floor(pct / 10); x++) {
-  process.stdout.write(symbols[0]);
+const pct = Number(process.argv[2] || level);
+const symbols = {
+  none: "\u{1f311}",
+  less: "\u{1f318}",
+  half: "\u{1f317}",
+  more: "\u{1f316}",
+  full: "\u{1f315}"
+};
+const before = Math.floor(pct / 10);
+const after = Math.floor((100 - pct) / 10);
+const out = [];
+for (let x = 0; x < before; x++) {
+  out.push(symbols.full);
 }
-process.stdout.write(symbols[Math.floor((pct % 10) / 10 * symbols.length)]);
-for (let x = 0; x < Math.floor((100 - pct) / 10); x++) {
-  process.stdout.write(symbols[symbols.length - 1]);
+const digit = pct % 10;
+if (digit < 1) {
+  // Do nothing
+} else if (digit < 5) {
+  out.push(symbols.less);
+} else if (digit === 5) {
+  out.push(symbols.half);
+} else {
+  out.push(symbols.more);
 }
-process.stdout.write("\n");
+for (let x = 0; x < after; x++) {
+  out.push(symbols.none);
+}
+console.log(out.join(sep));
