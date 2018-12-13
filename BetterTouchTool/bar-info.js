@@ -20,7 +20,7 @@ const allSymbols = {
     full: "\u{1f315}"
   },
   bars: {
-    none: "▁",''
+    none: "▁",
     less: "▄",
     half: "▄",
     more: "▄",
