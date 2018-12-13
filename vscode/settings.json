@@ -125,5 +125,10 @@
   "workbench.startupEditor": "newUntitledFile",
   "workbench.statusBar.visible": true,
   "zenMode.centerLayout": false,
-  "zenMode.fullScreen": false
+  "zenMode.fullScreen": false,
+  "gitlens.views.fileHistory.avatars": false,
+  "gitlens.views.lineHistory.avatars": false,
+  "gitlens.views.compare.files.layout": "list",
+  "gitlens.views.search.files.layout": "list",
+  "gitlens.views.avatars": false
 }
