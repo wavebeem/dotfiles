@@ -76,13 +76,6 @@
   "git.confirmSync": false,
   "git.enableSmartCommit": true,
   "git.enabled": true,
-  "githubPullRequests.hosts": [
-    {
-      "host": "https://github.com",
-      "token": "system",
-      "username": "oauth"
-    }
-  ],
   "gitlens.advanced.messages": {
     "suppressShowKeyBindingsNotice": true
   },
