@@ -18,7 +18,6 @@
   "editor.fontFamily": "Input, Menlo, Consolas, monospace",
   "editor.fontSize": 14,
   "editor.formatOnPaste": false,
-  "editor.formatOnSave": false,
   "editor.minimap.enabled": false,
   "editor.minimap.renderCharacters": true,
   "editor.multiCursorModifier": "alt",
@@ -77,13 +76,6 @@
   "git.confirmSync": false,
   "git.enableSmartCommit": true,
   "git.enabled": true,
-  "githubPullRequests.hosts": [
-    {
-      "host": "https://github.com",
-      "token": "system",
-      "username": "oauth"
-    }
-  ],
   "gitlens.advanced.messages": {
     "suppressShowKeyBindingsNotice": true
   },
@@ -126,5 +118,10 @@
   "workbench.startupEditor": "newUntitledFile",
   "workbench.statusBar.visible": true,
   "zenMode.centerLayout": false,
-  "zenMode.fullScreen": false
+  "zenMode.fullScreen": false,
+  "gitlens.views.fileHistory.avatars": false,
+  "gitlens.views.lineHistory.avatars": false,
+  "gitlens.views.compare.files.layout": "list",
+  "gitlens.views.search.files.layout": "list",
+  "gitlens.views.avatars": false
 }

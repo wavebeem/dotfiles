@@ -4,7 +4,7 @@
     "disableScrollingIf3" : true,
     "BTTForceNormalClickPressure5F" : 200,
     "disableScrollingIf2" : true,
-    "BTTDidRegisterForUpdateStats" : "2.636",
+    "BTTDidRegisterForUpdateStats" : "2.660",
     "BTTShowControlStrip" : false,
     "BTTShowControlStripItem" : true,
     "BTTForceForceClickPressure5F" : 600,
@@ -15,7 +15,7 @@
     "BTTTouchBarHapticFeedback" : 1,
     "BTTForceNormalClickPressure" : 150,
     "BSTSnapAreaDefaultHighlightColor" : "92.624286, 122.650411, 161.665578, 56.100000",
-    "BTTLastClamshellState" : false,
+    "BTTLastClamshellState" : true,
     "BSTSnapAreaDefaultShowPictogram" : false,
     "BTTAllowThumbIfAllFingersArePlacedSimultaneously" : true,
     "BTTShowESCWhenControlStripHidden" : false,
@@ -63,6 +63,7 @@
     "BTRScrollSpeed" : 1,
     "showBTTRemoteTab" : true,
     "BSTSnapAreaDefaultInvisible" : false,
+    "BTTTouchBarKeepIconRatio" : true,
     "BTTEnablePalmRecognition" : true,
     "BTTFreeSpaceAfterESC" : 10,
     "singleFingerTapLeft" : 0.44999998807907104,
@@ -93,7 +94,7 @@
     "BTTMovePastedToTop" : true,
     "BTTShowBTTWhenControlStripHidden" : false,
     "BTTDrawingAreaWidth" : 915,
-    "BTTClipboardFrame" : "{{381, 230}, {678, 417}}",
+    "BTTClipboardFrame" : "{{701, 460}, {678, 417}}",
     "BTTCopyImgurURLToClipboard" : true,
     "BTTForceNormalClickPressure4F" : 175,
     "BTTScreenshotOpenImgurInBrowser" : true,
@@ -106,6 +107,7 @@
     "BTTForceNormalHapticResponse" : 12,
     "showSiriRemoteTab" : true,
     "BTTForceNormalClickPressure2F" : 140,
+    "SHOWEDHIDEMENUBARWARNING" : true,
     "cornerSnap" : true,
     "BTTTouchBarSupportEnabled" : true,
     "showDrawingsTab" : true,
@@ -113,7 +115,7 @@
     "BSTCornerRoundness" : 40,
     "BTTDismissIfNothingToShow" : true,
     "BSTPreventTopMissionControl" : true,
-    "BTTNumberOfStarts" : 555,
+    "BTTNumberOfStarts" : 1378,
     "BTTHTTPServerEncrypted" : false,
     "showKeyboardTab" : true,
     "BTTConvertedDevices" : true,
@@ -130,7 +132,7 @@
     "BTTTouchBarVisible" : true,
     "BTTTouchBarUseMonoSpacedFont" : true
   },
-  "BTTPresetUUID" : "49C85A62-A213-487C-B150-E9FACFE6939F",
+  "BTTPresetUUID" : "53168343-4328-478C-826C-E72ACBEC6CA4",
   "BTTPresetContent" : [
     {
       "BTTAppBundleIdentifier" : "BT.G",
@@ -139,6 +141,136 @@
 
       },
       "BTTTriggers" : [
+        {
+          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+          "BTTPredefinedActionType" : 22,
+          "BTTPredefinedActionName" : "Mute",
+          "BTTAdditionalConfiguration" : "1835049",
+          "BTTEnabled2" : 1,
+          "BTTUUID" : "27B48100-DC1F-47C3-B091-89B4E3889892",
+          "BTTTriggerOnDown" : 1,
+          "BTTEnabled" : 1,
+          "BTTShortcutKeyCode" : 40,
+          "BTTShortcutModifierKeys" : 1835008,
+          "BTTOrder" : 2
+        },
+        {
+          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+          "BTTPredefinedActionType" : 26,
+          "BTTPredefinedActionName" : "Previous",
+          "BTTAdditionalConfiguration" : "1835049",
+          "BTTEnabled2" : 1,
+          "BTTUUID" : "3A6F2AE4-7BE5-400C-96BB-BBDA06F6B33A",
+          "BTTTriggerOnDown" : 1,
+          "BTTEnabled" : 1,
+          "BTTShortcutKeyCode" : 31,
+          "BTTShortcutModifierKeys" : 1835008,
+          "BTTOrder" : 4
+        },
+        {
+          "BTTWidgetName" : "Current Location",
+          "BTTTriggerType" : 651,
+          "BTTTriggerTypeDescription" : "Weather Widget",
+          "BTTTriggerClass" : "BTTTriggerTypeTouchBar",
+          "BTTPredefinedActionType" : 94,
+          "BTTPredefinedActionName" : "Show Color Picker",
+          "BTTEnabled2" : 0,
+          "BTTUUID" : "9239B649-FE8A-42C4-AA3C-D2A571137F71",
+          "BTTEnabled" : 1,
+          "BTTOrder" : 1,
+          "BTTTriggerConfig" : {
+            "BTTTouchBarButtonColor" : "0.000000, 0.000000, 0.000000, 255.000000",
+            "BTTTouchBarWeatherAutoLocation" : true,
+            "BTTTouchBarItemIconWidth" : 22,
+            "BTTTouchBarItemPlacement" : 2,
+            "BTTTouchBarAlternateBackgroundColor" : "0.000000, 0.000000, 0.000000, 0.000000",
+            "BTTTouchBarButtonCornerRadius" : 6,
+            "BTTTouchBarWeatherDay" : -1,
+            "BTTTouchBarIconTextOffset" : 5,
+            "BTTTouchBarButtonName" : "Current Location",
+            "BTTTouchBarWeatherUnit" : 2,
+            "BTTTouchBarFreeSpaceAfterButton" : 5,
+            "BTTTouchBarWeatherFormat" : "{moonphase} {temp_rounded} {unit}",
+            "BTTTouchBarItemIconHeight" : 22,
+            "BTTTouchBarItemPadding" : 0
+          }
+        },
+        {
+          "BTTTriggerType" : 633,
+          "BTTTriggerTypeDescription" : "Date \/ Time Widget",
+          "BTTTriggerClass" : "BTTTriggerTypeTouchBar",
+          "BTTPredefinedActionType" : 122,
+          "BTTPredefinedActionName" : "Show Notification Center",
+          "BTTEnabled2" : 0,
+          "BTTUUID" : "C189D163-1714-4C10-A343-112793D59897",
+          "BTTEnabled" : 1,
+          "BTTOrder" : 3,
+          "BTTTriggerConfig" : {
+            "BTTTouchBarAlternateBackgroundColor" : "0.000000, 0.000000, 0.000000, 0.000000",
+            "BTTTouchBarFreeSpaceAfterButton" : 5,
+            "BTTTouchBarButtonCornerRadius" : 6,
+            "BTTTouchBarItemPlacement" : 2,
+            "BTTTouchBarButtonColor" : "0.000000, 0.000000, 0.000000, 255.000000",
+            "BTTTouchBarDateWidgetTimeZone" : -7,
+            "BTTTouchBarTimeZoneLocation" : "System Time Zone",
+            "BTTTouchBarDateFormat" : "E MMM d HH:mm",
+            "BTTTouchBarItemIconWidth" : 22,
+            "BTTTouchBarItemPadding" : 0,
+            "BTTTouchBarItemIconHeight" : 22
+          }
+        },
+        {
+          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+          "BTTPredefinedActionType" : 28,
+          "BTTPredefinedActionName" : "Brightness Up",
+          "BTTAdditionalConfiguration" : "1835049",
+          "BTTEnabled2" : 1,
+          "BTTUUID" : "14D9BDD2-EBD7-43BA-8B83-028A86F1C81F",
+          "BTTTriggerOnDown" : 1,
+          "BTTEnabled" : 1,
+          "BTTShortcutKeyCode" : 44,
+          "BTTShortcutModifierKeys" : 1835008,
+          "BTTOrder" : 6
+        },
+        {
+          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+          "BTTPredefinedActionType" : 27,
+          "BTTPredefinedActionName" : "Next",
+          "BTTAdditionalConfiguration" : "1835049",
+          "BTTEnabled2" : 1,
+          "BTTUUID" : "D6217628-50F7-4853-9DB9-8E3C764D78E9",
+          "BTTTriggerOnDown" : 1,
+          "BTTEnabled" : 1,
+          "BTTShortcutKeyCode" : 35,
+          "BTTShortcutModifierKeys" : 1835008,
+          "BTTOrder" : 5
+        },
+        {
+          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+          "BTTPredefinedActionType" : 23,
+          "BTTPredefinedActionName" : "Play\/Pause",
+          "BTTAdditionalConfiguration" : "1835049",
+          "BTTEnabled2" : 1,
+          "BTTUUID" : "1897B841-DD17-4BAE-94B6-0E9F36AEB1F8",
+          "BTTTriggerOnDown" : 1,
+          "BTTEnabled" : 1,
+          "BTTShortcutKeyCode" : 34,
+          "BTTShortcutModifierKeys" : 1835008,
+          "BTTOrder" : 3
+        },
+        {
+          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+          "BTTPredefinedActionType" : 25,
+          "BTTPredefinedActionName" : "Volume Down",
+          "BTTAdditionalConfiguration" : "1835049",
+          "BTTEnabled2" : 1,
+          "BTTUUID" : "E2DA3EAD-9DAC-4575-A892-C5D05EB72835",
+          "BTTTriggerOnDown" : 1,
+          "BTTEnabled" : 1,
+          "BTTShortcutKeyCode" : 37,
+          "BTTShortcutModifierKeys" : 1835008,
+          "BTTOrder" : 0
+        },
         {
           "BTTWidgetName" : "HACKING",
           "BTTTriggerType" : 642,
@@ -159,7 +291,7 @@
             "BTTTouchBarItemPlacement" : 1,
             "BTTTouchBarAlternateBackgroundColor" : "128.829533, 128.829533, 128.829533, 255.000000",
             "BTTTouchBarButtonCornerRadius" : 6,
-            "BTTTouchBarScriptUpdateInterval" : 100,
+            "BTTTouchBarScriptUpdateInterval" : 10,
             "BTTTouchBarShellScriptString" : "node ~\/dotfiles\/BetterTouchTool\/bar-info.js",
             "BTTTouchBarAppleScriptStringRunOnInit" : true,
             "BTTTouchBarButtonName" : "HACKING",
@@ -167,6 +299,19 @@
             "BTTTouchBarItemIconHeight" : 22,
             "BTTTouchBarItemPadding" : 0
           }
+        },
+        {
+          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+          "BTTPredefinedActionType" : 29,
+          "BTTPredefinedActionName" : "Brightness Down",
+          "BTTAdditionalConfiguration" : "1835049",
+          "BTTEnabled2" : 1,
+          "BTTUUID" : "53863C83-6A6C-4DC8-BF6A-ED9DC9BD9DBD",
+          "BTTTriggerOnDown" : 1,
+          "BTTEnabled" : 1,
+          "BTTShortcutKeyCode" : 47,
+          "BTTShortcutModifierKeys" : 1835008,
+          "BTTOrder" : 7
         },
         {
           "BTTTriggerType" : 652,
@@ -200,222 +345,16 @@
         },
         {
           "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
-          "BTTPredefinedActionType" : 22,
-          "BTTPredefinedActionName" : "Mute",
-          "BTTAdditionalConfiguration" : "524352",
-          "BTTEnabled2" : 1,
-          "BTTUUID" : "27B48100-DC1F-47C3-B091-89B4E3889892",
-          "BTTTriggerOnDown" : 1,
-          "BTTEnabled" : 1,
-          "BTTShortcutKeyCode" : 36,
-          "BTTShortcutModifierKeys" : 524288,
-          "BTTOrder" : 2,
-          "BTTTriggerConfig" : {
-            "BTTLeftRightModifierDifferentiation" : 1
-          }
-        },
-        {
-          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
-          "BTTPredefinedActionType" : 23,
-          "BTTPredefinedActionName" : "Play\/Pause",
-          "BTTAdditionalConfiguration" : "524352",
-          "BTTEnabled2" : 1,
-          "BTTUUID" : "1897B841-DD17-4BAE-94B6-0E9F36AEB1F8",
-          "BTTTriggerOnDown" : 1,
-          "BTTEnabled" : 1,
-          "BTTShortcutKeyCode" : 42,
-          "BTTShortcutModifierKeys" : 524288,
-          "BTTOrder" : 3,
-          "BTTTriggerConfig" : {
-            "BTTLeftRightModifierDifferentiation" : 1
-          }
-        },
-        {
-          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
-          "BTTPredefinedActionType" : 25,
-          "BTTPredefinedActionName" : "Volume Down",
-          "BTTAdditionalConfiguration" : "524352",
-          "BTTEnabled2" : 1,
-          "BTTUUID" : "E2DA3EAD-9DAC-4575-A892-C5D05EB72835",
-          "BTTTriggerOnDown" : 1,
-          "BTTEnabled" : 1,
-          "BTTShortcutKeyCode" : 41,
-          "BTTShortcutModifierKeys" : 524288,
-          "BTTOrder" : 0,
-          "BTTTriggerConfig" : {
-            "BTTLeftRightModifierDifferentiation" : 1
-          }
-        },
-        {
-          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
           "BTTPredefinedActionType" : 24,
           "BTTPredefinedActionName" : "Volume Up",
-          "BTTAdditionalConfiguration" : "524352",
+          "BTTAdditionalConfiguration" : "1835049",
           "BTTEnabled2" : 1,
           "BTTUUID" : "9CEDB674-0AE4-4A95-95C3-E45EA3036E95",
           "BTTTriggerOnDown" : 1,
           "BTTEnabled" : 1,
-          "BTTShortcutKeyCode" : 39,
-          "BTTShortcutModifierKeys" : 524288,
-          "BTTOrder" : 1,
-          "BTTTriggerConfig" : {
-            "BTTLeftRightModifierDifferentiation" : 1
-          }
-        },
-        {
-          "BTTTriggerType" : 632,
-          "BTTTriggerTypeDescription" : "Remaining Battery Time Widget",
-          "BTTTriggerClass" : "BTTTriggerTypeTouchBar",
-          "BTTPredefinedActionType" : 203,
-          "BTTPredefinedActionName" : "Show Clipboard\/Pasteboard History",
-          "BTTEnabled2" : 1,
-          "BTTUUID" : "6634AF00-0753-4A8D-9F38-4B43883A5149",
-          "BTTEnabled" : 1,
-          "BTTOrder" : 3,
-          "BTTTriggerConfig" : {
-            "BTTTouchBarShowBatteryPercentage" : true,
-            "BTTTouchBarShowRemainingBatteryTime" : false,
-            "BTTTouchBarButtonCornerRadius" : 6,
-            "BTTTouchBarItemPlacement" : 2,
-            "BTTTouchBarAlternateBackgroundColor" : "0.000000, 0.000000, 0.000000, 0.000000",
-            "BTTTouchBarItemIconHeight" : 22,
-            "BTTTouchBarButtonColor" : "0.000000, 0.000000, 0.000000, 255.000000",
-            "BTTTouchBarItemIconWidth" : 22,
-            "BTTTouchBarFreeSpaceAfterButton" : 5,
-            "BTTTouchBarItemPadding" : 0
-          }
-        },
-        {
-          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
-          "BTTPredefinedActionType" : 27,
-          "BTTPredefinedActionName" : "Next",
-          "BTTAdditionalConfiguration" : "524352",
-          "BTTEnabled2" : 1,
-          "BTTUUID" : "D6217628-50F7-4853-9DB9-8E3C764D78E9",
-          "BTTTriggerOnDown" : 1,
-          "BTTEnabled" : 1,
-          "BTTShortcutKeyCode" : 30,
-          "BTTShortcutModifierKeys" : 524288,
-          "BTTOrder" : 5,
-          "BTTTriggerConfig" : {
-            "BTTLeftRightModifierDifferentiation" : 1
-          }
-        },
-        {
-          "BTTTriggerType" : 633,
-          "BTTTriggerTypeDescription" : "Date \/ Time Widget",
-          "BTTTriggerClass" : "BTTTriggerTypeTouchBar",
-          "BTTPredefinedActionType" : 122,
-          "BTTPredefinedActionName" : "Show Notification Center",
-          "BTTEnabled2" : 1,
-          "BTTUUID" : "C189D163-1714-4C10-A343-112793D59897",
-          "BTTEnabled" : 1,
-          "BTTOrder" : 4,
-          "BTTTriggerConfig" : {
-            "BTTTouchBarAlternateBackgroundColor" : "0.000000, 0.000000, 0.000000, 0.000000",
-            "BTTTouchBarFreeSpaceAfterButton" : 5,
-            "BTTTouchBarButtonCornerRadius" : 6,
-            "BTTTouchBarItemPlacement" : 2,
-            "BTTTouchBarButtonColor" : "0.000000, 0.000000, 0.000000, 255.000000",
-            "BTTTouchBarDateWidgetTimeZone" : -7,
-            "BTTTouchBarTimeZoneLocation" : "System Time Zone",
-            "BTTTouchBarDateFormat" : "E MMM d HH:mm",
-            "BTTTouchBarItemIconWidth" : 22,
-            "BTTTouchBarItemPadding" : 0,
-            "BTTTouchBarItemIconHeight" : 22
-          }
-        },
-        {
-          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
-          "BTTPredefinedActionType" : 29,
-          "BTTPredefinedActionName" : "Brightness Down",
-          "BTTAdditionalConfiguration" : "524352",
-          "BTTEnabled2" : 1,
-          "BTTUUID" : "90F7DD14-61BC-4D5D-A4EA-48847011367D",
-          "BTTTriggerOnDown" : 1,
-          "BTTEnabled" : 1,
-          "BTTShortcutKeyCode" : 43,
-          "BTTShortcutModifierKeys" : 524288,
-          "BTTOrder" : 8,
-          "BTTTriggerConfig" : {
-            "BTTLeftRightModifierDifferentiation" : 1
-          }
-        },
-        {
-          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
-          "BTTPredefinedActionType" : 28,
-          "BTTPredefinedActionName" : "Brightness Up",
-          "BTTAdditionalConfiguration" : "524352",
-          "BTTEnabled2" : 1,
-          "BTTUUID" : "3E691850-7A9B-48BF-B892-CE44F9204DCB",
-          "BTTTriggerOnDown" : 1,
-          "BTTEnabled" : 1,
-          "BTTShortcutKeyCode" : 47,
-          "BTTShortcutModifierKeys" : 524288,
-          "BTTOrder" : 7,
-          "BTTTriggerConfig" : {
-            "BTTLeftRightModifierDifferentiation" : 1
-          }
-        },
-        {
-          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
-          "BTTPredefinedActionType" : 158,
-          "BTTPredefinedActionName" : "Lock Screen",
-          "BTTAdditionalConfiguration" : "524352",
-          "BTTEnabled2" : 1,
-          "BTTUUID" : "ED84271A-43BD-4DC0-8F98-D43DC0B02637",
-          "BTTTriggerOnDown" : 1,
-          "BTTEnabled" : 1,
-          "BTTShortcutKeyCode" : 37,
-          "BTTShortcutModifierKeys" : 524288,
-          "BTTOrder" : 6,
-          "BTTTriggerConfig" : {
-            "BTTLeftRightModifierDifferentiation" : 1
-          }
-        },
-        {
-          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
-          "BTTPredefinedActionType" : 26,
-          "BTTPredefinedActionName" : "Previous",
-          "BTTAdditionalConfiguration" : "524352",
-          "BTTEnabled2" : 1,
-          "BTTUUID" : "3A6F2AE4-7BE5-400C-96BB-BBDA06F6B33A",
-          "BTTTriggerOnDown" : 1,
-          "BTTEnabled" : 1,
-          "BTTShortcutKeyCode" : 33,
-          "BTTShortcutModifierKeys" : 524288,
-          "BTTOrder" : 4,
-          "BTTTriggerConfig" : {
-            "BTTLeftRightModifierDifferentiation" : 1
-          }
-        },
-        {
-          "BTTWidgetName" : "Current Location",
-          "BTTTriggerType" : 651,
-          "BTTTriggerTypeDescription" : "Weather Widget",
-          "BTTTriggerClass" : "BTTTriggerTypeTouchBar",
-          "BTTPredefinedActionType" : 94,
-          "BTTPredefinedActionName" : "Show Color Picker",
-          "BTTEnabled2" : 1,
-          "BTTUUID" : "9239B649-FE8A-42C4-AA3C-D2A571137F71",
-          "BTTEnabled" : 1,
-          "BTTOrder" : 1,
-          "BTTTriggerConfig" : {
-            "BTTTouchBarButtonColor" : "0.000000, 0.000000, 0.000000, 255.000000",
-            "BTTTouchBarWeatherAutoLocation" : true,
-            "BTTTouchBarItemIconWidth" : 22,
-            "BTTTouchBarItemPlacement" : 2,
-            "BTTTouchBarAlternateBackgroundColor" : "0.000000, 0.000000, 0.000000, 0.000000",
-            "BTTTouchBarButtonCornerRadius" : 6,
-            "BTTTouchBarWeatherDay" : -1,
-            "BTTTouchBarIconTextOffset" : 5,
-            "BTTTouchBarButtonName" : "Current Location",
-            "BTTTouchBarWeatherUnit" : 2,
-            "BTTTouchBarFreeSpaceAfterButton" : 5,
-            "BTTTouchBarWeatherFormat" : "{moonphase} {temp_rounded} {unit}",
-            "BTTTouchBarItemIconHeight" : 22,
-            "BTTTouchBarItemPadding" : 0
-          }
+          "BTTShortcutKeyCode" : 41,
+          "BTTShortcutModifierKeys" : 1835008,
+          "BTTOrder" : 1
         }
       ]
     }

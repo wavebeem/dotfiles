@@ -1,12 +1,52 @@
 #!/usr/bin/env node
-const os = require("os");
+const { execSync } = require("child_process");
 
-const uptime = os.uptime();
-const hours = uptime / 60/ 60;
-const days = hours / 24;
-const info = [
-  os.userInfo().username + "@" + os.hostname(),
-  days.toFixed(2) + " days",
-  os.loadavg().map(n => n.toFixed(2)).join(" / ")
-];
-console.log(info.join("  •  "));
+const sep = " ";
+const pct = (() => {
+  if (2 in process.argv) {
+    return Number(process.argv[2]);
+  }
+  const str = execSync("pmset -g batt", { encoding: "utf-8" });
+  const [, level] = str.match(/(\d+)%/) || [];
+  return Number(level);
+})();
+
+const allSymbols = {
+  moons: {
+    none: "\u{1f311}",
+    less: "\u{1f318}",
+    half: "\u{1f317}",
+    more: "\u{1f316}",
+    full: "\u{1f315}"
+  },
+  bars: {
+    none: "\u{2581}",
+    less: "\u{2584}",
+    half: "\u{2584}",
+    more: "\u{2584}",
+    full: "\u{2588}"
+  }
+};
+
+const symbols = allSymbols.bars;
+
+const before = Math.floor(pct / 10);
+const after = Math.floor((100 - pct) / 10);
+const out = [];
+for (let x = 0; x < before; x++) {
+  out.push(symbols.full);
+}
+const digit = pct % 10;
+if (digit < 1) {
+  // Do nothing
+} else if (digit < 5) {
+  out.push(symbols.less);
+} else if (digit === 5) {
+  out.push(symbols.half);
+} else {
+  out.push(symbols.more);
+}
+for (let x = 0; x < after; x++) {
+  out.push(symbols.none);
+}
+console.log(out.join(sep));
