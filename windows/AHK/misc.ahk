@@ -17,13 +17,13 @@ CapsLock::Control
 ^+q::Return
 
 ; Send an ISO8601-ish filesystem timestamp, good for naming files
->#^t::
+>#!t::
   FormatTime, time, A_now, yyyy-MM-dd HH.mm.ss
   Send %time%
   Return
 
 ; Reload this script and display a notification
->#^r::
+>#!r::
   TrayTip, AutoHotkey, AutoHotkey configuration reloaded
   Reload
   Return
