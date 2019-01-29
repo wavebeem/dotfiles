@@ -3,17 +3,23 @@ $c1 = "Yellow"
 Set-PSReadlineOption -BellStyle None
 Set-PSReadlineOption -EditMode Emacs
 
-Set-PSReadlineOption -ForegroundColor $c1 -TokenKind None
-Set-PSReadlineOption -ForegroundColor $c1 -TokenKind Comment
-Set-PSReadlineOption -ForegroundColor $c1 -TokenKind Keyword
-Set-PSReadlineOption -ForegroundColor $c1 -TokenKind String
-Set-PSReadlineOption -ForegroundColor $c1 -TokenKind Operator
-Set-PSReadlineOption -ForegroundColor $c1 -TokenKind Variable
-Set-PSReadlineOption -ForegroundColor $c1 -TokenKind Command
-Set-PSReadlineOption -ForegroundColor $c1 -TokenKind Parameter
-Set-PSReadlineOption -ForegroundColor $c1 -TokenKind Type
-Set-PSReadlineOption -ForegroundColor $c1 -TokenKind Number
-Set-PSReadlineOption -ForegroundColor $c1 -TokenKind Member
+Set-PSReadLineOption -Colors @{
+  ContinuationPrompt = $c1
+  Emphasis = $c1
+  Error = $c1
+  Selection = $c1
+  Default = $c1
+  Comment = $c1
+  Keyword = $c1
+  String = $c1
+  Operator = $c1
+  Variable = $c1
+  Command = $c1
+  Parameter = $c1
+  Type = $c1
+  Number = $c1
+  Member = $c1
+}
 
 $host.PrivateData.ErrorForegroundColor = "Red"
 $host.PrivateData.ErrorBackgroundColor = $host.ui.RawUI.BackgroundColor
@@ -41,6 +47,10 @@ function prompt {
 function dim {
   $size = $host.UI.RawUI.WindowSize
   Write-Host $size.Width "by" $size.Height
+}
+
+function rmrf {
+  Remove-Item -Recurse -Force $args
 }
 
 function .. {
