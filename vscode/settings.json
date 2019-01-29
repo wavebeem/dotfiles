@@ -90,6 +90,11 @@
   "gitlens.keymap": "none",
   "gitlens.resultsExplorer.files.layout": "list",
   "gitlens.settings.mode": "advanced",
+  "gitlens.views.avatars": false,
+  "gitlens.views.compare.files.layout": "list",
+  "gitlens.views.fileHistory.avatars": false,
+  "gitlens.views.lineHistory.avatars": false,
+  "gitlens.views.search.files.layout": "list",
   "html.format.endWithNewline": true,
   "html.format.indentHandlebars": true,
   "python.linting.pep8Enabled": true,
@@ -116,12 +121,8 @@
   "workbench.editor.showTabs": false,
   "workbench.iconTheme": "simple-icons",
   "workbench.startupEditor": "newUntitledFile",
+  "workbench.statusBar.feedback.visible": false,
   "workbench.statusBar.visible": true,
   "zenMode.centerLayout": false,
-  "zenMode.fullScreen": false,
-  "gitlens.views.fileHistory.avatars": false,
-  "gitlens.views.lineHistory.avatars": false,
-  "gitlens.views.compare.files.layout": "list",
-  "gitlens.views.search.files.layout": "list",
-  "gitlens.views.avatars": false
+  "zenMode.fullScreen": false
 }
