@@ -17,7 +17,7 @@
   },
   "arrow function (block)": {
     "prefix": "arr",
-    "body": "($1) => { $2 }"
+    "body": "($1) => {$2}"
   },
   "React function component": {
     "prefix": "rfc",
