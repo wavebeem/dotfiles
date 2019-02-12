@@ -111,7 +111,6 @@
   "window.titleBarStyle": "custom",
   "window.zoomLevel": 0,
   "workbench.activityBar.visible": true,
-  "workbench.colorTheme": "Uno Due Tre (Periwinkle)",
   "workbench.editor.enablePreviewFromQuickOpen": false,
   "workbench.editor.showTabs": false,
   "workbench.iconTheme": "simple-icons",
@@ -123,5 +122,9 @@
   "gitlens.views.lineHistory.avatars": false,
   "gitlens.views.compare.files.layout": "list",
   "gitlens.views.search.files.layout": "list",
-  "gitlens.views.avatars": false
+  "gitlens.views.avatars": false,
+  "workbench.colorTheme": "Uno Due Tre (Sprinkles)",
+  "gitlens.views.compare.avatars": false,
+  "gitlens.views.repositories.avatars": false,
+  "gitlens.views.search.avatars": false
 }

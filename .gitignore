@@ -1,10 +1,9 @@
-# Chrome developer garbage
 Cached Theme.pak
 *.crx
 *.pem
-
-# OS X Finder garbage
 .DS_Store
-
-# npm garbage
 *.log
+.vscode
+alfred/Alfred.alfredpreferences/clipboard/snippets.alfdb
+alfred/Alfred.alfredpreferences/preferences/local
+alfred/Alfred.alfredpreferences/remote
