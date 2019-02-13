@@ -11,6 +11,14 @@
     "prefix": "import",
     "body": "import ${2:___} from \"${1:___}\";"
   },
+  "arrow function (expression)": {
+    "prefix": "ar",
+    "body": "($1) => $2"
+  },
+  "arrow function (block)": {
+    "prefix": "arr",
+    "body": "($1) => {$2}"
+  },
   "React function component": {
     "prefix": "rfc",
     "body": [

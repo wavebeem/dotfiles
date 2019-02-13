@@ -51,6 +51,20 @@ preexec() {
   __set_title "$title"
 }
 
+notify() {
+  local text="$*"
+  if [[ $text = "" ]]; then
+    text="Done"
+  fi
+  local title="$(date)"
+  env text="$text" title="$title" osascript <<EOF
+    display notification \
+      (system attribute "text") \
+      with title (system attribute "title") \
+      sound name "Sosumi"
+EOF
+}
+
 # Fix the value of $SHELL if it's broken
 if [[ $SHELL != *zsh ]]; then
   export SHELL="$(which zsh)"
