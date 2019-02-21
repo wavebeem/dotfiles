@@ -1,0 +1,30 @@
+{
+  "console.info": {
+    "prefix": "info",
+    "body": ["console.info($1);$0"]
+  },
+  "console.log": {
+    "prefix": "log",
+    "body": ["console.log($1);$0"]
+  },
+  "import": {
+    "prefix": "import",
+    "body": "import ${2:___} from \"${1:___}\";"
+  },
+  "arrow function (expression)": {
+    "prefix": "ar",
+    "body": "($1) => $2"
+  },
+  "arrow function (block)": {
+    "prefix": "arr",
+    "body": "($1) => {$2}"
+  },
+  "React function component": {
+    "prefix": "rfc",
+    "body": [
+      "const ${1:MyComponent} = (${2:props}) => (",
+      "  ${3:body}",
+      ");$0"
+    ]
+  }
+}
