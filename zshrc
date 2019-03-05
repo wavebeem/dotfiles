@@ -15,21 +15,6 @@ dim() {
   echo "$COLUMNS by $LINES"
 }
 
-__set_title() {
-  local title="$1"
-  if [[ $TERM != linux ]]; then
-    print -Pn "\e]0;"
-    # Don't allow % escapes in the parameter
-    print -n "$title"
-    print -Pn "\a"
-  fi
-}
-
-__set_title_special() {
-  local expanded_title="${(%)1}"
-  __set_title "$expanded_title"
-}
-
 __install_zsh_autosuggestions() {
   git clone --depth 1 \
     https://github.com/zsh-users/zsh-autosuggestions \
@@ -42,14 +27,12 @@ __install_fzf() {
 }
 
 precmd() {
-  __set_title_special "zsh %~"
   echo
   echo
 }
 
 preexec() {
-  local title="$1"
-  __set_title "$title"
+  echo
 }
 
 notify() {
@@ -132,11 +115,12 @@ __set_prompt() {
   local hostname="%m"
   local cwd="%3~"
   local reset="%b%f%k%u%s"
-  local c1="%B%F{white}%K{magenta}"
-  local c2="%B%F{white}%K{green}"
+  local c1="%B%F{white}%K{green}"
+  local c2="%B%F{white}%K{magenta}"
   local end="${c2}${glyph}${reset} "
-  PROMPT="${reset}${c1}  ${glyph}  ${reset} "
-  PROMPT2="${reset}${c1}  ${glyph}  ${reset} "
+  local p="${reset}${c1}  ${glyph}  ${reset} "
+  PROMPT="$p"
+  PROMPT2="$p"
   RPROMPT="${reset}${c2}  ${cwd}  ${reset} "
 }
 
