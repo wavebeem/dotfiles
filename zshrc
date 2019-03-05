@@ -44,6 +44,7 @@ __install_fzf() {
 precmd() {
   __set_title_special "zsh %~"
   echo
+  echo
 }
 
 preexec() {
