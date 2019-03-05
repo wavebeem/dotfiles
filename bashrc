@@ -27,14 +27,8 @@ reset=$(_ansi 0)
 separator="${reset} "
 space=" "
 
-export PS1="\
-
-${reset}${bold}${bg_purple}${fg_white}  \u  \
-${separator}${reset}${bold}${bg_cyan}${fg_white}  @\h  \
-${separator}${reset}${bold}${bg_purple}${fg_white}  \w  \
-\n${reset}${fg_blue}\$ ${reset}\
-"
-export PS2="${reset}${fg_blue}\$ ${reset}"
+export PS1="\n${reset}${bold}${bg_purple}${fg_white}  \w  ${reset} "
+export PS2="${reset}${bold}${bg_purple}${fg_white}  \w  ${reset} "
 
 alias gco="git checkout"
 alias gdd="git diff --cached"

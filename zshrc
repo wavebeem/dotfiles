@@ -133,15 +133,10 @@ __set_prompt() {
   local reset="%b%f%k%u%s"
   local c1="%B%F{white}%K{magenta}"
   local c2="%B%F{white}%K{green}"
-  local c3="%F{blue}"
   local end="${c2}${glyph}${reset} "
-  PROMPT="\
-${reset}
-${c2}${pad}${username}${pad}${reset} ${c3}\
-${c1}${pad}@${hostname}${pad}${reset} ${c3}\
-${c2}${pad}${cwd}${pad}${reset}
-${c3}${glyph}${reset} "
-  PROMPT2="${c3}${glyph}${reset} "
+  PROMPT="${reset}${c1}  ${glyph}  ${reset} "
+  PROMPT2="${reset}${c1}  ${glyph}  ${reset} "
+  RPROMPT="${reset}${c2}  ${cwd}  ${reset} "
 }
 
 __set_prompt
