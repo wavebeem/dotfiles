@@ -27,20 +27,14 @@ $host.PrivateData.ErrorBackgroundColor = $host.ui.RawUI.BackgroundColor
 Set-Alias l ls
 Set-Alias ll ls
 
-function WC($bg, $fg, $str) {
+function _wc($bg, $fg, $str) {
   Write-Host -NoNewline -BackgroundColor $bg -ForegroundColor $fg $str
 }
 
 function prompt {
   Write-Host ""
   Write-Host ""
-  WC Cyan White "  $env:UserName  "
-  Write-Host -NoNewline " "
-  WC Green White "  @$(hostname)  "
-  Write-Host -NoNewline " "
-  WC Cyan White "  $(Get-Location)  "
-  Write-Host ""
-  Write-Host -NoNewline -ForeGroundColor Blue ">"
+  _wc Cyan White "  >  "
   return " "
 }
 
