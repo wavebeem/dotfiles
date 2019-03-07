@@ -1,6 +1,6 @@
 {
   "alfredsnippet" : {
-    "snippet" : "{datetime:medium}",
+    "snippet" : "{date:medium} {time:medium}",
     "uid" : "25833A67-79D2-496E-9ED3-53C7FC69D796",
     "name" : "Date Time",
     "keyword" : "datetime"
