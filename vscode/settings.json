@@ -128,5 +128,6 @@
   "workbench.colorTheme": "Uno Due Tre (Periwinkle)",
   "gitlens.views.compare.avatars": false,
   "gitlens.views.repositories.avatars": false,
-  "gitlens.views.search.avatars": false
+  "gitlens.views.search.avatars": false,
+  "typescript.updateImportsOnFileMove.enabled": "always"
 }
