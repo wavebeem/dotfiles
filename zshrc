@@ -28,7 +28,6 @@ __install_fzf() {
 
 precmd() {
   echo
-  echo
 }
 
 preexec() {
@@ -116,12 +115,11 @@ __set_prompt() {
   local cwd="%3~"
   local reset="%b%f%k%u%s"
   local c1="%B%F{white}%K{green}"
-  local c2="%B%F{white}%K{magenta}"
   local end="${c2}${glyph}${reset} "
-  local p="${reset}${c1}  ${glyph}  ${reset} "
+  local nl=$'\n'
+  local p="${nl}${reset}${c1}  ${glyph}  ${reset} "
   PROMPT="$p"
   PROMPT2="$p"
-  RPROMPT="${reset}${c2}  ${cwd}  ${reset} "
 }
 
 __set_prompt
