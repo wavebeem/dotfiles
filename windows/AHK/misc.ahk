@@ -22,8 +22,16 @@ FileEncoding UTF-8-RAW
   Send %time%
   Return
 
-; Reload this script and display a notification
+; Rename file with timestamp from above
 ^#!r::
+  Send {Alt}{F2}
+  FormatTime, time, A_now, yyyy-MM-dd HH.mm.ss
+  Send %time%
+  Send {Enter}
+  Return
+
+; Reload this script and display a notification
+^#!y::
   TrayTip, AutoHotkey, AutoHotkey configuration reloaded
   Reload
   Return
