@@ -112,12 +112,12 @@ __set_prompt() {
   local glyph="%%"
   local username="%n"
   local hostname="%m"
-  local cwd="%3~"
+  local cwd="%1~"
   local reset="%b%f%k%u%s"
   local c1="%B%F{white}%K{green}"
   local end="${c2}${glyph}${reset} "
   local nl=$'\n'
-  local p="${reset}${c1}  ${glyph}  ${reset} "
+  local p="${reset}${c1}  ${cwd}  ${reset} "
   PROMPT="${nl}${p}"
   PROMPT2="${p}"
 }
