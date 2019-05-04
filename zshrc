@@ -129,6 +129,7 @@ __maybe_source ~/.travis/travis.sh
 __maybe_source ~/google-cloud-sdk/path.zsh.inc
 __maybe_source ~/google-cloud-sdk/completion.zsh.inc
 __maybe_source ~/.fzf.zsh
+__maybe_source ~/.nvm/nvm.sh
 
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=cyan"
 
