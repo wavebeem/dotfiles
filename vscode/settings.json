@@ -11,10 +11,6 @@
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "[markdown]": {
-    "editor.wordWrap": "wordWrapColumn",
-    "editor.wordWrapColumn": 80
-  },
   "[python]": {
     "editor.tabSize": 4
   },
@@ -24,6 +20,7 @@
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "breadcrumbs.enabled": false,
   "diffEditor.ignoreTrimWhitespace": true,
   "diffEditor.renderSideBySide": false,
   "editor.acceptSuggestionOnCommitCharacter": false,
@@ -132,13 +129,14 @@
   "window.titleBarStyle": "custom",
   "window.zoomLevel": 0,
   "workbench.activityBar.visible": true,
-  "workbench.colorTheme": "Uno Due Tre (Periwinkle)",
+  "workbench.colorTheme": "Uno Due Tre (Nature)",
   "workbench.editor.enablePreviewFromQuickOpen": false,
   "workbench.editor.showTabs": false,
   "workbench.iconTheme": "vscode-icon-theme",
   "workbench.startupEditor": "newUntitledFile",
   "workbench.statusBar.feedback.visible": false,
   "workbench.statusBar.visible": true,
+  "workbench.tree.renderIndentGuides": "none",
   "zenMode.centerLayout": false,
   "zenMode.fullScreen": false
 }

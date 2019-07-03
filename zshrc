@@ -98,6 +98,11 @@ if which rbenv >/dev/null 2>&1; then
   eval "$(rbenv init -)"
 fi
 
+if which pyenv >/dev/null 2>&1; then
+  eval "$(pyenv init -)"
+  eval "$(pyenv virtualenv-init -)"
+fi
+
 if [[ $__already_welcome != "yes" ]]; then
   if [[ -f ~/.welcome ]]; then
     cat ~/.welcome
