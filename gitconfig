@@ -5,4 +5,4 @@
   default = current
 [core]
   excludesfile = ~/.gitignore
-  autocrlf = input
+	autocrlf = false

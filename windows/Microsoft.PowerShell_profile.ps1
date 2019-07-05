@@ -34,7 +34,8 @@ function _wc($bg, $fg, $str) {
 function prompt {
   Write-Host ""
   Write-Host ""
-  _wc Cyan White "  >  "
+  $dir = (Get-Location | Get-Item).Basename
+  _wc Cyan White "  $dir  "
   return " "
 }
 
