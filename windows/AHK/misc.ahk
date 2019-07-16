@@ -24,7 +24,7 @@ FileEncoding UTF-8-RAW
 
 ; Rename file with timestamp from above
 ^#!r::
-  Send {Alt}{F2}
+  Send {F2}
   FormatTime, time, A_now, yyyy-MM-dd HH.mm.ss
   Send %time%
   Send {Enter}
@@ -48,3 +48,12 @@ FileEncoding UTF-8-RAW
 ^#!k::Send {Volume_Mute}
 ^#!l::Send {Volume_Down}
 ^#!;::Send {Volume_Up}
+
+; Macro pad stuff
+F13::Volume_Mute
+F14::Volume_Down
+F15::Volume_Up
+
+F16::Media_Prev
+F17::Media_Next
+F18::Media_Play_Pause
