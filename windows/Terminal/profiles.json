@@ -175,6 +175,7 @@
       "commandline": "cmd.exe",
       "cursorColor": "#000000",
       "cursorShape": "bar",
+      "fontFace": "Input",
       "fontSize": 11,
       "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
       "historySize": 9001,
