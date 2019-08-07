@@ -97,7 +97,7 @@ export FZF_DEFAULT_OPTS="--color=light --bind ctrl-j:accept"
   local o="${2:-⬜️}"
   toilet -f bigmono9 |
     sed "s/[xX#0\"m█▓]/$x/g" |
-    sed "s/[ .▒]/$o/g" |
+    sed "s/[ .▒░]/$o/g" |
     pbcopy
 }
 
