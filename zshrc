@@ -35,11 +35,8 @@ preexec() {
 }
 
 :notify() {
-  local text="$*"
-  if [[ $text = "" ]]; then
-    text="Done"
-  fi
-  local title="$(date)"
+  local text="${*:-Done}"
+  local title="$(date '+%H:%M:%S @ %Y-%m-%d')"
   env text="$text" title="$title" osascript <<EOF
     display notification \
       (system attribute "text") \
