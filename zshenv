@@ -20,9 +20,9 @@ path=(
   $path
 )
 
-__maybe_source() {
+:maybe-source() {
   local file="$1"
   test -f "$file" && source "$file"
 }
 
-__maybe_source ~/.after.zshenv.zsh
+:maybe-source ~/.after.zshenv.zsh
