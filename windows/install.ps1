@@ -75,3 +75,4 @@ installAs "windows\Microsoft.PowerShell_profile.ps1" $profile
 installAs "vscode\keybindings.json" "$VSCODE\keybindings.json"
 installAs "vscode\settings.json" "$VSCODE\settings.json"
 installAs "vscode\snippets" "$VSCODE\snippets"
+installAs "windows\Terminal\profiles.json" "$env:LOCALAPPDATA\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\RoamingState\profiles.json"
