@@ -127,7 +127,7 @@
       "compare": true,
       "openClose": true,
       "stash": true,
-      "stashInline": true
+      "stashInline": false
     },
     "scmItem": {
       "clipboard": true,
