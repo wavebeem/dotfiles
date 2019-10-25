@@ -5,14 +5,9 @@
     "when": "isMac && editorTextFocus"
   },
   {
-    "key": "cmd+0",
-    "command": "workbench.action.zoomReset",
-    "when": "isMac && editorTextFocus"
-  },
-  {
-    "key": "ctrl+0",
-    "command": "workbench.action.zoomReset",
-    "when": "isMac && editorTextFocus"
+    "key": "ctrl+shift+i",
+    "command": "workbench.action.toggleDevTools",
+    "when": "!isMac && editorTextFocus"
   },
   {
     "key": "ctrl+k",
@@ -20,23 +15,19 @@
     "when": "terminalFocus"
   },
   {
-    "key": "ctrl+shift+'",
-    "command": "workbench.action.togglePanel"
-  },
-  {
     "key": "ctrl+,",
     "command": "workbench.action.openGlobalSettings",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "cmd+k cmd+p",
-    "command": "workbench.action.files.copyPathOfActiveFile",
-    "when": "isMac"
+    "when": "!isMac && editorTextFocus"
   },
   {
     "key": "cmd+k cmd+f",
     "command": "editor.action.formatDocument",
-    "when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly"
+    "when": "isMac && editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+k ctrl+f",
+    "command": "editor.action.formatDocument",
+    "when": "!isMac && editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly"
   },
   {
     "key": "cmd+k cmd+z",
@@ -44,7 +35,12 @@
     "when": "isMac && editorTextFocus"
   },
   {
-    "key": "ctrl+shift+;",
+    "key": "ctrl+k ctrl+z",
+    "command": "editor.action.toggleWordWrap",
+    "when": "!isMac && editorTextFocus"
+  },
+  {
+    "key": "ctrl+;",
     "command": "workbench.action.toggleMaximizedPanel"
   },
   {
@@ -63,60 +59,37 @@
     "when": "terminalFocus"
   },
   {
-    "key": "alt+.",
-    "command": "editor.emmet.action.balanceOut"
+    "key": "ctrl+=",
+    "command": "editor.action.fontZoomIn",
+    "when": "!isMac && editorTextFocus"
   },
   {
-    "key": "alt+,",
-    "command": "editor.emmet.action.balanceIn"
+    "key": "ctrl+-",
+    "command": "editor.action.fontZoomOut",
+    "when": "!isMac && editorTextFocus"
   },
   {
-    "key": "alt+w",
-    "command": "editor.emmet.action.wrapWithAbbreviation"
-  },
-  {
-    "key": "alt+v",
-    "command": "workbench.action.terminal.paste"
-  },
-  {
-    "key": "cmd+=",
-    "command": "editor.action.fontZoomIn"
-  },
-  {
-    "key": "shift+cmd+=",
-    "command": "editor.action.fontZoomIn"
+    "key": "ctrl+0",
+    "command": "editor.action.fontZoomReset",
+    "when": "!isMac && editorTextFocus"
   },
   {
     "key": "cmd+=",
     "command": "editor.action.fontZoomIn",
-    "when": "isMac"
+    "when": "isMac && editorTextFocus"
   },
   {
     "key": "cmd+-",
     "command": "editor.action.fontZoomOut",
-    "when": "isMac"
-  },
-  {
-    "key": "shift+cmd+-",
-    "command": "editor.action.fontZoomOut",
-    "when": "isMac"
-  },
-  {
-    "key": "cmd+-",
-    "command": "editor.action.fontZoomOut",
-    "when": "isMac"
+    "when": "isMac && editorTextFocus"
   },
   {
     "key": "cmd+0",
     "command": "editor.action.fontZoomReset",
-    "when": "isMac"
+    "when": "isMac && editorTextFocus"
   },
   {
     "key": "ctrl+'",
     "command": "workbench.action.terminal.toggleTerminal"
-  },
-  {
-    "key": "ctrl+`",
-    "command": "-workbench.action.terminal.toggleTerminal"
   }
 ]

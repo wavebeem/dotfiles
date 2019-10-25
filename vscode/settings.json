@@ -110,7 +110,6 @@
       "history": false,
       "remote": false
     },
-    "editorGroup": false,
     "editorTab": {
       "clipboard": true,
       "compare": true,
@@ -153,7 +152,7 @@
   "html.format.endWithNewline": true,
   "html.format.indentHandlebars": true,
   "javascript.updateImportsOnFileMove.enabled": "always",
-  "python.linting.pep8Enabled": true,
+  "python.linting.pycodestyleEnabled": true,
   "python.linting.pylintEnabled": false,
   "search.exclude": {
     "**/build": true,
