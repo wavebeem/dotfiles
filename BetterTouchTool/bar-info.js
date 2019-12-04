@@ -32,7 +32,7 @@ const symbols = allSymbols.bars;
 
 const before = Math.floor(pct / 10);
 const after = Math.floor((100 - pct) / 10);
-const out = [];
+const out = ["Battery: "];
 for (let x = 0; x < before; x++) {
   out.push(symbols.full);
 }
