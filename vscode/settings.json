@@ -26,6 +26,7 @@
   "diffEditor.renderSideBySide": false,
   "editor.acceptSuggestionOnCommitCharacter": false,
   "editor.acceptSuggestionOnEnter": "off",
+  "editor.copyWithSyntaxHighlighting": false,
   "editor.cursorBlinking": "smooth",
   "editor.dragAndDrop": false,
   "editor.find.addExtraSpaceOnTop": false,
@@ -45,6 +46,18 @@
   "editor.tabSize": 2,
   "editor.wordWrap": "on",
   "editor.wrappingIndent": "same",
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    {
+      "autoFix": true,
+      "language": "typescript"
+    },
+    {
+      "autoFix": true,
+      "language": "typescriptreact"
+    }
+  ],
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
   "files.associations": {
@@ -110,6 +123,7 @@
       "history": false,
       "remote": false
     },
+    "editorGroup": false,
     "editorTab": {
       "clipboard": true,
       "compare": true,
@@ -171,13 +185,12 @@
   "window.titleBarStyle": "custom",
   "window.zoomLevel": 0,
   "workbench.activityBar.visible": true,
-  "workbench.colorTheme": "Uno Due Tre (Nature)",
+  "workbench.colorTheme": "Uno Due Tre",
   "workbench.editor.enablePreviewFromQuickOpen": false,
   "workbench.editor.showTabs": false,
   "workbench.iconTheme": "vscode-icon-theme",
   "workbench.sideBar.location": "left",
   "workbench.startupEditor": "newUntitledFile",
-  "workbench.statusBar.feedback.visible": false,
   "workbench.statusBar.visible": true,
   "workbench.tree.renderIndentGuides": "none",
   "zenMode.centerLayout": false,
