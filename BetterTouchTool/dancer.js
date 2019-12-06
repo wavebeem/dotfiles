@@ -30,4 +30,3 @@ const output =
 
 console.error({ n, x, t });
 console.log(output);
-s="💔"

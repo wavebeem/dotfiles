@@ -10,7 +10,6 @@ const pct = (() => {
   const [, level] = str.match(/(\d+)%/) || [];
   return Number(level);
 })();
-
 const allSymbols = {
   moons: {
     none: "\u{1f311}",
@@ -34,9 +33,7 @@ const allSymbols = {
     full: "\u{2588}"
   }
 };
-
 const symbols = allSymbols.hearts;
-
 const before = Math.floor(pct / 10);
 const after = Math.floor((100 - pct) / 10);
 const out = ["Battery: "];
