@@ -19,6 +19,13 @@ const allSymbols = {
     more: "\u{1f316}",
     full: "\u{1f315}"
   },
+  hearts: {
+    none: "\u{1f5a4}",
+    less: "\u{1f494}",
+    half: "\u{1f494}",
+    more: "\u{2764}\u{fe0f}",
+    full: "\u{2764}\u{fe0f}"
+  },
   bars: {
     none: "\u{2581}",
     less: "\u{2584}",
@@ -28,7 +35,7 @@ const allSymbols = {
   }
 };
 
-const symbols = allSymbols.bars;
+const symbols = allSymbols.hearts;
 
 const before = Math.floor(pct / 10);
 const after = Math.floor((100 - pct) / 10);
