@@ -36,7 +36,7 @@ const allSymbols = {
 const symbols = allSymbols.hearts;
 const before = Math.floor(pct / 10);
 const after = Math.floor((100 - pct) / 10);
-const out = ["Battery: "];
+const out = [];
 for (let x = 0; x < before; x++) {
   out.push(symbols.full);
 }

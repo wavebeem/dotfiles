@@ -91,6 +91,12 @@
     "**/storybook-static": true,
     "**/tmp": true
   },
+  "emmet.excludeLanguages": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+  ],
   "files.insertFinalNewline": true,
   "files.watcherExclude": {
     "**/.git/objects/**": true,
