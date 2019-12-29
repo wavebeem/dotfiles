@@ -46,6 +46,12 @@
   "editor.tabSize": 2,
   "editor.wordWrap": "on",
   "editor.wrappingIndent": "same",
+  "emmet.excludeLanguages": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
   "eslint.validate": [
     "javascript",
     "javascriptreact",
@@ -91,12 +97,6 @@
     "**/storybook-static": true,
     "**/tmp": true
   },
-  "emmet.excludeLanguages": [
-    "javascript",
-    "javascriptreact",
-    "typescript",
-    "typescriptreact",
-  ],
   "files.insertFinalNewline": true,
   "files.watcherExclude": {
     "**/.git/objects/**": true,
@@ -185,6 +185,7 @@
   "terminal.integrated.cursorStyle": "block",
   "terminal.integrated.fontSize": 14,
   "terminal.integrated.macOptionIsMeta": true,
+  "terminal.integrated.minimumContrastRatio": 4.5,
   "terminal.integrated.scrollback": 10000,
   "typescript.updateImportsOnFileMove.enabled": "always",
   "window.title": "${rootPath}",
