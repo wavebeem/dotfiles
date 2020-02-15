@@ -22,6 +22,12 @@ FileEncoding UTF-8-RAW
   Send %time%
   Return
 
+; Send an ISO8601-ish filesystem timestamp, good for naming files
+^#!d::
+  FormatTime, time, A_now, yyyy-MM-dd
+  Send %time%
+  Return
+
 ; Rename file with timestamp from above
 ^#!r::
   Send {F2}

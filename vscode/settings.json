@@ -30,7 +30,7 @@
   "editor.cursorBlinking": "smooth",
   "editor.dragAndDrop": false,
   "editor.find.addExtraSpaceOnTop": false,
-  "editor.fontFamily": "Input, Menlo, Consolas, monospace",
+  "editor.fontFamily": "\"JetBrains Mono\", Input, Menlo, Consolas, monospace",
   "editor.fontSize": 14,
   "editor.formatOnPaste": false,
   "editor.minimap.enabled": false,

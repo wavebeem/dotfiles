@@ -155,7 +155,7 @@
       "acrylicOpacity": 1,
       "closeOnExit": true,
       "colorScheme": "Brian Light",
-      "commandline": "powershell.exe",
+      "commandline": "pwsh.exe",
       "cursorColor": "#000000",
       "cursorShape": "bar",
       "fontFace": "Input",
