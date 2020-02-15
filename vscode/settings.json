@@ -55,14 +55,8 @@
   "eslint.validate": [
     "javascript",
     "javascriptreact",
-    {
-      "autoFix": true,
-      "language": "typescript"
-    },
-    {
-      "autoFix": true,
-      "language": "typescriptreact"
-    }
+    "typescript",
+    "typescriptreact"
   ],
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
@@ -156,7 +150,6 @@
       "stash": true
     }
   },
-  "gitlens.settings.mode": "advanced",
   "gitlens.views.compare.avatars": false,
   "gitlens.views.compare.files.layout": "list",
   "gitlens.views.compare.location": "scm",
