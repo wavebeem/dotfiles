@@ -9,6 +9,7 @@ export LESS="-R"
 
 path=(
   "$HOME/.local/bin"
+  "$HOME/.cargo/bin"
   "/sbin"
   "/usr/sbin"
   "/usr/local/bin"
