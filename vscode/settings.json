@@ -36,7 +36,7 @@
   "editor.minimap.enabled": false,
   "editor.minimap.renderCharacters": true,
   "editor.multiCursorModifier": "alt",
-  "editor.overviewRulerBorder": true,
+  "editor.overviewRulerBorder": false,
   "editor.renderControlCharacters": false,
   "editor.renderIndentGuides": true,
   "editor.renderLineHighlight": "all",

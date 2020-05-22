@@ -1,7 +1,7 @@
 export VIRTUAL_ENV_DISABLE_PROMPT="yup"
 export LANG="en_US.UTF-8"
 export LSCOLORS="ExfxcxdxBxegedabagacad"
-export EDITOR="vim"
+export EDITOR="code --wait"
 export VISUAL="vim"
 export PAGER="less"
 export LESS="-R"

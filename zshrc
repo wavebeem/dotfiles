@@ -90,7 +90,7 @@ alias ..="cd .."
 export FZF_DEFAULT_OPTS="--color=light --bind ctrl-j:accept"
 
 :slack-font() {
-  local x="${1:-⬛️}"
+  local x="${1:-🔳}"
   local o="${2:-⬜️}"
   toilet -f bigmono9 |
     sed "s/[xX#0\"m█▓]/$x/g" |
