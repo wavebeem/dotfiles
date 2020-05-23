@@ -71,25 +71,25 @@
     {
       "name": "Brian Light",
 
-      "background": "#FFFFFF",
-      "foreground": "#383A42",
+      "background": "#ffffff",
+      "foreground": "#383a42",
 
-      "black": "#383A42",
-      "blue": "#0184BC",
-      "cyan": "#0997B3",
-      "green": "#50A14F",
-      "purple": "#A626A4",
-      "red": "#E45649",
-      "white": "#EEEEEE",
-      "yellow": "#C18301",
-      "brightBlack": "#4F525D",
-      "brightBlue": "#61AFEF",
-      "brightCyan": "#56B5C1",
-      "brightGreen": "#98C379",
-      "brightPurple": "#C577DD",
-      "brightRed": "#DF6C75",
-      "brightWhite": "#FFFFFF",
-      "brightYellow": "#E4C07A"
+      "black": "#383a42",
+      "blue": "#0184bc",
+      "cyan": "#0997b3",
+      "green": "#50a14f",
+      "purple": "#a626a4",
+      "red": "#e45649",
+      "white": "#eeeeee",
+      "yellow": "#c18301",
+      "brightBlack": "#383a42",
+      "brightBlue": "#0184bc",
+      "brightCyan": "#0997b3",
+      "brightGreen": "#50a14f",
+      "brightPurple": "#a626a4",
+      "brightRed": "#e45649",
+      "brightWhite": "#eeeeee",
+      "brightYellow": "#c18301"
     }
   ],
 
