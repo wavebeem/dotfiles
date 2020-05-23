@@ -194,5 +194,6 @@
   "workbench.statusBar.visible": true,
   "workbench.tree.renderIndentGuides": "none",
   "zenMode.centerLayout": false,
-  "zenMode.fullScreen": false
+  "zenMode.fullScreen": false,
+  "editor.formatOnSave": true
 }
