@@ -34,6 +34,7 @@
         "name": "Windows PowerShell",
         "commandline": "powershell.exe",
         "colorScheme": "Brian Light",
+        "fontFace": "JetBrains Mono",
         "hidden": false
       },
       {
@@ -42,6 +43,7 @@
         "name": "Command Prompt",
         "commandline": "cmd.exe",
         "colorScheme": "Brian Light",
+        "fontFace": "JetBrains Mono",
         "hidden": false
       },
       {
@@ -49,6 +51,7 @@
         "hidden": false,
         "name": "Ubuntu",
         "colorScheme": "Brian Light",
+        "fontFace": "JetBrains Mono",
         "source": "Windows.Terminal.Wsl"
       },
       {
@@ -56,6 +59,7 @@
         "hidden": false,
         "name": "Azure Cloud Shell",
         "colorScheme": "Brian Light",
+        "fontFace": "JetBrains Mono",
         "source": "Windows.Terminal.Azure"
       }
     ]
