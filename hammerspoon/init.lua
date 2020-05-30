@@ -16,8 +16,7 @@ function printTable(t)
   end
 end
 
-function bindAll(tbl)
-  local prefix = {"alt", "ctrl"}
+function bindAll(prefix, tbl)
   for key, fn in pairs(tbl) do
     hs.hotkey.bind(prefix, key, fn)
   end
@@ -28,7 +27,37 @@ function alert(text)
   hs.alert.show(text)
 end
 
-bindAll({
+function focusNextSameGeometry()
+  local current = hs.window.focusedWindow()
+  local curGeom = hs.grid.get(current)
+  return focusNextWhere(function(window)
+    return curGeom:equals(hs.grid.get(window))
+  end)
+end
+
+function focusNext()
+  return focusNextWhere(function() return true end)
+end
+
+function focusNextWhere(fn)
+  -- Repeatedly calling orderedWindows() gives us "toggle" like functionality
+  -- swapping between the same two windows, rather than simply giving us the
+  -- next window. Switch to some other functions for looking at the windows.
+  local windows = hs.window.orderedWindows()
+  local current = hs.window.focusedWindow()
+  for index, window in pairs(windows) do
+    if window ~= current and fn(window) then
+      window:focus()
+      break
+    end
+  end
+end
+
+function showCurrentTitle()
+  alert(hs.window.focusedWindow():title())
+end
+
+bindAll("ctrl-alt", {
   u = function()
     hs.grid.set(hs.window:focusedWindow(), {x = 0, y = 0, w = 3, h = 1})
   end,
@@ -43,33 +72,25 @@ bindAll({
 
   j = function()
     hs.window.focusedWindow():focusWindowWest()
-    alert(hs.window.focusedWindow():title())
+    showCurrentTitle()
   end,
 
   l = function()
     hs.window.focusedWindow():focusWindowEast()
-    alert(hs.window.focusedWindow():title())
+    showCurrentTitle()
+  end,
+
+  i = function()
+    focusNext()
+    showCurrentTitle()
   end,
 
   k = function()
-    focusNext()
+    focusNextSameGeometry()
+    showCurrentTitle()
   end,
 
   [";"] = function()
     hs.grid.show()
   end,
 })
-
-function focusNext()
-  local windows = hs.window.orderedWindows()
-  local current = hs.window.focusedWindow()
-  local curGeom = hs.grid.get(current)
-  for index, window in pairs(windows) do
-    local winGeom = hs.grid.get(window)
-    if window ~= current and winGeom:equals(curGeom) then
-      window:focus()
-      alert(window:title())
-      break
-    end
-  end
-end
