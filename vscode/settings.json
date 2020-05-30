@@ -21,7 +21,6 @@
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "breadcrumbs.enabled": false,
   "diffEditor.ignoreTrimWhitespace": true,
   "diffEditor.renderSideBySide": false,
   "editor.acceptSuggestionOnCommitCharacter": false,
@@ -29,14 +28,12 @@
   "editor.copyWithSyntaxHighlighting": false,
   "editor.cursorBlinking": "smooth",
   "editor.dragAndDrop": false,
-  "editor.find.addExtraSpaceOnTop": false,
   "editor.fontFamily": "\"JetBrains Mono\", Input, Menlo, Consolas, monospace",
   "editor.fontSize": 14,
   "editor.formatOnPaste": false,
   "editor.minimap.enabled": false,
   "editor.minimap.renderCharacters": true,
   "editor.multiCursorModifier": "alt",
-  "editor.overviewRulerBorder": true,
   "editor.renderControlCharacters": false,
   "editor.renderIndentGuides": true,
   "editor.renderLineHighlight": "all",
@@ -187,12 +184,14 @@
   "workbench.activityBar.visible": true,
   "workbench.colorTheme": "Uno Due Tre",
   "workbench.editor.enablePreviewFromQuickOpen": false,
-  "workbench.editor.showTabs": false,
   "workbench.iconTheme": "vscode-icon-theme",
   "workbench.sideBar.location": "left",
   "workbench.startupEditor": "newUntitledFile",
   "workbench.statusBar.visible": true,
   "workbench.tree.renderIndentGuides": "none",
   "zenMode.centerLayout": false,
-  "zenMode.fullScreen": false
+  "zenMode.fullScreen": false,
+  "workbench.editor.showTabs": false,
+  "editor.overviewRulerBorder": false,
+  "breadcrumbs.enabled": false
 }

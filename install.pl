@@ -48,6 +48,7 @@ install($_) for (
   "tmux.conf",
   "inputrc",
   "gitignore",
+  "hammerspoon",
 );
 
 install_as("karabiner", "$HOME/.config/karabiner");
