@@ -178,7 +178,7 @@
   "terminal.integrated.minimumContrastRatio": 4.5,
   "terminal.integrated.scrollback": 10000,
   "typescript.updateImportsOnFileMove.enabled": "always",
-  "window.title": "${rootPath}",
+  "window.title": "${rootPath}${separator}${remoteName}${separator}Code",
   "window.titleBarStyle": "custom",
   "window.zoomLevel": 0,
   "workbench.activityBar.visible": true,
@@ -193,5 +193,6 @@
   "zenMode.fullScreen": false,
   "workbench.editor.showTabs": false,
   "editor.overviewRulerBorder": false,
-  "breadcrumbs.enabled": false
+  "breadcrumbs.enabled": false,
+  "window.titleSeparator": " – "
 }

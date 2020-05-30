@@ -1,68 +1,75 @@
-do
-  local ui = hs.window.switcher.ui
-  ui.showThumbnails = false
-  ui.showSelectedThumbnail = false
-  ui.textSize = 12
-end
 hs.window.animationDuration = 0
 
-prefix = {"alt", "ctrl"}
+hs.alert.defaultStyle.fillColor = {white = 0.1}
+hs.alert.defaultStyle.strokeColor = {white = 1}
+hs.alert.defaultStyle.strokeWidth = 4
+hs.alert.defaultStyle.radius = 4
+hs.alert.defaultStyle.fadeInDuration = 0
+hs.alert.defaultStyle.fadeOutDuration = 0
 
-hs.hotkey.bind(prefix, "W", function()
-  hs.alert.show("Hello World!")
-end)
+hs.grid.setGrid({w = 6, h = 1})
+hs.grid.setMargins({w = 0, h = 0})
 
-hs.hotkey.bind(prefix, "U", function()
-  hs.window.focusedWindow():moveToUnit({
-    x = 0,
-    y = 0,
-    w = 0.5,
-    h = 1,
-  })
-end)
-
-hs.hotkey.bind(prefix, "O", function()
-  hs.window.focusedWindow():moveToUnit({
-    x = 0.5,
-    y = 0,
-    w = 0.5,
-    h = 1,
-  })
-end)
-
-hs.hotkey.bind(prefix, "M", function()
-  hs.window.focusedWindow():moveToUnit({
-    x = 0,
-    y = 0,
-    w = 1,
-    h = 1,
-  })
-end)
-
-function focusWindowStep(step)
-  local windows = hs.window.orderedWindows()
-  local current = hs.window.focusedWindow()
-  local newIndex = nil
-  for index, window in pairs(windows) do
-    if window === current then
-      newIndex = index
-    end
+function printTable(t)
+  for key, value in pairs(t) do
+    print(key, value)
   end
-  if newIndex 
 end
 
-hs.hotkey.bind(prefix, "I", "N", function()
-  hs.window.focusedWindow():focusWindowNorth()
-end)
+function bindAll(tbl)
+  local prefix = {"alt", "ctrl"}
+  for key, fn in pairs(tbl) do
+    hs.hotkey.bind(prefix, key, fn)
+  end
+end
 
-hs.hotkey.bind(prefix, "K", "S", function()
-  hs.window.focusedWindow():focusWindowSouth()
-end)
+function alert(text)
+  hs.alert.closeAll()
+  hs.alert.show(text)
+end
 
-hs.hotkey.bind(prefix, "L", "E", function()
-  hs.window.focusedWindow():focusWindowEast()
-end)
+bindAll({
+  u = function()
+    hs.grid.set(hs.window:focusedWindow(), {x = 0, y = 0, w = 3, h = 1})
+  end,
 
-hs.hotkey.bind(prefix, "J", "W", function()
-  hs.window.focusedWindow():focusWindowWest()
-end)
+  o = function()
+    hs.grid.set(hs.window:focusedWindow(), {x = 3, y = 0, w = 3, h = 1})
+  end,
+
+  Space = function()
+    hs.grid.maximizeWindow(hs.window:focusedWindow())
+  end,
+
+  j = function()
+    hs.window.focusedWindow():focusWindowWest()
+    alert(hs.window.focusedWindow():title())
+  end,
+
+  l = function()
+    hs.window.focusedWindow():focusWindowEast()
+    alert(hs.window.focusedWindow():title())
+  end,
+
+  k = function()
+    focusNext()
+  end,
+
+  [";"] = function()
+    hs.grid.show()
+  end,
+})
+
+function focusNext()
+  local windows = hs.window.orderedWindows()
+  local current = hs.window.focusedWindow()
+  local curGeom = hs.grid.get(current)
+  for index, window in pairs(windows) do
+    local winGeom = hs.grid.get(window)
+    if window ~= current and winGeom:equals(curGeom) then
+      window:focus()
+      alert(window:title())
+      break
+    end
+  end
+end
