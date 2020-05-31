@@ -1,7 +1,7 @@
 hs.window.animationDuration = 0
 
-hs.alert.defaultStyle.fillColor = {white = 0.2, alpha = 1}
-hs.alert.defaultStyle.strokeColor = {white = 0.2, alpha = 0}
+hs.alert.defaultStyle.fillColor = {white = 0.1, alpha = 1}
+hs.alert.defaultStyle.strokeColor = {white = 0.1, alpha = 0}
 hs.alert.defaultStyle.strokeWidth = 0
 hs.alert.defaultStyle.textSize = 24
 hs.alert.defaultStyle.radius = 8
@@ -25,19 +25,19 @@ function alert(text)
   hs.alert.show(text, 0.5)
 end
 
+function alertForever(text)
+  hs.alert.closeAll()
+  hs.alert.show(text, "forever")
+end
+
 function focusNextSameGeometry()
-  local windows = sortedWindows()
-  local current = hs.window.focusedWindow()
-  local curGeom = hs.grid.get(current)
-  local windowsSameGeometry = hs.fnutils.ifilter(windows, function(window)
-    return curGeom:equals(hs.grid.get(window))
-  end)
+  local windowsSameGeometry = sortedWindows(wfColumn:getWindows())
   focusNextOf(windowsSameGeometry)
   showCurrentTitle(windowsSameGeometry)
 end
 
 function focusNext()
-  local windows = sortedWindows()
+  local windows = sortedWindows(wfAll:getWindows())
   focusNextOf(windows)
   showCurrentTitle(windows)
 end
@@ -62,8 +62,8 @@ function focusNextOf(windows)
   end
 end
 
-function sortedWindows()
-  return sortedBy(hs.window.orderedWindows(), function(a, b)
+function sortedWindows(windows)
+  return sortedBy(windows, function(a, b)
     return getTitle(a) < getTitle(b)
   end)
 end
@@ -76,8 +76,7 @@ function getTitle(window)
   return title
 end
 
-function showCurrentTitle(windows)
-  local fwin = hs.window.focusedWindow()
+function getCurrentTitle(windows, fwin)
   local lines = hs.fnutils.imap(windows, function(window)
     if window == fwin then
       return "⚪️ " .. getTitle(window)
@@ -85,8 +84,11 @@ function showCurrentTitle(windows)
       return "⚫️ " .. getTitle(window)
     end
   end)
-  local str = table.concat(lines, "\n")
-  alert(str)
+  return table.concat(lines, "\n")
+end
+
+function showCurrentTitle(windows)
+  alert(getCurrentTitle(windows), hs.window.focusedWindow())
 end
 
 function round(x)
@@ -138,13 +140,61 @@ hs.hotkey.bind(prefix1, "l", function()
   hs.window.focusedWindow():focusWindowEast()
 end)
 
-hs.hotkey.bind(prefix1, "i", function()
-  focusNext()
+hs.hotkey.bind(prefix1, "t", function()
+  hs.eventtap.keyStrokes(os.date("%Y-%m-%d %H.%M.%S"))
 end)
 
-hs.hotkey.bind(prefix1, "k", function()
-  focusNextSameGeometry()
+hs.hotkey.bind(prefix1, "d", function()
+  hs.eventtap.keyStrokes(os.date("%Y-%m-%d"))
 end)
+
+switcherOpen = false
+switcherWindows = {}
+switcherIndex = 0
+switcherStart = function(windows, index)
+  switcherOpen = true
+  switcherWindows = windows
+  switcherIndex = index
+  switcherUpdate()
+end
+switcherStep = function(delta)
+  print("switcherStep", delta)
+  local j = switcherIndex - 1
+  switcherIndex = 1 + ((j + delta) % #switcherWindows)
+  switcherUpdate()
+end
+switcherUpdate = function()
+  alertForever(getCurrentTitle(switcherWindows, switcherWindows[switcherIndex]))
+end
+switcherChoose = function()
+  switcherOpen = false
+  switcherWindows[switcherIndex]:focus()
+  hs.alert.closeAll()
+end
+
+hs.hotkey.bind(prefix1, "k", function()
+  if switcherOpen then
+    switcherStep(1)
+  else
+    local windows = sortedWindows(wfColumn:getWindows())
+    local index = hs.fnutils.indexOf(windows, hs.window:focusedWindow())
+    switcherStart(windows, index)
+    switcherStep(1)
+  end
+end)
+
+hs.hotkey.bind(prefix1, "i", function()
+  if switcherOpen then
+    switcherStep(-1)
+  else
+    local windows = sortedWindows(wfColumn:getWindows())
+    local index = hs.fnutils.indexOf(windows, hs.window:focusedWindow())
+    switcherStart(windows, index)
+    switcherStep(-1)
+  end
+end)
+
+-- prefix 2
 
 hs.hotkey.bind(prefix2, "j", function()
   updateVolume(-5)
@@ -162,5 +212,22 @@ hs.hotkey.bind(prefix2, "c", function()
   hs.toggleConsole()
 end)
 
+wfAll = hs.window.filter.new()
+wfColumn = hs.window.filter.new(function(window)
+  local cur = hs.window.focusedWindow()
+  return hs.grid.get(cur):equals(hs.grid.get(window))
+end)
+
+modifierTap = hs.eventtap.new(
+  { hs.eventtap.event.types.flagsChanged },
+  function(event)
+    local mods = event:getFlags()
+    if not mods.ctrl and not mods.alt and switcherOpen then
+      switcherChoose()
+    end
+    return false
+  end
+)
+modifierTap:start()
 
 alert("hammerspoon loaded " .. os.date("%H:%M:%S"))
