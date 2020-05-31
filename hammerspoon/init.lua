@@ -1,7 +1,7 @@
 hs.window.animationDuration = 0
 
-hs.alert.defaultStyle.fillColor = {white = 0.1, alpha = 1}
-hs.alert.defaultStyle.strokeColor = {white = 0.1, alpha = 0}
+hs.alert.defaultStyle.fillColor = {white = 0.2, alpha = 1}
+hs.alert.defaultStyle.strokeColor = {white = 0.2, alpha = 0}
 hs.alert.defaultStyle.strokeWidth = 0
 hs.alert.defaultStyle.textSize = 24
 hs.alert.defaultStyle.radius = 8
@@ -26,38 +26,36 @@ function alert(text)
 end
 
 function focusNextSameGeometry()
+  local windows = sortedWindows()
   local current = hs.window.focusedWindow()
   local curGeom = hs.grid.get(current)
-  return focusNextWhere(function(window)
+  local windowsSameGeometry = hs.fnutils.ifilter(windows, function(window)
     return curGeom:equals(hs.grid.get(window))
   end)
+  focusNextOf(windowsSameGeometry)
+  showCurrentTitle(windowsSameGeometry)
 end
 
 function focusNext()
-  return focusNextWhere(function() return true end)
-end
-
-function filter(array, fn)
-  local newArray = {}
-  for key, value in array do
-    if fn(value, key) then
-      newArray[key] = value
-    end
-  end
-  return newArray
+  local windows = sortedWindows()
+  focusNextOf(windows)
+  showCurrentTitle(windows)
 end
 
 function sortedBy(tbl, fn)
-  tbl = {table.unpack(tbl)}
+  tbl = hs.fnutils.copy(tbl)
   table.sort(tbl, fn)
   return tbl
 end
 
-function focusNextWhere(fn)
-  local windows = sortedWindows()
+function focusNextOf(windows)
   local current = hs.window.focusedWindow()
-  for index, window in ipairs(windows) do
-    if window ~= current and fn(window) then
+  local index = hs.fnutils.indexOf(windows, current) or 0
+  local n = #windows
+  for i = index - 1, n + index do
+    local j = (i % n) + 1
+    local window = windows[j]
+    if window ~= current then
       window:focus()
       break
     end
@@ -73,22 +71,22 @@ end
 function getTitle(window)
   local title = window:title()
   if title == "" then
-    title = window:application():title()
+    return window:application():title()
   end
   return title
 end
 
-function showCurrentTitle()
-  local s = ""
+function showCurrentTitle(windows)
   local fwin = hs.window.focusedWindow()
-  for _, window in ipairs(hs.window.orderedWindows()) do
+  local lines = hs.fnutils.imap(windows, function(window)
     if window == fwin then
-      s = s .. "> " .. getTitle(window) .. "\n"
+      return "⚪️ " .. getTitle(window)
     else
-      s = s .. "< " .. getTitle(window) .. "\n"
+      return "⚫️ " .. getTitle(window)
     end
-  end
-  alert(s)
+  end)
+  local str = table.concat(lines, "\n")
+  alert(str)
 end
 
 function round(x)
@@ -104,33 +102,11 @@ function updateVolume(delta)
   volume = round(volume / delta) * delta
   volume = clamp(0, 100, volume)
   hs.audiodevice.defaultOutputDevice():setOutputVolume(volume)
-  local str = textBar(volume / 100, 10) .. " " .. volume
-  local styl = hs.styledtext.new(str, {
-    font = {
-      name = "JetBrainsMono-Regular",
-      size = 40,
-    },
-    ligature = 0,
-    color = {white = 1,}
-  })
-  alert(styl)
+  alert(("%3d"):format(volume))
 end
 
 function clamp(min, max, x)
   return math.min(max, math.max(min, x))
-end
-
-function textBar(ratio, width)
-  local ret = ""
-  local before = math.floor(ratio * width)
-  local after = width - before
-  for i = 1, before do
-    ret = ret .. "⚪️"
-  end
-  for i = 1, after do
-    ret = ret .. "⚫️"
-  end
-  return ret
 end
 
 function getVolume()
@@ -156,22 +132,18 @@ end)
 
 hs.hotkey.bind(prefix1, "j", function()
   hs.window.focusedWindow():focusWindowWest()
-  showCurrentTitle()
 end)
 
 hs.hotkey.bind(prefix1, "l", function()
   hs.window.focusedWindow():focusWindowEast()
-  showCurrentTitle()
 end)
 
 hs.hotkey.bind(prefix1, "i", function()
   focusNext()
-  showCurrentTitle()
 end)
 
 hs.hotkey.bind(prefix1, "k", function()
   focusNextSameGeometry()
-  showCurrentTitle()
 end)
 
 hs.hotkey.bind(prefix2, "j", function()
@@ -181,3 +153,14 @@ end)
 hs.hotkey.bind(prefix2, "k", function()
   updateVolume(5)
 end)
+
+hs.hotkey.bind(prefix2, "r", function()
+  hs.reload()
+end)
+
+hs.hotkey.bind(prefix2, "c", function()
+  hs.toggleConsole()
+end)
+
+
+alert("hammerspoon loaded " .. os.date("%H:%M:%S"))
