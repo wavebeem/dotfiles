@@ -1,11 +1,11 @@
 #!/usr/bin/env perl
 use strict;
 use warnings;
+use POSIX qw(uname);
 use File::Path qw(make_path remove_tree);
 use File::Basename;
 
 my $HOME = $ENV{HOME};
-my $VSCODE = "$HOME/Library/Application Support/Code/User";
 my $DOTFILES = "$HOME/dotfiles";
 
 sub install {
@@ -35,7 +35,7 @@ sub confirm {
   <STDIN> !~ /^n/i;
 }
 
-install($_) for (
+for my $file (
   "hushlogin",
   "welcome",
   "ackrc",
@@ -44,14 +44,19 @@ install($_) for (
   "zshrc",
   "vimrc",
   "bashrc",
-  "hyper.js",
   "tmux.conf",
   "inputrc",
   "gitignore",
-  "hammerspoon",
-);
+) {
+  install($file);
+};
 
-install_as("karabiner", "$HOME/.config/karabiner");
-install_as("vscode/keybindings.json", "$VSCODE/keybindings.json");
-install_as("vscode/settings.json", "$VSCODE/settings.json");
-install_as("vscode/snippets", "$VSCODE/snippets");
+my ($os) = uname();
+
+if ($os eq "Darwin") {
+  my $VSCODE = "$HOME/Library/Application Support/Code/User";
+  install("hammerspoon");
+  install_as("vscode/keybindings.json", "$VSCODE/keybindings.json");
+  install_as("vscode/settings.json", "$VSCODE/settings.json");
+  install_as("vscode/snippets", "$VSCODE/snippets");
+}
