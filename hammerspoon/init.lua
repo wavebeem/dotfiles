@@ -1,5 +1,16 @@
 cmd = {}
 
+function cmd.togglePersonalApps()
+  -- array of hs.application.get("name")
+  -- filter out nil
+  -- if any are NOT hidden
+  --   hide all
+  -- else
+  --   show all
+  -- end
+  hs.alert.show("TODO: togglePersonalApps")
+end
+
 function cmd.snapWindowLeft()
   hs.window.focusedWindow():moveToUnit(hs.layout.left50)
 end
@@ -40,13 +51,14 @@ hs.alert.defaultStyle.fillColor = {white = 0.1, alpha = 1}
 hs.alert.defaultStyle.strokeColor = {white = 0.1, alpha = 0}
 hs.alert.defaultStyle.strokeWidth = 0
 hs.alert.defaultStyle.textSize = 24
-hs.alert.defaultStyle.radius = 8
+hs.alert.defaultStyle.radius = 4
 hs.alert.defaultStyle.fadeInDuration = 0
 hs.alert.defaultStyle.fadeOutDuration = 0
 
 prefix = {"ctrl", "alt"}
 
 hs.hotkey.bind(prefix, "space", cmd.maximizeWindow)
+hs.hotkey.bind(prefix, "h", cmd.togglePersonalApps)
 hs.hotkey.bind(prefix, "j", cmd.snapWindowLeft)
 hs.hotkey.bind(prefix, "l", cmd.snapWindowRight)
 hs.hotkey.bind(prefix, "m", cmd.maximizeAllWindows)
