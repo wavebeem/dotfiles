@@ -5,11 +5,3 @@ Cached Theme.pak
 *.pem
 *.log
 .vscode
-
-Alfred.alfredpreferences/clipboard/snippets.alfdb
-Alfred.alfredpreferences/preferences/local
-Alfred.alfredpreferences/remote
-Alfred.alfredpreferences/snippets/Ascii Art
-Alfred.alfredpreferences/snippets/Mac symbols
-Alfred.alfredpreferences/snippets/Currency Symbols
-Alfred.alfredpreferences/snippets/Emoji Pack

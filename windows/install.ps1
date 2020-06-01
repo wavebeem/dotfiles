@@ -69,11 +69,8 @@ install "vimrc"
 install "gitconfig"
 install "gitignore"
 
-installAs "windows\minttyrc" "$HOME\.minttyrc"
-installAs "windows\wsltty\config" "$env:APPDATA\wsltty\config"
 installAs "windows\Microsoft.PowerShell_profile.ps1" $profile
 installAs "vscode\keybindings.json" "$VSCODE\keybindings.json"
 installAs "vscode\settings.json" "$VSCODE\settings.json"
 installAs "vscode\snippets" "$VSCODE\snippets"
-# installAs "windows\Terminal\settings.json" "$env:LOCALAPPDATA\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\RoamingState\settings.json"
 installAs "windows\Terminal\settings.json" "$env:LOCALAPPDATA\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json"

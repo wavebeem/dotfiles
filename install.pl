@@ -1,9 +1,10 @@
 #!/usr/bin/env perl
 use strict;
 use warnings;
+use v5.10;
 use POSIX qw(uname);
 use File::Path qw(make_path remove_tree);
-use File::Basename;
+use File::Basename qw(dirname);
 
 my $HOME = $ENV{HOME};
 my $DOTFILES = "$HOME/dotfiles";
@@ -25,7 +26,7 @@ sub install_as {
   my $dir = dirname($dest);
   make_path($dir) unless -d $dir;
   my $src = "$DOTFILES/$path";
-  print("$dest\n");
+  say($dest);
   symlink($src, $dest);
 }
 

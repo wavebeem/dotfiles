@@ -23,7 +23,7 @@ set softtabstop=2
 set shiftwidth=2
 set expandtab
 set autoindent
-set nonumber
+set number
 " So I can have vim autocomplete JIRA-xyz for me in commit messages
 set iskeyword+=-
 set visualbell
