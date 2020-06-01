@@ -1,43 +1,65 @@
-hs.window.animationDuration = 0
-
--- hs.alert.defaultStyle.fillColor = {white = 0.1, alpha = 1}
--- hs.alert.defaultStyle.strokeColor = {white = 0.1, alpha = 0}
--- hs.alert.defaultStyle.strokeWidth = 0
--- hs.alert.defaultStyle.textSize = 24
--- hs.alert.defaultStyle.radius = 8
--- hs.alert.defaultStyle.fadeInDuration = 0
--- hs.alert.defaultStyle.fadeOutDuration = 0
-
-hs.grid.setGrid({w = 6, h = 1})
-hs.grid.setMargins({w = 0, h = 0})
-
-prefix = {"ctrl", "alt"}
 
 -- layoutMax = {
 --   -- App, Title, Display, Unit, Frame, Full Frame
 --   {nil, nil, hs.layout.maximized, nil, nil}
 -- }
 
-hs.hotkey.bind(prefix, "m", function()
+cmd = {}
+
+function cmd.snapWindowLeft()
+  hs.window.focusedWindow():moveToUnit(hs.layout.left50)
+end
+
+function cmd.snapWindowRight()
+  hs.window.focusedWindow():moveToUnit(hs.layout.right50)
+end
+
+function cmd.maximizeWindow()
+  hs.window.focusedWindow():moveToUnit(hs.layout.maximized)
+end
+
+function cmd.maximizeAllWindows()
   for _, window in ipairs(hs.window:orderedWindows()) do
-    window:moveToUnit({ x = 0, y = 0, w = 1, h = 1 })
+    window:moveToUnit(hs.layout.maximized)
   end
-end)
+end
 
-hs.hotkey.bind(prefix, "t", function()
+function cmd.keyboardDateTime()
   hs.eventtap.keyStrokes(os.date("%Y-%m-%d %H.%M.%S"))
-end)
+end
 
-hs.hotkey.bind(prefix, "d", function()
+function cmd.keyboardDate()
   hs.eventtap.keyStrokes(os.date("%Y-%m-%d"))
-end)
+end
 
-hs.hotkey.bind(prefix, "r", function()
+function cmd.reload()
   hs.reload()
-end)
+end
 
-hs.hotkey.bind(prefix, "c", function()
+function cmd.toggleConsole()
   hs.toggleConsole()
-end)
+end
+
+
+hs.window.animationDuration = 0
+
+hs.alert.defaultStyle.fillColor = {white = 0.1, alpha = 1}
+hs.alert.defaultStyle.strokeColor = {white = 0.1, alpha = 0}
+hs.alert.defaultStyle.strokeWidth = 0
+hs.alert.defaultStyle.textSize = 24
+hs.alert.defaultStyle.radius = 8
+hs.alert.defaultStyle.fadeInDuration = 0
+hs.alert.defaultStyle.fadeOutDuration = 0
+
+prefix = {"ctrl", "alt"}
+
+hs.hotkey.bind(prefix, "j", snapWindowLeft)
+hs.hotkey.bind(prefix, "l", snapWindowRight)
+hs.hotkey.bind(prefix, "space", maximizeWindow)
+hs.hotkey.bind(prefix, "m", maximizeAllWindows)
+hs.hotkey.bind(prefix, "t", keyboardDateTime)
+hs.hotkey.bind(prefix, "d", keyboardDate)
+hs.hotkey.bind(prefix, "r", reload)
+hs.hotkey.bind(prefix, "c", toggleConsole)
 
 hs.alert.show("hammerspoon", 0.5)
