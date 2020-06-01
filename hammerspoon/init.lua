@@ -1,9 +1,3 @@
-
--- layoutMax = {
---   -- App, Title, Display, Unit, Frame, Full Frame
---   {nil, nil, hs.layout.maximized, nil, nil}
--- }
-
 cmd = {}
 
 function cmd.snapWindowLeft()
@@ -40,7 +34,6 @@ function cmd.toggleConsole()
   hs.toggleConsole()
 end
 
-
 hs.window.animationDuration = 0
 
 hs.alert.defaultStyle.fillColor = {white = 0.1, alpha = 1}
@@ -53,13 +46,13 @@ hs.alert.defaultStyle.fadeOutDuration = 0
 
 prefix = {"ctrl", "alt"}
 
-hs.hotkey.bind(prefix, "j", snapWindowLeft)
-hs.hotkey.bind(prefix, "l", snapWindowRight)
-hs.hotkey.bind(prefix, "space", maximizeWindow)
-hs.hotkey.bind(prefix, "m", maximizeAllWindows)
-hs.hotkey.bind(prefix, "t", keyboardDateTime)
-hs.hotkey.bind(prefix, "d", keyboardDate)
-hs.hotkey.bind(prefix, "r", reload)
-hs.hotkey.bind(prefix, "c", toggleConsole)
+hs.hotkey.bind(prefix, "space", cmd.maximizeWindow)
+hs.hotkey.bind(prefix, "j", cmd.snapWindowLeft)
+hs.hotkey.bind(prefix, "l", cmd.snapWindowRight)
+hs.hotkey.bind(prefix, "m", cmd.maximizeAllWindows)
+hs.hotkey.bind(prefix, "t", cmd.keyboardDateTime)
+hs.hotkey.bind(prefix, "d", cmd.keyboardDate)
+hs.hotkey.bind(prefix, "r", cmd.reload)
+hs.hotkey.bind(prefix, "c", cmd.toggleConsole)
 
 hs.alert.show("hammerspoon", 0.5)
