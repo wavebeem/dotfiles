@@ -1,14 +1,20 @@
+F = hs.fnutils
+
 cmd = {}
 
-function cmd.togglePersonalApps()
-  -- array of hs.application.get("name")
-  -- filter out nil
-  -- if any are NOT hidden
-  --   hide all
-  -- else
-  --   show all
-  -- end
-  hs.alert.show("TODO: togglePersonalApps")
+function cmd.hidePersonalApps()
+  local appNames = {
+    "Firefox Developer Edition",
+    "Spotify",
+    "Discord",
+    "LINE",
+  }
+  for _, appName in ipairs(appNames) do
+    local app = hs.application.get(appName)
+    if app then
+      app:hide()
+    end
+  end
 end
 
 function cmd.snapWindowLeft()
@@ -58,7 +64,7 @@ hs.alert.defaultStyle.fadeOutDuration = 0
 prefix = {"ctrl", "alt"}
 
 hs.hotkey.bind(prefix, "space", cmd.maximizeWindow)
-hs.hotkey.bind(prefix, "h", cmd.togglePersonalApps)
+hs.hotkey.bind(prefix, "h", cmd.hidePersonalApps)
 hs.hotkey.bind(prefix, "j", cmd.snapWindowLeft)
 hs.hotkey.bind(prefix, "l", cmd.snapWindowRight)
 hs.hotkey.bind(prefix, "m", cmd.maximizeAllWindows)
