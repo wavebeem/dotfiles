@@ -26,10 +26,6 @@ autoload -Uz compinit && compinit
   ~/.fzf/install
 }
 
-# precmd() {
-#   echo
-# }
-
 preexec() {
   echo
 }
@@ -45,7 +41,7 @@ preexec() {
 EOF
 }
 
-# Fix the value of $SHELL if it's broken 
+# Fix the value of $SHELL if it's broken
 if [[ $SHELL != *zsh ]]; then
   export SHELL="$(which zsh)"
 fi
@@ -89,15 +85,6 @@ alias ..="cd .."
 
 export FZF_DEFAULT_OPTS="--color=light --bind ctrl-j:accept"
 
-:slack-font() {
-  local x="${1:-🔳}"
-  local o="${2:-⬜️}"
-  toilet -f bigmono9 |
-    sed "s/[xX#0\"m█▓]/$x/g" |
-    sed "s/[ .▒░]/$o/g" |
-    pbcopy
-}
-
 :load-nvm() {
   . ~/.nvm/nvm.sh
 }
@@ -125,16 +112,9 @@ fi
 __already_welcome="yes"
 
 :set-prompt() {
-  local pad="  "
-  local glyph="%%"
-  local username="%n"
-  local hostname="%m"
   local cwd="%1~"
-  local reset="%b%f%k%u%s"
-  local c1="%B%F{white}%K{green}"
-  local end="${c2}${glyph}${reset} "
   local nl=$'\n'
-  local p="${reset}${c1}  ${cwd}  ${reset} "
+  local p="%B%F{white}%K{green}  %1~  %k%f%b "
   PROMPT="${nl}${p}"
   PROMPT2="${p}"
 }
