@@ -1,5 +1,3 @@
-F = hs.fnutils
-
 cmd = {}
 
 function cmd.hidePersonalApps()
