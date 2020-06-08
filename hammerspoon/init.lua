@@ -1,5 +1,3 @@
-F = hs.fnutils
-
 cmd = {}
 
 personalApps = {
@@ -33,6 +31,23 @@ layout = {
 
 function cmd.splitUpApps()
   hs.layout.apply(layout)
+end
+
+-- If this were a true "unhide all windows" it would uniminimize windows too.
+-- But that's slow, and I only ever use Hide Application rather than Minimize
+-- Window, so this can be a lot faster knowing that.
+function cmd.unhideAll()
+  local allApps = {}
+  for _, window in ipairs(hs.window.invisibleWindows()) do
+    local app = window:application()
+    local id = app:bundleID()
+    if not allApps[id] then
+      allApps[id] = app
+      if app:isHidden() then
+        app:unhide()
+      end
+    end
+  end
 end
 
 function cmd.snapWindowLeft()
@@ -87,6 +102,7 @@ prefix = {"ctrl", "alt"}
 
 hs.hotkey.bind(prefix, "space", cmd.maximizeWindow)
 hs.hotkey.bind(prefix, "h", cmd.hidePersonalApps)
+hs.hotkey.bind(prefix, "y", cmd.unhideAll)
 hs.hotkey.bind(prefix, "j", cmd.snapWindowLeft)
 hs.hotkey.bind(prefix, "l", cmd.snapWindowRight)
 hs.hotkey.bind(prefix, "m", cmd.maximizeAllWindows)
