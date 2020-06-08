@@ -2,19 +2,37 @@ F = hs.fnutils
 
 cmd = {}
 
+personalApps = {
+  "Firefox Developer Edition",
+  "Spotify",
+  "Discord",
+  "LINE",
+}
+
 function cmd.hidePersonalApps()
-  local appNames = {
-    "Firefox Developer Edition",
-    "Spotify",
-    "Discord",
-    "LINE",
-  }
-  for _, appName in ipairs(appNames) do
+  for _, appName in ipairs(personalApps) do
     local app = hs.application.get(appName)
     if app then
       app:hide()
     end
   end
+end
+
+-- App, Window, Screen, Unit, Frame, Full
+-- http://www.hammerspoon.org/docs/hs.layout.html#apply
+layout = {
+  {"Code", nil, nil, hs.layout.left50, nil, nil},
+  {"iTerm2", nil, nil, hs.layout.left50, nil, nil},
+  {"Slack", nil, nil, hs.layout.right50, nil, nil},
+  {"LINE", nil, nil, hs.layout.right50, nil, nil},
+  {"Firefox", nil, nil, hs.layout.right50, nil, nil},
+  {"Firefox Developer Edition", nil, nil, hs.layout.right50, nil, nil},
+  {"Discord", nil, nil, hs.layout.right50, nil, nil},
+  {"Spotify", nil, nil, hs.layout.right50, nil, nil},
+}
+
+function cmd.splitUpApps()
+  hs.layout.apply(layout)
 end
 
 function cmd.snapWindowLeft()
@@ -43,6 +61,10 @@ function cmd.keyboardDate()
   hs.eventtap.keyStrokes(os.date("%Y-%m-%d"))
 end
 
+function cmd.showApplicationName()
+  hs.alert.show(hs.window:focusedWindow():application():name())
+end
+
 function cmd.reload()
   hs.reload()
 end
@@ -68,8 +90,10 @@ hs.hotkey.bind(prefix, "h", cmd.hidePersonalApps)
 hs.hotkey.bind(prefix, "j", cmd.snapWindowLeft)
 hs.hotkey.bind(prefix, "l", cmd.snapWindowRight)
 hs.hotkey.bind(prefix, "m", cmd.maximizeAllWindows)
+hs.hotkey.bind(prefix, "n", cmd.splitUpApps)
 hs.hotkey.bind(prefix, "t", cmd.keyboardDateTime)
 hs.hotkey.bind(prefix, "d", cmd.keyboardDate)
+hs.hotkey.bind(prefix, "v", cmd.showApplicationName)
 hs.hotkey.bind(prefix, "r", cmd.reload)
 hs.hotkey.bind(prefix, "c", cmd.toggleConsole)
 
