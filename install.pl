@@ -6,12 +6,12 @@ use POSIX qw(uname);
 use File::Path qw(make_path remove_tree);
 use File::Basename qw(dirname);
 
-my $HOME = $ENV{HOME};
-my $DOTFILES = "$HOME/dotfiles";
+my $home = $ENV{HOME};
+my $dotfiles = "$home/dotfiles";
 
 sub install {
   my ($path) = @_;
-  my $dest = "$HOME/.$path";
+  my $dest = "$home/.$path";
   install_as($path, $dest);
 }
 
@@ -25,7 +25,7 @@ sub install_as {
   }
   my $dir = dirname($dest);
   make_path($dir) unless -d $dir;
-  my $src = "$DOTFILES/$path";
+  my $src = "$dotfiles/$path";
   say($dest);
   symlink($src, $dest);
 }
@@ -55,9 +55,12 @@ for my $file (
 my ($os) = uname();
 
 if ($os eq "Darwin") {
-  my $VSCODE = "$HOME/Library/Application Support/Code/User";
+  my $app_support = "$home/Library/Application Support";
+  my $vscode = "$app_support/Code/User";
+  my $aseprite = "$app_support/Aseprite";
   install("hammerspoon");
-  install_as("vscode/keybindings.json", "$VSCODE/keybindings.json");
-  install_as("vscode/settings.json", "$VSCODE/settings.json");
-  install_as("vscode/snippets", "$VSCODE/snippets");
+  install_as("vscode/keybindings.json", "$vscode/keybindings.json");
+  install_as("vscode/settings.json", "$vscode/settings.json");
+  install_as("vscode/snippets", "$vscode/snippets");
+  install_as("aseprite-scripts", "$aseprite/scripts");
 }
