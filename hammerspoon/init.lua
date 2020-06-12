@@ -25,13 +25,13 @@ layout = {
   {"LINE", nil, nil, hs.layout.right50, nil, nil},
   {"Firefox", nil, nil, hs.layout.right50, nil, nil},
   {"Google Chrome", nil, nil, hs.layout.right50, nil, nil},
-  -- {"Chrome", nil, nil, hs.layout.right50, nil, nil},
   {"Cypress", nil, nil, hs.layout.right50, nil, nil},
   {"Finder", nil, nil, hs.layout.right50, nil, nil},
   {"Hammerspoon", nil, nil, hs.layout.right50, nil, nil},
   {"Firefox Developer Edition", nil, nil, hs.layout.right50, nil, nil},
   {"Discord", nil, nil, hs.layout.right50, nil, nil},
   {"Spotify", nil, nil, hs.layout.right50, nil, nil},
+  {"zoom.us", nil, nil, hs.layout.maximized, nil, nil},
 }
 
 function cmd.splitUpApps()
