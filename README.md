@@ -17,6 +17,8 @@ $ .\install.ps1
 
 First, make a copy of my repo but remove the history and make it your own:
 
+**Note that if you don't put dotfiles in your home directory you will have to update the dotfiles variable in `install.sh` to point to your repo location.**
+
 ```
 $ cd ~
 $ git clone --depth 1 https://github.com/wavebeem/dotfiles.git
