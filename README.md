@@ -65,6 +65,12 @@ have.
 When you've copied over all the dotfiles from your home directory into your own
 dotfiles repo, run the following commands:
 
+* * *
+
+**MAKE SURE YOU ARE NOT COMMITTING PASSWORDS OR API KEYS**
+
+* * *
+
 ```
 $ git add -A
 $ git commit -m "Customized dotfiles"
