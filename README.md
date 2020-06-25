@@ -44,11 +44,14 @@ Now copy over files you'd like to keep, like:
 ```sh
 # Copy zsh config
 $ cp ~/.zshrc zshrc
+$ cp ~/.zshenv zshenv
 
 # Copy bash config
 $ cp ~/.bashrc bashrc
+$ cp ~/.bash_profile bash_profile
 
 # Copy VS Code settings, keybindings, and snippets
+$ mkdir -p vscode
 $ cp ~/Library/Application\ Support/Code/User/settings.json vscode/settings.json
 $ cp ~/Library/Application\ Support/Code/User/keybindings.json vscode/keybindings.json
 $ rm -rf vscode/snippets && cp -r ~/Library/Application\ Support/Code/User/snippsets vscode/snippets
