@@ -15,11 +15,19 @@ $ .\install.ps1
 
 ## Making Your Own Dotfiles
 
+First, make a copy of my repo but remove the history and make it your own:
+
 ```
 $ cd ~
 $ git clone --depth 1 https://github.com/wavebeem/dotfiles.git
 $ cd dotfiles
 $ rm -rf .git
+```
+
+This is a great point to delete any files you don't want (e.g. `tmux.conf` if
+you never use tmux).
+
+```
 $ git init
 $ git add -A
 $ git commit -m "Initial commit"
@@ -33,11 +41,23 @@ dotfiles repo in your README :)
 
 Now copy over files you'd like to keep, like:
 
-```
+```sh
+# Copy zsh config
 $ cp ~/.zshrc zshrc
+
+# Copy bash config
+$ cp ~/.bashrc bashrc
+
+# Copy VS Code settings, keybindings, and snippets
+$ cp ~/Library/Application\ Support/Code/User/settings.json vscode/settings.json
+$ cp ~/Library/Application\ Support/Code/User/keybindings.json vscode/keybindings.json
+$ rm -rf vscode/snippets && cp -r ~/Library/Application\ Support/Code/User/snippsets vscode/snippets
 ```
 
 Note the dot in front of `zshrc` is missing on the second instance.
+
+Edit the `Main` function in `install.sh` to install only the files you actually
+have.
 
 When you've copied over all the dotfiles from your home directory into your own
 dotfiles repo, run the following commands:
