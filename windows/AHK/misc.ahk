@@ -46,20 +46,20 @@ FileEncoding UTF-8-RAW
 >!l::DllCall("LockWorkStation")
 
 ; Media keys
-^#!i::Send {Media_Prev}
-^#!o::Send {Media_Next}
-^#!p::Send {Media_Play_Pause}
+; ^#!i::Send {Media_Prev}
+; ^#!o::Send {Media_Next}
+; ^#!p::Send {Media_Play_Pause}
 
 ; Volume controls
-^#!k::Send {Volume_Mute}
-^#!l::Send {Volume_Down}
-^#!;::Send {Volume_Up}
+; ^#!k::Send {Volume_Mute}
+; ^#!l::Send {Volume_Down}
+; ^#!;::Send {Volume_Up}
 
 ; Macro pad stuff
-F13::Volume_Mute
-F14::Volume_Down
-F15::Volume_Up
+; F13::Volume_Mute
+; F14::Volume_Down
+; F15::Volume_Up
 
-F16::Media_Prev
-F17::Media_Next
-F18::Media_Play_Pause
+;F16::Media_Prev
+;F17::Media_Next
+;F18::Media_Play_Pause

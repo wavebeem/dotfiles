@@ -22,4 +22,9 @@ path=(
   test -f "$file" && source "$file"
 }
 
+:has-cmd() {
+  local cmd="$1"
+  which "$cmd" >/dev/null 2>&1
+}
+
 :maybe-source ~/.after.zshenv.zsh

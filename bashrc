@@ -6,11 +6,6 @@ precmd() {
   echo
 }
 
-fix_ssh() {
-  var="$(tmux showenv -g | grep 'SSH_AUTH_SOCK=')"
-  eval "export $var"
-}
-
 _ansi() {
   printf "\[%s%s\]" $'\e' "[$@m"
 }
@@ -29,16 +24,6 @@ space=" "
 
 export PS1="\n${reset}${bold}${bg_purple}${fg_white}  \W  ${reset} "
 export PS2="${reset}${bold}${bg_purple}${fg_white}  \W  ${reset} "
-
-alias gco="git checkout"
-alias gdd="git diff --cached"
-alias ga="git add"
-alias gaa="git add -A"
-alias gd="git diff"
-alias gm="git commit -m"
-alias g="git status"
-alias gl="git log"
-alias gg="git commit"
 
 case $(uname) in
 Darwin)
@@ -80,8 +65,6 @@ if [[ -f ~/.welcome ]]; then
 else
   uptime
 fi
-
-[ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm

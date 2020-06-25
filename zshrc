@@ -21,11 +21,6 @@ autoload -Uz compinit && compinit
     ~/.zsh-autosuggestions
 }
 
-:install-fzf() {
-  git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
-  ~/.fzf/install
-}
-
 preexec() {
   echo
 }
@@ -83,21 +78,19 @@ alias T="tmux attach -d"
 
 alias ..="cd .."
 
-export FZF_DEFAULT_OPTS="--color=light --bind ctrl-j:accept"
-
 :load-nvm() {
   . ~/.nvm/nvm.sh
 }
 
-if ! which serve >/dev/null 2>&1; then
+if ! :has-cmd serve; then
   alias serve="python -m SimpleHTTPServer"
 fi
 
-if which rbenv >/dev/null 2>&1; then
+if :has-cmd rbenv; then
   eval "$(rbenv init -)"
 fi
 
-if which pyenv >/dev/null 2>&1; then
+if :has-cmd pyenv; then
   eval "$(pyenv init -)"
   eval "$(pyenv virtualenv-init -)"
 fi
@@ -125,7 +118,6 @@ __already_welcome="yes"
 :maybe-source ~/.travis/travis.sh
 :maybe-source ~/google-cloud-sdk/path.zsh.inc
 :maybe-source ~/google-cloud-sdk/completion.zsh.inc
-:maybe-source ~/.fzf.zsh
 
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=cyan"
 

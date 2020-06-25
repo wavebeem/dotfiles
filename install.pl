@@ -20,11 +20,15 @@ sub install_as {
   if (-l $dest) {
     unlink($dest);
   } elsif (-e $dest) {
-    return unless confirm("Delete $dest?");
+    if (!confirm("Delete $dest?")) {
+      return;
+    }
     remove_tree($dest);
   }
   my $dir = dirname($dest);
-  make_path($dir) unless -d $dir;
+  if (!-d $dir) {
+    make_path($dir);
+  }
   my $src = "$dotfiles/$path";
   say($dest);
   symlink($src, $dest);
