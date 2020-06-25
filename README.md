@@ -54,7 +54,7 @@ $ cp ~/.bash_profile bash_profile
 $ mkdir -p vscode
 $ cp ~/Library/Application\ Support/Code/User/settings.json vscode/settings.json
 $ cp ~/Library/Application\ Support/Code/User/keybindings.json vscode/keybindings.json
-$ rm -rf vscode/snippets && cp -r ~/Library/Application\ Support/Code/User/snippsets vscode/snippets
+$ rm -rf vscode/snippets && cp -r ~/Library/Application\ Support/Code/User/snippets vscode/snippets
 ```
 
 Note the dot in front of `zshrc` is missing on the second instance.
