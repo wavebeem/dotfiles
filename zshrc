@@ -105,7 +105,6 @@ fi
 __already_welcome="yes"
 
 :set-prompt() {
-  local cwd="%1~"
   local nl=$'\n'
   local p="%B%F{white}%K{green}  %1~  %k%f%b "
   PROMPT="${nl}${p}"
