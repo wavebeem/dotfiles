@@ -73,6 +73,39 @@ function cmd.maximizeAllWindows()
   end
 end
 
+function cmd.countdown()
+  local items = {
+    ":mario:",
+    ":_::mario:",
+    ":_::_::mario:",
+    ":_::_::_::mario:",
+  }
+  local function wait()
+    hs.timer.usleep(200000)
+  end
+  local function go(i)
+    if i <= #items then
+      -- if i > 1 then
+      --   hs.eventtap.keyStroke({}, "up")
+      --   hs.eventtap.keyStroke({"cmd"}, "a")
+      --   hs.eventtap.keyStroke({}, "delete")
+      -- end
+      -- hs.eventtap.keyStrokes(items[i])
+      for j = 1, #items[i] do
+        hs.eventtap.keyStrokes(items[i]:sub(j, j))
+        wait()
+      end
+      hs.eventtap.keyStroke({}, "return")
+      -- wait()
+      -- hs.eventtap.keyStroke({}, "down")
+      -- wait()
+      -- hs.eventtap.keyStroke({}, "down")
+      hs.timer.doAfter(0.1, function() go(i + 1) end)
+    end
+  end
+  go(1)
+end
+
 function cmd.keyboardDateTime()
   hs.eventtap.keyStrokes(os.date("%Y-%m-%d %H.%M.%S"))
 end
@@ -112,6 +145,7 @@ hs.hotkey.bind(prefix, "j", cmd.snapWindowLeft)
 hs.hotkey.bind(prefix, "l", cmd.snapWindowRight)
 hs.hotkey.bind(prefix, "m", cmd.maximizeAllWindows)
 hs.hotkey.bind(prefix, "n", cmd.splitUpApps)
+hs.hotkey.bind(prefix, "x", cmd.countdown)
 hs.hotkey.bind(prefix, "t", cmd.keyboardDateTime)
 hs.hotkey.bind(prefix, "d", cmd.keyboardDate)
 hs.hotkey.bind(prefix, "v", cmd.showApplicationName)
