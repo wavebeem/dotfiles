@@ -31,7 +31,7 @@ layout = {
   {"Firefox Developer Edition", nil, nil, hs.layout.right50, nil, nil},
   {"Discord", nil, nil, hs.layout.right50, nil, nil},
   {"Spotify", nil, nil, hs.layout.right50, nil, nil},
-  {"zoom.us", nil, nil, hs.layout.maximized, nil, nil},
+  {"zoom.us", nil, nil, hs.layout.left50, nil, nil},
 }
 
 function cmd.splitUpApps()
