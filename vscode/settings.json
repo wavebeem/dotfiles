@@ -6,6 +6,9 @@
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -21,6 +24,7 @@
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "breadcrumbs.enabled": false,
   "diffEditor.ignoreTrimWhitespace": true,
   "diffEditor.renderSideBySide": false,
   "editor.acceptSuggestionOnCommitCharacter": false,
@@ -34,6 +38,7 @@
   "editor.minimap.enabled": false,
   "editor.minimap.renderCharacters": true,
   "editor.multiCursorModifier": "alt",
+  "editor.overviewRulerBorder": false,
   "editor.renderControlCharacters": false,
   "editor.renderIndentGuides": true,
   "editor.renderLineHighlight": "all",
@@ -162,6 +167,7 @@
   "html.format.endWithNewline": true,
   "html.format.indentHandlebars": true,
   "javascript.updateImportsOnFileMove.enabled": "always",
+  "liveshare.featureSet": "stable",
   "python.linting.pycodestyleEnabled": true,
   "python.linting.pylintEnabled": false,
   "search.exclude": {
@@ -180,19 +186,17 @@
   "typescript.updateImportsOnFileMove.enabled": "always",
   "window.title": "${rootPath}${separator}${remoteName}${separator}Code",
   "window.titleBarStyle": "custom",
+  "window.titleSeparator": " – ",
   "window.zoomLevel": 0,
   "workbench.activityBar.visible": true,
   "workbench.colorTheme": "Uno Due Tre",
   "workbench.editor.enablePreviewFromQuickOpen": false,
+  "workbench.editor.showTabs": false,
   "workbench.iconTheme": "vscode-icon-theme",
   "workbench.sideBar.location": "left",
   "workbench.startupEditor": "newUntitledFile",
   "workbench.statusBar.visible": true,
   "workbench.tree.renderIndentGuides": "none",
   "zenMode.centerLayout": false,
-  "zenMode.fullScreen": false,
-  "workbench.editor.showTabs": false,
-  "editor.overviewRulerBorder": false,
-  "breadcrumbs.enabled": false,
-  "window.titleSeparator": " – "
+  "zenMode.fullScreen": false
 }
