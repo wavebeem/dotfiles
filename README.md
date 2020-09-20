@@ -1,12 +1,12 @@
 # dotfiles
 
-## Installation (Mac/Linux)
+## Installation (Mac/Linux/WSL)
 
 ```
-$ ./install.pl
+$ ./install.sh
 ```
 
-## Installation (Windows)
+## Installation (Windows Powershell)
 
 ```
 $ cd windows
@@ -17,9 +17,7 @@ $ .\install.ps1
 
 First, make a copy of my repo but remove the history and make it your own:
 
-**Note that if you don't put dotfiles in your home directory you will have to update the dotfiles variable in `install.sh` to point to your repo location.**
-
-```
+```sh
 $ cd ~
 $ git clone --depth 1 https://github.com/wavebeem/dotfiles.git
 $ cd dotfiles
@@ -29,7 +27,7 @@ $ rm -rf .git
 This is a great point to delete any files you don't want (e.g. `tmux.conf` if
 you never use tmux).
 
-```
+```sh
 $ git init
 $ git add -A
 $ git commit -m "Initial commit"
@@ -69,11 +67,11 @@ dotfiles repo, run the following commands:
 
 * * *
 
-**MAKE SURE YOU ARE NOT COMMITTING PASSWORDS OR API KEYS**
+### **MAKE SURE YOU ARE NOT COMMITTING PASSWORDS OR API KEYS**
 
 * * *
 
-```
+```sh
 $ git add -A
 $ git commit -m "Customized dotfiles"
 $ ./install.sh
