@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 set -eu
 
-# Hard coded path to dotfiles; change this if you put the repo somewhere else
-dotfiles="$HOME/dotfiles"
+# Find absolute path to current directory
+dotfiles="$(readlink -f "$(dirname "$0")")"
 
 # Edit the files in here depending on what files you have in your repo
 Main() {
@@ -24,10 +24,10 @@ Main() {
       local vscode="$app_support/Code/User"
       local aseprite="$app_support/Aseprite"
       Install "hammerspoon"
-      InstallAs "vscode/keybindings.json" "$vscode/keybindings.json"
-      InstallAs "vscode/settings.json" "$vscode/settings.json"
-      InstallAs "vscode/snippets" "$vscode/snippets"
-      InstallAs "aseprite-scripts" "$aseprite/scripts"
+      Install_as "vscode/keybindings.json" "$vscode/keybindings.json"
+      Install_as "vscode/settings.json" "$vscode/settings.json"
+      Install_as "vscode/snippets" "$vscode/snippets"
+      Install_as "aseprite-scripts" "$aseprite/scripts"
       ;;
   esac
 }
@@ -36,10 +36,10 @@ Main() {
 Install() {
   local path="$1"
   local dest="$HOME/.$path"
-  InstallAs "$path" "$dest"
+  Install_as "$path" "$dest"
 }
 
-InstallAs() {
+Install_as() {
   local path="$1"
   local dest="$2"
   # Remove existing symbol link
