@@ -78,10 +78,6 @@ alias T="tmux attach -d"
 
 alias ..="cd .."
 
-:load-nvm() {
-  . ~/.nvm/nvm.sh
-}
-
 if ! :has-cmd serve; then
   alias serve="python -m SimpleHTTPServer"
 fi
@@ -115,6 +111,7 @@ __already_welcome="yes"
 
 :maybe-source ~/.zsh-autosuggestions/zsh-autosuggestions.zsh
 :maybe-source ~/.travis/travis.sh
+:maybe-source ~/.nvm/nvm.sh
 :maybe-source ~/google-cloud-sdk/path.zsh.inc
 :maybe-source ~/google-cloud-sdk/completion.zsh.inc
 
