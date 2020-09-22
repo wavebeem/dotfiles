@@ -29,6 +29,9 @@
   "diffEditor.renderSideBySide": false,
   "editor.acceptSuggestionOnCommitCharacter": false,
   "editor.acceptSuggestionOnEnter": "off",
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true
+  },
   "editor.copyWithSyntaxHighlighting": false,
   "editor.cursorBlinking": "smooth",
   "editor.dragAndDrop": false,
