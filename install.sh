@@ -17,6 +17,7 @@ Main() {
   Install "tmux.conf"
   Install "inputrc"
   Install "gitignore"
+  Install "gitconfig"
   # Run commands based on OS
   case "$(uname)" in
     Darwin) # Mac
