@@ -5,6 +5,7 @@ personalApps = {
   "Spotify",
   "Discord",
   "LINE",
+  "Music",
 }
 
 function cmd.hidePersonalApps()
@@ -83,7 +84,7 @@ function cmd.keyboardDate()
 end
 
 function cmd.showApplicationName()
-  hs.alert.show(hs.window:focusedWindow():application():name())
+  hs.alert.show(hs.window.focusedWindow():application():name())
 end
 
 function cmd.reload()
