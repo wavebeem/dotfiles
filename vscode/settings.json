@@ -46,7 +46,7 @@
   "editor.renderIndentGuides": true,
   "editor.renderLineHighlight": "all",
   "editor.renderWhitespace": "none",
-  "editor.rulers": [80, 100, 120],
+  "editor.rulers": [80],
   "editor.snippetSuggestions": "top",
   "editor.tabSize": 2,
   "editor.wordWrap": "on",
@@ -86,7 +86,6 @@
     "**/.svn": true,
     "**/.venv": true,
     "**/_site": true,
-    "**/bower_components": true,
     "**/bundle.*": true,
     "**/coverage": true,
     "**/db.json": true,
@@ -99,7 +98,6 @@
   "files.insertFinalNewline": true,
   "files.watcherExclude": {
     "**/.git/objects/**": true,
-    "**/bower_components/**": true,
     "**/build": true,
     "**/dist": true,
     "**/node_modules/**": true
@@ -170,7 +168,6 @@
   "html.format.endWithNewline": true,
   "html.format.indentHandlebars": true,
   "javascript.updateImportsOnFileMove.enabled": "always",
-  "liveshare.featureSet": "stable",
   "python.linting.pycodestyleEnabled": true,
   "python.linting.pylintEnabled": false,
   "search.exclude": {
