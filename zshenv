@@ -17,14 +17,14 @@ path=(
   $path
 )
 
-:maybe-source() {
+__Maybe_source() {
   local file="$1"
   test -f "$file" && source "$file"
 }
 
-:has-cmd() {
+__Has_cmd() {
   local cmd="$1"
   which "$cmd" >/dev/null 2>&1
 }
 
-:maybe-source ~/.after.zshenv.zsh
+__Maybe_source ~/.after.zshenv.zsh

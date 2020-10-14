@@ -11,11 +11,7 @@ bindkey -e
 zstyle :compinstall filename "$HOME/.zshrc"
 autoload -Uz compinit && compinit
 
-:dim() {
-  echo "$COLUMNS by $LINES"
-}
-
-:install-zsh-autosuggestions() {
+__Install_zsh_autosuggestions() {
   git clone --depth 1 \
     https://github.com/zsh-users/zsh-autosuggestions \
     ~/.zsh-autosuggestions
@@ -23,17 +19,6 @@ autoload -Uz compinit && compinit
 
 preexec() {
   echo
-}
-
-:notify() {
-  local text="${*:-Done}"
-  local title="$(date '+%H:%M:%S @ %Y-%m-%d')"
-  env text="$text" title="$title" osascript <<EOF
-    display notification \
-      (system attribute "text") \
-      with title (system attribute "title") \
-      sound name "Sosumi"
-EOF
 }
 
 # Fix the value of $SHELL if it's broken
@@ -78,15 +63,15 @@ alias T="tmux attach -d"
 
 alias ..="cd .."
 
-if ! :has-cmd serve; then
+if ! __Has_cmd serve; then
   alias serve="python -m SimpleHTTPServer"
 fi
 
-if :has-cmd rbenv; then
+if __Has_cmd rbenv; then
   eval "$(rbenv init -)"
 fi
 
-if :has-cmd pyenv; then
+if __Has_cmd pyenv; then
   eval "$(pyenv init -)"
   eval "$(pyenv virtualenv-init -)"
 fi
@@ -100,21 +85,21 @@ if [[ $__already_welcome != "yes" ]]; then
 fi
 __already_welcome="yes"
 
-:set-prompt() {
+_Set_prompt() {
   local nl=$'\n'
-  local p="%B%F{white}%K{green}  %1~  %k%f%b "
+  local p="%B%F{cyan};%f%b "
   PROMPT="${nl}${p}"
   PROMPT2="${p}"
 }
 
-:set-prompt
+_Set_prompt
 
-:maybe-source ~/.zsh-autosuggestions/zsh-autosuggestions.zsh
-:maybe-source ~/.travis/travis.sh
-:maybe-source ~/.nvm/nvm.sh
-:maybe-source ~/google-cloud-sdk/path.zsh.inc
-:maybe-source ~/google-cloud-sdk/completion.zsh.inc
+_Maybe_source ~/.zsh-autosuggestions/zsh-autosuggestions.zsh
+_Maybe_source ~/.travis/travis.sh
+_Maybe_source ~/.nvm/nvm.sh
+_Maybe_source ~/google-cloud-sdk/path.zsh.inc
+_Maybe_source ~/google-cloud-sdk/completion.zsh.inc
 
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=cyan"
 
-:maybe-source ~/.after.zshrc.zsh
+_Maybe_source ~/.after.zshrc.zsh
