@@ -47,7 +47,8 @@
   "editor.renderLineHighlight": "all",
   "editor.renderWhitespace": "none",
   "editor.rulers": [80],
-  "editor.snippetSuggestions": "top",
+  "editor.snippetSuggestions": "bottom",
+  "editor.suggest.snippetsPreventQuickSuggestions": false,
   "editor.tabSize": 2,
   "editor.wordWrap": "on",
   "editor.wrappingIndent": "same",
@@ -66,9 +67,9 @@
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
   "files.associations": {
-    "zshrc": "shellscript",
+    "bashrc": "shellscript",
     "zshenv": "shellscript",
-    "bashrc": "shellscript"
+    "zshrc": "shellscript"
   },
   "files.defaultLanguage": "markdown",
   "files.exclude": {
