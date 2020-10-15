@@ -85,21 +85,21 @@ if [[ $__already_welcome != "yes" ]]; then
 fi
 __already_welcome="yes"
 
-_Set_prompt() {
+__Set_prompt() {
   local nl=$'\n'
-  local p="%B%F{cyan};%f%b "
+  local p="%B%F{cyan}zsh:%f%b "
   PROMPT="${nl}${p}"
   PROMPT2="${p}"
 }
 
-_Set_prompt
+__Set_prompt
 
-_Maybe_source ~/.zsh-autosuggestions/zsh-autosuggestions.zsh
-_Maybe_source ~/.travis/travis.sh
-_Maybe_source ~/.nvm/nvm.sh
-_Maybe_source ~/google-cloud-sdk/path.zsh.inc
-_Maybe_source ~/google-cloud-sdk/completion.zsh.inc
+__Maybe_source ~/.zsh-autosuggestions/zsh-autosuggestions.zsh
+__Maybe_source ~/.travis/travis.sh
+__Maybe_source ~/.nvm/nvm.sh
+__Maybe_source ~/google-cloud-sdk/path.zsh.inc
+__Maybe_source ~/google-cloud-sdk/completion.zsh.inc
 
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=cyan"
 
-_Maybe_source ~/.after.zshrc.zsh
+__Maybe_source ~/.after.zshrc.zsh
