@@ -36,3 +36,8 @@ function prompt {
 function .. {
   Set-Location ..
 }
+
+if ((-not $__welcome) -and (Test-Path ~/.welcome)) {
+  Get-Content ~/.welcome
+}
+$__welcome = $true

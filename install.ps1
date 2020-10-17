@@ -1,9 +1,22 @@
 # cd to directory of dotfiles based on this script.
-$scriptDir = Split-Path $SCRIPT:MyInvocation.MyCommand.Path -Parent
-$DOTFILES = Resolve-Path (Join-Path $scriptDir "..")
+$DOTFILES = Split-Path $SCRIPT:MyInvocation.MyCommand.Path -Parent
 Set-Location $DOTFILES
 
 $VSCODE = "$env:APPDATA\Code\User"
+
+function main() {
+  install "vimrc"
+  install "gitconfig"
+  install "gitignore"
+  install "welcome"
+
+  installAs "ahk\misc.ahk" "$env:APPDATA\Microsoft\Windows\Start Menu\Programs\Startup\misc.ahk"
+  installAs "Microsoft.PowerShell_profile.ps1" $profile
+  installAs "win-terminal\settings.json" "$env:LOCALAPPDATA\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json"
+  installAs "vscode\keybindings.json" "$VSCODE\keybindings.json"
+  installAs "vscode\settings.json" "$VSCODE\settings.json"
+  installAs "vscode\snippets" "$VSCODE\snippets"
+}
 
 function install($path) {
   $dest = "$HOME\.$path"
@@ -15,12 +28,12 @@ function installAs($path, $dest) {
   show $src $dest
   if (Test-Path $dest) {
     if (isSymlink $dest) {
-      Remove-Item $dest
+      Remove-Item -Force $dest
     } else {
       if (-Not (confirm "Replace $dest with symlink?")) {
         return
       }
-      Remove-Item $dest
+      Remove-Item -Force $dest
     }
   }
   $dir = Split-Path -Path $path
@@ -37,9 +50,9 @@ function show($src, $dest) {
 
 function linkItUp($src, $dest) {
   if (Test-Path -PathType Container -Path $src) {
-    cmd /c mklink /d $dest $src
+    cmd /c mklink /d $dest $src | Out-Null
   } else {
-    cmd /c mklink $dest $src
+    cmd /c mklink $dest $src | Out-Null
   }
 }
 
@@ -65,12 +78,4 @@ function isSymlink($path) {
   }
 }
 
-install "vimrc"
-install "gitconfig"
-install "gitignore"
-
-installAs "windows\Microsoft.PowerShell_profile.ps1" $profile
-installAs "vscode\keybindings.json" "$VSCODE\keybindings.json"
-installAs "vscode\settings.json" "$VSCODE\settings.json"
-installAs "vscode\snippets" "$VSCODE\snippets"
-installAs "windows\terminal\settings.json" "$env:LOCALAPPDATA\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json"
+main

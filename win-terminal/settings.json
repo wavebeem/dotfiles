@@ -8,7 +8,7 @@
 {
   "$schema": "https://aka.ms/terminal-profiles-schema",
 
-  "defaultProfile": "{2c4de342-38b7-51cf-b940-2309a097f518}",
+  "defaultProfile": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
 
   // You can add more global application settings here.
   // To learn more about global settings, visit https://aka.ms/terminal-global-settings
@@ -35,16 +35,16 @@
     },
     "list": [
       {
+        "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+        "hidden": false,
+        "name": "pwsh",
+        "commandline": "pwsh.exe -NoLogo"
+      },
+      {
         "guid": "{2c4de342-38b7-51cf-b940-2309a097f518}",
         "hidden": false,
         "name": "ubuntu",
         "source": "Windows.Terminal.Wsl"
-      },
-      {
-        "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
-        "hidden": false,
-        "name": "pwsh",
-        "commandline": "pwsh.exe"
       },
       {
         "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",

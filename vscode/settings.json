@@ -187,6 +187,8 @@
   "terminal.integrated.macOptionIsMeta": true,
   "terminal.integrated.minimumContrastRatio": 4.5,
   "terminal.integrated.scrollback": 10000,
+  "terminal.integrated.shell.windows": "D:\\PowerShell\\6\\pwsh.exe",
+  "terminal.integrated.shellArgs.windows": ["-NoLogo"],
   "typescript.updateImportsOnFileMove.enabled": "always",
   "window.title": "${rootPath}${separator}${remoteName}${separator}Code",
   "window.titleBarStyle": "custom",
