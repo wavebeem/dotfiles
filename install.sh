@@ -4,6 +4,7 @@ set -eu
 Ansi() {
   echo $'\e['"$@m"
 }
+magenta=$(Ansi 35)
 cyan=$(Ansi 36)
 reset=$(Ansi 0)
 
@@ -66,7 +67,10 @@ Install_as() {
   fi
   local src="$dotfiles/$path"
   local short_dest="~${dest##$HOME}"
-  echo "${magenta}${short_dest} ${reset}=> ${cyan}${path}${reset}"
+  echo -n "${magenta}${short_dest}${reset}"
+  echo -n " => "
+  echo -n "${cyan}${path}${reset}"
+  echo
   # Install the symbolic link
   ln -s "$src" "$dest"
 }
