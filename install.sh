@@ -1,8 +1,14 @@
 #!/usr/bin/env bash
 set -eu
 
+Ansi() {
+  echo $'\e['"$@m"
+}
+cyan=$(Ansi 36)
+reset=$(Ansi 0)
+
 # Find absolute path to current directory
-dotfiles="$(readlink -f "$(dirname "$0")")"
+dotfiles=$({ dir=$(dirname "$0"); cd "$dir"; pwd; })
 
 # Edit the files in here depending on what files you have in your repo
 Main() {
@@ -59,7 +65,8 @@ Install_as() {
     mkdir -p "$dir"
   fi
   local src="$dotfiles/$path"
-  echo "$dest"
+  local short_dest="~${dest##$HOME}"
+  echo "${magenta}${short_dest} ${reset}=> ${cyan}${path}${reset}"
   # Install the symbolic link
   ln -s "$src" "$dest"
 }
