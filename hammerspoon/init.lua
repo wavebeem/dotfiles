@@ -22,6 +22,7 @@ end
 layout = {
   {"Code", nil, nil, hs.layout.left50, nil, nil},
   {"iTerm2", nil, nil, hs.layout.left50, nil, nil},
+  {"Terminal", nil, nil, hs.layout.left50, nil, nil},
   {"Slack", nil, nil, hs.layout.right50, nil, nil},
   {"LINE", nil, nil, hs.layout.right50, nil, nil},
   {"Firefox", nil, nil, hs.layout.right50, nil, nil},
