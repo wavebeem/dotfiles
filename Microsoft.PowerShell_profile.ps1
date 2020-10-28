@@ -37,7 +37,8 @@ function .. {
   Set-Location ..
 }
 
-if ((-not $__welcome) -and (Test-Path ~/.welcome)) {
-  Get-Content ~/.welcome
-}
-$__welcome = $true
+# TODO: How can I test if the shell is interactive?
+# if ((-not $__welcome) -and (Test-Path ~/.welcome)) {
+#   Get-Content ~/.welcome
+# }
+# $__welcome = $true
