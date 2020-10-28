@@ -4,6 +4,7 @@ export LSCOLORS="ExfxcxdxBxegedabagacad"
 export EDITOR="code --wait"
 export GIT_EDITOR="$EDITOR"
 export VISUAL="$EDITOR"
+export PAGER="less"
 
 path=(
   "$HOME/.local/bin"

@@ -33,9 +33,6 @@
   "diffEditor.renderSideBySide": false,
   "editor.acceptSuggestionOnCommitCharacter": false,
   "editor.acceptSuggestionOnEnter": "off",
-  "editor.codeActionsOnSave": {
-    "source.fixAll": true
-  },
   "editor.copyWithSyntaxHighlighting": false,
   "editor.cursorBlinking": "smooth",
   "editor.dragAndDrop": false,
@@ -199,7 +196,7 @@
   "window.titleSeparator": " – ",
   "window.zoomLevel": 0,
   "workbench.activityBar.visible": true,
-  "workbench.colorTheme": "Uno Due Tre",
+  "workbench.colorTheme": "Uno Due Tre (Ocean)",
   "workbench.editor.enablePreviewFromQuickOpen": false,
   "workbench.editor.showTabs": false,
   "workbench.iconTheme": "vscode-icon-theme",
