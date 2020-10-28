@@ -48,11 +48,6 @@ alias serve="python -m SimpleHTTPServer"
 export LANG="en_US.UTF-8"
 export LSCOLORS="ExfxcxdxBxegedabagacad"
 
-export EDITOR="vim"
-export VISUAL="vim"
-export PAGER="less"
-export LESS="-R"
-
 export PATH="~/.local/bin:$PATH"
 export PATH="~/.rbenv/bin:$PATH"
 
