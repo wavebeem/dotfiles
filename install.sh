@@ -36,6 +36,7 @@ Main() {
       Install_as "vscode/settings.json" "$vscode/settings.json"
       Install_as "vscode/snippets" "$vscode/snippets"
       Install_as "aseprite-scripts" "$aseprite/scripts"
+      Install_as "Microsoft.PowerShell_profile.ps1" "$HOME/.config/powershell/Microsoft.PowerShell_profile.ps1"
       ;;
   esac
 }
