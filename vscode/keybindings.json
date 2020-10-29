@@ -49,12 +49,12 @@
     "when": "!terminalFocus"
   },
   {
-    "key": "ctrl+shift+j",
+    "key": "ctrl+shift+i",
     "command": "workbench.action.terminal.focus",
     "when": "!terminalFocus"
   },
   {
-    "key": "ctrl+shift+j",
+    "key": "ctrl+shift+i",
     "command": "workbench.action.focusActiveEditorGroup",
     "when": "terminalFocus"
   },
@@ -91,5 +91,15 @@
   {
     "key": "ctrl+'",
     "command": "workbench.action.terminal.toggleTerminal"
+  },
+  {
+    "key": "ctrl+shift+j",
+    "command": "workbench.action.terminal.focusNext",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+shift+k",
+    "command": "workbench.action.terminal.focusPrevious",
+    "when": "terminalFocus"
   }
 ]
