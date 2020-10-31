@@ -39,6 +39,7 @@
   "editor.fontFamily": "\"JetBrains Mono\", Input, Menlo, Consolas, monospace",
   "editor.fontSize": 14,
   "editor.formatOnPaste": false,
+  "editor.formatOnSave": true,
   "editor.minimap.enabled": false,
   "editor.minimap.renderCharacters": true,
   "editor.multiCursorModifier": "alt",
@@ -65,6 +66,7 @@
     "typescript",
     "typescriptreact"
   ],
+  "explorer.compactFolders": false,
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
   "files.associations": {
@@ -199,12 +201,11 @@
   "workbench.colorTheme": "Uno Due Tre (Ocean)",
   "workbench.editor.enablePreviewFromQuickOpen": false,
   "workbench.editor.showTabs": false,
-  "workbench.iconTheme": "vscode-icon-theme",
+  "workbench.iconTheme": null,
   "workbench.sideBar.location": "left",
   "workbench.startupEditor": "newUntitledFile",
   "workbench.statusBar.visible": true,
-  "workbench.tree.renderIndentGuides": "none",
+  "workbench.tree.indent": 16,
   "zenMode.centerLayout": false,
-  "zenMode.fullScreen": false,
-  "editor.formatOnSave": true
+  "zenMode.fullScreen": false
 }
