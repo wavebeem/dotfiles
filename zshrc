@@ -17,7 +17,7 @@ __Install_zsh_autosuggestions() {
     ~/.zsh-autosuggestions
 }
 
-preexec() {
+precmd() {
   echo
 }
 
@@ -88,8 +88,8 @@ __already_welcome="yes"
 __Set_prompt() {
   local nl=$'\n'
   local p="%B%F{cyan}zsh:%f%b "
-  PROMPT="${nl}${p}"
-  PROMPT2="${p}"
+  PROMPT="%B%F{cyan}zsh:%f%b "
+  PROMPT2="$PROMPT"
 }
 
 __Set_prompt

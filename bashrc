@@ -13,17 +13,11 @@ _ansi() {
 PROMPT_COMMAND="precmd"
 
 bold=$(_ansi 1)
-bg_cyan=$(_ansi 42)
-bg_purple=$(_ansi 45)
-fg_white=$(_ansi 37)
-fg_blue=$(_ansi 34)
+cyan=$(_ansi 36)
 reset=$(_ansi 0)
 
-separator="${reset} "
-space=" "
-
-export PS1="\n${reset}${bold}${bg_purple}${fg_white}  \W  ${reset} "
-export PS2="${reset}${bold}${bg_purple}${fg_white}  \W  ${reset} "
+export PS1="${reset}${bold}${cyan}bash:${reset} "
+export PS2="${PS1}"
 
 case $(uname) in
 Darwin)
