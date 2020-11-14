@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
+import os
+import json
 import glob
+import datetime
 
 os.chdir("/mnt/e/Dropbox/Apps/Google Download Your Data")
 dir = glob.glob("takeout-*/Takeout/Google Photos")
@@ -12,8 +15,8 @@ for file in glob.glob("**/*.{jpg,jpeg,png,mp4,gif}"):
   try:
     with open(file) as f:
       data = json.load(f)
-      date = datetime.datetime.fromtimestamp(data["photoTakenTime"]["timestamp"])
-      dest = date.date().isoformat()
+      timestamp = data["photoTakenTime"]["timestamp"]
+      dest = datetime.date.fromtimestamp(timestamp).isoformat()
   except IOError:
     dest = "misc"
   mkdir -p "dest/$dest"
