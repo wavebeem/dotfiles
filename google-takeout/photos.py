@@ -24,7 +24,7 @@ def changed_dir(path):
     os.chdir(cwd)
 
 
-def all_photos_and_videos(path):
+def all_photos_and_videos_paths(path):
   path = Path(path)
   yield from path.glob("**/*.jpeg")
   yield from path.glob("**/*.jpg")
@@ -56,7 +56,6 @@ def folder_name_for_file(file):
 def new_filename(file):
   prefix = datetime.datetime.now().strftime("%Y-%m-%d_%H.%M")
   return prefix + Path(file).suffix
-
 
 
 def process_zip(zip_filename):
