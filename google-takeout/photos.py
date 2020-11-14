@@ -1,25 +1,42 @@
 #!/usr/bin/env python3
-import os
 import json
-import glob
-import datetime
+import os
+from datetime import date
+from pathlib import Path
+from shutil import copy2
 
-os.chdir("/mnt/e/Dropbox/Apps/Google Download Your Data")
-dir = glob.glob("takeout-*/Takeout/Google Photos")
+
+takeout_dir = Path("/mnt/e/Dropbox/Apps/Google Download Your Data")
+backup_dir = Path("/mnt/e/backup")
+
+
+def all_photos():
+  here = Path(".")
+  yield from here.glob("**/*.jpeg")
+  yield from here.glob("**/*.png")
+  yield from here.glob("**/*.gif")
+  yield from here.glob("**/*.mp4")
+
+
+os.chdir(takeout_dir)
+dir = list(Path(".").glob("takeout-*/Takeout/Google Photos"))
 if dir:
-  os.chdir(dir)
+  os.chdir(dir[0])
 else:
-  raise Exception("no takeout dir")
+  raise Exception("where is google takeout?")
 
-for file in glob.glob("**/*.{jpg,jpeg,png,mp4,gif}"):
+for file in all_photos():
   try:
-    with open(file) as f:
+    with open(f"{file}.json") as f:
       data = json.load(f)
-      timestamp = data["photoTakenTime"]["timestamp"]
-      dest = datetime.date.fromtimestamp(timestamp).isoformat()
+      timestamp = int(data["photoTakenTime"]["timestamp"])
+      taken_date = date.fromtimestamp(timestamp)
+      dest = f"{taken_date.year:04d}-{taken_date.month:02d}"
   except IOError:
     dest = "misc"
-  mkdir -p "dest/$dest"
-  base=$(basename "$file")
-  cp -v "$file" "dest/$dest/$base"
-done
+  output = Path(backup_dir, dest)
+  output.mkdir(parents=True, exist_ok=True)
+  print(Path(file).name, end="", flush=True)
+  copy2(file, output)
+  print()
+
