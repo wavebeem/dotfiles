@@ -1,42 +1,85 @@
 #!/usr/bin/env python3
 import json
 import os
-from datetime import date
+import contextlib
+import shutil
+import datetime
 from pathlib import Path
-from shutil import copy2
+from zipfile import ZipFile
 
 
-takeout_dir = Path("/mnt/e/Dropbox/Apps/Google Download Your Data")
-backup_dir = Path("/mnt/e/backup")
+path_takeout = Path("/mnt/e/Dropbox/Apps/Google Download Your Data")
+path_done = Path("/mnt/e/done")
+path_tmp = Path("/mnt/e/tmp")
+path_backup = Path("/mnt/e/backup")
 
 
-def all_photos():
-  here = Path(".")
-  yield from here.glob("**/*.jpeg")
-  yield from here.glob("**/*.png")
-  yield from here.glob("**/*.gif")
-  yield from here.glob("**/*.mp4")
-
-
-os.chdir(takeout_dir)
-dir = list(Path(".").glob("takeout-*/Takeout/Google Photos"))
-if dir:
-  os.chdir(dir[0])
-else:
-  raise Exception("where is google takeout?")
-
-for file in all_photos():
+@contextlib.contextmanager
+def changed_dir(path):
+  cwd = os.getcwd()
   try:
-    with open(f"{file}.json") as f:
-      data = json.load(f)
-      timestamp = int(data["photoTakenTime"]["timestamp"])
-      taken_date = date.fromtimestamp(timestamp)
-      dest = f"{taken_date.year:04d}-{taken_date.month:02d}"
-  except IOError:
-    dest = "misc"
-  output = Path(backup_dir, dest)
-  output.mkdir(parents=True, exist_ok=True)
-  print(Path(file).name, end="", flush=True)
-  copy2(file, output)
-  print()
+    os.chdir(path)
+    yield
+  finally:
+    os.chdir(cwd)
 
+
+def all_photos_and_videos(path):
+  path = Path(path)
+  yield from path.glob("**/*.jpeg")
+  yield from path.glob("**/*.jpg")
+  yield from path.glob("**/*.png")
+  yield from path.glob("**/*.gif")
+  yield from path.glob("**/*.mp4")
+
+
+def main():
+  path_tmp.mkdir(parents=True, exist_ok=True)
+  path_done.mkdir(parents=True, exist_ok=True)
+  path_backup.mkdir(parents=True, exist_ok=True)
+  with changed_dir(path_takeout):
+    for zip_filename in Path(".").glob("*.zip"):
+      process_zip(zip_filename)
+      return # TODO: Just start with one zip
+
+
+def folder_name_for_file(file):
+  try:
+    with open(f"{file}.json") as json_file:
+      data = json.load(json_file)
+      timestamp = int(data["photoTakenTime"]["timestamp"])
+      return datetime.date.fromtimestamp(timestamp).strftime("%Y-%m")
+  except IOError:
+    return "misc"
+
+
+def new_filename(file):
+  prefix = datetime.datetime.now().strftime("%Y-%m-%d_%H.%M")
+  return prefix + Path(file).suffix
+
+
+
+def process_zip(zip_filename):
+  with ZipFile(zip_filename) as zip:
+    shutil.rmtree(path_tmp, ignore_errors=True)
+    print()
+    print("==> Extracting", zip_filename)
+    zip.extractall(path=path_tmp)
+    with changed_dir(path_tmp):
+      for path_file in all_photos_and_videos_paths(Path(".")):
+        dest = folder_name_for_file(path_file)
+        output = Path(path_backup, dest)
+        output.mkdir(parents=True, exist_ok=True)
+        print("Moving", path_file.name)
+        try:
+          shutil.move(str(path_file), str(output))
+        except shutil.Error:
+          shutil.move(str(path_file), str(output / new_filename(path_file)))
+    print("Moving the .zip")
+    shutil.move(str(zip_filename), str(path_done))
+
+
+try:
+  main()
+except KeyboardInterrupt:
+  pass
