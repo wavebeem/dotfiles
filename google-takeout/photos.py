@@ -58,7 +58,7 @@ def new_filename(file):
 def process_zip(zip_filename):
     with ZipFile(zip_filename) as zip:
         shutil.rmtree(path_tmp, ignore_errors=True)
-        print()
+        # print()
         print("==> Extracting", zip_filename)
         zip.extractall(path=path_tmp)
         with changed_dir(path_tmp):
@@ -66,7 +66,7 @@ def process_zip(zip_filename):
                 dest = folder_name_for_file(path_file)
                 output = Path(path_backup, dest)
                 output.mkdir(parents=True, exist_ok=True)
-                print("Moving", path_file.name)
+                # print("Moving", path_file.name)
                 try:
                     shutil.move(str(path_file), str(output))
                 except shutil.Error:
