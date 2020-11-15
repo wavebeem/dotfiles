@@ -35,10 +35,13 @@ def all_photos_and_videos_paths(path):
 def main():
     path_tmp.mkdir(parents=True, exist_ok=True)
     path_backup.mkdir(parents=True, exist_ok=True)
+    i = 0
     with changed_dir(path_takeout):
         for zip_filename in Path().glob("*.zip"):
             process_zip(zip_filename)
-            return  # TODO: Just start with one zip
+            i += 1
+            if i > 3:
+                return  # TODO: Just start with one zip
 
 
 def folder_name_for_file(file):
@@ -78,6 +81,7 @@ try:
     start = time.perf_counter()
     main()
     end = time.perf_counter()
-    print(f"{end - start:.4f} seconds")
+    dt = end - start
+    print(f"{dt:.4f} seconds")
 except KeyboardInterrupt:
     pass
