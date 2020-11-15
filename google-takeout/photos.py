@@ -8,7 +8,7 @@ import time
 from pathlib import Path
 from zipfile import ZipFile
 
-path_root = Path("E:/")
+path_root = Path("/mnt/e")
 path_takeout = path_root / "Dropbox/Apps/Google Download Your Data"
 path_tmp = path_root / "tmp"
 path_backup = path_root / "backup"
