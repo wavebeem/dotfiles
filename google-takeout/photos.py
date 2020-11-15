@@ -1,17 +1,16 @@
 #!/usr/bin/env python3
+import contextlib
+import datetime
 import json
 import os
-import contextlib
 import shutil
-import datetime
+import time
 from pathlib import Path
 from zipfile import ZipFile
 
-
-path_takeout = Path("/mnt/e/Dropbox/Apps/Google Download Your Data")
-path_done = Path("/mnt/e/done")
-path_tmp = Path("/mnt/e/tmp")
-path_backup = Path("/mnt/e/backup")
+path_takeout = Path("E:/Dropbox/Apps/Google Download Your Data")
+path_tmp = Path("E:/tmp")
+path_backup = Path("E:/backup")
 
 
 @contextlib.contextmanager
@@ -35,7 +34,6 @@ def all_photos_and_videos_paths(path):
 
 def main():
     path_tmp.mkdir(parents=True, exist_ok=True)
-    path_done.mkdir(parents=True, exist_ok=True)
     path_backup.mkdir(parents=True, exist_ok=True)
     with changed_dir(path_takeout):
         for zip_filename in Path().glob("*.zip"):
@@ -74,11 +72,12 @@ def process_zip(zip_filename):
                     shutil.move(str(path_file), str(output))
                 except shutil.Error:
                     shutil.move(str(path_file), str(output / new_filename(path_file)))
-        print("Moving the .zip")
-        shutil.move(str(zip_filename), str(path_done))
 
 
 try:
+    start = time.perf_counter()
     main()
+    end = time.perf_counter()
+    print(f"{end - start:.4f} seconds")
 except KeyboardInterrupt:
     pass
