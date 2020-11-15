@@ -108,13 +108,15 @@ hs.alert.defaultStyle.fadeOutDuration = 0
 
 prefix = {"ctrl", "alt"}
 
-hs.hotkey.bind(prefix, "space", cmd.maximizeWindow)
-hs.hotkey.bind(prefix, "h", cmd.hidePersonalApps)
 hs.hotkey.bind(prefix, "y", cmd.unhideAll)
-hs.hotkey.bind(prefix, "j", cmd.snapWindowLeft)
-hs.hotkey.bind(prefix, "l", cmd.snapWindowRight)
-hs.hotkey.bind(prefix, "m", cmd.maximizeAllWindows)
+hs.hotkey.bind(prefix, "h", cmd.hidePersonalApps)
 hs.hotkey.bind(prefix, "n", cmd.splitUpApps)
+
+hs.hotkey.bind(prefix, "j", cmd.snapWindowLeft)
+hs.hotkey.bind(prefix, "k", cmd.maximizeWindow)
+hs.hotkey.bind(prefix, "l", cmd.snapWindowRight)
+
+hs.hotkey.bind(prefix, "space", cmd.maximizeAllWindows)
 hs.hotkey.bind(prefix, "t", cmd.keyboardDateTime)
 hs.hotkey.bind(prefix, "d", cmd.keyboardDate)
 hs.hotkey.bind(prefix, "v", cmd.showApplicationName)
