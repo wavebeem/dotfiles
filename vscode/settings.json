@@ -207,5 +207,6 @@
   "workbench.statusBar.visible": true,
   "workbench.tree.indent": 16,
   "zenMode.centerLayout": false,
-  "zenMode.fullScreen": false
+  "zenMode.fullScreen": false,
+  "python.formatting.provider": "black"
 }
