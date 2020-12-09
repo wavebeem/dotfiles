@@ -4,22 +4,22 @@
       "textSpacing" : 5,
       "subtext" : {
         "size" : 16,
-        "colorSelected" : "#0000007F",
+        "colorSelected" : "#797979FF",
         "font" : "System",
-        "color" : "#00000065"
+        "color" : "#797979FF"
       },
       "shortcut" : {
         "size" : 16,
-        "colorSelected" : "#000000FF",
+        "colorSelected" : "#797979FF",
         "font" : "System",
-        "color" : "#0000001A"
+        "color" : "#797979FF"
       },
-      "backgroundSelected" : "#00000019",
+      "backgroundSelected" : "#424242FF",
       "text" : {
         "size" : 24,
-        "colorSelected" : "#000000FF",
+        "colorSelected" : "#FEFFFFFF",
         "font" : "System",
-        "color" : "#000000E5"
+        "color" : "#D5D5D5FF"
       },
       "iconPaddingHorizontal" : 16,
       "paddingVertical" : 8,
@@ -27,35 +27,35 @@
     },
     "search" : {
       "paddingVertical" : 8,
-      "background" : "#FEFFFFFF",
+      "background" : "#212121FF",
       "spacing" : 0,
       "text" : {
         "size" : 48,
         "colorSelected" : "#FFFFFFFF",
         "font" : "System",
-        "color" : "#000000FF"
+        "color" : "#FEFFFFFF"
       },
-      "backgroundSelected" : "#0000007F"
+      "backgroundSelected" : "#929292FF"
     },
     "window" : {
-      "color" : "#FEFFFFFF",
+      "color" : "#212121FF",
       "paddingHorizontal" : 8,
       "width" : 700,
-      "borderPadding" : 0,
-      "borderColor" : "#0000007F",
+      "borderPadding" : 1,
+      "borderColor" : "#919191FF",
       "blur" : 0,
       "roundness" : 8,
       "paddingVertical" : 8
     },
     "credit" : "Brian Mock",
     "separator" : {
-      "color" : "#00000019",
+      "color" : "#424242FF",
       "thickness" : 1
     },
     "scrollbar" : {
-      "color" : "#0000003F",
+      "color" : "#FEFFFF3F",
       "thickness" : 4
     },
-    "name" : "Basic Light"
+    "name" : "Basic Dark"
   }
 }
