@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>com.wavebeem.paste-date</string>
+	<key>connections</key>
+	<dict>
+		<key>37B74AD8-818C-4F31-824E-761BF6EA406A</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>946DFB81-1086-4113-B99B-53000F1DF556</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Brian Mock</string>
+	<key>description</key>
+	<string></string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Paste Date</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>autopaste</key>
+				<true/>
+				<key>clipboardtext</key>
+				<string>{date:yyyy-MM-dd}</string>
+				<key>ignoredynamicplaceholders</key>
+				<false/>
+				<key>transient</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>946DFB81-1086-4113-B99B-53000F1DF556</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>2</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>2</integer>
+				<key>hotmod</key>
+				<integer>786432</integer>
+				<key>hotstring</key>
+				<string>D</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>37B74AD8-818C-4F31-824E-761BF6EA406A</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string>This workflow demonstrates a few techniques to integrate the clipboard into your workflows.
+
+The easiest and most predictable way to get the clipboard or clipboard history into your workflow is to use an Arg and Var utility object, and set a variable to {clipboard} or {clipboard:x} where x is the history item number. This will fix the variable to the text at the point the workflow passes through this object.
+
+Note that while {clipboard} and {clipboard:0} both represent the latest clipboard entry, the value of these may differ. {clipboard:0} represents the latest item in Alfred's clipboard history whereas {clipboard} represents the current clipboard entry in macOS. The latter may not be compatible with Alfred's clipboard history.
+
+The clipboard history placeholders are available in most output objects, along with the Arg and Var / JSON utilities. Help subtext hints this throughout the configuration sheets.</string>
+	<key>uidata</key>
+	<dict>
+		<key>37B74AD8-818C-4F31-824E-761BF6EA406A</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>3</integer>
+			<key>note</key>
+			<string>Set a hotkey such as ⌘⇧V to start this workflow with the current clipboard contents</string>
+			<key>xpos</key>
+			<integer>50</integer>
+			<key>ypos</key>
+			<integer>50</integer>
+		</dict>
+		<key>946DFB81-1086-4113-B99B-53000F1DF556</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>3</integer>
+			<key>note</key>
+			<string>Paste the content of the clipboard as plain text to the front most app</string>
+			<key>xpos</key>
+			<integer>210</integer>
+			<key>ypos</key>
+			<integer>50</integer>
+		</dict>
+	</dict>
+	<key>version</key>
+	<string>1.0</string>
+	<key>webaddress</key>
+	<string>https://wavebeem.com</string>
+</dict>
+</plist>

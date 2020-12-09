@@ -1,0 +1,61 @@
+{
+  "alfredtheme" : {
+    "result" : {
+      "textSpacing" : 5,
+      "subtext" : {
+        "size" : 12,
+        "colorSelected" : "#0000007F",
+        "font" : "System",
+        "color" : "#00000065"
+      },
+      "shortcut" : {
+        "size" : 16,
+        "colorSelected" : "#000000FF",
+        "font" : "System",
+        "color" : "#0000001A"
+      },
+      "backgroundSelected" : "#00000019",
+      "text" : {
+        "size" : 18,
+        "colorSelected" : "#000000FF",
+        "font" : "System",
+        "color" : "#000000E5"
+      },
+      "iconPaddingHorizontal" : 8,
+      "paddingVertical" : 8,
+      "iconSize" : 40
+    },
+    "search" : {
+      "paddingVertical" : 8,
+      "background" : "#FEFFFFFF",
+      "spacing" : 0,
+      "text" : {
+        "size" : 34,
+        "colorSelected" : "#FFFFFFFF",
+        "font" : "System Light",
+        "color" : "#000000FF"
+      },
+      "backgroundSelected" : "#000000FF"
+    },
+    "window" : {
+      "color" : "#FEFFFFFF",
+      "paddingHorizontal" : 1,
+      "width" : 560,
+      "borderPadding" : 0,
+      "borderColor" : "#0000007F",
+      "blur" : 0,
+      "roundness" : 2,
+      "paddingVertical" : 1
+    },
+    "credit" : "Brian Mock",
+    "separator" : {
+      "color" : "#00000019",
+      "thickness" : 1
+    },
+    "scrollbar" : {
+      "color" : "#0000003F",
+      "thickness" : 4
+    },
+    "name" : "Basic"
+  }
+}
