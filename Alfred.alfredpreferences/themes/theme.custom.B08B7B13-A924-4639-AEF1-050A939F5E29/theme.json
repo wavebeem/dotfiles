@@ -23,14 +23,14 @@
       },
       "iconPaddingHorizontal" : 16,
       "paddingVertical" : 8,
-      "iconSize" : 40
+      "iconSize" : 48
     },
     "search" : {
       "paddingVertical" : 8,
       "background" : "#FEFFFFFF",
       "spacing" : 0,
       "text" : {
-        "size" : 48,
+        "size" : 42,
         "colorSelected" : "#FFFFFFFF",
         "font" : "System",
         "color" : "#000000FF"
