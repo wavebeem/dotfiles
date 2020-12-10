@@ -1,9 +1,9 @@
 {
   "alfredtheme" : {
     "result" : {
-      "textSpacing" : 5,
+      "textSpacing" : 8,
       "subtext" : {
-        "size" : 16,
+        "size" : 12,
         "colorSelected" : "#0000007F",
         "font" : "System",
         "color" : "#00000065"
@@ -16,21 +16,21 @@
       },
       "backgroundSelected" : "#00000019",
       "text" : {
-        "size" : 24,
+        "size" : 18,
         "colorSelected" : "#000000FF",
         "font" : "System",
         "color" : "#000000E5"
       },
-      "iconPaddingHorizontal" : 16,
+      "iconPaddingHorizontal" : 8,
       "paddingVertical" : 8,
-      "iconSize" : 48
+      "iconSize" : 32
     },
     "search" : {
       "paddingVertical" : 8,
       "background" : "#FEFFFFFF",
       "spacing" : 0,
       "text" : {
-        "size" : 42,
+        "size" : 32,
         "colorSelected" : "#FFFFFFFF",
         "font" : "System",
         "color" : "#000000FF"
