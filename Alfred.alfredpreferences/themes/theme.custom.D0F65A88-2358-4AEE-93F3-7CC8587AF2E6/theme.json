@@ -4,38 +4,41 @@
       "textSpacing" : 8,
       "subtext" : {
         "size" : 12,
-        "colorSelected" : "#797979FF",
+        "colorSelected" : "#0000007F",
         "font" : "System",
         "color" : "#797979FF"
       },
       "shortcut" : {
         "size" : 16,
-        "colorSelected" : "#797979FF",
+        "colorSelected" : "#0000007F",
         "font" : "System",
         "color" : "#797979FF"
       },
-      "backgroundSelected" : "#424242FF",
+      "backgroundSelected" : "#E6E6E6FF",
       "text" : {
         "size" : 18,
-        "colorSelected" : "#FEFFFFFF",
+        "colorSelected" : "#000000FF",
         "font" : "System",
         "color" : "#D5D5D5FF"
       },
       "iconPaddingHorizontal" : 16,
+      "roundness" : 4,
       "paddingVertical" : 8,
       "iconSize" : 32
     },
     "search" : {
-      "paddingVertical" : 8,
-      "background" : "#212121FF",
-      "spacing" : 0,
+      "backgroundSelected" : "#929292FF",
+      "paddingHorizontal" : 8,
+      "spacing" : 8,
       "text" : {
         "size" : 32,
         "colorSelected" : "#FFFFFFFF",
         "font" : "System",
         "color" : "#FEFFFFFF"
       },
-      "backgroundSelected" : "#929292FF"
+      "background" : "#FFFFFF19",
+      "roundness" : 4,
+      "paddingVertical" : 8
     },
     "window" : {
       "color" : "#212121FF",
@@ -50,7 +53,7 @@
     "credit" : "Brian Mock",
     "separator" : {
       "color" : "#424242FF",
-      "thickness" : 1
+      "thickness" : 0
     },
     "scrollbar" : {
       "color" : "#FEFFFF3F",
