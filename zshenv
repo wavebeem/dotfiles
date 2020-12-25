@@ -16,14 +16,9 @@ path=(
   $path
 )
 
-__Maybe_source() {
+__source() {
   local file="$1"
   test -f "$file" && source "$file"
 }
 
-__Has_cmd() {
-  local cmd="$1"
-  which "$cmd" >/dev/null 2>&1
-}
-
-__Maybe_source ~/.after.zshenv.zsh
+__source ~/.after.zshenv.zsh
