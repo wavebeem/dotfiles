@@ -53,14 +53,14 @@ else
   alias o='open'
 fi
 
-# Allow pasting commands with "$" from the internet
-alias '$'=""
-
 if [[ $(uname) = Darwin ]]; then
   alias ls="ls -G"
 else
   alias ls="ls --color=auto"
 fi
+
+# Allow pasting commands with "$" from the internet
+alias '$'=""
 
 alias l="ls"
 alias ll="ls -hl"
