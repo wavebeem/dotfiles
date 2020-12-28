@@ -21,7 +21,7 @@ PROMPT="%B%F{cyan}zsh:%f%b "
 PROMPT2="$PROMPT"
 
 # Load plugins that might exist on this device
-__source ~/.zsh-autosuggestions/zsh-autosuggestionstrap.zsh
+__source ~/.zsh-autosuggestions/zsh-autosuggestions.zsh
 __source ~/.asdf/asdf.sh
 
 # Change the zsh-autosuggestion colors (must be set after loading the plugin...)
