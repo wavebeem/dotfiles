@@ -36,6 +36,7 @@
   "editor.copyWithSyntaxHighlighting": false,
   "editor.cursorBlinking": "smooth",
   "editor.dragAndDrop": false,
+  "editor.find.addExtraSpaceOnTop": false,
   "editor.fontFamily": "\"JetBrains Mono\", Input, Menlo, Consolas, monospace",
   "editor.fontSize": 14,
   "editor.formatOnPaste": false,
@@ -174,6 +175,7 @@
   "html.format.endWithNewline": true,
   "html.format.indentHandlebars": true,
   "javascript.updateImportsOnFileMove.enabled": "always",
+  "python.formatting.provider": "black",
   "python.linting.pycodestyleEnabled": true,
   "python.linting.pylintEnabled": false,
   "search.exclude": {
@@ -198,15 +200,14 @@
   "window.titleSeparator": " – ",
   "window.zoomLevel": 0,
   "workbench.activityBar.visible": true,
-  "workbench.colorTheme": "Uno Due Tre",
+  "workbench.colorTheme": "Uno Due Tre (Sprinkles)",
   "workbench.editor.enablePreviewFromQuickOpen": false,
   "workbench.editor.showTabs": false,
-  "workbench.iconTheme": null,
+  "workbench.iconTheme": "simple-icons",
   "workbench.sideBar.location": "left",
   "workbench.startupEditor": "newUntitledFile",
   "workbench.statusBar.visible": true,
   "workbench.tree.indent": 16,
   "zenMode.centerLayout": false,
-  "zenMode.fullScreen": false,
-  "python.formatting.provider": "black"
+  "zenMode.fullScreen": false
 }

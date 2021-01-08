@@ -20,6 +20,10 @@ setopt INTERACTIVE_COMMENTS
 PROMPT="%B%F{cyan}zsh:%f%b "
 PROMPT2="$PROMPT"
 
+# asdf nodejs defaults are not great
+export NODEJS_CHECK_SIGNATURES=no
+export ASDF_SKIP_RESHIM=1
+
 # Load plugins that might exist on this device
 __source ~/.zsh-autosuggestions/zsh-autosuggestions.zsh
 __source ~/.asdf/asdf.sh
