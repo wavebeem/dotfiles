@@ -49,7 +49,6 @@ __install.asdf() {
 
 __install.asdf.nodejs() {
   asdf plugin-add nodejs https://github.com/asdf-vm/asdf-nodejs.git
-  bash -c '${ASDF_DATA_DIR:=$HOME/.asdf}/plugins/nodejs/bin/import-release-team-keyring'
 }
 
 # Print a blank line between prompts to make it easier to read
@@ -63,6 +62,7 @@ precmd() {
 # command (zsh) failing. This fixes the issue by always exiting interactive zsh
 # sessions with status code 0.
 zshexit() {
+  true
   exit 0
 }
 
@@ -85,6 +85,7 @@ alias '$'=""
 
 # Time saving shortcuts
 alias g="git status"
+alias g="git log"
 alias l="ls"
 alias ll="ls -hl"
 alias la="ll -a"
