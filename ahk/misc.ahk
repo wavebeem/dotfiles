@@ -16,7 +16,7 @@ FileEncoding UTF-8-RAW
   Send %time%
   Return
 
-; Send an ISO8601-ish filesystem timestamp, good for naming files
+; Send an ISO8601-ish filesystem timestamp, date only
 ^!d::
   FormatTime, time, A_now, yyyy-MM-dd
   Send %time%
@@ -27,3 +27,10 @@ FileEncoding UTF-8-RAW
   TrayTip, AutoHotkey, AutoHotkey configuration reloaded
   Reload
   Return
+
+; Run a windowed game "docked" to the top left of my screen, using a taskbar on
+; the left also
+^!u::
+  WinMove, A, , 60, -26, DEFAULT, DEFAULT
+  Return
+
