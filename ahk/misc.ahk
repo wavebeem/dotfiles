@@ -4,9 +4,6 @@
 ; I guess this matters? But calling "Send" still mangles Unicode characters
 FileEncoding UTF-8-RAW
 
-; Alt-Q to close windows
-!q::Send !{F4}
-
 ; Unbind Ctrl-Shift-Q to prevent accidental program quits
 ^+q::Return
 
