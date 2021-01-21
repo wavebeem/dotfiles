@@ -26,29 +26,6 @@ PROMPT2="$PROMPT"
 
 # Automatic command suggestions as I type
 __source ~/.zsh-autosuggestions/zsh-autosuggestions.zsh
-
-# nvm loads kinda slowly, so let's wait to load it until we actually use node
-export NVM_DIR="$HOME/.nvm"
-__lazy_nvm() {
-  # Remove zsh function shims
-  cmd="$1"
-  shift
-  unfunction nvm npm npx node
-  # Load bash completion system
-  autoload -Uz bashcompinit
-  bashcompinit
-  # Load nvm
-  __source "$NVM_DIR/nvm.sh"
-  __source "$NVM_DIR/bash_completion"
-  # Run the originally intended command
-  "$cmd" "$@"
-}
-nvm() { __lazy_nvm nvm "$@"; }
-npm() { __lazy_nvm npm "$@"; }
-npx() { __lazy_nvm npx "$@"; }
-node() { __lazy_nvm node "$@"; }
-
-# Change the zsh-autosuggestion colors (must be set after loading the plugin...)
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=cyan"
 
 # Use tab completion to install missing plugins on the current system

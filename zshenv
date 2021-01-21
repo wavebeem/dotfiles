@@ -35,5 +35,34 @@ __source() {
   test -f "$file" && source "$file"
 }
 
+__bench.start() {
+  __bench_last_time=$(ruby -e 'p Time.now.to_f')
+}
+
+__bench.end() {
+  start="$__bench_last_time" ruby -e 'p(Time.now.to_f - ENV["start"].to_f)'
+}
+
+# lazy load nvm since it takes half a second to load on my work mac
+export NVM_DIR="$HOME/.nvm"
+__lazy_nvm() {
+  # Remove zsh function shims
+  cmd="$1"
+  shift
+  unfunction nvm npm npx node
+  # Load bash completion system
+  autoload -Uz bashcompinit
+  bashcompinit
+  # Load nvm
+  source "$NVM_DIR/nvm.sh"
+  source "$NVM_DIR/bash_completion"
+  # Run the originally intended command
+  "$cmd" "$@"
+}
+nvm() { __lazy_nvm nvm "$@"; }
+npm() { __lazy_nvm npm "$@"; }
+npx() { __lazy_nvm npx "$@"; }
+node() { __lazy_nvm node "$@"; }
+
 # Load device specific customizations
 __source ~/.after.zshenv.zsh
