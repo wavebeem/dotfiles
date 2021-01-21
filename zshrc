@@ -20,50 +20,45 @@ setopt INTERACTIVE_COMMENTS
 PROMPT="%B%F{cyan}zsh:%f%b "
 PROMPT2="$PROMPT"
 
-# asdf nodejs defaults are not great
-export NODEJS_CHECK_SIGNATURES=no
-export ASDF_SKIP_RESHIM=1
-
-# Load plugins that might exist on this device
+# Automatic command suggestions as I type
 __source ~/.zsh-autosuggestions/zsh-autosuggestions.zsh
-__source ~/.asdf/asdf.sh
+
+# nvm loads kinda slowly, so let's wait to load it until we actually use node
+export NVM_DIR="$HOME/.nvm"
+__lazy_nvm() {
+  cmd="$1"
+  shift
+  unfunction nvm npm npx node
+  __source "$NVM_DIR/nvm.sh"
+  "$cmd" "$@"
+}
+nvm() { __lazy_nvm nvm "$@"; }
+npm() { __lazy_nvm npm "$@"; }
+npx() { __lazy_nvm npx "$@"; }
+node() { __lazy_nvm node "$@"; }
 
 # Change the zsh-autosuggestion colors (must be set after loading the plugin...)
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=cyan"
 
-# Load autocomplete data for asdf
-fpath=(${ASDF_DIR}/completions $fpath)
+# Some kind of autocomplete system? Not sure why I have to do this
 autoload -Uz compinit
 compinit
 
 # Use tab completion to install missing plugins on the current system
 __install.autosuggestions() {
-  git clone --depth 1 \
+  git clone \
     https://github.com/zsh-users/zsh-autosuggestions \
     ~/.zsh-autosuggestions
 }
 
-__install.asdf() {
-  git clone https://github.com/asdf-vm/asdf.git ~/.asdf
-}
-
-__install.asdf.nodejs() {
-  asdf plugin-add nodejs https://github.com/asdf-vm/asdf-nodejs.git
+# Install nvm
+__install.nvm() {
+  git clone https://github.com/nvm-sh/nvm.git ~/.nvm
 }
 
 # Print a blank line between prompts to make it easier to read
 precmd() {
   echo
-}
-
-# zsh (and bash) have a strange feature where the shell exits with the status
-# code of the last command you ran. This means that if you Control-C to SIGINT a
-# command, then exit the shell, your terminal emulator might warn you about the
-# command (zsh) failing. This fixes the issue by always exiting interactive zsh
-# sessions with status code 0.
-zshexit() {
-  true
-  exit 0
 }
 
 # Easy open files
