@@ -16,6 +16,10 @@ setopt GLOB_STAR_SHORT 2>/dev/null
 # Allow writing comments in interactive mode (why not?)
 setopt INTERACTIVE_COMMENTS
 
+# Enable both zsh and bash completion systems (nvm only support bash)
+autoload -Uz compinit
+compinit
+
 # Simple prompt that doesn't change size
 PROMPT="%B%F{cyan}zsh:%f%b "
 PROMPT2="$PROMPT"
@@ -26,10 +30,17 @@ __source ~/.zsh-autosuggestions/zsh-autosuggestions.zsh
 # nvm loads kinda slowly, so let's wait to load it until we actually use node
 export NVM_DIR="$HOME/.nvm"
 __lazy_nvm() {
+  # Remove zsh function shims
   cmd="$1"
   shift
   unfunction nvm npm npx node
+  # Load bash completion system
+  autoload -Uz bashcompinit
+  bashcompinit
+  # Load nvm
   __source "$NVM_DIR/nvm.sh"
+  __source "$NVM_DIR/bash_completion"
+  # Run the originally intended command
   "$cmd" "$@"
 }
 nvm() { __lazy_nvm nvm "$@"; }
@@ -39,10 +50,6 @@ node() { __lazy_nvm node "$@"; }
 
 # Change the zsh-autosuggestion colors (must be set after loading the plugin...)
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=cyan"
-
-# Some kind of autocomplete system? Not sure why I have to do this
-autoload -Uz compinit
-compinit
 
 # Use tab completion to install missing plugins on the current system
 __install.autosuggestions() {
