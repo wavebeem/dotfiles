@@ -64,7 +64,7 @@ alias '$'=""
 
 # Time saving shortcuts
 alias g="git status"
-alias g="git log"
+alias gl="git log"
 alias l="ls"
 alias ll="ls -hl"
 alias la="ll -a"
