@@ -9,7 +9,6 @@ $ ./install.sh
 ## Installation (Windows Powershell)
 
 ```
-$ cd windows
 $ .\install.ps1
 ```
 
@@ -65,11 +64,11 @@ have.
 When you've copied over all the dotfiles from your home directory into your own
 dotfiles repo, run the following commands:
 
-* * *
+---
 
 ### **MAKE SURE YOU ARE NOT COMMITTING PASSWORDS OR API KEYS**
 
-* * *
+---
 
 ```sh
 $ git add -A
