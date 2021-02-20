@@ -194,6 +194,7 @@
   "terminal.integrated.scrollback": 10000,
   "terminal.integrated.shell.windows": "D:\\PowerShell\\6\\pwsh.exe",
   "terminal.integrated.shellArgs.windows": ["-NoLogo"],
+  "terminal.integrated.showExitAlert": false,
   "typescript.updateImportsOnFileMove.enabled": "always",
   "window.autoDetectColorScheme": true,
   "window.title": "${rootPath}${separator}${remoteName}${separator}Code",
