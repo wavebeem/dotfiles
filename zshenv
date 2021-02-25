@@ -29,12 +29,6 @@ path=(
   $path
 )
 
-# Load file if it exists, else fail silently
-__source() {
-  local file="$1"
-  test -f "$file" && source "$file"
-}
-
 __bench.start() {
   __bench_last_time=$(ruby -e 'p Time.now.to_f')
 }
@@ -65,4 +59,4 @@ npx() { __lazy_nvm npx "$@"; }
 node() { __lazy_nvm node "$@"; }
 
 # Load device specific customizations
-__source ~/.after.zshenv.zsh
+source ~/.after.zshenv.zsh

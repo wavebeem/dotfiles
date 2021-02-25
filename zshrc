@@ -25,7 +25,7 @@ PROMPT="%B%F{cyan}zsh:%f%b "
 PROMPT2="$PROMPT"
 
 # Automatic command suggestions as I type
-__source ~/.zsh-autosuggestions/zsh-autosuggestions.zsh
+source ~/.zsh-autosuggestions/zsh-autosuggestions.zsh
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=cyan"
 
 # Use tab completion to install missing plugins on the current system
@@ -96,4 +96,4 @@ fi
 export __already_welcome="true"
 
 # Load device specific customizations
-__source ~/.after.zshrc.zsh
+source ~/.after.zshrc.zsh
