@@ -45,6 +45,7 @@
   "editor.minimap.renderCharacters": true,
   "editor.multiCursorModifier": "alt",
   "editor.overviewRulerBorder": false,
+  "editor.padding.top": 40,
   "editor.renderControlCharacters": false,
   "editor.renderIndentGuides": true,
   "editor.renderLineHighlight": "all",
@@ -178,6 +179,7 @@
   "python.formatting.provider": "black",
   "python.linting.pycodestyleEnabled": true,
   "python.linting.pylintEnabled": false,
+  "python.showStartPage": false,
   "search.exclude": {
     "**/build": true,
     "**/dist": true
@@ -207,6 +209,12 @@
   "workbench.editor.decorations.colors": true,
   "workbench.editor.enablePreviewFromQuickOpen": false,
   "workbench.editor.showTabs": false,
+  "workbench.editorAssociations": [
+    {
+      "filenamePattern": "*.ipynb",
+      "viewType": "jupyter.notebook.ipynb"
+    }
+  ],
   "workbench.iconTheme": "vscode-icon-theme",
   "workbench.preferredDarkColorTheme": "Uno Due Tre (Ocean)",
   "workbench.sideBar.location": "left",
