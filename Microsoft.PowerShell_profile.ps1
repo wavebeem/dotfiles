@@ -1,24 +1,22 @@
-$color = "Yellow"
-
 Set-PSReadlineOption -BellStyle None
 Set-PSReadlineOption -EditMode Emacs
 
 Set-PSReadLineOption -Colors @{
-  ContinuationPrompt = $color
-  Emphasis = $color
-  Error = $color
-  Selection = $color
-  Default = $color
-  Comment = $color
-  Keyword = $color
-  String = $color
-  Operator = $color
-  Variable = $color
-  Command = $color
-  Parameter = $color
-  Type = $color
-  Number = $color
-  Member = $color
+  ContinuationPrompt = "Yellow"
+  Emphasis = "Yellow"
+  Error = "Yellow"
+  Selection = "Yellow"
+  Default = "Yellow"
+  Comment = "Yellow"
+  Keyword = "Yellow"
+  String = "Green"
+  Operator = "Yellow"
+  Variable = "Yellow"
+  Command = "Magenta"
+  Parameter = "Yellow"
+  Type = "Yellow"
+  Number = "Yellow"
+  Member = "Yellow"
 }
 
 $host.PrivateData.ErrorForegroundColor = "Red"
@@ -26,6 +24,7 @@ $host.PrivateData.ErrorBackgroundColor = $host.ui.RawUI.BackgroundColor
 
 Set-Alias l ls
 Set-Alias ll ls
+Set-Alias g "git status"
 
 function prompt {
   Write-Host ""
@@ -36,9 +35,3 @@ function prompt {
 function .. {
   Set-Location ..
 }
-
-# TODO: How can I test if the shell is interactive?
-# if ((-not $__welcome) -and (Test-Path ~/.welcome)) {
-#   Get-Content ~/.welcome
-# }
-# $__welcome = $true

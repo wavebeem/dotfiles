@@ -10,24 +10,23 @@ function main() {
   install "gitignore"
   install "welcome"
 
-  installAs "ahk\misc.ahk" "$env:APPDATA\Microsoft\Windows\Start Menu\Programs\Startup\misc.ahk"
-  installAs "Microsoft.PowerShell_profile.ps1" $profile
-  installAs "win-terminal\settings.json" "$env:LOCALAPPDATA\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json"
-  installAs "vscode\keybindings.json" "$VSCODE\keybindings.json"
-  installAs "vscode\settings.json" "$VSCODE\settings.json"
-  installAs "vscode\snippets" "$VSCODE\snippets"
+  install_as "ahk\misc.ahk" "$env:APPDATA\Microsoft\Windows\Start Menu\Programs\Startup\misc.ahk"
+  install_as "Microsoft.PowerShell_profile.ps1" $profile
+  install_as "win-terminal\settings.json" "$env:LOCALAPPDATA\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json"
+  install_as "vscode\keybindings.json" "$VSCODE\keybindings.json"
+  install_as "vscode\settings.json" "$VSCODE\settings.json"
+  install_as "vscode\snippets" "$VSCODE\snippets"
 }
 
 function install($path) {
-  $dest = "$HOME\.$path"
-  installAs $path $dest
+  install_as $path "$HOME\.$path"
 }
 
-function installAs($path, $dest) {
+function install_as($path, $dest) {
   $src = "$DOTFILES\$path"
   show $src $dest
   if (Test-Path $dest) {
-    if (isSymlink $dest) {
+    if (is_symlink $dest) {
       Remove-Item -Force $dest
     } else {
       if (-Not (confirm "Replace $dest with symlink?")) {
@@ -37,8 +36,8 @@ function installAs($path, $dest) {
     }
   }
   $dir = Split-Path -Path $path
-  maybeCreatePrefix $dir
-  linkItUp $src $dest
+  maybe_create_prefix $dir
+  link_it_up $src $dest
 }
 
 function show($src, $dest) {
@@ -48,7 +47,7 @@ function show($src, $dest) {
   Write-Host
 }
 
-function linkItUp($src, $dest) {
+function link_it_up($src, $dest) {
   if (Test-Path -PathType Container -Path $src) {
     cmd /c mklink /d $dest $src | Out-Null
   } else {
@@ -56,7 +55,7 @@ function linkItUp($src, $dest) {
   }
 }
 
-function maybeCreatePrefix($path) {
+function maybe_create_prefix($path) {
   if (($path -Eq $null) -Or ($path -Eq "")) {
     return
   }
@@ -72,7 +71,7 @@ function confirm($title) {
   return $answer -eq 0
 }
 
-function isSymlink($path) {
+function is_symlink($path) {
   Get-Item $path | Where-Object {
     $_.Attributes -match "ReparsePoint"
   }

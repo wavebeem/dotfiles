@@ -44,8 +44,7 @@ Main() {
 # Shortcut since most of our dotfiles follow a predictable structure
 Install() {
   local path="$1"
-  local dest="$HOME/.$path"
-  Install_as "$path" "$dest"
+  Install_as "$path" "$HOME/.$path"
 }
 
 Install_as() {

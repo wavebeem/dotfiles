@@ -24,11 +24,3 @@ FileEncoding UTF-8-RAW
   TrayTip, AutoHotkey, AutoHotkey configuration reloaded
   Reload
   Return
-
-; Run a windowed game "docked" to the top left of my screen, so the titlebar is
-; pushed off screen to avoid distracting me (#FFFFFF white titlebars are painful
-; to look at while gaming)
-^!u::
-  WinMove, A, , -3, -26, DEFAULT, DEFAULT
-  Return
-

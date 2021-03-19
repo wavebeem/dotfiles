@@ -46,6 +46,7 @@
   "editor.minimap.renderCharacters": true,
   "editor.multiCursorModifier": "alt",
   "editor.overviewRulerBorder": false,
+  "editor.padding.top": 40,
   "editor.renderControlCharacters": false,
   "editor.renderIndentGuides": true,
   "editor.renderLineHighlight": "all",
@@ -179,6 +180,7 @@
   "python.formatting.provider": "black",
   "python.linting.pycodestyleEnabled": true,
   "python.linting.pylintEnabled": false,
+  "python.showStartPage": false,
   "search.exclude": {
     "**/build": true,
     "**/dist": true
@@ -195,16 +197,27 @@
   "terminal.integrated.scrollback": 10000,
   "terminal.integrated.shell.windows": "D:\\PowerShell\\6\\pwsh.exe",
   "terminal.integrated.shellArgs.windows": ["-NoLogo"],
+  "terminal.integrated.showExitAlert": false,
   "typescript.updateImportsOnFileMove.enabled": "always",
+  "window.autoDetectColorScheme": true,
   "window.menuBarVisibility": "compact",
   "window.title": "${rootPath}${separator}${remoteName}${separator}Code",
   "window.titleBarStyle": "custom",
   "window.titleSeparator": " – ",
   "workbench.activityBar.visible": true,
   "workbench.colorTheme": "Uno Due Tre (Ocean)",
+  "workbench.editor.decorations.badges": true,
+  "workbench.editor.decorations.colors": true,
   "workbench.editor.enablePreviewFromQuickOpen": false,
   "workbench.editor.showTabs": false,
+  "workbench.editorAssociations": [
+    {
+      "filenamePattern": "*.ipynb",
+      "viewType": "jupyter.notebook.ipynb"
+    }
+  ],
   "workbench.iconTheme": "vscode-icon-theme",
+  "workbench.preferredDarkColorTheme": "Uno Due Tre (Ocean)",
   "workbench.sideBar.location": "left",
   "workbench.startupEditor": "newUntitledFile",
   "workbench.statusBar.visible": true,
