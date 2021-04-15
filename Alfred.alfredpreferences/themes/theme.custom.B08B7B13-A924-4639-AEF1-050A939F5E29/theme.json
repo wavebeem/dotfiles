@@ -44,8 +44,8 @@
       "color" : "#FEFFFFFF",
       "paddingHorizontal" : 8,
       "width" : 700,
-      "borderPadding" : 0,
-      "borderColor" : "#0000007F",
+      "borderPadding" : 1,
+      "borderColor" : "#0000003F",
       "blur" : 0,
       "roundness" : 8,
       "paddingVertical" : 8
