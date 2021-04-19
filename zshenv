@@ -30,19 +30,17 @@ path=(
 )
 
 __bench.start() {
-  __bench_last_time=$(ruby -e 'p Time.now.to_f')
+  __bench_last_time=$(ruby -e 'p(Time.now.to_f)')
 }
 
 __bench.end() {
   start="$__bench_last_time" ruby -e 'p(Time.now.to_f - ENV["start"].to_f)'
 }
 
-# lazy load nvm since it takes half a second to load on my work mac
 export NVM_DIR="$HOME/.nvm"
-__lazy_nvm() {
+
+__nvm.load() {
   # Remove zsh function shims
-  cmd="$1"
-  shift
   unfunction nvm npm npx node
   # Load bash completion system
   autoload -Uz bashcompinit
@@ -50,13 +48,24 @@ __lazy_nvm() {
   # Load nvm
   source "$NVM_DIR/nvm.sh"
   source "$NVM_DIR/bash_completion"
-  # Run the originally intended command
-  "$cmd" "$@"
 }
-nvm() { __lazy_nvm nvm "$@"; }
-npm() { __lazy_nvm npm "$@"; }
-npx() { __lazy_nvm npx "$@"; }
-node() { __lazy_nvm node "$@"; }
+
+# lazy load nvm since it takes half a second to load on my work mac
+__nvm.lazy() {
+  __nvm.load
+  # Run the originally intended command
+  "$@"
+}
+
+nvm() { __nvm.lazy nvm "$@"; }
+npm() { __nvm.lazy npm "$@"; }
+npx() { __nvm.lazy npx "$@"; }
+node() { __nvm.lazy node "$@"; }
+
+# Load nvm in the background if it exists
+if [[ -f "$NVM_DIR" ]]; then
+  __nvm.load &
+fi
 
 # Load device specific customizations
 source ~/.after.zshenv.zsh
