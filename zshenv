@@ -30,11 +30,11 @@ path=(
 )
 
 __bench.start() {
-  __bench_last_time=$(ruby -e 'p(Time.now.to_f)')
+  __bench_last_time=$(ruby -e 'p Time.now.to_f')
 }
 
 __bench.end() {
-  start="$__bench_last_time" ruby -e 'p(Time.now.to_f - ENV["start"].to_f)'
+  start="$__bench_last_time" ruby -e 'p Time.now.to_f - ENV["start"].to_f'
 }
 
 export NVM_DIR="$HOME/.nvm"
@@ -50,21 +50,13 @@ __nvm.load() {
   source "$NVM_DIR/bash_completion"
 }
 
-# lazy load nvm since it takes half a second to load on my work mac
-__nvm.lazy() {
-  __nvm.load
-  # Run the originally intended command
-  "$@"
-}
-
-nvm() { __nvm.lazy nvm "$@"; }
-npm() { __nvm.lazy npm "$@"; }
-npx() { __nvm.lazy npx "$@"; }
-node() { __nvm.lazy node "$@"; }
-
 # Load nvm in the background if it exists
 if [[ -f "$NVM_DIR" ]]; then
   __nvm.load &
+  nvm() { __nvm.load; nvm "$@"; }
+  npm() { __nvm.load; npm "$@"; }
+  npx() { __nvm.load; npx "$@"; }
+  node() { __nvm.load; node "$@"; }
 fi
 
 # Load device specific customizations

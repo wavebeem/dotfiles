@@ -1,12 +1,9 @@
 #!/usr/bin/env bash
 set -eu
 
-Ansi() {
-  echo $'\e['"$@m"
-}
-magenta=$(Ansi 35)
-cyan=$(Ansi 36)
-reset=$(Ansi 0)
+magenta=$'\e[35m'
+cyan=$'\e[36m'
+reset=$'\e[0m'
 
 # Find absolute path to current directory
 dotfiles=$({ dir=$(dirname "$0"); cd "$dir"; pwd; })
