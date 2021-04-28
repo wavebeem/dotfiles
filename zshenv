@@ -37,26 +37,13 @@ __bench.end() {
   start="$__bench_last_time" ruby -e 'p Time.now.to_f - ENV["start"].to_f'
 }
 
+# Load nvm if it exists
 export NVM_DIR="$HOME/.nvm"
-
-__nvm.load() {
-  # Remove zsh function shims
-  unfunction nvm npm npx node
-  # Load bash completion system
+if [[ -e "$NVM_DIR" ]]; then
   autoload -Uz bashcompinit
   bashcompinit
-  # Load nvm
   source "$NVM_DIR/nvm.sh"
   source "$NVM_DIR/bash_completion"
-}
-
-# Load nvm in the background if it exists
-if [[ -f "$NVM_DIR" ]]; then
-  __nvm.load &
-  nvm() { __nvm.load; nvm "$@"; }
-  npm() { __nvm.load; npm "$@"; }
-  npx() { __nvm.load; npx "$@"; }
-  node() { __nvm.load; node "$@"; }
 fi
 
 # Load device specific customizations
