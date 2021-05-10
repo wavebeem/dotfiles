@@ -1,4 +1,6 @@
+-- Namespaces
 cmd = {}
+layout = {}
 
 personalApps = {
   "Firefox Developer Edition",
@@ -17,29 +19,40 @@ function cmd.hidePersonalApps()
   end
 end
 
--- App, Window, Screen, Unit, Frame, Full
--- http://www.hammerspoon.org/docs/hs.layout.html#apply
-layout = {
-  {"Code", nil, nil, hs.layout.left50, nil, nil},
-  {"iTerm2", nil, nil, hs.layout.left50, nil, nil},
-  {"Terminal", nil, nil, hs.layout.left50, nil, nil},
-  {"zoom.us", nil, nil, hs.layout.left50, nil, nil},
+function layout.new(name, size)
+  -- App, Window, Screen, Unit, Frame, Full
+  -- http://www.hammerspoon.org/docs/hs.layout.html#apply
+  return { name, nil, nil, size, nil, nil }
+end
 
-  {"Slack", nil, nil, hs.layout.right50, nil, nil},
-  {"LINE", nil, nil, hs.layout.right50, nil, nil},
-  {"Firefox", nil, nil, hs.layout.right50, nil, nil},
-  {"Google Chrome", nil, nil, hs.layout.right50, nil, nil},
-  {"Cypress", nil, nil, hs.layout.right50, nil, nil},
-  {"Finder", nil, nil, hs.layout.right50, nil, nil},
-  {"Hammerspoon", nil, nil, hs.layout.right50, nil, nil},
-  {"Firefox Developer Edition", nil, nil, hs.layout.right50, nil, nil},
-  {"Discord", nil, nil, hs.layout.right50, nil, nil},
-  {"Spotify", nil, nil, hs.layout.right50, nil, nil},
-  {"Music", nil, nil, hs.layout.right50, nil, nil},
-}
+function layout.left50(name)
+  return layout.new(name, hs.layout.left50)
+end
+
+function layout.right50(name)
+  return layout.new(name, hs.layout.right50)
+end
 
 function cmd.splitUpApps()
-  hs.layout.apply(layout)
+  hs.layout.apply {
+    -- Left
+    layout.left50 "Code",
+    layout.left50 "iTerm2",
+    layout.left50 "Terminal",
+    layout.left50 "zoom.us",
+    -- Right
+    layout.right50 "Slack",
+    layout.right50 "LINE",
+    layout.right50 "Firefox",
+    layout.right50 "Google Chrome",
+    layout.right50 "Cypress",
+    layout.right50 "Finder",
+    layout.right50 "Hammerspoon",
+    layout.right50 "Firefox Developer Edition",
+    layout.right50 "Discord",
+    layout.right50 "Spotify",
+    layout.right50 "Music",
+  }
 end
 
 -- If this were a true "unhide all windows" it would uniminimize windows too.
@@ -89,6 +102,7 @@ function cmd.toggleConsole()
   hs.toggleConsole()
 end
 
+-- Configuration
 hs.window.animationDuration = 0
 
 hs.alert.defaultStyle.fillColor = {white = 0.1, alpha = 1}

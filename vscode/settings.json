@@ -216,9 +216,9 @@
       "viewType": "jupyter.notebook.ipynb"
     }
   ],
-  "workbench.iconTheme": "material-icon-theme",
+  "workbench.iconTheme": "vscode-icons",
   "workbench.preferredDarkColorTheme": "Uno Due Tre (Ocean)",
-  "workbench.preferredHighContrastColorTheme": "Uno Due Tre (Ocean)",
+  "workbench.preferredHighContrastColorTheme": "Uno Due Tre",
   "workbench.preferredLightColorTheme": "Uno Due Tre",
   "workbench.sideBar.location": "left",
   "workbench.startupEditor": "newUntitledFile",
