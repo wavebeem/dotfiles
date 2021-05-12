@@ -3,10 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>fallbacks</key>
-	<array>
-		<string>features.websearch.duckduckgo.fallback</string>
-		<string>features.websearch.gtranslate.fallback</string>
-	</array>
+	<array/>
 	<key>showContacts</key>
 	<false/>
 </dict>

@@ -45,17 +45,6 @@ precmd() {
   echo
 }
 
-hqx() {
-  local x="$1"
-  local in="$2"
-  local out="$3"
-  ffmpeg -v fatal -y -i "$in" -filter_complex hqx="$x" "$out"
-}
-
-alias hq2x="hqx 2"
-alias hq3x="hqx 3"
-alias hq4x="hqx 4"
-
 # Easy open files
 if [[ $(uname -r) = *Microsoft ]]; then
   alias o='explorer.exe'
@@ -90,7 +79,7 @@ alias s="cd ..; pwd"
 alias ..="s"
 
 # Show a cute little graphic in the terminal
-if [[ ! $__already_welcome && -f ~/.welcome ]]; then
+if [[ ! $__already_welcome && -e ~/.welcome ]]; then
   cat ~/.welcome
 fi
 export __already_welcome="true"
