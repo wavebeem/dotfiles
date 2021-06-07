@@ -7,8 +7,8 @@ export LANG="en_US.UTF-8"
 # Make folders bold using ls on macOS
 export LSCOLORS="ExfxcxdxBxegedabagacad"
 
-# Edit using VSCode for git command line stuff
-export EDITOR="code --wait"
+# Still easier to use vim for quick edits even though I prefer Code
+export EDITOR="vim"
 export GIT_EDITOR="$EDITOR"
 export VISUAL="$EDITOR"
 
@@ -37,13 +37,9 @@ __bench.end() {
   start="$__bench_last_time" ruby -e 'p Time.now.to_f - ENV["start"].to_f'
 }
 
-# Load nvm if it exists
-export NVM_DIR="$HOME/.nvm"
-if [[ -e "$NVM_DIR" ]]; then
-  autoload -Uz bashcompinit
-  bashcompinit
-  source "$NVM_DIR/nvm.sh"
-  source "$NVM_DIR/bash_completion"
+# Load nodenv if it exists
+if which nodenv >/dev/null; then
+  eval "$(nodenv init -)"
 fi
 
 # Load device specific customizations

@@ -40,6 +40,11 @@ __install.nvm() {
   git clone https://github.com/nvm-sh/nvm.git ~/.nvm
 }
 
+# Install nodenv
+__install.nodenv() {
+  brew install nodenv node-build
+}
+
 # Print a blank line between prompts to make it easier to read
 precmd() {
   echo
@@ -78,11 +83,7 @@ alias d='pwd'
 alias s="cd ..; pwd"
 alias ..="s"
 
-# Show a cute little graphic in the terminal
-if [[ ! $__already_welcome && -e ~/.welcome ]]; then
-  cat ~/.welcome
-fi
-export __already_welcome="true"
-
 # Load device specific customizations
 source ~/.after.zshrc.zsh
+
+__bench.end
