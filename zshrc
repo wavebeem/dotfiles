@@ -4,6 +4,9 @@ HISTSIZE=10000
 SAVEHIST=10000
 setopt APPEND_HISTORY
 
+# Use Emacs-style keyboard shortcuts (bash default)
+bindkey -e
+
 # Allow use of ** globbing
 setopt EXTENDED_GLOB
 

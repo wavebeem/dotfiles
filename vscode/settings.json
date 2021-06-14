@@ -204,7 +204,7 @@
   "workbench.editor.decorations.colors": true,
   "workbench.editor.enablePreviewFromQuickOpen": false,
   "workbench.editor.showTabs": false,
-  "workbench.iconTheme": "vscode-icons",
+  "workbench.iconTheme": "ayu",
   "workbench.preferredDarkColorTheme": "Uno Due Tre (Ocean)",
   "workbench.preferredHighContrastColorTheme": "Uno Due Tre",
   "workbench.preferredLightColorTheme": "Uno Due Tre",
@@ -213,5 +213,6 @@
   "workbench.statusBar.visible": true,
   "workbench.tree.indent": 16,
   "zenMode.centerLayout": false,
-  "zenMode.fullScreen": false
+  "zenMode.fullScreen": false,
+  "workbench.productIconTheme": "fluent-icons"
 }
