@@ -85,5 +85,3 @@ alias ..="s"
 
 # Load device specific customizations
 source ~/.after.zshrc.zsh
-
-__bench.end
