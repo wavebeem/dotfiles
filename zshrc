@@ -42,7 +42,7 @@ __install.nvm() {
 
 # Install nodenv
 __install.nodenv() {
-  brew install nodenv node-build
+  brew install nodenv node-build nodenv/nodenv/nodenv-package-rehash
 }
 
 # Print a blank line between prompts to make it easier to read

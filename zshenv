@@ -39,7 +39,7 @@ __bench.end() {
 
 # Load nodenv if it exists
 if which nodenv >/dev/null; then
-  eval "$(nodenv init -)"
+  eval "$(nodenv init - --no-rehash)"
 fi
 
 # Load device specific customizations
