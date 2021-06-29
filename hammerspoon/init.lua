@@ -128,4 +128,4 @@ hs.hotkey.bind(prefix, "v", cmd.showApplicationName)
 hs.hotkey.bind(prefix, "r", cmd.reload)
 hs.hotkey.bind(prefix, "c", cmd.toggleConsole)
 
-hs.alert.show("hammerspoon", 0.5)
+hs.alert.show("Hammerspoon", 0.5)
