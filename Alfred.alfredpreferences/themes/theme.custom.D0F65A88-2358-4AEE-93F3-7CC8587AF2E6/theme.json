@@ -21,7 +21,7 @@
         "font" : "System",
         "color" : "#D5D5D5FF"
       },
-      "iconPaddingHorizontal" : 16,
+      "iconPaddingHorizontal" : 8,
       "roundness" : 4,
       "paddingVertical" : 8,
       "iconSize" : 32

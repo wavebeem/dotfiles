@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>com.wavebeem.unit-conversion</string>
+	<key>connections</key>
+	<dict>
+		<key>3507F412-0120-4D99-9AFC-DAB13C92FE39</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>A825E9AB-BDB9-4F2F-BD84-AF8A0D1860B4</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Brian Mock (brian@wavebeem.com)</string>
+	<key>description</key>
+	<string></string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Unit Conversion</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>f</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>script</key>
+				<string>require "json"
+
+fahrenheit = ARGV[0].to_f
+celsius = (fahrenheit - 32.0) / (9.0 / 5.0)
+results = [
+  "%d °F (%d °C)" % [fahrenheit, celsius]
+]
+
+list = { items: results.map {|r| { title: r, arg: r } } }
+
+puts list.to_json</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string>convert.rb</string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string>Convert Fahrenheit to Celsius</string>
+				<key>type</key>
+				<integer>8</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>3507F412-0120-4D99-9AFC-DAB13C92FE39</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>autopaste</key>
+				<true/>
+				<key>clipboardtext</key>
+				<string>{query}</string>
+				<key>ignoredynamicplaceholders</key>
+				<false/>
+				<key>transient</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>A825E9AB-BDB9-4F2F-BD84-AF8A0D1860B4</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string>Keywords are one of Alfred's most commonly used and most useful ways of launching actions. Set a keyword and connect it to the action(s) you want to perform.
+
+Type your keyword into Alfred, followed by your input text if needed, and you'll be on your way to boosting your productivity!</string>
+	<key>uidata</key>
+	<dict>
+		<key>3507F412-0120-4D99-9AFC-DAB13C92FE39</key>
+		<dict>
+			<key>xpos</key>
+			<integer>10</integer>
+			<key>ypos</key>
+			<integer>25</integer>
+		</dict>
+		<key>A825E9AB-BDB9-4F2F-BD84-AF8A0D1860B4</key>
+		<dict>
+			<key>xpos</key>
+			<integer>205</integer>
+			<key>ypos</key>
+			<integer>30</integer>
+		</dict>
+	</dict>
+	<key>version</key>
+	<string>1.0</string>
+	<key>webaddress</key>
+	<string>https://www.wavebeem.com</string>
+</dict>
+</plist>

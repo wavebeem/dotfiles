@@ -214,5 +214,12 @@
   "workbench.tree.indent": 16,
   "zenMode.centerLayout": false,
   "zenMode.fullScreen": false,
-  "workbench.productIconTheme": "fluent-icons"
+  "workbench.productIconTheme": "fluent-icons",
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter-notebook"
+  },
+  "notebook.cellToolbarLocation": {
+    "default": "right",
+    "jupyter-notebook": "left"
+  }
 }
