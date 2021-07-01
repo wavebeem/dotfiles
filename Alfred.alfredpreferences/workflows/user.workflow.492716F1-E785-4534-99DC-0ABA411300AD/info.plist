@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>bundleid</key>
-	<string>com.wavebeem.unit-conversion</string>
+	<string>com.wavebeem.fahrenheit-to-celsius</string>
 	<key>connections</key>
 	<dict>
 		<key>3507F412-0120-4D99-9AFC-DAB13C92FE39</key>
@@ -27,9 +27,28 @@
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
-	<string>Unit Conversion</string>
+	<string>Fahrenheit to Celsius</string>
 	<key>objects</key>
 	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>autopaste</key>
+				<true/>
+				<key>clipboardtext</key>
+				<string>{query}</string>
+				<key>ignoredynamicplaceholders</key>
+				<false/>
+				<key>transient</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>A825E9AB-BDB9-4F2F-BD84-AF8A0D1860B4</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
@@ -89,25 +108,6 @@ puts list.to_json</string>
 			<key>version</key>
 			<integer>3</integer>
 		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>autopaste</key>
-				<true/>
-				<key>clipboardtext</key>
-				<string>{query}</string>
-				<key>ignoredynamicplaceholders</key>
-				<false/>
-				<key>transient</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.clipboard</string>
-			<key>uid</key>
-			<string>A825E9AB-BDB9-4F2F-BD84-AF8A0D1860B4</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
 	</array>
 	<key>readme</key>
 	<string>Keywords are one of Alfred's most commonly used and most useful ways of launching actions. Set a keyword and connect it to the action(s) you want to perform.
@@ -118,16 +118,16 @@ Type your keyword into Alfred, followed by your input text if needed, and you'll
 		<key>3507F412-0120-4D99-9AFC-DAB13C92FE39</key>
 		<dict>
 			<key>xpos</key>
-			<integer>10</integer>
+			<integer>20</integer>
 			<key>ypos</key>
 			<integer>25</integer>
 		</dict>
 		<key>A825E9AB-BDB9-4F2F-BD84-AF8A0D1860B4</key>
 		<dict>
 			<key>xpos</key>
-			<integer>205</integer>
+			<integer>175</integer>
 			<key>ypos</key>
-			<integer>30</integer>
+			<integer>25</integer>
 		</dict>
 	</dict>
 	<key>version</key>
