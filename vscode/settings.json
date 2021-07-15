@@ -172,6 +172,10 @@
   "html.format.endWithNewline": true,
   "html.format.indentHandlebars": true,
   "javascript.updateImportsOnFileMove.enabled": "always",
+  "notebook.cellToolbarLocation": {
+    "default": "right",
+    "jupyter-notebook": "left"
+  },
   "python.formatting.provider": "black",
   "python.linting.pycodestyleEnabled": true,
   "python.linting.pylintEnabled": false,
@@ -192,6 +196,7 @@
   "terminal.integrated.scrollback": 10000,
   "terminal.integrated.showExitAlert": false,
   "terminal.integrated.tabs.enabled": true,
+  "typescript.tsserver.log": "verbose",
   "typescript.updateImportsOnFileMove.enabled": "always",
   "window.autoDetectColorScheme": true,
   "window.menuBarVisibility": "compact",
@@ -204,22 +209,18 @@
   "workbench.editor.decorations.colors": true,
   "workbench.editor.enablePreviewFromQuickOpen": false,
   "workbench.editor.showTabs": false,
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter-notebook"
+  },
   "workbench.iconTheme": "ayu",
   "workbench.preferredDarkColorTheme": "Uno Due Tre (Ocean)",
   "workbench.preferredHighContrastColorTheme": "Uno Due Tre",
   "workbench.preferredLightColorTheme": "Uno Due Tre",
+  "workbench.productIconTheme": "fluent-icons",
   "workbench.sideBar.location": "left",
   "workbench.startupEditor": "newUntitledFile",
   "workbench.statusBar.visible": true,
   "workbench.tree.indent": 16,
   "zenMode.centerLayout": false,
-  "zenMode.fullScreen": false,
-  "workbench.productIconTheme": "fluent-icons",
-  "workbench.editorAssociations": {
-    "*.ipynb": "jupyter-notebook"
-  },
-  "notebook.cellToolbarLocation": {
-    "default": "right",
-    "jupyter-notebook": "left"
-  }
+  "zenMode.fullScreen": false
 }
