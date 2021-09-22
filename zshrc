@@ -49,6 +49,11 @@ __install.nodenv() {
   nodenv package-hooks install --all
 }
 
+# Install homebrew
+__install.homebrew() {
+  bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+}
+
 # Print a blank line between prompts to make it easier to read
 precmd() {
   echo

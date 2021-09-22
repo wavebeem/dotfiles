@@ -196,7 +196,7 @@
   "terminal.integrated.scrollback": 10000,
   "terminal.integrated.showExitAlert": false,
   "terminal.integrated.tabs.enabled": true,
-  "typescript.tsserver.log": "verbose",
+  "typescript.tsserver.log": "off",
   "typescript.updateImportsOnFileMove.enabled": "always",
   "window.autoDetectColorScheme": true,
   "window.menuBarVisibility": "compact",
