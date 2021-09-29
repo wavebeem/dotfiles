@@ -4,6 +4,9 @@
 ; I guess this matters? But calling "Send" still mangles Unicode characters
 FileEncoding UTF-8-RAW
 
+; Ubind Win-C to prevent Cortana from opening
+#c::Return
+
 ; Unbind Ctrl-Shift-Q to prevent accidental program quits
 ^+q::Return
 
