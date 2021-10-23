@@ -32,7 +32,7 @@ function install_as($path, $dest) {
       if (-Not (confirm "Replace $dest with symlink?")) {
         return
       }
-      Remove-Item -Force $dest
+      Remove-Item -Recurse -Force $dest
     }
   }
   $dir = Split-Path -Path $path
