@@ -33,6 +33,7 @@
   "editor.acceptSuggestionOnCommitCharacter": false,
   "editor.acceptSuggestionOnEnter": "off",
   "editor.accessibilitySupport": "off",
+  "editor.bracketPairColorization.enabled": true,
   "editor.copyWithSyntaxHighlighting": false,
   "editor.cursorBlinking": "smooth",
   "editor.dragAndDrop": false,
@@ -41,6 +42,7 @@
   "editor.fontSize": 14,
   "editor.formatOnPaste": false,
   "editor.formatOnSave": true,
+  "editor.guides.bracketPairs": true,
   "editor.minimap.enabled": false,
   "editor.minimap.renderCharacters": true,
   "editor.multiCursorModifier": "alt",
@@ -72,6 +74,7 @@
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
   "files.associations": {
+    "*.njk": "html",
     "bashrc": "shellscript",
     "zshenv": "shellscript",
     "zshrc": "shellscript"
@@ -186,6 +189,7 @@
   },
   "search.smartCase": true,
   "search.useIgnoreFiles": true,
+  "security.workspace.trust.untrustedFiles": "open",
   "simpleIcons.hideArrows": false,
   "terminal.integrated.cursorBlinking": true,
   "terminal.integrated.cursorStyle": "line",
@@ -212,7 +216,7 @@
   "workbench.editorAssociations": {
     "*.ipynb": "jupyter-notebook"
   },
-  "workbench.iconTheme": "ayu",
+  "workbench.iconTheme": "vscode-icon-theme",
   "workbench.preferredDarkColorTheme": "Uno Due Tre (Ocean)",
   "workbench.preferredHighContrastColorTheme": "Uno Due Tre",
   "workbench.preferredLightColorTheme": "Uno Due Tre",
