@@ -1,3 +1,5 @@
+# shellcheck shell=zsh
+
 # Keep track of lots of history
 HISTFILE=~/.histfile
 HISTSIZE=10000
@@ -31,6 +33,49 @@ PROMPT2="$PROMPT"
 source ~/.zsh-autosuggestions/zsh-autosuggestions.zsh
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=cyan"
 
+# Python virtualenv assumes you want your shell prompt mangled without this
+export VIRTUAL_ENV_DISABLE_PROMPT="true"
+
+# English and Unicode, please
+export LANG="en_US.UTF-8"
+
+# Make folders bold using ls on macOS
+export LSCOLORS="ExfxcxdxBxegedabagacad"
+
+# Still easier to use vim for quick edits even though I prefer Code
+export EDITOR="vim"
+export GIT_EDITOR="$EDITOR"
+export VISUAL="$EDITOR"
+
+# less is better than more
+export PAGER="less"
+
+export PYENV_ROOT="$HOME/.pyenv"
+
+path=(
+  # Load user installed commands
+  "$HOME/.local/bin"
+  # Load Rust Cargo commands
+  "$HOME/.cargo/bin"
+  # Python stuff
+  "$PYENV_ROOT/bin"
+  "$PYENV_ROOT/shims"
+  "$HOME/.poetry/bin"
+  $path
+)
+
+__path() {
+  echo $path | tr ' ' '\n'
+}
+
+__bench.start() {
+  __bench_last_time=$(ruby -e 'p Time.now.to_f')
+}
+
+__bench.end() {
+  start="$__bench_last_time" ruby -e 'p Time.now.to_f - ENV["start"].to_f'
+}
+
 # Use tab completion to install missing plugins on the current system
 __install.autosuggestions() {
   git clone \
@@ -47,6 +92,11 @@ __install.nvm() {
 __install.nodenv() {
   brew install nodenv node-build nodenv/nodenv/nodenv-package-rehash
   nodenv package-hooks install --all
+}
+
+# Install pyenv
+__install.pyenv() {
+   git clone https://github.com/pyenv/pyenv.git ~/.pyenv
 }
 
 # Install homebrew
@@ -91,6 +141,16 @@ alias T="tmux attach -d"
 alias d='pwd'
 alias s="cd ..; pwd"
 alias ..="s"
+
+# Upgrade pyenv to a shell function
+if command -v pyenv >/dev/null; then
+  eval "$(pyenv init -)"
+fi
+
+# Load nodenv if it exists
+if which nodenv >/dev/null; then
+  eval "$(nodenv init - --no-rehash)"
+fi
 
 # Load device specific customizations
 source ~/.after.zshrc.zsh

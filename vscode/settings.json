@@ -1,4 +1,7 @@
 {
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": false
@@ -27,8 +30,10 @@
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "breadcrumbs.enabled": false,
-  "diffEditor.ignoreTrimWhitespace": true,
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "diffEditor.ignoreTrimWhitespace": false,
   "diffEditor.renderSideBySide": false,
   "editor.acceptSuggestionOnCommitCharacter": false,
   "editor.acceptSuggestionOnEnter": "off",
@@ -38,9 +43,9 @@
   "editor.dragAndDrop": false,
   "editor.find.addExtraSpaceOnTop": false,
   "editor.fontFamily": "\"JetBrains Mono\", Input, Menlo, Consolas, monospace",
-  "editor.fontSize": 14,
+  "editor.fontSize": 16,
   "editor.formatOnPaste": false,
-  "editor.formatOnSave": true,
+  "editor.guides.bracketPairs": "active",
   "editor.minimap.enabled": false,
   "editor.minimap.renderCharacters": true,
   "editor.multiCursorModifier": "alt",
@@ -104,6 +109,7 @@
     "**/tmp": true
   },
   "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
   "files.watcherExclude": {
     "**/.git/objects/**": true,
     "**/build": true,
@@ -191,7 +197,6 @@
   "terminal.integrated.cursorStyle": "line",
   "terminal.integrated.cursorWidth": 2,
   "terminal.integrated.fontSize": 14,
-  "terminal.integrated.gpuAcceleration": "canvas",
   "terminal.integrated.macOptionIsMeta": true,
   "terminal.integrated.minimumContrastRatio": 4.5,
   "terminal.integrated.scrollback": 10000,
@@ -213,12 +218,11 @@
   "workbench.editorAssociations": {
     "*.ipynb": "jupyter-notebook"
   },
-  "workbench.iconTheme": null,
+  "workbench.iconTheme": "vscode-icon-theme",
   "workbench.preferredDarkColorTheme": "Uno Due Tre (Ocean)",
   "workbench.preferredHighContrastColorTheme": "Uno Due Tre",
   "workbench.preferredLightColorTheme": "Uno Due Tre",
   "workbench.productIconTheme": "fluent-icons",
-  "workbench.sideBar.location": "left",
   "workbench.startupEditor": "newUntitledFile",
   "workbench.statusBar.visible": true,
   "workbench.tree.indent": 16,
