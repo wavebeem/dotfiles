@@ -80,8 +80,7 @@
     "*.njk": "html",
     "bashrc": "shellscript",
     "zshenv": "shellscript",
-    "zshrc": "shellscript",
-    "*.njk": "html"
+    "zshrc": "shellscript"
   },
   "files.defaultLanguage": "markdown",
   "files.exclude": {
@@ -228,7 +227,7 @@
   "workbench.startupEditor": "newUntitledFile",
   "workbench.statusBar.visible": true,
   "workbench.tree.indent": 16,
+  "workbench.tree.renderIndentGuides": "always",
   "zenMode.centerLayout": false,
-  "zenMode.fullScreen": false,
-  "workbench.tree.renderIndentGuides": "always"
+  "zenMode.fullScreen": false
 }
