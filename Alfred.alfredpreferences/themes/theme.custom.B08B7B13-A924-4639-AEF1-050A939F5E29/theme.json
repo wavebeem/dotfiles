@@ -44,13 +44,14 @@
       "color" : "#FEFFFFFF",
       "paddingHorizontal" : 8,
       "width" : 700,
-      "borderPadding" : 1,
+      "borderPadding" : 0,
       "borderColor" : "#0000003F",
       "blur" : 0,
       "roundness" : 8,
       "paddingVertical" : 8
     },
     "credit" : "Brian Mock",
+    "visualEffectMode" : 1,
     "separator" : {
       "color" : "#00000019",
       "thickness" : 0

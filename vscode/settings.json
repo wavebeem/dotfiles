@@ -74,7 +74,8 @@
   "files.associations": {
     "bashrc": "shellscript",
     "zshenv": "shellscript",
-    "zshrc": "shellscript"
+    "zshrc": "shellscript",
+    "*.njk": "html"
   },
   "files.defaultLanguage": "markdown",
   "files.exclude": {
@@ -196,7 +197,7 @@
   "terminal.integrated.scrollback": 10000,
   "terminal.integrated.showExitAlert": false,
   "terminal.integrated.tabs.enabled": true,
-  "typescript.tsserver.log": "verbose",
+  "typescript.tsserver.log": "off",
   "typescript.updateImportsOnFileMove.enabled": "always",
   "window.autoDetectColorScheme": true,
   "window.menuBarVisibility": "compact",
@@ -212,7 +213,7 @@
   "workbench.editorAssociations": {
     "*.ipynb": "jupyter-notebook"
   },
-  "workbench.iconTheme": "ayu",
+  "workbench.iconTheme": null,
   "workbench.preferredDarkColorTheme": "Uno Due Tre (Ocean)",
   "workbench.preferredHighContrastColorTheme": "Uno Due Tre",
   "workbench.preferredLightColorTheme": "Uno Due Tre",
@@ -222,5 +223,6 @@
   "workbench.statusBar.visible": true,
   "workbench.tree.indent": 16,
   "zenMode.centerLayout": false,
-  "zenMode.fullScreen": false
+  "zenMode.fullScreen": false,
+  "workbench.tree.renderIndentGuides": "always"
 }
