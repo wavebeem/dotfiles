@@ -1,4 +1,7 @@
 {
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": false
@@ -27,8 +30,10 @@
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "breadcrumbs.enabled": false,
-  "diffEditor.ignoreTrimWhitespace": true,
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "diffEditor.ignoreTrimWhitespace": false,
   "diffEditor.renderSideBySide": false,
   "editor.acceptSuggestionOnCommitCharacter": false,
   "editor.acceptSuggestionOnEnter": "off",
@@ -38,9 +43,9 @@
   "editor.dragAndDrop": false,
   "editor.find.addExtraSpaceOnTop": false,
   "editor.fontFamily": "\"JetBrains Mono\", Input, Menlo, Consolas, monospace",
-  "editor.fontSize": 14,
+  "editor.fontSize": 16,
   "editor.formatOnPaste": false,
-  "editor.formatOnSave": true,
+  "editor.guides.bracketPairs": "active",
   "editor.minimap.enabled": false,
   "editor.minimap.renderCharacters": true,
   "editor.multiCursorModifier": "alt",
@@ -51,7 +56,7 @@
   "editor.renderLineHighlight": "all",
   "editor.renderWhitespace": "none",
   "editor.rulers": [80],
-  "editor.snippetSuggestions": "bottom",
+  "editor.snippetSuggestions": "none",
   "editor.suggest.snippetsPreventQuickSuggestions": false,
   "editor.tabSize": 2,
   "editor.wordWrap": "on",
@@ -72,6 +77,7 @@
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
   "files.associations": {
+    "*.njk": "html",
     "bashrc": "shellscript",
     "zshenv": "shellscript",
     "zshrc": "shellscript",
@@ -105,6 +111,7 @@
     "**/tmp": true
   },
   "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
   "files.watcherExclude": {
     "**/.git/objects/**": true,
     "**/build": true,
@@ -186,7 +193,7 @@
     "**/dist": true
   },
   "search.smartCase": true,
-  "search.useIgnoreFiles": true,
+  "security.workspace.trust.untrustedFiles": "open",
   "simpleIcons.hideArrows": false,
   "terminal.integrated.cursorBlinking": true,
   "terminal.integrated.cursorStyle": "line",
@@ -213,12 +220,11 @@
   "workbench.editorAssociations": {
     "*.ipynb": "jupyter-notebook"
   },
-  "workbench.iconTheme": null,
+  "workbench.iconTheme": "vscode-icon-theme",
   "workbench.preferredDarkColorTheme": "Uno Due Tre (Ocean)",
   "workbench.preferredHighContrastColorTheme": "Uno Due Tre",
   "workbench.preferredLightColorTheme": "Uno Due Tre",
   "workbench.productIconTheme": "fluent-icons",
-  "workbench.sideBar.location": "left",
   "workbench.startupEditor": "newUntitledFile",
   "workbench.statusBar.visible": true,
   "workbench.tree.indent": 16,

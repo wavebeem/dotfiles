@@ -41,16 +41,17 @@
       "paddingVertical" : 8
     },
     "window" : {
-      "color" : "#212121FF",
+      "color" : "#212121E5",
       "paddingHorizontal" : 8,
       "width" : 700,
-      "borderPadding" : 1,
+      "borderPadding" : 0,
       "borderColor" : "#FFFFFF7F",
       "blur" : 0,
       "roundness" : 8,
       "paddingVertical" : 8
     },
     "credit" : "Brian Mock",
+    "visualEffectMode" : 2,
     "separator" : {
       "color" : "#424242FF",
       "thickness" : 0

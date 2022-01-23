@@ -59,7 +59,8 @@ Install_as() {
     rm -rf "$dest"
   fi
   # If the directory path doesn't exist, make it before installing the file
-  local dir="$(dirname "$dest")"
+  local dir
+  dir="$(dirname "$dest")"
   if [[ ! -d "$dir" ]]; then
     mkdir -p "$dir"
   fi
@@ -75,9 +76,9 @@ Install_as() {
 
 # Ask a question and return true if the user says yes
 Confirm() {
-  local prompt="$@ [y/N] "
+  local prompt="$* [y/N] "
   local ans=""
-  read -p "$prompt" ans
+  read -rp "$prompt" ans
   [[ "$ans" = y* || "$ans" = Y* ]]
 }
 
