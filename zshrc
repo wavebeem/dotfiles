@@ -123,6 +123,11 @@ else
   alias ls="ls --color=auto"
 fi
 
+# Load direnv
+if which direnv >/dev/null; then
+  eval "$(direnv hook zsh)"
+fi
+
 # Allow pasting commands with "$" from the internet
 alias '$'=""
 
