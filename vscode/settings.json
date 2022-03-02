@@ -226,6 +226,7 @@
   "workbench.startupEditor": "newUntitledFile",
   "workbench.statusBar.visible": true,
   "workbench.tree.indent": 16,
+  "workbench.tree.renderIndentGuides": "always",
   "zenMode.centerLayout": false,
   "zenMode.fullScreen": false
 }

@@ -1,7 +1,7 @@
 # shellcheck shell=zsh
 
 # Keep track of lots of history
-HISTFILE=~/.histfile
+HISTFILE="$HOME/.zsh_history"
 HISTSIZE=10000
 SAVEHIST=10000
 setopt APPEND_HISTORY
