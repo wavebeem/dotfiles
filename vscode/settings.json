@@ -120,61 +120,6 @@
   "git.confirmSync": false,
   "git.enableSmartCommit": true,
   "git.enabled": true,
-  "gitlens.blame.avatars": false,
-  "gitlens.blame.highlight.locations": ["gutter", "line", "overview"],
-  "gitlens.codeLens.enabled": false,
-  "gitlens.currentLine.enabled": false,
-  "gitlens.hovers.currentLine.over": "line",
-  "gitlens.hovers.enabled": false,
-  "gitlens.keymap": "none",
-  "gitlens.menus": {
-    "editor": {
-      "blame": false,
-      "clipboard": true,
-      "compare": true,
-      "details": false,
-      "history": false,
-      "remote": false
-    },
-    "editorGroup": false,
-    "editorTab": {
-      "clipboard": true,
-      "compare": true,
-      "history": true,
-      "remote": true
-    },
-    "explorer": {
-      "clipboard": true,
-      "compare": true,
-      "history": true,
-      "remote": true
-    },
-    "scmGroup": {
-      "compare": true,
-      "openClose": true,
-      "stash": true,
-      "stashInline": false
-    },
-    "scmItem": {
-      "clipboard": true,
-      "compare": true,
-      "history": true,
-      "remote": true,
-      "stash": true
-    }
-  },
-  "gitlens.views.compare.avatars": false,
-  "gitlens.views.compare.files.layout": "list",
-  "gitlens.views.compare.location": "scm",
-  "gitlens.views.fileHistory.avatars": false,
-  "gitlens.views.fileHistory.location": "scm",
-  "gitlens.views.lineHistory.avatars": false,
-  "gitlens.views.lineHistory.location": "scm",
-  "gitlens.views.repositories.avatars": false,
-  "gitlens.views.repositories.location": "scm",
-  "gitlens.views.search.avatars": false,
-  "gitlens.views.search.files.layout": "list",
-  "gitlens.views.search.location": "scm",
   "html.format.endWithNewline": true,
   "html.format.indentHandlebars": true,
   "javascript.updateImportsOnFileMove.enabled": "always",
@@ -218,11 +163,10 @@
   "workbench.editorAssociations": {
     "*.ipynb": "jupyter-notebook"
   },
-  "workbench.iconTheme": "vscode-icon-theme",
+  "workbench.iconTheme": "vs-minimal",
   "workbench.preferredDarkColorTheme": "Uno Due Tre (Ocean)",
   "workbench.preferredHighContrastColorTheme": "Uno Due Tre",
   "workbench.preferredLightColorTheme": "Uno Due Tre",
-  "workbench.productIconTheme": "fluent-icons",
   "workbench.startupEditor": "newUntitledFile",
   "workbench.statusBar.visible": true,
   "workbench.tree.indent": 16,
