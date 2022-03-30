@@ -120,6 +120,7 @@
   "git.confirmSync": false,
   "git.enableSmartCommit": true,
   "git.enabled": true,
+  "gitblame.statusBarMessageFormat": "${author.name} (${time.ago})",
   "html.format.endWithNewline": true,
   "html.format.indentHandlebars": true,
   "javascript.updateImportsOnFileMove.enabled": "always",
