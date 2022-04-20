@@ -39,10 +39,10 @@
   "editor.acceptSuggestionOnEnter": "off",
   "editor.accessibilitySupport": "off",
   "editor.cursorBlinking": "smooth",
-  "editor.fontWeight": 400,
+  // "editor.fontWeight": 400,
   "editor.dragAndDrop": false,
   "editor.find.addExtraSpaceOnTop": false,
-  "editor.fontFamily": "Roboto Mono, JetBrains Mono, Input, Menlo, Consolas, monospace",
+  "editor.fontFamily": "JetBrains Mono, Menlo, Consolas, monospace",
   "editor.fontSize": 16,
   "editor.formatOnPaste": false,
   "editor.guides.bracketPairs": "active",
@@ -79,7 +79,8 @@
     "*.njk": "html",
     "bashrc": "shellscript",
     "zshenv": "shellscript",
-    "zshrc": "shellscript"
+    "zshrc": "shellscript",
+    ".env.local.example": "ini"
   },
   "files.defaultLanguage": "markdown",
   "files.exclude": {
@@ -173,5 +174,6 @@
   "workbench.tree.indent": 16,
   "workbench.tree.renderIndentGuides": "always",
   "zenMode.centerLayout": false,
-  "zenMode.fullScreen": false
+  "zenMode.fullScreen": false,
+  "breadcrumbs.enabled": false
 }

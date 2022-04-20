@@ -61,6 +61,8 @@ path=(
   "$PYENV_ROOT/bin"
   "$PYENV_ROOT/shims"
   "$HOME/.poetry/bin"
+  # Ruby
+  "$HOME/.rvm/bin"
   $path
 )
 
@@ -97,6 +99,11 @@ __install.nodenv() {
 # Install pyenv
 __install.pyenv() {
    git clone https://github.com/pyenv/pyenv.git ~/.pyenv
+}
+
+# Install rvm
+__install.rvm() {
+  curl -sSL https://get.rvm.io | bash
 }
 
 # Install homebrew
@@ -155,6 +162,11 @@ fi
 # Load nodenv if it exists
 if which nodenv >/dev/null; then
   eval "$(nodenv init - --no-rehash)"
+fi
+
+# Load rvm if it exists
+if [[ -e ~/.rvm/scripts/rvm ]]; then
+  source ~/.rvm/scripts/rvm
 fi
 
 # Load device specific customizations
