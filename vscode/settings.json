@@ -33,7 +33,6 @@
   "[vue]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "diffEditor.ignoreTrimWhitespace": false,
   "diffEditor.renderSideBySide": false,
   "editor.acceptSuggestionOnCommitCharacter": false,
   "editor.acceptSuggestionOnEnter": "off",
@@ -80,7 +79,8 @@
     "bashrc": "shellscript",
     "zshenv": "shellscript",
     "zshrc": "shellscript",
-    ".env.local.example": "ini"
+    ".env.local.example": "ini",
+    "CODEOWNERS": "ini"
   },
   "files.defaultLanguage": "markdown",
   "files.exclude": {
@@ -163,7 +163,8 @@
   "workbench.editor.enablePreviewFromQuickOpen": false,
   "workbench.editor.showTabs": false,
   "workbench.editorAssociations": {
-    "*.ipynb": "jupyter-notebook"
+    "*.ipynb": "jupyter-notebook",
+    "*.csv": "default"
   },
   "workbench.iconTheme": "vs-minimal",
   "workbench.preferredDarkColorTheme": "Uno Due Tre (Ocean)",
@@ -175,5 +176,7 @@
   "workbench.tree.renderIndentGuides": "always",
   "zenMode.centerLayout": false,
   "zenMode.fullScreen": false,
-  "breadcrumbs.enabled": false
+  "breadcrumbs.enabled": false,
+  "editor.copyWithSyntaxHighlighting": false,
+  "diffEditor.ignoreTrimWhitespace": false
 }
