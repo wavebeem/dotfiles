@@ -47,7 +47,7 @@
       "borderPadding" : 0,
       "borderColor" : "#0000003F",
       "blur" : 0,
-      "roundness" : 4,
+      "roundness" : 8,
       "paddingVertical" : 8
     },
     "credit" : "Brian Mock (wavebeem.com)",

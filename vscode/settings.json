@@ -162,7 +162,6 @@
   "workbench.editor.decorations.badges": true,
   "workbench.editor.decorations.colors": true,
   "workbench.editor.enablePreviewFromQuickOpen": false,
-  "workbench.editor.showTabs": false,
   "workbench.editorAssociations": {
     "*.ipynb": "jupyter-notebook",
     "*.csv": "default"
@@ -179,5 +178,6 @@
   "zenMode.fullScreen": false,
   "breadcrumbs.enabled": false,
   "editor.copyWithSyntaxHighlighting": false,
-  "diffEditor.ignoreTrimWhitespace": false
+  "diffEditor.ignoreTrimWhitespace": false,
+  "workbench.editor.showTabs": false
 }
