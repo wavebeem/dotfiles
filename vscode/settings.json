@@ -81,7 +81,8 @@
     "zshenv": "shellscript",
     "zshrc": "shellscript",
     ".env.local.example": "ini",
-    "CODEOWNERS": "ini"
+    "CODEOWNERS": "ini",
+    ".env": "ini"
   },
   "files.defaultLanguage": "markdown",
   "files.exclude": {
@@ -179,5 +180,8 @@
   "breadcrumbs.enabled": false,
   "editor.copyWithSyntaxHighlighting": false,
   "diffEditor.ignoreTrimWhitespace": false,
-  "workbench.editor.showTabs": false
+  "workbench.editor.showTabs": false,
+  "timeline.excludeSources": ["timeline.localHistory"],
+  "vsicons.dontShowNewVersionMessage": true,
+  "terminal.integrated.shellIntegration.enabled": true
 }

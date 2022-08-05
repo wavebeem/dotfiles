@@ -6,7 +6,7 @@ syntax on
 " I would just leave the default color scheme, but it seems that visual
 " selection colors are not working correctly in it, which totally screws up me
 " using vim.
-colorscheme peachpuff
+colorscheme default
 set wildmenu
 set nomodeline
 set ruler

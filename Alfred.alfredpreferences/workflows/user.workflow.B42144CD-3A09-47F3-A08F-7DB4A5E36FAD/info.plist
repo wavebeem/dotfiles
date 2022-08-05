@@ -114,6 +114,8 @@ The clipboard history placeholders are available in most output objects, along w
 			<integer>50</integer>
 		</dict>
 	</dict>
+	<key>userconfigurationconfig</key>
+	<array/>
 	<key>version</key>
 	<string>1.0</string>
 	<key>webaddress</key>
