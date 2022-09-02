@@ -142,6 +142,8 @@ Type your keyword into Alfred, followed by your input text if needed, and you'll
 			<integer>30</integer>
 		</dict>
 	</dict>
+	<key>userconfigurationconfig</key>
+	<array/>
 	<key>version</key>
 	<string>1.0</string>
 	<key>webaddress</key>

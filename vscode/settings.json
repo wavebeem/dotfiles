@@ -33,14 +33,11 @@
   "[vue]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "breadcrumbs.enabled": false,
-  "diffEditor.ignoreTrimWhitespace": false,
   "diffEditor.renderSideBySide": false,
   "editor.acceptSuggestionOnCommitCharacter": false,
   "editor.acceptSuggestionOnEnter": "off",
   "editor.accessibilitySupport": "off",
   "editor.bracketPairColorization.enabled": false,
-  "editor.copyWithSyntaxHighlighting": false,
   "editor.cursorBlinking": "smooth",
   "editor.dragAndDrop": false,
   "editor.find.addExtraSpaceOnTop": false,
@@ -80,10 +77,12 @@
   "explorer.confirmDragAndDrop": false,
   "files.associations": {
     "*.njk": "html",
-    ".env.local.example": "ini",
     "bashrc": "shellscript",
     "zshenv": "shellscript",
-    "zshrc": "shellscript"
+    "zshrc": "shellscript",
+    ".env.local.example": "ini",
+    "CODEOWNERS": "ini",
+    ".env": "ini"
   },
   "files.defaultLanguage": "markdown",
   "files.exclude": {
@@ -164,9 +163,9 @@
   "workbench.editor.decorations.badges": true,
   "workbench.editor.decorations.colors": true,
   "workbench.editor.enablePreviewFromQuickOpen": false,
-  "workbench.editor.showTabs": false,
   "workbench.editorAssociations": {
-    "*.ipynb": "jupyter-notebook"
+    "*.ipynb": "jupyter-notebook",
+    "*.csv": "default"
   },
   "workbench.iconTheme": "vs-minimal",
   "workbench.preferredDarkColorTheme": "Uno Due Tre (Ocean)",
@@ -177,5 +176,12 @@
   "workbench.tree.indent": 16,
   "workbench.tree.renderIndentGuides": "always",
   "zenMode.centerLayout": false,
-  "zenMode.fullScreen": false
+  "zenMode.fullScreen": false,
+  "breadcrumbs.enabled": false,
+  "editor.copyWithSyntaxHighlighting": false,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "workbench.editor.showTabs": false,
+  "timeline.excludeSources": ["timeline.localHistory"],
+  "vsicons.dontShowNewVersionMessage": true,
+  "terminal.integrated.shellIntegration.enabled": true
 }

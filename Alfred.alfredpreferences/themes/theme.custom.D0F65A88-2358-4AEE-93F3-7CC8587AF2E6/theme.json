@@ -6,23 +6,23 @@
         "size" : 12,
         "colorSelected" : "#0000007F",
         "font" : "System",
-        "color" : "#797979FF"
+        "color" : "#FFFFFF66"
       },
       "shortcut" : {
         "size" : 16,
         "colorSelected" : "#0000007F",
         "font" : "System",
-        "color" : "#797979FF"
+        "color" : "#FFFFFF66"
       },
-      "backgroundSelected" : "#E6E6E6FF",
+      "backgroundSelected" : "#FFFFFFCC",
       "text" : {
         "size" : 18,
         "colorSelected" : "#000000FF",
         "font" : "System",
-        "color" : "#D5D5D5FF"
+        "color" : "#FFFFFFFF"
       },
       "iconPaddingHorizontal" : 8,
-      "roundness" : 4,
+      "roundness" : 2,
       "paddingVertical" : 8,
       "iconSize" : 32
     },
@@ -37,11 +37,11 @@
         "color" : "#FEFFFFFF"
       },
       "background" : "#FFFFFF19",
-      "roundness" : 4,
+      "roundness" : 2,
       "paddingVertical" : 8
     },
     "window" : {
-      "color" : "#212121E5",
+      "color" : "#32323299",
       "paddingHorizontal" : 8,
       "width" : 700,
       "borderPadding" : 0,
@@ -57,7 +57,7 @@
       "thickness" : 0
     },
     "scrollbar" : {
-      "color" : "#FEFFFF3F",
+      "color" : "#FFFFFF66",
       "thickness" : 4
     },
     "name" : "Basic Dark"

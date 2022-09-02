@@ -3,63 +3,63 @@
     "result" : {
       "textSpacing" : 8,
       "subtext" : {
-        "size" : 16,
-        "colorSelected" : "#00000065",
+        "size" : 12,
+        "colorSelected" : "#FEFFFFCC",
         "font" : "System",
         "color" : "#00000065"
       },
       "shortcut" : {
-        "size" : 24,
-        "colorSelected" : "#00000065",
+        "size" : 20,
+        "colorSelected" : "#FFFFFFFF",
         "font" : "System",
         "color" : "#0000001A"
       },
-      "backgroundSelected" : "#00000019",
+      "backgroundSelected" : "#000000CC",
       "text" : {
-        "size" : 24,
-        "colorSelected" : "#000000FF",
+        "size" : 20,
+        "colorSelected" : "#FFFFFFFF",
         "font" : "System",
         "color" : "#000000E5"
       },
       "iconPaddingHorizontal" : 16,
-      "roundness" : 0,
-      "paddingVertical" : 16,
+      "roundness" : 4,
+      "paddingVertical" : 12,
       "iconSize" : 32
     },
     "search" : {
-      "backgroundSelected" : "#0000007F",
+      "backgroundSelected" : "#000000CC",
       "paddingHorizontal" : 16,
-      "spacing" : 8,
+      "spacing" : 0,
       "text" : {
         "size" : 32,
         "colorSelected" : "#FFFFFFFF",
         "font" : "System",
         "color" : "#000000FF"
       },
-      "background" : "#00000000",
-      "roundness" : 0,
+      "background" : "#FFFFFF00",
+      "roundness" : 4,
       "paddingVertical" : 8
     },
     "window" : {
-      "color" : "#FEFFFFC0",
-      "paddingHorizontal" : 1,
+      "color" : "#F4F4F4CC",
+      "paddingHorizontal" : 8,
       "width" : 700,
       "borderPadding" : 0,
       "borderColor" : "#0000003F",
       "blur" : 0,
       "roundness" : 8,
-      "paddingVertical" : 1
+      "paddingVertical" : 8
     },
     "credit" : "Brian Mock (wavebeem.com)",
     "visualEffectMode" : 1,
     "separator" : {
-      "color" : "#00000019",
+      "color" : "#0000000C",
       "thickness" : 1
     },
     "scrollbar" : {
       "color" : "#0000003F",
       "thickness" : 4
     },
-    "name" : "Basic Light 2"
+    "name" : "Big & Basic"
   }
 }
