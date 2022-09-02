@@ -116,6 +116,24 @@ precmd() {
   echo
 }
 
+embiggen() {
+  local ret=0
+  for file in "$@"; do
+    case "$file" in
+      *.big.png)
+        ;;
+      *.png)
+        magick "$file" -scale '1000%' "${file%%.png}.big.png"
+        ;;
+      *)
+        echo "Only .png files are supported" >&2
+        let ret++
+        ;;
+    esac
+  done
+  return "$ret"
+}
+
 # Easy open files
 if [[ $(uname -r) = *Microsoft ]]; then
   alias o='explorer.exe'
