@@ -33,15 +33,19 @@
   "[vue]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "breadcrumbs.enabled": false,
+  "diffEditor.ignoreTrimWhitespace": false,
   "diffEditor.renderSideBySide": false,
   "editor.acceptSuggestionOnCommitCharacter": false,
   "editor.acceptSuggestionOnEnter": "off",
   "editor.accessibilitySupport": "off",
   "editor.bracketPairColorization.enabled": false,
+  "editor.copyWithSyntaxHighlighting": false,
   "editor.cursorBlinking": "smooth",
   "editor.dragAndDrop": false,
   "editor.find.addExtraSpaceOnTop": false,
   "editor.fontFamily": "JetBrains Mono, Menlo, Consolas, monospace",
+  "editor.fontLigatures": true,
   "editor.fontSize": 16,
   "editor.fontWeight": 400,
   "editor.formatOnPaste": false,
@@ -77,12 +81,13 @@
   "explorer.confirmDragAndDrop": false,
   "files.associations": {
     "*.njk": "html",
-    "bashrc": "shellscript",
-    "zshenv": "shellscript",
-    "zshrc": "shellscript",
+    ".env": "ini",
     ".env.local.example": "ini",
     "CODEOWNERS": "ini",
-    ".env": "ini"
+    "bashrc": "shellscript",
+    "gitignore": "ignore",
+    "zshenv": "shellscript",
+    "zshrc": "shellscript"
   },
   "files.defaultLanguage": "markdown",
   "files.exclude": {
@@ -132,7 +137,6 @@
     "jupyter-notebook": "left"
   },
   "python.formatting.provider": "black",
-  "python.linting.pycodestyleEnabled": true,
   "python.linting.pylintEnabled": false,
   "python.showStartPage": false,
   "search.exclude": {
@@ -147,12 +151,14 @@
   "terminal.integrated.cursorWidth": 2,
   "terminal.integrated.fontSize": 14,
   "terminal.integrated.macOptionIsMeta": true,
-  "terminal.integrated.minimumContrastRatio": 4.5,
   "terminal.integrated.scrollback": 10000,
+  "terminal.integrated.shellIntegration.enabled": true,
   "terminal.integrated.showExitAlert": false,
   "terminal.integrated.tabs.enabled": true,
+  "timeline.excludeSources": ["timeline.localHistory"],
   "typescript.tsserver.log": "off",
   "typescript.updateImportsOnFileMove.enabled": "always",
+  "vsicons.dontShowNewVersionMessage": true,
   "window.autoDetectColorScheme": true,
   "window.menuBarVisibility": "compact",
   "window.title": "${rootPath}${separator}${remoteName}${separator}Code",
@@ -163,9 +169,10 @@
   "workbench.editor.decorations.badges": true,
   "workbench.editor.decorations.colors": true,
   "workbench.editor.enablePreviewFromQuickOpen": false,
+  "workbench.editor.showTabs": false,
   "workbench.editorAssociations": {
-    "*.ipynb": "jupyter-notebook",
-    "*.csv": "default"
+    "*.csv": "default",
+    "*.ipynb": "jupyter-notebook"
   },
   "workbench.iconTheme": "vs-minimal",
   "workbench.preferredDarkColorTheme": "Uno Due Tre (Ocean)",
@@ -176,12 +183,5 @@
   "workbench.tree.indent": 16,
   "workbench.tree.renderIndentGuides": "always",
   "zenMode.centerLayout": false,
-  "zenMode.fullScreen": false,
-  "breadcrumbs.enabled": false,
-  "editor.copyWithSyntaxHighlighting": false,
-  "diffEditor.ignoreTrimWhitespace": false,
-  "workbench.editor.showTabs": false,
-  "timeline.excludeSources": ["timeline.localHistory"],
-  "vsicons.dontShowNewVersionMessage": true,
-  "terminal.integrated.shellIntegration.enabled": true
+  "zenMode.fullScreen": false
 }

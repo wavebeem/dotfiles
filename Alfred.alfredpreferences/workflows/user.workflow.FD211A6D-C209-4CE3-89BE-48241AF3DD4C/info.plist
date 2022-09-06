@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>com.wavebeem.cohost-signature</string>
+	<key>connections</key>
+	<dict>
+		<key>3B21F919-7F12-48BA-9EFA-9A585C840F2B</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>FD58018C-DC39-4396-A00F-A04372220916</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>F36A4E88-5C02-4306-9516-70B45B480E3D</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>FD58018C-DC39-4396-A00F-A04372220916</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Brian Mock (brian@wavebeem.com)</string>
+	<key>description</key>
+	<string></string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>cohost! signature</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>autopaste</key>
+				<true/>
+				<key>clipboardtext</key>
+				<string>&lt;div style="display: flex; flex-wrap: wrap; gap: 0.25rem; font-family: sans-serif;"&gt;
+  &lt;a href="https://pronoun.is/they/them" target="_blank" aria-label="non-binary flag" style="
+    text-decoration: none;
+    flex: none;
+    width: 2rem;
+    height: 1.5rem;
+    box-sizing: border-box;
+    border-radius: 3px;
+    font-weight: bold;
+    background: linear-gradient(
+      to bottom,
+      #f9a31b,
+      #f9a31b 25%,
+      #fef3c0 25%,
+      #fef3c0 50%,
+      #bc4a9b 50%,
+      #bc4a9b 75%,
+      #403353 75%,
+      #403353
+    );
+    font-size: 1rem;
+    line-height: 1rem;
+    padding: 0.25rem 0.5rem;
+    color: hsl(200 12% 95%);
+    text-align: center;
+    text-shadow: 0 0 1px black, 0 1px 1px black;
+    border: 1px solid #000;
+    border-bottom-color: #000;
+    box-shadow: inset 0 1px 0 0 hsl(0 0% 100% / 50%);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+  "&gt;&lt;/a&gt;
+  &lt;a href="https://www.wavebeem.com" target="_blank" style="
+    text-decoration: none;
+    flex: none;
+    box-sizing: border-box;
+    border-radius: 3px;
+    font-weight: bold;
+    background: linear-gradient(
+      to bottom,
+      hsl(150 100% 35%),
+      hsl(150 100% 30%) 50%,
+      hsl(150 100% 25%) 50%,
+      hsl(150 100% 20%)
+    );
+    font-size: 1rem;
+    line-height: 1rem;
+    padding: 0.25rem 0.5rem;
+    height: 1.5rem;
+    color: hsl(200 12% 95%);
+    text-align: center;
+    text-shadow: 0 0 1px black, 0 1px 1px black;
+    border: 1px solid #000;
+    box-shadow: inset 0 1px 0 0 hsl(0 0% 100% / 50%);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+  "&gt;
+    wave
+  &lt;/a&gt;
+  &lt;a target="_blank" style="
+    text-decoration: none;
+    flex: none;
+    box-sizing: border-box;
+    border-radius: 3px;
+    font-weight: bold;
+    background: linear-gradient(
+      to bottom,
+      hsl(190 100% 35%),
+      hsl(190 100% 30%) 50%,
+      hsl(190 100% 25%) 50%,
+      hsl(190 100% 20%)
+    );
+    font-size: 1rem;
+    line-height: 1rem;
+    padding: 0.25rem 0.5rem;
+    height: 1.5rem;
+    color: hsl(200 12% 95%);
+    text-align: center;
+    text-shadow: 0 0 1px black, 0 1px 1px black;
+    border: 1px solid #000;
+    box-shadow: inset 0 1px 0 0 hsl(0 0% 100% / 50%);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+  "&gt;
+    ≋
+  &lt;/a&gt;
+  &lt;a target="_blank" style="
+    text-decoration: none;
+    flex: none;
+    box-sizing: border-box;
+    border-radius: 3px;
+    font-weight: bold;
+    background: linear-gradient(
+      to bottom,
+      hsl(200 20% 35%),
+      hsl(200 20% 30%) 50%,
+      hsl(200 20% 20%) 50%,
+      hsl(200 20% 15%)
+    );
+    font-size: 1rem;
+    line-height: 1rem;
+    padding: 0.25rem 0.5rem;
+    height: 1.5rem;
+    color: hsl(200 12% 95%);
+    text-align: center;
+    text-shadow: 0 0 1px black, 0 1px 1px black;
+    border: 1px solid #000;
+    box-shadow: inset 0 1px 0 0 hsl(0 0% 100% / 40%);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+  "&gt;
+    goth b¡tch in training
+  &lt;/a&gt;
+&lt;/div&gt;</string>
+				<key>ignoredynamicplaceholders</key>
+				<false/>
+				<key>transient</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>FD58018C-DC39-4396-A00F-A04372220916</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>0</integer>
+				<key>hotmod</key>
+				<integer>0</integer>
+				<key>hotstring</key>
+				<string></string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>F36A4E88-5C02-4306-9516-70B45B480E3D</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>cohost</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>cohost! signature</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>3B21F919-7F12-48BA-9EFA-9A585C840F2B</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string>The MIT License (MIT)
+
+Copyright © 2021 Brian Mock
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</string>
+	<key>uidata</key>
+	<dict>
+		<key>3B21F919-7F12-48BA-9EFA-9A585C840F2B</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>2</integer>
+			<key>xpos</key>
+			<real>30</real>
+			<key>ypos</key>
+			<real>240</real>
+		</dict>
+		<key>F36A4E88-5C02-4306-9516-70B45B480E3D</key>
+		<dict>
+			<key>xpos</key>
+			<real>50</real>
+			<key>ypos</key>
+			<real>50</real>
+		</dict>
+		<key>FD58018C-DC39-4396-A00F-A04372220916</key>
+		<dict>
+			<key>xpos</key>
+			<real>280</real>
+			<key>ypos</key>
+			<real>50</real>
+		</dict>
+	</dict>
+	<key>userconfigurationconfig</key>
+	<array/>
+	<key>webaddress</key>
+	<string>https://www.wavebeem.com</string>
+</dict>
+</plist>

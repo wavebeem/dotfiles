@@ -111,6 +111,12 @@ __install.homebrew() {
   bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 }
 
+# Install exa
+# https://the.exa.website/
+__install.exa() {
+  brew install exa
+}
+
 # Print a blank line between prompts to make it easier to read
 precmd() {
   echo
@@ -135,15 +141,25 @@ if which direnv >/dev/null; then
   eval "$(direnv hook zsh)"
 fi
 
+# Replace `ls` with `exa`
+# https://the.exa.website/
+if which exa >/dev/null; then
+  alias ls='exa --group-directories-first'
+  alias l='ls'
+  alias ll='ls -l'
+  alias la='ls -la'
+else
+  alias l="ls"
+  alias ll="l -hl"
+  alias la="ll -a"
+fi
+
 # Allow pasting commands with "$" from the internet
 alias '$'=""
 
 # Time saving shortcuts
 alias g="git status"
 alias gl="git log"
-alias l="ls"
-alias ll="ls -hl"
-alias la="ll -a"
 
 # Weird tmux shortcuts I like
 alias t="tmux"
