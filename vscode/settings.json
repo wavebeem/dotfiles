@@ -33,7 +33,6 @@
   "[vue]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "breadcrumbs.enabled": false,
   "diffEditor.ignoreTrimWhitespace": false,
   "diffEditor.renderSideBySide": false,
   "editor.acceptSuggestionOnCommitCharacter": false,
@@ -41,16 +40,14 @@
   "editor.accessibilitySupport": "off",
   "editor.bracketPairColorization.enabled": false,
   "editor.copyWithSyntaxHighlighting": false,
-  "editor.cursorBlinking": "smooth",
   "editor.dragAndDrop": false,
   "editor.find.addExtraSpaceOnTop": false,
   "editor.fontFamily": "JetBrains Mono, Menlo, Consolas, monospace",
-  "editor.fontLigatures": true,
+  "editor.fontLigatures": false,
   "editor.fontSize": 16,
   "editor.fontWeight": 400,
   "editor.formatOnPaste": false,
   "editor.guides.bracketPairs": "active",
-  "editor.minimap.enabled": false,
   "editor.minimap.renderCharacters": true,
   "editor.multiCursorModifier": "alt",
   "editor.overviewRulerBorder": false,
@@ -164,7 +161,6 @@
   "window.titleBarStyle": "custom",
   "window.titleSeparator": " – ",
   "workbench.activityBar.visible": true,
-  "workbench.colorTheme": "Uno Due Tre",
   "workbench.editor.decorations.badges": true,
   "workbench.editor.decorations.colors": true,
   "workbench.editor.enablePreviewFromQuickOpen": false,
@@ -182,5 +178,8 @@
   "workbench.tree.indent": 16,
   "workbench.tree.renderIndentGuides": "always",
   "zenMode.centerLayout": false,
-  "zenMode.fullScreen": false
+  "zenMode.fullScreen": false,
+  "editor.minimap.enabled": false,
+  "workbench.colorTheme": "Uno Due Tre (Nature)",
+  "breadcrumbs.enabled": false
 }
