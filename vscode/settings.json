@@ -33,7 +33,7 @@
   "[vue]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "diffEditor.ignoreTrimWhitespace": false,
+  "breadcrumbs.enabled": false,
   "diffEditor.renderSideBySide": false,
   "editor.acceptSuggestionOnCommitCharacter": false,
   "editor.acceptSuggestionOnEnter": "off",
@@ -48,6 +48,7 @@
   "editor.fontWeight": 400,
   "editor.formatOnPaste": false,
   "editor.guides.bracketPairs": "active",
+  "editor.minimap.enabled": false,
   "editor.minimap.renderCharacters": true,
   "editor.multiCursorModifier": "alt",
   "editor.overviewRulerBorder": false,
@@ -156,11 +157,13 @@
   "typescript.updateImportsOnFileMove.enabled": "always",
   "vsicons.dontShowNewVersionMessage": true,
   "window.autoDetectColorScheme": true,
+  "window.commandCenter": false,
   "window.menuBarVisibility": "compact",
   "window.title": "${rootPath}${separator}${remoteName}${separator}Code",
   "window.titleBarStyle": "custom",
   "window.titleSeparator": " – ",
   "workbench.activityBar.visible": true,
+  "workbench.colorTheme": "Uno Due Tre (Nature)",
   "workbench.editor.decorations.badges": true,
   "workbench.editor.decorations.colors": true,
   "workbench.editor.enablePreviewFromQuickOpen": false,
@@ -178,8 +181,5 @@
   "workbench.tree.indent": 16,
   "workbench.tree.renderIndentGuides": "always",
   "zenMode.centerLayout": false,
-  "zenMode.fullScreen": false,
-  "editor.minimap.enabled": false,
-  "workbench.colorTheme": "Uno Due Tre (Nature)",
-  "breadcrumbs.enabled": false
+  "zenMode.fullScreen": false
 }
