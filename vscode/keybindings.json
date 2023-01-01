@@ -89,10 +89,6 @@
     "when": "isMac && editorTextFocus"
   },
   {
-    "key": "ctrl+'",
-    "command": "workbench.action.terminal.toggleTerminal"
-  },
-  {
     "key": "ctrl+shift+j",
     "command": "workbench.action.terminal.focusNext",
     "when": "terminalFocus"
@@ -101,5 +97,13 @@
     "key": "ctrl+shift+k",
     "command": "workbench.action.terminal.focusPrevious",
     "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+'",
+    "command": "workbench.action.togglePanel"
+  },
+  {
+    "key": "cmd+j",
+    "command": "-workbench.action.togglePanel"
   }
 ]
