@@ -1,0 +1,64 @@
+{
+  "alfredtheme" : {
+    "result" : {
+      "textSpacing" : 8,
+      "subtext" : {
+        "size" : 12,
+        "colorSelected" : "#19342BFF",
+        "font" : "System",
+        "color" : "#99A3A066"
+      },
+      "shortcut" : {
+        "size" : 16,
+        "colorSelected" : "#19342BFF",
+        "font" : "System",
+        "color" : "#99A3A066"
+      },
+      "backgroundSelected" : "#ADEBD6FF",
+      "text" : {
+        "size" : 18,
+        "colorSelected" : "#19342BFF",
+        "font" : "System",
+        "color" : "#ADEBD6FF"
+      },
+      "iconPaddingHorizontal" : 8,
+      "roundness" : 2,
+      "paddingVertical" : 8,
+      "iconSize" : 32
+    },
+    "search" : {
+      "backgroundSelected" : "#ADEBD6FF",
+      "paddingHorizontal" : 8,
+      "spacing" : 8,
+      "text" : {
+        "size" : 32,
+        "colorSelected" : "#19342BFF",
+        "font" : "System",
+        "color" : "#ADEBD6FF"
+      },
+      "background" : "#ADEBD600",
+      "roundness" : 2,
+      "paddingVertical" : 8
+    },
+    "window" : {
+      "color" : "#19342BFF",
+      "paddingHorizontal" : 8,
+      "width" : 700,
+      "borderPadding" : 0,
+      "borderColor" : "#FFFFFF7F",
+      "blur" : 0,
+      "roundness" : 8,
+      "paddingVertical" : 8
+    },
+    "credit" : "Brian Mock (wavebeem.com)",
+    "separator" : {
+      "color" : "#424242FF",
+      "thickness" : 0
+    },
+    "scrollbar" : {
+      "color" : "#ADEBD6FF",
+      "thickness" : 4
+    },
+    "name" : "Miasma"
+  }
+}
