@@ -76,6 +76,7 @@
   "explorer.compactFolders": false,
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
+  "extensions.ignoreRecommendations": true,
   "files.associations": {
     "*.njk": "html",
     ".env": "ini",
@@ -116,9 +117,9 @@
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
   "files.watcherExclude": {
+    "**/.git/objects/**": true,
     "**/build": true,
     "**/dist": true,
-    "**/.git/objects/**": true,
     "**/node_modules/**": true
   },
   "git.autofetch": true,
