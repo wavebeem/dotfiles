@@ -33,7 +33,6 @@
   "[vue]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "breadcrumbs.enabled": false,
   "diffEditor.ignoreTrimWhitespace": false,
   "diffEditor.renderSideBySide": false,
   "editor.acceptSuggestionOnCommitCharacter": false,
@@ -50,7 +49,6 @@
   "editor.fontWeight": 400,
   "editor.formatOnPaste": false,
   "editor.guides.bracketPairs": "active",
-  "editor.minimap.enabled": false,
   "editor.minimap.renderCharacters": true,
   "editor.multiCursorModifier": "alt",
   "editor.overviewRulerBorder": false,
@@ -164,16 +162,15 @@
   "window.titleBarStyle": "custom",
   "window.titleSeparator": " – ",
   "workbench.activityBar.visible": true,
-  "workbench.colorTheme": "Uno Due Tre",
+  "workbench.colorTheme": "Uno Due Tre (Miasma)",
   "workbench.editor.decorations.badges": true,
   "workbench.editor.decorations.colors": true,
   "workbench.editor.enablePreviewFromQuickOpen": false,
-  "workbench.editor.showTabs": false,
   "workbench.editorAssociations": {
     "*.csv": "default",
     "*.ipynb": "jupyter-notebook"
   },
-  "workbench.iconTheme": "vs-minimal",
+  "workbench.iconTheme": null,
   "workbench.preferredDarkColorTheme": "Uno Due Tre (Ocean)",
   "workbench.preferredHighContrastColorTheme": "Uno Due Tre",
   "workbench.preferredLightColorTheme": "Uno Due Tre",
@@ -182,5 +179,7 @@
   "workbench.tree.indent": 16,
   "workbench.tree.renderIndentGuides": "always",
   "zenMode.centerLayout": false,
-  "zenMode.fullScreen": false
+  "zenMode.fullScreen": false,
+  "editor.minimap.enabled": false,
+  "workbench.productIconTheme": "fluent-icons"
 }
