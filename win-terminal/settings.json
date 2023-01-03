@@ -1,7 +1,12 @@
 {
+    "$help": "https://aka.ms/terminal-documentation",
     "$schema": "https://aka.ms/terminal-profiles-schema",
     "actions": 
     [
+        {
+            "command": "paste",
+            "keys": "ctrl+v"
+        },
         {
             "command": 
             {
@@ -13,10 +18,6 @@
         {
             "command": "find",
             "keys": "ctrl+shift+f"
-        },
-        {
-            "command": "paste",
-            "keys": "ctrl+v"
         },
         {
             "command": 
@@ -37,26 +38,39 @@
     {
         "defaults": 
         {
-            "colorScheme": "Brian Light",
-            "fontFace": "JetBrains Mono"
+            "bellStyle": 
+            [
+                "audible",
+                "window",
+                "taskbar"
+            ],
+            "colorScheme": "Miasma",
+            "font": 
+            {
+                "face": "JetBrains Mono"
+            },
+            "intenseTextStyle": "bold",
+            "padding": "16"
         },
         "list": 
         [
             {
-                "commandline": "pwsh.exe -NoLogo",
+                "colorScheme": "Miasma",
+                "commandline": "powershell.exe -NoLogo",
                 "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
                 "hidden": false,
-                "name": "pwsh"
+                "intenseTextStyle": "bold",
+                "name": "powershell"
             },
             {
                 "experimental.retroTerminalEffect": false,
                 "guid": "{2c4de342-38b7-51cf-b940-2309a097f518}",
                 "hidden": false,
+                "intenseTextStyle": "bold",
                 "name": "ubuntu",
                 "source": "Windows.Terminal.Wsl"
             },
             {
-                "commandline": "cmd.exe",
                 "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
                 "hidden": false,
                 "name": "cmd"
@@ -72,7 +86,7 @@
     "schemes": 
     [
         {
-            "background": "#FFFFFF",
+            "background": "#F9F9F9",
             "black": "#383A42",
             "blue": "#0184BC",
             "brightBlack": "#383A42",
@@ -139,6 +153,29 @@
             "selectionBackground": "#FFFFFF",
             "white": "#CCCCCC",
             "yellow": "#C19C00"
+        },
+        {
+            "background": "#19342B",
+            "black": "#333333",
+            "blue": "#A5A2EB",
+            "brightBlack": "#333333",
+            "brightBlue": "#A5A2EB",
+            "brightCyan": "#77E9E5",
+            "brightGreen": "#79E297",
+            "brightPurple": "#E5A4DE",
+            "brightRed": "#E48277",
+            "brightWhite": "#E4F1EC",
+            "brightYellow": "#E5C99E",
+            "cursorColor": "#F5A3E7",
+            "cyan": "#77E9E5",
+            "foreground": "#ADEBD6",
+            "green": "#79E297",
+            "name": "Miasma",
+            "purple": "#E5A4DE",
+            "red": "#E48277",
+            "selectionBackground": "#F2BF8C",
+            "white": "#E4F1EC",
+            "yellow": "#E5C99E"
         },
         {
             "background": "#282C34",
@@ -279,6 +316,52 @@
             "yellow": "#C4A000"
         },
         {
+            "background": "#300A24",
+            "black": "#171421",
+            "blue": "#0037DA",
+            "brightBlack": "#767676",
+            "brightBlue": "#08458F",
+            "brightCyan": "#2C9FB3",
+            "brightGreen": "#26A269",
+            "brightPurple": "#A347BA",
+            "brightRed": "#C01C28",
+            "brightWhite": "#F2F2F2",
+            "brightYellow": "#A2734C",
+            "cursorColor": "#FFFFFF",
+            "cyan": "#3A96DD",
+            "foreground": "#FFFFFF",
+            "green": "#26A269",
+            "name": "Ubuntu-ColorScheme",
+            "purple": "#881798",
+            "red": "#C21A23",
+            "selectionBackground": "#FFFFFF",
+            "white": "#CCCCCC",
+            "yellow": "#A2734C"
+        },
+        {
+            "background": "#F9F9F9",
+            "black": "#162C22",
+            "blue": "#5E5CD6",
+            "brightBlack": "#162C22",
+            "brightBlue": "#5E5CD6",
+            "brightCyan": "#137C73",
+            "brightGreen": "#1E7B3F",
+            "brightPurple": "#B33D9D",
+            "brightRed": "#AD522E",
+            "brightWhite": "#E6E6E6",
+            "brightYellow": "#896624",
+            "cursorColor": "#AD522E",
+            "cyan": "#137C73",
+            "foreground": "#417665",
+            "green": "#1E7B3F",
+            "name": "Uno Due Tre (Nature)",
+            "purple": "#B33D9D",
+            "red": "#AD522E",
+            "selectionBackground": "#0D5940",
+            "white": "#E6E6E6",
+            "yellow": "#896624"
+        },
+        {
             "background": "#000000",
             "black": "#000000",
             "blue": "#000080",
@@ -304,5 +387,6 @@
     ],
     "showTabsInTitlebar": true,
     "snapToGridOnResize": false,
-    "theme": "system"
+    "theme": "dark",
+    "useAcrylicInTabRow": true
 }

@@ -53,6 +53,8 @@ export PAGER="less"
 export PYENV_ROOT="$HOME/.pyenv"
 
 path=(
+  # Aseprite
+  "$HOME/Applications/aseprite/Aseprite.app/Contents/MacOS"
   # Load user installed commands
   "$HOME/.local/bin"
   # Load Rust Cargo commands

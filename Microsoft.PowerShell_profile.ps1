@@ -3,26 +3,26 @@ Set-PSReadlineOption -EditMode Emacs
 
 Set-PSReadLineOption -Colors @{
   Command = 'Magenta'
-  Number = 'DarkGray'
-  Member = 'DarkGray'
-  Operator = 'DarkGray'
-  Type = 'DarkGray'
-  Variable = 'DarkGreen'
-  Parameter = 'DarkGreen'
-  ContinuationPrompt = 'DarkGray'
-  Default = 'DarkGray'
+  Number = 'Gray'
+  Member = 'Gray'
+  Operator = 'Gray'
+  Type = 'Gray'
+  Variable = 'Green'
+  Parameter = 'Green'
+  ContinuationPrompt = 'Gray'
+  Default = 'Gray'
 }
 
 $Host.PrivateData.ErrorForegroundColor = "Red"
-$Host.PrivateData.ErrorBackgroundColor = "White"
+$Host.PrivateData.ErrorBackgroundColor = "Black"
 $Host.PrivateData.WarningForegroundColor = "Yellow"
-$Host.PrivateData.WarningBackgroundColor = "White"
+$Host.PrivateData.WarningBackgroundColor = "Black"
 $Host.PrivateData.DebugForegroundColor = "Yellow"
-$Host.PrivateData.DebugBackgroundColor = "White"
+$Host.PrivateData.DebugBackgroundColor = "Black"
 $Host.PrivateData.VerboseForegroundColor = "Yellow"
-$Host.PrivateData.VerboseBackgroundColor = "White"
+$Host.PrivateData.VerboseBackgroundColor = "Black"
 $Host.PrivateData.ProgressForegroundColor = "DarkGray"
-$Host.PrivateData.ProgressBackgroundColor = "White"
+$Host.PrivateData.ProgressBackgroundColor = "Black"
 
 Set-Alias l ls
 Set-Alias ll ls
