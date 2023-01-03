@@ -162,7 +162,7 @@ fi
 # Replace `ls` with `exa`
 # https://the.exa.website/
 if which exa >/dev/null; then
-  alias ls='exa --group-directories-first'
+  alias ls='exa --group-directories-first --ignore-glob "Icon?"'
   alias l='ls'
   alias ll='ls -l'
   alias la='ls -la'
