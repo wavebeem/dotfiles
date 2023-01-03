@@ -170,7 +170,7 @@
     "*.csv": "default",
     "*.ipynb": "jupyter-notebook"
   },
-  "workbench.iconTheme": "simple-icons",
+  "workbench.iconTheme": "material-icon-theme",
   "workbench.preferredDarkColorTheme": "Uno Due Tre (Miasma)",
   "workbench.preferredHighContrastColorTheme": "Uno Due Tre (Miasma)",
   "workbench.preferredHighContrastLightColorTheme": "Uno Due Tre (Miasma)",

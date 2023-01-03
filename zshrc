@@ -26,12 +26,12 @@ autoload -Uz compinit
 compinit
 
 # Simple prompt that doesn't change size
-PROMPT="%B%F{cyan}zsh:%f%b "
+PROMPT="%B%F{magenta}zsh:%f%b "
 PROMPT2="$PROMPT"
 
 # Automatic command suggestions as I type
 source ~/.zsh-autosuggestions/zsh-autosuggestions.zsh
-ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=cyan"
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=yellow"
 
 # Python virtualenv assumes you want your shell prompt mangled without this
 export VIRTUAL_ENV_DISABLE_PROMPT="true"
