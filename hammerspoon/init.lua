@@ -11,7 +11,7 @@ personalApps = {
 }
 
 function cmd.hidePersonalApps()
-  for _, appName in ipairs(personalApps) do
+  for _, appName in ipairs(personalApps) do;
     local app = hs.application.get(appName)
     if app then
       app:hide()

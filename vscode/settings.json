@@ -81,8 +81,8 @@
     "*.njk": "html",
     ".env": "ini",
     ".env.local.example": "ini",
-    "bashrc": "shellscript",
     "CODEOWNERS": "ini",
+    "bashrc": "shellscript",
     "gitignore": "ignore",
     "zshenv": "shellscript",
     "zshrc": "shellscript"
@@ -124,8 +124,8 @@
   },
   "git.autofetch": true,
   "git.confirmSync": false,
-  "git.enabled": true,
   "git.enableSmartCommit": true,
+  "git.enabled": true,
   "gitblame.statusBarMessageFormat": "${author.name} (${time.ago})",
   "html.format.endWithNewline": true,
   "html.format.indentHandlebars": true,
@@ -165,6 +165,7 @@
   "workbench.editor.decorations.badges": true,
   "workbench.editor.decorations.colors": true,
   "workbench.editor.enablePreviewFromQuickOpen": false,
+  "workbench.editor.showTabs": false,
   "workbench.editorAssociations": {
     "*.csv": "default",
     "*.ipynb": "jupyter-notebook"
