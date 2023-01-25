@@ -205,5 +205,9 @@ if [[ -e ~/.rvm/scripts/rvm ]]; then
   source ~/.rvm/scripts/rvm
 fi
 
+if [[ -e /opt/homebrew/bin/brew ]]; then
+  eval "$(/opt/homebrew/bin/brew shellenv)"
+fi
+
 # Load device specific customizations
 source ~/.after.zshrc.zsh

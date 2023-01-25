@@ -181,5 +181,6 @@
   "workbench.tree.indent": 16,
   "workbench.tree.renderIndentGuides": "always",
   "zenMode.centerLayout": false,
-  "zenMode.fullScreen": false
+  "zenMode.fullScreen": false,
+  "window.commandCenter": false
 }
