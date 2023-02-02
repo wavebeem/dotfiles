@@ -57,6 +57,8 @@ path=(
   "$HOME/Applications/aseprite/Aseprite.app/Contents/MacOS"
   # Load user installed commands
   "$HOME/.local/bin"
+  "$HOME/dotfiles/bin"
+  "$HOME/w/dotfiles/bin"
   # Load Rust Cargo commands
   "$HOME/.cargo/bin"
   # Python stuff
@@ -124,23 +126,10 @@ precmd() {
   echo
 }
 
-embiggen() {
-  local ret=0
-  for file in "$@"; do
-    case "$file" in
-      *.big.png)
-        ;;
-      *.png)
-        magick "$file" -scale '1000%' "${file%%.png}.big.png"
-        ;;
-      *)
-        echo "Only .png files are supported" >&2
-        let ret++
-        ;;
-    esac
-  done
-  return "$ret"
-}
+# Load homebrew
+if [[ -e /opt/homebrew/bin/brew ]]; then
+  eval "$(/opt/homebrew/bin/brew shellenv)"
+fi
 
 # Easy open files
 if [[ $(uname -r) = *Microsoft ]]; then
@@ -205,9 +194,6 @@ if [[ -e ~/.rvm/scripts/rvm ]]; then
   source ~/.rvm/scripts/rvm
 fi
 
-if [[ -e /opt/homebrew/bin/brew ]]; then
-  eval "$(/opt/homebrew/bin/brew shellenv)"
-fi
 
 # Load device specific customizations
 source ~/.after.zshrc.zsh
