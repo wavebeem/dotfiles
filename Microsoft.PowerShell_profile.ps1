@@ -2,7 +2,7 @@ Set-PSReadlineOption -BellStyle None
 Set-PSReadlineOption -EditMode Emacs
 
 Set-PSReadLineOption -Colors @{
-  Command = 'Magenta'
+  Command = 'Yellow'
   Number = 'Gray'
   Member = 'Gray'
   Operator = 'Gray'
@@ -33,7 +33,7 @@ $bold = "$esc[1m"
 
 function prompt {
   Write-Host ""
-  Write-Host -NoNewline -ForegroundColor Cyan "${bold}pwsh:"
+  Write-Host -NoNewline -ForegroundColor Magenta "${bold}pwsh:"
   return " "
 }
 
