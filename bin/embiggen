@@ -1,0 +1,25 @@
+#!/usr/bin/env node
+const { spawnSync } = require("child_process");
+
+const supportedExtensions = new Set([".png", ".gif"]);
+
+let exitCode = 0;
+for (const file of process.argv.slice(2)) {
+  if (/\.big\.\w+/.test(file)) {
+    continue;
+  }
+  const [, name = "", extension = ""] = file.match(/^(.*?)(\.\w+)$/i) || [];
+  if (!supportedExtensions.has(extension.toLowerCase())) {
+    console.error(process.argv0, "Unsupported file type:", file);
+    exitCode++;
+    continue;
+  }
+  spawnSync("magick", [
+    file,
+    "-scale",
+    "1000%",
+    "-strip",
+    `${name}.big${extension}`,
+  ]);
+}
+process.exit(exitCode);
