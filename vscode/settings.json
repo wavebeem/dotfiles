@@ -33,7 +33,6 @@
   "[vue]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "diffEditor.renderSideBySide": false,
   "editor.acceptSuggestionOnCommitCharacter": false,
   "editor.acceptSuggestionOnEnter": "off",
   "editor.accessibilitySupport": "off",
@@ -160,7 +159,6 @@
   "window.titleBarStyle": "custom",
   "window.titleSeparator": " – ",
   "workbench.activityBar.visible": true,
-  "workbench.colorTheme": "Uno Due Tre (Miasma)",
   "workbench.editor.decorations.badges": true,
   "workbench.editor.decorations.colors": true,
   "workbench.editor.enablePreviewFromQuickOpen": false,
@@ -182,5 +180,10 @@
   "zenMode.centerLayout": false,
   "zenMode.fullScreen": false,
   "window.commandCenter": false,
-  "editor.formatOnSave": true
+  "editor.formatOnSave": true,
+  "workbench.colorTheme": "Uno Due Tre (Miasma)",
+  "breadcrumbs.enabled": false,
+  "diffEditor.renderSideBySide": false,
+  "git.fetchOnPull": true,
+  "git.pruneOnFetch": true
 }

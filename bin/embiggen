@@ -10,7 +10,7 @@ for (const file of process.argv.slice(2)) {
   }
   const [, name = "", extension = ""] = file.match(/^(.*?)(\.\w+)$/i) || [];
   if (!supportedExtensions.has(extension.toLowerCase())) {
-    console.error(process.argv0, "Unsupported file type:", file);
+    console.error("Unsupported file type:", file);
     exitCode++;
     continue;
   }
