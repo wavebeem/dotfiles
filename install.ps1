@@ -6,7 +6,7 @@ $VSCODE = "$env:APPDATA\Code\User"
 
 function main() {
   install "vimrc"
-  install "gitconfig"
+  install_cp "gitconfig"
   install "gitignore"
   install "welcome"
 
@@ -16,10 +16,19 @@ function main() {
   install_as "vscode\keybindings.json" "$VSCODE\keybindings.json"
   install_as "vscode\settings.json" "$VSCODE\settings.json"
   install_as "vscode\snippets" "$VSCODE\snippets"
+
+  Write-Host ""
+  Write-Host -Background Red -Foreground Black "  Don't forget to use OpenSSH for 1Password  "
+  Write-Host ""
+  Write-Host "git config --global core.sshCommand ""C:/Windows/System32/OpenSSH/ssh.exe"""
 }
 
 function install($path) {
   install_as $path "$HOME\.$path"
+}
+
+function install_cp($path) {
+  Copy-Item $path "$HOME\.$path"
 }
 
 function install_as($path, $dest) {
