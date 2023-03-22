@@ -1,16 +1,5 @@
---pager=less
+--pager=less -R
 --smart-case
---ignore-dir=log
---ignore-dir=node_modules
---ignore-dir=bower_components
---ignore-dir=tmp
---ignore-dir=cache
---ignore-dir=build
---ignore-dir=docs
---ignore-dir=instrument
---ignore-dir=testbed
---ignore-dir=reports
---ignore-dir=public
---ignore-dir=coverage
---ignore-dir=.sass-cache
+--ignore-dir=.next
+--ignore-dir=playwright-report
 --ignore-file=ext:log

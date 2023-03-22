@@ -48,25 +48,26 @@ export GIT_EDITOR="$EDITOR"
 export VISUAL="$EDITOR"
 
 # less is better than more
-export PAGER="less"
+# -R preserves ANSI color codes
+export PAGER="less -R"
 
 export PYENV_ROOT="$HOME/.pyenv"
 
 path=(
   # Aseprite
-  "$HOME/Applications/aseprite/Aseprite.app/Contents/MacOS"
+  "~/Applications/aseprite/Aseprite.app/Contents/MacOS"
   # Load user installed commands
-  "$HOME/.local/bin"
-  "$HOME/dotfiles/bin"
-  "$HOME/w/dotfiles/bin"
+  "~/.local/bin"
+  "~/dotfiles/bin"
+  "~/w/dotfiles/bin"
   # Load Rust Cargo commands
-  "$HOME/.cargo/bin"
+  "~/.cargo/bin"
   # Python stuff
   "$PYENV_ROOT/bin"
   "$PYENV_ROOT/shims"
-  "$HOME/.poetry/bin"
+  "~/.poetry/bin"
   # Ruby
-  "$HOME/.rvm/bin"
+  "~/.rvm/bin"
   $path
 )
 
