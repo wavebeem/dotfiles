@@ -51,8 +51,11 @@ export VISUAL="$EDITOR"
 export PAGER="less"
 
 export PYENV_ROOT="$HOME/.pyenv"
+export VOLTA_HOME="$HOME/.volta"
 
 path=(
+  # Volta Node manager
+  "$VOLTA_HOME/bin"
   # Aseprite
   "$HOME/Applications/aseprite/Aseprite.app/Contents/MacOS"
   # Load user installed commands
@@ -98,6 +101,11 @@ __install.nvm() {
 __install.nodenv() {
   brew install nodenv node-build nodenv/nodenv/nodenv-package-rehash
   nodenv package-hooks install --all
+}
+
+# Install Volta Node manager
+__install.volta() {
+  curl https://get.volta.sh | bash
 }
 
 # Install pyenv
