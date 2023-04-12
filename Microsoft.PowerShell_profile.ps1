@@ -40,3 +40,15 @@ function prompt {
 function .. {
   Set-Location ..
 }
+
+function __install.asdf {
+  git clone "https://github.com/asdf-vm/asdf.git" "$HOME/.asdf" --branch "v0.11.3"
+}
+
+function __install.asdf.nodejs {
+  asdf plugin add nodejs "https://github.com/asdf-vm/asdf-nodejs.git"
+}
+
+if (Test-Path "$HOME/.asdf/asdf.ps1") {
+  . "$HOME/.asdf/asdf.ps1"
+}
