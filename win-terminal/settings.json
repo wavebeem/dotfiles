@@ -29,11 +29,16 @@
             "keys": "alt+shift+d"
         }
     ],
+    "alwaysShowNotificationIcon": false,
+    "confirmCloseAllTabs": false,
     "copyFormatting": "none",
     "copyOnSelect": false,
     "defaultProfile": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
     "initialCols": 100,
     "initialRows": 48,
+    "launchMode": "maximized",
+    "minimizeToNotificationArea": false,
+    "newTabPosition": "afterCurrentTab",
     "profiles": 
     {
         "defaults": 
@@ -387,6 +392,8 @@
     ],
     "showTabsInTitlebar": true,
     "snapToGridOnResize": false,
+    "tabWidthMode": "equal",
     "theme": "dark",
+    "themes": [],
     "useAcrylicInTabRow": true
 }

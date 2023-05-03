@@ -109,6 +109,14 @@ __install.volta() {
   curl https://get.volta.sh | bash
 }
 
+__install.asdf() {
+  git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch "v0.11.3"
+}
+
+__install.asdf.nodejs() {
+  asdf plugin add nodejs https://github.com/asdf-vm/asdf-nodejs.git
+}
+
 # Install pyenv
 __install.pyenv() {
    git clone https://github.com/pyenv/pyenv.git ~/.pyenv
@@ -198,6 +206,15 @@ fi
 # Load nodenv if it exists
 if which nodenv >/dev/null; then
   eval "$(nodenv init - --no-rehash)"
+fi
+
+# Load asdf
+if [[ -e "$HOME/.asdf/asdf.sh" ]]; then
+  source "$HOME/.asdf/asdf.sh"
+  # append completions to fpath
+  fpath=(${ASDF_DIR}/completions $fpath)
+  # initialize completions with zsh's compinit
+  autoload -Uz compinit && compinit
 fi
 
 # Load rvm if it exists

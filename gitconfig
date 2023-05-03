@@ -6,6 +6,5 @@
 [core]
   excludesfile = ~/.gitignore
   autocrlf = false
-	sshCommand = C:/Windows/System32/OpenSSH/ssh.exe
 [pull]
   rebase = false

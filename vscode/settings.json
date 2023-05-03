@@ -22,7 +22,8 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[python]": {
-    "editor.tabSize": 4
+    "editor.tabSize": 4,
+    "editor.formatOnType": true
   },
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
