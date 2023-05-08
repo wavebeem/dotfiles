@@ -22,7 +22,7 @@
         "color" : "#ADEBD6FF"
       },
       "iconPaddingHorizontal" : 8,
-      "roundness" : 2,
+      "roundness" : 4,
       "paddingVertical" : 8,
       "iconSize" : 32
     },
@@ -36,12 +36,12 @@
         "font" : "System",
         "color" : "#ADEBD6FF"
       },
-      "background" : "#00000000",
+      "background" : "#1C3028FF",
       "roundness" : 2,
       "paddingVertical" : 8
     },
     "window" : {
-      "color" : "#19342BFF",
+      "color" : "#1C3028FF",
       "paddingHorizontal" : 8,
       "width" : 700,
       "borderPadding" : 0,
@@ -57,8 +57,8 @@
       "thickness" : 0
     },
     "scrollbar" : {
-      "color" : "#F5A3E7FF",
-      "thickness" : 4
+      "color" : "#2659487F",
+      "thickness" : 8
     },
     "name" : "Miasma"
   }
