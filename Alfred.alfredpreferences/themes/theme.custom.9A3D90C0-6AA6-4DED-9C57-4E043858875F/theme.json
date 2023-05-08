@@ -1,35 +1,35 @@
 {
   "alfredtheme" : {
     "result" : {
-      "textSpacing" : 5,
+      "textSpacing" : 8,
       "subtext" : {
         "size" : 12,
         "colorSelected" : "#000000CB",
         "font" : "System",
-        "color" : "#FFFFFF7E"
+        "color" : "#FFFFFF7F"
       },
       "shortcut" : {
         "size" : 16,
         "colorSelected" : "#000000FF",
         "font" : "System",
-        "color" : "#FFFFFF7E"
+        "color" : "#FFFFFF3F"
       },
-      "backgroundSelected" : "#FFFFFFC0",
+      "backgroundSelected" : "#FFFFFFCC",
       "text" : {
-        "size" : 18,
+        "size" : 20,
         "colorSelected" : "#000000FF",
         "font" : "System",
-        "color" : "#FFFFFFCB"
+        "color" : "#FFFFFFCC"
       },
       "iconPaddingHorizontal" : 8,
       "roundness" : 8,
       "paddingVertical" : 8,
-      "iconSize" : 40
+      "iconSize" : 48
     },
     "search" : {
       "backgroundSelected" : "#358188FF",
-      "paddingHorizontal" : 7,
-      "spacing" : 9,
+      "paddingHorizontal" : 8,
+      "spacing" : 8,
       "text" : {
         "size" : 36,
         "colorSelected" : "#FFFFFFFF",
@@ -38,26 +38,27 @@
       },
       "background" : "#0000003E",
       "roundness" : 8,
-      "paddingVertical" : 5
+      "paddingVertical" : 8
     },
     "window" : {
       "color" : "#00000066",
-      "paddingHorizontal" : 9,
+      "paddingHorizontal" : 8,
       "width" : 700,
       "borderPadding" : 0,
       "borderColor" : "#0000007F",
       "blur" : 0,
-      "roundness" : 15,
-      "paddingVertical" : 9
+      "roundness" : 16,
+      "paddingVertical" : 8
     },
+    "credit" : "Brian Mock (wavebeem.com)",
     "visualEffectMode" : 2,
     "separator" : {
       "color" : "#CBCBCBF3",
       "thickness" : 0
     },
     "scrollbar" : {
-      "color" : "#358188FF",
-      "thickness" : 2
+      "color" : "#7F7F7F7F",
+      "thickness" : 4
     },
     "name" : "Alfred Modern Dark+"
   }
