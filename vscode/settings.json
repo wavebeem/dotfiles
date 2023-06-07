@@ -189,5 +189,6 @@
   "diffEditor.renderSideBySide": false,
   "debug.terminal.clearBeforeReusing": true,
   "workbench.editor.showTabs": false,
-  "workbench.colorTheme": "Miasma"
+  "workbench.colorTheme": "Miasma",
+  "breadcrumbs.enabled": false
 }
