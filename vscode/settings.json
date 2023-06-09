@@ -34,7 +34,10 @@
   "[vue]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "breadcrumbs.enabled": false,
+  "debug.terminal.clearBeforeReusing": true,
   "diffEditor.ignoreTrimWhitespace": false,
+  "diffEditor.renderSideBySide": false,
   "editor.acceptSuggestionOnCommitCharacter": false,
   "editor.acceptSuggestionOnEnter": "off",
   "editor.accessibilitySupport": "off",
@@ -50,6 +53,7 @@
   "editor.formatOnSave": true,
   "editor.guides.bracketPairs": "active",
   "editor.inlineSuggest.enabled": true,
+  "editor.linkedEditing": true,
   "editor.minimap.enabled": false,
   "editor.minimap.renderCharacters": true,
   "editor.multiCursorModifier": "alt",
@@ -172,9 +176,11 @@
   "window.titleBarStyle": "custom",
   "window.titleSeparator": " – ",
   "workbench.activityBar.visible": true,
+  "workbench.colorTheme": "Miasma",
   "workbench.editor.decorations.badges": true,
   "workbench.editor.decorations.colors": true,
   "workbench.editor.enablePreviewFromQuickOpen": false,
+  "workbench.editor.showTabs": false,
   "workbench.editorAssociations": {
     "*.csv": "default",
     "*.ipynb": "jupyter-notebook"
@@ -185,10 +191,5 @@
   "workbench.tree.indent": 16,
   "workbench.tree.renderIndentGuides": "always",
   "zenMode.centerLayout": false,
-  "zenMode.fullScreen": false,
-  "diffEditor.renderSideBySide": false,
-  "debug.terminal.clearBeforeReusing": true,
-  "workbench.editor.showTabs": false,
-  "workbench.colorTheme": "Miasma",
-  "breadcrumbs.enabled": false
+  "zenMode.fullScreen": false
 }
