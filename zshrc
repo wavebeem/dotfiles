@@ -4,7 +4,7 @@
 HISTFILE="$HOME/.zsh_history"
 HISTSIZE=10000
 SAVEHIST=10000
-setopt APPEND_HISTORY
+setopt SHARE_HISTORY
 
 # Use Emacs-style keyboard shortcuts (bash default)
 bindkey -e
@@ -52,11 +52,8 @@ export VISUAL="$EDITOR"
 export PAGER="less -R"
 
 export PYENV_ROOT="$HOME/.pyenv"
-export VOLTA_HOME="$HOME/.volta"
 
 path=(
-  # Volta Node manager
-  "$VOLTA_HOME/bin"
   # Aseprite
   "$HOME/Applications/aseprite/Aseprite.app/Contents/MacOS"
   # Load user installed commands
@@ -91,22 +88,6 @@ __install.autosuggestions() {
   git clone \
     https://github.com/zsh-users/zsh-autosuggestions \
     ~/.zsh-autosuggestions
-}
-
-# Install nvm
-__install.nvm() {
-  git clone https://github.com/nvm-sh/nvm.git ~/.nvm
-}
-
-# Install nodenv
-__install.nodenv() {
-  brew install nodenv node-build nodenv/nodenv/nodenv-package-rehash
-  nodenv package-hooks install --all
-}
-
-# Install Volta Node manager
-__install.volta() {
-  curl https://get.volta.sh | bash
 }
 
 __install.asdf() {
@@ -172,7 +153,7 @@ fi
 # Replace `ls` with `exa`
 # https://the.exa.website/
 if which exa >/dev/null; then
-  alias ls='exa --group-directories-first --ignore-glob "Icon?"'
+  alias ls='exa --group-directories-first'
   alias l='ls'
   alias ll='ls -l'
   alias la='ls -la'
@@ -189,10 +170,6 @@ alias '$'=""
 alias g="git status"
 alias gl="git log"
 
-# Weird tmux shortcuts I like
-alias t="tmux"
-alias T="tmux attach -d"
-
 # Faster directory movement
 alias d='pwd'
 alias s="cd ..; pwd"
@@ -201,11 +178,6 @@ alias ..="s"
 # Upgrade pyenv to a shell function
 if command -v pyenv >/dev/null; then
   eval "$(pyenv init -)"
-fi
-
-# Load nodenv if it exists
-if which nodenv >/dev/null; then
-  eval "$(nodenv init - --no-rehash)"
 fi
 
 # Load asdf
