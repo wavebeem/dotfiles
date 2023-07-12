@@ -58,19 +58,19 @@ path=(
   # Volta Node manager
   "$VOLTA_HOME/bin"
   # Aseprite
-  "~/Applications/aseprite/Aseprite.app/Contents/MacOS"
+  "$HOME/Applications/aseprite/Aseprite.app/Contents/MacOS"
   # Load user installed commands
-  "~/.local/bin"
-  "~/dotfiles/bin"
-  "~/w/dotfiles/bin"
+  "$HOME/.local/bin"
+  "$HOME/dotfiles/bin"
+  "$HOME/w/dotfiles/bin"
   # Load Rust Cargo commands
-  "~/.cargo/bin"
+  "$HOME/.cargo/bin"
   # Python stuff
   "$PYENV_ROOT/bin"
   "$PYENV_ROOT/shims"
-  "~/.poetry/bin"
+  "$HOME/.poetry/bin"
   # Ruby
-  "~/.rvm/bin"
+  "$HOME/.rvm/bin"
   $path
 )
 
