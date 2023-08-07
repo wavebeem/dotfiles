@@ -21,10 +21,6 @@ setopt GLOB_STAR_SHORT 2>/dev/null
 # Allow writing comments in interactive mode (why not?)
 setopt INTERACTIVE_COMMENTS
 
-# Enable both zsh and bash completion systems (nvm only support bash)
-autoload -Uz compinit
-compinit
-
 # Simple prompt that doesn't change size
 PROMPT="%B%F{magenta}zsh:%f%b "
 PROMPT2="$PROMPT"
@@ -90,10 +86,12 @@ __install.autosuggestions() {
     ~/.zsh-autosuggestions
 }
 
+# Install asdf
 __install.asdf() {
   git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch "v0.11.3"
 }
 
+# Install asdf Node.js plugin
 __install.asdf.nodejs() {
   asdf plugin add nodejs https://github.com/asdf-vm/asdf-nodejs.git
 }
@@ -193,7 +191,6 @@ fi
 if [[ -e ~/.rvm/scripts/rvm ]]; then
   source ~/.rvm/scripts/rvm
 fi
-
 
 # Load device specific customizations
 source ~/.after.zshrc.zsh

@@ -36,7 +36,6 @@
   },
   "debug.terminal.clearBeforeReusing": true,
   "diffEditor.ignoreTrimWhitespace": false,
-  "diffEditor.renderSideBySide": false,
   "editor.acceptSuggestionOnCommitCharacter": false,
   "editor.acceptSuggestionOnEnter": "off",
   "editor.accessibilitySupport": "off",
@@ -191,5 +190,6 @@
   "zenMode.centerLayout": false,
   "zenMode.fullScreen": false,
   "workbench.editor.showTabs": false,
-  "breadcrumbs.enabled": false
+  "breadcrumbs.enabled": false,
+  "diffEditor.renderSideBySide": false
 }
