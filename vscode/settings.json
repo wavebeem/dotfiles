@@ -137,8 +137,8 @@
   "gitblame.statusBarMessageFormat": "${author.name} (${time.ago})",
   "github.copilot.enable": {
     "*": true,
+    "plaintext": true,
     "markdown": true,
-    "plaintext": false,
     "scminput": false
   },
   "html.format.endWithNewline": true,
@@ -191,5 +191,6 @@
   "zenMode.fullScreen": false,
   "workbench.editor.showTabs": false,
   "breadcrumbs.enabled": false,
-  "diffEditor.renderSideBySide": false
+  "diffEditor.renderSideBySide": false,
+  "diffEditor.experimental.collapseUnchangedRegions": true
 }
