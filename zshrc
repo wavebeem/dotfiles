@@ -132,10 +132,9 @@ __install.homebrew() {
   bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 }
 
-# Install exa
-# https://the.exa.website/
-__install.exa() {
-  brew install exa
+# Install eza replacement for ls
+__install.eza() {
+  brew install eza
 }
 
 # Print a blank line between prompts to make it easier to read

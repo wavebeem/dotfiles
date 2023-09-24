@@ -155,7 +155,6 @@
   "typescript.updateImportsOnFileMove.enabled": "always",
   "vsicons.dontShowNewVersionMessage": true,
   "window.autoDetectColorScheme": true,
-  "window.menuBarVisibility": "compact",
   "window.title": "${rootPath}${separator}${remoteName}${separator}Code",
   "window.titleBarStyle": "custom",
   "window.titleSeparator": " – ",
@@ -163,7 +162,6 @@
   "workbench.editor.decorations.badges": true,
   "workbench.editor.decorations.colors": true,
   "workbench.editor.enablePreviewFromQuickOpen": false,
-  "workbench.editor.showTabs": false,
   "workbench.editorAssociations": {
     "*.csv": "default",
     "*.ipynb": "jupyter-notebook"
@@ -180,11 +178,12 @@
   "workbench.tree.renderIndentGuides": "always",
   "zenMode.centerLayout": false,
   "zenMode.fullScreen": false,
-  "window.commandCenter": false,
+  "window.commandCenter": true,
   "editor.formatOnSave": true,
-  "workbench.colorTheme": "Uno Due Tre (Miasma)",
   "breadcrumbs.enabled": false,
   "diffEditor.renderSideBySide": false,
   "git.fetchOnPull": true,
-  "git.pruneOnFetch": true
+  "git.pruneOnFetch": true,
+  "window.menuBarVisibility": "compact",
+  "workbench.colorTheme": "Miasma"
 }

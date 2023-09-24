@@ -24,12 +24,26 @@ $Host.PrivateData.VerboseBackgroundColor = "Black"
 $Host.PrivateData.ProgressForegroundColor = "DarkGray"
 $Host.PrivateData.ProgressBackgroundColor = "Black"
 
-Set-Alias l ls
-Set-Alias ll ls
 Set-Alias g "git status"
 
 $esc = [char]27
 $bold = "$esc[1m"
+
+
+function __install.eza {
+  winget install eza-community.eza
+}
+
+if (Get-Command eza -ErrorAction SilentlyContinue) {
+  Set-Alias ls eza -Option AllScope
+
+  function ll() {
+    eza -l $args
+  }
+} else {
+  Set-Alias l ls
+  Set-Alias ll ls
+}
 
 function prompt {
   Write-Host ""
@@ -39,4 +53,9 @@ function prompt {
 
 function .. {
   Set-Location ..
+}
+
+function s {
+  Set-Location ..
+  Write-Output (Get-Location).Path
 }
