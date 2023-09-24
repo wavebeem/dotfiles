@@ -4,62 +4,61 @@
       "textSpacing" : 8,
       "subtext" : {
         "size" : 12,
-        "colorSelected" : "#19342BFF",
+        "colorSelected" : "#000000CB",
         "font" : "System",
-        "color" : "#265948FF"
+        "color" : "#FFFFFF7F"
       },
       "shortcut" : {
         "size" : 16,
-        "colorSelected" : "#19342BFF",
+        "colorSelected" : "#000000FF",
         "font" : "System",
-        "color" : "#265948FF"
+        "color" : "#FFFFFF3F"
       },
-      "backgroundSelected" : "#ADEBD6FF",
+      "backgroundSelected" : "#FFFFFFCC",
       "text" : {
-        "size" : 18,
-        "colorSelected" : "#19342BFF",
+        "size" : 20,
+        "colorSelected" : "#000000FF",
         "font" : "System",
-        "color" : "#ADEBD6FF"
+        "color" : "#FFFFFFCC"
       },
       "iconPaddingHorizontal" : 8,
       "roundness" : 4,
       "paddingVertical" : 8,
-      "iconSize" : 32
+      "iconSize" : 48
     },
     "search" : {
-      "backgroundSelected" : "#ADEBD6FF",
+      "backgroundSelected" : "#358188FF",
       "paddingHorizontal" : 8,
       "spacing" : 8,
       "text" : {
-        "size" : 32,
-        "colorSelected" : "#19342BFF",
-        "font" : "System",
-        "color" : "#ADEBD6FF"
+        "size" : 36,
+        "colorSelected" : "#FFFFFFFF",
+        "font" : "System Light",
+        "color" : "#FFFFFFFF"
       },
-      "background" : "#1C3028FF",
-      "roundness" : 2,
+      "background" : "#4C4C4CFF",
+      "roundness" : 4,
       "paddingVertical" : 8
     },
     "window" : {
-      "color" : "#1C3028FF",
+      "color" : "#323232FF",
       "paddingHorizontal" : 8,
       "width" : 700,
-      "borderPadding" : 0,
-      "borderColor" : "#265948FF",
+      "borderPadding" : 1,
+      "borderColor" : "#FFFFFF3F",
       "blur" : 0,
       "roundness" : 8,
       "paddingVertical" : 8
     },
     "credit" : "Sage Fennel (wavebeem.com)",
-    "visualEffectMode" : 2,
     "separator" : {
-      "color" : "#265948FF",
+      "color" : "#CBCBCBF3",
       "thickness" : 0
     },
     "scrollbar" : {
-      "color" : "#2659487F",
+      "color" : "#7F7F7F7F",
       "thickness" : 8
     },
-    "name" : "Miasma"
+    "name" : "Dark-ish"
   }
 }

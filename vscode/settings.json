@@ -22,8 +22,8 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[python]": {
-    "editor.tabSize": 4,
-    "editor.formatOnType": true
+    "editor.formatOnType": true,
+    "editor.tabSize": 4
   },
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -34,6 +34,8 @@
   "[vue]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "debug.terminal.clearBeforeReusing": true,
+  "diffEditor.ignoreTrimWhitespace": false,
   "editor.acceptSuggestionOnCommitCharacter": false,
   "editor.acceptSuggestionOnEnter": "off",
   "editor.accessibilitySupport": "off",
@@ -46,7 +48,10 @@
   "editor.fontSize": 16,
   "editor.fontWeight": 400,
   "editor.formatOnPaste": false,
+  "editor.formatOnSave": true,
   "editor.guides.bracketPairs": "active",
+  "editor.inlineSuggest.enabled": true,
+  "editor.linkedEditing": true,
   "editor.minimap.enabled": false,
   "editor.minimap.renderCharacters": true,
   "editor.multiCursorModifier": "alt",
@@ -56,6 +61,8 @@
   "editor.renderLineHighlight": "all",
   "editor.renderWhitespace": "none",
   "editor.rulers": [80, 100, 120],
+  "editor.scrollbar.horizontalScrollbarSize": 8,
+  "editor.scrollbar.verticalScrollbarSize": 16,
   "editor.snippetSuggestions": "none",
   "editor.suggest.snippetsPreventQuickSuggestions": false,
   "editor.tabSize": 2,
@@ -81,8 +88,8 @@
     "*.njk": "html",
     ".env": "ini",
     ".env.local.example": "ini",
-    "CODEOWNERS": "ini",
     "bashrc": "shellscript",
+    "CODEOWNERS": "ini",
     "gitignore": "ignore",
     "zshenv": "shellscript",
     "zshrc": "shellscript"
@@ -123,9 +130,17 @@
     "**/node_modules/**": true
   },
   "git.confirmSync": false,
-  "git.enableSmartCommit": true,
   "git.enabled": true,
+  "git.enableSmartCommit": true,
+  "git.fetchOnPull": true,
+  "git.pruneOnFetch": true,
   "gitblame.statusBarMessageFormat": "${author.name} (${time.ago})",
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": true,
+    "markdown": true,
+    "scminput": false
+  },
   "html.format.endWithNewline": true,
   "html.format.indentHandlebars": true,
   "javascript.updateImportsOnFileMove.enabled": "always",
@@ -154,11 +169,12 @@
   "typescript.tsserver.log": "off",
   "typescript.updateImportsOnFileMove.enabled": "always",
   "vsicons.dontShowNewVersionMessage": true,
-  "window.autoDetectColorScheme": true,
+  "window.menuBarVisibility": "compact",
   "window.title": "${rootPath}${separator}${remoteName}${separator}Code",
   "window.titleBarStyle": "custom",
   "window.titleSeparator": " – ",
   "workbench.activityBar.visible": true,
+  "workbench.colorTheme": "Miasma",
   "workbench.editor.decorations.badges": true,
   "workbench.editor.decorations.colors": true,
   "workbench.editor.enablePreviewFromQuickOpen": false,
@@ -167,23 +183,14 @@
     "*.ipynb": "jupyter-notebook"
   },
   "workbench.iconTheme": "vs-minimal",
-  "workbench.preferredDarkColorTheme": "Uno Due Tre (Miasma)",
-  "workbench.preferredHighContrastColorTheme": "Uno Due Tre (Miasma)",
-  "workbench.preferredHighContrastLightColorTheme": "Uno Due Tre (Miasma)",
-  "workbench.preferredLightColorTheme": "Uno Due Tre (Miasma)",
-  "workbench.productIconTheme": "fluent-icons",
   "workbench.startupEditor": "newUntitledFile",
   "workbench.statusBar.visible": true,
   "workbench.tree.indent": 16,
   "workbench.tree.renderIndentGuides": "always",
   "zenMode.centerLayout": false,
   "zenMode.fullScreen": false,
-  "window.commandCenter": true,
-  "editor.formatOnSave": true,
+  "workbench.editor.showTabs": false,
   "breadcrumbs.enabled": false,
   "diffEditor.renderSideBySide": false,
-  "git.fetchOnPull": true,
-  "git.pruneOnFetch": true,
-  "window.menuBarVisibility": "compact",
-  "workbench.colorTheme": "Miasma"
+  "diffEditor.experimental.collapseUnchangedRegions": true
 }

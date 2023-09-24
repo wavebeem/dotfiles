@@ -4,7 +4,7 @@
 HISTFILE="$HOME/.zsh_history"
 HISTSIZE=10000
 SAVEHIST=10000
-setopt APPEND_HISTORY
+setopt SHARE_HISTORY
 
 # Use Emacs-style keyboard shortcuts (bash default)
 bindkey -e
@@ -20,10 +20,6 @@ setopt GLOB_STAR_SHORT 2>/dev/null
 
 # Allow writing comments in interactive mode (why not?)
 setopt INTERACTIVE_COMMENTS
-
-# Enable both zsh and bash completion systems (nvm only support bash)
-autoload -Uz compinit
-compinit
 
 # Simple prompt that doesn't change size
 PROMPT="%B%F{magenta}zsh:%f%b "
@@ -52,25 +48,22 @@ export VISUAL="$EDITOR"
 export PAGER="less -R"
 
 export PYENV_ROOT="$HOME/.pyenv"
-export VOLTA_HOME="$HOME/.volta"
 
 path=(
-  # Volta Node manager
-  "$VOLTA_HOME/bin"
   # Aseprite
-  "~/Applications/aseprite/Aseprite.app/Contents/MacOS"
+  "$HOME/Applications/aseprite/Aseprite.app/Contents/MacOS"
   # Load user installed commands
-  "~/.local/bin"
-  "~/dotfiles/bin"
-  "~/w/dotfiles/bin"
+  "$HOME/.local/bin"
+  "$HOME/dotfiles/bin"
+  "$HOME/w/dotfiles/bin"
   # Load Rust Cargo commands
-  "~/.cargo/bin"
+  "$HOME/.cargo/bin"
   # Python stuff
   "$PYENV_ROOT/bin"
   "$PYENV_ROOT/shims"
-  "~/.poetry/bin"
+  "$HOME/.poetry/bin"
   # Ruby
-  "~/.rvm/bin"
+  "$HOME/.rvm/bin"
   $path
 )
 
@@ -93,26 +86,12 @@ __install.autosuggestions() {
     ~/.zsh-autosuggestions
 }
 
-# Install nvm
-__install.nvm() {
-  git clone https://github.com/nvm-sh/nvm.git ~/.nvm
-}
-
-# Install nodenv
-__install.nodenv() {
-  brew install nodenv node-build nodenv/nodenv/nodenv-package-rehash
-  nodenv package-hooks install --all
-}
-
-# Install Volta Node manager
-__install.volta() {
-  curl https://get.volta.sh | bash
-}
-
+# Install asdf
 __install.asdf() {
   git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch "v0.11.3"
 }
 
+# Install asdf Node.js plugin
 __install.asdf.nodejs() {
   asdf plugin add nodejs https://github.com/asdf-vm/asdf-nodejs.git
 }
@@ -145,6 +124,8 @@ precmd() {
 # Load homebrew
 if [[ -e /opt/homebrew/bin/brew ]]; then
   eval "$(/opt/homebrew/bin/brew shellenv)"
+elif [[ -e /home/linuxbrew/.linuxbrew/bin/brew ]]; then
+  eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 fi
 
 # Easy open files
@@ -169,7 +150,7 @@ fi
 # Replace `ls` with `exa`
 # https://the.exa.website/
 if which exa >/dev/null; then
-  alias ls='exa --group-directories-first --ignore-glob "Icon?"'
+  alias ls='exa --group-directories-first'
   alias l='ls'
   alias ll='ls -l'
   alias la='ls -la'
@@ -186,10 +167,6 @@ alias '$'=""
 alias g="git status"
 alias gl="git log"
 
-# Weird tmux shortcuts I like
-alias t="tmux"
-alias T="tmux attach -d"
-
 # Faster directory movement
 alias d='pwd'
 alias s="cd ..; pwd"
@@ -198,11 +175,6 @@ alias ..="s"
 # Upgrade pyenv to a shell function
 if command -v pyenv >/dev/null; then
   eval "$(pyenv init -)"
-fi
-
-# Load nodenv if it exists
-if which nodenv >/dev/null; then
-  eval "$(nodenv init - --no-rehash)"
 fi
 
 # Load asdf
@@ -218,7 +190,6 @@ fi
 if [[ -e ~/.rvm/scripts/rvm ]]; then
   source ~/.rvm/scripts/rvm
 fi
-
 
 # Load device specific customizations
 source ~/.after.zshrc.zsh

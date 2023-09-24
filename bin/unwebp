@@ -1,0 +1,11 @@
+#!/usr/bin/env node
+const { spawnSync } = require("child_process");
+
+for (const file of process.argv.slice(2)) {
+  if (!/\.webp/i.test(file)) {
+    continue;
+  }
+  const [, name = ""] = file.match(/^(.*?)\.webp$/i) || [];
+  spawnSync("magick", [file, `${name}.png`]);
+  spawnSync("magick", [file, `${name}.gif`]);
+}

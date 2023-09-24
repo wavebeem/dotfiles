@@ -10,11 +10,9 @@ https://www.choosyosx.com
 
 Use different default browsers based on which app opens the link
 
-### Hammerspoon
+### Rectangle
 
-https://www.hammerspoon.org/
-
-Automation tool
+https://rectangleapp.com/pro
 
 ### Bartender
 
@@ -27,9 +25,3 @@ Hide menu bar icons
 https://apps.apple.com/us/app/blinks/id998804308?mt=12
 
 Eye health reminder
-
-### BetterTouchTool
-
-https://folivora.ai/
-
-Window snapping is all I use it for lol
