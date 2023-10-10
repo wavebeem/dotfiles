@@ -4,61 +4,61 @@
       "textSpacing" : 8,
       "subtext" : {
         "size" : 12,
-        "colorSelected" : "#000000CB",
+        "colorSelected" : "#1C1736FF",
         "font" : "System",
-        "color" : "#FFFFFF7F"
+        "color" : "#C3B8F97F"
       },
       "shortcut" : {
         "size" : 16,
-        "colorSelected" : "#000000FF",
+        "colorSelected" : "#1C1736FF",
         "font" : "System",
-        "color" : "#FFFFFF3F"
+        "color" : "#C3B8F93F"
       },
-      "backgroundSelected" : "#FFFFFFCC",
+      "backgroundSelected" : "#A6F20DFF",
       "text" : {
         "size" : 20,
-        "colorSelected" : "#000000FF",
+        "colorSelected" : "#1C1736FF",
         "font" : "System",
-        "color" : "#FFFFFFCC"
+        "color" : "#EAE6FFCC"
       },
       "iconPaddingHorizontal" : 8,
-      "roundness" : 4,
+      "roundness" : 0,
       "paddingVertical" : 8,
       "iconSize" : 48
     },
     "search" : {
-      "backgroundSelected" : "#358188FF",
+      "backgroundSelected" : "#A6F20DFF",
       "paddingHorizontal" : 8,
       "spacing" : 8,
       "text" : {
         "size" : 36,
-        "colorSelected" : "#FFFFFFFF",
-        "font" : "System Light",
-        "color" : "#FFFFFFFF"
+        "colorSelected" : "#1C1736FF",
+        "font" : "System Bold",
+        "color" : "#EAE6FFFF"
       },
-      "background" : "#4C4C4CFF",
-      "roundness" : 4,
+      "background" : "#382E6BFF",
+      "roundness" : 0,
       "paddingVertical" : 8
     },
     "window" : {
-      "color" : "#323232FF",
+      "color" : "#1C1736FF",
       "paddingHorizontal" : 8,
       "width" : 700,
       "borderPadding" : 1,
-      "borderColor" : "#FFFFFF3F",
+      "borderColor" : "#A6F20DFF",
       "blur" : 0,
-      "roundness" : 8,
+      "roundness" : -64,
       "paddingVertical" : 8
     },
     "credit" : "Sage Fennel (wavebeem.com)",
     "separator" : {
-      "color" : "#4C4C4CFF",
+      "color" : "#0D0A197F",
       "thickness" : 0
     },
     "scrollbar" : {
-      "color" : "#7F7F7F7F",
-      "thickness" : 8
+      "color" : "#0E0B1AFF",
+      "thickness" : 0
     },
-    "name" : "Dark-ish"
+    "name" : "Toxic"
   }
 }

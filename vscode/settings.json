@@ -34,8 +34,11 @@
   "[vue]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "breadcrumbs.enabled": false,
   "debug.terminal.clearBeforeReusing": true,
+  "diffEditor.hideUnchangedRegions.enabled": true,
   "diffEditor.ignoreTrimWhitespace": false,
+  "diffEditor.renderSideBySide": false,
   "editor.acceptSuggestionOnCommitCharacter": false,
   "editor.acceptSuggestionOnEnter": "off",
   "editor.accessibilitySupport": "off",
@@ -85,6 +88,7 @@
   "explorer.confirmDragAndDrop": false,
   "extensions.ignoreRecommendations": true,
   "files.associations": {
+    "*.avsc": "json",
     "*.njk": "html",
     ".env": "ini",
     ".env.local.example": "ini",
@@ -137,8 +141,8 @@
   "gitblame.statusBarMessageFormat": "${author.name} (${time.ago})",
   "github.copilot.enable": {
     "*": true,
-    "plaintext": true,
     "markdown": true,
+    "plaintext": true,
     "scminput": false
   },
   "html.format.endWithNewline": true,
@@ -178,19 +182,18 @@
   "workbench.editor.decorations.badges": true,
   "workbench.editor.decorations.colors": true,
   "workbench.editor.enablePreviewFromQuickOpen": false,
+  "workbench.editor.showTabs": false,
   "workbench.editorAssociations": {
     "*.csv": "default",
     "*.ipynb": "jupyter-notebook"
   },
   "workbench.iconTheme": "vs-minimal",
+  "workbench.preferredHighContrastColorTheme": "Miasma",
+  "workbench.preferredHighContrastLightColorTheme": "Miasma",
   "workbench.startupEditor": "newUntitledFile",
   "workbench.statusBar.visible": true,
   "workbench.tree.indent": 16,
   "workbench.tree.renderIndentGuides": "always",
   "zenMode.centerLayout": false,
-  "zenMode.fullScreen": false,
-  "workbench.editor.showTabs": false,
-  "breadcrumbs.enabled": false,
-  "diffEditor.renderSideBySide": false,
-  "diffEditor.experimental.collapseUnchangedRegions": true
+  "zenMode.fullScreen": false
 }
