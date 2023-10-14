@@ -22,7 +22,7 @@ setopt GLOB_STAR_SHORT 2>/dev/null
 setopt INTERACTIVE_COMMENTS
 
 # Simple prompt that doesn't change size
-PROMPT="%B%F{magenta}zsh:%f%b "
+PROMPT="%B%F{green}zsh:%f%b "
 PROMPT2="$PROMPT"
 
 # Automatic command suggestions as I type
