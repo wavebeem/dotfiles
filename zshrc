@@ -143,13 +143,13 @@ else
 fi
 
 # Load direnv
-if which direnv >/dev/null; then
+if which direnv >/dev/null 2>&1; then
   eval "$(direnv hook zsh)"
 fi
 
 # Replace `ls` with `exa`
 # https://the.exa.website/
-if which exa >/dev/null; then
+if which exa >/dev/null 2>&1; then
   alias ls='exa --group-directories-first'
   alias l='ls'
   alias ll='ls -l'
