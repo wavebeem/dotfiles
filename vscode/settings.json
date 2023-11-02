@@ -175,7 +175,6 @@
   "vsicons.dontShowNewVersionMessage": true,
   "window.menuBarVisibility": "compact",
   "window.title": "${rootPath}${separator}${remoteName}${separator}Code",
-  "window.titleBarStyle": "custom",
   "window.titleSeparator": " – ",
   "workbench.activityBar.visible": true,
   "workbench.colorTheme": "Toxic",

@@ -29,12 +29,17 @@ Main() {
       local app_support="$HOME/Library/Application Support"
       local vscode="$app_support/Code/User"
       local aseprite="$app_support/Aseprite"
-      Install "hammerspoon"
       Install_as "vscode/keybindings.json" "$vscode/keybindings.json"
       Install_as "vscode/settings.json" "$vscode/settings.json"
       Install_as "vscode/snippets" "$vscode/snippets"
       Install_as "aseprite-scripts" "$aseprite/scripts"
       Install_as "Microsoft.PowerShell_profile.ps1" "$HOME/.config/powershell/Microsoft.PowerShell_profile.ps1"
+      ;;
+    Linux)
+      local vscode="$HOME/.config/Code/User"
+      Install_as "vscode/keybindings.json" "$vscode/keybindings.json"
+      Install_as "vscode/settings.json" "$vscode/settings.json"
+      Install_as "vscode/snippets" "$vscode/snippets"
       ;;
   esac
 }
