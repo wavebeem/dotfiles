@@ -21,6 +21,7 @@ Main() {
   Install "tmux.conf"
   Install "inputrc"
   Install "gitignore"
+  Install "hammerspoon"
   # Manually copy gitconfig so it can be modified for job-preferred git settings
   # Install "gitconfig"
   # Run commands based on OS
