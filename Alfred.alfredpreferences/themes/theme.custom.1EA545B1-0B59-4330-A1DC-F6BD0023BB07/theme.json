@@ -45,14 +45,14 @@
       "paddingHorizontal" : 8,
       "width" : 700,
       "borderPadding" : 4,
-      "borderColor" : "#382E6B7F",
+      "borderColor" : "#988ECC7F",
       "blur" : 0,
       "roundness" : 16,
       "paddingVertical" : 8
     },
     "credit" : "Sage Fennel (wavebeem.com)",
     "separator" : {
-      "color" : "#0D0A197F",
+      "color" : "#988ECC7F",
       "thickness" : 0
     },
     "scrollbar" : {

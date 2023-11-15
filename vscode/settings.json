@@ -176,7 +176,6 @@
   "window.menuBarVisibility": "compact",
   "window.title": "${rootPath}${separator}${remoteName}${separator}Code",
   "window.titleSeparator": " – ",
-  "workbench.activityBar.visible": true,
   "workbench.colorTheme": "Toxic",
   "workbench.editor.decorations.badges": true,
   "workbench.editor.decorations.colors": true,
@@ -189,9 +188,9 @@
   "workbench.preferredHighContrastColorTheme": "Miasma",
   "workbench.preferredHighContrastLightColorTheme": "Miasma",
   "workbench.startupEditor": "newUntitledFile",
-  "workbench.statusBar.visible": true,
   "workbench.tree.indent": 16,
   "workbench.tree.renderIndentGuides": "always",
-  "zenMode.centerLayout": false,
-  "zenMode.fullScreen": false
+  "zenMode.fullScreen": false,
+  "workbench.editor.centeredLayoutFixedWidth": true,
+  "workbench.activityBar.location": "top"
 }
