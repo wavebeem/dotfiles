@@ -37,7 +37,6 @@
   "breadcrumbs.enabled": false,
   "debug.terminal.clearBeforeReusing": true,
   "diffEditor.hideUnchangedRegions.enabled": true,
-  "diffEditor.ignoreTrimWhitespace": false,
   "diffEditor.renderSideBySide": false,
   "editor.acceptSuggestionOnCommitCharacter": false,
   "editor.acceptSuggestionOnEnter": "off",
@@ -177,6 +176,7 @@
   "window.title": "${rootPath}${separator}${remoteName}${separator}Code",
   "window.titleSeparator": " – ",
   "workbench.colorTheme": "Toxic",
+  "workbench.editor.centeredLayoutFixedWidth": true,
   "workbench.editor.decorations.badges": true,
   "workbench.editor.decorations.colors": true,
   "workbench.editor.enablePreviewFromQuickOpen": false,
@@ -187,10 +187,9 @@
   "workbench.iconTheme": "vs-minimal",
   "workbench.preferredHighContrastColorTheme": "Miasma",
   "workbench.preferredHighContrastLightColorTheme": "Miasma",
+  "workbench.productIconTheme": "fluent-icons",
   "workbench.startupEditor": "newUntitledFile",
-  "workbench.tree.indent": 16,
+  "workbench.tree.indent": 24,
   "workbench.tree.renderIndentGuides": "always",
-  "zenMode.fullScreen": false,
-  "workbench.editor.centeredLayoutFixedWidth": true,
-  "workbench.activityBar.location": "top"
+  "zenMode.fullScreen": false
 }
