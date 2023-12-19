@@ -35,20 +35,23 @@ end
 function cmd.splitUpApps()
   hs.layout.apply {
     -- Left
-    layout.left50 "Code",
-    layout.left50 "iTerm2",
-    layout.left50 "Terminal",
-    layout.left50 "zoom.us",
+    layout.left50"Code",
+    layout.left50"iTerm2",
+    layout.left50"Terminal",
+    layout.left50"zoom.us",
     -- Right
-    layout.right50 "Slack",
-    layout.right50 "LINE",
-    layout.right50 "Firefox",
-    layout.right50 "Google Chrome",
-    layout.right50 "Finder",
-    layout.right50 "Hammerspoon",
-    layout.right50 "Firefox Developer Edition",
-    layout.right50 "Discord",
-    layout.right50 "Music",
+    layout.right50"Slack",
+    layout.right50"LINE",
+    -- This uses a substring match normally, and "Firefox" will match "Firefox
+    -- Developer Edition" rather than simply "Firefox", for some reason. So we
+    -- need to use the bundle ID instead of the application name.
+    layout.right50"org.mozilla.firefox",
+    layout.right50"Google Chrome",
+    layout.right50"Finder",
+    layout.right50"Hammerspoon",
+    layout.right50"Firefox Developer Edition",
+    layout.right50"Discord",
+    layout.right50"Music",
   }
 end
 
