@@ -22,7 +22,7 @@
         "color" : "#EAE6FFFF"
       },
       "iconPaddingHorizontal" : 8,
-      "roundness" : 7,
+      "roundness" : 4,
       "paddingVertical" : 8,
       "iconSize" : 48
     },
@@ -37,7 +37,7 @@
         "color" : "#EAE6FFFF"
       },
       "background" : "#382E6BFF",
-      "roundness" : 8,
+      "roundness" : 4,
       "paddingVertical" : 8
     },
     "window" : {
@@ -47,7 +47,7 @@
       "borderPadding" : 4,
       "borderColor" : "#988ECC7F",
       "blur" : 0,
-      "roundness" : 16,
+      "roundness" : 8,
       "paddingVertical" : 8
     },
     "credit" : "Sage Fennel (wavebeem.com)",

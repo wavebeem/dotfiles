@@ -44,12 +44,10 @@ function cmd.splitUpApps()
     layout.right50 "LINE",
     layout.right50 "Firefox",
     layout.right50 "Google Chrome",
-    layout.right50 "Cypress",
     layout.right50 "Finder",
     layout.right50 "Hammerspoon",
     layout.right50 "Firefox Developer Edition",
     layout.right50 "Discord",
-    layout.right50 "Spotify",
     layout.right50 "Music",
   }
 end
