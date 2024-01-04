@@ -138,12 +138,6 @@
   "git.fetchOnPull": true,
   "git.pruneOnFetch": true,
   "gitblame.statusBarMessageFormat": "${author.name} (${time.ago})",
-  "github.copilot.enable": {
-    "*": true,
-    "markdown": true,
-    "plaintext": true,
-    "scminput": false
-  },
   "html.format.endWithNewline": true,
   "html.format.indentHandlebars": true,
   "javascript.updateImportsOnFileMove.enabled": "always",

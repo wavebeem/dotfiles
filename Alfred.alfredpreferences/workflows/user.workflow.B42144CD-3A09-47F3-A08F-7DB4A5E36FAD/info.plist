@@ -6,6 +6,19 @@
 	<string>com.wavebeem.paste-date</string>
 	<key>connections</key>
 	<dict>
+		<key>1959E316-BE20-4B7F-86B1-7CB16365CEA2</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>3679DBC8-0BB6-43DC-921E-14AF957B0BBF</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>37B74AD8-818C-4F31-824E-761BF6EA406A</key>
 		<array>
 			<dict>
@@ -19,9 +32,35 @@
 				<false/>
 			</dict>
 		</array>
+		<key>B2B8B7C1-6A01-4234-B6FD-CDBE4FB52729</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>DE162680-2BC9-4D38-A625-6D279D713B82</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>DE162680-2BC9-4D38-A625-6D279D713B82</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>B423E9C5-0115-451D-BAAC-9D39333452FA</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 	</dict>
 	<key>createdby</key>
-	<string>Brian Mock (brian@wavebeem.com)</string>
+	<string>Sage Fennel</string>
 	<key>description</key>
 	<string></string>
 	<key>disabled</key>
@@ -80,6 +119,129 @@
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>2</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>17</integer>
+				<key>hotmod</key>
+				<integer>786432</integer>
+				<key>hotstring</key>
+				<string>T</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>1959E316-BE20-4B7F-86B1-7CB16365CEA2</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>autopaste</key>
+				<true/>
+				<key>clipboardtext</key>
+				<string>{date:yyyy-MM-dd HH.mm.ss}</string>
+				<key>ignoredynamicplaceholders</key>
+				<false/>
+				<key>transient</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>3679DBC8-0BB6-43DC-921E-14AF957B0BBF</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>autopaste</key>
+				<true/>
+				<key>clipboardtext</key>
+				<string></string>
+				<key>ignoredynamicplaceholders</key>
+				<false/>
+				<key>transient</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>B423E9C5-0115-451D-BAAC-9D39333452FA</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>2</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>7</integer>
+				<key>hotmod</key>
+				<integer>786432</integer>
+				<key>hotstring</key>
+				<string>X</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>B2B8B7C1-6A01-4234-B6FD-CDBE4FB52729</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>date +%s | tr -d '\n'</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>DE162680-2BC9-4D38-A625-6D279D713B82</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string>This workflow demonstrates a few techniques to integrate the clipboard into your workflows.
@@ -91,6 +253,28 @@ Note that while {clipboard} and {clipboard:0} both represent the latest clipboar
 The clipboard history placeholders are available in most output objects, along with the Arg and Var / JSON utilities. Help subtext hints this throughout the configuration sheets.</string>
 	<key>uidata</key>
 	<dict>
+		<key>1959E316-BE20-4B7F-86B1-7CB16365CEA2</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>3</integer>
+			<key>note</key>
+			<string>Set a hotkey such as ⌘⇧V to start this workflow with the current clipboard contents</string>
+			<key>xpos</key>
+			<real>45</real>
+			<key>ypos</key>
+			<real>255</real>
+		</dict>
+		<key>3679DBC8-0BB6-43DC-921E-14AF957B0BBF</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>3</integer>
+			<key>note</key>
+			<string>Paste the content of the clipboard as plain text to the front most app</string>
+			<key>xpos</key>
+			<real>205</real>
+			<key>ypos</key>
+			<real>255</real>
+		</dict>
 		<key>37B74AD8-818C-4F31-824E-761BF6EA406A</key>
 		<dict>
 			<key>colorindex</key>
@@ -98,9 +282,9 @@ The clipboard history placeholders are available in most output objects, along w
 			<key>note</key>
 			<string>Set a hotkey such as ⌘⇧V to start this workflow with the current clipboard contents</string>
 			<key>xpos</key>
-			<integer>50</integer>
+			<real>50</real>
 			<key>ypos</key>
-			<integer>50</integer>
+			<real>50</real>
 		</dict>
 		<key>946DFB81-1086-4113-B99B-53000F1DF556</key>
 		<dict>
@@ -109,9 +293,38 @@ The clipboard history placeholders are available in most output objects, along w
 			<key>note</key>
 			<string>Paste the content of the clipboard as plain text to the front most app</string>
 			<key>xpos</key>
-			<integer>210</integer>
+			<real>210</real>
 			<key>ypos</key>
-			<integer>50</integer>
+			<real>50</real>
+		</dict>
+		<key>B2B8B7C1-6A01-4234-B6FD-CDBE4FB52729</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>3</integer>
+			<key>note</key>
+			<string>Set a hotkey such as ⌘⇧V to start this workflow with the current clipboard contents</string>
+			<key>xpos</key>
+			<real>35</real>
+			<key>ypos</key>
+			<real>465</real>
+		</dict>
+		<key>B423E9C5-0115-451D-BAAC-9D39333452FA</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>3</integer>
+			<key>note</key>
+			<string>Paste the content of the clipboard as plain text to the front most app</string>
+			<key>xpos</key>
+			<real>455</real>
+			<key>ypos</key>
+			<real>415</real>
+		</dict>
+		<key>DE162680-2BC9-4D38-A625-6D279D713B82</key>
+		<dict>
+			<key>xpos</key>
+			<real>215</real>
+			<key>ypos</key>
+			<real>470</real>
 		</dict>
 	</dict>
 	<key>userconfigurationconfig</key>
@@ -119,6 +332,6 @@ The clipboard history placeholders are available in most output objects, along w
 	<key>version</key>
 	<string>1.0</string>
 	<key>webaddress</key>
-	<string>https://www.wavebeem.com</string>
+	<string>https://wavebeem.com</string>
 </dict>
 </plist>
