@@ -244,13 +244,11 @@
 		</dict>
 	</array>
 	<key>readme</key>
-	<string>This workflow demonstrates a few techniques to integrate the clipboard into your workflows.
+	<string>Ctrl-Alt-D :: Paste date
 
-The easiest and most predictable way to get the clipboard or clipboard history into your workflow is to use an Arg and Var utility object, and set a variable to {clipboard} or {clipboard:x} where x is the history item number. This will fix the variable to the text at the point the workflow passes through this object.
+Ctrl-Alt-T :: Paste date &amp; time
 
-Note that while {clipboard} and {clipboard:0} both represent the latest clipboard entry, the value of these may differ. {clipboard:0} represents the latest item in Alfred's clipboard history whereas {clipboard} represents the current clipboard entry in macOS. The latter may not be compatible with Alfred's clipboard history.
-
-The clipboard history placeholders are available in most output objects, along with the Arg and Var / JSON utilities. Help subtext hints this throughout the configuration sheets.</string>
+Ctrl-Alt-X :: Paste UNIX timestamp</string>
 	<key>uidata</key>
 	<dict>
 		<key>1959E316-BE20-4B7F-86B1-7CB16365CEA2</key>
@@ -328,6 +326,8 @@ The clipboard history placeholders are available in most output objects, along w
 		</dict>
 	</dict>
 	<key>userconfigurationconfig</key>
+	<array/>
+	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
 	<string>1.0</string>
