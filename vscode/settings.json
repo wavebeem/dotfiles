@@ -64,10 +64,8 @@
   "editor.formatOnSave": true,
   "editor.guides.bracketPairs": "active",
   "editor.inlineSuggest.enabled": true,
-  "editor.linkedEditing": true,
   "editor.minimap.enabled": false,
   "editor.minimap.maxColumn": 80,
-  "editor.minimap.showSlider": "always",
   "editor.multiCursorModifier": "alt",
   "editor.overviewRulerBorder": false,
   "editor.padding.top": 40,
@@ -110,6 +108,7 @@
     "zshenv": "shellscript",
     "zshrc": "shellscript"
   },
+  "files.autoSave": "onFocusChange",
   "files.defaultLanguage": "markdown",
   "files.exclude": {
     "**/*-min-*": true,
@@ -138,6 +137,7 @@
     "**/tmp": true
   },
   "files.insertFinalNewline": true,
+  "files.simpleDialog.enable": true,
   "files.trimTrailingWhitespace": true,
   "files.watcherExclude": {
     "**/.git/objects/**": true,
@@ -161,6 +161,7 @@
   "python.formatting.provider": "black",
   "python.linting.pylintEnabled": false,
   "python.showStartPage": false,
+  "scm.inputFontSize": 14,
   "search.exclude": {
     "**/build": true,
     "**/dist": true
@@ -179,6 +180,8 @@
   "typescript.tsserver.log": "off",
   "typescript.updateImportsOnFileMove.enabled": "always",
   "vsicons.dontShowNewVersionMessage": true,
+  "window.commandCenter": false,
+  "window.dialogStyle": "custom",
   "window.menuBarVisibility": "compact",
   "window.title": "${rootPath}${separator}${remoteName}${separator}Code",
   "window.titleSeparator": " – ",
@@ -189,13 +192,18 @@
   "workbench.editor.decorations.colors": true,
   "workbench.editor.enablePreviewFromQuickOpen": false,
   "workbench.editor.showTabs": "single",
+  "workbench.editor.tabActionCloseVisibility": false,
+  "workbench.editor.tabSizing": "shrink",
   "workbench.editorAssociations": {
     "*.csv": "default",
     "*.ipynb": "jupyter-notebook"
   },
   "workbench.iconTheme": "vs-minimal",
+  "workbench.layoutControl.enabled": false,
+  "workbench.preferredDarkColorTheme": "Miasma",
   "workbench.preferredHighContrastColorTheme": "Miasma",
   "workbench.preferredHighContrastLightColorTheme": "Miasma",
+  "workbench.preferredLightColorTheme": "Miasma",
   "workbench.productIconTheme": "fluent-icons",
   "workbench.startupEditor": "newUntitledFile",
   "workbench.tree.indent": 24,
