@@ -4,61 +4,60 @@
       "textSpacing" : 8,
       "subtext" : {
         "size" : 12,
-        "colorSelected" : "#19342BFF",
+        "colorSelected" : "#0E1703FF",
         "font" : "System",
-        "color" : "#265948FF"
+        "color" : "#38AC86FF"
       },
       "shortcut" : {
         "size" : 16,
-        "colorSelected" : "#19342BFF",
+        "colorSelected" : "#0E1703FF",
         "font" : "System",
-        "color" : "#265948FF"
+        "color" : "#38AC86FF"
       },
-      "backgroundSelected" : "#ADEBD6FF",
+      "backgroundSelected" : "#91E61AFF",
       "text" : {
-        "size" : 18,
-        "colorSelected" : "#19342BFF",
+        "size" : 20,
+        "colorSelected" : "#0E1703FF",
         "font" : "System",
-        "color" : "#ADEBD6FF"
+        "color" : "#D9F2EAFF"
       },
       "iconPaddingHorizontal" : 8,
       "roundness" : 4,
       "paddingVertical" : 8,
-      "iconSize" : 32
+      "iconSize" : 48
     },
     "search" : {
-      "backgroundSelected" : "#ADEBD6FF",
+      "backgroundSelected" : "#D9F2EAFF",
       "paddingHorizontal" : 8,
       "spacing" : 8,
       "text" : {
         "size" : 32,
         "colorSelected" : "#19342BFF",
         "font" : "System",
-        "color" : "#ADEBD6FF"
+        "color" : "#D9F2EAFF"
       },
-      "background" : "#1C3028FF",
-      "roundness" : 2,
+      "background" : "#0D261EFF",
+      "roundness" : 4,
       "paddingVertical" : 8
     },
     "window" : {
-      "color" : "#1C3028FF",
+      "color" : "#164133FF",
       "paddingHorizontal" : 8,
       "width" : 700,
-      "borderPadding" : 0,
-      "borderColor" : "#265948FF",
+      "borderPadding" : 1,
+      "borderColor" : "#1C5441FF",
       "blur" : 0,
       "roundness" : 8,
       "paddingVertical" : 8
     },
     "credit" : "Sage Fennel (wavebeem.com)",
-    "visualEffectMode" : 2,
     "separator" : {
       "color" : "#265948FF",
       "thickness" : 0
     },
     "scrollbar" : {
-      "color" : "#2659487F",
-      "thickness" : 8
+      "color" : "#D9F2EA7F",
+      "thickness" : 4
     },
     "name" : "Miasma"
   }
