@@ -116,6 +116,11 @@ __install.eza() {
   brew install eza
 }
 
+# Convert file to ALAC in MP4 (.m4a) container
+__to.alac() {
+  ffmpeg -y -i "$1" -vcodec copy -acodec alac "$2"
+}
+
 # Print a blank line between prompts to make it easier to read
 precmd() {
   echo

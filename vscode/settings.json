@@ -61,7 +61,7 @@
   "editor.dragAndDrop": false,
   "editor.find.addExtraSpaceOnTop": false,
   "editor.fontFamily": "JetBrains Mono, Menlo, Consolas, monospace",
-  "editor.fontLigatures": true,
+  "editor.fontLigatures": false,
   "editor.fontSize": 16,
   "editor.fontWeight": 400,
   "editor.formatOnPaste": false,
@@ -91,7 +91,7 @@
     "typescript",
     "typescriptreact"
   ],
-  "eslint.experimental.useFlatConfig": true,
+  "eslint.experimental.useFlatConfig": false,
   "eslint.validate": [
     "javascript",
     "javascriptreact",
@@ -215,5 +215,6 @@
   "workbench.tree.indent": 24,
   "workbench.tree.renderIndentGuides": "always",
   "zenMode.fullScreen": false,
-  "zenMode.showTabs": "single"
+  "zenMode.showTabs": "single",
+  "eslint.useFlatConfig": false
 }
