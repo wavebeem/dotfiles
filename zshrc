@@ -63,6 +63,7 @@ path=(
   "$PYENV_ROOT/shims"
   "$HOME/.poetry/bin"
   # Ruby
+  "/opt/homebrew/opt/ruby/bin"
   "$HOME/.rvm/bin"
   $path
 )
