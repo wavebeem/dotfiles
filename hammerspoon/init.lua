@@ -102,6 +102,14 @@ function cmd.toggleConsole()
   hs.toggleConsole()
 end
 
+function cmd.typeDate()
+  hs.eventtap.keyStrokes(os.date("%Y-%m-%d"))
+end
+
+function cmd.typeTime()
+  hs.eventtap.keyStrokes(os.date("%Y-%m-%d %H:%M"))
+end
+
 
 function hex(code, alpha)
   return {
@@ -114,16 +122,16 @@ end
 hs.window.animationDuration = 0
 
 hs.alert.defaultStyle.strokeWidth = 8
-hs.alert.defaultStyle.strokeColor = hex"1c1736"
-hs.alert.defaultStyle.fillColor = hex"93f20d"
-hs.alert.defaultStyle.textColor = hex"1c1736"
+hs.alert.defaultStyle.strokeColor = hex"0063c2"
+hs.alert.defaultStyle.fillColor = hex"a1ffe4"
+hs.alert.defaultStyle.textColor = hex"0063c2"
 -- hs.alert.defaultStyle.textFont = ".AppleSystemUIFont"
 hs.alert.defaultStyle.textSize = 32
 hs.alert.defaultStyle.radius = 16
 -- hs.alert.defaultStyle.atScreenEdge = 0
 hs.alert.defaultStyle.fadeInDuration = 0
 hs.alert.defaultStyle.fadeOutDuration = 0
-hs.alert.defaultStyle.padding = 16
+hs.alert.defaultStyle.padding = 32
 
 prefix = {"ctrl", "alt"}
 
@@ -134,6 +142,9 @@ hs.hotkey.bind(prefix, "n", cmd.splitUpApps)
 hs.hotkey.bind(prefix, "j", cmd.snapWindowLeft)
 hs.hotkey.bind(prefix, "k", cmd.maximizeWindow)
 hs.hotkey.bind(prefix, "l", cmd.snapWindowRight)
+
+hs.hotkey.bind(prefix, "d", cmd.typeDate)
+hs.hotkey.bind(prefix, "t", cmd.typeTime)
 
 hs.hotkey.bind(prefix, "space", cmd.maximizeAllWindows)
 hs.hotkey.bind(prefix, "v", cmd.showApplicationName)
