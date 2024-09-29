@@ -110,6 +110,10 @@ function cmd.typeTime()
   hs.eventtap.keyStrokes(os.date("%Y-%m-%d %H:%M"))
 end
 
+function cmd.typeUnixTime()
+  hs.eventtap.keyStrokes("" .. os.time())
+end
+
 
 function hex(code, alpha)
   return {
@@ -145,6 +149,8 @@ hs.hotkey.bind(prefix, "l", cmd.snapWindowRight)
 
 hs.hotkey.bind(prefix, "d", cmd.typeDate)
 hs.hotkey.bind(prefix, "t", cmd.typeTime)
+hs.hotkey.bind(prefix, "x", cmd.typeUnixTime)
+
 
 hs.hotkey.bind(prefix, "space", cmd.maximizeAllWindows)
 hs.hotkey.bind(prefix, "v", cmd.showApplicationName)
