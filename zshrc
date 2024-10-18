@@ -27,7 +27,7 @@ PROMPT2="$PROMPT"
 
 # Automatic command suggestions as I type
 source ~/.zsh-autosuggestions/zsh-autosuggestions.zsh
-ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=yellow"
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=cyan"
 
 # Python virtualenv assumes you want your shell prompt mangled without this
 export VIRTUAL_ENV_DISABLE_PROMPT="true"
@@ -189,6 +189,10 @@ if [[ -e "$HOME/.asdf/asdf.sh" ]]; then
   fpath=(${ASDF_DIR}/completions $fpath)
   # initialize completions with zsh's compinit
   autoload -Uz compinit && compinit
+fi
+
+if [[ -e /opt/homebrew/opt/asdf/libexec/asdf.sh ]]; then
+  source /opt/homebrew/opt/asdf/libexec/asdf.sh
 fi
 
 # Load rvm if it exists
