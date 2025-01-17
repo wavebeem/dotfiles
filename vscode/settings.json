@@ -241,7 +241,7 @@
   "window.title": "${rootPath}${separator}${remoteName}${separator}Code",
   "window.titleSeparator": " :: ",
   "workbench.activityBar.location": "top",
-  "workbench.colorTheme": "Popsicle",
+  "workbench.colorTheme": "Fresh Green",
   "workbench.editor.centeredLayoutFixedWidth": true,
   "workbench.editor.decorations.badges": true,
   "workbench.editor.decorations.colors": true,
@@ -262,5 +262,6 @@
   "workbench.tree.indent": 24,
   "workbench.tree.renderIndentGuides": "always",
   "zenMode.fullScreen": false,
-  "zenMode.showTabs": "single"
+  "zenMode.showTabs": "single",
+  "window.menuBarVisibility": "compact"
 }
