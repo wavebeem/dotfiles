@@ -239,6 +239,7 @@
   "window.dialogStyle": "custom",
   "window.title": "${rootPath}${separator}${remoteName}${separator}Code",
   "window.titleSeparator": " :: ",
+  "workbench.activityBar.location": "top",
   "workbench.colorTheme": "Fresh Green",
   "workbench.editor.centeredLayoutFixedWidth": true,
   "workbench.editor.decorations.badges": true,
@@ -269,5 +270,6 @@
   "diffEditor.ignoreTrimWhitespace": false,
   "editor.snippetSuggestions": "bottom",
   "workbench.editor.showTabs": "single",
-  "terminal.integrated.tabs.enabled": false
+  "terminal.integrated.tabs.enabled": false,
+  "window.menuBarVisibility": "compact"
 }
