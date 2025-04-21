@@ -1,11 +1,27 @@
 {
   "console.info": {
     "prefix": "info",
-    "body": ["console.info($1);$0"]
+    "body": [
+      "console.info($1);$0"
+    ]
   },
   "console.log": {
     "prefix": "log",
-    "body": ["console.log($1);$0"]
+    "body": [
+      "console.log($1);$0"
+    ]
+  },
+  "console.warn": {
+    "prefix": "warn",
+    "body": [
+      "console.warn($1);$0"
+    ]
+  },
+  "console.error": {
+    "prefix": "error",
+    "body": [
+      "console.error($1);$0"
+    ]
   },
   "import": {
     "prefix": "import",
@@ -20,11 +36,11 @@
     "body": "($1) => {$2}"
   },
   "React function component": {
-    "prefix": "rfc",
+    "prefix": "fc",
     "body": [
-      "const ${1:MyComponent} = (${2:props}) => (",
-      "  ${3:body}",
-      ");$0"
+      "function ${1:MyComponent}(${2:props}) {",
+      "  return ${3:body};",
+      "}$0"
     ]
   }
 }

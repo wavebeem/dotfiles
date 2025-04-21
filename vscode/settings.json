@@ -114,7 +114,7 @@
   "editor.copyWithSyntaxHighlighting": false,
   "editor.dragAndDrop": false,
   "editor.find.addExtraSpaceOnTop": false,
-  "editor.fontFamily": "JetBrains Mono, Menlo, Consolas, monospace",
+  "editor.fontFamily": "Input Mono, JetBrains Mono, Menlo, Consolas, monospace",
   "editor.fontLigatures": false,
   "editor.fontSize": 16,
   "editor.fontWeight": 400,
@@ -134,7 +134,6 @@
   "editor.scrollbar.horizontalScrollbarSize": 24,
   "editor.scrollbar.verticalScrollbarSize": 24,
   "editor.semanticHighlighting.enabled": false,
-  "editor.snippetSuggestions": "none",
   "editor.stickyScroll.enabled": false,
   "editor.suggest.snippetsPreventQuickSuggestions": false,
   "editor.tabSize": 2,
@@ -229,7 +228,7 @@
   "terminal.integrated.cursorBlinking": true,
   "terminal.integrated.cursorStyle": "line",
   "terminal.integrated.cursorWidth": 2,
-  "terminal.integrated.fontSize": 16,
+  "terminal.integrated.fontSize": 14,
   "terminal.integrated.macOptionIsMeta": true,
   "terminal.integrated.minimumContrastRatio": 7,
   "terminal.integrated.scrollback": 10000,
@@ -240,13 +239,11 @@
   "window.dialogStyle": "custom",
   "window.title": "${rootPath}${separator}${remoteName}${separator}Code",
   "window.titleSeparator": " :: ",
-  "workbench.activityBar.location": "top",
-  "workbench.colorTheme": "Popsicle",
+  "workbench.colorTheme": "Fresh Green",
   "workbench.editor.centeredLayoutFixedWidth": true,
   "workbench.editor.decorations.badges": true,
   "workbench.editor.decorations.colors": true,
   "workbench.editor.enablePreviewFromQuickOpen": false,
-  "workbench.editor.showTabs": "single",
   "workbench.editor.tabActionCloseVisibility": false,
   "workbench.editor.tabSizing": "shrink",
   "workbench.editorAssociations": {
@@ -262,5 +259,15 @@
   "workbench.tree.indent": 24,
   "workbench.tree.renderIndentGuides": "always",
   "zenMode.fullScreen": false,
-  "zenMode.showTabs": "single"
+  "zenMode.showTabs": "single",
+  "workbench.activityBar.location": "top",
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "breadcrumbs.enabled": false,
+  "debug.console.fontFamily": "",
+  "diffEditor.ignoreTrimWhitespace": false,
+  "editor.snippetSuggestions": "bottom",
+  "workbench.editor.showTabs": "single",
+  "terminal.integrated.tabs.enabled": false
 }
