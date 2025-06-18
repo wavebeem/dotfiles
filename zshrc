@@ -59,6 +59,11 @@ path=(
   "$HOME/dotfiles/bin"
   "$HOME/w/dotfiles/bin"
   "$PNPM_HOME"
+  # Homebrew
+  /opt/homebrew/bin
+  /home/linuxbrew/.linuxbrew/bin
+  # asdf
+  "${ASDF_DATA_DIR:-$HOME/.asdf}/shims"
   # Load Rust Cargo commands
   "$HOME/.cargo/bin"
   # Python stuff
@@ -69,6 +74,13 @@ path=(
   "$HOME/.rvm/bin"
   $path
 )
+
+fpath=(
+  "${ASDF_DATA_DIR:-$HOME/.asdf}/completions"
+  $fpath
+)
+
+autoload -Uz compinit && compinit
 
 __path() {
   echo $path | tr ' ' '\n'
@@ -135,10 +147,8 @@ precmd() {
 }
 
 # Load homebrew
-if [[ -e /opt/homebrew/bin/brew ]]; then
-  eval "$(/opt/homebrew/bin/brew shellenv)"
-elif [[ -e /home/linuxbrew/.linuxbrew/bin/brew ]]; then
-  eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+if which brew >/dev/null 2>&1; then
+  eval "$(brew shellenv)"
 fi
 
 # Easy open files
@@ -203,9 +213,9 @@ alias ..="s"
 #   source /opt/homebrew/opt/asdf/libexec/asdf.sh
 # fi
 
-if [[ -e "$(brew --prefix asdf)/libexec/asdf.sh" ]]; then
-  source "$(brew --prefix asdf)/libexec/asdf.sh"
-fi
+# if [[ -e "$(brew --prefix asdf)/libexec/asdf.sh" ]]; then
+#   source "$(brew --prefix asdf)/libexec/asdf.sh"
+# fi
 
 # Load rvm if it exists
 if [[ -e ~/.rvm/scripts/rvm ]]; then

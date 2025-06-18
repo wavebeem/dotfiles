@@ -42,7 +42,7 @@
   },
   "cSpell.enabledFileTypes": {
     "*": false,
-    "markdown": true
+    "markdown": false
   },
   "cSpell.userWords": [
     "1upkeyboards",
@@ -170,6 +170,15 @@
   "files.autoSave": "onFocusChange",
   "files.defaultLanguage": "markdown",
   "files.exclude": {
+    "**/__image_snapshots__/**/*": true,
+    "**/_site": true,
+    "**/.DS_Store": true,
+    "**/.git": true,
+    "**/.hg": true,
+    "**/.nyc_output": true,
+    "**/.sass-cache": true,
+    "**/.svn": true,
+    "**/.venv": true,
     "**/*-min-*": true,
     "**/*-min.*": true,
     "**/*.egg-info": true,
@@ -178,14 +187,6 @@
     "**/*.min.css": true,
     "**/*.min.js": true,
     "**/*.pyc": true,
-    "**/.DS_Store": true,
-    "**/.git": true,
-    "**/.hg": true,
-    "**/.nyc_output": true,
-    "**/.sass-cache": true,
-    "**/.svn": true,
-    "**/.venv": true,
-    "**/_site": true,
     "**/bundle.*": true,
     "**/coverage": true,
     "**/db.json": true,
@@ -238,9 +239,8 @@
   "typescript.updateImportsOnFileMove.enabled": "always",
   "window.dialogStyle": "custom",
   "window.title": "${rootPath}${separator}${remoteName}${separator}Code",
-  "window.titleSeparator": " :: ",
+  "window.titleSeparator": " • ",
   "workbench.activityBar.location": "top",
-  "workbench.colorTheme": "Fresh Green",
   "workbench.editor.centeredLayoutFixedWidth": true,
   "workbench.editor.decorations.badges": true,
   "workbench.editor.decorations.colors": true,
@@ -265,11 +265,12 @@
   "[scss]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "breadcrumbs.enabled": false,
   "debug.console.fontFamily": "",
   "diffEditor.ignoreTrimWhitespace": false,
   "editor.snippetSuggestions": "bottom",
   "workbench.editor.showTabs": "single",
-  "terminal.integrated.tabs.enabled": false,
-  "window.menuBarVisibility": "compact"
+  "window.menuBarVisibility": "compact",
+  "workbench.colorTheme": "Fresh Green",
+  "cSpell.enabled": false,
+  "stylelint.validate": ["css", "postcss", "scss"]
 }
