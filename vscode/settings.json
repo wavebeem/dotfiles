@@ -272,5 +272,6 @@
   "window.menuBarVisibility": "compact",
   "workbench.colorTheme": "Fresh Green",
   "cSpell.enabled": false,
-  "stylelint.validate": ["css", "postcss", "scss"]
+  "stylelint.validate": ["css", "postcss", "scss"],
+  "window.menuStyle": "inherit"
 }
