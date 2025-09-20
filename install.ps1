@@ -11,6 +11,7 @@ function main() {
   install "welcome"
 
   install_as "ahk\misc.ahk" "$env:APPDATA\Microsoft\Windows\Start Menu\Programs\Startup\misc.ahk"
+  mkdir (Split-Path $profile)
   install_as "Microsoft.PowerShell_profile.ps1" $profile
   install_as "win-terminal\settings.json" "$env:LOCALAPPDATA\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json"
   install_as "vscode\keybindings.json" "$VSCODE\keybindings.json"
@@ -36,7 +37,7 @@ function install_as($path, $dest) {
   show $src $dest
   if (Test-Path $dest) {
     if (is_symlink $dest) {
-      Remove-Item -Force $dest
+      Remove-Item -Recurse -Force $dest
     } else {
       if (-Not (confirm "Replace $dest with symlink?")) {
         return
