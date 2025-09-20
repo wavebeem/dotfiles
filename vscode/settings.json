@@ -34,7 +34,6 @@
   "[vue]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "breadcrumbs.enabled": false,
   "cSpell.enabled": false,
   "cSpell.enableFiletypes": ["markdown"],
   "cSpell.userWords": [
@@ -47,7 +46,6 @@
     "wavebeem"
   ],
   "debug.terminal.clearBeforeReusing": true,
-  "diffEditor.hideUnchangedRegions.enabled": true,
   "diffEditor.renderSideBySide": false,
   "editor.acceptSuggestionOnCommitCharacter": false,
   "editor.acceptSuggestionOnEnter": "off",
@@ -64,7 +62,6 @@
   "editor.formatOnSave": true,
   "editor.guides.bracketPairs": "active",
   "editor.inlineSuggest.enabled": true,
-  "editor.minimap.enabled": false,
   "editor.minimap.maxColumn": 80,
   "editor.multiCursorModifier": "alt",
   "editor.overviewRulerBorder": false,
@@ -76,7 +73,6 @@
   "editor.scrollbar.horizontalScrollbarSize": 8,
   "editor.scrollbar.verticalScrollbarSize": 16,
   "editor.snippetSuggestions": "none",
-  "editor.stickyScroll.enabled": false,
   "editor.suggest.snippetsPreventQuickSuggestions": false,
   "editor.tabSize": 2,
   "editor.wordWrap": "on",
@@ -106,7 +102,8 @@
     "CODEOWNERS": "ini",
     "gitignore": "ignore",
     "zshenv": "shellscript",
-    "zshrc": "shellscript"
+    "zshrc": "shellscript",
+    "*.liquid": "html"
   },
   "files.autoSave": "onFocusChange",
   "files.defaultLanguage": "markdown",
@@ -137,7 +134,6 @@
     "**/tmp": true
   },
   "files.insertFinalNewline": true,
-  "files.simpleDialog.enable": true,
   "files.trimTrailingWhitespace": true,
   "files.watcherExclude": {
     "**/.git/objects/**": true,
@@ -180,18 +176,13 @@
   "typescript.tsserver.log": "off",
   "typescript.updateImportsOnFileMove.enabled": "always",
   "vsicons.dontShowNewVersionMessage": true,
-  "window.commandCenter": false,
-  "window.dialogStyle": "custom",
-  "window.menuBarVisibility": "compact",
   "window.title": "${rootPath}${separator}${remoteName}${separator}Code",
   "window.titleSeparator": " – ",
   "workbench.activityBar.location": "top",
-  "workbench.colorTheme": "Miasma",
   "workbench.editor.centeredLayoutFixedWidth": true,
   "workbench.editor.decorations.badges": true,
   "workbench.editor.decorations.colors": true,
   "workbench.editor.enablePreviewFromQuickOpen": false,
-  "workbench.editor.showTabs": "single",
   "workbench.editor.tabActionCloseVisibility": false,
   "workbench.editor.tabSizing": "shrink",
   "workbench.editorAssociations": {
@@ -199,7 +190,6 @@
     "*.ipynb": "jupyter-notebook"
   },
   "workbench.iconTheme": "vs-minimal",
-  "workbench.layoutControl.enabled": false,
   "workbench.preferredDarkColorTheme": "Miasma",
   "workbench.preferredHighContrastColorTheme": "Miasma",
   "workbench.preferredHighContrastLightColorTheme": "Miasma",
@@ -209,5 +199,18 @@
   "workbench.tree.indent": 24,
   "workbench.tree.renderIndentGuides": "always",
   "zenMode.fullScreen": false,
-  "zenMode.showTabs": "single"
+  "zenMode.showTabs": "single",
+  "editor.stickyScroll.enabled": false,
+  "breadcrumbs.enabled": false,
+  "diffEditor.hideUnchangedRegions.enabled": true,
+  "window.dialogStyle": "custom",
+  "files.simpleDialog.enable": true,
+  "editor.minimap.enabled": false,
+  "eslint.experimental.useFlatConfig": true,
+  "window.menuBarVisibility": "compact",
+  "workbench.editor.showTabs": "single",
+  "editor.lineHeight": 1.5,
+  "chat.commandCenter.enabled": false,
+  "workbench.colorTheme": "Fresh Green",
+  "AutoHotkey2.InterpreterPath": "c:\\Users\\wave\\AppData\\Local\\Programs\\AutoHotkey\\v2\\AutoHotkey64.exe"
 }
