@@ -1,6 +1,13 @@
 #Requires AutoHotKey v2.0
-; Reload the script without confirmation when re-executing
-#SingleInstance force
+
+; Caps Lock sends Escape
+CapsLock::Esc
+
+; Alt-W sends Alt-F4
+!w::!F4
+
+; Ubind Win-C to prevent Cortana from opening
+#c:: Return
 
 ; Ubind Win-C to prevent Cortana from opening
 #c:: Return
