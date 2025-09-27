@@ -1,13 +1,18 @@
 #Requires AutoHotKey v2.0
 
+; Text macros
+::;;right::→
+::;;up::↑
+::;;down::↓
+::;;left::←
+::;;en::–
+::;;em::—
+
 ; Caps Lock sends Escape
 CapsLock::Esc
 
 ; Alt-W sends Alt-F4
 !w::!F4
-
-; Ubind Win-C to prevent Cortana from opening
-#c:: Return
 
 ; Ubind Win-C to prevent Cortana from opening
 #c:: Return
