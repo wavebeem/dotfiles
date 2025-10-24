@@ -2,6 +2,15 @@
   "[css]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "[dockercompose]": {
+    "editor.autoIndent": "advanced",
+    "editor.defaultFormatter": "redhat.vscode-yaml",
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2
+  },
+  "[github-actions-workflow]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": false
@@ -28,6 +37,12 @@
     "editor.formatOnType": true,
     "editor.tabSize": 4
   },
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -40,10 +55,16 @@
   "[yaml]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "AutoHotkey2.InterpreterPath": "c:\\Users\\wave\\AppData\\Local\\Programs\\AutoHotkey\\v2\\AutoHotkey64.exe",
+  "breadcrumbs.enabled": false,
+  "chat.commandCenter.enabled": false,
+  "cSpell.enabled": false,
+  "cSpell.enabled": false,
   "cSpell.enabledFileTypes": {
     "*": false,
     "markdown": false
   },
+  "cSpell.enableFiletypes": ["markdown"],
   "cSpell.userWords": [
     "1upkeyboards",
     "arity",
@@ -101,16 +122,20 @@
     "Webpack",
     "Zlant"
   ],
-  "chat.commandCenter.enabled": false,
+  "debug.console.fontFamily": "",
+  "debug.console.fontFamily": "",
   "debug.console.fontSize": 14,
   "debug.terminal.clearBeforeReusing": true,
   "diffEditor.experimental.showMoves": true,
   "diffEditor.hideUnchangedRegions.enabled": true,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "diffEditor.ignoreTrimWhitespace": false,
   "diffEditor.renderSideBySide": false,
   "editor.acceptSuggestionOnCommitCharacter": false,
   "editor.acceptSuggestionOnEnter": "off",
   "editor.accessibilitySupport": "off",
   "editor.bracketPairColorization.enabled": false,
+  "editor.codeLensFontSize": 14,
   "editor.copyWithSyntaxHighlighting": false,
   "editor.dragAndDrop": false,
   "editor.find.addExtraSpaceOnTop": false,
@@ -121,7 +146,9 @@
   "editor.formatOnPaste": false,
   "editor.formatOnSave": true,
   "editor.guides.bracketPairs": "active",
+  "editor.inlayHints.fontSize": 12,
   "editor.inlineSuggest.enabled": true,
+  "editor.lineHeight": 1.5,
   "editor.minimap.enabled": false,
   "editor.minimap.maxColumn": 80,
   "editor.multiCursorModifier": "alt",
@@ -131,9 +158,8 @@
   "editor.renderLineHighlight": "all",
   "editor.renderWhitespace": "none",
   "editor.rulers": [80, 100, 120],
-  "editor.scrollbar.horizontalScrollbarSize": 24,
-  "editor.scrollbar.verticalScrollbarSize": 24,
   "editor.semanticHighlighting.enabled": false,
+  "editor.snippetSuggestions": "bottom",
   "editor.stickyScroll.enabled": false,
   "editor.suggest.snippetsPreventQuickSuggestions": false,
   "editor.tabSize": 2,
@@ -144,6 +170,7 @@
     "typescript",
     "typescriptreact"
   ],
+  "eslint.experimental.useFlatConfig": true,
   "eslint.useFlatConfig": false,
   "eslint.validate": [
     "javascript",
@@ -154,15 +181,16 @@
   "explorer.compactFolders": false,
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
+  "explorer.confirmPasteNative": false,
   "extensions.ignoreRecommendations": true,
   "files.associations": {
+    ".env": "ini",
+    ".env.local.example": "ini",
     "*.avsc": "json",
     "*.liquid": "html",
     "*.njk": "nunjucks",
-    ".env": "ini",
-    ".env.local.example": "ini",
-    "CODEOWNERS": "ini",
     "bashrc": "shellscript",
+    "CODEOWNERS": "ini",
     "gitignore": "ignore",
     "zshenv": "shellscript",
     "zshrc": "shellscript"
@@ -206,8 +234,8 @@
     "**/node_modules/**": true
   },
   "git.confirmSync": false,
-  "git.enableSmartCommit": true,
   "git.enabled": true,
+  "git.enableSmartCommit": true,
   "git.fetchOnPull": true,
   "git.pruneOnFetch": true,
   "gitblame.statusBarMessageFormat": "${author.name} (${time.ago})",
@@ -220,12 +248,15 @@
     "default": "right",
     "jupyter-notebook": "left"
   },
+  "scm.inputFontSize": 14,
   "search.exclude": {
     "**/build": true,
     "**/dist": true
   },
   "search.smartCase": true,
   "security.workspace.trust.untrustedFiles": "open",
+  "stylelint.validate": ["css", "postcss", "scss"],
+  "stylelint.validate": ["css", "postcss", "scss"],
   "terminal.integrated.cursorBlinking": true,
   "terminal.integrated.cursorStyle": "line",
   "terminal.integrated.cursorWidth": 2,
@@ -237,13 +268,19 @@
   "terminal.integrated.showExitAlert": false,
   "typescript.tsserver.log": "off",
   "typescript.updateImportsOnFileMove.enabled": "always",
+  "vsicons.dontShowNewVersionMessage": true,
   "window.dialogStyle": "custom",
+  "window.menuBarVisibility": "compact",
+  "window.menuStyle": "inherit",
   "window.title": "${rootPath}${separator}${remoteName}${separator}Code",
+  "window.titleSeparator": " • ",
   "workbench.activityBar.location": "top",
+  "workbench.colorTheme": "Fresh Green",
   "workbench.editor.centeredLayoutFixedWidth": true,
   "workbench.editor.decorations.badges": true,
   "workbench.editor.decorations.colors": true,
   "workbench.editor.enablePreviewFromQuickOpen": false,
+  "workbench.editor.showTabs": "single",
   "workbench.editor.tabActionCloseVisibility": false,
   "workbench.editor.tabSizing": "shrink",
   "workbench.editorAssociations": {
@@ -259,32 +296,5 @@
   "workbench.tree.indent": 24,
   "workbench.tree.renderIndentGuides": "always",
   "zenMode.fullScreen": false,
-  "zenMode.showTabs": "single",
-  "workbench.activityBar.location": "top",
-  "[scss]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "debug.console.fontFamily": "",
-  "diffEditor.ignoreTrimWhitespace": false,
-  "editor.snippetSuggestions": "bottom",
-  "workbench.editor.showTabs": "single",
-  "window.menuBarVisibility": "compact",
-  "workbench.colorTheme": "Fresh Green",
-  "cSpell.enabled": false,
-  "stylelint.validate": ["css", "postcss", "scss"],
-  "window.menuStyle": "inherit",
-  "explorer.confirmPasteNative": false,
-  "window.titleSeparator": " • ",
-  "editor.codeLensFontSize": 14,
-  "editor.inlayHints.fontSize": 12,
-  "scm.inputFontSize": 14,
-  "[dockercompose]": {
-    "editor.insertSpaces": true,
-    "editor.tabSize": 2,
-    "editor.autoIndent": "advanced",
-    "editor.defaultFormatter": "redhat.vscode-yaml"
-  },
-  "[github-actions-workflow]": {
-    "editor.defaultFormatter": "redhat.vscode-yaml"
-  }
+  "zenMode.showTabs": "single"
 }
