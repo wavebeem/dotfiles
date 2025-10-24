@@ -3,10 +3,11 @@ cmd = {}
 layout = {}
 
 personalApps = {
-  "Firefox Developer Edition",
+  "Vivaldi",
   "Discord",
   "LINE",
   "Music",
+  "Doppler",
 }
 
 function cmd.hidePersonalApps()
@@ -30,29 +31,6 @@ end
 
 function layout.right50(name)
   return layout.new(name, hs.layout.right50)
-end
-
-function cmd.splitUpApps()
-  hs.layout.apply {
-    -- Left
-    layout.left50"Code",
-    layout.left50"iTerm2",
-    layout.left50"Terminal",
-    layout.left50"zoom.us",
-    -- Right
-    layout.right50"Slack",
-    layout.right50"LINE",
-    -- This uses a substring match normally, and "Firefox" will match "Firefox
-    -- Developer Edition" rather than simply "Firefox", for some reason. So we
-    -- need to use the bundle ID instead of the application name.
-    layout.right50"org.mozilla.firefox",
-    layout.right50"Google Chrome",
-    layout.right50"Finder",
-    layout.right50"Hammerspoon",
-    layout.right50"Firefox Developer Edition",
-    layout.right50"Discord",
-    layout.right50"Music",
-  }
 end
 
 -- If this were a true "unhide all windows" it would uniminimize windows too.
@@ -85,7 +63,9 @@ function cmd.maximizeWindow()
 end
 
 function cmd.maximizeAllWindows()
+  local screen = hs.screen.primaryScreen()
   for _, window in ipairs(hs.window:orderedWindows()) do
+    window:moveToScreen(screen)
     window:moveToUnit(hs.layout.maximized)
   end
 end
@@ -111,14 +91,15 @@ function cmd.typeTime()
 end
 
 function cmd.typeUnixTime()
-  hs.eventtap.keyStrokes("" .. os.time())
+  hs.eventtap.keyStrokes(tostring(os.time()))
 end
 
 
 function hex(code, alpha)
+  alpha = alpha or 100
   return {
     hex = "#" .. code,
-    alpha = (alpha or 100) / 100
+    alpha = alpha / 100
   }
 end
 
@@ -126,22 +107,21 @@ end
 hs.window.animationDuration = 0
 
 hs.alert.defaultStyle.strokeWidth = 8
-hs.alert.defaultStyle.strokeColor = hex"0063c2"
-hs.alert.defaultStyle.fillColor = hex"a1ffe4"
-hs.alert.defaultStyle.textColor = hex"0063c2"
+hs.alert.defaultStyle.strokeColor = hex"222222"
+hs.alert.defaultStyle.fillColor = hex"eeeeee"
+hs.alert.defaultStyle.textColor = hex"222222"
 -- hs.alert.defaultStyle.textFont = ".AppleSystemUIFont"
 hs.alert.defaultStyle.textSize = 32
-hs.alert.defaultStyle.radius = 16
+hs.alert.defaultStyle.radius = 8
 -- hs.alert.defaultStyle.atScreenEdge = 0
 hs.alert.defaultStyle.fadeInDuration = 0
 hs.alert.defaultStyle.fadeOutDuration = 0
-hs.alert.defaultStyle.padding = 32
+hs.alert.defaultStyle.padding = 16
 
 prefix = {"ctrl", "alt"}
 
 hs.hotkey.bind(prefix, "y", cmd.unhideAll)
 hs.hotkey.bind(prefix, "h", cmd.hidePersonalApps)
-hs.hotkey.bind(prefix, "n", cmd.splitUpApps)
 
 hs.hotkey.bind(prefix, "j", cmd.snapWindowLeft)
 hs.hotkey.bind(prefix, "k", cmd.maximizeWindow)
@@ -150,7 +130,6 @@ hs.hotkey.bind(prefix, "l", cmd.snapWindowRight)
 hs.hotkey.bind(prefix, "d", cmd.typeDate)
 hs.hotkey.bind(prefix, "t", cmd.typeTime)
 hs.hotkey.bind(prefix, "x", cmd.typeUnixTime)
-
 
 hs.hotkey.bind(prefix, "space", cmd.maximizeAllWindows)
 hs.hotkey.bind(prefix, "v", cmd.showApplicationName)

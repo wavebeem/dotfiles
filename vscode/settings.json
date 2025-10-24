@@ -114,7 +114,7 @@
   "editor.copyWithSyntaxHighlighting": false,
   "editor.dragAndDrop": false,
   "editor.find.addExtraSpaceOnTop": false,
-  "editor.fontFamily": "Input Mono, JetBrains Mono, Menlo, Consolas, monospace",
+  "editor.fontFamily": "JetBrains Mono, Menlo, Consolas, monospace",
   "editor.fontLigatures": false,
   "editor.fontSize": 16,
   "editor.fontWeight": 400,
@@ -239,7 +239,6 @@
   "typescript.updateImportsOnFileMove.enabled": "always",
   "window.dialogStyle": "custom",
   "window.title": "${rootPath}${separator}${remoteName}${separator}Code",
-  "window.titleSeparator": " • ",
   "workbench.activityBar.location": "top",
   "workbench.editor.centeredLayoutFixedWidth": true,
   "workbench.editor.decorations.badges": true,
@@ -273,5 +272,19 @@
   "workbench.colorTheme": "Fresh Green",
   "cSpell.enabled": false,
   "stylelint.validate": ["css", "postcss", "scss"],
-  "window.menuStyle": "inherit"
+  "window.menuStyle": "inherit",
+  "explorer.confirmPasteNative": false,
+  "window.titleSeparator": " • ",
+  "editor.codeLensFontSize": 14,
+  "editor.inlayHints.fontSize": 12,
+  "scm.inputFontSize": 14,
+  "[dockercompose]": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+    "editor.autoIndent": "advanced",
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+  "[github-actions-workflow]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  }
 }

@@ -60,10 +60,11 @@ path=(
   "$HOME/w/dotfiles/bin"
   "$PNPM_HOME"
   # Homebrew
-  /opt/homebrew/bin
-  /home/linuxbrew/.linuxbrew/bin
+  "/opt/homebrew/bin"
+  "/home/linuxbrew/.linuxbrew/bin"
   # asdf
   "${ASDF_DATA_DIR:-$HOME/.asdf}/shims"
+  "/opt/homebrew/opt/openjdk/bin"
   # Load Rust Cargo commands
   "$HOME/.cargo/bin"
   # Python stuff
@@ -109,6 +110,11 @@ __install.asdf() {
 # Install asdf Node.js plugin
 __install.asdf.nodejs() {
   asdf plugin add nodejs https://github.com/asdf-vm/asdf-nodejs.git
+}
+
+# Install asdf Python plugin
+__install.asdf.python() {
+  asdf plugin add python https://github.com/asdf-community/asdf-python.git
 }
 
 # Install asdf Deno plugin

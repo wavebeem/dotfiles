@@ -1,0 +1,63 @@
+{
+  "alfredtheme" : {
+    "result" : {
+      "textSpacing" : 8,
+      "subtext" : {
+        "size" : 16,
+        "colorSelected" : "#EEEEECFF",
+        "font" : "System Light",
+        "color" : "#888A85FF"
+      },
+      "shortcut" : {
+        "size" : 16,
+        "colorSelected" : "#EEEEECFF",
+        "font" : "System",
+        "color" : "#888A85FF"
+      },
+      "backgroundSelected" : "#555753FF",
+      "text" : {
+        "size" : 24,
+        "colorSelected" : "#EEEEECFF",
+        "font" : "System",
+        "color" : "#2E3436FF"
+      },
+      "iconPaddingHorizontal" : 16,
+      "roundness" : 16,
+      "paddingVertical" : 16,
+      "iconSize" : 32
+    },
+    "separator" : {
+      "color" : "#FFFFFFFF",
+      "thickness" : 1
+    },
+    "search" : {
+      "backgroundSelected" : "#555753FF",
+      "paddingHorizontal" : 16,
+      "spacing" : 0,
+      "text" : {
+        "size" : 24,
+        "colorSelected" : "#FFFFFFFF",
+        "font" : "System Bold",
+        "color" : "#2E3436FF"
+      },
+      "background" : "#EEEEECFF",
+      "roundness" : 16,
+      "paddingVertical" : 16
+    },
+    "scrollbar" : {
+      "color" : "#7F7F7F7F",
+      "thickness" : 4
+    },
+    "name" : "Tango 2",
+    "window" : {
+      "color" : "#EEEEECFF",
+      "paddingHorizontal" : 8,
+      "width" : 700,
+      "borderPadding" : 16,
+      "borderColor" : "#00000019",
+      "blur" : 0,
+      "roundness" : 16,
+      "paddingVertical" : 0
+    }
+  }
+}

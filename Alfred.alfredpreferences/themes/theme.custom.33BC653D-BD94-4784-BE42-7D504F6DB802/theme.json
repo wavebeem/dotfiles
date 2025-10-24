@@ -3,28 +3,28 @@
     "result" : {
       "textSpacing" : 8,
       "subtext" : {
-        "size" : 14,
-        "colorSelected" : "#DDDDDDFF",
-        "font" : "System",
-        "color" : "#888888FF"
+        "size" : 16,
+        "colorSelected" : "#EEEEECFF",
+        "font" : "System Light",
+        "color" : "#888A85FF"
       },
       "shortcut" : {
         "size" : 16,
-        "colorSelected" : "#DDDDDDFF",
+        "colorSelected" : "#EEEEECFF",
         "font" : "System",
-        "color" : "#888888FF"
+        "color" : "#888A85FF"
       },
-      "backgroundSelected" : "#666666FF",
+      "backgroundSelected" : "#555753FF",
       "text" : {
         "size" : 24,
-        "colorSelected" : "#FFFFFFFF",
+        "colorSelected" : "#EEEEECFF",
         "font" : "System",
-        "color" : "#333333FF"
+        "color" : "#2E3436FF"
       },
       "iconPaddingHorizontal" : 16,
       "roundness" : 8,
       "paddingVertical" : 8,
-      "iconSize" : 48
+      "iconSize" : 32
     },
     "search" : {
       "backgroundSelected" : "#333333FF",
@@ -34,18 +34,18 @@
         "size" : 24,
         "colorSelected" : "#FFFFFFFF",
         "font" : "System Bold",
-        "color" : "#333333FF"
+        "color" : "#2E3436FF"
       },
-      "background" : "#FFFFFFFF",
+      "background" : "#D3D7CFFF",
       "roundness" : 8,
       "paddingVertical" : 8
     },
     "window" : {
-      "color" : "#EEEEEEFF",
+      "color" : "#EEEEECFF",
       "paddingHorizontal" : 8,
       "width" : 700,
       "borderPadding" : 0,
-      "borderColor" : "#33333333",
+      "borderColor" : "#00000019",
       "blur" : 0,
       "roundness" : 16,
       "paddingVertical" : 8
@@ -59,6 +59,6 @@
       "color" : "#7F7F7F7F",
       "thickness" : 4
     },
-    "name" : "Boring"
+    "name" : "Tango"
   }
 }
