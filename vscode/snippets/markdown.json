@@ -1,0 +1,12 @@
+{
+  "figure": {
+    "prefix": "figure",
+    "description": "Add a figure with an image",
+    "body": [
+      "<figure>",
+      "  <img src=\"${1}\" alt=\"\" />",
+      "  <figcaption>${2}</figcaption>",
+      "</figure>"
+    ]
+  }
+}
