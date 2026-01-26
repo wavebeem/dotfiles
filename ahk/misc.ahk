@@ -7,9 +7,11 @@
 ::;;left::←
 ::;;en::–
 ::;;em::—
+::;;pkmn::Pokémon
+::;;pke::Poké
 
 ; Caps Lock sends Escape
-CapsLock::Esc
+;CapsLock::Esc
 
 ; Alt-W sends Alt-F4
 !w::!F4
@@ -24,6 +26,12 @@ CapsLock::Esc
 ^!t::
 {
   SendInput FormatTime(A_Now, "yyyy-MM-dd HH.mm.ss")
+}
+
+; Send an ISO8601 timestamp
+^!c::
+{
+  SendInput FormatTime(A_Now, "yyyy-MM-ddTHH:mm:ss-07:00")
 }
 
 ; Send an ISO8601-ish filesystem timestamp, date only
