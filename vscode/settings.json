@@ -40,9 +40,6 @@
   "[scss]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "[scss]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -58,7 +55,8 @@
   "AutoHotkey2.InterpreterPath": "c:\\Users\\wave\\AppData\\Local\\Programs\\AutoHotkey\\v2\\AutoHotkey64.exe",
   "breadcrumbs.enabled": false,
   "chat.commandCenter.enabled": false,
-  "cSpell.enabled": false,
+  "claudeCode.preferredLocation": "panel",
+  "claudeCode.selectedModel": "opus",
   "cSpell.enabled": false,
   "cSpell.enabledFileTypes": {
     "*": false,
@@ -67,6 +65,7 @@
   "cSpell.enableFiletypes": ["markdown"],
   "cSpell.userWords": [
     "1upkeyboards",
+    "Arceus",
     "arity",
     "Astro",
     "Astro's",
@@ -75,6 +74,7 @@
     "colocated",
     "colorjs",
     "Corne",
+    "cutscene",
     "Ergodox",
     "esque",
     "fireteam",
@@ -118,17 +118,17 @@
     "Taeha",
     "Tamagotchi",
     "toc",
+    "Urbain",
     "wavebeem",
     "Webpack",
+    "Weedle",
     "Zlant"
   ],
-  "debug.console.fontFamily": "",
   "debug.console.fontFamily": "",
   "debug.console.fontSize": 14,
   "debug.terminal.clearBeforeReusing": true,
   "diffEditor.experimental.showMoves": true,
   "diffEditor.hideUnchangedRegions.enabled": true,
-  "diffEditor.ignoreTrimWhitespace": false,
   "diffEditor.ignoreTrimWhitespace": false,
   "diffEditor.renderSideBySide": false,
   "editor.acceptSuggestionOnCommitCharacter": false,
@@ -170,8 +170,6 @@
     "typescript",
     "typescriptreact"
   ],
-  "eslint.experimental.useFlatConfig": true,
-  "eslint.useFlatConfig": false,
   "eslint.validate": [
     "javascript",
     "javascriptreact",
@@ -233,12 +231,21 @@
     "**/dist": true,
     "**/node_modules/**": true
   },
+  "git.autofetch": true,
+  "git.autofetchPeriod": 3600,
   "git.confirmSync": false,
   "git.enabled": true,
   "git.enableSmartCommit": true,
   "git.fetchOnPull": true,
   "git.pruneOnFetch": true,
   "gitblame.statusBarMessageFormat": "${author.name} (${time.ago})",
+  "github.copilot.enable": {
+    "*": false,
+    "markdown": false,
+    "plaintext": false,
+    "scminput": false
+  },
+  "github.copilot.nextEditSuggestions.enabled": true,
   "html.format.indentHandlebars": true,
   "javascript.updateImportsOnFileMove.enabled": "always",
   "markdown.preview.fontFamily": "system-ui, sans-serif",
@@ -255,7 +262,6 @@
   },
   "search.smartCase": true,
   "security.workspace.trust.untrustedFiles": "open",
-  "stylelint.validate": ["css", "postcss", "scss"],
   "stylelint.validate": ["css", "postcss", "scss"],
   "terminal.integrated.cursorBlinking": true,
   "terminal.integrated.cursorStyle": "line",
@@ -280,14 +286,13 @@
   "workbench.editor.decorations.badges": true,
   "workbench.editor.decorations.colors": true,
   "workbench.editor.enablePreviewFromQuickOpen": false,
-  "workbench.editor.showTabs": "single",
   "workbench.editor.tabActionCloseVisibility": false,
   "workbench.editor.tabSizing": "shrink",
   "workbench.editorAssociations": {
     "*.csv": "default",
     "*.ipynb": "jupyter-notebook"
   },
-  "workbench.iconTheme": null,
+  "workbench.iconTheme": "vs-minimal",
   "workbench.preferredDarkColorTheme": "Miasma",
   "workbench.preferredHighContrastColorTheme": "Miasma",
   "workbench.preferredHighContrastLightColorTheme": "Miasma",

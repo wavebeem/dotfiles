@@ -1,6 +1,7 @@
 -- Namespaces
 cmd = {}
 layout = {}
+g = {}
 
 personalApps = {
   "Vivaldi",
@@ -25,14 +26,6 @@ function layout.new(name, size)
   return { name, nil, nil, size, nil, nil }
 end
 
-function layout.left50(name)
-  return layout.new(name, hs.layout.left50)
-end
-
-function layout.right50(name)
-  return layout.new(name, hs.layout.right50)
-end
-
 -- If this were a true "unhide all windows" it would uniminimize windows too.
 -- But that's slow, and I only ever use Hide Application rather than Minimize
 -- Window, so this can be a lot faster knowing that.
@@ -50,12 +43,35 @@ function cmd.unhideAll()
   end
 end
 
-function cmd.snapWindowLeft()
+g.big = 5 / 8
+g.small = 1 - g.big
+g.left_big_rect = hs.geometry.rect(0, 0, g.big, 1)
+g.left_small_rect = hs.geometry.rect(0, 0, g.small, 1)
+g.right_small_rect = hs.geometry.rect(1 - g.small, 0, g.small, 1)
+g.right_big_rect = hs.geometry.rect(1 - g.big, 0, g.big, 1)
+
+function cmd.snapWindowLeftBig()
+  hs.window.focusedWindow():moveToUnit(g.left_big_rect)
+end
+
+function cmd.snapWindowLeftSmall()
+  hs.window.focusedWindow():moveToUnit(g.left_small_rect)
+end
+
+function cmd.snapWindowLeftHalf()
   hs.window.focusedWindow():moveToUnit(hs.layout.left50)
 end
 
-function cmd.snapWindowRight()
+function cmd.snapWindowRightHalf()
   hs.window.focusedWindow():moveToUnit(hs.layout.right50)
+end
+
+function cmd.snapWindowRightBig()
+  hs.window.focusedWindow():moveToUnit(g.right_big_rect)
+end
+
+function cmd.snapWindowRightSmall()
+  hs.window.focusedWindow():moveToUnit(g.right_small_rect)
 end
 
 function cmd.maximizeWindow()
@@ -94,7 +110,6 @@ function cmd.typeUnixTime()
   hs.eventtap.keyStrokes(tostring(os.time()))
 end
 
-
 function hex(code, alpha)
   alpha = alpha or 100
   return {
@@ -123,9 +138,13 @@ prefix = {"ctrl", "alt"}
 hs.hotkey.bind(prefix, "y", cmd.unhideAll)
 hs.hotkey.bind(prefix, "h", cmd.hidePersonalApps)
 
-hs.hotkey.bind(prefix, "j", cmd.snapWindowLeft)
+hs.hotkey.bind(prefix, "m", cmd.snapWindowLeftSmall)
+hs.hotkey.bind(prefix, "u", cmd.snapWindowLeftBig)
+hs.hotkey.bind(prefix, "j", cmd.snapWindowLeftHalf)
 hs.hotkey.bind(prefix, "k", cmd.maximizeWindow)
-hs.hotkey.bind(prefix, "l", cmd.snapWindowRight)
+hs.hotkey.bind(prefix, "l", cmd.snapWindowRightHalf)
+hs.hotkey.bind(prefix, "o", cmd.snapWindowRightBig)
+hs.hotkey.bind(prefix, ".", cmd.snapWindowRightSmall)
 
 hs.hotkey.bind(prefix, "d", cmd.typeDate)
 hs.hotkey.bind(prefix, "t", cmd.typeTime)
