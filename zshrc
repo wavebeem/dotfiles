@@ -62,6 +62,8 @@ path=(
   # Homebrew
   "/opt/homebrew/bin"
   "/home/linuxbrew/.linuxbrew/bin"
+  # zdocs
+  "$HOME/.zdocs/bin"
   # asdf
   "${ASDF_DATA_DIR:-$HOME/.asdf}/shims"
   "/opt/homebrew/opt/openjdk/bin"
