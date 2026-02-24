@@ -231,7 +231,6 @@
     "**/node_modules/**": true
   },
   "git.autofetch": true,
-  "git.autofetchPeriod": 3600,
   "git.confirmSync": false,
   "git.enabled": true,
   "git.enableSmartCommit": true,
