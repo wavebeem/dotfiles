@@ -27,7 +27,7 @@
       "iconSize" : 48
     },
     "search" : {
-      "backgroundSelected" : "#245CD8FF",
+      "backgroundSelected" : "#B32F2AFF",
       "paddingHorizontal" : 16,
       "spacing" : 8,
       "text" : {
