@@ -22,8 +22,10 @@ setopt GLOB_STAR_SHORT 2>/dev/null
 setopt INTERACTIVE_COMMENTS
 
 # Simple prompt that doesn't change size
-PROMPT="%B%F{green}zsh:%f%b "
-PROMPT2="$PROMPT"
+newline=$'\n'
+PROMPT="%B%F{green}-->%f%b "
+PROMPT2="%B%F{green}~~>%f%b "
+RPROMPT="%B%F{green}%~%f%b%(?.. %B%F{red}$? 🛑%f%b)"
 
 # Automatic command suggestions as I type
 source ~/.zsh-autosuggestions/zsh-autosuggestions.zsh
