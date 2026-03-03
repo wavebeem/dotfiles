@@ -21,11 +21,12 @@ setopt GLOB_STAR_SHORT 2>/dev/null
 # Allow writing comments in interactive mode (why not?)
 setopt INTERACTIVE_COMMENTS
 
-# Simple prompt that doesn't change size
+# Change prompt based on whether the last command failed or not, and show the
+# current directory on the right
 newline=$'\n'
-PROMPT="%B%F{green}-->%f%b "
+PROMPT="%B%F{green}%(?.-->.///)%f%b "
 PROMPT2="%B%F{green}~~>%f%b "
-RPROMPT="%B%F{green}%~%f%b%(?.. %B%F{red}$? 🛑%f%b)"
+RPROMPT="%F{cyan}%~%f%(?.. %F{red}$?%f)"
 
 # Automatic command suggestions as I type
 source ~/.zsh-autosuggestions/zsh-autosuggestions.zsh
