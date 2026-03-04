@@ -341,6 +341,7 @@
   "typescript.tsserver.log": "off",
   "typescript.updateImportsOnFileMove.enabled": "always",
   "vsicons.dontShowNewVersionMessage": true,
+  "window.menuBarVisibility": "compact",
   // "window.dialogStyle": "custom",
   "window.menuStyle": "inherit",
   "window.title": "${rootPath}${separator}${remoteName}${separator}Code",
