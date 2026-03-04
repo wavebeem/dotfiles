@@ -89,7 +89,8 @@ if (Get-Command eza -ErrorAction SilentlyContinue) {
 
 function prompt {
   Write-Host ""
-  Write-Host -NoNewline -ForegroundColor Green "${bold}pwsh:"
+  Write-Host -NoNewline -ForegroundColor Green "${bold}${pwd} "
+  Write-Host -NoNewline -ForegroundColor Magenta "${bold}->"
   return " "
 }
 
