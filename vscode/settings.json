@@ -340,6 +340,7 @@
   "terminal.integrated.scrollback": 10000,
   "terminal.integrated.shellIntegration.enabled": true,
   "terminal.integrated.showExitAlert": false,
+  "terminal.integrated.stickyScroll.enabled": false,
   "typescript.tsserver.log": "off",
   "typescript.updateImportsOnFileMove.enabled": "always",
   "vsicons.dontShowNewVersionMessage": true,
