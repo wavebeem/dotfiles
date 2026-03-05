@@ -24,8 +24,10 @@ setopt INTERACTIVE_COMMENTS
 # Change prompt based on whether the last command failed or not, and show the
 # current directory on the right
 newline=$'\n'
-PROMPT='%B%F{green}%~%f%b %B%F{magenta}%(?.->.!! )%f%b '
-PROMPT2='%B%F{magenta}->%f%b '
+fade_left=$''
+fade_right=$''
+PROMPT="%B%F{white}%K{green} %~ %k%f%b "
+PROMPT2="%B%F{white}%K{green} -> %k%f%b "
 # RPROMPT="%F{cyan}%f%(?.. %F{red}$?%f)"
 
 # Automatic command suggestions as I type
