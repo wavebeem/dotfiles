@@ -26,8 +26,8 @@ setopt INTERACTIVE_COMMENTS
 newline=$'\n'
 fade_left=$''
 fade_right=$''
-PROMPT="%B%F{white}%K{green} %~ %k%f%b "
-PROMPT2="%B%F{white}%K{green} -> %k%f%b "
+PROMPT="%B%F{green}%~ >%f%b "
+PROMPT2="%B%F{green}>%f%b "
 # RPROMPT="%F{cyan}%f%(?.. %F{red}$?%f)"
 
 # Automatic command suggestions as I type
