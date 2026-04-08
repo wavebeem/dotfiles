@@ -26,9 +26,20 @@ setopt INTERACTIVE_COMMENTS
 newline=$'\n'
 fade_left=$''
 fade_right=$''
-PROMPT="%B%F{green}%~ >%f%b "
-PROMPT2="%B%F{green}>%f%b "
-# RPROMPT="%F{cyan}%f%(?.. %F{red}$?%f)"
+prompt_left=$''
+prompt_right=$'\ue0b0'
+PROMPT="\
+%B\
+%K{magenta}${prompt_left}%k\
+%K{magenta}%F{white} %~ %f%k\
+%F{magenta}%k${prompt_right}%f\
+%b "
+PROMPT2="\
+%B\
+%K{cyan}${prompt_left}%k\
+%K{cyan}%F{white} %~ %f%k\
+%F{cyan}%k${prompt_right}%f\
+%b "
 
 # Automatic command suggestions as I type
 source ~/.zsh-autosuggestions/zsh-autosuggestions.zsh

@@ -109,5 +109,10 @@
   {
     "key": "alt+cmd+t",
     "command": "-workbench.action.closeOtherEditors"
+  },
+  {
+    "key": "alt+cmd+s",
+    "command": "workbench.action.toggleUnifiedSidebarFromKeyboard",
+    "when": "!isAuxiliaryWindowFocusedContext"
   }
 ]
