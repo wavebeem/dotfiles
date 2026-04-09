@@ -1,56 +1,56 @@
 {
   "[css]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "[dockercompose]": {
     "editor.autoIndent": "advanced",
     "editor.defaultFormatter": "redhat.vscode-yaml",
     "editor.insertSpaces": true,
-    "editor.tabSize": 2
+    "editor.tabSize": 2,
   },
   "[github-actions-workflow]": {
-    "editor.defaultFormatter": "redhat.vscode-yaml"
+    "editor.defaultFormatter": "redhat.vscode-yaml",
   },
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSave": false
+    "editor.formatOnSave": false,
   },
   "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "[javascriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "[markdown]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "[mdx]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "[python]": {
     "editor.formatOnType": true,
-    "editor.tabSize": 4
+    "editor.tabSize": 4,
   },
   "[scss]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "[typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "[vue]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "[yaml]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "AutoHotkey2.InterpreterPath": "c:\\Users\\wave\\AppData\\Local\\Programs\\AutoHotkey\\v2\\AutoHotkey64.exe",
   "breadcrumbs.enabled": false,
@@ -58,13 +58,13 @@
   "chat.commandCenter.enabled": false,
   "chat.fontSize": 14,
   "chat.mcp.discovery.enabled": {
-    "cursor-workspace": true
+    "cursor-workspace": true,
   },
   "chat.viewSessions.orientation": "stacked",
   "cSpell.enabled": false,
   "cSpell.enabledFileTypes": {
     "*": false,
-    "markdown": false
+    "markdown": false,
   },
   "cSpell.enableFiletypes": ["markdown"],
   "cSpell.userWords": [
@@ -126,7 +126,7 @@
     "wavebeem",
     "Webpack",
     "Weedle",
-    "Zlant"
+    "Zlant",
   ],
   "debug.console.fontFamily": "",
   "debug.console.fontSize": 14,
@@ -172,13 +172,13 @@
     "javascript",
     "javascriptreact",
     "typescript",
-    "typescriptreact"
+    "typescriptreact",
   ],
   "eslint.validate": [
     "javascript",
     "javascriptreact",
     "typescript",
-    "typescriptreact"
+    "typescriptreact",
   ],
   "explorer.compactFolders": false,
   "explorer.confirmDelete": false,
@@ -195,7 +195,7 @@
     "CODEOWNERS": "ini",
     "gitignore": "ignore",
     "zshenv": "shellscript",
-    "zshrc": "shellscript"
+    "zshrc": "shellscript",
   },
   "files.autoSave": "onFocusChange",
   "files.defaultLanguage": "markdown",
@@ -224,7 +224,7 @@
     "**/logs": true,
     "**/node_modules": true,
     "**/storybook-static": true,
-    "**/tmp": true
+    "**/tmp": true,
   },
   "files.insertFinalNewline": true,
   "files.simpleDialog.enable": true,
@@ -233,7 +233,7 @@
     "**/.git/objects/**": true,
     "**/build": true,
     "**/dist": true,
-    "**/node_modules/**": true
+    "**/node_modules/**": true,
   },
   "git.autofetch": true,
   "git.confirmSync": false,
@@ -242,11 +242,11 @@
   "git.fetchOnPull": true,
   "git.pruneOnFetch": true,
   "github.copilot.enable": {
-    "*": true,
-    "markdown": false,
+    "*": false,
     "plaintext": false,
+    "markdown": false,
     "scminput": false,
-    "typescript": true
+    "typescript": true,
   },
   "github.copilot.nextEditSuggestions.enabled": true,
   "html.format.indentHandlebars": true,
@@ -256,12 +256,12 @@
   "markdown.preview.lineHeight": 1.5,
   "notebook.cellToolbarLocation": {
     "default": "right",
-    "jupyter-notebook": "left"
+    "jupyter-notebook": "left",
   },
   "scm.inputFontSize": 14,
   "search.exclude": {
     "**/build": true,
-    "**/dist": true
+    "**/dist": true,
   },
   "search.smartCase": true,
   "security.workspace.trust.untrustedFiles": "open",
@@ -330,7 +330,7 @@
     "*/",
     "+++",
     "<!--",
-    "<!---"
+    "<!---",
   ],
   "terminal.integrated.fontLigatures.featureSettings": "\"liga\" on, \"calt\" on, \"clig\" on, \"dlig\" on",
   "terminal.integrated.fontSize": 14,
@@ -358,12 +358,12 @@
   "workbench.editor.tabSizing": "shrink",
   "workbench.editorAssociations": {
     "*.csv": "default",
-    "*.ipynb": "jupyter-notebook"
+    "*.ipynb": "jupyter-notebook",
   },
   "workbench.iconTheme": "catppuccin-latte",
   "workbench.startupEditor": "newUntitledFile",
   "workbench.tree.indent": 24,
   "workbench.tree.renderIndentGuides": "always",
   "zenMode.fullScreen": false,
-  "zenMode.showTabs": "single"
+  "zenMode.showTabs": "single",
 }

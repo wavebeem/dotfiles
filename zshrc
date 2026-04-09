@@ -122,7 +122,10 @@ __install.autosuggestions() {
 
 # Install asdf
 __install.asdf() {
-  git clone https://github.com/asdf-vm/asdf.git ~/.asdf
+  # git clone https://github.com/asdf-vm/asdf.git ~/.asdf
+  echo "https://asdf-vm.com/guide/getting-started.html"
+  echo "brew install asdf"
+  echo "yay asdf-vm"
 }
 
 # Install asdf Node.js plugin
@@ -137,7 +140,7 @@ __install.asdf.python() {
 
 # Install asdf Deno plugin
 __install.asdf.deno() {
-  asdf plugin-add deno https://github.com/asdf-community/asdf-deno.git
+  asdf plugin add deno https://github.com/asdf-community/asdf-deno.git
 }
 
 # Install pyenv
@@ -218,33 +221,6 @@ alias gl="git log"
 alias d='pwd'
 alias s="cd ..; pwd"
 alias ..="s"
-
-# Upgrade pyenv to a shell function
-# if command -v pyenv >/dev/null; then
-#   eval "$(pyenv init -)"
-# fi
-
-# Load asdf
-# if [[ -e "$HOME/.asdf/asdf.sh" ]]; then
-#   source "$HOME/.asdf/asdf.sh"
-#   # append completions to fpath
-#   fpath=(${ASDF_DIR}/completions $fpath)
-#   # initialize completions with zsh's compinit
-#   autoload -Uz compinit && compinit
-# fi
-
-# if [[ -e /opt/homebrew/opt/asdf/libexec/asdf.sh ]]; then
-#   source /opt/homebrew/opt/asdf/libexec/asdf.sh
-# fi
-
-# if [[ -e "$(brew --prefix asdf)/libexec/asdf.sh" ]]; then
-#   source "$(brew --prefix asdf)/libexec/asdf.sh"
-# fi
-
-# Load rvm if it exists
-if [[ -e ~/.rvm/scripts/rvm ]]; then
-  source ~/.rvm/scripts/rvm
-fi
 
 # Load device specific customizations
 source ~/.after.zshrc.zsh
