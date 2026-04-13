@@ -7,10 +7,14 @@ config.window_background_opacity = 1.0
 config.initial_cols = 90
 config.initial_rows = 48
 
+-- config.default_cursor_style = "SteadyBar"
+-- config.cursor_thickness = 2
+
 -- or, changing the font size and color scheme.
+config.font = wezterm.font("Lilex", { weight = "Regular" })
 config.font_size = 16
-config.font = wezterm.font('Lilex')
-config.color_scheme = 'AdventureTime'
+-- config.line_height = 1.2
+config.color_scheme = 'Catppuccin Latte'
 
 -- Copy the configuration below and add it to your
 -- ~/.wezterm.lua or ~/.config/wezterm/wezterm.lua file
