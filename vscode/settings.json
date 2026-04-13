@@ -346,7 +346,7 @@
   "window.menuBarVisibility": "compact",
   // "window.dialogStyle": "custom",
   "window.menuStyle": "inherit",
-  "window.title": "${rootPath}${separator}${remoteName}${separator}Code",
+  "window.title": "${rootPath}${separator}${remoteName}${separator}${appName}",
   "window.titleSeparator": " • ",
   "workbench.activityBar.location": "top",
   "workbench.colorTheme": "Quiet Light",

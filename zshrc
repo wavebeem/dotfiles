@@ -29,17 +29,15 @@ fade_right=$''
 prompt_left=$''
 prompt_right=$'\ue0b0'
 PROMPT="\
-%B\
-%K{magenta}${prompt_left}%k\
-%K{magenta}%F{white} %~ %f%k\
+%B%K{magenta}${prompt_left}%k%b\
+%B%K{magenta}%F{white} %~ %f%k%b\
 %F{magenta}%k${prompt_right}%f\
-%b "
+ "
 PROMPT2="\
-%B\
-%K{cyan}${prompt_left}%k\
-%K{cyan}%F{white} %~ %f%k\
+%B%K{cyan}${prompt_left}%k%b\
+%B%K{cyan}%F{white} %~ %f%k%b\
 %F{cyan}%k${prompt_right}%f\
-%b "
+ "
 
 # Automatic command suggestions as I type
 source ~/.zsh-autosuggestions/zsh-autosuggestions.zsh
