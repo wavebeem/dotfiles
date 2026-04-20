@@ -5,3 +5,8 @@
   autocrlf = false
 [pull]
   rebase = false
+[user]
+	email = sage@wavebeem.com
+	name = Sage Fennel Mock
+[init]
+	defaultBranch = main
