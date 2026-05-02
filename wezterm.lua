@@ -4,6 +4,8 @@ local config = wezterm.config_builder()
 
 config.window_background_opacity = 1.0
 
+config.quit_when_all_windows_are_closed = false
+
 config.initial_cols = 90
 config.initial_rows = 48
 
@@ -11,7 +13,7 @@ config.initial_rows = 48
 -- config.cursor_thickness = 2
 
 -- or, changing the font size and color scheme.
-config.font = wezterm.font("Lilex", { weight = "Regular" })
+config.font = wezterm.font("Lilex", { weight = "Medium" })
 config.font_size = 16
 -- config.line_height = 1.2
 config.color_scheme = 'Catppuccin Latte'

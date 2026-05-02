@@ -60,6 +60,7 @@
     "cursor-workspace": true
   },
   "chat.viewSessions.orientation": "stacked",
+  "claudeCode.preferredLocation": "panel",
   "cSpell.enabled": false,
   "cSpell.enabledFileTypes": {
     "*": false,
@@ -348,7 +349,7 @@
   "window.title": "${rootPath}${separator}${remoteName}${separator}${appName}",
   "window.titleSeparator": " • ",
   "workbench.activityBar.location": "top",
-  "workbench.colorTheme": "Fresh Green",
+  "workbench.colorTheme": "Light 2026",
   "workbench.editor.centeredLayoutFixedWidth": true,
   "workbench.editor.decorations.badges": true,
   "workbench.editor.decorations.colors": true,

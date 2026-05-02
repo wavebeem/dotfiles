@@ -4,6 +4,7 @@ layout = {}
 g = {}
 
 personalApps = {
+  "Firefox Developer Edition",
   "Vivaldi",
   "Discord",
   "LINE",
@@ -123,7 +124,7 @@ hs.window.animationDuration = 0
 
 hs.alert.defaultStyle.strokeWidth = 8
 hs.alert.defaultStyle.strokeColor = hex"222222"
-hs.alert.defaultStyle.fillColor = hex"eeeeee"
+hs.alert.defaultStyle.fillColor = hex"ffffff"
 hs.alert.defaultStyle.textColor = hex"222222"
 -- hs.alert.defaultStyle.textFont = ".AppleSystemUIFont"
 hs.alert.defaultStyle.textSize = 32
