@@ -10,9 +10,9 @@ https://www.choosyosx.com
 
 Use different default browsers based on which app opens the link
 
-### Rectangle
+### Hammerspoon
 
-https://rectangleapp.com/pro
+https://www.hammerspoon.org/
 
 ### Bartender
 

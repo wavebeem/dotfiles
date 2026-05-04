@@ -1,5 +1,0 @@
---pager=less -R
---smart-case
---ignore-dir=.next
---ignore-dir=playwright-report
---ignore-file=ext:log
