@@ -9,6 +9,7 @@ function main() {
   install_cp "gitconfig"
   install "gitignore"
   install "welcome"
+  install "wezterm.lua"
 
   install_as "ahk\misc.ahk" "$env:APPDATA\Microsoft\Windows\Start Menu\Programs\Startup\misc.ahk"
   mkdir (Split-Path $profile)
