@@ -13,7 +13,9 @@ config.initial_rows = 48
 -- config.cursor_thickness = 2
 
 -- or, changing the font size and color scheme.
-config.font = wezterm.font("Lilex", { weight = "Medium" })
+-- config.font = wezterm.font("Lilex", { weight = "Medium" })
+-- config.font = wezterm.font("Lilex", { weight = "Regular" })
+config.font = wezterm.font("JetBrains Mono", { weight = "Regular" })
 config.font_size = 16
 -- config.line_height = 1.2
 config.color_scheme = 'Catppuccin Latte'
