@@ -350,7 +350,7 @@
   "window.titleSeparator": " • ",
   "workbench.activityBar.location": "top",
   "workbench.browser.openLocalhostLinks": false,
-  "workbench.colorTheme": "Light 2026",
+  "workbench.colorTheme": "Gruvbox Dark Medium",
   "workbench.editor.centeredLayoutFixedWidth": true,
   "workbench.editor.decorations.badges": true,
   "workbench.editor.decorations.colors": true,

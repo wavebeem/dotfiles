@@ -6,6 +6,7 @@ config.window_background_opacity = 1.0
 
 config.quit_when_all_windows_are_closed = false
 
+
 config.initial_cols = 90
 config.initial_rows = 48
 
@@ -16,9 +17,18 @@ config.initial_rows = 48
 -- config.font = wezterm.font("Lilex", { weight = "Medium" })
 -- config.font = wezterm.font("Lilex", { weight = "Regular" })
 config.font = wezterm.font("JetBrains Mono", { weight = "Regular" })
+config.font_rules = {
+  -- Don't swap in a lighter weight for "dim" text
+  {
+    intensity = "Half",  -- "Half" is WezTerm's name for dim/faint
+    font = config.font
+  },
+}
 config.font_size = 16
 -- config.line_height = 1.2
-config.color_scheme = 'Catppuccin Latte'
+config.color_scheme = 'GruvboxDark'
+-- Coming soon!
+-- config.text_min_contrast_ratio = 4.5
 
 -- Copy the configuration below and add it to your
 -- ~/.wezterm.lua or ~/.config/wezterm/wezterm.lua file
@@ -60,7 +70,7 @@ config.window_frame = {
 
 -- Root Loops color scheme
 -- via https://rootloops.sh?sugar=6&colors=10&sogginess=2&flavor=0&fruit=3&milk=3
-config.colors = {
+--[[ config.colors = {
   foreground = "#070603",
   background = "#f5f3ef",
   cursor_bg = "#585140",
@@ -159,6 +169,6 @@ config.colors = {
     },
   },
 
-}
+} --]]
 
 return config
