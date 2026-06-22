@@ -27,16 +27,20 @@ newline=$'\n'
 fade_left=$''
 fade_right=$''
 prompt_left=$''
-prompt_right=$'\ue0b0'
+prompt_right=$''
 PROMPT="\
-%B%K{magenta}${prompt_left}%k%b\
-%B%K{magenta}%F{white} %~ %f%k%b\
-%F{magenta}%k${prompt_right}%f\
+%B%K{magenta}%F{white}\
+  \
+%~\
+  \
+%f%k%b\
  "
 PROMPT2="\
-%B%K{cyan}${prompt_left}%k%b\
-%B%K{cyan}%F{white} %~ %f%k%b\
-%F{cyan}%k${prompt_right}%f\
+%B%K{cyan}%F{white}\
+  \
+%~\
+  \
+%f%k%b\
  "
 
 # Automatic command suggestions as I type
@@ -195,10 +199,11 @@ if which direnv >/dev/null 2>&1; then
   eval "$(direnv hook zsh)"
 fi
 
-# Replace `ls` with `exa`
-# https://the.exa.website/
-if which exa >/dev/null 2>&1; then
-  alias ls='exa --group-directories-first'
+# Replace `ls` with `eza`
+# https://github.com/eza-community/eza
+# https://eza.rocks/
+if which eza >/dev/null 2>&1; then
+  alias ls='eza --group-directories-first'
   alias l='ls'
   alias ll='ls -l'
   alias la='ls -la'

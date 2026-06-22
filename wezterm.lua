@@ -26,6 +26,7 @@ config.font_rules = {
 }
 config.font_size = 16
 -- config.line_height = 1.2
+-- config.color_scheme = 'rose-pine-dawn'
 config.color_scheme = 'GruvboxDark'
 -- Coming soon!
 -- config.text_min_contrast_ratio = 4.5

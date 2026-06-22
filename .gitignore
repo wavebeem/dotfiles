@@ -5,3 +5,6 @@ Cached Theme.pak
 *.pem
 *.log
 .vscode
+
+.mpd
+!.mpd/mpd.conf
