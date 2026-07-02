@@ -26,6 +26,10 @@ config.line_height = 1.213
 
 config.color_scheme = "GruvboxDark"
 
+config.command_palette_font_size = 24.0
+config.command_palette_bg_color = "#141617"
+config.command_palette_fg_color = "#ebdbb2"
+
 config.use_fancy_tab_bar = true
 config.tab_bar_at_bottom = false
 config.show_new_tab_button_in_tab_bar = false
