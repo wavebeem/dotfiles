@@ -20,6 +20,10 @@ config.font_rules = {
     intensity = "Half",
     font = config.font,
   },
+  {
+    intensity = "Bold",
+    font = wezterm.font("Iosevka Term", { weight = "Bold", stretch = "Expanded" }),
+  },
 }
 config.font_size = 17.0
 config.line_height = 1.213
@@ -71,5 +75,18 @@ config.window_frame = {
   active_titlebar_bg = "#1d2021",
   inactive_titlebar_bg = "#1d2021",
 }
+
+wezterm.on("update-right-status", function(window)
+  window:set_left_status("")
+  window:set_right_status("")
+end)
+
+wezterm.on("format-tab-title", function(tab)
+  local title = tab.active_pane.title
+  if #title > 40 then
+    title = title:sub(1, 39) .. "…"
+  end
+  return title
+end)
 
 return config
