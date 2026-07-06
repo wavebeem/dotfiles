@@ -21,8 +21,47 @@ setopt GLOB_STAR_SHORT 2>/dev/null
 # Allow writing comments in interactive mode (why not?)
 setopt INTERACTIVE_COMMENTS
 
-PROMPT="%B%F{green}{{ %f%F{magenta}%~%f%F{green} }}%f%b "
-PROMPT2="%B%F{green}{{ %f%F{magenta}%~%f%F{green} ??%f%b "
+# Terminal-aware prompt colors. Run __prompt.fix if they render as garbage.
+__prompt.set() {
+  local mode="${1:-auto}"
+  if [[ "$mode" == auto ]]; then
+    if [[ "$COLORTERM" == (24bit|truecolor) ]]; then
+      mode=truecolor
+    elif [[ "$TERM" == *256color* ]]; then
+      mode=256
+    else
+      mode=ansi
+    fi
+  fi
+  local edge dir bg err
+  case "$mode" in
+    truecolor)
+      bg='%K{#1d2021}'
+      edge='%F{#928374}'
+      dir='%F{#b8bb26}'
+      err='%F{#fb4934}'
+      ;;
+    256)
+      bg='%K{234}'
+      edge='%F{245}'
+      dir='%F{142}'
+      err='%F{167}'
+      ;;
+    *)
+      bg=''
+      edge='%F{8}'
+      dir='%F{green}'
+      err='%F{red}'
+      ;;
+  esac
+  # %(?.A.B) picks A on success, B (red) when the last command failed
+  PROMPT="%B${bg}%(?.${dir}.${err})%~ ${edge}%%%f%k%b "
+  PROMPT2="%B${bg}${dir}%~ ${edge}?%f%k%b "
+}
+__prompt.fix() {
+  __prompt.set ansi
+}
+__prompt.set
 
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=cyan"
 
@@ -167,7 +206,7 @@ __upgrade.wezterm-nightly() {
 __source.try ~/.zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # Convert file to ALAC in MP4 (.m4a) container
-__to.alac() {
+__convert.to-alac() {
   ffmpeg -y -i "$1" -vcodec copy -acodec alac "$2"
 }
 

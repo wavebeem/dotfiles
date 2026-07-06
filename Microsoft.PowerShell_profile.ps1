@@ -1,7 +1,8 @@
 Set-PSReadlineOption -BellStyle None
 Set-PSReadlineOption -EditMode Emacs
+Set-PSReadlineOption -ContinuationPrompt "? "
 
-function ThemeLight() {
+function __theme.set-light() {
   Set-PSReadLineOption -Colors @{
       ContinuationPrompt = "#666666"
       Emphasis = "#666666"
@@ -33,23 +34,23 @@ function ThemeLight() {
   $x.ProgressBackgroundColor = "Black"
 }
 
-function ThemeDark() {
+function __theme.set-dark() {
   Set-PSReadLineOption -Colors @{
-      ContinuationPrompt = "#cccccc"
-      Emphasis = "#cccccc"
-      Error = "#cccccc"
-      Selection = "#cccccc"
-      Default = "#cccccc"
-      Comment = "#cccccc"
-      Keyword = "#cccccc"
-      String = "#cccccc"
-      Operator = "#cccccc"
-      Variable = "#cccccc"
-      Command = "#cccccc"
-      Parameter = "#cccccc"
-      Type = "#cccccc"
-      Number = "#cccccc"
-      Member = "#cccccc"
+      ContinuationPrompt = "#928374"
+      Emphasis = "#fe8019"
+      Error = "#fb4934"
+      Selection = "#665c54"
+      Default = "#ebdbb2"
+      Comment = "#928374"
+      Keyword = "#fb4934"
+      String = "#b8bb26"
+      Operator = "#ebdbb2"
+      Variable = "#83a598"
+      Command = "#fabd2f"
+      Parameter = "#d3869b"
+      Type = "#8ec07c"
+      Number = "#d3869b"
+      Member = "#ebdbb2"
   }
 
   $x = $Host.PrivateData
@@ -70,7 +71,10 @@ function g() {
 }
 
 $esc = [char]27
-$bold = "$esc[1m"
+function ansi {
+  "$esc[$($args -join ';')m"
+}
+$bold = ansi 1
 
 function __install.eza {
   winget install eza-community.eza
@@ -87,10 +91,68 @@ if (Get-Command eza -ErrorAction SilentlyContinue) {
   Set-Alias ll ls
 }
 
+# Abbreviate a leading $HOME to ~ (only when it's a real prefix, not a substring)
+function __path.tilde($path) {
+  $sep = [IO.Path]::DirectorySeparatorChar
+  $alt = [IO.Path]::AltDirectorySeparatorChar
+  $path = $path.Replace($alt, $sep)
+  $hdir = $HOME.Replace($alt, $sep).TrimEnd($sep)
+  if ($path -eq $hdir) {
+    return "~"
+  }
+  if ($path.StartsWith($hdir + $sep, [StringComparison]::OrdinalIgnoreCase)) {
+    return "~" + $path.Substring($hdir.Length)
+  }
+  return $path
+}
+
+# Terminal-aware prompt colors. Run __prompt.fix if they render as garbage.
+$script:PromptMode = "auto"
+function __prompt.fix {
+  $script:PromptMode = "ansi"
+}
+
 function prompt {
+  $ok = $?
+  $cwd = __path.tilde (Get-Location).Path
+  $mode = $script:PromptMode
+  if ($mode -eq "auto") {
+    if ($env:COLORTERM -match "truecolor|24bit" -or $env:WT_SESSION) {
+      $mode = "truecolor"
+    }
+    elseif ($env:TERM -match "256color") {
+      $mode = "256"
+    }
+    else {
+      $mode = "ansi"
+    }
+  }
+  switch ($mode) {
+    "truecolor" {
+      $bg = ansi 48 2 29 32 33
+      $edge = ansi 38 2 146 131 116
+      $dir = ansi 38 2 211 134 155
+      $err = ansi 38 2 251 73 52
+    }
+    "256" {
+      $bg = ansi 48 5 234
+      $edge = ansi 38 5 245
+      $dir = ansi 38 5 175
+      $err = ansi 38 5 167
+    }
+    default {
+      $bg = ""
+      $edge = ansi 90
+      $dir = ansi 35
+      $err = ansi 31
+    }
+  }
+  if (-not $ok) {
+    $dir = $err
+  }
+  $reset = ansi 0
   Write-Host ""
-  Write-Host -NoNewline -ForegroundColor Green "${bold}${pwd} "
-  Write-Host -NoNewline -ForegroundColor Magenta "${bold}->"
+  Write-Host -NoNewline "${bold}${bg}${dir}${cwd} ${edge}>${reset}"
   return " "
 }
 
@@ -103,8 +165,8 @@ function s {
   Write-Output (Get-Location).Path
 }
 
-function FixGitOnWindows() {
+function __git.fix () {
   git config --global core.sshCommand "C:/Windows/System32/OpenSSH/ssh.exe"
 }
 
-ThemeLight
+__theme.set-dark
