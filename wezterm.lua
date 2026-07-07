@@ -22,47 +22,85 @@ config.font_rules = {
   },
   {
     intensity = "Bold",
-    font = wezterm.font("Iosevka Term", { weight = "Bold", stretch = "Expanded" }),
+    font = wezterm.font("Iosevka Term", {
+      weight = "Bold",
+      stretch = "Expanded",
+    }),
   },
 }
 config.font_size = 17.0
-config.line_height = 1.213
+config.line_height = 1.2
 
 config.color_scheme = "GruvboxDark"
 
 config.command_palette_font_size = 24.0
-config.command_palette_bg_color = "#141617"
-config.command_palette_fg_color = "#ebdbb2"
 
 config.use_fancy_tab_bar = true
 config.tab_bar_at_bottom = false
-config.show_new_tab_button_in_tab_bar = false
+config.show_new_tab_button_in_tab_bar = true
 config.show_tab_index_in_tab_bar = false
 
--- Two-tone: strip + inactive tabs sit darker than the active tab / content.
+-- Pin exact Gruvbox hex values instead of trusting the bundled scheme's
+-- fidelity (WezTerm's "GruvboxDark" scheme is sourced from a community
+-- repo, not the original gruvbox palette, and can drift from it).
 config.colors = {
+  background = "#282828",
+  foreground = "#ebdbb2",
+  cursor_bg = "#ebdbb2",
+  cursor_border = "#ebdbb2",
+  cursor_fg = "#282828",
+  selection_bg = "#665c54",
+  selection_fg = "#ebdbb2",
+  ansi = {
+    "#282828",
+    "#cc241d",
+    "#98971a",
+    "#d79921",
+    "#458588",
+    "#b16286",
+    "#689d6a",
+    "#a89984",
+  },
+  brights = {
+    "#928374",
+    "#fb4934",
+    "#b8bb26",
+    "#fabd2f",
+    "#83a598",
+    "#d3869b",
+    "#8ec07c",
+    "#ebdbb2",
+  },
   tab_bar = {
-    background = "#1d2021",
+    background = "#3c3836",
     active_tab = {
       bg_color = "#282828",
       fg_color = "#ebdbb2",
     },
     inactive_tab = {
-      bg_color = "#1d2021",
+      bg_color = "#3c3836",
       fg_color = "#928374",
     },
     inactive_tab_hover = {
-      bg_color = "#1d2021",
+      bg_color = "#3c3836",
+      fg_color = "#b8bb26",
+    },
+    new_tab = {
+      bg_color = "#3c3836",
+      fg_color = "#ebdbb2",
+    },
+    new_tab_hover = {
+      bg_color = "#3c3836",
       fg_color = "#b8bb26",
     },
   },
 }
 
 config.window_padding = {
-  left = 8,
-  right = 8,
-  top = 16,
-  bottom = 16,
+  left = 16,
+  right = 16,
+  top = 12,
+  bottom = 12,
 }
 
 config.window_frame = {
@@ -71,8 +109,8 @@ config.window_frame = {
     weight = "Medium",
   }),
   font_size = 16.0,
-  active_titlebar_bg = "#1d2021",
-  inactive_titlebar_bg = "#1d2021",
+  active_titlebar_bg = "#3c3836",
+  inactive_titlebar_bg = "#3c3836",
 }
 
 wezterm.on("update-right-status", function(window)

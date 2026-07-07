@@ -21,47 +21,11 @@ setopt GLOB_STAR_SHORT 2>/dev/null
 # Allow writing comments in interactive mode (why not?)
 setopt INTERACTIVE_COMMENTS
 
-# Terminal-aware prompt colors. Run __prompt.fix if they render as garbage.
-__prompt.set() {
-  local mode="${1:-auto}"
-  if [[ "$mode" == auto ]]; then
-    if [[ "$COLORTERM" == (24bit|truecolor) ]]; then
-      mode=truecolor
-    elif [[ "$TERM" == *256color* ]]; then
-      mode=256
-    else
-      mode=ansi
-    fi
-  fi
-  local edge dir bg err
-  case "$mode" in
-    truecolor)
-      bg='%K{#1d2021}'
-      edge='%F{#928374}'
-      dir='%F{#b8bb26}'
-      err='%F{#fb4934}'
-      ;;
-    256)
-      bg='%K{234}'
-      edge='%F{245}'
-      dir='%F{142}'
-      err='%F{167}'
-      ;;
-    *)
-      bg=''
-      edge='%F{8}'
-      dir='%F{green}'
-      err='%F{red}'
-      ;;
-  esac
-  # %(?.A.B) picks A on success, B (red) when the last command failed
-  PROMPT="%B${bg}%(?.${dir}.${err})%~ ${edge}%%%f%k%b "
-  PROMPT2="%B${bg}${dir}%~ ${edge}?%f%k%b "
-}
-__prompt.fix() {
-  __prompt.set ansi
-}
-__prompt.set
+# Plain ANSI colors — relies on the terminal's colorscheme (Gruvbox
+# everywhere) to remap the base 16 colors, so no truecolor/256 detection.
+# %(?.A.B) picks A on success, B (red) when the last command failed
+PROMPT='%B%(?.%F{green}.%F{red})%~ %F{8}%%%f%b '
+PROMPT2='%B%F{green}%~ %F{8}?%f%b '
 
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=cyan"
 
@@ -74,8 +38,18 @@ export LANG="en_US.UTF-8"
 # Make folders bold using ls on macOS
 export LSCOLORS="ExfxcxdxBxegedabagacad"
 
+# Check whether a command is installed
+__command.exists() {
+  which "$1" >/dev/null 2>&1
+}
+
 # Still easier to use vim for quick edits even though I prefer Code
-export EDITOR="vim"
+if __command.exists nvim; then
+  export EDITOR="nvim"
+  alias vim='nvim'
+else
+  export EDITOR="vim"
+fi
 export GIT_EDITOR="$EDITOR"
 export VISUAL="$EDITOR"
 
@@ -216,7 +190,7 @@ precmd() {
 }
 
 # Load homebrew
-if which brew >/dev/null 2>&1; then
+if __command.exists brew; then
   eval "$(brew shellenv)"
 fi
 
@@ -235,14 +209,14 @@ else
 fi
 
 # Load direnv
-if which direnv >/dev/null 2>&1; then
+if __command.exists direnv; then
   eval "$(direnv hook zsh)"
 fi
 
 # Replace `ls` with `eza`
 # https://github.com/eza-community/eza
 # https://eza.rocks/
-if which eza >/dev/null 2>&1; then
+if __command.exists eza; then
   alias ls='eza --group-directories-first'
   alias l='ls'
   alias ll='ls -l'

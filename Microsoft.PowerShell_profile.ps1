@@ -106,53 +106,20 @@ function __path.tilde($path) {
   return $path
 }
 
-# Terminal-aware prompt colors. Run __prompt.fix if they render as garbage.
-$script:PromptMode = "auto"
-function __prompt.fix {
-  $script:PromptMode = "ansi"
-}
-
+# Plain ANSI colors — relies on the terminal's colorscheme (Gruvbox
+# everywhere) to remap the base 16 colors, so no truecolor/256 detection.
 function prompt {
   $ok = $?
   $cwd = __path.tilde (Get-Location).Path
-  $mode = $script:PromptMode
-  if ($mode -eq "auto") {
-    if ($env:COLORTERM -match "truecolor|24bit" -or $env:WT_SESSION) {
-      $mode = "truecolor"
-    }
-    elseif ($env:TERM -match "256color") {
-      $mode = "256"
-    }
-    else {
-      $mode = "ansi"
-    }
-  }
-  switch ($mode) {
-    "truecolor" {
-      $bg = ansi 48 2 29 32 33
-      $edge = ansi 38 2 146 131 116
-      $dir = ansi 38 2 211 134 155
-      $err = ansi 38 2 251 73 52
-    }
-    "256" {
-      $bg = ansi 48 5 234
-      $edge = ansi 38 5 245
-      $dir = ansi 38 5 175
-      $err = ansi 38 5 167
-    }
-    default {
-      $bg = ""
-      $edge = ansi 90
-      $dir = ansi 35
-      $err = ansi 31
-    }
-  }
+  $edge = ansi 90
+  $dir = ansi 32
+  $err = ansi 31
   if (-not $ok) {
     $dir = $err
   }
   $reset = ansi 0
   Write-Host ""
-  Write-Host -NoNewline "${bold}${bg}${dir}${cwd} ${edge}>${reset}"
+  Write-Host -NoNewline "${bold}${dir}${cwd} ${edge}>${reset}"
   return " "
 }
 

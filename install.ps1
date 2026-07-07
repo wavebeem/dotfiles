@@ -10,6 +10,8 @@ function main() {
   install "gitignore"
   install "welcome"
 
+  install_as "nvim" "$env:LOCALAPPDATA\nvim"
+
   install_as "ahk\misc.ahk" "$env:APPDATA\Microsoft\Windows\Start Menu\Programs\Startup\misc.ahk"
   mkdir (Split-Path $profile)
   install_as "Microsoft.PowerShell_profile.ps1" $profile
@@ -52,7 +54,7 @@ function install_as($path, $dest) {
 
 function show($src, $dest) {
   Write-Host -NoNewline -Foreground Green $src
-  Write-Host -NoNewline -Foreground Blue " => "
+  Write-Host -NoNewline -Foreground Blue " -> "
   Write-Host -NoNewline -Foreground Red $dest
   Write-Host
 }

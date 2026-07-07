@@ -22,6 +22,7 @@ Main() {
   Install "gitignore"
   Install "wezterm.lua"
   Install "hammerspoon"
+  Install_as "nvim" "$HOME/.config/nvim"
   # Manually copy gitconfig so it can be modified for job-preferred git settings
   # Install "gitconfig"
   # Run commands based on OS
@@ -73,7 +74,7 @@ Install_as() {
   local src="$dotfiles/$path"
   local short_dest="~${dest##$HOME}"
   echo -n "${magenta}${short_dest}${reset}"
-  echo -n " => "
+  echo -n " -> "
   echo -n "${cyan}${path}${reset}"
   echo
   # Install the symbolic link

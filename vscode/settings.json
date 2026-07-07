@@ -291,6 +291,17 @@
   "window.titleSeparator": " • ",
   "workbench.activityBar.location": "top",
   "workbench.browser.openLocalhostLinks": false,
+  "workbench.colorCustomizations": {
+    "activityBarTop.background": "#1d2021",
+    "commandCenter.background": "#1d2021",
+    "panel.background": "#1d2021",
+    "sideBar.background": "#1d2021",
+    "statusBar.background": "#1d2021",
+    "terminal.background": "#1d2021",
+    "titleBar.activeBackground": "#1d2021",
+    "titleBar.border": "#343130",
+    "titleBar.inactiveBackground": "#1d2021"
+  },
   "workbench.colorTheme": "Gruvbox Dark Medium",
   "workbench.editor.centeredLayoutFixedWidth": true,
   "workbench.editor.decorations.badges": true,
