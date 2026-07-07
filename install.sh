@@ -12,7 +12,6 @@ dotfiles=$({ dir=$(dirname "$0"); cd "$dir"; pwd; })
 Main() {
   Install "hushlogin"
   Install "welcome"
-  Install "ackrc"
   Install "dircolors"
   Install "zshenv"
   Install "zshrc"

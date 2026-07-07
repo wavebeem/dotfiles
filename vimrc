@@ -4,6 +4,7 @@ set nocompatible
 filetype plugin on
 syntax on
 colorscheme default
+set mouse=a
 set wildmenu
 set nomodeline
 set ruler

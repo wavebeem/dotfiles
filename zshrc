@@ -21,26 +21,48 @@ setopt GLOB_STAR_SHORT 2>/dev/null
 # Allow writing comments in interactive mode (why not?)
 setopt INTERACTIVE_COMMENTS
 
-# Change prompt based on whether the last command failed or not, and show the
-# current directory on the right
-newline=$'\n'
-fade_left=$''
-fade_right=$''
-prompt_left=$''
-prompt_right=$'\ue0b0'
-PROMPT="\
-%B%K{magenta}${prompt_left}%k%b\
-%B%K{magenta}%F{white} %~ %f%k%b\
-%F{magenta}%k${prompt_right}%f\
- "
-PROMPT2="\
-%B%K{cyan}${prompt_left}%k%b\
-%B%K{cyan}%F{white} %~ %f%k%b\
-%F{cyan}%k${prompt_right}%f\
- "
+# Terminal-aware prompt colors. Run __prompt.fix if they render as garbage.
+__prompt.set() {
+  local mode="${1:-auto}"
+  if [[ "$mode" == auto ]]; then
+    if [[ "$COLORTERM" == (24bit|truecolor) ]]; then
+      mode=truecolor
+    elif [[ "$TERM" == *256color* ]]; then
+      mode=256
+    else
+      mode=ansi
+    fi
+  fi
+  local edge dir bg err
+  case "$mode" in
+    truecolor)
+      bg='%K{#1d2021}'
+      edge='%F{#928374}'
+      dir='%F{#b8bb26}'
+      err='%F{#fb4934}'
+      ;;
+    256)
+      bg='%K{234}'
+      edge='%F{245}'
+      dir='%F{142}'
+      err='%F{167}'
+      ;;
+    *)
+      bg=''
+      edge='%F{8}'
+      dir='%F{green}'
+      err='%F{red}'
+      ;;
+  esac
+  # %(?.A.B) picks A on success, B (red) when the last command failed
+  PROMPT="%B${bg}%(?.${dir}.${err})%~ ${edge}%%%f%k%b "
+  PROMPT2="%B${bg}${dir}%~ ${edge}?%f%k%b "
+}
+__prompt.fix() {
+  __prompt.set ansi
+}
+__prompt.set
 
-# Automatic command suggestions as I type
-source ~/.zsh-autosuggestions/zsh-autosuggestions.zsh
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=cyan"
 
 # Python virtualenv assumes you want your shell prompt mangled without this
@@ -99,16 +121,26 @@ fpath=(
 
 autoload -Uz compinit && compinit
 
-__path() {
+__path.print() {
   echo $path | tr ' ' '\n'
 }
 
-__bench.start() {
-  __bench_last_time=$(ruby -e 'p Time.now.to_f')
+__source.try() {
+  if [[ -f "$1" ]]; then
+    source "$1"
+  fi
 }
 
-__bench.end() {
-  start="$__bench_last_time" ruby -e 'p Time.now.to_f - ENV["start"].to_f'
+__os.is-mac() {
+  [[ $(uname) = Darwin ]]
+}
+
+__os.is-linux() {
+  [[ $(uname) = Linux ]]
+}
+
+__os.is-windows() {
+  [[ $(uname -r) = *Microsoft ]]
 }
 
 # Use tab completion to install missing plugins on the current system
@@ -161,8 +193,20 @@ __install.eza() {
   brew install eza
 }
 
+# Update WezTerm nightly (won't auto-update via brew)
+__upgrade.wezterm-nightly() {
+  if __os.is-mac; then
+    brew upgrade --cask wezterm-nightly --no-quarantine --greedy-latest
+  else
+    echo "unsupported platform"
+  fi
+}
+
+# Automatic command suggestions as I type
+__source.try ~/.zsh-autosuggestions/zsh-autosuggestions.zsh
+
 # Convert file to ALAC in MP4 (.m4a) container
-__to.alac() {
+__convert.to-alac() {
   ffmpeg -y -i "$1" -vcodec copy -acodec alac "$2"
 }
 
@@ -177,14 +221,14 @@ if which brew >/dev/null 2>&1; then
 fi
 
 # Easy open files
-if [[ $(uname -r) = *Microsoft ]]; then
+if __os.is-windows; then
   alias o='explorer.exe'
 else
   alias o='open'
 fi
 
 # Use color with ls
-if [[ $(uname) = Darwin ]]; then
+if __os.is-mac; then
   alias ls="ls -G"
 else
   alias ls="ls --color=auto"
@@ -195,10 +239,11 @@ if which direnv >/dev/null 2>&1; then
   eval "$(direnv hook zsh)"
 fi
 
-# Replace `ls` with `exa`
-# https://the.exa.website/
-if which exa >/dev/null 2>&1; then
-  alias ls='exa --group-directories-first'
+# Replace `ls` with `eza`
+# https://github.com/eza-community/eza
+# https://eza.rocks/
+if which eza >/dev/null 2>&1; then
+  alias ls='eza --group-directories-first'
   alias l='ls'
   alias ll='ls -l'
   alias la='ls -la'
@@ -208,7 +253,7 @@ else
   alias la="ll -a"
 fi
 
-# Allow pasting commands with "$" from the internet
+# Lets you paste shell commands from the internet that start with "$" verbatim
 alias '$'=""
 
 # Time saving shortcuts
@@ -220,5 +265,8 @@ alias d='pwd'
 alias s="cd ..; pwd"
 alias ..="s"
 
+# WezTerm shell integration (OSC 7 cwd reporting, semantic zones)
+__source.try "${WEZTERM_EXECUTABLE_DIR}/../shell-integration/wezterm.sh"
+
 # Load device specific customizations
-source ~/.after.zshrc.zsh
+__source.try ~/.after.zshrc.zsh
