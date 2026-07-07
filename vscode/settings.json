@@ -59,6 +59,7 @@
   "chat.mcp.discovery.enabled": {
     "cursor-workspace": true
   },
+  "chat.titleBar.openInAgentsWindow.enabled": false,
   "chat.viewSessions.orientation": "stacked",
   "claudeCode.preferredLocation": "sidebar",
   "cSpell.enabled": false,
