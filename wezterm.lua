@@ -38,7 +38,6 @@ config.use_fancy_tab_bar = true
 config.tab_bar_at_bottom = false
 config.show_new_tab_button_in_tab_bar = false
 config.show_tab_index_in_tab_bar = false
-config.tab_max_width = 12
 
 -- Two-tone: strip + inactive tabs sit darker than the active tab / content.
 config.colors = {
@@ -81,10 +80,26 @@ wezterm.on("update-right-status", function(window)
   window:set_right_status("")
 end)
 
+-- The fancy tab bar ignores tab_max_width, so we truncate the title here
+-- ourselves. This handler also supplies a fallback so tabs never go blank
+-- when a program sets an empty OSC title.
+local tab_max_width = 40
+
 wezterm.on("format-tab-title", function(tab)
-  local title = tab.active_pane.title
-  if #title > 40 then
-    title = title:sub(1, 39) .. "…"
+  local title = tab.tab_title
+  if title == nil or title == "" then
+    title = tab.active_pane.title
+  end
+  if title == nil or title == "" then
+    -- last resort: basename of the running program, e.g. "zsh", "nvim"
+    local proc = tab.active_pane.foreground_process_name or ""
+    title = proc:gsub("(.*[/\\])(.*)", "%2")
+    if title == "" then
+      title = "shell"
+    end
+  end
+  if wezterm.column_width(title) > tab_max_width then
+    title = wezterm.truncate_right(title, tab_max_width - 1) .. "…"
   end
   return title
 end)
