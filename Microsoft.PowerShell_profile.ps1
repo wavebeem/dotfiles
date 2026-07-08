@@ -106,40 +106,12 @@ function __path.tilde($path) {
   return $path
 }
 
-function __tty.supports-escapes {
-  $Host.UI.SupportsVirtualTerminal -and -not [Console]::IsOutputRedirected
-}
-
-# Show the cwd in the tab/window title while idle at the prompt, and the
-# running command's name while a command is executing
-function __title.set-idle($path) {
-  if (-not (__tty.supports-escapes)) {
-    return
-  }
-  Write-Host -NoNewline "$esc]2;$(__path.tilde $path)`a"
-}
-
-function __title.set-running($command) {
-  if (-not (__tty.supports-escapes)) {
-    return
-  }
-  $exe = ($command.Trim() -split '\s+')[0]
-  Write-Host -NoNewline "$esc]2;$exe`a"
-}
-
-Set-PSReadLineOption -AddToHistoryHandler {
-  param($command)
-  __title.set-running $command
-  [Microsoft.PowerShell.PSConsoleReadLine]::GetDefaultAddToHistoryOption($command)
-}
-
 # Plain ANSI colors — relies on the terminal's colorscheme (Gruvbox
 # everywhere) to remap the base 16 colors, so no truecolor/256 detection.
 function prompt {
   $ok = $?
   $rawCwd = (Get-Location).Path
   $cwd = __path.tilde $rawCwd
-  __title.set-idle $rawCwd
 
   $edge = ansi 90
   $dir = ansi 32

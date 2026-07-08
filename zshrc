@@ -117,10 +117,6 @@ __os.is-windows() {
   [[ $(uname -r) = *Microsoft ]]
 }
 
-__tty.supports-escapes() {
-  [[ -t 1 ]]
-}
-
 # Use tab completion to install missing plugins on the current system
 __install.autosuggestions() {
   git clone \
@@ -248,25 +244,6 @@ alias gl="git log"
 alias d='pwd'
 alias s="cd ..; pwd"
 alias ..="s"
-
-# Show the cwd in the tab/window title while idle at the prompt, and the
-# running command's name while a command is executing
-autoload -Uz add-zsh-hook
-
-if __tty.supports-escapes; then
-  __title.set-idle() {
-    print -Pn "\e]2;%~\a"
-  }
-  __title.set-running() {
-    printf '\e]2;%s\a' "${1%% *}"
-  }
-else
-  __title.set-idle() { :; }
-  __title.set-running() { :; }
-fi
-add-zsh-hook precmd __title.set-idle
-__title.set-idle
-add-zsh-hook preexec __title.set-running
 
 # WezTerm shell integration (OSC 7 cwd reporting, semantic zones)
 # __source.try "${WEZTERM_EXECUTABLE_DIR}/../shell-integration/wezterm.sh"

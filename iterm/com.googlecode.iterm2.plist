@@ -1057,6 +1057,8 @@
 	<string>EFF3369E-ACFA-43CC-8022-A4A219063EB9</string>
 	<key>DisableWindowSizeSnap</key>
 	<false/>
+	<key>EnableDivisionView</key>
+	<true/>
 	<key>HapticFeedbackForEsc</key>
 	<false/>
 	<key>HideActivityIndicator</key>
@@ -1753,7 +1755,7 @@
 	<key>TerminalVMargin</key>
 	<integer>12</integer>
 	<key>UseBorder</key>
-	<false/>
+	<true/>
 	<key>UseLionStyleFullscreen</key>
 	<false/>
 	<key>VisualIndicatorForEsc</key>
