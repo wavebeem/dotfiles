@@ -43,16 +43,6 @@ __command.exists() {
   which "$1" >/dev/null 2>&1
 }
 
-# Still easier to use vim for quick edits even though I prefer Code
-if __command.exists nvim; then
-  export EDITOR="nvim"
-  alias vim='nvim'
-else
-  export EDITOR="vim"
-fi
-export GIT_EDITOR="$EDITOR"
-export VISUAL="$EDITOR"
-
 # less is better than more
 # -R preserves ANSI color codes
 export PAGER="less -R"
@@ -93,6 +83,16 @@ fpath=(
   $fpath
 )
 
+# Still easier to use vim for quick edits even though I prefer Code
+if __command.exists nvim; then
+  export EDITOR="nvim"
+  alias vim='nvim'
+else
+  export EDITOR="vim"
+fi
+export GIT_EDITOR="$EDITOR"
+export VISUAL="$EDITOR"
+
 autoload -Uz compinit && compinit
 
 __path.print() {
@@ -115,6 +115,10 @@ __os.is-linux() {
 
 __os.is-windows() {
   [[ $(uname -r) = *Microsoft ]]
+}
+
+__tty.supports-escapes() {
+  [[ -t 1 ]]
 }
 
 # Use tab completion to install missing plugins on the current system
@@ -165,6 +169,12 @@ __install.homebrew() {
 # Install eza replacement for ls
 __install.eza() {
   brew install eza
+}
+
+# Install iTerm2 shell integration (command marks, cmd+click downloads,
+# jump-between-prompts, etc.)
+__install.iterm2-shell-integration() {
+  curl -L https://iterm2.com/shell_integration/zsh -o ~/.iterm2_shell_integration.zsh
 }
 
 # Update WezTerm nightly (won't auto-update via brew)
@@ -239,8 +249,31 @@ alias d='pwd'
 alias s="cd ..; pwd"
 alias ..="s"
 
+# Show the cwd in the tab/window title while idle at the prompt, and the
+# running command's name while a command is executing
+autoload -Uz add-zsh-hook
+
+if __tty.supports-escapes; then
+  __title.set-idle() {
+    print -Pn "\e]2;%~\a"
+  }
+  __title.set-running() {
+    printf '\e]2;%s\a' "${1%% *}"
+  }
+else
+  __title.set-idle() { :; }
+  __title.set-running() { :; }
+fi
+add-zsh-hook precmd __title.set-idle
+__title.set-idle
+add-zsh-hook preexec __title.set-running
+
 # WezTerm shell integration (OSC 7 cwd reporting, semantic zones)
-__source.try "${WEZTERM_EXECUTABLE_DIR}/../shell-integration/wezterm.sh"
+# __source.try "${WEZTERM_EXECUTABLE_DIR}/../shell-integration/wezterm.sh"
+
+# iTerm2 shell integration (command marks, cmd+click downloads,
+# jump-between-prompts, etc.) — install with __install.iterm2-shell-integration
+__source.try ~/.iterm2_shell_integration.zsh
 
 # Load device specific customizations
 __source.try ~/.after.zshrc.zsh
