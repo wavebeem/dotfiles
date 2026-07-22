@@ -307,4 +307,5 @@
   "terminal.integrated.tabs.hideCondition": "never",
   "terminal.integrated.confirmOnExit": "hasChildProcesses",
   "workbench.experimental.modernUI": true,
+  "workbench.shadows": false,
 }
