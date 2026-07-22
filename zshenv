@@ -1,4 +1,6 @@
 # shellcheck shell=zsh
 
 # Load device specific customizations
-source ~/.after.zshenv.zsh
+if [[ -f ~/.after.zshenv.zsh ]]; then
+  source ~/.after.zshenv.zsh
+fi
