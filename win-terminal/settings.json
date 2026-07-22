@@ -230,7 +230,55 @@
     "tabSwitcherMode": "inOrder",
     "tabWidthMode": "equal",
     "theme": "dark",
-    "themes": [],
+    "themes": 
+    [
+        {
+            "name": "Dark Mica",
+            "tab": 
+            {
+                "background": "#1D2021FF",
+                "iconStyle": "default",
+                "showCloseButton": "always",
+                "unfocusedBackground": "#32302F88"
+            },
+            "tabRow": 
+            {
+                "background": "#32302F88",
+                "unfocusedBackground": "#32302F88"
+            },
+            "window": 
+            {
+                "applicationTheme": "dark",
+                "experimental.rainbowFrame": false,
+                "frame": null,
+                "unfocusedFrame": null,
+                "useMica": true
+            }
+        },
+        {
+            "name": "Gruvbox Dark",
+            "tab": 
+            {
+                "background": "#1D2021FF",
+                "iconStyle": "default",
+                "showCloseButton": "always",
+                "unfocusedBackground": "#32302FFF"
+            },
+            "tabRow": 
+            {
+                "background": "#32302FFF",
+                "unfocusedBackground": "#1D2021FF"
+            },
+            "window": 
+            {
+                "applicationTheme": "dark",
+                "experimental.rainbowFrame": false,
+                "frame": null,
+                "unfocusedFrame": null,
+                "useMica": false
+            }
+        }
+    ],
     "useAcrylicInTabRow": false,
     "warning.confirmCloseAllTabs": false
 }
