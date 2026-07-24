@@ -240,7 +240,7 @@
     "markdown": false,
     "plaintext": false,
     "scminput": false,
-    "typescript": true,
+    "typescript": false,
   },
   "github.copilot.nextEditSuggestions.enabled": true,
   "html.format.indentHandlebars": true,
@@ -308,4 +308,5 @@
   "terminal.integrated.confirmOnExit": "hasChildProcesses",
   "workbench.experimental.modernUI": true,
   "workbench.shadows": false,
+  "github.copilot.nextEditSuggestions.eagerness": "low",
 }
