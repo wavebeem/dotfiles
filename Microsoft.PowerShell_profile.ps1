@@ -1,6 +1,8 @@
 Set-PSReadlineOption -BellStyle None
 Set-PSReadlineOption -EditMode Emacs
 Set-PSReadlineOption -ContinuationPrompt "? "
+# Inline gray suggestions from history, like zsh-autosuggestions
+Set-PSReadlineOption -PredictionSource History
 
 function __theme.set-light() {
   Set-PSReadLineOption -Colors @{
@@ -19,6 +21,7 @@ function __theme.set-light() {
       Type = "#666666"
       Number = "#666666"
       Member = "#666666"
+      InlinePrediction = "#008888"
   }
 
   $x = $Host.PrivateData
@@ -51,6 +54,7 @@ function __theme.set-dark() {
       Type = "#8ec07c"
       Number = "#d3869b"
       Member = "#ebdbb2"
+      InlinePrediction = "#8ec07c"
   }
 
   $x = $Host.PrivateData
@@ -70,6 +74,23 @@ function g() {
   git status $args
 }
 
+function gl() {
+  git log $args
+}
+
+function d() {
+  (Get-Location).Path
+}
+
+# Easy open files
+function o() {
+  if ($args) {
+    Invoke-Item @args
+  } else {
+    Invoke-Item .
+  }
+}
+
 $esc = [char]27
 function ansi {
   "$esc[$($args -join ';')m"
@@ -81,15 +102,38 @@ function __install.eza {
 }
 
 if (Get-Command eza -ErrorAction SilentlyContinue) {
-  Set-Alias ls eza -Option AllScope
+  function ls() {
+    eza --group-directories-first $args
+  }
+
+  function l() {
+    ls $args
+  }
 
   function ll() {
-    eza -l $args
+    ls -l $args
+  }
+
+  function la() {
+    ls -la $args
   }
 } else {
   Set-Alias l ls
   Set-Alias ll ls
 }
+
+# Python virtualenv assumes you want your shell prompt mangled without this
+$env:VIRTUAL_ENV_DISABLE_PROMPT = "true"
+
+# Still easier to use vim for quick edits even though I prefer VS Code
+if (Get-Command nvim -ErrorAction SilentlyContinue) {
+  $env:EDITOR = "nvim"
+  Set-Alias vim nvim
+} else {
+  $env:EDITOR = "vim"
+}
+$env:GIT_EDITOR = $env:EDITOR
+$env:VISUAL = $env:EDITOR
 
 # Abbreviate a leading $HOME to ~ (only when it's a real prefix, not a substring)
 function __path.tilde($path) {
