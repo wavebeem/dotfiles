@@ -109,19 +109,20 @@ function __path.tilde($path) {
 # Plain ANSI colors — relies on the terminal's colorscheme (Gruvbox
 # everywhere) to remap the base 16 colors, so no truecolor/256 detection.
 function prompt {
-  $ok = $?
   $rawCwd = (Get-Location).Path
   $cwd = __path.tilde $rawCwd
 
   $edge = ansi 90
-  $dir = ansi 32
-  $err = ansi 31
-  if (-not $ok) {
-    $dir = $err
-  }
+  $leaf = ansi 32
   $reset = ansi 0
+  $sep = [IO.Path]::DirectorySeparatorChar
+  # Gray path, green leaf
+  $parts = $cwd.Split($sep)
+  $parts[-1] = "${leaf}$($parts[-1])"
+  $cwdColored = "${edge}" + ($parts -join $sep)
   Write-Host ""
-  Write-Host -NoNewline "${bold}${dir}${cwd} ${edge}>${reset}"
+  Write-Host "${bold}${cwdColored}${reset}"
+  Write-Host -NoNewline "${bold}${edge}>${reset}"
   return " "
 }
 
