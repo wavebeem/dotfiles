@@ -2035,15 +2035,15 @@
 			<key>Cursor Guide Color (Dark)</key>
 			<dict>
 				<key>Alpha Component</key>
-				<real>1</real>
+				<real>0.12549019607843137</real>
 				<key>Blue Component</key>
-				<real>0.18431372549019609</real>
+				<real>0.39215686917304993</real>
 				<key>Color Space</key>
 				<string>P3</string>
 				<key>Green Component</key>
-				<real>0.18823529411764706</real>
+				<real>0.43529412150382996</real>
 				<key>Red Component</key>
-				<real>0.19607843137254902</real>
+				<real>0.48627451062202454</real>
 			</dict>
 			<key>Cursor Guide Color (Light)</key>
 			<dict>
@@ -2553,7 +2553,7 @@
 			<key>Use Cursor Guide</key>
 			<false/>
 			<key>Use Cursor Guide (Dark)</key>
-			<true/>
+			<false/>
 			<key>Use Custom Tab Title</key>
 			<false/>
 			<key>Use Italic Font</key>
