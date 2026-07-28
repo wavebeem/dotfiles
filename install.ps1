@@ -9,7 +9,6 @@ function main() {
   install_cp "gitconfig"
   install "gitignore"
   install "welcome"
-  install "wezterm.lua"
 
   install_as "nvim" "$env:LOCALAPPDATA\nvim"
 

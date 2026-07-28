@@ -20,7 +20,6 @@ Main() {
   Install "tmux.conf"
   Install "inputrc"
   Install "gitignore"
-  Install "wezterm.lua"
   Install "hammerspoon"
   Install_as "nvim" "$HOME/.config/nvim"
   # Manually copy gitconfig so it can be modified for job-preferred git settings

@@ -106,8 +106,6 @@ function __path.tilde($path) {
   return $path
 }
 
-# Plain ANSI colors — relies on the terminal's colorscheme (Gruvbox
-# everywhere) to remap the base 16 colors, so no truecolor/256 detection.
 function prompt {
   $rawCwd = (Get-Location).Path
   $cwd = __path.tilde $rawCwd

@@ -6,30 +6,32 @@ HISTSIZE=10000
 SAVEHIST=10000
 setopt SHARE_HISTORY
 
-# Use Emacs-style keyboard shortcuts (bash default)
+# Use Emacs-style keyboard shortcuts (otherwise zsh will detect EDITOR=vim)
 bindkey -e
-
-# Allow use of ** globbing
-setopt EXTENDED_GLOB
-
-# Fail with an error if glob fails to match any files
-setopt NO_MATCH
-
-# Allow writing **.x instead of **/*.x (requires zsh 5.1+)
-setopt GLOB_STAR_SHORT 2>/dev/null
 
 # Allow writing comments in interactive mode (why not?)
 setopt INTERACTIVE_COMMENTS
 
-# Plain ANSI colors — relies on the terminal's colorscheme (Gruvbox
-# everywhere) to remap the base 16 colors, so no truecolor/256 detection.
-# Two-line: the path gets a whole line so deep worktree paths never
-# crowd out the command. Newline lives inside PROMPT (not precmd) so
-# Ctrl-L redraws both lines.
+# Allow command substitution inside PROMPT
 setopt PROMPT_SUBST
 
-# Recolor the cwd for the prompt: gray path, green leaf.
-# ${(%):-%~} = "expand %~ outside the prompt" (cwd with ~ abbreviation)
+# $OSTYPE avoids forking uname (saving 60 +ms)
+__os.is-mac() {
+  [[ $OSTYPE == darwin* ]]
+}
+
+__os.is-linux() {
+  [[ $OSTYPE == linux* ]]
+}
+
+# WSL is linux-gnu to zsh, so sniff the kernel version instead.
+# $(< file) is special-cased by zsh and doesn't fork.
+__os.is-windows() {
+  [[ $OSTYPE == linux* && -r /proc/version && "$(< /proc/version)" == *[Mm]icrosoft* ]]
+}
+
+# Highlight the last dir in the cwd
+# ${(%):-%~} expands %~ outside the prompt
 __prompt.path-update() {
   local cwd=${(%):-%~}
   cwd=${cwd//\%/%%} # escape % so prompt expansion shows it literally
@@ -45,6 +47,9 @@ PROMPT='%B${__prompt_path}%f%b
 PROMPT2='%B%F{green}%~ %F{8}?%f%b '
 
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=cyan"
+
+# zle_highlight=(default:fg=magenta,bold)
+zle_highlight=(default:fg=13)
 
 # Python virtualenv assumes you want your shell prompt mangled without this
 export VIRTUAL_ENV_DISABLE_PROMPT="true"
@@ -64,10 +69,6 @@ __command.exists() {
 # -R preserves ANSI color codes
 export PAGER="less -R"
 
-# export PYENV_ROOT="$HOME/.pyenv"
-
-export PNPM_HOME="$HOME/Library/pnpm"
-
 path=(
   # Aseprite
   "$HOME/Applications/aseprite/Aseprite.app/Contents/MacOS"
@@ -75,7 +76,6 @@ path=(
   "$HOME/.local/bin"
   "$HOME/dotfiles/bin"
   "$HOME/w/dotfiles/bin"
-  "$PNPM_HOME"
   # Homebrew
   "/opt/homebrew/bin"
   "/home/linuxbrew/.linuxbrew/bin"
@@ -84,20 +84,20 @@ path=(
   "/opt/homebrew/opt/openjdk/bin"
   # Load Rust Cargo commands
   "$HOME/.cargo/bin"
-  # Python stuff
-  # "$PYENV_ROOT/bin"
-  # "$PYENV_ROOT/shims"
   "$HOME/.poetry/bin"
-  # Ruby
-  "$HOME/.rvm/bin"
   $path
 )
+
+if __os.is-mac; then
+  export PNPM_HOME="$HOME/Library/pnpm"
+  path=("$PNPM_HOME" $path)
+fi
 
 fpath=(
   $fpath
 )
 
-# Still easier to use vim for quick edits even though I prefer Code
+# Still easier to use vim for quick edits even though I prefer VS Code
 if __command.exists nvim; then
   export EDITOR="nvim"
   alias vim='nvim'
@@ -107,10 +107,17 @@ fi
 export GIT_EDITOR="$EDITOR"
 export VISUAL="$EDITOR"
 
-autoload -Uz compinit && compinit
-
 __path.print() {
   echo $path | tr ' ' '\n'
+}
+
+# Benchmark interactive shell startup
+# no_zle so the shell reads "exit" from stdin instead of the tty
+__benchmark.zsh-startup() {
+  local i
+  for i in {1..5}; do
+    time zsh -i -o no_zle <<< exit
+  done
 }
 
 __source.try() {
@@ -119,16 +126,14 @@ __source.try() {
   fi
 }
 
-__os.is-mac() {
-  [[ $(uname) = Darwin ]]
-}
-
-__os.is-linux() {
-  [[ $(uname) = Linux ]]
-}
-
-__os.is-windows() {
-  [[ $(uname -r) = *Microsoft ]]
+# Defer work until after the first prompt
+__source.try ~/.zsh-defer/zsh-defer.plugin.zsh
+__defer() {
+  if __command.exists zsh-defer; then
+    zsh-defer "$@"
+  else
+    "$@"
+  fi
 }
 
 # Use tab completion to install missing plugins on the current system
@@ -138,25 +143,20 @@ __install.autosuggestions() {
     ~/.zsh-autosuggestions
 }
 
+# Install zsh-defer
+__install.zsh-defer() {
+  git clone https://github.com/romkatv/zsh-defer ~/.zsh-defer
+}
+
 # Install mise
 __install.mise() {
   echo "https://mise.jdx.dev/getting-started.html"
   echo "brew install mise"
 }
 
-# Install pyenv
-__install.pyenv() {
-   git clone https://github.com/pyenv/pyenv.git ~/.pyenv
-}
-
-# Install rvm
-__install.rvm() {
-  curl -sSL https://get.rvm.io | bash
-}
-
 # Install homebrew
 __install.homebrew() {
-  bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+  bash <(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)
 }
 
 # Install eza replacement for ls
@@ -170,17 +170,8 @@ __install.iterm2-shell-integration() {
   curl -L https://iterm2.com/shell_integration/zsh -o ~/.iterm2_shell_integration.zsh
 }
 
-# Update WezTerm nightly (won't auto-update via brew)
-__upgrade.wezterm-nightly() {
-  if __os.is-mac; then
-    brew upgrade --cask wezterm-nightly --no-quarantine --greedy-latest
-  else
-    echo "unsupported platform"
-  fi
-}
-
 # Automatic command suggestions as I type
-__source.try ~/.zsh-autosuggestions/zsh-autosuggestions.zsh
+__defer __source.try ~/.zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # Convert file to ALAC in MP4 (.m4a) container
 __convert.to-alac() {
@@ -194,9 +185,12 @@ precmd() {
 }
 
 # Load homebrew
-if __command.exists brew; then
-  eval "$(brew shellenv)"
-fi
+__load.brew() {
+  if __command.exists brew; then
+    eval "$(brew shellenv)"
+  fi
+}
+__defer __load.brew
 
 # Easy open files
 if __os.is-windows; then
@@ -213,14 +207,27 @@ else
 fi
 
 # Load direnv
-if __command.exists direnv; then
-  eval "$(direnv hook zsh)"
-fi
+__load.direnv() {
+  if __command.exists direnv; then
+    eval "$(direnv hook zsh)"
+  fi
+}
+__defer __load.direnv
 
 # Load mise (asdf replacement)
-if __command.exists mise; then
-  eval "$(mise activate zsh)"
-fi
+__load.mise() {
+  if __command.exists mise; then
+    eval "$(mise activate zsh)"
+  fi
+}
+__defer __load.mise
+
+# Deferred after brew so its completions are picked up
+__load.compinit() {
+  autoload -Uz compinit
+  compinit
+}
+__defer __load.compinit
 
 # Replace `ls` with `eza`
 # https://github.com/eza-community/eza
@@ -248,12 +255,8 @@ alias d='pwd'
 alias s="cd ..; pwd"
 alias ..="s"
 
-# WezTerm shell integration (OSC 7 cwd reporting, semantic zones)
-# __source.try "${WEZTERM_EXECUTABLE_DIR}/../shell-integration/wezterm.sh"
-
-# iTerm2 shell integration (command marks, cmd+click downloads,
-# jump-between-prompts, etc.) — install with __install.iterm2-shell-integration
-__source.try ~/.iterm2_shell_integration.zsh
+# iTerm2 shell integration; install with __install.iterm2-shell-integration
+# __source.try ~/.iterm2_shell_integration.zsh
 
 # Load device specific customizations
 __source.try ~/.after.zshrc.zsh
