@@ -140,3 +140,9 @@ function __git.fix () {
 }
 
 __theme.set-dark
+
+# Windows default powershell doesn't have `cd` hooks. Got it, thanks.
+$env:MISE_PWSH_CHPWD_WARNING = "0"
+# When `cd` hooks are missing, mise wraps your `prompt` function. So keep this
+# after `prompt` is defined.
+mise activate pwsh | Out-String | Invoke-Expression
