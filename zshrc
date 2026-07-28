@@ -81,8 +81,6 @@ path=(
   "/home/linuxbrew/.linuxbrew/bin"
   # zdocs
   "$HOME/.zdocs/bin"
-  # asdf
-  "${ASDF_DATA_DIR:-$HOME/.asdf}/shims"
   "/opt/homebrew/opt/openjdk/bin"
   # Load Rust Cargo commands
   "$HOME/.cargo/bin"
@@ -96,7 +94,6 @@ path=(
 )
 
 fpath=(
-  "${ASDF_DATA_DIR:-$HOME/.asdf}/completions"
   $fpath
 )
 
@@ -141,27 +138,10 @@ __install.autosuggestions() {
     ~/.zsh-autosuggestions
 }
 
-# Install asdf
-__install.asdf() {
-  # git clone https://github.com/asdf-vm/asdf.git ~/.asdf
-  echo "https://asdf-vm.com/guide/getting-started.html"
-  echo "brew install asdf"
-  echo "yay asdf-vm"
-}
-
-# Install asdf Node.js plugin
-__install.asdf.nodejs() {
-  asdf plugin add nodejs https://github.com/asdf-vm/asdf-nodejs.git
-}
-
-# Install asdf Python plugin
-__install.asdf.python() {
-  asdf plugin add python https://github.com/asdf-community/asdf-python.git
-}
-
-# Install asdf Deno plugin
-__install.asdf.deno() {
-  asdf plugin add deno https://github.com/asdf-community/asdf-deno.git
+# Install mise
+__install.mise() {
+  echo "https://mise.jdx.dev/getting-started.html"
+  echo "brew install mise"
 }
 
 # Install pyenv
@@ -235,6 +215,11 @@ fi
 # Load direnv
 if __command.exists direnv; then
   eval "$(direnv hook zsh)"
+fi
+
+# Load mise (asdf replacement)
+if __command.exists mise; then
+  eval "$(mise activate zsh)"
 fi
 
 # Replace `ls` with `eza`

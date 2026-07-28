@@ -74,7 +74,7 @@
   "chat.commandCenter.enabled": false,
   "chat.fontSize": 14,
   "chat.mcp.discovery.enabled": {
-    "cursor-workspace": true,
+    "cursor-workspace": true
   },
   "chat.titleBar.openInAgentsWindow.enabled": false,
   "chat.viewSessions.orientation": "stacked",
