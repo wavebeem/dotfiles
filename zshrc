@@ -23,8 +23,25 @@ setopt INTERACTIVE_COMMENTS
 
 # Plain ANSI colors — relies on the terminal's colorscheme (Gruvbox
 # everywhere) to remap the base 16 colors, so no truecolor/256 detection.
-# %(?.A.B) picks A on success, B (red) when the last command failed
-PROMPT='%B%(?.%F{green}.%F{red})%~ %F{8}%%%f%b '
+# Two-line: the path gets a whole line so deep worktree paths never
+# crowd out the command. Newline lives inside PROMPT (not precmd) so
+# Ctrl-L redraws both lines.
+setopt PROMPT_SUBST
+
+# Recolor the cwd for the prompt: gray path, green leaf.
+# ${(%):-%~} = "expand %~ outside the prompt" (cwd with ~ abbreviation)
+__prompt.path-update() {
+  local cwd=${(%):-%~}
+  cwd=${cwd//\%/%%} # escape % so prompt expansion shows it literally
+  if [[ $cwd == */* ]]; then
+    __prompt_path="%F{8}${cwd%/*}/%F{green}${cwd##*/}"
+  else
+    __prompt_path="%F{green}${cwd}" # no separator, e.g. ~
+  fi
+}
+
+PROMPT='%B${__prompt_path}%f%b
+%B%F{8}%%%f%b '
 PROMPT2='%B%F{green}%~ %F{8}?%f%b '
 
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=cyan"
@@ -193,6 +210,7 @@ __convert.to-alac() {
 # Print a blank line between prompts to make it easier to read
 precmd() {
   echo
+  __prompt.path-update
 }
 
 # Load homebrew
