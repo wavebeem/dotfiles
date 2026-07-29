@@ -53,15 +53,15 @@ __prompt.path-update() {
   local cwd=${(%):-%~}
   cwd=${cwd//\%/%%} # escape % so prompt expansion shows it literally
   if [[ $cwd == */* ]]; then
-    __prompt_path="%F{8}${cwd%/*}/%F{green}${cwd##*/}"
+    __prompt_path="%F{8}${cwd%/*}/%F{cyan}${cwd##*/}"
   else
-    __prompt_path="%F{green}${cwd}" # no separator, e.g. ~
+    __prompt_path="%F{cyan}${cwd}" # no separator, e.g. ~
   fi
 }
 
 PROMPT='%B${__prompt_path}%f%b
 %B%F{8}%%%f%b '
-PROMPT2='%B%F{green}%~ %F{8}?%f%b '
+PROMPT2='%B%F{cyan}%~ %F{8}?%f%b '
 
 # zle_highlight=(default:fg=magenta,bold)
 zle_highlight=(default:bold)
