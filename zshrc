@@ -64,7 +64,7 @@ PROMPT='%B${__prompt_path}%f%b
 PROMPT2='%B%F{green}%~ %F{8}?%f%b '
 
 # zle_highlight=(default:fg=magenta,bold)
-zle_highlight=(default:fg=13)
+zle_highlight=(default:bold)
 
 # Print a blank line between prompts to make it easier to read
 precmd() {
@@ -140,7 +140,7 @@ __defer() {
 }
 
 # Automatic command suggestions as I type
-ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=cyan"
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=8"
 __defer __source.try ~/.zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # Load homebrew
