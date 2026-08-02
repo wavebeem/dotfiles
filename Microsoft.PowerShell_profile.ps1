@@ -1,11 +1,18 @@
 Set-PSReadlineOption -BellStyle None
 Set-PSReadlineOption -EditMode Emacs
 Set-PSReadlineOption -ContinuationPrompt "? "
-# Inline gray suggestions from history, like zsh-autosuggestions
-Set-PSReadlineOption -PredictionSource History
+
+# Windows PowerShell 5.1 ships PSReadLine 2.0.0, which lacks prediction support
+# entirely (added in 2.1.0) and the InlinePrediction color (2.2.0)
+$__psrlVersion = (Get-Module PSReadLine).Version
+
+if ($__psrlVersion -ge [version]"2.1.0") {
+  # Inline gray suggestions from history, like zsh-autosuggestions
+  Set-PSReadlineOption -PredictionSource History
+}
 
 function __theme.set-light() {
-  Set-PSReadLineOption -Colors @{
+  $colors = @{
       ContinuationPrompt = "#666666"
       Emphasis = "#666666"
       Error = "#cc0000"
@@ -21,8 +28,11 @@ function __theme.set-light() {
       Type = "#666666"
       Number = "#666666"
       Member = "#666666"
-      InlinePrediction = "#008888"
   }
+  if ($__psrlVersion -ge [version]"2.2.0") {
+    $colors.InlinePrediction = "#008888"
+  }
+  Set-PSReadLineOption -Colors $colors
 
   $x = $Host.PrivateData
   $x.ErrorForegroundColor = "Red"
@@ -38,7 +48,7 @@ function __theme.set-light() {
 }
 
 function __theme.set-dark() {
-  Set-PSReadLineOption -Colors @{
+  $colors = @{
       ContinuationPrompt = "#928374"
       Emphasis = "#fe8019"
       Error = "#fb4934"
@@ -54,8 +64,11 @@ function __theme.set-dark() {
       Type = "#8ec07c"
       Number = "#d3869b"
       Member = "#ebdbb2"
-      InlinePrediction = "#8ec07c"
   }
+  if ($__psrlVersion -ge [version]"2.2.0") {
+    $colors.InlinePrediction = "#8ec07c"
+  }
+  Set-PSReadLineOption -Colors $colors
 
   $x = $Host.PrivateData
   $x.ErrorForegroundColor = "Red"
