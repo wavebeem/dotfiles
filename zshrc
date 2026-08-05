@@ -8,6 +8,9 @@ HISTSIZE=10000
 SAVEHIST=10000
 setopt SHARE_HISTORY
 
+# Prefix a command with a space to keep it out of history (secrets, etc.)
+setopt HIST_IGNORE_SPACE
+
 # Use Emacs-style keyboard shortcuts (otherwise zsh will detect EDITOR=vim)
 bindkey -e
 
