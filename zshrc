@@ -215,7 +215,7 @@ ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=8"
 __load.autosuggestions() {
   __source.try ~/.zsh-autosuggestions/zsh-autosuggestions.zsh
 }
-__defer __load.autosuggestions
+__load.autosuggestions
 
 # Deferred after brew so its completions are picked up
 __load.compinit() {
