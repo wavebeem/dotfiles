@@ -31,8 +31,8 @@ __os.is-linux() {
   [[ $OSTYPE == linux* ]]
 }
 
-# WSL is linux-gnu to zsh, so sniff the kernel version instead.
-# $(< file) is special-cased by zsh and doesn't fork.
+# WSL is linux-gnu to zsh, so sniff the kernel version instead. $(< file) is
+# special-cased by zsh and doesn't fork.
 __os.is-windows() {
   [[ $OSTYPE == linux* && -r /proc/version && "$(< /proc/version)" == *[Mm]icrosoft* ]]
 }
@@ -50,8 +50,7 @@ __source.try() {
 
 ### Prompt #############################################################
 
-# Highlight the last dir in the cwd
-# ${(%):-%~} expands %~ outside the prompt
+# Highlight the last dir in the cwd ${(%):-%~} expands %~ outside the prompt
 __prompt.path-update() {
   local cwd=${(%):-%~}
   cwd=${cwd//\%/%%} # escape % so prompt expansion shows it literally
@@ -132,43 +131,91 @@ fpath=(
 
 ### Deferred loads #####################################################
 
-# Defer work until after the first prompt
-__source.try ~/.zsh-defer/zsh-defer.plugin.zsh
+# Work that's safe to put off until after the first command runs. None of this
+# blocks typing: nothing here runs until the first preexec, which fires the
+# instant Enter is pressed on the first typed command.
+
+autoload -Uz add-zsh-hook
+
+typeset -ga __defer_queue
+typeset -gA __bg_eval_fd
+
+# Queue a zero-arg function to run once, on the first preexec.
 __defer() {
-  if __command.exists zsh-defer; then
-    zsh-defer "$@"
-  else
-    "$@"
+  __defer_queue+=("$1")
+}
+
+__defer_flush() {
+  add-zsh-hook -d preexec __defer_flush
+  local fn
+  for fn in "${__defer_queue[@]}"; do
+    "$fn"
+  done
+  __defer_queue=()
+}
+add-zsh-hook preexec __defer_flush
+
+# Start `name`'s command running now, in the background, via a saved file
+# descriptor (a pipe) instead of a temp file. By the time __bg_eval.finish runs,
+# after the first preexec, the command has almost always already finished, so
+# the eval that follows is effectively instant.
+__bg_eval.start() {
+  local name=$1
+  shift
+  local -i fd
+  # {fd}< <(...) opens fd bound to the process substitution's read end; the
+  # command starts running now, in the background, no wait needed.
+  exec {fd}< <("$@" 2>/dev/null)
+  __bg_eval_fd[$name]=$fd
+}
+
+__bg_eval.finish() {
+  local name=$1
+  local -i fd=${__bg_eval_fd[$name]:-0}
+  if (( fd <= 0 )); then
+    return
+  fi
+  local out
+  # read -d '' blocks until EOF, i.e. until the command is done; no fork
+  IFS= read -r -d "" out <&$fd
+  exec {fd}<&- # closes fd, unsets the binding
+  unset "__bg_eval_fd[$name]"
+  if [[ $out != "" ]]; then
+    eval "$out"
   fi
 }
+
+__bg_eval.load-if-exists() {
+  local name=$1
+  shift
+  if __command.exists "$name"; then
+    __bg_eval.start "$name" "$@"
+  fi
+}
+
+__bg_eval.load-if-exists brew brew shellenv
+__bg_eval.load-if-exists direnv direnv hook zsh
+__bg_eval.load-if-exists mise mise activate zsh
+
+__load.brew() {
+  __bg_eval.finish brew
+}
+__load.direnv() {
+  __bg_eval.finish direnv
+}
+__load.mise() {
+  __bg_eval.finish mise
+}
+__defer __load.brew
+__defer __load.direnv
+__defer __load.mise
 
 # Automatic command suggestions as I type
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=8"
-__defer __source.try ~/.zsh-autosuggestions/zsh-autosuggestions.zsh
-
-# Load homebrew
-__load.brew() {
-  if __command.exists brew; then
-    eval "$(brew shellenv)"
-  fi
+__load.autosuggestions() {
+  __source.try ~/.zsh-autosuggestions/zsh-autosuggestions.zsh
 }
-__defer __load.brew
-
-# Load direnv
-__load.direnv() {
-  if __command.exists direnv; then
-    eval "$(direnv hook zsh)"
-  fi
-}
-__defer __load.direnv
-
-# Load mise (asdf replacement)
-__load.mise() {
-  if __command.exists mise; then
-    eval "$(mise activate zsh)"
-  fi
-}
-__defer __load.mise
+__defer __load.autosuggestions
 
 # Deferred after brew so its completions are picked up
 __load.compinit() {
@@ -178,7 +225,10 @@ __load.compinit() {
 __defer __load.compinit
 
 # iTerm2 shell integration; install with __install.iterm2-shell-integration
-__defer __source.try ~/.iterm2_shell_integration.zsh
+__load.iterm2-integration() {
+  __source.try ~/.iterm2_shell_integration.zsh
+}
+__defer __load.iterm2-integration
 
 ### Aliases ############################################################
 
@@ -229,11 +279,6 @@ __install.autosuggestions() {
   git clone \
     https://github.com/zsh-users/zsh-autosuggestions \
     ~/.zsh-autosuggestions
-}
-
-# Install zsh-defer
-__install.zsh-defer() {
-  git clone https://github.com/romkatv/zsh-defer ~/.zsh-defer
 }
 
 # Install mise
