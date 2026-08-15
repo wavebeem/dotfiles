@@ -1,11 +1,20 @@
+function __command.exists($cmd) {
+  [bool](Get-Command $cmd -ErrorAction SilentlyContinue)
+}
+
 Set-PSReadlineOption -BellStyle None
 Set-PSReadlineOption -EditMode Emacs
 Set-PSReadlineOption -ContinuationPrompt "? "
 # Inline gray suggestions from history, like zsh-autosuggestions
-Set-PSReadlineOption -PredictionSource History
+# (PredictionSource/InlinePrediction require PSReadLine 2.1+, not present
+# in the PSReadLine that ships with Windows PowerShell 5.1)
+$__supportsPrediction = (Get-Command Set-PSReadLineOption).Parameters.ContainsKey('PredictionSource')
+if ($__supportsPrediction) {
+  Set-PSReadlineOption -PredictionSource History
+}
 
 function __theme.set-light() {
-  Set-PSReadLineOption -Colors @{
+  $colors = @{
       ContinuationPrompt = "#666666"
       Emphasis = "#666666"
       Error = "#cc0000"
@@ -21,8 +30,11 @@ function __theme.set-light() {
       Type = "#666666"
       Number = "#666666"
       Member = "#666666"
-      InlinePrediction = "#008888"
   }
+  if ($__supportsPrediction) {
+    $colors.InlinePrediction = "#008888"
+  }
+  Set-PSReadLineOption -Colors $colors
 
   $x = $Host.PrivateData
   $x.ErrorForegroundColor = "Red"
@@ -38,7 +50,7 @@ function __theme.set-light() {
 }
 
 function __theme.set-dark() {
-  Set-PSReadLineOption -Colors @{
+  $colors = @{
       ContinuationPrompt = "#928374"
       Emphasis = "#fe8019"
       Error = "#fb4934"
@@ -54,8 +66,11 @@ function __theme.set-dark() {
       Type = "#8ec07c"
       Number = "#d3869b"
       Member = "#ebdbb2"
-      InlinePrediction = "#8ec07c"
   }
+  if ($__supportsPrediction) {
+    $colors.InlinePrediction = "#8ec07c"
+  }
+  Set-PSReadLineOption -Colors $colors
 
   $x = $Host.PrivateData
   $x.ErrorForegroundColor = "Red"
@@ -101,7 +116,7 @@ function __install.eza {
   winget install eza-community.eza
 }
 
-if (Get-Command eza -ErrorAction SilentlyContinue) {
+if (__command.exists eza) {
   function ls() {
     eza --group-directories-first $args
   }
@@ -126,7 +141,7 @@ if (Get-Command eza -ErrorAction SilentlyContinue) {
 $env:VIRTUAL_ENV_DISABLE_PROMPT = "true"
 
 # Still easier to use vim for quick edits even though I prefer VS Code
-if (Get-Command nvim -ErrorAction SilentlyContinue) {
+if (__command.exists nvim) {
   $env:EDITOR = "nvim"
   Set-Alias vim nvim
 } else {
@@ -187,4 +202,6 @@ __theme.set-dark
 $env:MISE_PWSH_CHPWD_WARNING = "0"
 # When `cd` hooks are missing, mise wraps your `prompt` function. So keep this
 # after `prompt` is defined.
-mise activate pwsh | Out-String | Invoke-Expression
+if (__command.exists mise) {
+  mise activate pwsh | Out-String | Invoke-Expression
+}
