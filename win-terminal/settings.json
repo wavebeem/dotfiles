@@ -33,7 +33,7 @@
     "compatibility.enableUnfocusedAcrylic": false,
     "copyFormatting": "none",
     "copyOnSelect": false,
-    "defaultProfile": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+    "defaultProfile": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
     "initialCols": 100,
     "initialRows": 36,
     "keybindings": 
@@ -100,10 +100,10 @@
                 "name": "cmd"
             },
             {
-                "guid": "{2c4de342-38b7-51cf-b940-2309a097f518}",
-                "hidden": true,
-                "name": "Ubuntu",
-                "source": "Windows.Terminal.Wsl"
+                "guid": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
+                "hidden": false,
+                "name": "PowerShell",
+                "source": "Windows.Terminal.PowershellCore"
             }
         ]
     },
@@ -225,6 +225,7 @@
             "yellow": "#896624"
         }
     ],
+    "showTabsFullscreen": true,
     "showTabsInTitlebar": true,
     "snapToGridOnResize": false,
     "tabSwitcherMode": "inOrder",

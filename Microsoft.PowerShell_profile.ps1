@@ -95,6 +95,10 @@ function d() {
   (Get-Location).Path
 }
 
+function v() {
+  [string]$PSVersionTable.PSVersion
+}
+
 # Easy open files
 function o() {
   if ($args) {
@@ -114,7 +118,11 @@ function __install.eza {
   winget install eza-community.eza
 }
 
-if (Get-Command eza -ErrorAction SilentlyContinue) {
+function __command.on-path([string]$name) {
+  [bool](Get-Command $name -ErrorAction SilentlyContinue)
+}
+
+if (__command.on-path "eza") {
   function ls() {
     eza --group-directories-first $args
   }
@@ -139,7 +147,7 @@ if (Get-Command eza -ErrorAction SilentlyContinue) {
 $env:VIRTUAL_ENV_DISABLE_PROMPT = "true"
 
 # Still easier to use vim for quick edits even though I prefer VS Code
-if (Get-Command nvim -ErrorAction SilentlyContinue) {
+if (__command.on-path "nvim") {
   $env:EDITOR = "nvim"
   Set-Alias vim nvim
 } else {
