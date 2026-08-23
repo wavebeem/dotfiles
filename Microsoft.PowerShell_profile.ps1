@@ -1,13 +1,15 @@
+function __command.exists($cmd) {
+  [bool](Get-Command $cmd -ErrorAction SilentlyContinue)
+}
+
 Set-PSReadlineOption -BellStyle None
 Set-PSReadlineOption -EditMode Emacs
 Set-PSReadlineOption -ContinuationPrompt "? "
-
-# Windows PowerShell 5.1 ships PSReadLine 2.0.0, which lacks prediction support
-# entirely (added in 2.1.0) and the InlinePrediction color (2.2.0)
-$__psrlVersion = (Get-Module PSReadLine).Version
-
-if ($__psrlVersion -ge [version]"2.1.0") {
-  # Inline gray suggestions from history, like zsh-autosuggestions
+# Inline gray suggestions from history, like zsh-autosuggestions
+# (PredictionSource/InlinePrediction require PSReadLine 2.1+, not present
+# in the PSReadLine that ships with Windows PowerShell 5.1)
+$__supportsPrediction = (Get-Command Set-PSReadLineOption).Parameters.ContainsKey('PredictionSource')
+if ($__supportsPrediction) {
   Set-PSReadlineOption -PredictionSource History
 }
 
@@ -29,7 +31,7 @@ function __theme.set-light() {
       Number = "#666666"
       Member = "#666666"
   }
-  if ($__psrlVersion -ge [version]"2.2.0") {
+  if ($__supportsPrediction) {
     $colors.InlinePrediction = "#008888"
   }
   Set-PSReadLineOption -Colors $colors
@@ -65,7 +67,7 @@ function __theme.set-dark() {
       Number = "#d3869b"
       Member = "#ebdbb2"
   }
-  if ($__psrlVersion -ge [version]"2.2.0") {
+  if ($__supportsPrediction) {
     $colors.InlinePrediction = "#8ec07c"
   }
   Set-PSReadLineOption -Colors $colors
@@ -118,11 +120,11 @@ function __install.eza {
   winget install eza-community.eza
 }
 
-function __command.on-path([string]$name) {
+function __command.exists([string]$name) {
   [bool](Get-Command $name -ErrorAction SilentlyContinue)
 }
 
-if (__command.on-path "eza") {
+if (__command.exists eza) {
   function ls() {
     eza --group-directories-first $args
   }
@@ -147,7 +149,7 @@ if (__command.on-path "eza") {
 $env:VIRTUAL_ENV_DISABLE_PROMPT = "true"
 
 # Still easier to use vim for quick edits even though I prefer VS Code
-if (__command.on-path "nvim") {
+if (__command.exists nvim) {
   $env:EDITOR = "nvim"
   Set-Alias vim nvim
 } else {
@@ -208,4 +210,6 @@ __theme.set-dark
 $env:MISE_PWSH_CHPWD_WARNING = "0"
 # When `cd` hooks are missing, mise wraps your `prompt` function. So keep this
 # after `prompt` is defined.
-mise activate pwsh | Out-String | Invoke-Expression
+if (__command.exists mise) {
+  mise activate pwsh | Out-String | Invoke-Expression
+}
