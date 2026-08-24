@@ -120,10 +120,6 @@ function __install.eza {
   winget install eza-community.eza
 }
 
-function __command.exists([string]$name) {
-  [bool](Get-Command $name -ErrorAction SilentlyContinue)
-}
-
 if (__command.exists eza) {
   function ls() {
     eza --group-directories-first $args
