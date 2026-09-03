@@ -299,6 +299,13 @@ _install.iterm2-shell-integration() {
   curl -L https://iterm2.com/shell_integration/zsh -o ~/.iterm2_shell_integration.zsh
 }
 
+# Install ffmpeg-full for its real libwebp encoder (plain `ffmpeg` only
+# decodes webp), and link it over the regular ffmpeg formula's files.
+_install.ffmpeg() {
+  brew install ffmpeg-full
+  brew link --force --overwrite ffmpeg-full
+}
+
 
 ### Misc functions #####################################################
 

@@ -8,6 +8,8 @@ $ ./install.sh
 
 ## Installation (Windows Powershell)
 
+First time only, right-click `windows-setup.cmd` and choose "Run as administrator" (sets the execution policy, enables symlink evaluation, and turns on Developer Mode's symlink privilege, then runs the install below).
+
 ```
 $ .\install.ps1
 ```
