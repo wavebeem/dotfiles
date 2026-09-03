@@ -1,4 +1,5 @@
-function __command.exists($cmd) {
+function _command.exists {
+  param([string]$cmd)
   [bool](Get-Command $cmd -ErrorAction SilentlyContinue)
 }
 
@@ -13,7 +14,7 @@ if ($__supportsPrediction) {
   Set-PSReadlineOption -PredictionSource History
 }
 
-function __theme.set-light() {
+function _theme.set-light() {
   $colors = @{
       ContinuationPrompt = "#666666"
       Emphasis = "#666666"
@@ -49,7 +50,7 @@ function __theme.set-light() {
   $x.ProgressBackgroundColor = "Black"
 }
 
-function __theme.set-dark() {
+function _theme.set-dark() {
   $colors = @{
       ContinuationPrompt = "#928374"
       Emphasis = "#fe8019"
@@ -85,11 +86,13 @@ function __theme.set-dark() {
   $x.ProgressBackgroundColor = "Black"
 }
 
-function g() {
+function g {
+  param([Parameter(ValueFromRemainingArguments)][string[]]$Args)
   git status $args
 }
 
-function gl() {
+function gl {
+  param([Parameter(ValueFromRemainingArguments)][string[]]$Args)
   git log $args
 }
 
@@ -102,7 +105,8 @@ function v() {
 }
 
 # Easy open files
-function o() {
+function o {
+  param([Parameter(ValueFromRemainingArguments)][string[]]$Args)
   if ($args) {
     Invoke-Item @args
   } else {
@@ -112,28 +116,33 @@ function o() {
 
 $esc = [char]27
 function ansi {
+  param([Parameter(ValueFromRemainingArguments)][string[]]$Args)
   "$esc[$($args -join ';')m"
 }
 $bold = ansi 1
 
-function __install.eza {
+function _install.eza {
   winget install eza-community.eza
 }
 
-if (__command.exists eza) {
-  function ls() {
+if (_command.exists eza) {
+  function ls {
+    param([Parameter(ValueFromRemainingArguments)][string[]]$Args)
     eza --group-directories-first $args
   }
 
-  function l() {
+  function l {
+    param([Parameter(ValueFromRemainingArguments)][string[]]$Args)
     ls $args
   }
 
-  function ll() {
+  function ll {
+    param([Parameter(ValueFromRemainingArguments)][string[]]$Args)
     ls -l $args
   }
 
-  function la() {
+  function la {
+    param([Parameter(ValueFromRemainingArguments)][string[]]$Args)
     ls -la $args
   }
 } else {
@@ -145,7 +154,7 @@ if (__command.exists eza) {
 $env:VIRTUAL_ENV_DISABLE_PROMPT = "true"
 
 # Still easier to use vim for quick edits even though I prefer VS Code
-if (__command.exists nvim) {
+if (_command.exists nvim) {
   $env:EDITOR = "nvim"
   Set-Alias vim nvim
 } else {
@@ -155,7 +164,8 @@ $env:GIT_EDITOR = $env:EDITOR
 $env:VISUAL = $env:EDITOR
 
 # Abbreviate a leading $HOME to ~ (only when it's a real prefix, not a substring)
-function __path.tilde($path) {
+function _path.tilde {
+  param([string]$path)
   $sep = [IO.Path]::DirectorySeparatorChar
   $alt = [IO.Path]::AltDirectorySeparatorChar
   $path = $path.Replace($alt, $sep)
@@ -171,7 +181,7 @@ function __path.tilde($path) {
 
 function prompt {
   $rawCwd = (Get-Location).Path
-  $cwd = __path.tilde $rawCwd
+  $cwd = _path.tilde $rawCwd
 
   $edge = ansi 90
   $leaf = ansi 32
@@ -196,16 +206,27 @@ function s {
   Write-Output (Get-Location).Path
 }
 
-function __git.fix () {
+function _git.fix () {
   git config --global core.sshCommand "C:/Windows/System32/OpenSSH/ssh.exe"
 }
 
-__theme.set-dark
+function _convert.apng-to-webp {
+  param(
+    [Parameter(Mandatory)][string]$Source,
+    [string]$OutFile
+  )
+  if (-not $OutFile) {
+    $OutFile = [System.IO.Path]::GetFileNameWithoutExtension($Source) + ".webp"
+  }
+  ffmpeg -y -i $Source -lossless 1 -loop 0 $OutFile
+}
+
+_theme.set-dark
 
 # Windows default powershell doesn't have `cd` hooks. Got it, thanks.
 $env:MISE_PWSH_CHPWD_WARNING = "0"
 # When `cd` hooks are missing, mise wraps your `prompt` function. So keep this
 # after `prompt` is defined.
-if (__command.exists mise) {
+if (_command.exists mise) {
   mise activate pwsh | Out-String | Invoke-Expression
 }

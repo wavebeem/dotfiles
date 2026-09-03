@@ -306,6 +306,18 @@ _path.print() {
   echo $path | tr ' ' '\n'
 }
 
+_path.stem() {
+  local file="$1"
+  echo "${file:t:r}"
+}
+
+_convert.apng-to-webp() {
+  local src="$1"
+  local fallback="$(_path.stem "$src").webp"
+  local out="${2:-$fallback}"
+  ffmpeg -y -i "$src" -lossless 1 -loop 0 "$out"
+}
+
 # Benchmark interactive shell startup
 # no_zle so the shell reads "exit" from stdin instead of the tty
 _benchmark.zsh-startup() {
