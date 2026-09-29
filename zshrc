@@ -191,7 +191,7 @@ _bg-eval.load-if-exists() {
 
 _bg-eval.load-if-exists brew brew shellenv
 _bg-eval.load-if-exists direnv direnv hook zsh
-_bg-eval.load-if-exists mise mise activate zsh
+_bg-eval.load-if-exists mise mise activate --shims zsh
 
 _load.brew() {
   _bg-eval.finish brew
@@ -306,6 +306,17 @@ _install.ffmpeg() {
   brew link --force --overwrite ffmpeg-full
 }
 
+
+### Help reminders ######################################################
+
+# Shadows coreutils' GNU `du` alias (rarely used) with the gdu-go TUI explorer
+alias gdu='gdu-go'
+
+# Use tab completion to recall commands you always forget
+_help.disk-usage() {
+  echo "gdu ~   # fast, parallel TUI disk usage explorer"
+  echo "ncdu ~  # simpler, dependency-free, can save/reload scans"
+}
 
 ### Misc functions #####################################################
 
