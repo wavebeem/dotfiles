@@ -13,8 +13,8 @@
 ; Caps Lock sends Escape
 ;CapsLock::Esc
 
-; Alt-W sends Alt-F4
-!w::!F4
+; Win-Q sends Alt-F4
+#q::!F4
 
 ; Ubind Win-C to prevent Cortana from opening
 #c:: Return
@@ -41,7 +41,7 @@
 }
 
 ; Reload this script and display a notification
-^!y::
+^!r::
 {
   MsgBox "Configuration reloaded"
   Reload

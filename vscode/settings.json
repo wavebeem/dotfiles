@@ -43,16 +43,15 @@
   "[yaml]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
-  "cSpell.enabled": false,
   "cSpell.enabledFileTypes": {
     "*": false,
-    "markdown": false,
+    "markdown": true,
   },
   "chat.agentsControl.enabled": false,
   "chat.commandCenter.enabled": false,
   "chat.fontSize": 14,
   "chat.mcp.discovery.enabled": {
-    "cursor-workspace": true
+    "cursor-workspace": true,
   },
   "chat.titleBar.openInAgentsWindow.enabled": false,
   "chat.titleBar.signIn.enabled": false,
@@ -268,7 +267,15 @@
   "js/ts.tsserver.log": "off",
   "js/ts.updateImportsOnFileMove.enabled": "always",
   "json.schemaDownload.trustedDomains": {
+    "https://schemastore.azurewebsites.net/": true,
+    "https://raw.githubusercontent.com/microsoft/vscode/": true,
+    "https://raw.githubusercontent.com/devcontainers/spec/": true,
+    "https://www.schemastore.org/": true,
+    "https://json.schemastore.org/": true,
+    "https://json-schema.org/": true,
+    "https://developer.microsoft.com/json-schemas/": true,
     "https://raw.githubusercontent.com/": true,
+    "https://biomejs.dev": true,
   },
   "markdown.preview.fontFamily": "system-ui, sans-serif",
   "markdown.preview.fontSize": 20,

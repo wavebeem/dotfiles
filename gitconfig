@@ -2,7 +2,7 @@
   default = current
 [core]
   excludesfile = ~/.gitignore
-  autocrlf = false
+	autocrlf = input
 [pull]
   rebase = false
 [user]
