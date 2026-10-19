@@ -378,4 +378,5 @@
   },
   "workbench.sideBar.location": "right",
   "security.allowedUNCHosts": ["wsl.localhost"],
+  "security.promptForLocalFileProtocolHandling": false,
 }

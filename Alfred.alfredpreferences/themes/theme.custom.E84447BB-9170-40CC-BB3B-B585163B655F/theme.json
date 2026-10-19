@@ -1,0 +1,64 @@
+{
+  "alfredtheme" : {
+    "result" : {
+      "textSpacing" : 8,
+      "subtext" : {
+        "size" : 12,
+        "colorSelected" : "#FFFFFFC4",
+        "font" : "System Light",
+        "color" : "#00000099"
+      },
+      "shortcut" : {
+        "size" : 12,
+        "colorSelected" : "#FFFFFFFF",
+        "font" : "System Light",
+        "color" : "#480069FF"
+      },
+      "backgroundSelected" : "#480069E4",
+      "text" : {
+        "size" : 20,
+        "colorSelected" : "#FFFFFFFF",
+        "font" : "System",
+        "color" : "#000000E5"
+      },
+      "iconPaddingHorizontal" : 16,
+      "roundness" : 0,
+      "paddingVertical" : 8,
+      "iconSize" : 40
+    },
+    "search" : {
+      "backgroundSelected" : "#480069E4",
+      "paddingHorizontal" : 16,
+      "spacing" : 0,
+      "text" : {
+        "size" : 38,
+        "colorSelected" : "#FFFFFFFF",
+        "font" : "System Bold",
+        "color" : "#000000FF"
+      },
+      "background" : "#FFFFFF00",
+      "roundness" : 0,
+      "paddingVertical" : 0
+    },
+    "window" : {
+      "color" : "#DDDDDDFF",
+      "paddingHorizontal" : 0,
+      "width" : 559,
+      "borderPadding" : 6,
+      "borderColor" : "#0000007F",
+      "blur" : 0,
+      "roundness" : 8,
+      "paddingVertical" : 0
+    },
+    "credit" : "Sage Fennel Mock (wavebeem.com)",
+    "separator" : {
+      "color" : "#FFFFFF4C",
+      "thickness" : 2
+    },
+    "scrollbar" : {
+      "color" : "#561A72FF",
+      "thickness" : 2
+    },
+    "name" : "M3"
+  }
+}

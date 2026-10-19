@@ -57,8 +57,10 @@ personalApps = {
   "Vivaldi",
   "Discord",
   "LINE",
+  "WhatsApp",
   "Music",
   "Doppler",
+  "OBSBOT Center",
 }
 
 function cmd.hidePersonalApps()

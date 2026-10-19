@@ -3,62 +3,62 @@
     "result" : {
       "textSpacing" : 8,
       "subtext" : {
-        "size" : 16,
-        "colorSelected" : "#EEEEECFF",
-        "font" : "System Light",
-        "color" : "#888A85FF"
+        "size" : 12,
+        "colorSelected" : "#245023FF",
+        "font" : "Roboto Flex Medium",
+        "color" : "#414940FF"
       },
       "shortcut" : {
-        "size" : 16,
-        "colorSelected" : "#EEEEECFF",
-        "font" : "System",
-        "color" : "#888A85FF"
+        "size" : 12,
+        "colorSelected" : "#245023FF",
+        "font" : "Roboto Flex Medium",
+        "color" : "#414940FF"
       },
-      "backgroundSelected" : "#555753FF",
+      "backgroundSelected" : "#BDF0B3FF",
       "text" : {
         "size" : 24,
-        "colorSelected" : "#EEEEECFF",
-        "font" : "System",
-        "color" : "#2E3436FF"
+        "colorSelected" : "#245023FF",
+        "font" : "Roboto Flex Medium",
+        "color" : "#191D17FF"
       },
       "iconPaddingHorizontal" : 16,
-      "roundness" : 8,
-      "paddingVertical" : 8,
-      "iconSize" : 32
+      "roundness" : 16,
+      "paddingVertical" : 4,
+      "iconSize" : 64
     },
     "search" : {
-      "backgroundSelected" : "#333333FF",
+      "backgroundSelected" : "#3C6838FF",
       "paddingHorizontal" : 16,
       "spacing" : 8,
       "text" : {
-        "size" : 24,
-        "colorSelected" : "#FFFFFFFF",
-        "font" : "System Bold",
-        "color" : "#2E3436FF"
+        "size" : 32,
+        "colorSelected" : "#F7FBF1FF",
+        "font" : "Roboto Flex Medium",
+        "color" : "#191D17FF"
       },
-      "background" : "#D3D7CFFF",
-      "roundness" : 8,
-      "paddingVertical" : 8
+      "background" : "#ECEFE6FF",
+      "roundness" : 16,
+      "paddingVertical" : 4
     },
     "window" : {
-      "color" : "#EEEEECFF",
+      "color" : "#F7FBF1FF",
       "paddingHorizontal" : 8,
       "width" : 700,
       "borderPadding" : 0,
       "borderColor" : "#00000019",
       "blur" : 0,
-      "roundness" : 16,
+      "roundness" : 24,
       "paddingVertical" : 8
     },
-    "credit" : "Sage Fennel (wavebeem.com)",
+    "credit" : "Sage Fennel Mock (wavebeem.com)",
     "separator" : {
       "color" : "#DDDDDDFF",
       "thickness" : 0
     },
     "scrollbar" : {
-      "color" : "#7F7F7F7F",
+      "color" : "#3C6838FF",
       "thickness" : 4
     },
-    "name" : "Tango"
+    "name" : "wavebeem.com (M3)"
   }
 }

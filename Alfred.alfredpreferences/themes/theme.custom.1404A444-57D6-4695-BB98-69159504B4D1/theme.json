@@ -21,14 +21,14 @@
         "font" : "System",
         "color" : "#2E3436FF"
       },
-      "iconPaddingHorizontal" : 16,
+      "iconPaddingHorizontal" : 0,
       "roundness" : 16,
       "paddingVertical" : 16,
       "iconSize" : 32
     },
     "separator" : {
       "color" : "#FFFFFFFF",
-      "thickness" : 1
+      "thickness" : 2
     },
     "search" : {
       "backgroundSelected" : "#555753FF",
@@ -51,7 +51,7 @@
     "name" : "Tango 2",
     "window" : {
       "color" : "#EEEEECFF",
-      "paddingHorizontal" : 8,
+      "paddingHorizontal" : 0,
       "width" : 700,
       "borderPadding" : 16,
       "borderColor" : "#00000019",
