@@ -57,6 +57,7 @@ personalApps = {
   "Vivaldi",
   "Discord",
   "LINE",
+  "Signal",
   "WhatsApp",
   "Music",
   "Doppler",
