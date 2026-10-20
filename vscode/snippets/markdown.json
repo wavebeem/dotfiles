@@ -4,7 +4,7 @@
     "description": "Add a figure with an image",
     "body": [
       "<figure>",
-      "  <img src=\"${1}\" alt=\"\" />",
+      "  <img src=\"${1}\" alt=\"\" width=\"1280\" height=\"720\" />",
       "  <figcaption>${2}</figcaption>",
       "</figure>"
     ]
