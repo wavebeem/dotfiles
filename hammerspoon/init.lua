@@ -1,56 +1,48 @@
-prefix = {"ctrl", "alt"}
-
--- Namespaces
-cmd = {}
-
-function cmd.reload()
-  hs.reload()
-end
-
-hs.hotkey.bind(prefix, "r", cmd.reload)
-
 function main()
+  bind("r", hs.reload)
+
     -- Configuration
   hs.window.animationDuration = 0
-
   hs.alert.defaultStyle.strokeWidth = 4
   hs.alert.defaultStyle.strokeColor = { hex = "ffffff" }
-  hs.alert.defaultStyle.fillColor = { hex = "222222" }
+  hs.alert.defaultStyle.fillColor = { hex = "111111" }
   hs.alert.defaultStyle.textColor = { hex = "ffffff" }
-  -- hs.alert.defaultStyle.textFont = ".AppleSystemUIFont"
   hs.alert.defaultStyle.textSize = 24
   hs.alert.defaultStyle.radius = 8
-  -- hs.alert.defaultStyle.atScreenEdge = 0
+  hs.alert.defaultStyle.atScreenEdge = 0
   hs.alert.defaultStyle.fadeInDuration = 0
   hs.alert.defaultStyle.fadeOutDuration = 0
   hs.alert.defaultStyle.padding = 16
 
-  prefix = {"ctrl", "alt"}
+  bind("y", unhideAll)
+  bind("h", hidePersonalApps)
+  bind("m", snapWindowLeftSmall)
+  bind("u", snapWindowLeftBig)
+  bind("j", snapWindowLeftHalf)
+  bind("k", maximizeWindow)
+  bind("i", snapWindowCenterBig)
+  bind("l", snapWindowRightHalf)
+  bind("o", snapWindowRightBig)
+  bind(".", snapWindowRightSmall)
+  bind(",", snapWindowCenterSmall)
 
-  hs.hotkey.bind(prefix, "y", cmd.unhideAll)
-  hs.hotkey.bind(prefix, "h", cmd.hidePersonalApps)
+  bind("d", typeDate)
+  bind("t", typeTime)
+  bind("x", typeUnixTime)
 
-  hs.hotkey.bind(prefix, "m", cmd.snapWindowLeftSmall)
-  hs.hotkey.bind(prefix, "u", cmd.snapWindowLeftBig)
-  hs.hotkey.bind(prefix, "j", cmd.snapWindowLeftHalf)
-  hs.hotkey.bind(prefix, "k", cmd.maximizeWindow)
-  hs.hotkey.bind(prefix, "i", cmd.snapWindowCenterBig)
-  hs.hotkey.bind(prefix, "l", cmd.snapWindowRightHalf)
-  hs.hotkey.bind(prefix, "o", cmd.snapWindowRightBig)
-  hs.hotkey.bind(prefix, ".", cmd.snapWindowRightSmall)
-  hs.hotkey.bind(prefix, ",", cmd.snapWindowCenterSmall)
-
-  hs.hotkey.bind(prefix, "d", cmd.typeDate)
-  hs.hotkey.bind(prefix, "t", cmd.typeTime)
-  hs.hotkey.bind(prefix, "x", cmd.typeUnixTime)
-
-  hs.hotkey.bind(prefix, "space", cmd.maximizeAllWindows)
-  hs.hotkey.bind(prefix, "v", cmd.showApplicationName)
-  hs.hotkey.bind(prefix, "r", cmd.reload)
-  hs.hotkey.bind(prefix, "c", cmd.toggleConsole)
+  bind("space", maximizeAllWindows)
+  bind("v", showApplicationName)
+  bind("c", toggleConsole)
 
   hs.alert.show("Hammerspoon loaded", 0.5)
 end
+
+
+function bind(key, fn)
+  hs.hotkey.bind(prefix, key, fn)
+end
+
+prefix = {"ctrl", "alt"}
 
 personalApps = {
   "Firefox Developer Edition",
@@ -64,7 +56,7 @@ personalApps = {
   "OBSBOT Center",
 }
 
-function cmd.hidePersonalApps()
+function hidePersonalApps()
   for _, appName in ipairs(personalApps) do
     local app = hs.application.get(appName)
     if app then
@@ -73,11 +65,10 @@ function cmd.hidePersonalApps()
   end
 end
 
-
 -- If this were a true "unhide all windows" it would uniminimize windows too.
 -- But that's slow, and I only ever use Hide Application rather than Minimize
 -- Window, so this can be a lot faster knowing that.
-function cmd.unhideAll()
+function unhideAll()
   local allApps = {}
   for _, window in ipairs(hs.window.invisibleWindows()) do
     local app = window:application()
@@ -96,46 +87,49 @@ do
   local pad2 = 4/12
   local size1 = 4/12
   local size2 = 8/12
-  local rect = hs.geometry.rect
 
-  function cmd.snapWindowCenterBig()
-    hs.window.focusedWindow():moveToUnit(rect(pad1, 0, size2, 1))
+  local function move(x, y, w, h)
+    hs.window.focusedWindow():moveToUnit(hs.geometry.rect(x, y, w, h))
   end
 
-  function cmd.snapWindowCenterSmall()
-    hs.window.focusedWindow():moveToUnit(rect(size1, 0, size1, 1))
+  function snapWindowCenterBig()
+    move(pad1, 0, size2, 1)
   end
 
-  function cmd.snapWindowLeftBig()
-    hs.window.focusedWindow():moveToUnit(rect(0, 0, size2, 1))
+  function snapWindowCenterSmall()
+    move(size1, 0, size1, 1)
   end
 
-  function cmd.snapWindowLeftSmall()
-    hs.window.focusedWindow():moveToUnit(rect(0, 0, size1, 1))
+  function snapWindowLeftBig()
+    move(0, 0, size2, 1)
   end
 
-  function cmd.snapWindowLeftHalf()
-    hs.window.focusedWindow():moveToUnit(rect(0, 0, 1/2, 1))
+  function snapWindowLeftSmall()
+    move(0, 0, size1, 1)
   end
 
-  function cmd.snapWindowRightHalf()
-    hs.window.focusedWindow():moveToUnit(rect(1/2, 0, 1/2, 1))
+  function snapWindowLeftHalf()
+    move(0, 0, 1/2, 1)
   end
 
-  function cmd.snapWindowRightBig()
-    hs.window.focusedWindow():moveToUnit(rect(1 - size2, 0, size2, 1))
+  function snapWindowRightHalf()
+    move(1/2, 0, 1/2, 1)
   end
 
-  function cmd.snapWindowRightSmall()
-    hs.window.focusedWindow():moveToUnit(rect(1 - size1, 0, size1, 1))
+  function snapWindowRightBig()
+    move(1 - size2, 0, size2, 1)
   end
 
-  function cmd.maximizeWindow()
-    hs.window.focusedWindow():moveToUnit(rect(0, 0, 1, 1))
+  function snapWindowRightSmall()
+    move(1 - size1, 0, size1, 1)
+  end
+
+  function maximizeWindow()
+    move(0, 0, 1, 1)
   end
 end
 
-function cmd.maximizeAllWindows()
+function maximizeAllWindows()
   local screen = hs.screen.primaryScreen()
   for _, window in ipairs(hs.window:orderedWindows()) do
     window:moveToScreen(screen)
@@ -143,23 +137,23 @@ function cmd.maximizeAllWindows()
   end
 end
 
-function cmd.showApplicationName()
+function showApplicationName()
   hs.alert.show(hs.window.focusedWindow():application():name())
 end
 
-function cmd.toggleConsole()
+function toggleConsole()
   hs.toggleConsole()
 end
 
-function cmd.typeDate()
+function typeDate()
   hs.eventtap.keyStrokes(os.date("%Y-%m-%d"))
 end
 
-function cmd.typeTime()
+function typeTime()
   hs.eventtap.keyStrokes(os.date("%Y-%m-%d %H:%M"))
 end
 
-function cmd.typeUnixTime()
+function typeUnixTime()
   hs.eventtap.keyStrokes(tostring(os.time()))
 end
 
