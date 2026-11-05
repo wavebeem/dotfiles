@@ -273,7 +273,6 @@
   "terminal.integrated.stickyScroll.enabled": false,
   "terminal.integrated.tabs.hideCondition": "never",
   "window.commandCenter": false,
-  "window.density.layout": "compact",
   "window.menuBarVisibility": "compact",
   // "window.dialogStyle": "custom",
   "window.menuStyle": "custom",
@@ -321,7 +320,6 @@
     "*.csv": "default",
     "*.ipynb": "jupyter-notebook",
   },
-  "workbench.experimental.modernUIEditorTabStyle": "pill",
   "workbench.fontAliasing": "antialiased",
   "workbench.iconTheme": null,
   "workbench.modernUIFrostedGlass": false,
@@ -334,4 +332,6 @@
   "workbench.tree.renderIndentGuides": "always",
   "zenMode.fullScreen": false,
   "zenMode.showTabs": "single",
+  "workbench.experimental.modernUIEditorTabStyle": "pill",
+  "window.density.layout": "compact",
 }
